@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Link from "next/link";
@@ -91,26 +91,24 @@ export default function Testimonials() {
           </Stagger>
         </div>
 
-        {/* First Swiper - Left to Right Marquee */}
+        {/* Testimonials Swiper */}
         <Swiper
-          pagination={true}
           modules={[Autoplay]}
           spaceBetween={24}
-          slidesPerView={1} // 👈 default for mobile
+          slidesPerView={1} // default for mobile
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            reverseDirection: true,
+            pauseOnMouseEnter: true,
           }}
           speed={6000}
           loop={true}
-          allowTouchMove={false}
-          freeMode={true}
+          // pagination={{ clickable: true }}
           breakpoints={{
-            640: { slidesPerView: 1 }, // small screens (still 1)
-            768: { slidesPerView: 2 }, // tablets
-            1024: { slidesPerView: 3 }, // laptops
-            1280: { slidesPerView: 3 }, // desktops
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 3 },
           }}
           className="pb-16 mb-8"
         >
@@ -123,42 +121,39 @@ export default function Testimonials() {
                     {testimonial.review}
                   </p>
 
-                  <div>
-                    {/* User Info */}
-                    <div className="flex items-center gap-4 mt-4">
-                      {testimonial.image ? (
-                        <Image
-                          src={testimonial.image}
-                          alt={testimonial.name}
-                          width={48}
-                          height={48}
-                          className="w-12 h-12 rounded-full object-cover"
-                        />
-                      ) : (
-                        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-500 text-white font-bold">
-                          {testimonial.name.charAt(0)}
-                        </div>
-                      )}
-                      <div>
-                        <h3 className="font-semibold text-white">
-                          {testimonial.name}
-                        </h3>
-                        <p className="text-sm text-white/80">
-                          {testimonial.time}
-                        </p>
+                  {/* User Info */}
+                  <div className="flex items-center gap-4 mt-4">
+                    {testimonial.image ? (
+                      <Image
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        width={48}
+                        height={48}
+                        className="w-12 h-12 rounded-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-500 text-white font-bold">
+                        {testimonial.name.charAt(0)}
                       </div>
-                    </div>
+                    )}
 
-                    {/* Rating */}
-                    <div className="flex items-center mt-3">
-                      {Array.from({ length: testimonial.rating }).map(
-                        (_, i) => (
-                          <span key={i} className="text-orange-400 text-2xl">
-                            ★
-                          </span>
-                        )
-                      )}
+                    <div>
+                      <h3 className="font-semibold text-white">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-sm text-white/80">
+                        {testimonial.time}
+                      </p>
                     </div>
+                  </div>
+
+                  {/* Rating */}
+                  <div className="flex items-center mt-3">
+                    {Array.from({ length: testimonial.rating }).map((_, i) => (
+                      <span key={i} className="text-orange-400 text-2xl">
+                        ★
+                      </span>
+                    ))}
                   </div>
                 </div>
               </Reveal>
