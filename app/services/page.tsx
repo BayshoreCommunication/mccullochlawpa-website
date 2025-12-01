@@ -1,16 +1,14 @@
-import OurServices from '@/components/shared/OurServices'
-import Testimonials from '@/components/shared/Testimonials'
-import CallToAction from '@/components/shared/CallToAction'
-import React from 'react'
+import OurServices from "@/components/shared/OurServices";
+import Testimonials from "@/components/shared/Testimonials";
+import React from "react";
 
 const page = () => {
   return (
     <>
-        <OurServices/>
-        <Testimonials/>
-        <CallToAction/>
+      <OurServices />
+      <Testimonials />
     </>
-  )
-}
+  );
+};
 
-export default page
+export default page;

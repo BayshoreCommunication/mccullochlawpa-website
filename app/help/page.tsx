@@ -1,6 +1,5 @@
 import ServicesPage from "@/components/help/ServicesPage";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
-import CallToAction from "@/components/shared/CallToAction";
 import React from "react";
 
 const page = () => {
@@ -17,7 +16,6 @@ const page = () => {
         ]}
       />
       <ServicesPage />
-      <CallToAction />
     </>
   );
 };

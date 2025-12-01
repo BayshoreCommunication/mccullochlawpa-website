@@ -6,7 +6,6 @@ import React from "react";
 import parse from "html-react-parser";
 import GetAllPostData from "@/lib/GetPostData";
 import { log } from "console";
-import PainRelief from "@/components/shared/CallToAction";
 
 const css = `
  h1, h2, p, br, nav {
@@ -199,8 +198,6 @@ const page = async ({ params }) => {
             ))}
         </div>
       </div>
-
-      <PainRelief />
     </>
   );
 };
