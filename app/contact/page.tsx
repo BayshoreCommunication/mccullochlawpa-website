@@ -10,10 +10,6 @@ const page = () => {
       <BreadcrumbSection
         subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
         title="Drop us a line!"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Contact Us" }, // current page (no href)
-        ]}
       />
       <ContactForm />
       <ContactMap />

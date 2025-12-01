@@ -7,7 +7,7 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
 
-const HeroSection = () => {
+const Video = () => {
   const [showTitleOne, setShowTitleOne] = useState(true);
 
   useEffect(() => {
@@ -77,4 +77,4 @@ const HeroSection = () => {
   );
 };
 
-export default memo(HeroSection);
+export default memo(Video);
