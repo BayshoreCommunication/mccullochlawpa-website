@@ -2,7 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaGlobe,
+  FaGoogle,
+  FaLinkedinIn,
+  FaPhone,
+  FaYoutube,
+} from "react-icons/fa6";
 import {
   HiOutlineLocationMarker,
   HiOutlineMail,
@@ -11,156 +19,155 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-[1640px] mx-auto md:pt-16 pb-6 px-8">
-        {/* ⭐ Grid 5 Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
-          {/* Column 1 */}
-          <div className="md:col-span-2 max-w-[80%]">
-            <div className="flex items-start gap-3">
-              <Image
-                src="/images/footer/logo.png"
-                alt="Logo"
-                width={195}
-                height={70}
-                className="w-auto h-auto"
-              />
-            </div>
-            <p className="text-gray-600 mt-4 text-base leading-relaxed">
-              Providing expert chiropractic care and whole-body wellness to help
-              you live pain-free.
-            </p>
-            {/* Social Icons */}
-            <div className="flex gap-4 mt-4 text-primary text-lg">
-              <div className="flex gap-4 mt-4 text-primary text-lg">
-                <a
-                  href="https://www.facebook.com/JachimekChiropracticWellnessCenter/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaFacebookF />
-                </a>
+    <footer className="bg-[#1D3446] py-14 text-white">
+      <div className="max-w-[1640px] mx-auto px-6 md:px-10">
+        {/* Main Footer Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-14">
+          {/* Column 1 - Logo + Info */}
+          <div>
+            <Image
+              src="/images/footer-logo.png"
+              alt="Logo"
+              width={200}
+              height={70}
+              className="w-full max-w-[180px]"
+            />
 
-                <a
-                  href="https://www.instagram.com/tampa_chiropractic?igsh=N3llNDhpdXRpbjg1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaInstagram />
-                </a>
-              </div>
+            <p className="text-sm mt-4 leading-relaxed">
+              Available 24 hours a day, <br /> 7 days a week.
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex gap-4 text-[#D4A017] text-lg mt-5">
+              <a href="#">
+                <FaFacebookF />
+              </a>
+              <a href="#">
+                <FaLinkedinIn />
+              </a>
+              <a href="#">
+                <FaInstagram />
+              </a>
+              <a href="#">
+                <FaGoogle />
+              </a>
+              <a href="#">
+                <FaYoutube />
+              </a>
             </div>
           </div>
 
-          {/* Column 3 */}
+          {/* Column 2 - Quick Links */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
-            <ul className="space-y-2 text-base text-gray-600">
+            <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="hover:text-primary">
+                <a href="/" className="hover:text-[#D4A017]">
                   Home
                 </a>
               </li>
-
               <li>
-                <a href="/services" className="hover:text-primary">
+                <a href="/about" className="hover:text-[#D4A017]">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="/services" className="hover:text-[#D4A017]">
                   Our Services
                 </a>
               </li>
               <li>
-                <a href="/help" className="hover:text-primary">
-                  Let Us Help You
+                <a href="/case-study" className="hover:text-[#D4A017]">
+                  Case Study
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.medicalweightlosstampa.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary"
-                >
-                  Weight Loss Services
+                <a href="/blog" className="hover:text-[#D4A017]">
+                  Our Blog
                 </a>
               </li>
               <li>
-                <a href="/team" className="hover:text-primary">
-                  Meet The Team
-                </a>
-              </li>
-              <li>
-                <a href="/the-wellness-journal" className="hover:text-primary">
-                  The Wellness Journal
+                <a href="/attorney" className="hover:text-[#D4A017]">
+                  Our Attorney
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 4 */}
+          {/* Column 3 - Services */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Support</h3>
-            <ul className="space-y-2 text-base text-gray-600">
+            <h3 className="font-semibold text-lg mb-4">Services</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/contact" className="hover:text-primary">
-                  Contact
-                </Link>
-              </li>
-              {/* <li>
-                <Link href="#" className="hover:text-primary">
-                  Disclaimers
-                </Link>
+                <a href="#" className="hover:text-[#D4A017]">
+                  Auto Accidents
+                </a>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Terms of Service
-                </Link>
+                <a href="#" className="hover:text-[#D4A017]">
+                  Slip and Fall
+                </a>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Privacy Policy
-                </Link>
+                <a href="#" className="hover:text-[#D4A017]">
+                  Dog Bites
+                </a>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Cookie Policy
-                </Link>
-              </li> */}
+                <a href="#" className="hover:text-[#D4A017]">
+                  Drug Crimes
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#D4A017]">
+                  DUI
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#D4A017]">
+                  Domestic Violence
+                </a>
+              </li>
             </ul>
           </div>
 
-          {/* Column 5 */}
+          {/* Column 4 - Contact Info */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Contact Us</h3>
-            <ul className="space-y-3 text-base text-gray-600">
-              <li className="flex items-center gap-2">
-                <HiOutlineMail className="text-primary" />{" "}
-                <a
-                  href="mailto:support@jachimekchiro.com"
-                  className="hover:text-primary transition-colors"
-                >
-                  support@jachimekchiro.com
+            <h3 className="font-semibold text-lg mb-4">Contact Info</h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-3">
+                <FaMapMarkerAlt className="text-[#D4A017] mt-1" />
+                <span>
+                  238 East Davis Boulevard, Ste 202 <br />
+                  Tampa, FL 33606
+                </span>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <FaPhone className="text-[#D4A017]" />
+                <a href="tel:8134442817" className="hover:text-[#D4A017]">
+                  (813) 444-2817
                 </a>
               </li>
-              <li className="flex items-center gap-2">
-                <HiOutlinePhone className="text-primary" />{" "}
+
+              <li className="flex items-center gap-3">
+                <FaEnvelope className="text-[#D4A017]" />
                 <a
-                  href="tel:+18139602225"
-                  className="hover:text-primary transition-colors"
+                  href="mailto:attorney@mcfloridalaw.com"
+                  className="hover:text-[#D4A017]"
                 >
-                  813.960.2225
+                  attorney@mcfloridalaw.com
                 </a>
               </li>
-              <li className="flex items-start gap-2">
-                <HiOutlineLocationMarker className="text-primary mt-1 text-2xl" />
+
+              <li className="flex items-center gap-3">
+                <FaGlobe className="text-[#D4A017]" />
                 <a
-                  href="https://www.google.com/maps/dir//5111+Ehrlich+Rd+Ste+128,+Tampa,+FL+33624,+United+States/@28.0857723,-82.5372913,17.5z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88c2c1ddd73750a1:0xdb88558beba9d695!2m2!1d-82.5346904!2d28.0856448?entry=ttu&g_ep=EgoyMDI1MTAyMC4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://mcfloridalaw.com"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-[#D4A017]"
                 >
-                  <span>
-                    5111 Ehrlich Road Ste 128, <br /> Tampa, Florida 33624,
-                    United States
-                  </span>
+                  mcfloridalaw.com
                 </a>
               </li>
             </ul>
@@ -168,18 +175,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row items-center justify-center text-base text-gray-600">
-          <p>Copyright © 2025 Jachimek Chiropractic & Wellness Center</p>
-          {/* <p>
-            All Rights Reserved |{" "}
-            <Link href="#" className="text-primary hover:underline">
-              Terms and Conditions
-            </Link>{" "}
-            |{" "}
-            <a href="#" className="text-primary hover:underline">
-              Privacy Policy
-            </a>
-          </p> */}
+        <div className="border-t border-gray-600 mt-12 pt-5 text-center text-sm">
+          © 2025 McCulloch Law P.A. All Rights Reserved.
         </div>
       </div>
     </footer>

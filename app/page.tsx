@@ -1,11 +1,13 @@
 import About from "@/components/home/About";
-import Blog from "@/components/shared/Blog";
+// import Blog from "@/components/shared/Blog";
 import Hero from "@/components/home/Hero";
-import OurTeam from "@/components/shared/OurTeam";
-import PainRelief from "@/components/shared/CallToAction";
 import Services from "@/components/home/Services";
 import Testimonials from "@/components/shared/Testimonials";
-import Faq from "@/components/shared/Faq";
+import Case from "@/components/home/Case";
+import Expect from "@/components/home/Expect";
+import Video from "@/components/home/Video";
+import BlogPage from "@/components/shared/Blog";
+import Blog from "@/components/shared/Blog";
 
 export default function Home() {
   return (
@@ -14,10 +16,10 @@ export default function Home() {
       <About />
       <Services />
       <Testimonials />
-      <OurTeam />
-      <PainRelief />
-      <Faq />
-      {/* <Blog /> */}
+      <Case />
+      <Expect />
+      <Video />
+      <Blog />
     </>
   );
 }
