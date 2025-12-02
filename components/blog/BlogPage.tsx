@@ -35,12 +35,12 @@ const fallbackBlogs = [
   },
 ];
 
-export default function BlogPage({ blogPost }) {
+export default function BlogPage({ blogPost }: { blogPost: any }) {
   // Use your API data → fallback static blogs
   const posts =
     blogPost?.data
-      ?.filter((p) => p.published)
-      ?.map((p) => ({
+      ?.filter((p: any) => p.published)
+      ?.map((p: any) => ({
         title: p.title,
         description: p.excerpt || "",
         date: new Date(p.createdAt).toLocaleDateString("en-US", {
@@ -75,7 +75,7 @@ export default function BlogPage({ blogPost }) {
 
         {/* blog Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((blog, index) => (
+          {posts.map((blog: any, index: number) => (
             <Reveal key={index} y={16} opacityFrom={0}>
               <Link
                 href={`/blogs/${blog.slug}`}
