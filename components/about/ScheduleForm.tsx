@@ -7,6 +7,7 @@ import { FaPlay } from "react-icons/fa";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
+import Reveal from "../motion/Reveal";
 
 const ScheduleForm = () => {
   const [showTitleOne, setShowTitleOne] = useState(true);
@@ -34,100 +35,104 @@ const ScheduleForm = () => {
 
         <div className="max-w-[1640px] mx-auto px-8  w-full  py-10 lg:py-20 ">
           <div className="relative">
-            <div className="w-full flex flex-col md:flex-row items-center justify-between gap-8">
-              <div className="flex flex-col gap-4 max-w-3xl w-full  rounded-md">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
-                  Contact Us Today. Get in Touch With Drew, Esq.
-                </h1>
-                <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
-                  Reach out now for trusted legal advice. Our experienced
-                  attorneys are ready to protect your rights and fight for the
-                  outcome you deserve.
-                </p>
-                <div className="mt-5">
-                  <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
-                    Phone Number
-                    <br /> <Link href="#">(813) 444-2817</Link>
-                  </h3>
-                </div>
-                <div className="mt-5">
-                  <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
-                    Our Social Links
-                  </h3>
-                  <div className="text-white flex gap-2 mt-4">
-                    <Link
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                    >
-                      <FaFacebook size={24} />
-                    </Link>
-                    <Link
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                    >
-                      <FaLinkedin size={24} />
-                    </Link>
-                    <Link
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                    >
-                      <FaInstagram size={24} />
-                    </Link>
+            <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-6">
+              <Reveal tag="h2" y={16} opacityFrom={0}>
+                <div className="flex flex-col gap-4 max-w-xl w-full  rounded-md">
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
+                    Contact Us Today. Get in Touch With Drew, Esq.
+                  </h1>
+                  <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
+                    Reach out now for trusted legal advice. Our experienced
+                    attorneys are ready to protect your rights and fight for the
+                    outcome you deserve.
+                  </p>
+                  <div className="mt-5">
+                    <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
+                      Phone Number
+                      <br /> <Link href="#">(813) 444-2817</Link>
+                    </h3>
+                  </div>
+                  <div className="mt-5">
+                    <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
+                      Our Social Links
+                    </h3>
+                    <div className="text-white flex gap-2 mt-4">
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                      >
+                        <FaFacebook size={24} />
+                      </Link>
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                      >
+                        <FaLinkedin size={24} />
+                      </Link>
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                      >
+                        <FaInstagram size={24} />
+                      </Link>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-full max-w-3xl bg-[#1A1A1A] p-10 rounded-md">
-                {/* Title */}
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                  Request a Flexible Schedule
-                </h2>
+              </Reveal>
+              <Reveal tag="h2" y={16} opacityFrom={0}>
+                <div className="w-full  bg-[#1A1A1A] p-10 rounded-md">
+                  {/* Title */}
+                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
+                    Request a Flexible Schedule
+                  </h2>
 
-                {/* Form */}
-                <form className="flex flex-col gap-4">
-                  {/* Row 1 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input
-                      type="text"
-                      placeholder="Full name"
-                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email address"
-                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                    />
-                  </div>
+                  {/* Form */}
+                  <form className="flex flex-col gap-4">
+                    {/* Row 1 */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="text"
+                        placeholder="Full name"
+                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                      />
+                      <input
+                        type="email"
+                        placeholder="Email address"
+                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                      />
+                    </div>
 
-                  {/* Row 2 */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input
-                      type="tel"
-                      placeholder="Phone number"
-                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                    />
-                    <input
-                      type="text"
-                      placeholder="dd / mm / yyyy"
-                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                    />
-                  </div>
+                    {/* Row 2 */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <input
+                        type="tel"
+                        placeholder="Phone number"
+                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                      />
+                      <input
+                        type="text"
+                        placeholder="dd / mm / yyyy"
+                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                      />
+                    </div>
 
-                  {/* Row 3 – textarea */}
-                  <textarea
-                    placeholder="Describe your case or ask question"
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                  ></textarea>
+                    {/* Row 3 – textarea */}
+                    <textarea
+                      placeholder="Describe your case or ask question"
+                      rows={4}
+                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                    ></textarea>
 
-                  {/* Button */}
-                  <button
-                    type="submit"
-                    className="w-full bg-[#BA8E2D] text-white font-semibold py-4 rounded-md"
-                  >
-                    Book an Appointment
-                  </button>
-                </form>
-              </div>
+                    {/* Button */}
+                    <button
+                      type="submit"
+                      className="w-full bg-[#BA8E2D] text-white font-semibold py-4 rounded-md"
+                    >
+                      Book an Appointment
+                    </button>
+                  </form>
+                </div>
+              </Reveal>
             </div>
           </div>
         </div>

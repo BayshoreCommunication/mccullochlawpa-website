@@ -1,22 +1,18 @@
-import BlogSection from "@/components/shared/Blog";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
-import { BreadcrumbItem } from "@nextui-org/react";
 import GetAllPostData from "@/lib/GetPostData";
 import React from "react";
+import BlogPage from "@/components/blog/BlogPage";
 
 const page = async () => {
   const blogPostData = await GetAllPostData();
   return (
     <div>
       <BreadcrumbSection
-        subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
-        title="My Blog"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "My Blog" }, // current page (no href)
-        ]}
+        title="Blogs"
+        subtitle="Find informative posts written to help you stay informed and better understand the legal landscape, and more."
       />
       {/* <BlogSection blogPost={blogPostData} /> */}
+      <BlogPage />
     </div>
   );
 };
