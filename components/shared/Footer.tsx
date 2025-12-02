@@ -2,20 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaInstagram, FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaEnvelope, FaGlobe, FaPhone, FaYoutube } from "react-icons/fa6";
+
 import {
-  FaEnvelope,
-  FaGlobe,
-  FaGoogle,
+  FaFacebookF,
   FaLinkedinIn,
-  FaPhone,
-  FaYoutube,
-} from "react-icons/fa6";
-import {
-  HiOutlineLocationMarker,
-  HiOutlineMail,
-  HiOutlinePhone,
-} from "react-icons/hi";
+  FaInstagram,
+  FaGoogle,
+  FaBalanceScale,
+  FaYelp,
+  FaTiktok,
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -38,22 +36,39 @@ export default function Footer() {
             </p>
 
             {/* Social Icons */}
+            {/* Social Icons */}
             <div className="flex gap-4 text-[#D4A017] text-lg mt-5">
-              <a href="#">
+              <Link href="#" aria-label="Facebook">
                 <FaFacebookF />
-              </a>
-              <a href="#">
+              </Link>
+
+              <Link href="#" aria-label="LinkedIn">
                 <FaLinkedinIn />
-              </a>
-              <a href="#">
+              </Link>
+
+              <Link href="#" aria-label="Instagram">
                 <FaInstagram />
-              </a>
-              <a href="#">
+              </Link>
+
+              {/* Avvo (no official icon in react-icons – using FaBalanceScale as the legal symbol) */}
+              <Link href="#" aria-label="Avvo">
+                <FaBalanceScale />
+              </Link>
+
+              {/* Yelp */}
+              <Link href="#" aria-label="Yelp">
+                <FaYelp />
+              </Link>
+
+              {/* Google My Business (using FaGoogle as closest match) */}
+              <Link href="#" aria-label="Google My Business">
                 <FaGoogle />
-              </a>
-              <a href="#">
-                <FaYoutube />
-              </a>
+              </Link>
+
+              {/* TikTok */}
+              <Link href="#" aria-label="TikTok">
+                <FaTiktok />
+              </Link>
             </div>
           </div>
 
@@ -62,34 +77,34 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/" className="hover:text-[#D4A017]">
+                <Link href="/" className="hover:text-[#D4A017]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-[#D4A017]">
+                <Link href="/about" className="hover:text-[#D4A017]">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-[#D4A017]">
+                <Link href="/practice" className="hover:text-[#D4A017]">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/case-study" className="hover:text-[#D4A017]">
+                <Link href="/case-study" className="hover:text-[#D4A017]">
                   Case Study
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:text-[#D4A017]">
+                <Link href="/blog" className="hover:text-[#D4A017]">
                   Our Blog
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/attorney" className="hover:text-[#D4A017]">
+                <Link href="/attorney" className="hover:text-[#D4A017]">
                   Our Attorney
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -99,34 +114,34 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   Auto Accidents
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   Slip and Fall
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   Dog Bites
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   Drug Crimes
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   DUI
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#D4A017]">
+                <Link href="#" className="hover:text-[#D4A017]">
                   Domestic Violence
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -145,30 +160,30 @@ export default function Footer() {
 
               <li className="flex items-center gap-3">
                 <FaPhone className="text-[#D4A017]" />
-                <a href="tel:8134442817" className="hover:text-[#D4A017]">
+                <Link href="tel:8134442817" className="hover:text-[#D4A017]">
                   (813) 444-2817
-                </a>
+                </Link>
               </li>
 
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4A017]" />
-                <a
+                <Link
                   href="mailto:attorney@mcfloridalaw.com"
                   className="hover:text-[#D4A017]"
                 >
                   attorney@mcfloridalaw.com
-                </a>
+                </Link>
               </li>
 
               <li className="flex items-center gap-3">
                 <FaGlobe className="text-[#D4A017]" />
-                <a
+                <Link
                   href="https://mcfloridalaw.com"
                   target="_blank"
                   className="hover:text-[#D4A017]"
                 >
                   mcfloridalaw.com
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
