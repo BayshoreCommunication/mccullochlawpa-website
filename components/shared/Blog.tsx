@@ -5,36 +5,20 @@ import Reveal from "../motion/Reveal";
 import Stagger from "../motion/Stagger";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
+import GetAllPostData from "@/lib/GetPostData";
 
-const blogs = [
-  {
-    title: "What to Do After Being Arrested in Florida",
-    date: "23 Sep 2024",
-    description:
-      "Learn the critical steps to take immediately after being arrested in Florida to protect your rights and strengthen your defense.",
-    image: "/images/blogs/arrested-in-florida.jpg",
-    slug: "what-to-do-after-being-arrested-in-florida",
-  },
-  {
-    title:
-      "How a Former Prosecutor’s Experience Can Strengthen Your Criminal Defense",
-    date: "22 Sep 2024",
-    description:
-      "See how insider knowledge helps build stronger, smarter defense strategies by anticipating the prosecution’s approach and identifying case weaknesses.",
-    image: "/images/blogs/former-prosecutor-defense.jpg",
-    slug: "how-prosecutor-experience-strengthens-defense",
-  },
-  {
-    title: "What To Do After a Car Accident in Florida",
-    date: "21 Sep 2024",
-    description:
-      "Learn the right steps after a crash to protect your safety and legal rights—who to contact, what to document, and how to avoid mistakes.",
-    image: "/images/blogs/car-accident-in-florida.jpg",
-    slug: "what-to-do-after-car-accident-in-florida",
-  },
-];
+function extractTextFromHtml(htmlString: string): string {
+  return htmlString.replace(/<\/?[^>]+(>|$)/g, "");
+}
 
-export default function Blog() {
+export default async function Blog() {
+  const blogPostData = await GetAllPostData();
+  const publishedBlogs =
+    blogPostData?.data
+      ?.filter((blog: any) => blog.published === true)
+      ?.slice(0, 4) || [];
+  
+
   return (
     <section className="w-full px-8 py-8 md:py-16">
       <div className="max-w-[1640px] mx-auto">
@@ -43,56 +27,69 @@ export default function Blog() {
           <Stagger>
             <Reveal tag="h2" y={16} opacityFrom={0}>
               <p className="text-base font-normal text-[#666666] mb-4">
-                Latest Blogs{" "}
+                Latest Blogs
               </p>
             </Reveal>
+
             <Reveal tag="h2" y={16} opacityFrom={0}>
-              <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
-                Top  <span className="text-[#BA8E2D]">Blogs </span> Related To
+              <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
+                Top <span className="text-[#BA8E2D]">Blogs</span> Related To
                 Law, Cases & Consulting
               </h2>
             </Reveal>
           </Stagger>
         </div>
 
-        {/* blog Cards */}
+
+        {/* Blog Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {blogs.map((blog, index) => (
-            <Reveal key={index} y={16} opacityFrom={0}>
-              <Link href="/blogs" className="block h-full">
-                <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition  flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:bg-[#BA8E2D] hover:scale-105 transform duration-200">
+          {publishedBlogs.length > 0 ? (
+            publishedBlogs.map((blog: any, index: any) => {
+              const description = blog.body
+                ? extractTextFromHtml(blog.body).slice(0, 120) + "..."
+                : blog.description || "Read more about this blog post.";
+
+              return (
+                <div
+                  key={index}
+                  className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 h-full cursor-pointer hover:scale-105 duration-200"
+                >
+                  
                   <Image
-                    src={blog.image}
+                    src={blog.featuredImage?.image?.url}
                     alt={blog.title}
-                    width={300}
-                    height={224}
+                    width={1000}
+                    height={800}
                     className="w-full h-auto object-cover object-top rounded-t-xl"
                   />
                   <div className="p-6 text-start flex flex-col justify-between flex-grow gap-4">
                     <div>
-                      <h3 className="text-lg font-semibold group-hover:text-white duration-300 text-gray-900">
+                      <h3 className="text-lg font-semibold group-hover:text-[#BA8E2D] duration-300">
                         {blog.title}
                       </h3>
-                      <p className="mt-2 text-sm text-gray-600 group-hover:text-white/90 duration-300">
-                        {blog.date}
-                      </p>
-                      <p className="mt-3 text-base text-gray-600 group-hover:text-white/90 duration-300">
-                        {blog.description}
+
+                      <p className="mt-2 text-sm text-gray-600">{blog.date}</p>
+
+                      <p className="mt-3 text-base text-gray-600">
+                        {description}
                       </p>
                     </div>
-                    <div className="">
+
+                    <div>
                       <Link
-                        href="#"
-                        className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm group-hover:bg-white group-hover:text-[#BA8E2D] mt-4 "
+                        href={`/blogs/${blog.slug}`}
+                        className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm hover:bg-white hover:text-[#BA8E2D] mt-4 duration-300"
                       >
                         Read More <IoIosArrowForward />
                       </Link>
                     </div>
                   </div>
                 </div>
-              </Link>
-            </Reveal>
-          ))}
+              );
+            })
+          ) : (
+            <p className="text-gray-500">No blogs found.</p>
+          )}
         </div>
       </div>
     </section>

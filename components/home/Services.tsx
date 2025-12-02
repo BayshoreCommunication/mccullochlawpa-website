@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Reveal from "../motion/Reveal";
 import Stagger from "../motion/Stagger";
 import Link from "next/link";
@@ -71,8 +70,7 @@ export default function Services() {
             </Reveal>
             <Reveal tag="h2" y={16} opacityFrom={0}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
-                Explore the Services We Offer in Personal Injury and Criminal
-                Defense
+                Explore the Services We Offer in Personal Injury and Criminal Defense
               </h2>
             </Reveal>
           </Stagger>
@@ -80,9 +78,9 @@ export default function Services() {
 
         {/* Service Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service, index) => (
-            <Reveal key={index} y={16} opacityFrom={0}>
-              <Link href="/practice" className="block h-full">
+          {services.map((service) => (
+            <Reveal key={service.slug} y={16} opacityFrom={0}>
+              <Link href={`/practice/${service.slug}`} className="block h-full">
                 <div className="group bg-white hover:bg-[#BA8E2D] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
                   <div
                     className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#BA8E2D]
