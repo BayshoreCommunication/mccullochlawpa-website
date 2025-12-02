@@ -6,6 +6,7 @@ import Stagger from "../motion/Stagger";
 import Link from "next/link";
 import { FaBook } from "react-icons/fa6";
 
+<<<<<<< HEAD
 export const PersonalInjuryServices = [
   {
     id: 1,
@@ -99,6 +100,9 @@ export const PersonalInjuryServices = [
     slug: "fatal-accidents",
   },
 ];
+=======
+import { PersonalInjuryServices } from "@/config/data";
+>>>>>>> e017d4fc67630ecfaf5f258e9074d34395dbab97
 
 export default function PersonalInjury() {
   return (
@@ -131,7 +135,14 @@ export default function PersonalInjury() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {PersonalInjuryServices.map((service, index) => (
             <Reveal key={index} y={16} opacityFrom={0}>
+<<<<<<< HEAD
               <Link href={`/practice/${service.slug}`} className="block h-full">
+=======
+              <Link
+                href={`/practice/${service?.slug}`}
+                className="block h-full"
+              >
+>>>>>>> e017d4fc67630ecfaf5f258e9074d34395dbab97
                 <div className="group bg-white hover:bg-[#BA8E2D] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
                   <div
                     className="w-16 h-16 rounded-xl overflow-hidden flex justify-center items-center shadow-lg text-[#BA8E2D]
