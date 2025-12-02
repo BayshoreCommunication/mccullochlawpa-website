@@ -10,7 +10,7 @@ export default function Page() {
         title="Explore the Services We Offer in Personal Injury and Criminal Defense"
         subtitle="McCulloch Law, P.A. offers a focused range of services designed to support clients during some of the most challenging moments of their lives."
       />
-      <PersonalInjury services={PersonalInjuryServices} />
+      <PersonalInjury  />
       <CriminalDefense />
     </>
   );
