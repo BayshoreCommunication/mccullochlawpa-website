@@ -8,12 +8,6 @@ const page = () => {
       <BreadcrumbSection
         subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
         title="Chiropractic Services for"
-        highlight="Pain Relief & Wellness,"
-        title2="Tampa, FL"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Let us help you" }, // current page (no href)
-        ]}
       />
       <ServicesPage />
     </>

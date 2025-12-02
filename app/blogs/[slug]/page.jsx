@@ -133,10 +133,6 @@ const page = async ({ params }) => {
       <BreadcrumbSection
         subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
         title="My Blog"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "My Blog" }, // current page (no href)
-        ]}
       />
 
       <div className="grid gap-12 mb-10 gird-col-1 sm:grid-cols-3 max-w-[1640px] mx-auto">

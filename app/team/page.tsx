@@ -10,12 +10,6 @@ const page = () => {
       <BreadcrumbSection
         subtitle="Get Pain Relief Today With Tampa Bays Chiropractor"
         title="Tampa's Best"
-        highlight="Board-Certified "
-        title2="Chiropractors & Team"
-        items={[
-          { label: "Home", href: "/" },
-          { label: "Meet The Team" }, // current page (no href)
-        ]}
       />
       <TeamPage />
       <Instagram />
