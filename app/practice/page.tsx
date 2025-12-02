@@ -2,7 +2,6 @@
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
 import PersonalInjury from "@/components/practice/PersonalInjury";
 import CriminalDefense from "@/components/practice/CriminalDefense";
-import PersonalInjuryServices from "@/components/practice/PersonalInjuryServices";
 export default function Page() {
   return (
     <>

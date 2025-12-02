@@ -50,7 +50,7 @@ const caseData = [
   },
 ];
 
-export default function ResponsiveSwiper() {
+export default function CaseSection() {
   const [direction, setDirection] = useState<"horizontal" | "vertical">(
     "horizontal"
   );
