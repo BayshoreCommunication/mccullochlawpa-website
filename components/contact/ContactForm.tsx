@@ -3,11 +3,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { memo, useEffect, useState } from "react";
-import { FaPlay } from "react-icons/fa";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { IoIosArrowForward } from "react-icons/io";
-import { MdOutlinePersonalInjury } from "react-icons/md";
+
 import Reveal from "../motion/Reveal";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaGoogle,
+  FaBalanceScale,
+  FaYelp,
+  FaTiktok,
+} from "react-icons/fa";
 
 const ContactForm = () => {
   const [showTitleOne, setShowTitleOne] = useState(true);
@@ -52,20 +58,61 @@ const ContactForm = () => {
                       <Link
                         href="#"
                         className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="Facebook"
                       >
-                        <FaFacebook size={24} />
+                        <FaFacebookF />
                       </Link>
+
                       <Link
                         href="#"
                         className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="LinkedIn"
                       >
-                        <FaLinkedin size={24} />
+                        <FaLinkedinIn />
                       </Link>
+
                       <Link
                         href="#"
                         className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="Instagram"
                       >
-                        <FaInstagram size={24} />
+                        <FaInstagram />
+                      </Link>
+
+                      {/* Avvo (no official icon in react-icons – using FaBalanceScale as the legal symbol) */}
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="Avvo"
+                      >
+                        <FaBalanceScale />
+                      </Link>
+
+                      {/* Yelp */}
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="Yelp"
+                      >
+                        <FaYelp />
+                      </Link>
+
+                      {/* Google My Business (using FaGoogle as closest match) */}
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="Google My Business"
+                      >
+                        <FaGoogle />
+                      </Link>
+
+                      {/* TikTok */}
+                      <Link
+                        href="#"
+                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        aria-label="TikTok"
+                      >
+                        <FaTiktok />
                       </Link>
                     </div>
                   </div>
