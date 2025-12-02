@@ -223,5 +223,3 @@ Personal Injury and Criminal Defense"
     </>
   );
 };
-
-export default page;
