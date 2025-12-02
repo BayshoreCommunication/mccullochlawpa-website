@@ -8,52 +8,95 @@ import { FaBook } from "react-icons/fa6";
 
 const PersonalInjuryServices = [
   {
-    title: "Drug Crimes",
+    id: 1,
+    title: "An Overview",
     description:
-      "Experienced defense for drug charges of all levels—protecting your rights, challenging evidence, and fighting for reduced penalties or dismissal.",
-    slug: "drug-crimes",
+      "Injuries can turn life upside down, and you shouldn’t have to face the aftermath alone. We guide you through the process and fight for the compensation you deserve.",
+    slug: "an-overview",
   },
   {
-    title: "Fraud",
+    id: 2,
+    title: "Auto Accident",
     description:
-      "Accused of fraud? We deliver strategic, detail-driven representation to defend your rights and safeguard your future.",
-    slug: "fraud",
+      "Support for clients injured in auto accidents, including guidance through the claims process and help pursuing fair compensation.",
+    slug: "auto-accident",
   },
   {
-    title: "Injunctions",
+    id: 3,
+    title: "Bicycle Accident",
     description:
-      "We help clients obtain or defend against injunctions, ensuring your safety, property, and legal rights are fully protected.",
-    slug: "injunctions",
+      "Representation for cyclists hurt by negligent drivers, with clear direction on how to move forward with a claim.",
+    slug: "bicycle-accident",
   },
   {
+    id: 4,
     title: "Truck Accidents",
     description:
-      "Truck accidents can cause serious injury. We guide you through claims, protect your rights, and pursue maximum recovery.",
+      "Protection for clients after serious truck accidents, focused on preserving rights and pursuing the recovery they deserve.",
     slug: "truck-accidents",
   },
   {
+    id: 5,
     title: "Motorcycle Accidents",
     description:
-      "Motorcycle crashes can be life-changing. Our team fights for your rights, guiding you through claims and ensuring you get the justice you deserve.",
+      "Assistance for injured riders, from navigating the claims process to seeking full and fair compensation.",
     slug: "motorcycle-accidents",
   },
   {
+    id: 6,
+    title: "Uber, UberEats And Lyft Accident",
+    description:
+      "Help for individuals injured in rideshare-related accidents, including support in seeking compensation.",
+    slug: "uber-ubereats-lyft-accident",
+  },
+  {
+    id: 7,
+    title: "Slip, Trip And Fall",
+    description:
+      "Guidance for clients injured in slip-trip-and-fall incidents, ensuring they understand their rights and available options.",
+    slug: "slip-trip-fall",
+  },
+  {
+    id: 8,
+    title: "Premises Liability",
+    description:
+      "Representation for injuries caused by unsafe property conditions, with strategic support through each step of the claim.",
+    slug: "premises-liability",
+  },
+  {
+    id: 9,
     title: "Dog Bites",
     description:
-      "Dog bite injuries can be serious. Our experienced team fights to hold owners accountable and secure the recovery you deserve.",
+      "Assistance for clients hurt in dog bite incidents, including pursuing compensation and protecting their rights.",
     slug: "dog-bites",
   },
   {
+    id: 10,
+    title: "Medical Malpractice",
+    description:
+      "Support for individuals harmed by medical errors, with a focus on securing compensation for recovery.",
+    slug: "medical-malpractice",
+  },
+  {
+    id: 11,
+    title: "Products Liability",
+    description:
+      "Representation for clients injured by defective or dangerous products, along with help building a strong claim.",
+    slug: "products-liability",
+  },
+  {
+    id: 12,
+    title: "Wrongful Death",
+    description:
+      "When a friend or family member passes away due to someone else’s negligence, our priority is to secure critical evidence, open a thorough investigation, and protect your family's right to justice.",
+    slug: "wrongful-death",
+  },
+  {
+    id: 13,
     title: "Fatal Accidents",
     description:
       "When negligence causes an accidental death, we help families understand their rights, investigate the case, and pursue the compensation they deserve.",
     slug: "fatal-accidents",
-  },
-  {
-    title: "Wrongful Death",
-    description:
-      "When a friend or family member passes away due to someone else’s negligence, our priority is to secure critical evidence, open a thorough investigation, and protect your family’s right to justice.",
-    slug: "wrongful-death",
   },
 ];
 

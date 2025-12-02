@@ -69,7 +69,7 @@ const HeroSection = () => {
       <div>
         <div className="max-w-[1640px] mx-auto px-8  w-full  pt-10 lg:pt-20 xl:pt-32">
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 absolute md:bottom-[-20%]  ">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 absolute md:bottom-[-20%]  ">
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
                 <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
@@ -87,23 +87,35 @@ const HeroSection = () => {
                   <MdOutlinePersonalInjury />
                 </div>
                 <h4 className="text-lg md:text-xl  font-semibold pt-2">
-                  Proven Results & Experience
+                  Personalized Attention
                 </h4>
                 <p className="text-base  font-normal text-[#666666] ">
-                  Over 15 years of success in personal injury and criminal
-                  defense across Tampa Bay.
+                  Every client is treated like family with honest, one-on-one
+                  guidance.
                 </p>
               </div>
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
-                <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl shadow-[0px_10px_20px_rgba(0,0,0,0.2)]">
+                <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
                 </div>
                 <h4 className="text-lg md:text-xl  font-semibold pt-2">
-                  Proven Results & Experience
+                  24/7 Availability
                 </h4>
                 <p className="text-base  font-normal text-[#666666] ">
-                  Over 15 years of success in personal injury and criminal
-                  defense across Tampa Bay.
+                  We’re here day or night to protect your rights when it matters
+                  most.
+                </p>
+              </div>
+              <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
+                <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
+                  <MdOutlinePersonalInjury />
+                </div>
+                <h4 className="text-lg md:text-xl  font-semibold pt-2">
+                  Award-Winning Team
+                </h4>
+                <p className="text-base  font-normal text-[#666666] ">
+                  Recognized by The National Trial Lawyers and Super Lawyers
+                  Rising Stars.
                 </p>
               </div>
             </div>
