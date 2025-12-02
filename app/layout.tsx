@@ -16,7 +16,7 @@ const merriweather = Merriweather({
 export const metadata: Metadata = {
   title: "McCulloch Law P.A",
   description: "McCulloch Law P.A website",
-  metadataBase: new URL("https://www.mccullochlawpa.vercel.app"),
+  metadataBase: new URL("https://mccullochlawpa-website.vercel.app"),
   alternates: {
     canonical: "/",
     languages: {
