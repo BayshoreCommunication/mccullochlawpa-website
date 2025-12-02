@@ -7,7 +7,7 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import GetAllPostData from "@/lib/GetPostData";
 
-function extractTextFromHtml(htmlString) {
+function extractTextFromHtml(htmlString: string): string {
   return htmlString.replace(/<\/?[^>]+(>|$)/g, "");
 }
 
@@ -18,7 +18,7 @@ export default async function Blog() {
       ?.filter((blog: any) => blog.published === true)
       ?.slice(0, 4) || [];
   
-      
+
   return (
     <section className="w-full px-8 py-8 md:py-16">
       <div className="max-w-[1640px] mx-auto">
