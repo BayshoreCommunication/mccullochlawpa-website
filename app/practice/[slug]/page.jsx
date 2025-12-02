@@ -86,10 +86,10 @@ Personal Injury and Criminal Defense"
               {servicesDetails?.map((services, index) => (
                 <div key={index} className="">
                   <Image
-                    src="{services?.image}"
+                    src={services?.image}
                     alt={services?.title}
                     width={1000}
-                    height={1000}
+                    height={500}
                   ></Image>
                   <div className="mt-5 text-base">
                     {parse(services?.mainDescription)}
