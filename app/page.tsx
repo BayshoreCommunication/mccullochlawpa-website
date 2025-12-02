@@ -3,10 +3,10 @@ import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 import Services from "@/components/home/Services";
 import Testimonials from "@/components/shared/Testimonials";
-import Case from "@/components/home/Case";
 import Expect from "@/components/home/Expect";
 import Video from "@/components/home/Video";
 import Blog from "@/components/shared/Blog";
+import CaseSection from "@/components/home/CaseSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <Services />
       <Testimonials />
-      <Case />
+      <CaseSection />
       <Expect />
       <Video />
       <Blog />
