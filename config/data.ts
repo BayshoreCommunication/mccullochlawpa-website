@@ -259,7 +259,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
                       typically defined as a strike, and a conviction can result in
                       penalties of up to five years in prison.
                     </p>
-                  </div>J   
+                  </div>
     `,
 
     image: "/images/practice/Assault.png",
