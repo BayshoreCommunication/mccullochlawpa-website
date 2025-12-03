@@ -2,6 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import Reveal from "@/components/motion/Reveal";
 import { memo, useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
@@ -34,16 +35,26 @@ const HeroSection = () => {
           <div className="relative">
             <div className="w-full flex flex-col md:flex-row items-start justify-between gap-8">
               <div className="flex flex-col gap-4 max-w-2xl w-full mb-14 lg:mb-20 xl:mb-24">
+              <Reveal y={100} opacityFrom={0} duration={3}>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-start leading-snug md:leading-tight max-w-lg">
                   Injured? Arrested? We can help.
                 </h1>
+
+                </Reveal>
+                <Reveal y={100} opacityFrom={0} duration={2}>
                 <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-start leading-snug md:leading-tight">
                   Trusted & Experienced Legal Representation Across Tampa Bay
                 </h3>
+                </Reveal>
+
+                <Reveal y={100} opacityFrom={0} duration={2}>
                 <p className="text-base font-normal text-white text-start leading-snug md:leading-tight max-w-lg">
                   Justice starts with a lawyer who listens, understands, and
                   fights relentlessly for your rights.
                 </p>
+                </Reveal>
+
+                <Reveal y={100} opacityFrom={0} duration={3}>
                 <div>
                   <Link
                     href=""
@@ -52,6 +63,7 @@ const HeroSection = () => {
                     Schedule A Consultation <IoIosArrowForward />
                   </Link>
                 </div>
+                </Reveal>
               </div>
               <div className="w-full">
                 <Image
@@ -70,6 +82,8 @@ const HeroSection = () => {
         <div className="max-w-[1640px] mx-auto px-8  w-full  pt-10 lg:pt-20 xl:pt-32">
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 absolute md:bottom-[-20%]  ">
+
+            <Reveal y={100} opacityFrom={0} duration={4}>
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
                 <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
@@ -82,6 +96,9 @@ const HeroSection = () => {
                   defense across Tampa Bay.
                 </p>
               </div>
+              </Reveal>
+
+              <Reveal y={100} opacityFrom={0} duration={4}>
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
                 <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
@@ -94,6 +111,8 @@ const HeroSection = () => {
                   guidance.
                 </p>
               </div>
+              </Reveal>
+              <Reveal y={100} opacityFrom={0} duration={4}>
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
                 <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
@@ -106,6 +125,8 @@ const HeroSection = () => {
                   most.
                 </p>
               </div>
+              </Reveal>
+              <Reveal y={100} opacityFrom={0} duration={4}>
               <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)]">
                 <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                   <MdOutlinePersonalInjury />
@@ -118,6 +139,8 @@ const HeroSection = () => {
                   Rising Stars.
                 </p>
               </div>
+
+              </Reveal>
             </div>
           </div>
         </div>

@@ -33,12 +33,13 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-full relative">
       {/* ================= TOP BAR ================= */}
-      <div className="w-full bg-white text-gray-700 border-b ">
+      <div className="w-full bg-white text-gray-700 border-b">
         <div className="max-w-[1640px] mx-auto px-8 flex justify-between items-center text-sm">
+          
           {/* Left Phone Section */}
-          <div className=" flex items-center gap-4">
+          <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
               <IoIosCall className="text-[#BA8E2D]" />
               <span className="font-medium">(813) 444-2817</span>
@@ -46,8 +47,7 @@ const Navbar: React.FC = () => {
 
             {/* Center Text */}
             <p className="hidden md:block text-gray-600">
-              Call a law firm that cares, available 24/7 for a free
-              consultation.
+              Call a law firm that cares, available 24/7 for a free consultation.
             </p>
           </div>
 
@@ -69,7 +69,8 @@ const Navbar: React.FC = () => {
             : "relative bg-white"
         }`}
       >
-        <div className="max-w-[1640px] mx-auto px-8 py-4 flex justify-between items-center">
+        <div className="max-w-[1640px] mx-auto px-8 py-4 flex justify-between items-center relative">
+          
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -103,29 +104,29 @@ const Navbar: React.FC = () => {
           >
             {mobileOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
+
+          {/* ================= MOBILE MENU (Absolute Positioned) ================= */}
+          {mobileOpen && (
+            <div className="md:hidden absolute top-full left-0 w-full bg-white px-8 py-4 space-y-4 border-t shadow z-40">
+              {navItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block ${
+                    pathname === item.href ? "text-yellow-700" : "text-gray-700"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 
-      {/* Spacer to avoid layout shift */}
+      {/* Spacer to prevent layout shift */}
       {isSticky && <div className="h-[80px]" />}
-
-      {/* ================= MOBILE MENU ================= */}
-      {mobileOpen && (
-        <div className="md:hidden bg-white px-8 py-4 space-y-4 border-t shadow">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={() => setMobileOpen(false)}
-              className={`block ${
-                pathname === item.href ? "text-yellow-700" : "text-gray-700"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </div>
-      )}
     </div>
   );
 };

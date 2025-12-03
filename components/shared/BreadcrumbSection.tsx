@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Reveal from "@/components/motion/Reveal";
 
 interface BreadcrumbSectionProps {
   title: string;
@@ -31,6 +32,7 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
       <div className="absolute inset-0 bg-[#0d2c3b]/70" />
 
       {/* Content */}
+      <Reveal y={100} opacityFrom={0} duration={3}>
       <div className="relative z-10 text-center max-w-5xl px-6">
         <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
           {title}
@@ -40,6 +42,7 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
           {subtitle}
         </p>
       </div>
+      </Reveal>
     </section>
   );
 };

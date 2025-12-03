@@ -15,17 +15,17 @@ export default function PersonalInjury() {
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <p className="text-base font-normal text-[#666666] mb-4 inline-block border-b-1 border-[#BA8E2D] pb-2">
                 Practice Areas
               </p>
             </Reveal>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
                 Personal Injury
               </h2>
             </Reveal>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <p className="text-base text-center font-normal text-[#666666] mt-3 ">
                 We help clients navigate personal injury claims with clear
                 guidance, strong advocacy, and a focus on securing the
@@ -38,7 +38,7 @@ export default function PersonalInjury() {
         {/* Service Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {PersonalInjuryServices.map((service, index) => (
-            <Reveal key={index} y={16} opacityFrom={0}>
+            <Reveal key={index} y={100} opacityFrom={0} duration={3}>
               <Link
                 href={`/practice/${service?.slug}`}
                 className="block h-full"
