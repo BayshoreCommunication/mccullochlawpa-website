@@ -946,18 +946,18 @@ export const CriminalInjuryServices: CriminalInjury[] = [
       "Facing a criminal charge can be overwhelming. We guide you through the legal process, protect your rights, and build a strong defense to pursue the best possible outcome.",
     mainDescription: `
      <div className="flex flex-col gap-6">
-  {/* Title */}
+  
   <h2 className="text-2xl  font-bold text-black leading-snug">
     Do I Need A Criminal Justice Attorney?
   </h2>
 
-  {/* Intro */}
+  
   <p className="text-lg leading-relaxed text-gray-700">
     After being accused of a crime, you have the right to a criminal justice attorney. 
     Criminal justice attorneys don’t solely provide representation in court. At McCulloch Law P.A. in Tampa, FL, we guide you through the legal process and jargon, help cope with the emotions associated with a criminal charge, negotiate deals, gather witnesses and evidence, and more.
   </p>
 
-  {/* Coverage */}
+  
   <h3 className="text-xl font-semibold text-black mt-4">
     What Do Criminal Justice Attorneys Cover?
   </h3>
@@ -965,7 +965,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Our criminal justice attorney at McCulloch Law P.A. in Tampa, FL is equipped to take on an array of criminal defense cases. From misdemeanors to felonies, we are experts on Florida law and what it takes to get the best outcome possible.
   </p>
 
-  {/* Expertise List */}
+  
   <h3 className="text-xl font-semibold text-black mt-4">
     Explore Our Areas Of Criminal Justice Expertise
   </h3>
@@ -1042,7 +1042,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     </li>
   </ul>
 
-  {/* Contact Info */}
+  
   <h3 className="text-xl font-semibold text-black mt-4">
     Are You Looking for the Best Criminal Justice Attorney in Tampa FL?
   </h3>
@@ -1050,7 +1050,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Then look no further. At McCulloch Law P.A. in Tampa, FL we dedicate our time to select clients, ensuring the highest-quality criminal justice representation. From DUI to personal injury, we’re here for you. Contact us today for a free and confidential consultation.
   </p>
 
-  {/* More Info */}
+  
   <p className="text-lg leading-relaxed text-gray-700">
     <a href="#" className="text-primary ">
       More Information: What You Need To Know If You’ve Been Arrested In Florida
@@ -1841,12 +1841,12 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-3">
 
-  {/* Title */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Misdemeanors
   </h2>
 
-  {/* Intro */}
+  
   <p className="text-lg leading-relaxed text-gray-700">
     McCulloch Law, P.A. has years of experience in handling almost every kind of misdemeanor charge.
     As a former prosecutor, Drew McCulloch prosecuted thousands of cases—misdemeanor and felony.
@@ -1862,7 +1862,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     or lesser included offenses.
   </p>
 
-  {/* Section */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     What You Should Know About Misdemeanors And Felonies In Florida
   </h3>
@@ -1881,7 +1881,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     prevent you from sealing or expunging your record.
   </p>
 
-  {/* List */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     McCulloch Handles All Misdemeanors Such As:
   </h3>
@@ -1903,7 +1903,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>And many more</li>
   </ul>
 
-  {/* Section */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Misdemeanor vs. Felony
   </h3>
@@ -1921,7 +1921,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Different judges have different sentencing styles, so an experienced local attorney is crucial.
   </p>
 
-  {/* Punishments */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Punishments
   </h3>
@@ -1940,7 +1940,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>$1,000+ fine</li>
   </ul>
 
-  {/* Probation */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Probation and Jail
   </h3>
@@ -1950,7 +1950,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     can also be split between jail and probation, and violations may require completing the remaining jail time.
   </p>
 
-  {/* Sentences */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Consecutive vs. Concurrent Sentences
   </h3>
@@ -1961,7 +1961,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     364 days total or 728 days depending on the ruling.
   </p>
 
-  {/* Statutes */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Statute of Limitations
   </h3>
@@ -1970,7 +1970,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Florida’s statute of limitations is one year for 2nd degree misdemeanors and two years for 1st degree misdemeanors, with exceptions.
   </p>
 
-  {/* Serious Effects */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Serious Ramifications
   </h3>
@@ -1980,7 +1980,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Some misdemeanors (DUI, battery, petit theft, DWLSR, prostitution) can be upgraded to felonies based on prior convictions.
   </p>
 
-  {/* Habitual Offenders */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Habitual Misdemeanor Offenders (Florida Statute 775.0837)
   </h3>
@@ -2004,12 +2004,12 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-3">
 
-  {/* Title */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Robbery?
   </h2>
 
-  {/* Intro */}
+  
   <p className="text-lg leading-relaxed text-gray-700">
     Robbery is the action of taking another person’s money or property with the intent to deprive the
     rightful owner, during which there is force, assault, or instilling fear. Depending on the severity
@@ -2018,7 +2018,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     forward with your life.
   </p>
 
-  {/* Carjacking */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     The Consequences Of Carjacking
   </h3>
@@ -2028,7 +2028,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     details of the case.
   </p>
 
-  {/* Home-Invasion Robbery */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     The Consequences Of Home-Invasion Robbery
   </h3>
@@ -2038,7 +2038,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     the accused could face up to thirty years in prison, plus probation and fines.
   </p>
 
-  {/* Sudden Snatching */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     The Consequences Of Robbery By Sudden Snatching
   </h3>
@@ -2048,7 +2048,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     while the victim becomes aware of the act.
   </p>
 
-  {/* Resisting Recovery */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     The Consequences Of Resisting Recovery Of Stolen Property
   </h3>
@@ -2058,7 +2058,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     the individual may face both offenses concurrently.
   </p>
 
-  {/* Call to Action */}
+  
   <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
     Are You Looking for a Criminal Defense Attorney in Tampa?
   </h3>
@@ -2081,7 +2081,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
 
-  {/* Petit Theft */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Petit Theft?
   </h2>
@@ -2095,7 +2095,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     and restitution.
   </p>
 
-  {/* Grand Theft */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Grand Theft?
   </h2>
@@ -2105,7 +2105,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     result in prison time, probation, fines, restitution, and a permanent criminal record.
   </p>
 
-  {/* Dealing in Stolen Property */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     The Consequences Of Dealing In Stolen Property
   </h2>
@@ -2115,7 +2115,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     among other penalties.
   </p>
 
-  {/* Retail Theft */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Retail Theft?
   </h2>
@@ -2125,7 +2125,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     the intent to deprive the merchant of the goods.
   </p>
 
-  {/* Theft of Communication Services */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Theft Of Communication Services?
   </h2>
@@ -2136,7 +2136,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Consequences range from a first-degree misdemeanor to a third-degree felony.
   </p>
 
-  {/* False Verification to Pawnbroker */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     The Consequences Of False Verification Of Ownership Or False ID To A Pawnbroker
   </h2>
@@ -2145,7 +2145,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     pawn transaction. It is a felony that may lead to jail time, probation, and significant fines.
   </p>
 
-  {/* Stolen Credit/Debit Card */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     The Consequences Of Unlawful Possession Of A Stolen Credit/Debit Card
   </h2>
@@ -2154,7 +2154,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     up to 5 years in prison.
   </p>
 
-  {/* Exploitation of Elderly/Disabled */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     The Consequences Of The Exploitation Of An Elderly Person/Disabled Adult
   </h2>
@@ -2164,7 +2164,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     the amount taken from the victim.
   </p>
 
-  {/* Failing to Return Leased Property */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     The Consequences Of Failing To Return Hired/Leased Property
   </h2>
@@ -2174,7 +2174,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     misdemeanor or felony.
   </p>
 
-  {/* CTA */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Are You Looking for a Criminal Defense Attorney in Tampa?
   </h2>
@@ -2197,7 +2197,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
 
-  {/* Title */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     How Can I Seal or Expunge My Record?
   </h2>
@@ -2205,7 +2205,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Don’t let your mistakes rule your life.
   </p>
 
-  {/* Intro */}
+  
   <p>
     There is a process to sealing or expunging your record. For starters, you’ll need to obtain
     a Certificate of Eligibility in order to petition the court. This means proper legal
@@ -2217,7 +2217,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     cloud hanging over your head, please reach out to our experienced team at McCulloch Law, P.A.
   </p>
 
-  {/* Sealing a Record */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Sealing a Record
   </h2>
@@ -2227,7 +2227,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     officials can still view information relevant to their duties.
   </p>
 
-  {/* Expunging a Record */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Expunging a Record
   </h2>
@@ -2250,7 +2250,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
 
-  {/* Aggravated Sexual Battery */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Aggravated Sexual Battery
   </h2>
@@ -2271,7 +2271,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     that can be committed in Florida.
   </p>
 
-  {/* Aggravating Circumstances */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
     Aggravating Circumstances
   </h3>
@@ -2285,7 +2285,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>The offender is a law enforcement officer or a person in authority.</li>
   </ul>
 
-  {/* Lewd or Lascivious Battery */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Lewd Or Lascivious Battery
   </h2>
@@ -2301,13 +2301,13 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>Encourages, forces, or entices a child in this age range to engage in sexual acts.</li>
   </ul>
 
-  {/* Strict Liability */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Strict Liability Crime</h3>
   <p>
     Lewd or Lascivious Battery is a strict liability crime, meaning ignorance of the child's age is not a defense.
   </p>
 
-  {/* Penalties */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
     Penalties For Lewd Or Lascivious Battery
   </h3>
@@ -2323,21 +2323,21 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     A person sentenced is ineligible for gain time and must serve their sentence day-for-day.
   </p>
 
-  {/* Civil Consequences */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Civil Consequences</h3>
   <p>
     A person convicted will be designated a sexual offender and must comply with registration
     laws for life.
   </p>
 
-  {/* Romeo and Juliet */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Romeo And Juliet Exception</h3>
   <p>
     Certain individuals may petition the court to avoid sex offender registry requirements,
     but strict criteria must be met.
   </p>
 
-  {/* Lewd or Lascivious Molestation */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Lewd Or Lascivious Molestation
   </h2>
@@ -2347,7 +2347,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     or entices the child to touch another person in such a way.
   </p>
 
-  {/* Definition */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
     Definition Of “Lewd Or Lascivious”
   </h3>
@@ -2355,19 +2355,19 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     Defined as wicked, lustful, unchaste, licentious, or sensual intent.
   </p>
 
-  {/* Strict Liability */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Strict Liability Crime</h3>
   <p>
     Ignorance of the child’s age or arguments of consent are not valid defenses.
   </p>
 
-  {/* Penalties */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
     Penalties For Lewd Or Lascivious Molestation
   </h3>
   <p>The penalties depend on whether the offender was an adult or minor, and whether the child was under 12.</p>
 
-  {/* Lewd or Lascivious Conduct */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Lewd Or Lascivious Conduct
   </h2>
@@ -2376,7 +2376,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     soliciting the child to commit such an act.
   </p>
 
-  {/* Exhibition */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Lewd Or Lascivious Exhibition
   </h2>
@@ -2384,7 +2384,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     This criminalizes intentional sexual performance in the presence of a child under 16.
   </p>
 
-  {/* Voyeurism */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">Voyeurism</h2>
   <p>
     Voyeurism involves secretly observing someone in a private setting for sexual purposes.
@@ -2396,7 +2396,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     and a $1,000 fine. Records cannot be sealed.
   </p>
 
-  {/* Failure To Register */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Failure To Register As A Sexual Offender
   </h2>
@@ -2411,7 +2411,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     A Third Degree Felony punishable by up to 5 years in prison, 5 years probation, and a $5,000 fine.
   </p>
 
-  {/* Residency Restrictions */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Unlawful Residency By A Sex Offender
   </h2>
@@ -2420,7 +2420,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     or places children frequent. Some counties impose stricter rules.
   </p>
 
-  {/* CTA */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Are You Looking for a Sex Crime Attorney in Tampa?
   </h2>
@@ -2442,7 +2442,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
 
-  {/* Section: What Is Probation? */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Probation?
   </h2>
@@ -2463,7 +2463,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     probation lawyer in Tampa on their side, you can get the best outcome possible.
   </p>
 
-  {/* Section: Conditions of Probation */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Are The Conditions Of Probation?
   </h3>
@@ -2477,7 +2477,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>Financially support dependents</li>
   </ul>
 
-  {/* Section: Probation Violation */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Does Probation Violation Include?
   </h3>
@@ -2490,7 +2490,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     <li>Bond Reduction Motion</li>
   </ul>
 
-  {/* Section: Call to Action */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     Are You Looking for a Probation Lawyer in Tampa FL?
   </h3>
@@ -2514,7 +2514,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     mainDescription: `
     <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
 
-  {/* Section: What Is Improper Exhibition */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     What Is Improper Exhibition Or Discharge Of A Weapon Or Firearm?
   </h2>
@@ -2535,7 +2535,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     why you need an experienced lawyer to guide you through the legal process.
   </p>
 
-  {/* Section: Illegal Possession */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     The Consequences Of Illegal Possession Of A Firearm
   </h3>
@@ -2547,7 +2547,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     subject to the consequences of a third-degree felony.
   </p>
 
-  {/* Section: Unlicensed Carrying */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     The Consequences Of Unlicensed Carrying Of A Concealed Weapon Or Firearm Or A Felon In Possession Of A Firearm
   </h3>
@@ -2559,7 +2559,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     firearm is in a place in which the felon has control.
   </p>
 
-  {/* Section: Deadly Missile */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     The Consequences Of Shooting Or Throwing A Deadly Missile
   </h3>
@@ -2570,7 +2570,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     can lead to prison.
   </p>
 
-  {/* Section: Destructive Device */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     The Consequences Of Possession Or Discharge Of A Destructive Device
   </h3>
@@ -2582,7 +2582,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     destruction, as defined by Florida law. Consequences vary based on severity.
   </p>
 
-  {/* Section: Aggravated Battery */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Aggravated Battery With A Deadly Weapon?
   </h3>
@@ -2594,12 +2594,12 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     severity.
   </p>
 
-  {/* Section: Additional Information */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Additional Information
   </h2>
 
-  {/* Aggravated Assault */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Aggravated Assault With A Deadly Weapon?
   </h3>
@@ -2610,7 +2610,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     defendant may face jail time, probation, and heavy fines.
   </p>
 
-  {/* Armed Robbery */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Armed Robbery Or Burglary With A Firearm?
   </h3>
@@ -2621,7 +2621,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     representation essential.
   </p>
 
-  {/* Armed Burglary */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Armed Burglary Carrying A Concealed Firearm?
   </h3>
@@ -2632,7 +2632,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     probation, and significant fines.
   </p>
 
-  {/* Armed Possession of Drugs */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     The Consequences Of Armed Possession Of Illegal Drugs
   </h3>
@@ -2643,7 +2643,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     quantity and firearm type can increase sentencing.
   </p>
 
-  {/* Armed Kidnapping */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Armed Kidnapping?
   </h3>
@@ -2654,7 +2654,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     minors.
   </p>
 
-  {/* Attempted Manslaughter */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Attempted Manslaughter?
   </h3>
@@ -2665,7 +2665,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     up to five years in prison and substantial fines.
   </p>
 
-  {/* Attempted Murder */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Attempted Murder?
   </h3>
@@ -2675,7 +2675,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     is still a felony punishable by significant prison time.
   </p>
 
-  {/* VOP with Weapon */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is A Violation Of Probation (When The Underlying Offense Involved A Weapon Or Firearm)?
   </h3>
@@ -2686,7 +2686,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     eligibility for expungement.
   </p>
 
-  {/* Gun Trafficking */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Is Gun Trafficking?
   </h3>
@@ -2697,7 +2697,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     representation is crucial.
   </p>
 
-  {/* Federal Firearms Violations */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Are Federal Firearms Violations?
   </h3>
@@ -2708,7 +2708,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     steep consequences.
   </p>
 
-  {/* Drug-Related Firearms Violations */}
+  
   <h3 className="text-2xl md:text-3xl font-bold text-black">
     What Are Drug-Related Firearms Violations?
   </h3>
@@ -2718,7 +2718,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     that brings severe penalties, including prison time, probation, and fines.
   </p>
 
-  {/* Final CTA */}
+  
   <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
     Are You in Need of a Weapons and Firearms Lawyer in Tampa?
   </h2>
@@ -2942,12 +2942,12 @@ export const CriminalInjuryServices: CriminalInjury[] = [
       "Representation for speeding and high-speed driving violations, helping clients avoid severe penalties and protect their driving record.",
     mainDescription: `
     <div className="flex flex-col gap-6 bg-white p-8 rounded-lg shadow-md">
-  {/* Title */}
+  
   <h2 className="text-2xl lg:text-3xl font-bold text-gray-800">
     Speeding and High-Speed Violations
   </h2>
 
-  {/* Intro */}
+  
   <p className="text-lg text-gray-700 leading-relaxed">
     Speeding and high-speed violations may seem minor at first glance, but they can carry serious and long-lasting consequences.
   </p>
@@ -2960,7 +2960,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     High-speed violations are taken very seriously in Florida. Law enforcement and prosecutors often pursue these cases aggressively due to the heightened danger associated with extreme speeds. A conviction can affect your driving privileges, employment opportunities, and overall quality of life.
   </p>
 
-  {/* Defense Section */}
+  
   <h3 className="text-xl lg:text-2xl font-semibold text-gray-800">
     Defending Speeding & High-Speed Cases
   </h3>
@@ -2968,7 +2968,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
     With an experienced attorney from <span className="font-medium text-primary">McCulloch Law, P.A.</span> by your side, you can challenge the charges, negotiate penalties, and work toward the most favorable result possible. Our team examines every detail—from radar calibration to officer procedure—to ensure your rights were not violated.
   </p>
 
-  {/* Call to Action */}
+  
   <h3 className="text-xl lg:text-2xl font-semibold text-gray-800">
     Protect Your Record & Your Future
   </h3>
