@@ -1,6 +1,6 @@
 export default async function GetAllPostData() {
   const bloData = await fetch(
-    "https://backend-jamichek-chiropractic-welln.vercel.app/site/blog",
+    "https://backend-mccullochlawpa.vercel.app/site/blog",
     {
       next: { revalidate: 200 },
     }
