@@ -1,10 +1,10 @@
 import React from "react";
 import parse from "html-react-parser";
-import Head from "next/head";
 import { notFound } from "next/navigation";
 import { PersonalInjuryServices, CriminalInjuryServices } from "@/config/data";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
 import Image from "next/image";
+import Link from "next/link";
 
 const css = `
   h1 { font-size: 40px; font-weight: 900; padding-top: 10px; }
@@ -21,9 +21,7 @@ export async function generateMetadata({ params }) {
     PersonalInjuryServices.find((s) => s.slug === params.slug) ||
     CriminalInjuryServices.find((s) => s.slug === params.slug);
 
-  if (!service) {
-    return {};
-  }
+  if (!service) return {};
 
   return {
     title: service.title,
@@ -34,7 +32,7 @@ export async function generateMetadata({ params }) {
       images: service.image,
       url: `https://mccullochlawpa-website.vercel.app/practice/${service.slug}`,
       type: "article",
-      site_name: "Melamed Law",
+      site_name: "McCulloch Law",
     },
   };
 }
@@ -44,37 +42,40 @@ const page = async ({ params }) => {
     PersonalInjuryServices.find((s) => s.slug === params.slug) ||
     CriminalInjuryServices.find((s) => s.slug === params.slug);
 
-  if (!serviceDetails) {
-    notFound();
-  }
+  if (!serviceDetails) notFound();
 
   return (
     <>
       <style>{css}</style>
+
       <BreadcrumbSection
         title="Explore the Services We Offer in Personal Injury and Criminal Defense"
-        subtitle="McCulloch Law, P.A. offers a focused range of services designed to support clients during some of the most challenging moments of their lives. The firm handles both personal injury and criminal defense matters with the same level of care, preparation, and attention to detail. Every case begins with understanding your situation, explaining what to expect, and building a strategy that fits your needs. Whether you’ve been injured in an accident or are facing a criminal charge, the goal is to provide steady guidance, clear communication, and strong representation from start to finish."
+        subtitle="McCulloch Law, P.A. offers a focused range of services designed to support clients during some of the most challenging moments of their lives. The firm handles both personal injury and criminal defense matters with the same level of care and preparation."
       />
 
       <section className="w-full px-8 py-8 md:py-16 bg-white">
         <div className="max-w-[1640px] mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-6 gap-6">
-            {/* Main Content */}
+
+            {/* -------- MAIN CONTENT -------- */}
             <div className="md:col-span-4 flex flex-col items-start justify-start mb-8 w-full">
               <Image
                 src={serviceDetails.image}
                 alt={serviceDetails.title}
                 width={1000}
                 height={500}
+                className="rounded-md"
               />
+
               <div className="mt-5 text-base">
                 {parse(serviceDetails.mainDescription)}
               </div>
             </div>
 
-            {/* Sidebar */}
+            {/* -------- SIDEBAR -------- */}
             <div className="md:col-span-2 flex flex-col items-start gap-5 justify-start mb-8 md:pl-8 w-full">
-              {/* Search */}
+
+              {/* Search Box */}
               <div className="bg-[#F3F3F3] p-6 w-full">
                 <input
                   type="text"
@@ -83,51 +84,48 @@ const page = async ({ params }) => {
                 />
               </div>
 
-              {/* Personal Injury */}
+              {/* PERSONAL INJURY LINKS */}
               <div className="bg-[#F3F3F3] p-6 w-full">
-                <h2 className="text-2xl font-bold text-[#333] mb-2">
-                  Personal Injury
-                </h2>
+                <h2 className="text-2xl font-bold text-[#333] mb-2">Personal Injury</h2>
                 <div className="w-24 h-[3px] bg-[#C7A34B] mb-6"></div>
+
                 <div className="space-y-6">
                   {PersonalInjuryServices.map((item, idx) => (
-                    <div
+                    <Link
                       key={idx}
+                      href={`/practice/${item.slug}`}
                       className="group flex items-center gap-3 cursor-pointer transition-all duration-200"
                     >
-                      <span className="text-xl group-hover:text-[#BA8E2D] transition-colors duration-200">
-                        »
-                      </span>
-                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D] transition-colors duration-200">
+                      <span className="text-xl group-hover:text-[#BA8E2D]">»</span>
+                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D]">
                         {item.title}
                       </p>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
 
-              {/* Criminal Injury */}
+              {/* CRIMINAL INJURY LINKS */}
               <div className="bg-[#F3F3F3] p-6 w-full">
-                <h2 className="text-2xl font-bold text-[#333] mb-2">
-                  Criminal Injury
-                </h2>
+                <h2 className="text-2xl font-bold text-[#333] mb-2">Criminal Injury</h2>
                 <div className="w-24 h-[3px] bg-[#C7A34B] mb-6"></div>
+
                 <div className="space-y-6">
                   {CriminalInjuryServices.map((item, idx) => (
-                    <div
+                    <Link
                       key={idx}
+                      href={`/practice/${item.slug}`}
                       className="group flex items-center gap-3 cursor-pointer transition-all duration-200"
                     >
-                      <span className="text-xl group-hover:text-[#BA8E2D] transition-colors duration-200">
-                        »
-                      </span>
-                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D] transition-colors duration-200">
+                      <span className="text-xl group-hover:text-[#BA8E2D]">»</span>
+                      <p className="text-base font-semibold text-[#333] group-hover:text-[#BA8E2D]">
                         {item.title}
                       </p>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>
+
             </div>
           </div>
         </div>
