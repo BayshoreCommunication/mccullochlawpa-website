@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
     { href: "/", label: "Home" },
     { href: "/about", label: "About The Attorney" },
     { href: "/practice", label: "Practice Areas" },
-    { href: "/videos", label: "Videos" },
+    // { href: "/videos", label: "Videos" },
     { href: "/testimonials", label: "Testimonials" },
     { href: "/blogs", label: "Blogs" },
     { href: "/contact", label: "Contact Us" },
