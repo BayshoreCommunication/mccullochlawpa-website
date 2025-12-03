@@ -9,7 +9,7 @@ export default function AboutPageSection() {
   return (
     <section className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
       <div>
-        <Reveal tag="h2" y={16} opacityFrom={0}>
+        <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-6 text-center max-w-5xl mx-auto lg:mb-10">
             What Makes Attorney Drew{" "}
             <span className="text-[#BA8E2D]  font-extrabold">
@@ -23,7 +23,7 @@ export default function AboutPageSection() {
       <div className="grid lg:grid-cols-2 items-start gap-10 md:gap-6">
         {/* Left Image */}
         <div>
-          <Reveal y={20} opacityFrom={0}>
+          <Reveal y={100} opacityFrom={0} duration={3}>
             <div className="rounded-xl overflow-hidden text-center">
               <Image
                 src="/images/about/about.jpg"
@@ -42,7 +42,7 @@ export default function AboutPageSection() {
               </div>
             </div>
           </Reveal>
-          <Reveal y={20} opacityFrom={0}>
+          <Reveal y={100} opacityFrom={0} duration={3}>
             <div className="rounded-xl overflow-hidden text-center mt-12">
               <Image
                 src="/images/about/about-2.png"
@@ -58,7 +58,7 @@ export default function AboutPageSection() {
         {/* Right Content */}
         <div className="flex flex-col">
           <Stagger>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
                 Drew has handled 1000’s of criminal matters and 100s of trials
                 in Florida since 2010. Born and raised in Tampa, Drew attended
@@ -71,7 +71,7 @@ export default function AboutPageSection() {
               </p>
             </Reveal>
 
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
                 Directly after law school, Drew began working as an Assistant
                 State Attorney in Tampa with a focus on jury trial litigation.
@@ -88,7 +88,7 @@ export default function AboutPageSection() {
                 accused in criminal defense cases.
               </p>
             </Reveal>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
                 Personal Injury Attorney / Criminal Justice Attorney Drew
                 continues to remain active in the local legal community. Drew
@@ -102,7 +102,7 @@ export default function AboutPageSection() {
                 community.
               </p>
             </Reveal>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
                 When Drew isn’t in Court, he enjoys spending time with his wife
                 and daughters, playing team sports, participating in local
@@ -110,7 +110,7 @@ export default function AboutPageSection() {
                 back to the community.
               </p>
             </Reveal>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <h4 className="text-black text-2xl text-bold leading-relaxed mb-1">
                 Education
               </h4>
@@ -129,7 +129,7 @@ export default function AboutPageSection() {
                 </li>
               </ul>
             </Reveal>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <h4 className="text-black text-2xl text-bold leading-relaxed mb-1">
                 Work Experience
               </h4>
@@ -145,7 +145,7 @@ export default function AboutPageSection() {
                 </li>
               </ul>
             </Reveal>
-            <Reveal tag="p" y={12} opacityFrom={0.1}>
+            <Reveal tag="p" y={100} opacityFrom={0.1} duration={3}>
               <h4 className="text-black text-2xl text-bold leading-relaxed mb-1">
                 License
               </h4>

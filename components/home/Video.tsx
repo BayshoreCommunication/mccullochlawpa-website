@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { memo, useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
+
+import Reveal from "@/components/motion/Reveal";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
 
@@ -47,10 +49,13 @@ const Video = () => {
               </div>
 
               <div className="flex flex-col gap-4 max-w-3xl w-full  bg-[#BA8E2D] p-10 rounded-md">
+              <Reveal y={100} opacityFrom={0} duration={3}>
                 <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
                   We’re here to defend your rights and help you resolve your
                   legal issues the right way.
                 </h1>
+                </Reveal>
+                <Reveal y={100} opacityFrom={0} duration={3}>
                 <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
                   Clients often come to me during some of the hardest moments of
                   their lives. I focus on listening, understanding what they’re
@@ -60,6 +65,9 @@ const Video = () => {
                   stand with my clients and work toward the strongest outcome
                   possible.
                 </p>
+
+                </Reveal>
+                <Reveal y={100} opacityFrom={0} duration={3}>
                 <div className="mt-5">
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-start leading-snug md:leading-tight">
                     Est. By <br /> Drew McCulloch, Esq.
@@ -68,6 +76,7 @@ const Video = () => {
                     Personal Injury Attorney / Criminal Defense Attorney
                   </p>
                 </div>
+                </Reveal>
               </div>
             </div>
           </div>

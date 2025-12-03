@@ -34,7 +34,7 @@ const ContactForm = () => {
         <div className="max-w-[1640px] mx-auto px-8  w-full  py-10 lg:py-20 ">
           <div className="relative">
             <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-6">
-              <Reveal tag="h2" y={16} opacityFrom={0}>
+              <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="flex flex-col gap-4 max-w-xl w-full  rounded-md">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
                     Contact Us Today. Get in Touch With Drew, Esq.
@@ -118,7 +118,7 @@ const ContactForm = () => {
                   </div>
                 </div>
               </Reveal>
-              <Reveal tag="h2" y={16} opacityFrom={0}>
+              <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="w-full  bg-[#1A1A1A] p-10 rounded-md">
                   {/* Title */}
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">

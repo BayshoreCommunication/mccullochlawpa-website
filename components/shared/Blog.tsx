@@ -24,13 +24,13 @@ export default async function Blog() {
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <p className="text-base font-normal text-[#666666] mb-4">
                 Latest Blogs
               </p>
             </Reveal>
 
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center">
                 Top <span className="text-[#BA8E2D]">Blogs</span> Related To
                 Law, Cases & Consulting
@@ -49,6 +49,8 @@ export default async function Blog() {
                 : blog.description || "Read more about this blog post.";
 
               return (
+
+                <Reveal y={100} opacityFrom={0} duration={3}>
                 <div
                   key={index}
                   className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 h-full cursor-pointer hover:scale-105 duration-200"
@@ -84,6 +86,8 @@ export default async function Blog() {
                     </div>
                   </div>
                 </div>
+
+                </Reveal>
               );
             })
           ) : (

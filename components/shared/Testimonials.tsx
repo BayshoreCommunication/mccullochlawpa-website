@@ -77,12 +77,12 @@ export default function Testimonials() {
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-xl mx-auto">
           <Stagger>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <p className="text-base font-normal text-[#666666] mb-4">
                 Testimonials
               </p>
             </Reveal>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
                 Our Clients Love Us We’ve Earned{" "}
                 <span className="text-[#E72020]">5 Out of 5 Stars</span>
@@ -114,7 +114,7 @@ export default function Testimonials() {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <Reveal y={16} opacityFrom={0}>
+              <Reveal y={100} opacityFrom={0} duration={3}>
                 <div className="bg-[#373333] rounded-2xl shadow-sm hover:shadow-md transition p-6 border border-gray-100 h-full flex flex-col">
                   {/* Review */}
                   <p className="text-sm text-white leading-relaxed">

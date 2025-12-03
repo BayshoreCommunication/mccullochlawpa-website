@@ -2,6 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+
 import { memo, useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { FaFacebook, FaLinkedin } from "react-icons/fa6";
@@ -45,7 +46,7 @@ const ScheduleForm = () => {
         <div className="max-w-[1640px] mx-auto px-8  w-full  py-10 lg:py-20 ">
           <div className="relative">
             <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-6">
-              <Reveal tag="h2" y={16} opacityFrom={0}>
+              <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="flex flex-col gap-4 max-w-xl w-full  rounded-md">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
                     Contact Us Today. Get in Touch With Drew, Esq.

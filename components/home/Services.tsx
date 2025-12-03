@@ -63,12 +63,12 @@ export default function Services() {
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+          <Reveal y={100} opacityFrom={0} duration={3}>
               <p className="text-base font-normal text-[#666666] mb-4">
                 Practice Areas
               </p>
             </Reveal>
-            <Reveal tag="h2" y={16} opacityFrom={0}>
+            <Reveal y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
                 Explore the Services We Offer in Personal Injury and Criminal Defense
               </h2>
@@ -79,7 +79,7 @@ export default function Services() {
         {/* Service Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <Reveal key={service.slug} y={16} opacityFrom={0}>
+            <Reveal key={service.slug} y={100} opacityFrom={0} duration={3}>
               <Link href={`/practice/${service.slug}`} className="block h-full">
                 <div className="group bg-white hover:bg-[#BA8E2D] duration-300 rounded-2xl shadow-sm hover:shadow-md transition p-6 lg:p-10 flex flex-col items-center text-center border border-gray-100 h-full cursor-pointer hover:scale-105 transform ">
                   <div
