@@ -1,108 +1,3 @@
-// export interface Insight {
-//   id: number;
-//   title: string;
-//   description: string;
-//   image: string;
-//   date: string;
-// }
-
-// export const insightsData: Insight[] = [
-//   {
-//     id: 1,
-//     title:
-//       "How Founder-Led Businesses Can Break Free from Stagnation and Scale to $100M and Beyond",
-//     description:
-//       "How Founder-Led Businesses Can Break Free from Stagnation and Scale to $100M and Beyond",
-//     image: "/images/about-us/image 28 (1).png",
-//     date: "Dec 15 2024",
-//   },
-//   {
-//     id: 2,
-//     title: "Scaling Your Business Effectively",
-//     description:
-//       "Discover the key principles for scaling your business while maintaining quality and culture.",
-//     image: "/images/homepage/blog2.png",
-//     date: "Dec 10 2024",
-//   },
-//   {
-//     id: 3,
-//     title: "Leadership in the Digital Age",
-//     description:
-//       "Explore modern leadership strategies that work in today's fast-paced digital environment.",
-//     image: "/images/homepage/blog3.png",
-//     date: "Dec 05 2024",
-//   },
-// ];
-
-// export interface News {
-//   id: number;
-//   title: string;
-//   description: string;
-//   image: string;
-//   date: string;
-//   url: string;
-// }
-
-// export const newsData: News[] = [
-//   {
-//     id: 1,
-//     title: "Innovative Franchise Model Becomes Shwapno's Growth Engine",
-//     description:
-//       "Sabbir Hasan Nasir's franchise innovation at Shwapno turned a debt-burdened retail chain into a national growth engine. By flipping the traditional franchise model and retaining operational control, he pioneered a system that delivers consistent profit while empowering SME investors across Bangladesh.",
-//     image: "/news/Frame90.png",
-//     date: "Jan 15 2024",
-//     url: "https://www.tbsnews.net/economy/corporates/innovative-franchise-model-becomes-shwapnos-growth-engine-aci-logistics-md-sabbir",
-//   },
-//   // {
-//   //   id: 2,
-//   //   title:
-//   //     "The Corporate Sufi of Bangladesh: An Interview with Sabbir Hasan Nasir",
-//   //   description:
-//   //     "The corporate Sufi of Bangladesh, Sabbir Hasan Nasir, blends engineering precision with spiritual depth, transforming his unconventional journey across music, physics, and business into a masterclass in visionary leadership. As the force behind Shwapno's turnaround, he exemplifies how empathy, design thinking, and relentless pursuit of excellence can reshape industries.",
-//   //   image: "/news/Frame91.png",
-//   //   date: "Oct 24 2017",
-//   //   url: "https://futurestartup.com/2017/10/24/an-interview-sabbir-hasan-nasir-executive-directoraci-logistics/",
-//   // },
-//   {
-//     id: 4,
-//     title: "From Engineer to Retail Force: Sabbir's Otobi Transformation",
-//     description:
-//       "Personally requested by Otobi's legendary founder in his final days, Sabbir Hasan Nasir took charge of a struggling legacy; what happened next changed the course of the company. How did an engineer with global corporate experience turn an artist's dream into a regional retail force?",
-//     image: "/news/Frame93.png",
-//     date: "Mar 20 2023",
-//     url: "https://www.thedailystar.net/news-detail-73783",
-//   },
-
-//   {
-//     id: 5,
-//     title: "ACI Ltd Announces Sabbir H Nasir as New Managing Director",
-//     description:
-//       "After transforming Shwapno into the country's most recognized retail brand, Sabbir H Nasir takes on the role of Managing Director. With decades of local and global leadership experience, his next move signals a strategic shift for ACI's retail ambitions.",
-//     image: "/news/Frame94.png",
-//     date: "Jun 10 2023",
-//     url: "https://www.dhakatribune.com/business/345984/aci-ltd-announces-sabbir-h-nasir-as-newmd-of",
-//   },
-//   {
-//     id: 6,
-//     title:
-//       "How Shwapno Heads Towards Full Break-Even: A Masterpiece in Progress",
-//     description:
-//       "Layer by layer, Sabbir H Nasir has painted Shwapno across the map. Brushstrokes of risk, resilience, and reinvention led the company to dominate its competitions. As the outlines of profit begin to take shape, his long-drawn composition nears its boldest form yet.",
-//     image: "/news/Frame95.png",
-//     date: "Sep 05 2023",
-//     url: "https://www.tbsnews.net/economy/corporates/how-shwapno-heads-towards-full-break-even-852371",
-//   },
-//   {
-//     id: 3,
-//     title: "Life Lessons from Sabbir Hasan Nasir: 10 Sharp Insights",
-//     description:
-//       "In this deeply personal feature, Sabbir Hasan Nasir, Executive Director of ACI Logistics and the man behind Shwapno's retail revolution, opens up about the philosophies that shaped his life. From studying under physicist Dr. Jamal Nazrul Islam to designing organizations with empathy and soul, he shares 10 sharp lessons on creativity, growth, and leading with meaning.",
-//     image: "/news/Frame92.png",
-//     date: "Nov 25 2019",
-//     url: "https://futurestartup.com/2019/11/25/life-lessons-sabbir-hasan-nasir-aci-logistics/",
-//   },
-// ];
-
 export interface PersonalInjury {
   id: number;
   title: string;
@@ -121,7 +16,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
      
         <div className="w-full">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black mt-6 mb-6">
+  <h2 className="text-2xl  font-bold text-black mt-6 mb-6">
     Personal Injury Law Firm
   </h2>
 
@@ -154,7 +49,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-4">
+  <h3 className="text-2xl  font-bold text-black mt-10 mb-4">
     Why Hire A Personal Injury Attorney?
   </h3>
 
@@ -197,7 +92,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
     <div className="w-full">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black mt-6 mb-6">
+  <h2 className="text-2xl  font-bold text-black mt-6 mb-6">
     Auto Accidents
   </h2>
 
@@ -233,7 +128,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-4">
+  <h3 className="text-2xl  font-bold text-black mt-10 mb-4">
     Why Hire An Auto Accident Lawyer?
   </h3>
 
@@ -272,7 +167,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black">
+  <h2 className="text-2xl  font-bold text-black">
     Bicycle Accidents
   </h2>
 
@@ -295,7 +190,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Protect Yourself: Wear a Helmet
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -307,7 +202,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     What To Do After a Bicycle Accident
   </h3>
   <ul className="list-disc pl-6 text-lg leading-relaxed text-gray-700">
@@ -326,7 +221,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </ul>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire a Bicycle Accident Lawyer?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -343,7 +238,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Serving the Tampa Bay Area
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -366,7 +261,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     The Lawyer You Need To Call In Tampa, FL After A Trucking Accident
   </h2>
 
@@ -378,7 +273,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     How Common Are Trucking Accidents in Tampa, FL?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -407,7 +302,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </ul>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Do You Need A Truck Accident Attorney?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -439,7 +334,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     When Do You Need To Make A Claim After A Truck Accident Injury?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -460,7 +355,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     What Type Of Compensation Could I Expect After A Truck Crash?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -496,7 +391,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black">
+  <h2 className="text-2xl  font-bold text-black">
     Motorcycle Accidents
   </h2>
 
@@ -518,7 +413,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Protect Yourself: Wear a Helmet
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -529,7 +424,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     What To Do After a Motorcycle Accident
   </h3>
   <ul className="list-disc pl-6 text-lg leading-relaxed text-gray-700">
@@ -549,7 +444,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </ul>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire a Motorcycle Accident Lawyer?
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -565,7 +460,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Serving the Greater Tampa Bay Area
   </h3>
   <p className="text-lg leading-relaxed text-gray-700">
@@ -588,7 +483,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Uber, UberEats, and Lyft Accidents
   </h2>
 
@@ -631,7 +526,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Rideshare Lawyer?
   </h3>
 
@@ -670,7 +565,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
  
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Slip and Fall Accidents
   </h2>
 
@@ -692,7 +587,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
  
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Slip and Fall Lawyer?
   </h3>
 
@@ -722,7 +617,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Premises Liability
   </h2>
 
@@ -744,7 +639,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Premises Liability Lawyer?
   </h3>
 
@@ -774,7 +669,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Dog Bites
   </h2>
 
@@ -796,7 +691,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Dog Bite Lawyer?
   </h3>
 
@@ -826,7 +721,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Medical Malpractice
   </h2>
 
@@ -844,7 +739,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Medical Malpractice Lawyer?
   </h3>
 
@@ -874,7 +769,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
         <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Products Liability
   </h2>
 
@@ -912,7 +807,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Products Liability Lawyer?
   </h3>
 
@@ -942,7 +837,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     mainDescription: `
        <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Wrongful Death
   </h2>
 
@@ -960,7 +855,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Wrongful Death Lawyer?
   </h3>
 
@@ -992,7 +887,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
        
                  <div className="flex flex-col gap-6">
   
-  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
     Fatal Accidents
   </h2>
 
@@ -1010,7 +905,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
   </p>
 
   
-  <h3 className="text-2xl font-semibold text-black mt-4">
+  <h3 className="text-xl font-semibold text-black mt-4">
     Why Hire A Fatal Accidents Lawyer?
   </h3>
 
@@ -1032,5 +927,2058 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     `,
     image: "/images/practice/Assault.png",
     slug: "fatal-accidents",
+  },
+];
+
+// CriminalInjuryServices
+
+export interface CriminalInjury {
+  title: string;
+  description: string;
+  image: string;
+  mainDescription: string;
+  slug: string;
+}
+export const CriminalInjuryServices: CriminalInjury[] = [
+  {
+    title: "An Overview",
+    description:
+      "Facing a criminal charge can be overwhelming. We guide you through the legal process, protect your rights, and build a strong defense to pursue the best possible outcome.",
+    mainDescription: `
+     <div className="flex flex-col gap-6">
+  {/* Title */}
+  <h2 className="text-2xl  font-bold text-black leading-snug">
+    Do I Need A Criminal Justice Attorney?
+  </h2>
+
+  {/* Intro */}
+  <p className="text-lg leading-relaxed text-gray-700">
+    After being accused of a crime, you have the right to a criminal justice attorney. 
+    Criminal justice attorneys don’t solely provide representation in court. At McCulloch Law P.A. in Tampa, FL, we guide you through the legal process and jargon, help cope with the emotions associated with a criminal charge, negotiate deals, gather witnesses and evidence, and more.
+  </p>
+
+  {/* Coverage */}
+  <h3 className="text-xl font-semibold text-black mt-4">
+    What Do Criminal Justice Attorneys Cover?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Our criminal justice attorney at McCulloch Law P.A. in Tampa, FL is equipped to take on an array of criminal defense cases. From misdemeanors to felonies, we are experts on Florida law and what it takes to get the best outcome possible.
+  </p>
+
+  {/* Expertise List */}
+  <h3 className="text-xl font-semibold text-black mt-4">
+    Explore Our Areas Of Criminal Justice Expertise
+  </h3>
+  <ul className="list-disc list-inside text-lg leading-relaxed text-gray-700">
+    <li>
+      <a href="#" className="text-primary ">
+        Assault, Battery, Stalking & Violation Of Injunction
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Arson & Criminal Mischief
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Burglary & Trespass
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Criminal Traffic Offenses
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        DUI
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Domestic Violence
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Drug Crimes
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Fraud
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Homicide & Attempted Homicide
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Juvenile Crimes
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Robbery
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Theft Crimes
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Sex Crimes
+      </a>
+    </li>
+    <li>
+      <a href="#" className="text-primary ">
+        Weapons & Firearms Charges
+      </a>
+    </li>
+  </ul>
+
+  {/* Contact Info */}
+  <h3 className="text-xl font-semibold text-black mt-4">
+    Are You Looking for the Best Criminal Justice Attorney in Tampa FL?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Then look no further. At McCulloch Law P.A. in Tampa, FL we dedicate our time to select clients, ensuring the highest-quality criminal justice representation. From DUI to personal injury, we’re here for you. Contact us today for a free and confidential consultation.
+  </p>
+
+  {/* More Info */}
+  <p className="text-lg leading-relaxed text-gray-700">
+    <a href="#" className="text-primary ">
+      More Information: What You Need To Know If You’ve Been Arrested In Florida
+    </a>
+  </p>
+</div>
+
+    `,
+    slug: "an-overview-criminal-injury",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Assault, Battery, Stalking",
+    description:
+      "Defense for clients facing assault, battery, or stalking charges, with a focus on protecting their rights throughout the case.",
+    mainDescription: `
+    <div className="flex flex-col gap-6">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
+    What Is Assault?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    <strong className="text-black">Assault is the intentional threat one person makes toward another.</strong> This threat poses the fear of harm in the victim, but no physical contact is made. Punishment depends on the type of assault charged.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Accusations of assault, battery, stalking, and violation of an injunction can put your future at risk. Expert evidence and the skill of an experienced criminal justice attorney are necessary for a fair trial.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Are You In Need Of A Criminal Justice Attorney In Tampa?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    At McCulloch Law P.A., we take on the worst time of your life and work to achieve the best possible outcome. Our criminal justice attorney provides premier representation and helps navigate the complex legal system.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    The Consequences Of Assault On A Law Enforcement Officer
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Assaulting a law enforcement officer while performing their duties is serious. It can be a second-degree misdemeanor with up to 60 days in jail and a $500 fine, or a first-degree misdemeanor with up to one year in jail and a $1,000 fine. In severe cases, it can be tried as a felony.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    The Consequences Of Assault On A Person 65 Years Or Older
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    You do not need to know the person’s age to be charged with assault. Assault is defined as making a threat that instills fear. Punishable by up to one year in jail.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    What Is Aggravated Assault?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Aggravated assault involves intentionally threatening someone while possessing a deadly weapon or committing a felony. It creates reasonable fear of imminent harm. Aggravated assault is a third-degree felony.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Battery and Aggravated Battery
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Battery in Florida occurs when a defendant makes physical contact against the victim’s will. Severity ranges from simple battery to felony battery. Aggravated battery involves intent to harm or use of a deadly weapon, and can result in prison for up to 15 years or more.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Consequences Of Battery
+  </h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>On a law enforcement officer:</strong> Up to 5 years in prison, probation, and a $5,000 fine.
+    </li>
+    <li>
+      <strong>On a person 65 years or older:</strong> Up to 5 years in prison.
+    </li>
+    <li>
+      <strong>On a facility employee:</strong> Third-degree felony, up to 5 years in prison and $5,000 fine.
+    </li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Felony Battery & Domestic Battery By Strangulation
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Felony battery causes bodily harm without consent. Domestic battery by strangulation involves intentionally restricting breathing or blood flow and is a serious offense.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Stalking & Aggravated Stalking
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Stalking is repeated harassment that creates credible fear. Aggravated stalking may involve minors or threats of death and is punishable by up to 5 years in prison.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Injunction Violations
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Violating an injunction can result in first-degree misdemeanor charges, fines, and jail time. Domestic violence, repeat sexual, dating violence, and stalking injunctions carry serious legal consequences.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Culpable Negligence & Extortion
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Culpable negligence is reckless behavior putting others at risk, punishable from misdemeanors to felonies. Extortion involves threats to gain money or compel action, punishable by up to 15 years in prison.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Sexual Cyberharassment
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Posting sexually explicit images of another online without consent is a first-degree misdemeanor, punishable by up to 1 year in prison and $1,000 fine. More serious cases can lead to up to 5 years in prison, probation, fines, and vehicle impoundment.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-8">
+    Fatal Accidents
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Fatal accidents can occur suddenly and without warning, leaving families devastated. Victims’ families may pursue legal action if a loved one dies due to someone else’s negligence.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    These accidents may involve car and truck crashes, motorcycle accidents, pedestrian incidents, medical malpractice, defective products, unsafe premises, or workplace accidents. Legal claims aim to cover medical bills, funeral costs, lost income, and loss of companionship.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. assists with evidence collection, identifying responsible parties, and guiding families through the legal process while protecting their rights.
+  </p>
+
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Fatal Accidents Lawyer?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    We offer free consultations, can meet at home, hospital, or convenient locations, and work on a contingency fee basis. Our attorneys handle fatal accident cases throughout Tampa Bay and are licensed across Florida.
+  </p>
+</div>
+
+    `,
+    slug: "assault-battery-stalking",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Arson and Criminal Mischief",
+    description:
+      "Representation for individuals charged with arson or criminal mischief, ensuring thorough investigation and a strong defense.",
+    mainDescription: `
+    <div className="flex flex-col gap-4">
+  <h2 className="text-2xl  font-bold text-black leading-snug">
+    What Are 1st And 2nd Degree Arson?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Arson and Criminal Mischief are crimes of intentional property damage. 
+    First-degree arson occurs when a person willfully and unlawfully, or while committing a felony, uses fire or explosives to damage:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>Any dwelling (occupied or not)</li>
+    <li>Any structure where people are normally present</li>
+    <li>Any other structure that they knew or reasonably knew is occupied</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Second-degree arson occurs when a person willfully and unlawfully, or while committing a felony, uses fire or explosives to damage any property not included in first-degree arson.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Criminal Mischief
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Criminal Mischief in Florida is the willful and unlawful damage of property. Arson is the willful and unlawful damage of property with fire. A third related crime is <strong>Burning to Defraud an Insurer</strong>, which involves intentionally burning property to collect an insurance settlement.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Arson Resulting In Injury
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    To prove Arson Resulting in Injury, the prosecution must show:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>You willfully and unlawfully instigated a fire or explosion, or triggered one while committing a felony</li>
+    <li>The fire or explosion damaged:
+      <ul className="list-disc list-inside ml-6 space-y-1">
+        <li>A dwelling (occupied or non-occupied)</li>
+        <li>A structure or contents normally occupied by people</li>
+        <li>A structure you knew or should have known would be occupied</li>
+        <li>A structure owned by yourself under other circumstances</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Burning To Defraud An Insurer
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    To prove this crime, the prosecution must establish that:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>You burned, attempted to burn, or caused burning of insured property</li>
+    <li>The property belonged to you</li>
+    <li>The property was insured against loss or damage</li>
+    <li>You acted willfully with intent to injure or defraud the insurer</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Defrauding an insurer can also result in additional charges for arson and filing a false insurance claim. Arson may fall under Florida’s 10-20-Life law.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Elements Of Criminal Mischief
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    To prove Criminal Mischief, the prosecution must show beyond a reasonable doubt:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>The defendant injured or damaged property (real or personal)</li>
+    <li>The property belonged to the alleged victim</li>
+    <li>The injury or damage was done willfully and maliciously</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    "Willfully" means intentionally, knowingly, and purposely. "Maliciously" means wrongfully and intentionally without legal justification, with knowledge that injury or damage may occur.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Offenses Against Computer Users
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Florida Statute 815.06(2) prohibits unauthorized access or damage to computers, networks, or electronic devices, including:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>Unauthorized access or disruption of data</li>
+    <li>Damaging equipment, systems, or devices</li>
+    <li>Introducing contaminants or malware</li>
+    <li>Engaging in unauthorized surveillance via a computer or device</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    First-degree felony charges apply if human life is endangered or medical equipment is affected. Misdemeanor charges apply if equipment is modified without authorization. Exceptions include actions authorized by law, lawful employment duties, or authorized security operations.
+  </p>
+</div>
+
+    `,
+    slug: "arson-criminal-mischief",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Burglary & Trespass",
+    description:
+      "Legal defense for clients accused of burglary or trespassing, ensuring their rights are protected in each step.",
+    mainDescription: `
+   <div className="flex flex-col gap-6">
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    What Is Burglary?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Burglary is the unlawful entry of a dwelling, structure, or conveyance owned by another, with the intent to commit a crime. It also applies when a person remains after permission has been revoked and intends to commit a crime. In Florida, burglary is a first-degree felony that can result in life imprisonment depending on severity.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Burglary vs. Trespassing
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    While related, burglary and trespassing differ in severity:
+  </p>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li><strong>Burglary:</strong> Unlawful entry with intent to commit a crime, charged as a felony.</li>
+    <li><strong>Trespassing:</strong> Unlawful entry without criminal intent, charged as a misdemeanor.</li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Possession of Burglary Tools
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Carrying tools intended for burglary—like crowbars, lock picks, ropes, masks, or explosives—is illegal. Depending on the circumstances, this can be a misdemeanor or felony and result in incarceration, probation, fines, and restitution.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Trespassing Offenses
+  </h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>In Structure or Conveyance:</strong> Willful entry or remaining without permission, or refusal to leave after permission is revoked. Typically a second-degree misdemeanor (up to 60 days in jail).
+    </li>
+    <li>
+      <strong>On Property Other Than Structure or Conveyance:</strong> Up to 1 year in jail and $1,000 fine.
+    </li>
+    <li>
+      <strong>On School Property With a Firearm or Weapon:</strong> Third-degree felony, up to 5 years in prison and $5,000 fine.
+    </li>
+    <li>
+      <strong>On School Grounds or Facilities Without Authorization:</strong> Second-degree misdemeanor (up to 60 days in jail and $500 fine). If remaining after warning by principal/designee, first-degree misdemeanor (up to 1 year in jail or probation, $1,000 fine).
+    </li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Additional Consequences
+  </h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>
+      <strong>Placing Signs Adjacent to Highway:</strong> Requires proper permits; violation can result in charges under Florida law.
+    </li>
+    <li>
+      <strong>Breaking or Damaging Fences:</strong> Criminal mischief; penalties range from second-degree misdemeanor (60 days in jail) to third-degree felony (up to 5 years in prison) depending on malice.
+    </li>
+    <li>
+      <strong>Unauthorized Entry Upon Land:</strong> Entering land without permission is generally a misdemeanor.
+    </li>
+    <li>
+      <strong>Trespassing with Larceny of Utility Services:</strong> First-degree misdemeanor; fine up to three times the value of services or $1,000, whichever is greater.
+    </li>
+    <li>
+      <strong>Impairing or Impeding Telephone or Power to Facilitate Burglary:</strong> Third-degree felony.
+    </li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Need a Burglary & Trespass Lawyer in Tampa, FL?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Burglary is a felony and trespass a misdemeanor – both carry serious consequences. The Criminal Justice lawyers at McCulloch Law P.A. in Tampa, FL, can guide you through the legal system and help achieve the best possible outcome for your case.
+  </p>
+</div>
+
+
+    `,
+    slug: "burglary-trespass",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Domestic Violence",
+    description:
+      "Representation for individuals accused of domestic violence, with support for both their defense and protection of their rights.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    What Is Domestic Violence?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Domestic violence is the intentional striking and touching of a person without their consent, with the intention of causing harm. This form of violence affects family and household members, including spouses, ex-spouses, people related by blood or marriage, people living together, and significant others.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Potential Consequences Of Domestic Violence Charges
+  </h2>
+  <ul className="list-disc list-inside text-gray-700 space-y-2">
+    <li>Jail time</li>
+    <li>Community service hours</li>
+    <li>Loss of civil liberties</li>
+    <li>Probation</li>
+  </ul>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Are You in Need of a Criminal Justice Lawyer For Domestic Violence in Tampa, FL?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    An accusation of domestic violence is not to be taken lightly. If you’re in need of a Criminal Justice lawyer for domestic violence in Tampa, FL, you need experience on your side. Contact McCulloch Law P.A. today to learn more about what we can do for you.
+  </p>
+
+</div>
+
+    `,
+    slug: "domestic-violence",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Drug Crimes",
+    description:
+      "Defense for all levels of drug-related charges, challenging evidence and seeking the best possible outcome.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    What Is Drug Possession?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    In Florida, drug possession is when someone holds a controlled substance for personal use and was not involved with its manufacturing, distribution, or sale. Unless it is medical marijuana, possession may be charged as a felony. However, recreational marijuana may be tried as a first-degree misdemeanor.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Drug laws are ever-changing. This means, if you find yourself in a sticky situation you need a detailed lawyer who stays abreast of the latest changes and is ready to defend you. At McCulloch Law, we defend the most complicated cases, working around the clock to get you the results you deserve.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    What Is Drug Trafficking?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Drug trafficking is more common than you may think. As defined by Florida law, drug trafficking is the intentional sale, purchase, manufacturing, delivery, possession, or transportation of a controlled substance. The charge depends on the amount of the substance that is at hand. However, all charges require a prison sentence.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    The Consequences Of The Misuse Of Prescription Drugs
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    As the opioid crisis continues its destructive path across the state of Florida, law enforcement is putting down the hammer. Possession, use, and trafficking of prescription drugs is a serious offense. This is why you need a lawyer who is well-versed in the complexities of prescription drug trials and will strive to get you the best possible outcome at all costs.
+  </p>
+
+  <h2 className="text-2xl  font-bold text-black leading-snug mt-4">
+    Are You in Need of a Criminal Defense Attorney in Tampa, FL?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you’ve found yourself in violation of a drug law, you need a criminal defense attorney in Tampa, FL who is more than experienced. Contact McCulloch Law today to learn what we can do for you.
+  </p>
+
+</div>
+
+    `,
+    slug: "drug-crimes",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "DUI",
+    description:
+      "Strong representation for DUI charges, from first-time offenses to complex cases requiring expert analysis.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    What Is A DUI?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Under Florida law, a DUI means “driving under the influence”. It must be proven that your “normal faculties” were impaired due to an unlawful blood alcohol or breath alcohol level. In the state of Florida, this is a .08 and above. Depending on the severity of the DUI, the accused may incur fines, community service requirements, probation, and imprisonment.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    A single mistake such as a DUI does not need to define the rest of your life. A DUI in Florida is a serious matter that requires the skill and experience of a DUI attorney in Tampa. We will guide you through the DUI legal process and work around the clock to get you the outcome you deserve for your DUI.
+  </p>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    Civil V Criminal Cases
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    With a DUI comes two separate cases – a civil one and a criminal one. The criminal case will handle the DUI charges made against you, while your driver’s license suspension will be taken care of in civil. With a DUI, you have just 10 days to deal with your license after your arrest, with your citation serving as a 10-day driving permit. During this time, you can request a formal review hearing or a hardship permit. After those 10 days, you may be subjected to longer consequences.
+  </p>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    The Types Of DUI
+  </h2>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>DUI Civil Case</li>
+    <li>DUI Criminal Case</li>
+    <li>DUI (1st, 2nd, 3rd Offenses, Etc.)</li>
+    <li>DUI Involving Property Damage / Injury</li>
+    <li>DUI Refusal To Submit To Testing</li>
+    <li>DUI Penalties</li>
+    <li>DUI Boating Under The Influence</li>
+    <li>Plus More!</li>
+  </ul>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    DUI Helpful Links
+  </h2>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>DUI Counterattack</li>
+    <li>Florida Bureau Of Administrative Reviews</li>
+  </ul>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    Have You Received a DUI in Tampa, Florida?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you’ve received a DUI in Florida, then it’s time you call on a DUI attorney in Tampa, FL. Our team at McCulloch Law P.A. will work to protect you with exemplary representation for your DUI. Contact us today to learn more about what we can do for you and your DUI.
+  </p>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    More Information
+  </h2>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Can Law Enforcement Take A Forced Blood Draw During A DUI Investigation In Florida?</li>
+    <li>Am I Going To Jail For A First-Time DUI In Florida?</li>
+    <li>What Is The Legal Definition Of DUI In Florida?</li>
+  </ul>
+
+</div>
+
+    `,
+    slug: "dui",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: " Felonies / Probation",
+    description:
+      "Comprehensive support for clients facing probation violations, ensuring their rights are defended and their future protected.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    Felonies / Probation
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. has years of experience in handling almost every level of felony charge. As a former prosecutor, Drew McCulloch prosecuted thousands of felony cases. By hiring McCulloch Law, P.A. at the earliest stages of your case, our office may be able to minimize or possibly avoid certain aspects of your charges and sanctions.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    In appropriate cases, we may be able to negotiate for a “diversion program,” which, if successfully completed, could result in dismissal of your case. In some cases, we may be able to negotiate with the prosecutor and convince the state attorney to file less serious charges or no charges at all. In other cases, we may be able to argue for or provide mitigation for a better deal, such as drug rehab over jail or lesser included offenses.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. will always try to avoid an adjudication of guilt, if at all possible. An “adjudication of guilt” as opposed to a “withhold of adjudication of guilt” could make the difference between having to admit you were convicted of a criminal offense on a job application and being able to deny it. It may also make the difference between keeping or obtaining employment or being able to drive. Teachers, nurses, fiduciaries, county and city employees, even real estate agents and stock brokers may be fired or not hired simply because of a conviction for petit theft, worthless check, defrauding an innkeeper, theft of utilities, or retail theft. An adjudication on a possession of marijuana or prostitution charge, for example, carries a 2-year suspension of your Florida driver’s license. Furthermore, an adjudication may limit your ability to seal or expunge your charge.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    McCulloch Handles Almost All Felony Matters Such As:
+  </h3>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Delivery of a Controlled Substance</li>
+    <li>Burglary</li>
+    <li>Possession of Cannabis (over 20 grams)</li>
+    <li>Grand Theft</li>
+    <li>Aggravated Batteries with a Deadly Weapon</li>
+    <li>Felony Petit Theft</li>
+    <li>Felony Battery on a Person over the age of 75</li>
+    <li>False Imprisonment</li>
+    <li>Possession of Cocaine/Heroin/MDMA/Controlled Substance</li>
+    <li>Fleeing to Elude</li>
+    <li>Delivery of a Controlled Substance within 1000 feet of a School</li>
+    <li>Grand Theft Motor Vehicle</li>
+    <li>Aggravated Assault on a Law Enforcement Officer with a Firearm</li>
+    <li>Burglary of Dwellings</li>
+    <li>Felony Battery by Strangulation</li>
+    <li>Felon in Possession of a Firearm</li>
+    <li>Obstructing or Opposing an Officer with Violence</li>
+    <li>Felony DUIs</li>
+    <li>Battery on a Law Enforcement Officer</li>
+    <li>Robbery</li>
+    <li>Destruction/Tampering with Evidence</li>
+    <li>Failure of Sex Offender to Register</li>
+    <li>Leaving Scene of an Accident with Death/Serious Bodily Injury</li>
+    <li>And many more</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Misdemeanor vs. Felony
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    In Florida, criminal charges are categorized into misdemeanors and felonies. Misdemeanors can be 2nd degree or 1st degree. Felonies can be 3rd degree, 2nd degree, 1st degree, Life, or Capital. A misdemeanor could result in jail time, whereas a felony could result in jail, prison, or death. Jail is for sentences less than 365 days and prison is for sentences greater than 365 days.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    How It Works
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Felonies are heard in Circuit Court. In Hillsborough County, there are seven felony divisions A through I, plus specific courts for probation violations, drug offenses, juvenile offenses, and other serious offenses going to jury trial. Defendants are randomly assigned to divisions. Every felony offense requires a scoresheet, which determines if prison is mandatory and its length. Statutes may enhance sentences for repeat offenders, gun crimes, or crimes involving children.
+  </p>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Plea deals can be negotiated with the prosecutor or judge. The State Attorney is the only one who can amend charges. Hiring an experienced local defense attorney provides insight into specific judges and divisions.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Punishments
+  </h3>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>
+      <strong>3rd Degree Felonies:</strong> up to 5 years in prison, probation, and $5,000 fine.
+    </li>
+    <li>
+      <strong>2nd Degree Felonies:</strong> up to 15 years in prison, probation, and $10,000 fine.
+    </li>
+    <li>
+      <strong>1st Degree Felonies:</strong> up to 30 years in prison, probation, and $10,000 fine.
+    </li>
+    <li>
+      <strong>Capital and Life Felonies:</strong> Life or death penalty and $15,000 fine.
+    </li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Probation, Jail, and Violation of Probation
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Violating a probation sentence could result in serving the full prison term. Sentences may be split between prison and probation. Violating probation can lead to serving the remainder of the maximum sentence in prison.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Consecutive vs. Concurrent Sentences
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Each charge carries its own punishment. A judge may run sentences concurrently (at the same time) or consecutively (one after the other). For example, two 3rd degree felonies each with a 5-year maximum could result in either 5 years total (concurrent) or 10 years total (consecutive).
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Statute of Limitations
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    See Fla. Statutes 775.15. Charges must be filed within a certain time from the crime, except for serious crimes such as murder. Examples:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Non-criminal & 2nd Degree Misdemeanors – 1 year</li>
+    <li>1st Degree Misdemeanors – 2 years</li>
+    <li>Many Felonies – 3 years</li>
+    <li>1st Degree Felonies – 4 years</li>
+    <li>Abuse, Securities, Environmental 1st Degree Felonies – 5 years</li>
+    <li>Breach of Fiduciary or Fraud – 3 years</li>
+    <li>Misconduct in Public Office – 2-5 years</li>
+    <li>Life and Death Penalty cases – no limit</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Statutes of limitation can be extended up to 3 years if the defendant is continuously absent from the state without a known residence or work. For offenses involving minors, statutes often begin at age 16.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Serious Ramifications
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Felonies are very serious charges affecting liberty and your future. Violent felonies, sex offenses, and crimes involving children may classify the accused as Habitual Felony Offenders, Prison Release Re-offenders, Violent Felony Offenders, 10-20-Life Offenders, GORT Offenders, and more. McCulloch Law, P.A. has experience with serious crimes and provides the defense you need. Always evaluate an attorney’s experience and qualifications before hiring.
+  </p>
+
+</div>
+
+    `,
+    slug: "probation",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Fraud",
+    description:
+      "Defense for clients accused of fraud, focusing on detail-driven investigation and strategic representation.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    What Is Fraud?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    The legal term, “fraud,” encompasses a variety of offenses. It includes knowingly falsifying information with intent to commit a crime, including but not limited to:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Tax Fraud</li>
+    <li>Corporate Fraud</li>
+    <li>Federal Fraud</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    The variation of fraud charges can be extreme. From the wrongful use of a city name to falsifying legal documents, you may be charged with a misdemeanor or a felony. There is a lot at risk, meaning you need the reliable team at McCulloch Law on your side.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    What Are The Consequences Of Committing Fraud?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Without a great criminal defense team on your side, you could face harsh penalties. Depending on the severity of the case, consequences may include criminal and civil repercussions, repayment of benefits, fines, and jail time. In some cases, you may even be prosecuted and face years of federal incarceration.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Are You in Need of a Fraud Lawyer in Tampa, FL?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you’ve been accused of fraud, it’s time to take action. You need a lawyer you can trust on your team. Contact McCulloch Law today to learn more about how we can assist you and help you get the best possible result for your case.
+  </p>
+
+</div>
+
+    `,
+    slug: "fraud",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Homicide / Attempted Homicide",
+    description:
+      "Skilled defense against homicide or attempted homicide allegations, backed by thorough investigation.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    What Is Homicide?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Homicide is an overarching term for the unlawful killing of one human being by another. This is divided into two types of illegal killing: murder and manslaughter. Types of homicide include:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Premeditated Murder</li>
+    <li>Felony Murder</li>
+    <li>Manslaughter</li>
+    <li>Driving Under the Influence Manslaughter</li>
+    <li>Vehicular or Vessel Homicide</li>
+    <li>Aggravated Manslaughter</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    What Is Attempted Homicide?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Unsuccessfully attempting to kill another human being is considered just as serious as committing the act. Attempted homicide, meaning attempted murder or manslaughter, refers to situations where the accused was aware of their actions and had the intent to kill. Types include:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Attempted Murder</li>
+    <li>Attempted Felony Murder</li>
+    <li>Attempted Manslaughter by Act</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Are You in Need of a Criminal Defense Attorney in Tampa?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you’re facing homicide or attempted homicide accusations, you cannot wait. Contact our experienced team at McCulloch Law to gain access to premier legal representation.
+  </p>
+
+</div>
+
+    `,
+    slug: "homicide-attempted-homicide",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Injunctions",
+    description:
+      "Assistance with defending or obtaining injunctions, while protecting clients’ legal rights.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    What Are Injunctions?
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    An injunction is a court order that prohibits contact between two parties. Also known as a restraining order, it is intended to legally protect a person from threats or harm.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    What Happens When An Injunction Is Violated?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Violating an injunction can result in a first-degree misdemeanor charge. This carries penalties of up to a year in jail and may include fines, applied alongside any other outstanding charges.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    When Is An Injunction Used?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Injunctions are typically used when there is a threat or plausible fear of harm or violence. Common types of injunctions include:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Domestic Violence Injunctions</li>
+    <li>Repeat Violence Injunctions</li>
+    <li>Dating Violence Injunctions</li>
+    <li>Sexual Violence Injunctions</li>
+    <li>Stalking / Cyberstalking Injunctions</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Are You in Need of a Criminal Defense Attorney in Tampa FL?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    You need a criminal defense attorney in Tampa, FL who not only understands the legal system but also knows how to help restore your life. If you’re in need of a trustworthy lawyer, contact our team at McCulloch Law today.
+  </p>
+
+</div>
+
+    `,
+    slug: "injunctions",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Juvenile Crimes",
+    description:
+      "Representation for juveniles accused of criminal offenses, ensuring their rights and future are protected.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug mt-4">
+    Common Juvenile Crimes In Florida
+  </h2>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Just because a minor has committed a crime doesn’t mean it isn’t a serious matter. Common juvenile crimes in Florida include, but are not limited to:
+  </p>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Assault</li>
+    <li>Battery</li>
+    <li>Burglary</li>
+    <li>Petit Theft</li>
+    <li>Misdemeanor drug violations</li>
+    <li>Disorderly Conduct</li>
+  </ul>
+  <p className="text-lg leading-relaxed text-gray-700">
+    When a young person commits a crime, the justice system recognizes the intricacies at hand. This is why they’re tried in the Juvenile Justice System. At McCulloch Law, we understand this process thoroughly and how to get the best outcome that allows the minor to restore their livelihood and bright future as quickly as possible.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    What Are Juvenile Crimes?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    A juvenile crime is a crime committed by a person under the age of 18. In this case, they are put through the Juvenile Justice System, which focuses more on rehabilitation than punishment. While, in some instances, a minor may be tried as an adult, the court system understands that not all minors are fully aware of their actions. This doesn’t mean there aren’t severe consequences, though.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Are You Looking for a Reliable Juvenile Crime Lawyer?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    We work to protect your child’s future. If you’re in need of a juvenile crime lawyer in Tampa, you can lean on us. Contact our experienced team at McCulloch Law today to learn more about how we will fight for you.
+  </p>
+
+</div>
+
+    `,
+    slug: "juvenile-crimes",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Misdemeanors",
+    description:
+      "Defense for clients facing misdemeanor charges, ensuring they understand the process and receive strong representation.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  {/* Title */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Misdemeanors
+  </h2>
+
+  {/* Intro */}
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. has years of experience in handling almost every kind of misdemeanor charge.
+    As a former prosecutor, Drew McCulloch prosecuted thousands of cases—misdemeanor and felony.
+    By hiring McCulloch Law, P.A. at the earliest stages of your case, our office may be able to
+    minimize or possibly avoid certain aspects of your charges and sanctions.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    In appropriate cases, we may be able to negotiate for a “diversion program,” which, if successfully
+    completed, could result in the dismissal of your case. In some cases, we may be able to negotiate
+    with the prosecutor and convince the state attorney to file less serious charges or no charges at all.
+    In other cases, we may be able to provide mitigation for a better deal, such as drug rehab over jail
+    or lesser included offenses.
+  </p>
+
+  {/* Section */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    What You Should Know About Misdemeanors And Felonies In Florida
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. will always try to avoid an adjudication of guilt, if at all possible. An
+    “adjudication of guilt,” as opposed to a “withhold of adjudication,” could determine whether you must
+    admit to a criminal conviction on a job application. It can affect employment, licensing, and even
+    your ability to drive.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Teachers, nurses, fiduciaries, county and city employees, real estate agents, and stock brokers may
+    lose opportunities simply because of a conviction. Certain adjudications—such as possession of
+    marijuana or prostitution—carry a two-year driver’s license suspension. An adjudication may also
+    prevent you from sealing or expunging your record.
+  </p>
+
+  {/* List */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    McCulloch Handles All Misdemeanors Such As:
+  </h3>
+
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Driving Under the Influence</li>
+    <li>Battery</li>
+    <li>Possession of Marijuana</li>
+    <li>Criminal Mischief</li>
+    <li>Possession of Paraphernalia</li>
+    <li>Trespass</li>
+    <li>Leaving the Scene of an Accident</li>
+    <li>Petit Theft</li>
+    <li>Carrying a Concealed Weapon</li>
+    <li>No Motorcycle Endorsement</li>
+    <li>Obstructing an Officer without Violence</li>
+    <li>Assault</li>
+    <li>Driving with a Suspended License with Knowledge</li>
+    <li>And many more</li>
+  </ul>
+
+  {/* Section */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Misdemeanor vs. Felony
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    In Florida, criminal charges are categorized into misdemeanors and felonies. Misdemeanors can be
+    1st or 2nd degree. Felonies range from 3rd degree to Capital. A misdemeanor could result in jail time,
+    whereas a felony could lead to prison time. Jail sentences are under 365 days; prison sentences exceed 365 days.
+  </p>
+
+  <h4 className="text-xl font-semibold text-black mt-3">How It Works:</h4>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Misdemeanors are heard in County Court, while felonies are heard in Circuit Court.
+    In Hillsborough County, misdemeanor divisions (A–G) are assigned by the defendant’s last name.
+    Different judges have different sentencing styles, so an experienced local attorney is crucial.
+  </p>
+
+  {/* Punishments */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Punishments
+  </h3>
+
+  <h4 className="text-xl font-semibold text-black">2nd Degree Misdemeanors:</h4>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Up to 60 days in jail</li>
+    <li>6 months probation</li>
+    <li>$500+ fine</li>
+  </ul>
+
+  <h4 className="text-xl font-semibold text-black mt-3">1st Degree Misdemeanors:</h4>
+  <ul className="list-disc list-inside text-lg text-gray-700">
+    <li>Up to 364 days in jail</li>
+    <li>12 months probation</li>
+    <li>$1,000+ fine</li>
+  </ul>
+
+  {/* Probation */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Probation and Jail
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Violating probation—even on the last day—could result in serving the full jail sentence. A sentence
+    can also be split between jail and probation, and violations may require completing the remaining jail time.
+  </p>
+
+  {/* Sentences */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Consecutive vs. Concurrent Sentences
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Each charge carries its own punishment. Judges may run sentences concurrently (at the same time)
+    or consecutively (one after the other). Two 364-day misdemeanor sentences could become either
+    364 days total or 728 days depending on the ruling.
+  </p>
+
+  {/* Statutes */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Statute of Limitations
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Florida’s statute of limitations is one year for 2nd degree misdemeanors and two years for 1st degree misdemeanors, with exceptions.
+  </p>
+
+  {/* Serious Effects */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Serious Ramifications
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Misdemeanors may seem minor but can affect your rights, employment, licensing, credibility, and firearm privileges.
+    Some misdemeanors (DUI, battery, petit theft, DWLSR, prostitution) can be upgraded to felonies based on prior convictions.
+  </p>
+
+  {/* Habitual Offenders */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Habitual Misdemeanor Offenders (Florida Statute 775.0837)
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    A habitual misdemeanor offender is someone with four prior qualifying misdemeanors committed within one year.
+    Courts may impose jail, residential treatment, or designated residence detention for 6–364 days.
+    Judges cannot sentence under this statute if the charge has been reclassified as a felony.
+  </p>
+
+</div>
+
+    `,
+    slug: "misdemeanors",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Robbery",
+    description:
+      "Focused defense for robbery charges, including detailed investigation and aggressive representation.",
+    mainDescription: `
+    <div className="flex flex-col gap-3">
+
+  {/* Title */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Robbery?
+  </h2>
+
+  {/* Intro */}
+  <p className="text-lg leading-relaxed text-gray-700">
+    Robbery is the action of taking another person’s money or property with the intent to deprive the
+    rightful owner, during which there is force, assault, or instilling fear. Depending on the severity
+    of the case and the variables involved, the accused could be facing a first-degree felony charge.
+    When you work with McCulloch Law, we fight to get you the best possible results so you can move
+    forward with your life.
+  </p>
+
+  {/* Carjacking */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    The Consequences Of Carjacking
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Carjacking is a serious form of robbery involving the taking of a person’s vehicle. This offense
+    carries extremely severe penalties and can be punishable by up to life in prison depending on the
+    details of the case.
+  </p>
+
+  {/* Home-Invasion Robbery */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    The Consequences Of Home-Invasion Robbery
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Home-invasion robbery occurs when someone enters another person’s dwelling without permission and
+    unlawfully takes property using force, violence, or threats. Without strong legal representation,
+    the accused could face up to thirty years in prison, plus probation and fines.
+  </p>
+
+  {/* Sudden Snatching */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    The Consequences Of Robbery By Sudden Snatching
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Robbery by sudden snatching is a second-degree felony punishable by up to 15 years in prison. This
+    involves taking money or property directly from a victim’s person—with the intent to deprive them—
+    while the victim becomes aware of the act.
+  </p>
+
+  {/* Resisting Recovery */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    The Consequences Of Resisting Recovery Of Stolen Property
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    Resisting recovery of stolen property occurs when an alleged offender commits a theft and refuses
+    reasonable efforts to recover the property. If charged with both theft and resisting recovery,
+    the individual may face both offenses concurrently.
+  </p>
+
+  {/* Call to Action */}
+  <h3 className="text-2xl md:text-3xl font-semibold text-black mt-4">
+    Are You Looking for a Criminal Defense Attorney in Tampa?
+  </h3>
+  <p className="text-lg leading-relaxed text-gray-700">
+    A robbery accusation is a serious matter. You need a criminal defense attorney in Tampa that you
+    can trust to be on your side and fight for your rights. Contact McCulloch Law today to learn
+    more about how we can assist you.
+  </p>
+
+</div>
+
+    `,
+    slug: "robbery",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Theft Crimes",
+    description:
+      "Representation for theft-related offenses — ensuring proper investigation, strong defense, and protection of clients’ rights.",
+    mainDescription: `
+    <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
+
+  {/* Petit Theft */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Petit Theft?
+  </h2>
+  <p>
+    The reliable team at McCulloch Law on your side.
+  </p>
+  <p>
+    Petit theft is the act of taking someone else’s property that is valued at under $300.
+    The accused knowingly takes the property with the intent of depriving the owner. This
+    is a misdemeanor that can result in jail time, probation, community service,
+    and restitution.
+  </p>
+
+  {/* Grand Theft */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Grand Theft?
+  </h2>
+  <p>
+    In Florida, Grand Theft is the unlawful taking of someone else’s property valued at
+    $300 or more. This is a felony offense ranging from third-degree to first-degree and can
+    result in prison time, probation, fines, restitution, and a permanent criminal record.
+  </p>
+
+  {/* Dealing in Stolen Property */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    The Consequences Of Dealing In Stolen Property
+  </h2>
+  <p>
+    Dealing in stolen property is a second-degree felony. It involves selling, transferring,
+    distributing, or handling stolen property. The accused can face up to 15 years in prison,
+    among other penalties.
+  </p>
+
+  {/* Retail Theft */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Retail Theft?
+  </h2>
+  <p>
+    Shoplifting may seem minor, but depending on the severity, it can be a felony. Florida
+    law defines retail theft as taking possession of merchandise, money, or property with
+    the intent to deprive the merchant of the goods.
+  </p>
+
+  {/* Theft of Communication Services */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Theft Of Communication Services?
+  </h2>
+  <p>
+    In today’s online world, “borrowing” communication or streaming services may seem normal,
+    but it is a crime. Theft of communication services involves knowingly intercepting,
+    receiving, disrupting, or gaining access to a communication service without authorization.
+    Consequences range from a first-degree misdemeanor to a third-degree felony.
+  </p>
+
+  {/* False Verification to Pawnbroker */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    The Consequences Of False Verification Of Ownership Or False ID To A Pawnbroker
+  </h2>
+  <p>
+    This offense involves knowingly claiming ownership of property to obtain money during a
+    pawn transaction. It is a felony that may lead to jail time, probation, and significant fines.
+  </p>
+
+  {/* Stolen Credit/Debit Card */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    The Consequences Of Unlawful Possession Of A Stolen Credit/Debit Card
+  </h2>
+  <p>
+    Knowingly possessing a stolen credit or debit card is a third-degree felony punishable by
+    up to 5 years in prison.
+  </p>
+
+  {/* Exploitation of Elderly/Disabled */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    The Consequences Of The Exploitation Of An Elderly Person/Disabled Adult
+  </h2>
+  <p>
+    Under Florida law, exploiting an elderly or disabled adult is a third-degree felony that
+    can result in up to five years in prison, probation, and steep fines. Penalties depend on
+    the amount taken from the victim.
+  </p>
+
+  {/* Failing to Return Leased Property */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    The Consequences Of Failing To Return Hired/Leased Property
+  </h2>
+  <p>
+    Florida defines this offense as willfully failing to return property listed in a written
+    agreement without the owner’s consent. Depending on the value, it may be charged as a
+    misdemeanor or felony.
+  </p>
+
+  {/* CTA */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Are You Looking for a Criminal Defense Attorney in Tampa?
+  </h2>
+  <p>
+    A robbery accusation is a serious matter. You need a criminal defense attorney in Tampa
+    who will stand by your side and defend your rights. Contact McCulloch Law today to learn
+    how we can assist you.
+  </p>
+
+</div>
+
+    `,
+    slug: "theft-crimes",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Seal / Expunge",
+    description:
+      "Help sealing or expunging criminal records to support clients in moving forward with their lives.",
+    mainDescription: `
+    <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
+
+  {/* Title */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    How Can I Seal or Expunge My Record?
+  </h2>
+  <p>
+    Don’t let your mistakes rule your life.
+  </p>
+
+  {/* Intro */}
+  <p>
+    There is a process to sealing or expunging your record. For starters, you’ll need to obtain
+    a Certificate of Eligibility in order to petition the court. This means proper legal
+    representation is a great help in the process.
+  </p>
+  <p>
+    Your past mistakes do not need to define your future. Sealing or expunging your record can
+    improve your livelihood, making it easier to get a job, and more. So, if you have a criminal
+    cloud hanging over your head, please reach out to our experienced team at McCulloch Law, P.A.
+  </p>
+
+  {/* Sealing a Record */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Sealing a Record
+  </h2>
+  <p>
+    By law, adult criminal records are public. When you get a record sealed, it means that access
+    to that information is very restricted. This does not mean that your record is gone — certain
+    officials can still view information relevant to their duties.
+  </p>
+
+  {/* Expunging a Record */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Expunging a Record
+  </h2>
+  <p>
+    Expunging a record goes a step further than sealing one and is more difficult to obtain.
+    Expungement completely removes your criminal record from the legal system. You must petition
+    the court in order to have your record expunged.
+  </p>
+
+</div>
+
+    `,
+    slug: "seal-expunge",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Sex Crimes",
+    description:
+      "Discreet, careful representation for clients accused of sexual offenses, ensuring a strong and thorough defense.",
+    mainDescription: `
+    <div className="flex flex-col gap-6 text-lg text-gray-700 leading-relaxed">
+
+  {/* Aggravated Sexual Battery */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Aggravated Sexual Battery
+  </h2>
+  <p>
+    There are several forms of Sexual Battery that can be committed in Florida.
+  </p>
+  <p>
+    Aggravated Sexual Battery is committed when a person has oral, anal, or vaginal
+    contact with another person using their sexual organ or an object under an aggravating circumstance.
+  </p>
+  <p>
+    Under Florida Statute 794.011, the crime of Sexual Battery is committed when a person
+    has non-consensual oral, anal, or vaginal contact with another person using their sexual
+    organ or an object.
+  </p>
+  <p>
+    In addition to the standard crime of Sexual Battery, there are several enhanced forms
+    that can be committed in Florida.
+  </p>
+
+  {/* Aggravating Circumstances */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
+    Aggravating Circumstances
+  </h3>
+  <ul className="list-disc list-inside">
+    <li>The victim is physically helpless to resist.</li>
+    <li>The victim is coerced by threats of force or violence likely to cause serious injury.</li>
+    <li>The victim is coerced by threats to retaliate and believes the offender can execute the threat.</li>
+    <li>The victim is unknowingly drugged and incapacitated.</li>
+    <li>The victim was taken advantage of due to a known mental defect.</li>
+    <li>The victim is physically incapacitated.</li>
+    <li>The offender is a law enforcement officer or a person in authority.</li>
+  </ul>
+
+  {/* Lewd or Lascivious Battery */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Lewd Or Lascivious Battery
+  </h2>
+  <p>
+    In Florida, Lewd or Lascivious Battery criminalizes consensual sexual intercourse
+    with a child older than 12 but younger than 16.
+  </p>
+  <p>
+    Under Florida Statute 800.04(4), this crime is committed when a person:
+  </p>
+  <ul className="list-disc list-inside">
+    <li>Engages in sexual activity with a child older than 12 but younger than 16; or</li>
+    <li>Encourages, forces, or entices a child in this age range to engage in sexual acts.</li>
+  </ul>
+
+  {/* Strict Liability */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Strict Liability Crime</h3>
+  <p>
+    Lewd or Lascivious Battery is a strict liability crime, meaning ignorance of the child's age is not a defense.
+  </p>
+
+  {/* Penalties */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
+    Penalties For Lewd Or Lascivious Battery
+  </h3>
+  <p>
+    This is a Second Degree Felony punishable by up to fifteen years in prison, fifteen
+    years of sex offender probation, and a $10,000 fine.
+  </p>
+  <p>
+    Under Florida’s Criminal Punishment Code, it is a Level 8 offense, requiring a minimum
+    sentence of 74 months in prison followed by at least two years of sex offender probation.
+  </p>
+  <p>
+    A person sentenced is ineligible for gain time and must serve their sentence day-for-day.
+  </p>
+
+  {/* Civil Consequences */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Civil Consequences</h3>
+  <p>
+    A person convicted will be designated a sexual offender and must comply with registration
+    laws for life.
+  </p>
+
+  {/* Romeo and Juliet */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Romeo And Juliet Exception</h3>
+  <p>
+    Certain individuals may petition the court to avoid sex offender registry requirements,
+    but strict criteria must be met.
+  </p>
+
+  {/* Lewd or Lascivious Molestation */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Lewd Or Lascivious Molestation
+  </h2>
+  <p>
+    Under Florida Statute 800.04(5), this crime is committed when a person intentionally
+    touches the breasts, genitals, or buttocks of a child younger than 16 in a lewd manner,
+    or entices the child to touch another person in such a way.
+  </p>
+
+  {/* Definition */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
+    Definition Of “Lewd Or Lascivious”
+  </h3>
+  <p>
+    Defined as wicked, lustful, unchaste, licentious, or sensual intent.
+  </p>
+
+  {/* Strict Liability */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Strict Liability Crime</h3>
+  <p>
+    Ignorance of the child’s age or arguments of consent are not valid defenses.
+  </p>
+
+  {/* Penalties */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
+    Penalties For Lewd Or Lascivious Molestation
+  </h3>
+  <p>The penalties depend on whether the offender was an adult or minor, and whether the child was under 12.</p>
+
+  {/* Lewd or Lascivious Conduct */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Lewd Or Lascivious Conduct
+  </h2>
+  <p>
+    This crime involves intentionally touching a child under 16 in a lewd manner, or
+    soliciting the child to commit such an act.
+  </p>
+
+  {/* Exhibition */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Lewd Or Lascivious Exhibition
+  </h2>
+  <p>
+    This criminalizes intentional sexual performance in the presence of a child under 16.
+  </p>
+
+  {/* Voyeurism */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">Voyeurism</h2>
+  <p>
+    Voyeurism involves secretly observing someone in a private setting for sexual purposes.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">Penalties For Voyeurism</h3>
+  <p>
+    A first offense is a First Degree Misdemeanor punishable by up to 1 year jail, 1 year probation,
+    and a $1,000 fine. Records cannot be sealed.
+  </p>
+
+  {/* Failure To Register */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Failure To Register As A Sexual Offender
+  </h2>
+  <p>
+    Defined under Florida Statute 943.0435(2) as knowingly failing to comply with registration laws.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black leading-snug">
+    Penalties
+  </h3>
+  <p>
+    A Third Degree Felony punishable by up to 5 years in prison, 5 years probation, and a $5,000 fine.
+  </p>
+
+  {/* Residency Restrictions */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Unlawful Residency By A Sex Offender
+  </h2>
+  <p>
+    Florida prohibits certain offenders from living within 1,000 feet of schools, daycares, parks,
+    or places children frequent. Some counties impose stricter rules.
+  </p>
+
+  {/* CTA */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Are You Looking for a Sex Crime Attorney in Tampa?
+  </h2>
+  <p>
+    If you need representation for any of these charges, McCulloch Law is here to fight for you.
+    We provide professional and dedicated legal counsel for every client.
+  </p>
+
+</div>
+
+    `,
+    slug: "sex-crimes",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Violation of Probation",
+    description:
+      "Support for individuals accused of violating probation, ensuring fair treatment and a proper defense.",
+    mainDescription: `
+    <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
+
+  {/* Section: What Is Probation? */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Probation?
+  </h2>
+
+  <p>
+    Probation can make or break the future of a criminal defendant.
+  </p>
+
+  <p>
+    Probation is an intermediary between confinement and release. While the defendant
+    is no longer in confinement, they are not in the clear. Probation is a test of sorts
+    to see how they will behave and react to their limited reintroduction to society.
+  </p>
+
+  <p>
+    Probation can make or break the future of a criminal defendant. If an individual
+    violates the terms of their probation, they can incur more penalties. But, with a
+    probation lawyer in Tampa on their side, you can get the best outcome possible.
+  </p>
+
+  {/* Section: Conditions of Probation */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Are The Conditions Of Probation?
+  </h3>
+
+  <p>Terms and conditions surrounding probations are typically straightforward. They may include but are not limited to:</p>
+
+  <ul className="list-disc list-inside">
+    <li>Report to the probation officer as directed</li>
+    <li>Remain gainfully employed</li>
+    <li>Do not break any laws</li>
+    <li>Financially support dependents</li>
+  </ul>
+
+  {/* Section: Probation Violation */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Does Probation Violation Include?
+  </h3>
+
+  <ul className="list-disc list-inside">
+    <li>Violation Of Probation</li>
+    <li>Warrant</li>
+    <li>Capias</li>
+    <li>Bond Motion</li>
+    <li>Bond Reduction Motion</li>
+  </ul>
+
+  {/* Section: Call to Action */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    Are You Looking for a Probation Lawyer in Tampa FL?
+  </h3>
+
+  <p>
+    Probation can be a very defining time for an individual. Stay on the right track by
+    hiring a trustworthy probation lawyer in Tampa FL. Contact our offices at McCulloch Law
+    to learn more about how we can serve you.
+  </p>
+
+</div>
+
+    `,
+    slug: "violation-of-probation",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Weapons & Firearms Charges",
+    description:
+      "Representation for clients facing weapons or firearms-related charges, ensuring their rights are fully protected.",
+    mainDescription: `
+    <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
+
+  {/* Section: What Is Improper Exhibition */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    What Is Improper Exhibition Or Discharge Of A Weapon Or Firearm?
+  </h2>
+
+  <p>Contact us today to learn more about how we can assist you.</p>
+
+  <p>
+    Under Florida law, the improper exhibition of a firearm or weapon is characterized as
+    showing off a weapon in a threatening or careless way. A weapon can be anything from a gun
+    to a knife and must be listed under Florida’s weapon statute. This is a first-degree
+    misdemeanor and can result in up to a year of jail or probation, plus a fine.
+  </p>
+
+  <p>
+    Compared to other states, Florida gun law may seem lenient. But that doesn’t mean there
+    aren’t harsh consequences for weapons and firearms charges. In an array of situations, the
+    possession, purchase, and use of a weapon or firearm can land you in murky water. That’s
+    why you need an experienced lawyer to guide you through the legal process.
+  </p>
+
+  {/* Section: Illegal Possession */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    The Consequences Of Illegal Possession Of A Firearm
+  </h3>
+
+  <p>
+    Illegally possessing someone else’s property is already an issue. Just think of how that
+    situation escalates when you’re caught illegally possessing a firearm. If the state proves
+    that the defendant knowingly carried a firearm that was not theirs, the defendant may be
+    subject to the consequences of a third-degree felony.
+  </p>
+
+  {/* Section: Unlicensed Carrying */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    The Consequences Of Unlicensed Carrying Of A Concealed Weapon Or Firearm Or A Felon In Possession Of A Firearm
+  </h3>
+
+  <p>
+    Florida law states that the possession of a firearm by a convicted felon is broken down
+    into two segments – actual possession and constructive possession. Actual possession is
+    when a felon has it on or near their person, while constructive possession is when the
+    firearm is in a place in which the felon has control.
+  </p>
+
+  {/* Section: Deadly Missile */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    The Consequences Of Shooting Or Throwing A Deadly Missile
+  </h3>
+
+  <p>
+    In Florida, shooting or throwing a deadly missile is when a potentially harmful object is
+    projected at a building, vehicle, or vessel with malicious intent. This is a felony that
+    can lead to prison.
+  </p>
+
+  {/* Section: Destructive Device */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    The Consequences Of Possession Or Discharge Of A Destructive Device
+  </h3>
+
+  <p>
+    Possessing or discharging a destructive device in Florida is when a person willfully makes
+    or attempts to make, possess, project, or discharge any destructive device. A destructive
+    device can be a bomb, grenade, rocket, missile, or anything that can cause major
+    destruction, as defined by Florida law. Consequences vary based on severity.
+  </p>
+
+  {/* Section: Aggravated Battery */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Aggravated Battery With A Deadly Weapon?
+  </h3>
+
+  <p>
+    Aggravated battery is the intentional touching of another person with the intent to harm
+    them. When a weapon is used to threaten or cause harm, it escalates to aggravated battery
+    with a deadly weapon. This can result in minimum prison time of 10 years, increasing with
+    severity.
+  </p>
+
+  {/* Section: Additional Information */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Additional Information
+  </h2>
+
+  {/* Aggravated Assault */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Aggravated Assault With A Deadly Weapon?
+  </h3>
+
+  <p>
+    Aggravated assault is the intent to threaten or commit a violent act against another
+    person. When done with a deadly weapon and the intent to cause bodily harm or death, the
+    defendant may face jail time, probation, and heavy fines.
+  </p>
+
+  {/* Armed Robbery */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Armed Robbery Or Burglary With A Firearm?
+  </h3>
+
+  <p>
+    Robbery and burglary are already serious offenses. Add a firearm, and the situation
+    escalates. This is considered a felony with severe consequences, making expert legal
+    representation essential.
+  </p>
+
+  {/* Armed Burglary */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Armed Burglary Carrying A Concealed Firearm?
+  </h3>
+
+  <p>
+    Burglary with a concealed firearm can be risky for a defendant. It escalates the severity
+    and can result in a third-degree felony punishable by up to five years in prison,
+    probation, and significant fines.
+  </p>
+
+  {/* Armed Possession of Drugs */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    The Consequences Of Armed Possession Of Illegal Drugs
+  </h3>
+
+  <p>
+    Possessing a controlled substance with a firearm is a serious offense. This felony can
+    result in state prison time and fines up to $10,000. Additional factors like drug
+    quantity and firearm type can increase sentencing.
+  </p>
+
+  {/* Armed Kidnapping */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Armed Kidnapping?
+  </h3>
+
+  <p>
+    Kidnapping under Florida law is a felony. Adding a firearm or deadly weapon escalates the
+    crime significantly. Kidnapping involves holding any person against their will — not only
+    minors.
+  </p>
+
+  {/* Attempted Manslaughter */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Attempted Manslaughter?
+  </h3>
+
+  <p>
+    Manslaughter involves being culpable for someone’s death. Even if the act was unsuccessful,
+    it is still chargeable. Attempted manslaughter is a third-degree felony with penalties of
+    up to five years in prison and substantial fines.
+  </p>
+
+  {/* Attempted Murder */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Attempted Murder?
+  </h3>
+
+  <p>
+    Attempted murder is the act of attempting to kill another person. Even if unsuccessful, it
+    is still a felony punishable by significant prison time.
+  </p>
+
+  {/* VOP with Weapon */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is A Violation Of Probation (When The Underlying Offense Involved A Weapon Or Firearm)?
+  </h3>
+
+  <p>
+    Violating probation when the initial offense involved a weapon is a serious mistake. Failure
+    to meet probation terms can result in more jail time, extended probation, and loss of
+    eligibility for expungement.
+  </p>
+
+  {/* Gun Trafficking */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Gun Trafficking?
+  </h3>
+
+  <p>
+    Selling or distributing guns outside Florida and federal regulation is gun trafficking. It
+    is a serious felony offense. Given today’s climate surrounding firearms, skilled legal
+    representation is crucial.
+  </p>
+
+  {/* Federal Firearms Violations */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Are Federal Firearms Violations?
+  </h3>
+
+  <p>
+    Firearms are a major subject of concern nationwide. Federal violations include unlawful
+    possession, selling stolen firearms, firearms in school zones, and more — all carrying
+    steep consequences.
+  </p>
+
+  {/* Drug-Related Firearms Violations */}
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Are Drug-Related Firearms Violations?
+  </h3>
+
+  <p>
+    Drug-related firearms violations involve mixing firearms with drug offenses — a combination
+    that brings severe penalties, including prison time, probation, and fines.
+  </p>
+
+  {/* Final CTA */}
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Are You in Need of a Weapons and Firearms Lawyer in Tampa?
+  </h2>
+
+  <p>
+    Our weapons and firearms lawyer in Tampa has the knowledge and experience to get you the
+    best possible outcome. When you come to McCulloch Law, you gain access to Tampa’s leading
+    criminal defense team. Contact us today to learn more about how we can assist you.
+  </p>
+
+</div>
+
+    `,
+    slug: "weapons-firearms-charges",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Driving with a Suspended or Revoked License",
+    description:
+      "Legal support for clients accused of driving with a suspended or revoked license, helping them navigate the system and pursue a positive resolution.",
+    mainDescription: `
+    <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Driving With a Suspended or Revoked License
+  </h2>
+
+  <p>
+    Being pulled over while driving with a suspended or revoked license in Florida is a serious
+    matter — one that can result in harsh penalties, increased fines, and even jail time.
+    Many people find themselves facing this charge due to misunderstandings, unpaid tickets, or
+    administrative errors. Regardless of the reason, having an experienced attorney is essential
+    to protect your driving privileges and your future.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    Why Licenses Get Suspended or Revoked
+  </h3>
+
+  <p>
+    In Florida, a driver’s license can be suspended or revoked for several reasons,
+    including but not limited to:
+  </p>
+
+  <ul className="list-disc list-inside">
+    <li>Unpaid traffic fines or court costs</li>
+    <li>Failure to appear in court</li>
+    <li>Accumulating too many points on a driving record</li>
+    <li>Driving under the influence (DUI)</li>
+    <li>Insurance-related violations</li>
+    <li>Child support delinquency</li>
+    <li>Being classified as a Habitual Traffic Offender (HTO)</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    Penalties for Driving With a Suspended or Revoked License
+  </h3>
+
+  <p>
+    The penalties for this offense depend on whether it’s a first, second, or third violation.
+    Florida law treats repeat offenders harshly, and charges can escalate quickly.
+  </p>
+
+  <ul className="list-disc list-inside">
+    <li>
+      <strong>First Offense:</strong> Second-degree misdemeanor, punishable by up to
+      60 days in jail and/or fines.
+    </li>
+    <li>
+      <strong>Second Offense:</strong> First-degree misdemeanor, punishable by up
+      to 1 year in jail.
+    </li>
+    <li>
+      <strong>Third or Subsequent Offense:</strong> May be charged as a felony,
+      leading to up to 5 years in prison and a permanent criminal record.
+    </li>
+    <li>
+      <strong>Habitual Traffic Offender (HTO):</strong> Driving as an HTO can result
+      in a third-degree felony — even if you were unaware of your HTO status.
+    </li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    How We Defend These Cases
+  </h3>
+
+  <p>
+    At McCulloch Law, we know that not every suspended license case is what it seems.
+    Many drivers never receive proper notice from the DMV, while others lose their license
+    because of clerical mistakes or financial hardship.
+  </p>
+
+  <p>Our defense strategies may include:</p>
+
+  <ul className="list-disc list-inside">
+    <li>Challenging whether proper notice of suspension was issued</li>
+    <li>Working to reinstate your driver’s license quickly</li>
+    <li>Negotiating to reduce the charge to “No Valid Driver’s License”</li>
+    <li>Preventing an HTO designation</li>
+    <li>Working toward dismissal when possible</li>
+  </ul>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Are You Facing a Suspended License Charge in Tampa?
+  </h2>
+
+  <p>
+    You don’t have to navigate this stressful situation alone. Our experienced traffic and
+    criminal defense attorney at McCulloch Law is ready to protect your rights and help you
+    restore your driving privileges. Contact us today to learn how we can assist you.
+  </p>
+
+</div>
+
+    `,
+    slug: "driving-with-suspended-or-revoked-license",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Vehicular Manslaughter",
+    description:
+      "Defense for individuals facing vehicular manslaughter charges, with dedicated investigation and strategic representation.",
+    mainDescription: `
+    
+    <div className="flex flex-col gap-3 text-lg leading-relaxed text-gray-700">
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Vehicular Manslaughter
+  </h2>
+
+  <p>
+    Vehicular manslaughter, also known in Florida as “vehicular homicide,” is one of the most
+    serious traffic-related criminal charges a person can face. It involves the killing of
+    another human being—or an unborn child—caused by the reckless operation of a motor vehicle.
+    Because of the severity and tragic nature of these cases, prosecutors are aggressive,
+    and the penalties can be life-changing.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    What Is Vehicular Manslaughter?
+  </h3>
+
+  <p>
+    Under Florida law, vehicular manslaughter occurs when a person operates a vehicle in a
+    manner that is considered reckless—meaning they showed a willful or wanton disregard
+    for the safety of others—and this reckless behavior results in a fatality.
+  </p>
+
+  <p>Reckless driving may include behaviors such as:</p>
+
+  <ul className="list-disc list-inside">
+    <li>Excessive speeding or street racing</li>
+    <li>Aggressive or erratic driving</li>
+    <li>Driving while distracted (texting, social media, etc.)</li>
+    <li>Driving under the influence of drugs or alcohol</li>
+    <li>Ignoring traffic signals or driving dangerously in poor weather</li>
+  </ul>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    Penalties for Vehicular Manslaughter
+  </h3>
+
+  <p>
+    Vehicular manslaughter is a second-degree felony in Florida, but circumstances of the case
+    may elevate the charges and resulting penalties. Potential consequences include:
+  </p>
+
+  <ul className="list-disc list-inside">
+    <li><strong>Up to 15 years in prison</strong> and significant fines</li>
+    <li><strong>Felony probation</strong></li>
+    <li><strong>Permanent driver’s license revocation</strong> in certain cases</li>
+    <li><strong>Designation as a Habitual Traffic Offender</strong></li>
+    <li>A permanent felony criminal record</li>
+  </ul>
+
+  <p>
+    If the driver fails to stop, render aid, or remain at the scene, the charge may be upgraded
+    to a first-degree felony, punishable by up to 30 years in prison.
+  </p>
+
+  <h3 className="text-2xl md:text-3xl font-bold text-black">
+    How We Defend Vehicular Manslaughter Cases
+  </h3>
+
+  <p>
+    These cases often involve complex accident reconstruction, forensic analysis, and detailed
+    investigation. At McCulloch Law, we carefully examine every aspect of the incident to build
+    the strongest possible defense.
+  </p>
+
+  <p>Defense strategies may include:</p>
+
+  <ul className="list-disc list-inside">
+    <li>Challenging the allegation of “reckless” driving</li>
+    <li>Disputing the cause of the accident</li>
+    <li>Examining vehicle data, dashcam footage, and witness testimony</li>
+    <li>Addressing improper police procedures or testing methods</li>
+    <li>Negotiating reduced charges when appropriate</li>
+  </ul>
+
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Are You Facing a Vehicular Manslaughter Charge in Tampa?
+  </h2>
+
+  <p>
+    If you or a loved one is being accused of vehicular manslaughter, you need skilled and
+    immediate legal representation. Our experienced criminal defense team at McCulloch Law
+    understands the high stakes and will fight to protect your future. Contact us today to 
+    learn how we can help.
+  </p>
+
+</div>
+
+    `,
+    slug: "vehicular-manslaughter",
+    image: "/images/practice/Assault.png",
+  },
+  {
+    title: "Speeding and High-Speed Violations",
+    description:
+      "Representation for speeding and high-speed driving violations, helping clients avoid severe penalties and protect their driving record.",
+    mainDescription: `
+    <div className="flex flex-col gap-6 bg-white p-8 rounded-lg shadow-md">
+  {/* Title */}
+  <h2 className="text-2xl lg:text-3xl font-bold text-gray-800">
+    Speeding and High-Speed Violations
+  </h2>
+
+  {/* Intro */}
+  <p className="text-lg text-gray-700 leading-relaxed">
+    Speeding and high-speed violations may seem minor at first glance, but they can carry serious and long-lasting consequences.
+  </p>
+
+  <p className="text-lg text-gray-700 leading-relaxed">
+    When an individual is accused of driving far above the posted speed limit or engaging in reckless operation of a vehicle, they may face steep fines, license points, increased insurance rates, and even potential criminal charges depending on the severity of the incident.
+  </p>
+
+  <p className="text-lg text-gray-700 leading-relaxed">
+    High-speed violations are taken very seriously in Florida. Law enforcement and prosecutors often pursue these cases aggressively due to the heightened danger associated with extreme speeds. A conviction can affect your driving privileges, employment opportunities, and overall quality of life.
+  </p>
+
+  {/* Defense Section */}
+  <h3 className="text-xl lg:text-2xl font-semibold text-gray-800">
+    Defending Speeding & High-Speed Cases
+  </h3>
+  <p className="text-lg text-gray-700 leading-relaxed">
+    With an experienced attorney from <span className="font-medium text-primary">McCulloch Law, P.A.</span> by your side, you can challenge the charges, negotiate penalties, and work toward the most favorable result possible. Our team examines every detail—from radar calibration to officer procedure—to ensure your rights were not violated.
+  </p>
+
+  {/* Call to Action */}
+  <h3 className="text-xl lg:text-2xl font-semibold text-gray-800">
+    Protect Your Record & Your Future
+  </h3>
+  <p className="text-lg text-gray-700 leading-relaxed">
+    If you’re charged with a speeding or high-speed violation in Tampa or surrounding areas, reach out to us right away. Our legal team is ready to guide you, protect your driving record, and help you move forward confidently.
+  </p>
+</div>
+
+    `,
+    slug: "speeding-high-speed-violations",
+    image: "/images/practice/Assault.png",
   },
 ];
