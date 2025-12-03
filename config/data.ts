@@ -81,7 +81,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 
     `,
 
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/an-overview.png",
     slug: "an-overview",
   },
   {
@@ -156,7 +156,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
         `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/auto-accident.png",
     slug: "auto-accident",
   },
   {
@@ -250,7 +250,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/bicycle-accident.png",
     slug: "bicycle-accident",
   },
   {
@@ -380,7 +380,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/truck-accidents.png",
     slug: "truck-accidents",
   },
   {
@@ -472,7 +472,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/motorcycle-accidents.png",
     slug: "motorcycle-accidents",
   },
   {
@@ -554,7 +554,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/uber-ubereats-lyft-accident.png",
     slug: "uber-ubereats-lyft-accident",
   },
   {
@@ -606,7 +606,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/slip-trip-fall.png",
     slug: "slip-trip-fall",
   },
   {
@@ -658,7 +658,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/premises-liability.png",
     slug: "premises-liability",
   },
   {
@@ -710,7 +710,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/dog-bites.png",
     slug: "dog-bites",
   },
   {
@@ -758,7 +758,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/medical-malpractice.png",
     slug: "medical-malpractice",
   },
   {
@@ -826,7 +826,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 </div>
 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/products-liability.png",
     slug: "products-liability",
   },
   {
@@ -875,7 +875,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 
                 
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/wrongful-death.png",
     slug: "wrongful-death",
   },
   {
@@ -925,7 +925,7 @@ export const PersonalInjuryServices: PersonalInjury[] = [
 
                
     `,
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/fatal-accidents.png",
     slug: "fatal-accidents",
   },
 ];
@@ -1060,7 +1060,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "an-overview-criminal-injury",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/an-overview-criminal-injury.png",
   },
   {
     title: "Assault, Battery, Stalking",
@@ -1186,7 +1186,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "assault-battery-stalking",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/assault-battery-stalking.png",
   },
   {
     title: "Arson and Criminal Mischief",
@@ -1285,7 +1285,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "arson-criminal-mischief",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/arson-criminal-mischief.png",
   },
   {
     title: "Burglary & Trespass",
@@ -1369,7 +1369,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "burglary-trespass",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/burglary-trespass.png",
   },
   {
     title: "Domestic Violence",
@@ -1406,7 +1406,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "domestic-violence",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/domestic-violence.png",
   },
   {
     title: "Drug Crimes",
@@ -1450,7 +1450,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "drug-crimes",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/drug-crimes.png",
   },
   {
     title: "DUI",
@@ -1518,7 +1518,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "dui",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/dui.png",
   },
   {
     title: " Felonies / Probation",
@@ -1650,7 +1650,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "probation",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/probation.png",
   },
   {
     title: "Fraud",
@@ -1692,7 +1692,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "fraud",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/fraud.png",
   },
   {
     title: "Homicide / Attempted Homicide",
@@ -1739,7 +1739,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "homicide-attempted-homicide",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/homicide-attempted-homicide.png",
   },
   {
     title: "Injunctions",
@@ -1787,7 +1787,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "injunctions",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/injunctions.png",
   },
   {
     title: "Juvenile Crimes",
@@ -1832,7 +1832,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "juvenile-crimes",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/juvenile-crimes.png",
   },
   {
     title: "Misdemeanors",
@@ -1995,7 +1995,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "misdemeanors",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/misdemeanors.png",
   },
   {
     title: "Robbery",
@@ -2072,7 +2072,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "robbery",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/robbery.png",
   },
   {
     title: "Theft Crimes",
@@ -2188,7 +2188,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "theft-crimes",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/theft-crimes.png",
   },
   {
     title: "Seal / Expunge",
@@ -2241,7 +2241,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "seal-expunge",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/seal-expunge.png",
   },
   {
     title: "Sex Crimes",
@@ -2433,7 +2433,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "sex-crimes",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/sex-crimes.png",
   },
   {
     title: "Violation of Probation",
@@ -2505,7 +2505,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "violation-of-probation",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/violation-of-probation.png",
   },
   {
     title: "Weapons & Firearms Charges",
@@ -2733,7 +2733,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "weapons-firearms-charges",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/weapons-firearms-charges.png",
   },
   {
     title: "Driving with a Suspended or Revoked License",
@@ -2835,7 +2835,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "driving-with-suspended-or-revoked-license",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/driving-with-suspended-or-revoked-license.png",
   },
   {
     title: "Vehicular Manslaughter",
@@ -2934,7 +2934,7 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "vehicular-manslaughter",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/vehicular-manslaughter.png",
   },
   {
     title: "Speeding and High-Speed Violations",
@@ -2979,6 +2979,6 @@ export const CriminalInjuryServices: CriminalInjury[] = [
 
     `,
     slug: "speeding-high-speed-violations",
-    image: "/images/practice/Assault.png",
+    image: "/images/practice/speeding-high-speed-violations.png",
   },
 ];
