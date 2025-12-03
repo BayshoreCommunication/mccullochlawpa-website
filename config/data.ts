@@ -720,7 +720,48 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     description:
       "Representation for injuries caused by unsafe property conditions, with strategic support through each step of the claim.",
     mainDescription: `
-        
+        <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Premises Liability
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    Property owners in Florida have a duty to maintain their property in a reasonably safe condition for people who are lawfully on the property — and in some cases, even for trespassers. This duty extends not only to the property itself but also to the staff of a business.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Premises liability cases include slip and fall accidents, negligent security (such as a bouncer using excessive force or a hotel failing to stop a deadly incident), potholes in parking lots, negligent staffing (like a daycare employee injuring a child), and many other types of injuries. If you’ve been injured while on someone else’s property, the attorneys at McCulloch Law, P.A. can help you evaluate your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Each year, thousands of people are injured while in the home of another, whether it be a friend, family member, or neighbor. Many times, your injury will be covered by the homeowner’s insurance of the property owner. When someone invites you into their home, they have a duty to ensure your safety and to warn you of all known dangers. If you’ve been injured in someone else’s home, you may be entitled to compensation through their homeowner’s insurance. Our attorneys can investigate the claim and advise you on available coverage and potential compensation amounts.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    After an injury on someone else’s property, notify the manager or homeowner. If the incident occurred at a business, request an incident report and the full name of the store manager, and obtain a copy for your records. Document your injury and the scene with photographs. Seek medical treatment promptly to ensure proper care and documentation. Do not speak to any insurance company or risk management department without an attorney, as they may attempt to settle quickly to minimize liability.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Premises Liability Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for people injured at a business or in the home of a friend, family member, or neighbor. Our attorneys can meet you at your home, hospital, or another convenient location. We handle injury cases on a contingency fee basis, meaning you pay no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Medical bills and lost wages can quickly accumulate after a premises liability injury. Let our experienced attorneys handle your case and work to make you whole again.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. have handled premises liability cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
     `,
     image: "/images/practice/Assault.png",
     slug: "premises-liability",
@@ -731,7 +772,48 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     description:
       "Assistance for clients hurt in dog bite incidents, including pursuing compensation and protecting their rights.",
     mainDescription: `
-        
+        <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Dog Bites
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    In Florida, dog owners are “strictly liable” if their dog injures someone. This means there is no need to prove negligence — a victim can bring a claim even if the owner was unaware of the dog’s aggressiveness.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you were bitten while on public land, such as a dog park, or lawfully on private property, you likely have a claim against the dog’s owner. Florida law provides few exceptions to a dog owner’s liability.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Dogs bite approximately 4.7 million people each year in the U.S. Dog parks can be particularly risky since you cannot know the other dogs’ behavior or training. Small children are often at greatest risk, as they cannot defend themselves. Many dog bite victims require reconstructive surgery, stitches, therapy, counseling, and more. The attorneys at McCulloch Law, P.A. understand the devastating impact of a dog attack.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Homeowners’ insurance companies paid $675 million in dog bite and dog-related claims in 2018. After a dog bite, notify local authorities or animal control and call the police. Obtain a copy of the animal control report. Document your injuries, the scene, and the dog if it can be done safely. Seek medical treatment promptly to document your injuries and receive care. Do not speak to any insurance company without an attorney, as they may try to settle quickly to minimize liability.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Dog Bite Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for victims of dog bites or attacks. Our attorneys can meet you at your home, hospital, or another convenient location. We handle dog bite cases on a contingency fee basis, meaning you owe no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Medical bills and lost wages can quickly pile up after a dog bite. Let our experienced attorneys handle your case and work to make you whole again.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. have experience handling dog bite and dog attack cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
     `,
     image: "/images/practice/Assault.png",
     slug: "dog-bites",
@@ -742,7 +824,44 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     description:
       "Support for individuals harmed by medical errors, with a focus on securing compensation for recovery.",
     mainDescription: `
-        
+        <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Medical Malpractice
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    In the United States, we trust doctors and medical personnel to care for us in our times of greatest need. Whether it’s an ambulance ride after an accident, emergency surgery, elective cosmetic surgery, or a routine check-up, medical professionals are expected to use their best judgment and the skills they have gained through years of education and experience.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Unfortunately, medical errors sometimes occur. Mistakes like amputating the wrong limb or leaving instruments inside a patient are examples of medical malpractice. Victims of medical malpractice in Florida have the right to seek compensation.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    While many believe medical malpractice is rare, surgical errors are the third-leading cause of death in the United States, with at least 250,000 deaths each year attributed to medical errors. Medical malpractice claims include errors during surgery, childbirth, cancer diagnosis, and treatment of common medical conditions. Florida has seen some of the largest malpractice payouts in history, including a $216.7 million jury award for a misdiagnosed stroke. The attorneys at McCulloch Law, P.A. can investigate your claim to determine what the doctor did or did not do that may have changed the medical outcome. Medical malpractice can result in serious lifelong complications or death.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Medical Malpractice Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for victims of medical malpractice and their families. Our attorneys can meet you at your home, hospital, or another convenient location. We handle medical malpractice cases on a contingency fee basis, meaning you pay no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    If you or a loved one has been the victim of a doctor’s negligence, the consequences can be devastating. Let our experienced attorneys handle your case and work to secure fair compensation.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. have experience handling medical malpractice cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
     `,
     image: "/images/practice/Assault.png",
     slug: "medical-malpractice",
@@ -753,7 +872,64 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     description:
       "Representation for clients injured by defective or dangerous products, along with help building a strong claim.",
     mainDescription: `
-        
+        <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Products Liability
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    Product liability is the area of law in which manufacturers, distributors, suppliers, retailers, and others who make products available to the public are held legally responsible for injuries caused by those products.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Generally, a products liability claim falls into one of three categories:
+  </p>
+
+  <ul className="list-decimal list-inside text-lg leading-relaxed text-gray-700">
+    <li>
+      <strong>Design Defects:</strong> Present in a product from the beginning, making it inherently unsafe.
+    </li>
+    <li>
+      <strong>Manufacturing Defects:</strong> Occur during the manufacturing or assembly process.
+    </li>
+    <li>
+      <strong>Marketing Defects:</strong> Flaws in product marketing, such as improper labeling, insufficient instructions, or inadequate safety warnings.
+    </li>
+  </ul>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Products liability cases include, but are not limited to, faulty car manufacturing, exploding e-cigarettes or vaporizers, tobacco products, silicone breast implants, asbestos building materials, faulty construction equipment, defective space heaters, unsafe food products, and any other product that causes injury while being used as intended.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Products liability is generally considered a strict liability offense, meaning a defendant is liable if the product is defective, regardless of intent. Recalled children’s toys or automobiles are common examples. If you or a loved one has been injured by a defective product, contact the attorneys at McCulloch Law, P.A. so they can investigate and evaluate your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    After a product-related injury, document the injury and the defective product with photographs. Keep the defective product, as it will assist your attorney in evaluating the case and may prevent legal complications. Seek medical treatment promptly to receive care and document your injuries.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Products Liability Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for individuals injured by defective products. Our attorneys can meet you at your home, hospital, or another convenient location. We handle products liability cases on a contingency fee basis — you pay no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Medical bills and lost wages can quickly accumulate after a product-related injury. Let our experienced attorneys handle your case and work to make you whole again.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. handle products liability cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
     `,
     image: "/images/practice/Assault.png",
     slug: "products-liability",
@@ -764,7 +940,44 @@ export const PersonalInjuryServices: PersonalInjury[] = [
     description:
       "When a friend or family member passes away due to someone else’s negligence, our priority is to secure critical evidence, open a thorough investigation, and protect your family's right to justice.",
     mainDescription: `
-       
+       <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Wrongful Death
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    Losing a loved one due to someone else’s negligence or wrongful actions is a tragic and life-changing event. Florida law allows the surviving family members to pursue a wrongful death claim to seek compensation for their loss.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Wrongful death claims can arise from a variety of situations, including car accidents, medical malpractice, defective products, unsafe premises, workplace accidents, or other negligent or intentional acts that result in death. These claims are intended to provide financial support to cover medical expenses, funeral costs, lost income, and loss of companionship.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Filing a wrongful death claim can be complex and requires careful investigation. The attorneys at McCulloch Law, P.A. can help gather evidence, identify responsible parties, and guide your family through the legal process while ensuring your rights are protected.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Wrongful Death Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for families who have lost a loved one due to negligence. Our attorneys can meet you at your home, hospital, or another convenient location. We handle wrongful death cases on a contingency fee basis, meaning you pay no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Losing a loved one is devastating, and navigating the legal process can be overwhelming. Let our experienced attorneys manage your case and work to obtain the compensation your family deserves.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. have experience handling wrongful death cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
                 
     `,
     image: "/images/practice/Assault.png",
@@ -777,147 +990,44 @@ export const PersonalInjuryServices: PersonalInjury[] = [
       "When negligence causes an accidental death, we help families understand their rights, investigate the case, and pursue the compensation they deserve.",
     mainDescription: `
        
-                  <div>
-                    <h2 className="text-3xl md:text-4xl font-bold text-black mt-6 mb-4">
-                      What Is Assault?
-                    </h2>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Assault is the intentional threat one person makes toward
-                      another, creating a real fear of harm even when no physical
-                      contact occurs.
-                    </p>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      The penalties depend on the specific charge and can have a
-                      lasting impact on your future. Allegations of assault,
-                      battery, stalking, or violating an injunction should never be
-                      taken lightly. These cases require strong evidence, careful
-                      preparation, and the guidance of an experienced criminal
-                      defense attorney to ensure you receive a fair process.
-                    </p>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      In today’s environment, especially when charges involve law
-                      enforcement or other sensitive situations, it is important to
-                      work with someone who can view your case clearly and handle it
-                      with the skill it deserves.
-                    </p>
-                  </div>
-                
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      Are you looking for a criminal defense attorney in Tampa?
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      At McCulloch Law, P.A., we help clients through some of the
-                      most difficult moments of their lives and work toward the best
-                      possible outcome. Our attorney provides clear, steady guidance
-                      to help you navigate a complicated legal system and understand
-                      what to expect at every stage. Contact our team today to learn
-                      how we can support you.
-                    </p>
-                  </div>
-                 
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      Legal Consequences of Assault on a Law Enforcement Officer
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Assault on a law enforcement officer is a serious offense that
-                      carries enhanced penalties when the officer is performing
-                      lawful duties. Depending on the circumstances, the charge can
-                      be filed as a second-degree misdemeanor, punishable by up to
-                      60 days in jail and a $500 fine, or as a first-degree
-                      misdemeanor with penalties of up to one year in jail and a
-                      $1,000 fine. In more severe situations, the case may even be
-                      elevated to a felony, leading to far more significant
-                      consequences.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      Penalties for Assaulting a Person 65 Years or Older
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Assault on a person who is 65 years or older carries enhanced
-                      penalties, even if you did not know the individual’s age at
-                      the time. The offense is still based on making a credible
-                      threat that creates fear of harm, and a conviction can result
-                      in up to one year in jail.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      Understanding Aggravated Assault in Florida
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Aggravated assault in Florida is defined as intentionally
-                      threatening another person while using a deadly weapon or
-                      while committing a felony. The threat must create a reasonable
-                      fear that harm is imminent. This offense is classified as a
-                      third-degree felony, which carries far more serious
-                      consequences than simple assault, a second-degree misdemeanor.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      The Consequences Of Aggravated Assault On A Law Enforcement
-                      Officer
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Aggravated assault is an even bigger issue than assault on a
-                      law enforcement officer. The use of force can garner a
-                      third-degree felony with a 5 year prison maximum and a $5,000
-                      fine, while a second-degree felony warrants up to 15 years in
-                      prison and a $10,000 fine.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      What Is Battery?
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Battery in Florida occurs when a defendant intentionally makes
-                      physical contact with a victim against that person’s will. The
-                      prosecutor must show that the contact was unwanted and
-                      intentional. The charge can range in severity from simple
-                      battery to felony battery, and the penalties vary based on the
-                      level of the offense.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      The Consequences Of Battery On A Law Enforcement Officer
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      In Florida, battery on a law enforcement officer is a serious
-                      offense punishable by up to five years in prison, five years
-                      of probation, and a $5,000 fine. The charge applies when a
-                      defendant knowingly and intentionally strikes an officer who
-                      is performing lawful duties at the time of the incident.
-                    </p>
-                    <ul className="text-base md:text-base leading-relaxed mb-3 space-y-2 list-disc list-inside">
-                      <p>A law enforcement officer may include:</p>
-                      <li>Police officer</li>
-                      <li>Correctional officer</li>
-                      <li>Traffic enforcement officer</li>
-                      <li>Probation officer</li>
-                      <li>Federal law enforcement officer</li>
-                      <li>
-                        And other authorized officers acting within their legal
-                        duties
-                      </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="text-xl md:text-2xl font-bold text-black mt-6 mb-4">
-                      Consequences Of Battery On A Person 65 Years Or Older
-                    </h4>
-                    <p className="text-base md:text-base leading-relaxed mb-3">
-                      Battery on a person 65 years or older involves using force
-                      against their will and causing bodily harm. The contact is
-                      typically defined as a strike, and a conviction can result in
-                      penalties of up to five years in prison.
-                    </p>
-                  </div>
+                 <div className="flex flex-col gap-6">
+  
+  <h2 className="text-3xl md:text-4xl font-bold text-black leading-snug">
+    Fatal Accidents
+  </h2>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    Fatal accidents can occur suddenly and without warning, leaving families devastated. In Florida, victims’ families may be entitled to pursue legal action when a loved one dies as a result of someone else’s negligence or wrongful conduct.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Fatal accidents can arise from a variety of circumstances, including car and truck accidents, motorcycle crashes, pedestrian incidents, medical malpractice, defective products, unsafe premises, or workplace accidents. The goal of a legal claim in these situations is to obtain compensation for medical bills, funeral expenses, lost income, and loss of companionship.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    Investigating a fatal accident requires careful attention to evidence and details. The attorneys at McCulloch Law, P.A. can help collect evidence, identify responsible parties, and guide your family through the legal process while protecting your rights.
+  </p>
+
+  
+  <h3 className="text-2xl font-semibold text-black mt-4">
+    Why Hire A Fatal Accidents Lawyer?
+  </h3>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    McCulloch Law, P.A. offers free consultations for families affected by fatal accidents. Our attorneys can meet you at your home, hospital, or any convenient location. We handle fatal accident cases on a contingency fee basis, meaning you pay no legal fees unless we win your case.
+  </p>
+
+  <p className="text-lg leading-relaxed text-gray-700">
+    The loss of a loved one is overwhelming, and managing the legal process can be stressful. Let our experienced attorneys handle your case and work to obtain the compensation your family deserves.
+  </p>
+
+  
+  <p className="text-lg leading-relaxed text-gray-700">
+    The attorneys at McCulloch Law, P.A. have experience handling fatal accident cases throughout Tampa, St. Petersburg, Clearwater, Brandon, Riverview, and surrounding areas of the Greater Tampa Bay Area. We are licensed to practice law throughout the State of Florida.
+  </p>
+</div>
+
                
     `,
     image: "/images/practice/Assault.png",
