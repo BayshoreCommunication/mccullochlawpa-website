@@ -91,18 +91,18 @@ export default function Footer() {
                   Our Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/case-study" className="hover:text-[#D4A017]">
                   Case Study
                 </Link>
-              </li>
+              </li> */}
               <li>
-                <Link href="/blog" className="hover:text-[#D4A017]">
+                <Link href="/blogs" className="hover:text-[#D4A017]">
                   Our Blog
                 </Link>
               </li>
               <li>
-                <Link href="/attorney" className="hover:text-[#D4A017]">
+                <Link href="/about" className="hover:text-[#D4A017]">
                   Our Attorney
                 </Link>
               </li>
@@ -114,32 +114,32 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/auto-accident" className="hover:text-[#D4A017]">
                   Auto Accidents
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/slip-trip-fall" className="hover:text-[#D4A017]">
                   Slip and Fall
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/dog-bites" className="hover:text-[#D4A017]">
                   Dog Bites
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/drug-crimes" className="hover:text-[#D4A017]">
                   Drug Crimes
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/dui" className="hover:text-[#D4A017]">
                   DUI
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-[#D4A017]">
+                <Link href="https://mccullochlawpa-website.vercel.app/practice/domestic-violence" className="hover:text-[#D4A017]">
                   Domestic Violence
                 </Link>
               </li>
