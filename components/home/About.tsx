@@ -12,13 +12,54 @@ export default function About() {
           {/* Left Image */}
           <Reveal y={100} opacityFrom={0} duration={3}>
             <div className="rounded-xl overflow-hidden">
-              <Image
+              {/* <Image
                 src="/images/about/about.jpg"
                 alt="Our Team"
-                className="w-auto h-auto object-cover rounded-xl"
+                className="w-auto h-auto "
                 width={630}
                 height={470}
-              />
+              /> */}
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/images/about/part-1.png"
+                  alt="Our Team"
+                  className="w-auto h-auto "
+                  width={630}
+                  height={470}
+                />
+                <div className="flex flex-col items-center gap-2">
+                  <Image
+                    src="/images/about/part-3.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />{" "}
+                  <Image
+                    src="/images/about/part-2.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />
+                </div>
+                <div className="flex flex-col items-center gap-2">
+                  <Image
+                    src="/images/about/part-4.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />{" "}
+                  <Image
+                    src="/images/about/part-5.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />
+                </div>
+              </div>
             </div>
           </Reveal>
 
