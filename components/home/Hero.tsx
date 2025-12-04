@@ -6,6 +6,9 @@ import Reveal from "@/components/motion/Reveal";
 import { memo, useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
+import { PiHandshakeFill } from "react-icons/pi";
+import { FaAward } from "react-icons/fa6";
+import { IoGlobeOutline } from "react-icons/io5";
 
 const titles = ["Injured?", "Arrested?", "We can help."];
 
@@ -105,7 +108,7 @@ const HeroSection = () => {
                 <Reveal y={100} opacityFrom={0} duration={3}>
                   <div>
                     <Link
-                      href=""
+                      href="/contact"
                       className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
                     >
                       Schedule A Consultation <IoIosArrowForward />
@@ -131,7 +134,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:absolute md:bottom-[-20%]  ">
               <Reveal y={100} opacityFrom={0} duration={4}>
-                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60 xl:h-auto ">
+                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60  ">
                   <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
                     <MdOutlinePersonalInjury />
                   </div>
@@ -146,9 +149,9 @@ const HeroSection = () => {
               </Reveal>
 
               <Reveal y={100} opacityFrom={0} duration={4}>
-                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60 xl:h-auto ">
+                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60  ">
                   <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
-                    <MdOutlinePersonalInjury />
+                    <IoGlobeOutline />
                   </div>
                   <h4 className="text-lg md:text-xl  font-semibold pt-2">
                     Personalized Attention
@@ -160,9 +163,9 @@ const HeroSection = () => {
                 </div>
               </Reveal>
               <Reveal y={100} opacityFrom={0} duration={4}>
-                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60 xl:h-auto ">
+                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60  ">
                   <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
-                    <MdOutlinePersonalInjury />
+                    <PiHandshakeFill />
                   </div>
                   <h4 className="text-lg md:text-xl  font-semibold pt-2">
                     24/7 Availability
@@ -174,9 +177,9 @@ const HeroSection = () => {
                 </div>
               </Reveal>
               <Reveal y={100} opacityFrom={0} duration={4}>
-                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60 xl:h-auto ">
+                <div className="p-6 bg-white  rounded-md space-y-2 shadow-[0px_10px_20px_rgba(0,0,0,0.1)] h-auto lg:h-60  ">
                   <div className="w-16 h-16 bg-[#BA8E2D] flex items-center justify-center   text-white text-4xl ">
-                    <MdOutlinePersonalInjury />
+                    <FaAward />
                   </div>
                   <h4 className="text-lg md:text-xl  font-semibold pt-2">
                     Award-Winning Team

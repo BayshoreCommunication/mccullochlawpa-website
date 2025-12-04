@@ -37,7 +37,6 @@ const Navbar: React.FC = () => {
       {/* ================= TOP BAR ================= */}
       <div className="w-full bg-white text-gray-700 border-b">
         <div className="max-w-[1640px] mx-auto px-8 flex justify-between items-center text-sm">
-          
           {/* Left Phone Section */}
           <div className="flex items-center gap-4">
             <div className="flex items-center gap-2">
@@ -47,13 +46,14 @@ const Navbar: React.FC = () => {
 
             {/* Center Text */}
             <p className="hidden md:block text-gray-600">
-              Call a law firm that cares, available 24/7 for a free consultation.
+              Call a law firm that cares, available 24/7 for a free
+              consultation.
             </p>
           </div>
 
           {/* Right Button */}
           <Link
-            href="#"
+            href="/contact"
             className="bg-[#BA8E2D] text-white px-4 py-4 rounded-sm hover:bg-yellow-700 transition"
           >
             Book an Appointment
@@ -70,7 +70,6 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="max-w-[1640px] mx-auto px-8 py-4 flex justify-between items-center relative">
-          
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image

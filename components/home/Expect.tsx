@@ -8,7 +8,7 @@ export default function Expect() {
   return (
     <section>
       <section className="max-w-[1640px] mx-auto md:py-16 py-8 px-8">
-        <div className="border-b-1 border-[#BA8E2D]   pb-4 mb-8 mx-auto w-full">
+        <div className="border-b-1 border-[#D4D4D4]   pb-4 mb-8 mx-auto w-full">
           <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
             <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
               What You Can Expect from
@@ -22,14 +22,14 @@ export default function Expect() {
           {/* Left Image */}
           <Reveal y={20} opacityFrom={0}>
             <div className="rounded-xl overflow-hidden">
-            <Reveal y={100} opacityFrom={0} duration={3}>
-              <Image
-                src="/images/expert/expert-section.png"
-                alt="Our Team"
-                className="w-auto h-auto object-cover rounded-xl"
-                width={420}
-                height={250}
-              />
+              <Reveal y={100} opacityFrom={0} duration={3}>
+                <Image
+                  src="/images/expert/expert-section.png"
+                  alt="Our Team"
+                  className="w-auto h-auto object-cover rounded-xl"
+                  width={420}
+                  height={250}
+                />
               </Reveal>
             </div>
           </Reveal>

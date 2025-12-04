@@ -92,7 +92,7 @@ export default function About() {
               </Reveal>
               <Reveal y={100} opacityFrom={0} duration={3}>
                 <Link
-                  href=""
+                  href="/contact"
                   className="px-6 py-4 bg-[#BA8E2D] text-white inline-flex items-center gap-2 rounded-sm hover:bg-yellow-700 mt-4 "
                 >
                   Free Consultation <IoIosArrowForward />

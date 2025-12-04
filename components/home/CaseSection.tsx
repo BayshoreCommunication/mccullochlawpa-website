@@ -83,7 +83,7 @@ export default function CaseSection() {
         loop={true}
         autoplay={{
           delay: 0,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
         }}
         speed={5000}
         onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance

@@ -24,7 +24,7 @@ const Video = () => {
     <div>
       <div className="relative w-full  flex items-center justify-center">
         <Image
-          className="absolute inset-0 object-center object-fill  bg-bottom w-full h-full"
+          className="absolute inset-0 object-center object-cover  bg-bottom w-full h-full"
           width={1920}
           height={700}
           src={"/images/video/video-section.png"}
@@ -49,33 +49,32 @@ const Video = () => {
               </div>
 
               <div className="flex flex-col gap-4 max-w-3xl w-full  bg-[#BA8E2D] p-10 rounded-md">
-              <Reveal y={100} opacityFrom={0} duration={3}>
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
-                  We’re here to defend your rights and help you resolve your
-                  legal issues the right way.
-                </h1>
+                <Reveal y={100} opacityFrom={0} duration={3}>
+                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white text-start leading-snug md:leading-tight ">
+                    We’re here to defend your rights and help you resolve your
+                    legal issues the right way.
+                  </h1>
                 </Reveal>
                 <Reveal y={100} opacityFrom={0} duration={3}>
-                <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
-                  Clients often come to me during some of the hardest moments of
-                  their lives. I focus on listening, understanding what they’re
-                  facing, and giving them clear guidance they can trust. Every
-                  case deserves careful preparation and honest communication. No
-                  one should face a legal problem alone, and my commitment is to
-                  stand with my clients and work toward the strongest outcome
-                  possible.
-                </p>
-
-                </Reveal>
-                <Reveal y={100} opacityFrom={0} duration={3}>
-                <div className="mt-5">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-start leading-snug md:leading-tight">
-                    Est. By <br /> Drew McCulloch, Esq.
-                  </h3>
-                  <p className="text-base font-normal text-white text-start leading-snug md:leading-tight mt-3">
-                    Personal Injury Attorney / Criminal Defense Attorney
+                  <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
+                    Clients often come to me during some of the hardest moments
+                    of their lives. I focus on listening, understanding what
+                    they’re facing, and giving them clear guidance they can
+                    trust. Every case deserves careful preparation and honest
+                    communication. No one should face a legal problem alone, and
+                    my commitment is to stand with my clients and work toward
+                    the strongest outcome possible.
                   </p>
-                </div>
+                </Reveal>
+                <Reveal y={100} opacityFrom={0} duration={3}>
+                  <div className="mt-5">
+                    <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-start leading-snug md:leading-tight">
+                      Est. By <br /> Drew McCulloch, Esq.
+                    </h3>
+                    <p className="text-base font-normal text-white text-start leading-snug md:leading-tight mt-3">
+                      Personal Injury Attorney / Criminal Defense Attorney
+                    </p>
+                  </div>
                 </Reveal>
               </div>
             </div>
