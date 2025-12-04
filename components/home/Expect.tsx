@@ -18,7 +18,7 @@ export default function Expect() {
             </h2>
           </Reveal>
         </div>
-        <div className="grid lg:grid-cols-2 items-center gap-10 md:gap-6">
+        <div className="grid lg:grid-cols-2 items-start gap-10 md:gap-6">
           {/* Left Image */}
           <Reveal y={20} opacityFrom={0}>
             <div className="rounded-xl overflow-hidden">
