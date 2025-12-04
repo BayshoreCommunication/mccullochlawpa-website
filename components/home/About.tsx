@@ -50,7 +50,7 @@ export default function About() {
                 </p>
               </Reveal>
               <Reveal y={100} opacityFrom={0} duration={3}>
-                <div className="grid grid-cols-2 gap-4 mt-4 mb-8 w-full">
+                <div className="grid grid-cols-2 gap-4 mt-4 mb-8 ">
                   <ul className="space-y-3">
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#BA8E2D" />
@@ -103,13 +103,36 @@ export default function About() {
         </div>
         <div>
           <Reveal y={100} opacityFrom={0} duration={3}>
-            <Image
-              src="/images/about/achievements.png"
-              alt=""
-              width={1000}
-              height={80}
-              className="mx-auto mt-8"
-            />
+            <div className="flex flex-col md:flex-wrap lg:flex-row  mx-auto mt-16 gap-8 justify-center items-center">
+              <Image
+                src="/images/about/achivements-1.png"
+                alt=""
+                width={1000}
+                height={80}
+                className="  max-w-60"
+              />
+              <Image
+                src="/images/about/achivements-2.png"
+                alt=""
+                width={1000}
+                height={80}
+                className="  max-w-60"
+              />
+              <Image
+                src="/images/about/achivements-3.png"
+                alt=""
+                width={1000}
+                height={80}
+                className="  max-w-60"
+              />
+              <Image
+                src="/images/about/achivements-4.png"
+                alt=""
+                width={1000}
+                height={80}
+                className="  max-w-60"
+              />
+            </div>
           </Reveal>
         </div>
       </section>
