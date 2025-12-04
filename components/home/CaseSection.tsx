@@ -70,12 +70,12 @@ export default function CaseSection() {
 
   return (
     <div
-      className="w-full h-[180px] "
+      className="w-full md:h-[180px] h-[500px]"
       onMouseEnter={() => swiperRef.current?.autoplay.stop()} // Pause on hover
       onMouseLeave={() => swiperRef.current?.autoplay.start()} // Resume autoplay
     >
       <Swiper
-        modules={[Autoplay, Navigation]}
+        modules={[Autoplay]}
         slidesPerView={4}
         direction={direction}
         navigation={true}
