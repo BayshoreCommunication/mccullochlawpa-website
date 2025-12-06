@@ -16,7 +16,7 @@ export default function PersonalInjury() {
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-              <p className="text-base font-normal text-[#666666] mb-4 inline-block border-b-1 border-[#BA8E2D] pb-2">
+              <p className="text-base font-normal text-[#666666] mb-4   border-b-1 border-primary inline-block">
                 Practice Areas
               </p>
             </Reveal>

@@ -20,12 +20,11 @@ export default async function Blog() {
   return (
     <section className="w-full px-8 py-8 md:py-16">
       <div className="max-w-[1640px] mx-auto">
-
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-              <p className="text-base font-normal text-[#666666] mb-4">
+              <p className="text-base font-normal text-[#666666] mb-4 border-b-1 border-primary inline-block">
                 Latest Blogs
               </p>
             </Reveal>
@@ -48,14 +47,8 @@ export default async function Blog() {
                 : blog.description || "Read more about this blog post.";
 
               return (
-                <Reveal
-                  key={index}
-                  y={100}
-                  opacityFrom={0}
-                  duration={3}
-                >
+                <Reveal key={index} y={100} opacityFrom={0} duration={3}>
                   <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 h-full cursor-pointer hover:scale-105 duration-200">
-
                     {/* Featured Image */}
                     <Image
                       src={blog.featuredImage?.image?.url}

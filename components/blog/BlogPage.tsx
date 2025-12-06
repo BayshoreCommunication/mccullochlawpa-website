@@ -59,7 +59,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-              <p className="text-base font-normal text-[#666666] mb-4">
+              <p className="text-base font-normal text-[#666666] mb-4 border-b-1 border-primary inline-block">
                 Latest Blogs
               </p>
             </Reveal>
@@ -77,10 +77,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {posts.map((blog: any, index: number) => (
             <Reveal key={index} y={100} opacityFrom={0} duration={3}>
-              <Link
-                href={`/blogs/${blog.slug}`}
-                className="block h-full group"
-              >
+              <Link href={`/blogs/${blog.slug}`} className="block h-full group">
                 <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition flex flex-col text-center border border-gray-100 h-full cursor-pointer hover:bg-[#BA8E2D] hover:scale-105 transform duration-200">
                   <Image
                     src={blog.image}

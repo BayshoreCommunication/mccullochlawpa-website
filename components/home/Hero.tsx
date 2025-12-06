@@ -81,7 +81,7 @@ const HeroSection = () => {
                   {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-start leading-snug md:leading-tight max-w-lg">
                     Injured? Arrested? We can help.
                   </h1> */}
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug md:leading-tight max-w-lg">
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-snug md:leading-tight max-w-lg border-b-3 border-primary inline-block pb-1 ">
                     {titles[index].substring(0, subIndex)}
                     <span
                       className={`${

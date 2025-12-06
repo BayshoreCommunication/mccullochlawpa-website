@@ -78,7 +78,7 @@ export default function Testimonials() {
         <div className="flex flex-col items-center justify-center mb-12 max-w-xl mx-auto">
           <Stagger>
             <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-              <p className="text-base font-normal text-[#666666] mb-4">
+              <p className="text-base font-normal text-[#666666] mb-4 border-b-1 border-primary inline-block">
                 Testimonials
               </p>
             </Reveal>

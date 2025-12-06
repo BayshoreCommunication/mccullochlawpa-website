@@ -63,14 +63,15 @@ export default function Services() {
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
           <Stagger>
-          <Reveal y={100} opacityFrom={0} duration={3}>
-              <p className="text-base font-normal text-[#666666] mb-4">
+            <Reveal y={100} opacityFrom={0} duration={3}>
+              <p className="text-base font-normal text-[#666666] mb-4 border-b-1 border-primary inline-block">
                 Practice Areas
               </p>
             </Reveal>
             <Reveal y={100} opacityFrom={0} duration={3}>
               <h2 className="text-3xl md:text-4xl font-bold text-black text-center ">
-                Explore the Services We Offer in Personal Injury and Criminal Defense
+                Explore the Services We Offer in Personal Injury and Criminal
+                Defense
               </h2>
             </Reveal>
           </Stagger>
