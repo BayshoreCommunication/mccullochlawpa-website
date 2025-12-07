@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaEnvelope, FaGlobe, FaPhone, FaYoutube } from "react-icons/fa6";
+import { FaEnvelope, FaGlobe, FaPhone, FaYoutube,FaSquareXTwitter } from "react-icons/fa6";
 
 import {
   FaFacebookF,
@@ -38,15 +38,15 @@ export default function Footer() {
             {/* Social Icons */}
             {/* Social Icons */}
             <div className="flex gap-4 text-[#D4A017] text-lg mt-5">
-              <Link href="#" aria-label="Facebook">
+              <Link href="https://www.facebook.com/mccullochlawtpa" aria-label="Facebook" target="_blank">
                 <FaFacebookF />
               </Link>
 
-              <Link href="#" aria-label="LinkedIn">
+              <Link href="https://www.linkedin.com/company/mcculloch-law-p-a/" aria-label="LinkedIn" target="_blank">
                 <FaLinkedinIn />
               </Link>
 
-              <Link href="#" aria-label="Instagram">
+              <Link href="https://www.instagram.com/mccullochlawtpa/" aria-label="Instagram" target="_blank">
                 <FaInstagram />
               </Link>
 
@@ -56,17 +56,17 @@ export default function Footer() {
               </Link>
 
               {/* Yelp */}
-              <Link href="#" aria-label="Yelp">
+              <Link href="https://www.yelp.com/biz/mcculloch-law-p-a-tampa-10?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" aria-label="Yelp" target="_blank">
                 <FaYelp />
               </Link>
 
-              {/* Google My Business (using FaGoogle as closest match) */}
-              <Link href="#" aria-label="Google My Business">
-                <FaGoogle />
+              
+              <Link href="https://x.com/McCullochLawTPA" aria-label="Google My Business" target="_blank">
+                <FaSquareXTwitter />
               </Link>
 
               {/* TikTok */}
-              <Link href="#" aria-label="TikTok">
+              <Link href="https://www.tiktok.com/@mcculllochlawtpa" aria-label="TikTok" target="_blank">
                 <FaTiktok />
               </Link>
             </div>
@@ -165,13 +165,31 @@ export default function Footer() {
                 </Link>
               </li>
 
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4A017]" />
                 <Link
                   href="mailto:attorney@mcfloridalaw.com"
                   className="hover:text-[#D4A017]"
                 >
                   attorney@mcfloridalaw.com
+                </Link>
+              </li> */}
+              <li className="flex items-center gap-3">
+                <FaEnvelope className="text-[#D4A017]" />
+                <Link
+                  href="mailto:attorney@mcfloridalaw.com"
+                  className="hover:text-[#D4A017]"
+                >
+                 Drew@MCFloridaLaw.com
+                </Link>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaEnvelope className="text-[#D4A017]" />
+                <Link
+                  href="mailto:attorney@mcfloridalaw.com"
+                  className="hover:text-[#D4A017]"
+                >
+                  LsJones131@gmail.com
                 </Link>
               </li>
 

@@ -13,42 +13,42 @@ import Stagger from "../motion/Stagger";
 
 const testimonials = [
   {
-    name: "Julian V.",
-    time: "4 months ago",
-    review:
-      "“I recently had the pleasure working with McCulloch Law P.A. Drew demonstrated a deep understanding of the law providing comprehensive advice on legal matters. The firm was patient and dedicated to addressing all my concerns, making the legal process smooth and stress-free.”",
-    rating: 5,
-    image: "",
-  },
-  {
-    name: "Erica T.",
-    time: "4 weeks ago",
-    review:
-      "“This was the absolute best experience I have had under unfortunate circumstances. Drew is the best at what he does and he is very personable. He lead me through the process and the outcome was far greater than I anticipated. I would recommend Drew to anyone in need of his expertise.”",
-    rating: 5,
-    image: "",
-  },
-  {
-    name: "Alicia Perez",
+    name: "Larry Neely",
     time: "3 months ago",
     review:
-      "Words can’t even express how grateful I am. The whole staff is amazing! I don’t think anyone can really understand how much peace I feel. The Wellness Center gave me so much more reason to wake up everyday and put my best self forward. You are all hero’s in my personal book. Thank you for all you do.",
+      "Very professional. Compassionate, kind, honest and beyond capable to work for you. Drew worked fiercely to get the job done on a much quicker timeline than expected. He is the exact opposite of every lawyer joke out there. Would highly recommend!",
     rating: 5,
     image: "",
   },
   {
-    name: "JAY S",
-    time: "a month ago",
+    name: "garilania reyes",
+    time: "7 months ago",
     review:
-      "I love everyone there! They're so kind and always willing to help you matter what.  They REALLY care about me getting better.  If you have pain, give them a call ASAP. The biggest mistake you could tell yourself, is it'll go away. They have really great hours that meet the needs before and after work. Don't wait give them a call.",
+      "Drew is the BEST! Idk how he does it but I’m so grateful HE took my case on when I needed help. I literally handed him my problems and then didn’t have to think about them until they were resolved. Can’t ask for more than that!",
     rating: 5,
     image: "",
   },
   {
-    name: "Paul Martinez",
+    name: "christina lavery caruso",
+    time: "7 months ago",
+    review:
+      "I could not be happier with how Drew and Jessica handled my case. He used wisdom and discernment to handle the court case and was able to remove points from my driving record. I would highly recommend them.",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "Jerel Cummings",
+    time: "10 months ago",
+    review:
+      "Drew took excellent care of everything for me. I did not need to lift a finger. I would highly recommend this law firm for all of your traffic related needs. Thank you, Drew.",
+    rating: 5,
+    image: "",
+  },
+  {
+    name: "janet anne",
     time: "4 months ago",
     review:
-      "Definitely five stars, the staff becomes family from the moment you walk in the door. from the doctors to the assistance, it is a wonderful experience. I come in with pain and leave with less pain and happy to visit this location. Would recommend it to everyone I know.",
+      "I am a lawyer in New York. I highly recommend Drew McCullough for traffic violations. He got a successful outcome for our mutual client. He was exceedingly professional and personally answered all the questions that his support staff was unable to answer for us. . His firm is organized, diligent, responsive and an excellent value.",
     rating: 5,
     image: "",
   },

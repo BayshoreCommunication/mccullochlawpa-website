@@ -112,6 +112,37 @@ const ContactForm = () => {
     }
   };
 
+  const socialLinks = [
+    {
+      icon: FaFacebookF,
+      url: "https://www.facebook.com/mccullochlawtpa",
+    },
+    {
+      icon: FaLinkedinIn,
+      url: "https://www.linkedin.com/company/mcculloch-law-p-a/",
+    },
+    {
+      icon: FaInstagram,
+      url: "https://www.instagram.com/mccullochlawtpa/",
+    },
+    {
+      icon: FaBalanceScale,
+      url: "",
+    },
+    {
+      icon: FaYelp,
+      url: "https://www.yelp.com/biz/mcculloch-law-p-a-tampa-10?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)",
+    },
+    // {
+    //   icon: FaGoogle,
+    //   url: "https://g.page/yourgooglebusiness",
+    // },
+    {
+      icon: FaTiktok,
+      url: "https://www.tiktok.com/@mcculllochlawtpa",
+    },
+  ];
+
   return (
     <div>
       <div className="relative w-full flex items-center justify-center bg-[#7F8880]">
@@ -142,17 +173,16 @@ const ContactForm = () => {
                       Our Social Links
                     </h3>
                     <div className="text-white flex gap-2 mt-4">
-                      {[FaFacebookF, FaLinkedinIn, FaInstagram, FaBalanceScale, FaYelp, FaGoogle, FaTiktok].map(
-                        (Icon, index) => (
-                          <Link
-                            href="#"
-                            key={index}
-                            className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                          >
-                            <Icon />
-                          </Link>
-                        )
-                      )}
+                      {socialLinks.map(({ icon: Icon, url }, index) => (
+                        <Link
+                          href={url}
+                          key={index}
+                          target="_blank"
+                          className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
+                        >
+                          <Icon />
+                        </Link>
+                      ))}
                     </div>
                   </div>
                 </div>
