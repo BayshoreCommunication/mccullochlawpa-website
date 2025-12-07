@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+import SuperRevealRandom from "@/components/motion/SuperRevealRandom";
 import { memo, useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { MdOutlinePersonalInjury } from "react-icons/md";
@@ -92,11 +93,11 @@ const HeroSection = () => {
                     </span>
                   </h1>
                 </Reveal>
-                <Reveal y={100} opacityFrom={0} duration={2}>
+                <SuperRevealRandom  duration={2}>
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white text-start leading-snug md:leading-tight">
                     Trusted & Experienced Legal Representation Across Tampa Bay
                   </h3>
-                </Reveal>
+                </SuperRevealRandom>
 
                 <Reveal y={100} opacityFrom={0} duration={2}>
                   <p className="text-base font-normal text-white text-start leading-snug md:leading-tight max-w-lg">
