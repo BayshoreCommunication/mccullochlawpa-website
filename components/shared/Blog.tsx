@@ -12,10 +12,11 @@ function extractTextFromHtml(htmlString: string): string {
 export default async function Blog() {
   const blogPostData = await GetAllPostData();
 
+  // Limit to maximum 3 published blogs
   const publishedBlogs =
     blogPostData?.data
       ?.filter((blog: any) => blog.published === true)
-      ?.slice(0, 4) || [];
+      ?.slice(0, 3) || [];
 
   return (
     <section className="w-full px-8 py-8 md:py-16">

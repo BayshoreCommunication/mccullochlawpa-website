@@ -24,15 +24,71 @@ export default function AboutPageSection() {
         {/* Left Image */}
         <div>
           <Reveal y={100} opacityFrom={0} duration={3}>
-            <div className="rounded-xl overflow-hidden text-center">
-              <Image
-                src="/images/about/about.jpg"
-                alt="Our Team"
-                className="w-auto h-auto object-cover rounded-xl"
-                width={630}
-                height={470}
-              />
-              <h4 className="text-2xl font-semibold">Drew McCulloch, Esq.</h4>
+            {/* <div className="rounded-xl overflow-hidden text-center"> */}
+            <div className=" overflow-hidden">
+            <div className="lg:hidden">
+              <Reveal x={-100} opacityFrom={0} duration={3}>
+                <Image
+                  src="/images/about/about.jpg"
+                  alt="Our Team"
+                  className="w-auto h-auto "
+                  width={630}
+                  height={470}
+                />
+              </Reveal>
+            </div>
+            <div className="lg:flex items-center gap-2 hidden ">
+              <Reveal x={-100} opacityFrom={0} duration={3}>
+                <Image
+                  src="/images/about/part-1.png"
+                  alt="Our Team"
+                  className="w-auto h-auto "
+                  width={630}
+                  height={470}
+                />
+              </Reveal>
+              <div className="flex flex-col items-center gap-2">
+                <Reveal y={-100} opacityFrom={0} duration={3}>
+                  <Image
+                    src="/images/about/part-3.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />{" "}
+                </Reveal>
+                <Reveal y={100} opacityFrom={0} duration={3}>
+                  <Image
+                    src="/images/about/part-2.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />
+                </Reveal>
+              </div>
+              <div>
+                <Reveal x={100} opacityFrom={0} duration={3}>
+                  <div className="flex flex-col items-center gap-2">
+                    <Image
+                      src="/images/about/part-4.png"
+                      alt="Our Team"
+                      className="w-auto h-auto "
+                      width={630}
+                      height={470}
+                    />{" "}
+                    <Image
+                      src="/images/about/part-5.jpg"
+                      alt="Our Team"
+                      className="w-auto h-auto "
+                      width={630}
+                      height={470}
+                    />{" "}
+                  </div>
+                </Reveal>
+              </div>
+            </div>
+              <h4 className="text-2xl font-semibold text-center mt-6">Drew McCulloch, Esq.</h4>
               <div className="flex items-center mt-2 text-yellow-500 mx-auto justify-center gap-1">
                 <FaStar />
                 <FaStar />

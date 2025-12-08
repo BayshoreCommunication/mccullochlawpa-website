@@ -33,8 +33,8 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
 
       {/* Content */}
       <Reveal y={100} opacityFrom={0} duration={3}>
-      <div className="relative z-10 text-center max-w-5xl px-6">
-        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+      <div className="relative z-10 text-center  px-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 typewriter">
           {title}
         </h1>
 

@@ -100,3 +100,20 @@
     border-color: none;
   }
 }
+/* globals.css */
+.typewriter {
+  overflow: hidden;               /* keeps text in one line */
+  white-space: nowrap;            /* prevents wrapping */
+  border-right: 2px solid #fff;  /* cursor color matches text */
+  animation: typing 3s steps(20) 1s forwards, blink-cursor 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-cursor {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #fff; }
+}

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { Providers } from "./providers";
-
+import CursorFollower from "@/components/shared/CursorFollower";
 import Footer from "@/components/shared/Footer";
 import Navbar from "@/components/shared/Navbar";
 import { Merriweather } from "next/font/google";
@@ -38,6 +38,7 @@ export default function RootLayout({
     <html lang="en" className={merriweather.className}>
       <body className="bg-white text-[#0B0C0E]">
         <Providers>
+        <CursorFollower />
           <Navbar />
           <main>{children}</main>
           <Footer />
