@@ -193,7 +193,7 @@ export default function Footer() {
                 </Link>
               </li>
 
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <FaGlobe className="text-[#D4A017]" />
                 <Link
                   href="https://mcfloridalaw.com"
@@ -202,7 +202,7 @@ export default function Footer() {
                 >
                   mcfloridalaw.com
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
