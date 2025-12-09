@@ -10,7 +10,7 @@ import { PersonalInjuryServices } from "@/config/data";
 
 export default function PersonalInjury() {
   return (
-    <section className="w-full px-8 py-8 md:py-16 bg-white">
+    <section className="w-full px-8 py-8 md:py-16 bg-white" id="personal-injury">
       <div className="max-w-[1640px] mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-12 max-w-3xl mx-auto">
