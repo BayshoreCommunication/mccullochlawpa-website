@@ -63,7 +63,7 @@ export default function About() {
                       height={470}
                     />{" "}
                     <Image
-                      src="/images/about/new-folder/part-5.jpg"
+                      src="/images/about/new-folder/part-5.png"
                       alt="Our Team"
                       className="w-auto h-auto "
                       width={630}
