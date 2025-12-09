@@ -67,11 +67,11 @@ const HeroSection = () => {
                   </h1>
                 </Reveal>
 
-                <SuperRevealRandom duration={2}>
+                <Reveal duration={2}>
                   <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white leading-snug md:leading-tight">
                     Trusted & Experienced Legal Representation Across Tampa Bay
                   </h3>
-                </SuperRevealRandom>
+                </Reveal>
 
                 <Reveal y={100} opacityFrom={0} duration={2}>
                   <p className="text-base font-normal text-white leading-snug md:leading-tight max-w-lg">
