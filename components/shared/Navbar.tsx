@@ -40,7 +40,8 @@ const Navbar: React.FC = () => {
             </div>
 
             <p className="hidden md:block text-gray-600">
-              Call a law firm that cares, available 24/7 for a free consultation.
+              Call a law firm that cares, available 24/7 for a free
+              consultation.
             </p>
           </div>
 
@@ -62,7 +63,6 @@ const Navbar: React.FC = () => {
         }`}
       >
         <div className="max-w-[1640px] mx-auto px-8 py-4 flex justify-between items-center relative">
-
           {/* LOGO */}
           <Link href="/" className="flex items-center">
             <Image
@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
               alt="Logo"
               width={1000}
               height={500}
-              className="w-[180px] h-auto"
+              className="w-[180px] md:w-[240px] h-auto"
             />
           </Link>
 
@@ -79,7 +79,6 @@ const Navbar: React.FC = () => {
             {navItems.map((item) =>
               item.dropdown ? (
                 <div key={item.href} className="relative group">
-                  
                   {/* CLICKABLE MAIN LINK */}
                   <Link
                     href={item.href}
@@ -141,7 +140,6 @@ const Navbar: React.FC = () => {
           {/* MOBILE MENU */}
           {mobileOpen && (
             <div className="md:hidden absolute top-full left-0 w-full bg-white px-8 py-4 space-y-4 border-t shadow z-40">
-
               {navItems.map((item) =>
                 item.dropdown ? (
                   <div key={item.href}>
@@ -151,7 +149,9 @@ const Navbar: React.FC = () => {
                     >
                       {item.label}
                       <ChevronDown
-                        className={`${practiceOpen ? "rotate-180" : ""} transition`}
+                        className={`${
+                          practiceOpen ? "rotate-180" : ""
+                        } transition`}
                       />
                     </button>
 
@@ -181,7 +181,9 @@ const Navbar: React.FC = () => {
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
                     className={`block ${
-                      pathname === item.href ? "text-yellow-700" : "text-gray-700"
+                      pathname === item.href
+                        ? "text-yellow-700"
+                        : "text-gray-700"
                     }`}
                   >
                     {item.label}
