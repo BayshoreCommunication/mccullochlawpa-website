@@ -3,7 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { FaEnvelope, FaGlobe, FaPhone, FaYoutube,FaSquareXTwitter } from "react-icons/fa6";
+import {
+  FaEnvelope,
+  FaGlobe,
+  FaPhone,
+  FaYoutube,
+  FaSquareXTwitter,
+} from "react-icons/fa6";
 
 import {
   FaFacebookF,
@@ -28,7 +34,7 @@ export default function Footer() {
               alt="Logo"
               width={200}
               height={70}
-              className="w-full max-w-[180px]"
+              className="w-[180px] md:w-[240px]"
             />
 
             <p className="text-sm mt-4 leading-relaxed">
@@ -38,15 +44,27 @@ export default function Footer() {
             {/* Social Icons */}
             {/* Social Icons */}
             <div className="flex gap-4 text-[#D4A017] text-lg mt-5">
-              <Link href="https://www.facebook.com/mccullochlawtpa" aria-label="Facebook" target="_blank">
+              <Link
+                href="https://www.facebook.com/mccullochlawtpa"
+                aria-label="Facebook"
+                target="_blank"
+              >
                 <FaFacebookF />
               </Link>
 
-              <Link href="https://www.linkedin.com/company/mcculloch-law-p-a/" aria-label="LinkedIn" target="_blank">
+              <Link
+                href="https://www.linkedin.com/company/mcculloch-law-p-a/"
+                aria-label="LinkedIn"
+                target="_blank"
+              >
                 <FaLinkedinIn />
               </Link>
 
-              <Link href="https://www.instagram.com/mccullochlawtpa/" aria-label="Instagram" target="_blank">
+              <Link
+                href="https://www.instagram.com/mccullochlawtpa/"
+                aria-label="Instagram"
+                target="_blank"
+              >
                 <FaInstagram />
               </Link>
 
@@ -56,17 +74,28 @@ export default function Footer() {
               </Link>
 
               {/* Yelp */}
-              <Link href="https://www.yelp.com/biz/mcculloch-law-p-a-tampa-10?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" aria-label="Yelp" target="_blank">
+              <Link
+                href="https://www.yelp.com/biz/mcculloch-law-p-a-tampa-10?utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                aria-label="Yelp"
+                target="_blank"
+              >
                 <FaYelp />
               </Link>
 
-              
-              <Link href="https://x.com/McCullochLawTPA" aria-label="Google My Business" target="_blank">
+              <Link
+                href="https://x.com/McCullochLawTPA"
+                aria-label="Google My Business"
+                target="_blank"
+              >
                 <FaSquareXTwitter />
               </Link>
 
               {/* TikTok */}
-              <Link href="https://www.tiktok.com/@mcculllochlawtpa" aria-label="TikTok" target="_blank">
+              <Link
+                href="https://www.tiktok.com/@mcculllochlawtpa"
+                aria-label="TikTok"
+                target="_blank"
+              >
                 <FaTiktok />
               </Link>
             </div>
@@ -114,32 +143,50 @@ export default function Footer() {
             <h3 className="font-semibold text-lg mb-4">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/auto-accident" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/auto-accident"
+                  className="hover:text-[#D4A017]"
+                >
                   Auto Accidents
                 </Link>
               </li>
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/slip-trip-fall" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/slip-trip-fall"
+                  className="hover:text-[#D4A017]"
+                >
                   Slip and Fall
                 </Link>
               </li>
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/dog-bites" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/dog-bites"
+                  className="hover:text-[#D4A017]"
+                >
                   Dog Bites
                 </Link>
               </li>
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/drug-crimes" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/drug-crimes"
+                  className="hover:text-[#D4A017]"
+                >
                   Drug Crimes
                 </Link>
               </li>
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/dui" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/dui"
+                  className="hover:text-[#D4A017]"
+                >
                   DUI
                 </Link>
               </li>
               <li>
-                <Link href="https://mccullochlawpa-website.vercel.app/practice/domestic-violence" className="hover:text-[#D4A017]">
+                <Link
+                  href="https://mccullochlawpa-website.vercel.app/practice/domestic-violence"
+                  className="hover:text-[#D4A017]"
+                >
                   Domestic Violence
                 </Link>
               </li>
@@ -180,7 +227,7 @@ export default function Footer() {
                   href="mailto:attorney@mcfloridalaw.com"
                   className="hover:text-[#D4A017]"
                 >
-                 Drew@MCFloridaLaw.com
+                  Drew@MCFloridaLaw.com
                 </Link>
               </li>
               <li className="flex items-center gap-3">

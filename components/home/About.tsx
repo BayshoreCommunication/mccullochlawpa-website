@@ -17,7 +17,7 @@ export default function About() {
                   src="/images/about/about.jpg"
                   alt="Our Team"
                   className="w-auto h-auto "
-                  width={630}
+                  width={1000}
                   height={470}
                 />
               </Reveal>
@@ -25,29 +25,29 @@ export default function About() {
             <div className="lg:flex items-center gap-2 hidden ">
               <Reveal x={-100} opacityFrom={0} duration={3}>
                 <Image
-                  src="/images/about/new-folder/part-1.png"
+                  src="/images/about/new-folder/McCulloch-Law-1.png"
                   alt="Our Team"
                   className="w-auto h-auto "
-                  width={630}
+                  width={1000}
                   height={470}
                 />
               </Reveal>
               <div className="flex flex-col items-center gap-2">
                 <Reveal y={-100} opacityFrom={0} duration={3}>
                   <Image
-                    src="/images/about/new-folder/part-3.png"
+                    src="/images/about/new-folder/McCulloch-Law-2.png"
                     alt="Our Team"
                     className="w-auto h-auto "
-                    width={630}
+                    width={1000}
                     height={470}
                   />{" "}
                 </Reveal>
                 <Reveal y={100} opacityFrom={0} duration={3}>
                   <Image
-                    src="/images/about/new-folder/part-2.png"
+                    src="/images/about/new-folder/McCulloch-Law-3.png"
                     alt="Our Team"
                     className="w-auto h-auto "
-                    width={630}
+                    width={1000}
                     height={470}
                   />
                 </Reveal>
@@ -56,17 +56,17 @@ export default function About() {
                 <Reveal x={100} opacityFrom={0} duration={3}>
                   <div className="flex flex-col items-center gap-2">
                     <Image
-                      src="/images/about/new-folder/part-4.png"
+                      src="/images/about/new-folder/McCulloch-Law-4.png"
                       alt="Our Team"
                       className="w-auto h-auto "
-                      width={630}
+                      width={1000}
                       height={470}
                     />{" "}
                     <Image
-                      src="/images/about/new-folder/part-5.png"
+                      src="/images/about/new-folder/McCulloch-Law-5.png"
                       alt="Our Team"
                       className="w-auto h-auto "
-                      width={630}
+                      width={1000}
                       height={470}
                     />{" "}
                   </div>
