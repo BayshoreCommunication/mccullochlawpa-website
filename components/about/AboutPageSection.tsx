@@ -22,79 +22,106 @@ export default function AboutPageSection() {
 
       <div className="grid lg:grid-cols-2 items-start gap-10 md:gap-6">
         {/* Left Image */}
-        <div className=" overflow-hidden">
-          <div className="lg:hidden">
-            <Reveal x={-100} opacityFrom={0} duration={3}>
-              <Image
-                src="/images/about/about.jpg"
-                alt="Our Team"
-                className="w-auto h-auto "
-                width={1000}
-                height={470}
-              />
-            </Reveal>
-          </div>
-          <div className="lg:flex items-center gap-2 hidden ">
-            <Reveal x={-100} opacityFrom={0} duration={3}>
-              <Image
-                src="/images/about/new-folder/McCulloch-Law-1.png"
-                alt="Our Team"
-                className="w-auto h-auto "
-                width={1000}
-                height={470}
-              />
-            </Reveal>
-            <div className="flex flex-col items-center gap-2">
-              <Reveal y={-100} opacityFrom={0} duration={3}>
-                <Image
-                  src="/images/about/new-folder/McCulloch-Law-2.png"
-                  alt="Our Team"
-                  className="w-auto h-auto "
-                  width={1000}
-                  height={470}
-                />{" "}
-              </Reveal>
-              <Reveal y={100} opacityFrom={0} duration={3}>
-                <Image
-                  src="/images/about/new-folder/McCulloch-Law-3.png"
-                  alt="Our Team"
-                  className="w-auto h-auto "
-                  width={1000}
-                  height={470}
-                />
-              </Reveal>
-            </div>
-            <div>
-              <Reveal x={100} opacityFrom={0} duration={3}>
+        <div>
+          <Reveal y={100} opacityFrom={0} duration={3}>
+            {/* <div className="rounded-xl overflow-hidden text-center"> */}
+            <div className=" overflow-hidden">
+              <div className="lg:hidden">
+                <Reveal x={-100} opacityFrom={0} duration={3}>
+                  <Image
+                    src="/images/about/about.jpg"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={630}
+                    height={470}
+                  />
+                </Reveal>
+              </div>
+              <div className="lg:hidden">
+                <Reveal x={-100} opacityFrom={0} duration={3}>
+                  <Image
+                    src="/images/about/about.jpg"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={1000}
+                    height={470}
+                  />
+                </Reveal>
+              </div>
+              <div className="lg:flex items-center gap-2 hidden ">
+                <Reveal x={-100} opacityFrom={0} duration={3}>
+                  <Image
+                    src="/images/about/new-folder/McCulloch-Law-1.png"
+                    alt="Our Team"
+                    className="w-auto h-auto "
+                    width={1000}
+                    height={470}
+                  />
+                </Reveal>
                 <div className="flex flex-col items-center gap-2">
-                  <Image
-                    src="/images/about/new-folder/McCulloch-Law-4.png"
-                    alt="Our Team"
-                    className="w-auto h-auto "
-                    width={1000}
-                    height={470}
-                  />{" "}
-                  <Image
-                    src="/images/about/new-folder/McCulloch-Law-5.png"
-                    alt="Our Team"
-                    className="w-auto h-auto "
-                    width={1000}
-                    height={470}
-                  />{" "}
+                  <Reveal y={-100} opacityFrom={0} duration={3}>
+                    <Image
+                      src="/images/about/new-folder/McCulloch-Law-2.png"
+                      alt="Our Team"
+                      className="w-auto h-auto "
+                      width={1000}
+                      height={470}
+                    />{" "}
+                  </Reveal>
+                  <Reveal y={100} opacityFrom={0} duration={3}>
+                    <Image
+                      src="/images/about/new-folder/McCulloch-Law-3.png"
+                      alt="Our Team"
+                      className="w-auto h-auto "
+                      width={1000}
+                      height={470}
+                    />
+                  </Reveal>
                 </div>
-              </Reveal>
+                <div>
+                  <Reveal x={100} opacityFrom={0} duration={3}>
+                    <div className="flex flex-col items-center gap-2">
+                      <Image
+                        src="/images/about/new-folder/McCulloch-Law-4.png"
+                        alt="Our Team"
+                        className="w-auto h-auto "
+                        width={1000}
+                        height={470}
+                      />{" "}
+                      <Image
+                        src="/images/about/new-folder/McCulloch-Law-5.png"
+                        alt="Our Team"
+                        className="w-auto h-auto "
+                        width={1000}
+                        height={470}
+                      />{" "}
+                    </div>
+                  </Reveal>
+                </div>
+              </div>
+              <h4 className="text-2xl font-semibold text-center mt-2">
+                Drew McCulloch, Esq.
+              </h4>
+              <div className="flex items-center mt-2 text-yellow-500 mx-auto justify-center gap-1">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+              </div>
             </div>
-          </div>
-          <h4 className="text-2xl font-semibold text-center mt-6">
-            Drew McCulloch, Esq.
-          </h4>
-          <div className="flex items-center mt-2 text-yellow-500 mx-auto justify-center gap-1">
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStar />
-          </div>
+          </Reveal>
+          <Reveal y={100} opacityFrom={0} duration={3}>
+            <div className="rounded-xl overflow-hidden text-center mt-12">
+              <Image
+                src="/images/about/about-2.png"
+                alt="Our Team"
+                className="w-auto h-auto object-cover rounded-xl"
+                width={630}
+                height={470}
+              />
+            </div>
+          </Reveal>
         </div>
 
         {/* Right Content */}
