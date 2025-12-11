@@ -85,6 +85,16 @@ export default function AboutPageSection() {
               </Reveal>
             </div>
           </div>
+          <h4 className="text-2xl font-semibold text-center mt-6">
+            Drew McCulloch, Esq.
+          </h4>
+          <div className="flex items-center mt-2 text-yellow-500 mx-auto justify-center gap-1">
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+            <FaStar />
+          </div>
         </div>
 
         {/* Right Content */}
