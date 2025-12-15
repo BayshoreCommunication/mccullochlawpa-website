@@ -37,7 +37,7 @@ export default function AboutPageSection() {
                   />
                 </Reveal>
               </div>
-              <div className="lg:hidden">
+              {/* <div className="lg:hidden">
                 <Reveal x={-100} opacityFrom={0} duration={3}>
                   <Image
                     src="/images/about/about.jpg"
@@ -47,7 +47,7 @@ export default function AboutPageSection() {
                     height={470}
                   />
                 </Reveal>
-              </div>
+              </div> */}
               <div className="lg:flex items-center gap-2 hidden ">
                 <Reveal x={-100} opacityFrom={0} duration={3}>
                   <Image
