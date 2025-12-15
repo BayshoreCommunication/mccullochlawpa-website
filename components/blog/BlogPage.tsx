@@ -84,7 +84,7 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
                     alt={blog.title}
                     width={300}
                     height={224}
-                    className="w-full h-[220px] object-cover rounded-t-xl"
+                    className="w-full  object-cover rounded-t-xl"
                   />
 
                   <div className="p-6 text-start flex flex-col flex-grow gap-4">
