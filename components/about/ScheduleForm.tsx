@@ -49,10 +49,7 @@ const ScheduleForm = () => {
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="flex flex-col gap-4 max-w-xl w-full  rounded-md">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                    Contact Us Today.{" "}
-                    <span className="underline">
-                      Our initial consultation is absolutely free.
-                    </span>
+                    Our initial consultation is absolutely free.
                   </h1>
                   <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
                     Reach out now for trusted legal advice. Our experienced
