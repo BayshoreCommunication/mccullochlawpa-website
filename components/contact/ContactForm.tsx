@@ -153,7 +153,10 @@ const ContactForm = () => {
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="flex flex-col gap-4 max-w-xl w-full rounded-md">
                   <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                    Contact Us Today. Get in Touch With Drew, Esq.
+                    Contact Us Today.{" "}
+                    <span className="underline">
+                      Our initial consultation is absolutely free.
+                    </span>
                   </h1>
 
                   <p className="text-base text-white">
@@ -221,30 +224,6 @@ const ContactForm = () => {
 
                       <div>
                         <input
-                          type="email"
-                          name="email"
-                          value={emailForm.email}
-                          onChange={(e) =>
-                            setEmailForm({
-                              ...emailForm,
-                              email: e.target.value,
-                            })
-                          }
-                          placeholder="Email address"
-                          className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                        />
-                        {formErrors.email && (
-                          <span className="text-red-500 text-sm">
-                            {formErrors.email}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-
-                    {/* Phone & Date */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <input
                           type="tel"
                           name="phone"
                           value={emailForm.phone}
@@ -263,8 +242,31 @@ const ContactForm = () => {
                           </span>
                         )}
                       </div>
+                    </div>
 
+                    {/* Phone & Date */}
+                    <div className="grid grid-cols-1  gap-4">
                       <div>
+                        <input
+                          type="email"
+                          name="email"
+                          value={emailForm.email}
+                          onChange={(e) =>
+                            setEmailForm({
+                              ...emailForm,
+                              email: e.target.value,
+                            })
+                          }
+                          placeholder="Email address"
+                          className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
+                        />
+                        {formErrors.email && (
+                          <span className="text-red-500 text-sm">
+                            {formErrors.email}
+                          </span>
+                        )}
+                      </div>
+                      {/* <div>
                         <input
                           type="date"
                           name="date"
@@ -282,7 +284,7 @@ const ContactForm = () => {
                             {formErrors.date}
                           </span>
                         )}
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Message */}

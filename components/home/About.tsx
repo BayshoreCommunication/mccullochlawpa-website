@@ -185,6 +185,13 @@ export default function About() {
                 height={80}
                 className="  max-w-60"
               />
+              <Image
+                src="/images/about/achivements-5.png"
+                alt=""
+                width={1000}
+                height={80}
+                className="  max-w-60"
+              />
             </div>
           </Reveal>
         </div>

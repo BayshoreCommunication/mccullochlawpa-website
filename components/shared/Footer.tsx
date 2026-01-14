@@ -230,7 +230,7 @@ export default function Footer() {
                   Drew@MCFloridaLaw.com
                 </Link>
               </li>
-              <li className="flex items-center gap-3">
+              {/* <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4A017]" />
                 <Link
                   href="mailto:attorney@mcfloridalaw.com"
@@ -238,7 +238,7 @@ export default function Footer() {
                 >
                   LsJones131@gmail.com
                 </Link>
-              </li>
+              </li> */}
 
               {/* <li className="flex items-center gap-3">
                 <FaGlobe className="text-[#D4A017]" />
