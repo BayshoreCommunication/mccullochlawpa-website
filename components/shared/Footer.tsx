@@ -224,10 +224,10 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-[#D4A017]" />
                 <Link
-                  href="mailto:attorney@mcfloridalaw.com"
+                  href="mailto:office@mcfloridalaw.com"
                   className="hover:text-[#D4A017]"
                 >
-                  Drew@MCFloridaLaw.com
+                  office@mcfloridalaw.com
                 </Link>
               </li>
               {/* <li className="flex items-center gap-3">
