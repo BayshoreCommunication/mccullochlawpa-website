@@ -109,7 +109,7 @@ const Video = () => {
               {/* YOUTUBE VIDEO */}
               <iframe
                 className="w-full h-[300px] md:h-[450px]"
-                src="https://www.youtube.com/embed/DVuPlw-59N8?autoplay=1"
+                src="https://www.youtube.com/embed/3MiY4BDKqC8?si=5p_Jiwb5wxKnxEEo"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
