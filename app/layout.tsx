@@ -38,7 +38,6 @@ export default function RootLayout({
     <html lang="en" className={merriweather.className}>
       <body className="bg-white text-[#0B0C0E]">
         <Providers>
-        <CursorFollower />
           <Navbar />
           <main>{children}</main>
           <Footer />
