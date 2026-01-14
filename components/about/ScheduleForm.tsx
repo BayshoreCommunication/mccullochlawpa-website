@@ -1,13 +1,11 @@
 "use client";
-import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
 
 import { memo, useEffect, useState } from "react";
-import { FaPlay } from "react-icons/fa";
-import { FaFacebook, FaLinkedin } from "react-icons/fa6";
-import { IoIosArrowForward } from "react-icons/io";
-import { MdOutlinePersonalInjury } from "react-icons/md";
+import Image from "next/image";
+import Link from "next/link";
+import Swal from "sweetalert2";
+import { send } from "emailjs-com";
+
 import Reveal from "../motion/Reveal";
 import {
   FaFacebookF,
@@ -19,179 +17,216 @@ import {
   FaTiktok,
 } from "react-icons/fa";
 
+/* ---------------- TYPES ---------------- */
+interface ContactFormState {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
+interface ContactFormErrors {
+  name?: string;
+  email?: string;
+  phone?: string;
+  message?: string;
+}
+
+/* ---------------- COMPONENT ---------------- */
 const ScheduleForm = () => {
   const [showTitleOne, setShowTitleOne] = useState(true);
+  const [loading, setLoading] = useState(false);
 
+  const [emailForm, setEmailForm] = useState<ContactFormState>({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [formErrors, setFormErrors] = useState<ContactFormErrors>({});
+
+  /* ---------------- EFFECT ---------------- */
   useEffect(() => {
     const interval = setInterval(() => {
       setShowTitleOne((prev) => !prev);
-    }, 3000); // Switch titles every 3 seconds
+    }, 3000);
 
-    return () => clearInterval(interval); // Clear interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
+  /* ---------------- VALIDATION ---------------- */
+  const validate = (values: ContactFormState): ContactFormErrors => {
+    const errors: ContactFormErrors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+    if (!values.name) errors.name = "Name is required!";
+    if (!values.email) errors.email = "Email is required!";
+    else if (!regex.test(values.email))
+      errors.email = "Invalid email format!";
+    if (!values.phone) errors.phone = "Phone number is required!";
+    if (!values.message) errors.message = "Message is required!";
+
+    return errors;
+  };
+
+  /* ---------------- SUBMIT ---------------- */
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const errors = validate(emailForm);
+    setFormErrors(errors);
+
+    if (Object.keys(errors).length === 0) {
+      send(
+        "service_6x5cpjm",
+        "template_g8p45zg",
+        emailForm,
+        "hs3WVDN7AYB4zTkhu"
+      )
+        .then(() => {
+          Swal.fire({
+            icon: "success",
+            text: "Thank you for reaching out. We will respond shortly.",
+            confirmButtonColor: "#131b2a",
+          });
+          setEmailForm({
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+          });
+        })
+        .catch(() => {
+          Swal.fire({
+            icon: "error",
+            text: "Something went wrong! Please try again.",
+          });
+        })
+        .finally(() => setLoading(false));
+    } else {
+      setLoading(false);
+    }
+  };
+
+  /* ---------------- UI ---------------- */
   return (
-    <div>
-      <div className="relative w-full  flex items-center justify-center">
-        <Image
-          className="absolute inset-0 object-center object-fill  bg-bottom w-full h-full"
-          width={1920}
-          height={700}
-          src={"/images/about/ScheduleForm.png"}
-          alt="Bg Image "
-        />
+    <section className="relative w-full">
+      <Image
+        src="/images/about/ScheduleForm.png"
+        alt="Background"
+        fill
+        className="object-cover"
+        priority
+      />
 
-        {/* Centered text */}
+      <div className="relative max-w-[1640px] mx-auto px-8 py-10 lg:py-20">
+        <div className="flex flex-col md:flex-row gap-12 items-start">
+          {/* LEFT */}
+          <Reveal y={80}>
+            <div className="max-w-xl text-white space-y-5">
+              <h1 className="text-3xl lg:text-4xl font-bold">
+                Contact Us Today.{" "}
+                <span className="underline">
+                  Our initial consultation is absolutely free.
+                </span>
+              </h1>
 
-        <div className="max-w-[1640px] mx-auto px-8  w-full  py-10 lg:py-20 ">
-          <div className="relative">
-            <div className="w-full flex flex-col md:flex-row items-center justify-evenly gap-6">
-              <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
-                <div className="flex flex-col gap-4 max-w-xl w-full  rounded-md">
-                  <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
-                    Contact Us Today.{" "}
-                    <span className="underline">
-                      Our initial consultation is absolutely free.
-                    </span>
-                  </h1>
-                  <p className="text-base font-normal text-white text-start leading-snug md:leading-tight ">
-                    Reach out now for trusted legal advice. Our experienced
-                    attorneys are ready to protect your rights and fight for the
-                    outcome you deserve.
-                  </p>
-                  <div className="mt-5">
-                    <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
-                      Phone Number
-                      <br /> <Link href="#">(813) 444-2817</Link>
-                    </h3>
-                  </div>
-                  <div className="mt-5">
-                    <h3 className="text-xl md:text-2xl  font-semibold text-white text-start leading-snug md:leading-tight">
-                      Our Social Links
-                    </h3>
-                    <div className="text-white flex gap-2 mt-4">
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="Facebook"
-                      >
-                        <FaFacebookF />
-                      </Link>
+              <p>
+                Reach out now for trusted legal advice. Our experienced
+                attorneys are ready to protect your rights.
+              </p>
 
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="LinkedIn"
-                      >
-                        <FaLinkedinIn />
-                      </Link>
+              <h3 className="text-xl font-semibold">
+                Phone Number <br />
+                <Link href="tel:8134442817">(813) 444-2817</Link>
+              </h3>
 
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="Instagram"
-                      >
-                        <FaInstagram />
-                      </Link>
-
-                      {/* Avvo (no official icon in react-icons – using FaBalanceScale as the legal symbol) */}
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="Avvo"
-                      >
-                        <FaBalanceScale />
-                      </Link>
-
-                      {/* Yelp */}
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="Yelp"
-                      >
-                        <FaYelp />
-                      </Link>
-
-                      {/* Google My Business (using FaGoogle as closest match) */}
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="Google My Business"
-                      >
-                        <FaGoogle />
-                      </Link>
-
-                      {/* TikTok */}
-                      <Link
-                        href="#"
-                        className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
-                        aria-label="TikTok"
-                      >
-                        <FaTiktok />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </Reveal>
-              <Reveal tag="h2" y={16} opacityFrom={0}>
-                <div className="w-full  bg-[#1A1A1A] p-10 rounded-md">
-                  {/* Title */}
-                  <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                    Request a Flexible Schedule
-                  </h2>
-
-                  {/* Form */}
-                  <form className="flex flex-col gap-4">
-                    {/* Row 1 */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <input
-                        type="text"
-                        placeholder="Full name"
-                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                      />
-                      <input
-                        type="tel"
-                        placeholder="Phone number"
-                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                      />
-                    </div>
-
-                    {/* Row 2 */}
-                    <div className="grid grid-cols-1  gap-4">
-                      <input
-                        type="email"
-                        placeholder="Email address"
-                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                      />
-                      {/* <input
-                        type="text"
-                        placeholder="dd / mm / yyyy"
-                        className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                      /> */}
-                    </div>
-
-                    {/* Row 3 – textarea */}
-                    <textarea
-                      placeholder="Describe your case or ask question"
-                      rows={4}
-                      className="w-full px-4 py-3 rounded-md bg-white text-black outline-none"
-                    ></textarea>
-
-                    {/* Button */}
-                    <button
-                      type="submit"
-                      className="w-full bg-[#BA8E2D] text-white font-semibold py-4 rounded-md"
+              <div>
+                <h3 className="text-xl font-semibold mb-3">Our Social Links</h3>
+                <div className="flex gap-2">
+                  {[
+                    FaFacebookF,
+                    FaLinkedinIn,
+                    FaInstagram,
+                    FaBalanceScale,
+                    FaYelp,
+                    FaGoogle,
+                    FaTiktok,
+                  ].map((Icon, i) => (
+                    <span
+                      key={i}
+                      className="w-10 h-10 rounded-full bg-[#BA8E2D] flex items-center justify-center"
                     >
-                      Book an Appointment
-                    </button>
-                  </form>
+                      <Icon />
+                    </span>
+                  ))}
                 </div>
-              </Reveal>
+              </div>
             </div>
-          </div>
+          </Reveal>
+
+          {/* RIGHT FORM */}
+          <Reveal y={40}>
+            <div className="w-full flex-1">
+              <div className="w-full bg-[#1A1A1A] p-10 rounded-md">
+                <h2 className="text-2xl font-bold text-white mb-6">
+                  Request a Flexible Schedule
+                </h2>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  {["name", "phone", "email"].map((field) => (
+                    <div key={field}>
+                      <input
+                        type={field === "email" ? "email" : "text"}
+                        placeholder={
+                          field.charAt(0).toUpperCase() + field.slice(1)
+                        }
+                        value={(emailForm as any)[field]}
+                        onChange={(e) =>
+                          setEmailForm({
+                            ...emailForm,
+                            [field]: e.target.value,
+                          })
+                        }
+                        className="w-full px-4 py-3 rounded bg-white text-black"
+                      />
+                      {formErrors[field as keyof ContactFormErrors] && (
+                        <p className="text-red-500 text-sm">
+                          {formErrors[field as keyof ContactFormErrors]}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+
+                  <textarea
+                    rows={4}
+                    placeholder="Describe your case"
+                    value={emailForm.message}
+                    onChange={(e) =>
+                      setEmailForm({
+                        ...emailForm,
+                        message: e.target.value,
+                      })
+                    }
+                    className="w-full px-4 py-3 rounded bg-white text-black"
+                  />
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="w-full bg-[#BA8E2D] py-4 text-white font-semibold rounded hover:bg-yellow-500 disabled:opacity-50"
+                  >
+                    {loading ? "Sending..." : "Book An Appointment"}
+                  </button>
+                </form>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -21,7 +21,6 @@ type ContactFormState = {
   name: string;
   email: string;
   phone: string;
-  date: string;
   message: string;
 };
 
@@ -29,7 +28,6 @@ type ContactFormErrors = {
   name?: string;
   email?: string;
   phone?: string;
-  date?: string;
   message?: string;
 };
 
@@ -48,7 +46,6 @@ const ContactForm = () => {
     name: "",
     email: "",
     phone: "",
-    date: "",
     message: "",
   });
 
@@ -63,7 +60,6 @@ const ContactForm = () => {
     if (!values.email) errors.email = "Email is required!";
     else if (!regex.test(values.email)) errors.email = "Invalid email format!";
     if (!values.phone) errors.phone = "Phone number is required!";
-    if (!values.date) errors.date = "Date is required!";
     if (!values.message) errors.message = "Message is required!";
 
     return errors;
@@ -94,7 +90,6 @@ const ContactForm = () => {
               name: "",
               email: "",
               phone: "",
-              date: "",
               message: "",
             });
           });
