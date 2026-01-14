@@ -1,6 +1,6 @@
 "use client";
 
-import { memo, useEffect, useState } from "react";
+import { memo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Swal from "sweetalert2";
@@ -34,7 +34,6 @@ interface ContactFormErrors {
 
 /* ---------------- COMPONENT ---------------- */
 const ScheduleForm = () => {
-  const [showTitleOne, setShowTitleOne] = useState(true);
   const [loading, setLoading] = useState(false);
 
   const [emailForm, setEmailForm] = useState<ContactFormState>({
@@ -46,26 +45,17 @@ const ScheduleForm = () => {
 
   const [formErrors, setFormErrors] = useState<ContactFormErrors>({});
 
-  /* ---------------- EFFECT ---------------- */
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowTitleOne((prev) => !prev);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   /* ---------------- VALIDATION ---------------- */
   const validate = (values: ContactFormState): ContactFormErrors => {
     const errors: ContactFormErrors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
-    if (!values.name) errors.name = "Name is required!";
-    if (!values.email) errors.email = "Email is required!";
-    else if (!regex.test(values.email))
-      errors.email = "Invalid email format!";
-    if (!values.phone) errors.phone = "Phone number is required!";
-    if (!values.message) errors.message = "Message is required!";
+    if (!values.name) errors.name = "Full name is required";
+    if (!values.phone) errors.phone = "Phone number is required";
+    if (!values.email) errors.email = "Email address is required";
+    else if (!emailRegex.test(values.email))
+      errors.email = "Invalid email format";
+    if (!values.message) errors.message = "Message is required";
 
     return errors;
   };
@@ -78,59 +68,61 @@ const ScheduleForm = () => {
     const errors = validate(emailForm);
     setFormErrors(errors);
 
-    if (Object.keys(errors).length === 0) {
-      send(
-        "service_6x5cpjm",
-        "template_g8p45zg",
-        emailForm,
-        "hs3WVDN7AYB4zTkhu"
-      )
-        .then(() => {
-          Swal.fire({
-            icon: "success",
-            text: "Thank you for reaching out. We will respond shortly.",
-            confirmButtonColor: "#131b2a",
-          });
-          setEmailForm({
-            name: "",
-            email: "",
-            phone: "",
-            message: "",
-          });
-        })
-        .catch(() => {
-          Swal.fire({
-            icon: "error",
-            text: "Something went wrong! Please try again.",
-          });
-        })
-        .finally(() => setLoading(false));
-    } else {
+    if (Object.keys(errors).length !== 0) {
       setLoading(false);
+      return;
     }
+
+    const emailData: Record<string, unknown> = {
+      name: emailForm.name,
+      email: emailForm.email,
+      phone: emailForm.phone,
+      message: emailForm.message,
+    };
+
+    send("service_6x5cpjm", "template_g8p45zg", emailData, "hs3WVDN7AYB4zTkhu")
+      .then(() => {
+        Swal.fire({
+          icon: "success",
+          text: "Thank you for reaching out. We will contact you shortly.",
+          confirmButtonColor: "#BA8E2D",
+        });
+
+        setEmailForm({
+          name: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: "error",
+          text: "Something went wrong. Please try again.",
+        });
+      })
+      .finally(() => setLoading(false));
   };
 
   /* ---------------- UI ---------------- */
   return (
     <section className="relative w-full">
+      {/* Background */}
       <Image
         src="/images/about/ScheduleForm.png"
-        alt="Background"
+        alt="Schedule Background"
         fill
-        className="object-cover"
         priority
+        className="object-cover"
       />
 
-      <div className="relative max-w-[1640px] mx-auto px-8 py-10 lg:py-20">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
-          {/* LEFT */}
-          <Reveal y={80}>
-            <div className="max-w-xl text-white space-y-5">
+      <div className="relative max-w-[1640px] mx-auto px-8 py-12 lg:py-20">
+        <div className="flex flex-col md:flex-row gap-12 items-center justify-evenly">
+          {/* LEFT CONTENT */}
+          <Reveal y={80} className="w-full md:max-w-xl">
+            <div className="text-white space-y-5">
               <h1 className="text-3xl lg:text-4xl font-bold">
-                Contact Us Today.{" "}
-                <span className="underline">
-                  Our initial consultation is absolutely free.
-                </span>
+                Our initial consultation is absolutely free.
               </h1>
 
               <p>
@@ -168,60 +160,95 @@ const ScheduleForm = () => {
           </Reveal>
 
           {/* RIGHT FORM */}
-          <Reveal y={40}>
-            <div className="w-full flex-1">
-              <div className="w-full bg-[#1A1A1A] p-10 rounded-md">
-                <h2 className="text-2xl font-bold text-white mb-6">
-                  Request a Flexible Schedule
-                </h2>
+          <Reveal y={40} className="w-full max-w-2xl">
+            <div className="w-full bg-[#1A1A1A] p-8 md:p-10 rounded-lg shadow-lg">
+              <h2 className="text-2xl font-bold text-white mb-6">
+                Request a Flexible Schedule
+              </h2>
 
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  {["name", "phone", "email"].map((field) => (
-                    <div key={field}>
-                      <input
-                        type={field === "email" ? "email" : "text"}
-                        placeholder={
-                          field.charAt(0).toUpperCase() + field.slice(1)
-                        }
-                        value={(emailForm as any)[field]}
-                        onChange={(e) =>
-                          setEmailForm({
-                            ...emailForm,
-                            [field]: e.target.value,
-                          })
-                        }
-                        className="w-full px-4 py-3 rounded bg-white text-black"
-                      />
-                      {formErrors[field as keyof ContactFormErrors] && (
-                        <p className="text-red-500 text-sm">
-                          {formErrors[field as keyof ContactFormErrors]}
-                        </p>
-                      )}
-                    </div>
-                  ))}
+              <form onSubmit={handleSubmit} className="space-y-5 w-full">
+                {/* Name + Phone */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Full name"
+                      value={emailForm.name}
+                      onChange={(e) =>
+                        setEmailForm({ ...emailForm, name: e.target.value })
+                      }
+                      className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-gray-400"
+                    />
+                    {formErrors.name && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {formErrors.name}
+                      </p>
+                    )}
+                  </div>
 
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Phone number"
+                      value={emailForm.phone}
+                      onChange={(e) =>
+                        setEmailForm({ ...emailForm, phone: e.target.value })
+                      }
+                      className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-gray-400"
+                    />
+                    {formErrors.phone && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {formErrors.phone}
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Email */}
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    value={emailForm.email}
+                    onChange={(e) =>
+                      setEmailForm({ ...emailForm, email: e.target.value })
+                    }
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-gray-400"
+                  />
+                  {formErrors.email && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {formErrors.email}
+                    </p>
+                  )}
+                </div>
+
+                {/* Message */}
+                <div>
                   <textarea
-                    rows={4}
-                    placeholder="Describe your case"
+                    rows={6}
+                    placeholder="Describe your case or ask a question"
                     value={emailForm.message}
                     onChange={(e) =>
-                      setEmailForm({
-                        ...emailForm,
-                        message: e.target.value,
-                      })
+                      setEmailForm({ ...emailForm, message: e.target.value })
                     }
-                    className="w-full px-4 py-3 rounded bg-white text-black"
+                    className="w-full px-4 py-3 rounded-md bg-white text-black placeholder:text-gray-400 resize-none"
                   />
+                  {formErrors.message && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {formErrors.message}
+                    </p>
+                  )}
+                </div>
 
-                  <button
-                    type="submit"
-                    disabled={loading}
-                    className="w-full bg-[#BA8E2D] py-4 text-white font-semibold rounded hover:bg-yellow-500 disabled:opacity-50"
-                  >
-                    {loading ? "Sending..." : "Book An Appointment"}
-                  </button>
-                </form>
-              </div>
+                {/* Button */}
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="w-full bg-[#BA8E2D] py-4 text-white font-semibold rounded-md hover:bg-yellow-600 transition disabled:opacity-50"
+                >
+                  {loading ? "Sending..." : "Book An Appointment"}
+                </button>
+              </form>
             </div>
           </Reveal>
         </div>
