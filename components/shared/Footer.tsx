@@ -69,7 +69,7 @@ export default function Footer() {
               </Link>
 
               {/* Avvo (no official icon in react-icons – using FaBalanceScale as the legal symbol) */}
-              <Link href="#" aria-label="Avvo">
+              <Link href="/contact" aria-label="Avvo">
                 <FaBalanceScale />
               </Link>
 
