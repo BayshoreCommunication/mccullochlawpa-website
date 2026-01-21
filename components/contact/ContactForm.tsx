@@ -187,7 +187,7 @@ const ContactForm = () => {
               <Reveal tag="h2" y={100} opacityFrom={0} duration={3}>
                 <div className="w-full bg-[#1A1A1A] p-10 rounded-md">
                   <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">
-                    Request a Flexible Schedule
+                    Request a Free Consultation
                   </h2>
 
                   <form className="flex flex-col gap-4" onSubmit={handleSubmit}>

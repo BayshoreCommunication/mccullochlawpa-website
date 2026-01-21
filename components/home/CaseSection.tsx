@@ -2,54 +2,42 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
-import "swiper/css/navigation";
 
-const caseData = [
-  {
-    title: "State of Florida vs. J.R.M.",
-    charge: "Possession of Heroin",
-    outcome: "Dismissed by Motion to Dismiss",
+/* ---------------- CASE DATA ---------------- */
+const caseData: Record<string, { charge: string; outcome: string }> = {
+  "State of Florida vs. J.R.M.": {
+    charge: "Possession of Heroin - Third Degree Felony",
+    outcome: "Case Dismissed by Motion",
   },
-  {
-    title: "State of Florida vs. O.A.",
-    charge: "Battery on a Pregnant Female",
+  "State of Florida vs. O.A.": {
+    charge: "Battery on a Pregnant Female – Second Degree Felony",
     outcome: "Not Filed",
   },
-  {
-    title: "State of Florida vs. J.E.C.",
-    charge: "Trafficking in Amphetamines",
-    outcome: "Dismissed",
+  "State of Florida vs. J.E.C.": {
+    charge:
+      "Trafficking in Amphetamines (14–28 grams) - First Degree Felony – Mandatory 3 Years in Prison & $50,000 Fine\n" +
+      "Possession of Controlled Substance - Third Degree Felony\n" +
+      "Felony Possession of Cannabis - Third Degree Felony",
+    outcome:
+      "Trafficking in Amphetamines (14–28 grams) - First Degree Felony – Dismissed by Motion to Dismiss\n" +
+      "Possession of Controlled Substance – Dismissed\n" +
+      "Felony Possession of Cannabis – Withhold of Adjudication",
   },
-  {
-    title: "State of Florida vs. N.P.B.",
-    charge: "Child Abuse",
+  "State of Florida vs. N.P.B.": {
+    charge: "Child Abuse – Third Degree Felony",
     outcome: "Case Dismissed",
   },
-  {
-    title: "State of Florida vs. J.R.M.",
-    charge: "Possession of Heroin",
-    outcome: "Dismissed by Motion to Dismiss",
-  },
-  {
-    title: "State of Florida vs. O.A.",
-    charge: "Battery on a Pregnant Female",
-    outcome: "Not Filed",
-  },
-  {
-    title: "State of Florida vs. J.E.C.",
-    charge: "Trafficking in Amphetamines",
-    outcome: "Dismissed",
-  },
-  {
-    title: "State of Florida vs. N.P.B.",
-    charge: "Child Abuse",
+  "State of Florida vs. R.M.": {
+    charge:
+      "5th Driving Under the Influence (DUI) with Property Damage/Injury – First Degree Misdemeanor",
     outcome: "Case Dismissed",
   },
-];
+};
 
+/* ---------------- COMPONENT ---------------- */
 export default function CaseSection() {
   const [direction, setDirection] = useState<"horizontal" | "vertical">(
     "horizontal"
@@ -64,48 +52,59 @@ export default function CaseSection() {
 
     updateDirection();
     window.addEventListener("resize", updateDirection);
-
     return () => window.removeEventListener("resize", updateDirection);
   }, []);
 
   return (
     <div
-      className="w-full md:h-[180px] h-[500px]"
-      onMouseEnter={() => swiperRef.current?.autoplay.stop()} // Pause on hover
-      onMouseLeave={() => swiperRef.current?.autoplay.start()} // Resume autoplay
+      className="w-full"
+      onMouseEnter={() => swiperRef.current?.autoplay.stop()}
+      onMouseLeave={() => swiperRef.current?.autoplay.start()}
     >
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={4}
+        slidesPerView={3}
+        spaceBetween={20}
         direction={direction}
-        navigation={true}
-        spaceBetween={1}
-        loop={true}
+        loop
         autoplay={{
           delay: 0,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
         }}
         speed={5000}
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // Store swiper instance
-        className="w-full h-full"
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="w-full"
       >
-        {caseData.map((item, i) => (
+        {Object.entries(caseData).map(([title, item], index) => (
           <SwiperSlide
-            key={i}
-            className="bg-[#b88b24] text-white p-6 flex flex-col border border-white/10 "
+            key={index}
+            className="h-full flex"
           >
-            <h3 className="font-bold text-lg mb-2">{item.title}</h3>
+            {/* CARD */}
+            <div className="bg-[#b88b24] text-white p-6 border border-white/10 rounded-md flex flex-col w-full">
+              
+              {/* TITLE */}
+              <h3 className="font-bold text-lg mb-4">
+                {title}
+              </h3>
 
-            <div className="flex justify-between gap-3 items-start flex-1">
-              <div className="flex-1">
-                <p className="font-semibold">Charge:</p>
-                <p className="mb-3">{item.charge}</p>
+              {/* CONTENT */}
+              <div className="flex gap-6 flex-1">
+                <div className="flex-1 flex flex-col">
+                  <p className="font-semibold mb-1">Charge:</p>
+                  <p className="whitespace-pre-line">
+                    {item.charge}
+                  </p>
+                </div>
+
+                <div className="flex-1 flex flex-col">
+                  <p className="font-semibold mb-1">Outcome:</p>
+                  <p className="whitespace-pre-line">
+                    {item.outcome}
+                  </p>
+                </div>
               </div>
 
-              <div className="flex-1">
-                <p className="font-semibold">Outcome:</p>
-                <p>{item.outcome}</p>
-              </div>
             </div>
           </SwiperSlide>
         ))}

@@ -188,7 +188,7 @@ export default function Testimonials() {
               <Reveal>
                 <h2 className="text-3xl md:text-4xl font-bold text-center">
                   Our Clients Love Us We’ve Earned{" "}
-                  <span className="text-[#E72020]">5 Out of 5 Stars</span>
+                  <span className="text-[#E72020]">5 Out of 5 Stars!</span>
                 </h2>
               </Reveal>
             </Stagger>
