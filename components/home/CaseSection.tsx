@@ -127,7 +127,7 @@ export default function CaseSection() {
     >
       <Swiper
         modules={[Autoplay]}
-        slidesPerView={3}
+        slidesPerView={direction === "vertical" ? 1 : 3} // ✅ FIX
         spaceBetween={20}
         direction={direction}
         loop
@@ -135,25 +135,22 @@ export default function CaseSection() {
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={5000}
+        speed={7000}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-full"
+        className="w-full h-[360px] md:h-auto [&_.swiper-wrapper]:items-stretch" // ✅ FIX
       >
         {Object.entries(caseData).map(([title, item], index) => (
-          <SwiperSlide key={index} className="h-full flex">
-            {/* CARD */}
-            <div className="bg-[#b88b24] text-white p-6 border border-white/10 rounded-md flex flex-col w-full">
-              {/* TITLE */}
+          <SwiperSlide key={index} className="flex">
+            <div className="bg-[#b88b24] text-white p-6 border border-white/10 rounded-md flex flex-col w-full h-[360px] md:h-[320px]">
               <h3 className="font-bold text-lg mb-4">{title}</h3>
 
-              {/* CONTENT */}
               <div className="flex gap-6 flex-1">
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1">
                   <p className="font-semibold mb-1">Charge:</p>
                   <p className="whitespace-pre-line">{item.charge}</p>
                 </div>
 
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1">
                   <p className="font-semibold mb-1">Outcome:</p>
                   <p className="whitespace-pre-line">{item.outcome}</p>
                 </div>
