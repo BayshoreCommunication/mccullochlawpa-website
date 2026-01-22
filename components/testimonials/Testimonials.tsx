@@ -180,7 +180,7 @@ export default function TestimonialsStaticGrid() {
           Our Clients Love Us
         </h2>
         <h3 className="text-xl md:text-2xl font-semibold mt-2">
-          We’ve Earned <span className="text-red-600">5 Out of 5 Stars</span>
+          We’ve Earned <span className="text-red-600">5 Out of 5 Stars!</span>
         </h3>
       </div>
 
