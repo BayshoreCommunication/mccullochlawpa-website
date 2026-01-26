@@ -24,7 +24,7 @@ const caseData: Record<string, { charge: string; outcome: string }> = {
       "Possession of Controlled Substance - Third Degree Felony\n" +
       "Felony Possession of Cannabis - Third Degree Felony",
     outcome:
-      "Trafficking in Amphetamines (14–28 grams) - First Degree Felony – Dismissed by Motion to Dismiss\n" +
+      "Dismissed by Motion to Dismiss\n" +
       "Possession of Controlled Substance – Dismissed\n" +
       "Felony Possession of Cannabis – Withhold of Adjudication",
   },
@@ -141,7 +141,7 @@ export default function CaseSection() {
       >
         {Object.entries(caseData).map(([title, item], index) => (
           <SwiperSlide key={index} className="flex">
-            <div className="bg-[#b88b24] text-white p-6 border border-white/10 rounded-md flex flex-col w-full h-[360px] md:h-[320px]">
+            <div className="bg-[#b88b24] text-white p-6 border border-white/10 rounded-md flex flex-col w-full h-[360px] md:h-[350px]">
               <h3 className="font-bold text-lg mb-4">{title}</h3>
 
               <div className="flex gap-6 flex-1">
