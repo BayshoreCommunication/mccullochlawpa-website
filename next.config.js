@@ -31,16 +31,62 @@ const nextConfig = {
     ];
   },
 
-  // ✅ ADD REDIRECTS HERE
-  async redirects() {
-    return [
-      {
-        source: "/attorney-profile/drew-mcculloch-esq/",
-        destination: "/about",
-        permanent: true,
-      },
-    ];
-  },
+ // ✅ ADD REDIRECTS HERE
+async redirects() {
+  return [
+    {
+      source: "/schedule-a-consultation",
+      destination: "/contact",
+      permanent: true,
+    },
+    {
+      source: "/auto-accidents",
+      destination: "/practice/auto-accident",
+      permanent: true,
+    },
+    {
+      source: "/criminal-traffic-offenses",
+      destination: "/practice#criminal-defense",
+      permanent: true,
+    },
+    {
+      source: "/weapons-firearms-charges",
+      destination: "/practice/weapons-firearms-charges",
+      permanent: true,
+    },
+    {
+      source: "/attorney-profile/drew-mcculloch-esq",
+      destination: "/about",
+      permanent: true,
+    },
+    {
+      source: "/misdemeanors",
+      destination: "/practice/misdemeanors",
+      permanent: true,
+    },
+    {
+      source: "/client-testimonials",
+      destination: "/testimonials",
+      permanent: true,
+    },
+    {
+      source: "/burglary-trespass",
+      destination: "/practice/burglary-trespass",
+      permanent: true,
+    },
+    {
+      source: "/products-liability",
+      destination: "/practice/products-liability",
+      permanent: true,
+    },
+    {
+      source: "/dog-bites",
+      destination: "/practice/dog-bites",
+      permanent: true,
+    },
+  ];
+}
+
 };
 
 module.exports = nextConfig;
