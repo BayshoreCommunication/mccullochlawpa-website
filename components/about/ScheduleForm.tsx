@@ -17,6 +17,7 @@ import {
 } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { send } from "emailjs-com";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 type ContactFormState = {
   name: string;
@@ -121,6 +122,7 @@ const ContactForm = () => {
       icon: FaInstagram,
       url: "https://www.instagram.com/mccullochlawtpa/",
     },
+
     {
       icon: FaBalanceScale,
       url: "",
@@ -133,6 +135,10 @@ const ContactForm = () => {
     //   icon: FaGoogle,
     //   url: "https://g.page/yourgooglebusiness",
     // },
+    {
+      icon: FaSquareXTwitter,
+      url: "https://x.com/McCullochLawTPA",
+    },
     {
       icon: FaTiktok,
       url: "https://www.tiktok.com/@mcculllochlawtpa",
