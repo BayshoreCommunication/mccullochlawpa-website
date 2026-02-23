@@ -98,6 +98,14 @@ export default function Footer() {
               >
                 <FaTiktok />
               </Link>
+              {/* YouTube */}
+              <Link
+                href="https://www.youtube.com/@mccullochlawtpa"
+                aria-label="YouTube"
+                target="_blank"
+              >
+                <FaYoutube />
+              </Link>
             </div>
           </div>
 

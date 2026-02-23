@@ -13,6 +13,7 @@ import {
   FaBalanceScale,
   FaYelp,
   FaTiktok,
+  FaYoutube,
 } from "react-icons/fa";
 import Swal from "sweetalert2";
 import { send } from "emailjs-com";
@@ -135,6 +136,10 @@ const ContactForm = () => {
     {
       icon: FaTiktok,
       url: "https://www.tiktok.com/@mcculllochlawtpa",
+    },
+    {
+      icon: FaYoutube,
+      url: "https://www.youtube.com/@mccullochlawtpa",
     },
   ];
 
