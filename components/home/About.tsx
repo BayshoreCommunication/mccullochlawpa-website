@@ -134,7 +134,7 @@ export default function About() {
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#BA8E2D" />
-                      Free Consulting
+                      Free Consultations
                     </li>
                     <li className="flex items-center gap-2">
                       <IoMdCheckboxOutline size={24} color="#BA8E2D" />
@@ -165,11 +165,11 @@ export default function About() {
                 className="  max-w-60"
               />
               <Image
-                src="/images/about/achivements-2.png"
+                src="/images/about/achivements-2.jpeg"
                 alt=""
                 width={1000}
                 height={80}
-                className="  max-w-60"
+                className="  max-w-36"
               />
               <Image
                 src="/images/about/achivements-3.png"
