@@ -137,8 +137,8 @@ const testimonials = [
 
 export default function SidebarTestimonials() {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6">
-      <h3 className="text-2xl font-bold mb-4 border-b pb-2">
+    <div className="bg-[#001B47] shadow-lg rounded-lg p-6">
+      <h3 className="text-2xl font-bold mb-4 border-b pb-2 text-white">
         Client Testimonials
       </h3>
 
@@ -153,7 +153,7 @@ export default function SidebarTestimonials() {
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="flex flex-col">
-              <p className="text-sm text-gray-700 leading-relaxed">
+              <p className="text-sm text-white leading-relaxed">
                 {item.review}
               </p>
 
@@ -163,7 +163,9 @@ export default function SidebarTestimonials() {
                 </div>
 
                 <div>
-                  <p className="font-semibold text-sm">{item.name}</p>
+                  <p className="font-semibold text-sm text-white">
+                    {item.name}
+                  </p>
 
                   <div>
                     {Array.from({ length: item.rating }).map((_, i) => (
