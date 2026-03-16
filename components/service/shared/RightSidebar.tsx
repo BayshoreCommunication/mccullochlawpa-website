@@ -81,7 +81,7 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
         <p className="font-semibold uppercase">McCulloch Law, P.A.</p>
 
         <p className="text-sm text-gray-600 mt-1">
-          238 E Davis Blvd, Tampa, FL 33606
+          238 East Davis Boulevard, Ste 202 Tampa, FL 33606
         </p>
 
         <p className="text-blue-600 font-bold mt-3">(813) 444-2817</p>
