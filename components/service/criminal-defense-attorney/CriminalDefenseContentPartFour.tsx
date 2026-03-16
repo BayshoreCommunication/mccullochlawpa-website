@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { FiPhoneCall } from "react-icons/fi";
+
 export default function CriminalDefenseContentPartFour() {
   return (
     <div className="max-w-4xl mx-auto px-4 pb-6 space-y-6 text-gray-800">
@@ -54,7 +57,30 @@ export default function CriminalDefenseContentPartFour() {
         the courtroom and understanding what is at stake makes clear why
         fighting for the best possible outcome is always worth it.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h3 className="text-2xl font-semibold">
         What a Criminal Record Can Cost You
       </h3>
@@ -177,7 +203,30 @@ export default function CriminalDefenseContentPartFour() {
         without an arrest. That outcome is only possible when a criminal defense
         attorney is involved before the investigation concludes.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h2 className="text-2xl font-semibold">
         Facing a Criminal Charge in Florida — What It Means and What Comes Next
       </h2>
@@ -284,7 +333,30 @@ export default function CriminalDefenseContentPartFour() {
         exhibit. Drew McCulloch uses every one of these tools and uses them
         early enough that clients often never face a jury.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h3 className="text-2xl font-semibold">
         The Goal Is the Best Outcome, Not Just Any Outcome
       </h3>

@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+import { FiPhoneCall } from "react-icons/fi";
+
 export default function DUIDefenseContentPartTwo() {
   return (
     <div className="max-w-4xl mx-auto space-y-6 text-gray-800 leading-relaxed py-6">
@@ -103,7 +106,30 @@ export default function DUIDefenseContentPartTwo() {
         stop may be unlawful. When the stop is unlawful, everything that follows
         it may be suppressed, including the breathalyzer result.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h3 className="text-2xl font-semibold">
         Challenging the Breath and Blood Test Results
       </h3>
@@ -214,6 +240,30 @@ export default function DUIDefenseContentPartTwo() {
         pays off whether the case ultimately resolves at trial or at the
         negotiating table.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { FiPhoneCall } from "react-icons/fi";
+
 export default function CriminalDefenseContent() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 space-y-6 text-gray-800">
@@ -71,7 +74,30 @@ export default function CriminalDefenseContent() {
         prosecution's strategy and Drew McCulloch spent years on that side of
         the courtroom.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h3 className="text-2xl font-semibold">
         Inside Knowledge That Changes Defense Strategy
       </h3>
@@ -235,7 +261,30 @@ export default function CriminalDefenseContent() {
         prosecution's case has weaknesses, he finds them early and builds the
         entire defense strategy around exploiting them.
       </p>
+      {/* CTA Section */}
+      <div className="mt-6 bg-[#001B47] rounded-2xl p-8 text-center text-white">
+        <h3 className="text-lg tracking-widest uppercase mb-6 text-gray-300 max-w-2xl mx-auto w-full">
+          Contact Our Injury Attorneys in 238 East Davis Boulevard, Ste 202
+          Tampa, FL 33606
+        </h3>
 
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Link
+            href="/contact"
+            className="bg-primary  transition px-6 py-3 rounded-full font-semibold inline-block"
+          >
+            FREE CASE CONSULTATION
+          </Link>
+
+          <a
+            href="tel:+8134442817"
+            className="inline-flex items-center justify-center gap-2 bg-white transition px-6 py-3 rounded-full font-semibold text-black"
+          >
+            <FiPhoneCall size={20} />
+            (813) 444-2817
+          </a>
+        </div>
+      </div>
       <h3 className="text-2xl font-semibold">
         When a Criminal Lawyer's Reputation Matters in Court
       </h3>
