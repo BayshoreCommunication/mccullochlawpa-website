@@ -122,7 +122,7 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
             latestBlogs.map((blog, index) => (
               <Link
                 key={index}
-                href={`/blog/${blog.slug}`}
+                href={`/blogs/${blog.slug}`}
                 className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded transition"
               >
                 <div className="relative w-[70px] h-[60px] flex-shrink-0 rounded overflow-hidden">
