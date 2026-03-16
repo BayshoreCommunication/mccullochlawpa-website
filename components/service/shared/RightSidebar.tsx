@@ -3,9 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CriminalInjuryServices } from "@/config/data";
-import { PersonalInjuryServices } from "@/config/data";
-import Services from "../../home/Services";
+import { CriminalInjuryServices, PersonalInjuryServices } from "@/config/data";
 
 interface Blog {
   slug: string;
@@ -13,9 +11,9 @@ interface Blog {
   published: boolean;
 }
 
-export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
+export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
   const latestBlogs = blogs
-    ?.filter((blog) => blog.published === true)
+    ?.filter((blog) => blog?.published && blog?.slug)
     ?.slice(0, 10);
 
   return (
@@ -44,8 +42,7 @@ export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
         </div>
       </div>
 
-      {/* Criminal Injury Service */}
-      {/* CRIMINAL DEFENSE SERVICES */}
+      {/* Criminal Defense */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">
           Criminal Defense
@@ -64,7 +61,7 @@ export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
         </div>
       </div>
 
-      {/* LOCATION CARD */}
+      {/* Tampa Office */}
       <div className="bg-gray-100 rounded-lg p-6 text-center">
         <h3 className="text-xl font-bold mb-4">Our Tampa Office</h3>
 
@@ -94,7 +91,7 @@ export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
         </a>
       </div>
 
-      {/* PERSONAL INJURY PRACTICE AREAS */}
+      {/* Personal Injury */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">
           Personal Injury
@@ -112,20 +109,25 @@ export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
           ))}
         </div>
       </div>
-      {/* RECENT BLOGS */}
+
+      {/* Recent Blogs */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">Recent Blogs</h3>
 
         <div className="space-y-3">
-          {latestBlogs?.map((blog, index) => (
-            <Link
-              key={index}
-              href={`/blog/${blog.slug}`}
-              className="block text-sm font-medium text-gray-800 hover:text-primary transition"
-            >
-              • {blog.title}
-            </Link>
-          ))}
+          {latestBlogs.length > 0 ? (
+            latestBlogs.map((blog, index) => (
+              <Link
+                key={index}
+                href={`/blogs/${blog.slug}`}
+                className="block text-sm font-medium text-gray-800 hover:text-primary transition"
+              >
+                • {blog.title}
+              </Link>
+            ))
+          ) : (
+            <p className="text-sm text-gray-500">No blogs available</p>
+          )}
         </div>
       </div>
     </aside>
