@@ -1,0 +1,133 @@
+"use client";
+
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { CriminalInjuryServices } from "@/config/data";
+import { PersonalInjuryServices } from "@/config/data";
+import Services from "../../home/Services";
+
+interface Blog {
+  slug: string;
+  title: string;
+  published: boolean;
+}
+
+export default function RightSideBar({ blogs }: { blogs: Blog[] }) {
+  const latestBlogs = blogs
+    ?.filter((blog) => blog.published === true)
+    ?.slice(0, 10);
+
+  return (
+    <aside className="w-full max-w-[400px] space-y-8 pt-0 md:pt-16 mb-8">
+      {/* PROFILE */}
+      <div className="shadow-lg rounded-md p-6 text-center">
+        <div className="flex justify-center mb-6">
+          <div className="relative w-[130px] h-[130px] rounded-md overflow-hidden">
+            <Image
+              src="/images/hero/Attorney.png"
+              alt="Attorney"
+              fill
+              className="object-cover object-top"
+            />
+          </div>
+        </div>
+
+        <p className="text-2xl text-gray-700 mt-2">
+          Trusted & Experienced Legal Representation Across Tampa Bay
+        </p>
+
+        <div className="mt-6">
+          <span className="bg-primary text-white px-6 py-2 font-semibold">
+            McCulloch Law, P.A.
+          </span>
+        </div>
+      </div>
+
+      {/* Criminal Injury Service */}
+      {/* CRIMINAL DEFENSE SERVICES */}
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-2xl font-bold mb-4 border-b pb-2">
+          Criminal Defense
+        </h3>
+
+        <div className="space-y-3">
+          {CriminalInjuryServices.map((service, index) => (
+            <Link
+              key={index}
+              href={`/practice/${service.slug}`}
+              className="block text-sm font-medium text-gray-800 hover:text-primary transition"
+            >
+              • {service.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* LOCATION CARD */}
+      <div className="bg-gray-100 rounded-lg p-6 text-center">
+        <h3 className="text-xl font-bold mb-4">Our Tampa Office</h3>
+
+        <div className="h-40 rounded mb-4 overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=238+E+Davis+Blvd+Tampa+FL+33606&output=embed"
+            className="w-full h-full border-0"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <p className="font-semibold uppercase">McCulloch Law, P.A.</p>
+
+        <p className="text-sm text-gray-600 mt-1">
+          238 E Davis Blvd, Tampa, FL 33606
+        </p>
+
+        <p className="text-blue-600 font-bold mt-3">(813) 444-2817</p>
+
+        <a
+          href="https://www.google.com/maps?q=238+E+Davis+Blvd+Tampa+FL+33606"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block bg-primary text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >
+          GET DIRECTIONS
+        </a>
+      </div>
+
+      {/* PERSONAL INJURY PRACTICE AREAS */}
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-2xl font-bold mb-4 border-b pb-2">
+          Personal Injury
+        </h3>
+
+        <div className="space-y-3">
+          {PersonalInjuryServices.map((service, index) => (
+            <Link
+              key={index}
+              href={`/practice/${service.slug}`}
+              className="block text-sm font-medium text-gray-800 hover:text-primary transition"
+            >
+              • {service.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+      {/* RECENT BLOGS */}
+      <div className="bg-white shadow-lg rounded-lg p-6">
+        <h3 className="text-2xl font-bold mb-4 border-b pb-2">Recent Blogs</h3>
+
+        <div className="space-y-3">
+          {latestBlogs?.map((blog, index) => (
+            <Link
+              key={index}
+              href={`/blog/${blog.slug}`}
+              className="block text-sm font-medium text-gray-800 hover:text-primary transition"
+            >
+              • {blog.title}
+            </Link>
+          ))}
+        </div>
+      </div>
+    </aside>
+  );
+}
