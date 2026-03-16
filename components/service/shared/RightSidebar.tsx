@@ -4,11 +4,18 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { CriminalInjuryServices, PersonalInjuryServices } from "@/config/data";
+import SidebarTestimonials from "./SidebarTestimonials";
 
 interface Blog {
   slug: string;
   title: string;
   published: boolean;
+  featuredImage?: {
+    image?: {
+      url: string;
+    };
+    altText?: string;
+  };
 }
 
 export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
@@ -41,7 +48,6 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
           </span>
         </div>
       </div>
-
       {/* Criminal Defense */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">
@@ -60,7 +66,6 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
           ))}
         </div>
       </div>
-
       {/* Tampa Office */}
       <div className="bg-gray-100 rounded-lg p-6 text-center">
         <h3 className="text-xl font-bold mb-4">Our Tampa Office</h3>
@@ -90,7 +95,6 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
           GET DIRECTIONS
         </a>
       </div>
-
       {/* Personal Injury */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">
@@ -109,20 +113,33 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
           ))}
         </div>
       </div>
-
       {/* Recent Blogs */}
       <div className="bg-white shadow-lg rounded-lg p-6">
         <h3 className="text-2xl font-bold mb-4 border-b pb-2">Recent Blogs</h3>
 
-        <div className="space-y-3">
+        <div className="space-y-4">
           {latestBlogs.length > 0 ? (
             latestBlogs.map((blog, index) => (
               <Link
                 key={index}
-                href={`/blogs/${blog.slug}`}
-                className="block text-sm font-medium text-gray-800 hover:text-primary transition"
+                href={`/blog/${blog.slug}`}
+                className="flex items-start gap-3 hover:bg-gray-50 p-2 rounded transition"
               >
-                • {blog.title}
+                <div className="relative w-[70px] h-[60px] flex-shrink-0 rounded overflow-hidden">
+                  <Image
+                    src={
+                      blog?.featuredImage?.image?.url ||
+                      "/images/placeholder.jpg"
+                    }
+                    alt={blog?.featuredImage?.altText || blog.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                <div className="text-sm font-semibold text-gray-800 leading-snug line-clamp-2">
+                  {blog.title}
+                </div>
               </Link>
             ))
           ) : (
@@ -130,6 +147,8 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
           )}
         </div>
       </div>
+      {/* Testimonial Section */}
+      <SidebarTestimonials />
     </aside>
   );
 }
