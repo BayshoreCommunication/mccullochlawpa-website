@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -270,7 +271,13 @@ export default function CriminalDefenseContentPartThree() {
       <h2 className="text-2xl font-semibold">
         How Police and Criminal Evidence Is Challenged in a Florida Defense Case
       </h2>
-
+      <Image
+        className="rounded-xl"
+        src="images/criminal/police.png"
+        alt="Criminal Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <p className="text-base">
         The evidence law enforcement gathers is the foundation of the
         prosecution's case and challenging the legality, accuracy, and

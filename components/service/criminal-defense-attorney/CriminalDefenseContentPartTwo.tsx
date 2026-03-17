@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -7,7 +8,13 @@ export default function CriminalDefenseContentPartTwo() {
       <h2 className="text-2xl font-semibold">
         What Makes a Defense Attorney Effective ?
       </h2>
-
+      <Image
+        className="rounded-xl"
+        src="images/criminal/attorney.png"
+        alt="Criminal Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <p className="text-base">
         Legal knowledge is the baseline.What separates an effective defense
         attorney from an average one is preparation, strategy, and the

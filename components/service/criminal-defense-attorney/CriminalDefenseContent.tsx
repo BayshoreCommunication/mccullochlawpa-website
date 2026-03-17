@@ -1,9 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
 export default function CriminalDefenseContent() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 space-y-6 text-gray-800">
+      <Image
+        className="rounded-xl"
+        src="images/criminal/criminal.png"
+        alt="Criminal Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <h1 className="text-2xl font-semibold">
         Criminal Defense Attorney — McCulloch Law, P.A. Defends Your Rights
         Across Tampa and Brandon
@@ -160,7 +168,13 @@ export default function CriminalDefenseContent() {
       <h2 className="text-2xl font-semibold">
         What a Criminal Defense Attorney Actually Does for You?
       </h2>
-
+      <Image
+        className="rounded-xl"
+        src="images/criminal/defence.png"
+        alt="Criminal Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <p className="text-base">
         Most people charged with a crime have never worked with a criminal
         defense attorney before, and understanding what that representation

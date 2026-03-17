@@ -1,11 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
 export default function DUIDefenseContent() {
   return (
     <div className="max-w-4xl mx-auto space-y-6 text-gray-800 leading-relaxed py-6">
+      <Image
+        className="rounded-xl"
+        src="images/dui-defence/dui-defence.png"
+        alt="DUI Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <h1 className="text-2xl font-bold">
         DUI Defense Attorney — McCulloch Law, P.A. Fights DUI Charges
       </h1>

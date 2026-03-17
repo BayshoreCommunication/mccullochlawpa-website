@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -270,7 +271,13 @@ export default function CriminalDefenseContentPartFour() {
         What Sets Lawyers Who Focus on Criminal Defense Apart From Other
         Practitioners
       </h2>
-
+      <Image
+        className="rounded-xl"
+        src="images/criminal/lawyer.png"
+        alt="Criminal Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <p className="text-base">
         Criminal defense demands a specific skill set, a specific mindset, and a
         specific depth of knowledge that attorneys who only occasionally handle

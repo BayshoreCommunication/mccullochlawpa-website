@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 
@@ -85,7 +86,13 @@ export default function DUIDefenseContentPartTwo() {
       <h2 className="text-2xl font-bold">
         Common Defenses for DUI Charges in Florida and How Each One Works
       </h2>
-
+      <Image
+        className="rounded-xl"
+        src="images/dui-defence/common-defence.png"
+        alt="DUI Defense Attorney"
+        width={1000}
+        height={800}
+      />
       <p className="text-base">
         Florida DUI cases have more viable defense angles than most people
         realize, and knowing which ones apply to your specific situation is
