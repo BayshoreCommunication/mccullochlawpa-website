@@ -137,7 +137,7 @@ const testimonials = [
 
 export default function SidebarTestimonials() {
   return (
-    <div className="bg-[#001B47] shadow-lg rounded-lg p-6">
+    <div className="bg-[#001B47] shadow-lg rounded-lg p-6 sticky top-32">
       <h3 className="text-2xl font-bold mb-4 border-b pb-2 text-white">
         Client Testimonials
       </h3>
