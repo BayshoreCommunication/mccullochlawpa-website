@@ -61,7 +61,7 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
               href={`/practice/${service.slug}`}
               className="block text-sm font-medium text-gray-800 hover:text-primary transition"
             >
-              • {service.title}
+              » {service.title}
             </Link>
           ))}
         </div>
@@ -108,7 +108,7 @@ export default function RightSideBar({ blogs = [] }: { blogs: Blog[] }) {
               href={`/practice/${service.slug}`}
               className="block text-sm font-medium text-gray-800 hover:text-primary transition"
             >
-              • {service.title}
+              » {service.title}
             </Link>
           ))}
         </div>
