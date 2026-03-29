@@ -152,7 +152,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/auto-accident"
+                  href="https://www.mcfloridalaw.com/practice/auto-accident"
                   className="hover:text-[#D4A017]"
                 >
                   Auto Accidents
@@ -160,7 +160,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/slip-trip-fall"
+                  href="https://www.mcfloridalaw.com/practice/slip-trip-fall"
                   className="hover:text-[#D4A017]"
                 >
                   Slip and Fall
@@ -168,7 +168,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/dog-bites"
+                  href="https://www.mcfloridalaw.com/practice/dog-bites"
                   className="hover:text-[#D4A017]"
                 >
                   Dog Bites
@@ -176,7 +176,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/drug-crimes"
+                  href="https://www.mcfloridalaw.com/practice/drug-crimes"
                   className="hover:text-[#D4A017]"
                 >
                   Drug Crimes
@@ -184,7 +184,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/dui"
+                  href="https://www.mcfloridalaw.com/practice/dui"
                   className="hover:text-[#D4A017]"
                 >
                   DUI
@@ -192,7 +192,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://mccullochlawpa-website.vercel.app/practice/domestic-violence"
+                  href="https://www.mcfloridalaw.com/practice/domestic-violence"
                   className="hover:text-[#D4A017]"
                 >
                   Domestic Violence
