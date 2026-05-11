@@ -4,6 +4,7 @@ import Stagger from "../motion/Stagger";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import GetAllPostData from "@/lib/GetPostData";
+import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 function extractTextFromHtml(htmlString: string): string {
   return htmlString.replace(/<\/?[^>]+(>|$)/g, "");
@@ -13,10 +14,14 @@ export default async function Blog() {
   const blogPostData = await GetAllPostData();
 
   // Limit to maximum 3 published blogs
-  const publishedBlogs =
-    blogPostData?.data
-      ?.filter((blog: any) => blog.published === true)
-      ?.slice(0, 3) || [];
+  const apiBlogs =
+    blogPostData?.data?.filter(
+      (blog: any) =>
+        blog.published === true &&
+        !staticBlogs.some((item) => item.slug === blog.slug)
+    ) || [];
+
+  const publishedBlogs = [...staticBlogs, ...apiBlogs].slice(0, 3);
 
   return (
     <section className="w-full px-8 py-8 md:py-16">
@@ -43,16 +48,18 @@ export default async function Blog() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {publishedBlogs.length > 0 ? (
             publishedBlogs.map((blog: any, index: number) => {
-              const description = blog.body
-                ? extractTextFromHtml(blog.body).slice(0, 120) + "..."
-                : blog.description || "Read more about this blog post.";
+              const description = blog.excerpt
+                ? blog.excerpt
+                : blog.body
+                  ? extractTextFromHtml(blog.body).slice(0, 120) + "..."
+                  : blog.description || "Read more about this blog post.";
 
               return (
                 <Reveal key={index} y={100} opacityFrom={0} duration={3}>
                   <div className="group bg-white rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 h-full cursor-pointer hover:scale-105 duration-200">
                     {/* Featured Image */}
                     <Image
-                      src={blog.featuredImage?.image?.url}
+                      src={blog.featuredImage?.image?.url || "/placeholder.png"}
                       alt={blog.title}
                       width={1000}
                       height={800}
@@ -66,7 +73,15 @@ export default async function Blog() {
                         </h3>
 
                         <p className="mt-2 text-sm text-gray-600">
-                          {blog.date}
+                          {blog.date ||
+                            new Date(blog.createdAt).toLocaleDateString(
+                              "en-US",
+                              {
+                                year: "numeric",
+                                month: "short",
+                                day: "numeric",
+                              }
+                            )}
                         </p>
 
                         <p className="mt-3 text-base text-gray-600">

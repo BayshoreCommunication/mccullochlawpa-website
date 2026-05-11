@@ -5,6 +5,7 @@ import Reveal from "../motion/Reveal";
 import Stagger from "../motion/Stagger";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
+import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // --- fallback for UI when API has no data ---
 const fallbackBlogs = [
@@ -37,7 +38,15 @@ const fallbackBlogs = [
 
 export default function BlogPage({ blogPost }: { blogPost: any }) {
   // Use your API data → fallback static blogs
-  const posts =
+  const staticPosts = staticBlogs.map((p) => ({
+    title: p.title,
+    description: p.excerpt,
+    date: p.date,
+    image: p.featuredImage.image.url,
+    slug: p.slug,
+  }));
+
+  const apiPosts =
     blogPost?.data
       ?.filter((p: any) => p.published)
       ?.map((p: any) => ({
@@ -51,6 +60,13 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
         image: p.featuredImage?.image?.url,
         slug: p.slug,
       })) || fallbackBlogs;
+
+  const posts = [
+    ...staticPosts,
+    ...apiPosts.filter(
+      (post: any) => !staticPosts.some((item) => item.slug === post.slug)
+    ),
+  ];
 
   return (
     <section className="w-full px-8 py-8 md:py-16">
@@ -80,11 +96,11 @@ export default function BlogPage({ blogPost }: { blogPost: any }) {
               <Link href={`/blogs/${blog.slug}`} className="block h-full group">
                 <div className="bg-white rounded-2xl shadow-sm hover:shadow-md transition flex flex-col text-center border border-gray-100 h-full cursor-pointer hover:bg-[#BA8E2D] hover:scale-105 transform duration-200">
                   <Image
-                    src={blog.image}
+                    src={blog.image || "/placeholder.png"}
                     alt={blog.title}
                     width={300}
                     height={224}
-                    className="w-full  object-cover rounded-t-xl"
+                    className="w-full object-cover rounded-t-xl"
                   />
 
                   <div className="p-6 text-start flex flex-col flex-grow gap-4">

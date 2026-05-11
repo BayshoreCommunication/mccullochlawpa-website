@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 import GetAllPostData from "@/lib/GetPostData";
+import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are-outstanding-warrants";
+import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
 const css = `
@@ -35,6 +37,23 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }) {
+  const staticBlog = staticBlogs.find((item) => item.slug === params.slug);
+
+  if (staticBlog) {
+    return {
+      title: staticBlog.title,
+      description: staticBlog.excerpt,
+      openGraph: {
+        title: staticBlog.title,
+        description: staticBlog.excerpt,
+        images: staticBlog.featuredImage.image.url,
+        url: `https://www.mcfloridalaw.com/blogs/${staticBlog.slug}`,
+        type: "article",
+        site_name: "McCulloch Law, P.A.",
+      },
+    };
+  }
+
   const blogPostData = await GetAllPostData();
 
   const blog = blogPostData?.data?.find(
@@ -67,6 +86,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "what-are-outstanding-warrants") {
+    return <WhatAreOutstandingWarrants />;
+  }
+
   const blogPostData = await GetAllPostData();
 
   // FIXED: Use .find(), not .filter()

@@ -1,9 +1,24 @@
 export default async function GetAllPostData() {
-  const bloData = await fetch(
-    "https://backend-mccullochlawpa.vercel.app/site/blog",
-    {
-      next: { revalidate: 200 },
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 5000);
+
+  try {
+    const bloData = await fetch(
+      "https://backend-mccullochlawpa.vercel.app/site/blog",
+      {
+        next: { revalidate: 200 },
+        signal: controller.signal,
+      }
+    );
+
+    if (!bloData.ok) {
+      return { data: [] };
     }
-  );
-  return bloData.json();
+
+    return bloData.json();
+  } catch {
+    return { data: [] };
+  } finally {
+    clearTimeout(timeout);
+  }
 }
