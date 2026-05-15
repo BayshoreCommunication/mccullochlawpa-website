@@ -4,6 +4,7 @@ import Link from "next/link";
 import parse from "html-react-parser";
 import GetAllPostData from "@/lib/GetPostData";
 import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are-outstanding-warrants";
+import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs/your-first-court-appearance-explained-by";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -40,12 +41,15 @@ export async function generateMetadata({
   const staticBlog = staticBlogs.find((item) => item.slug === params.slug);
 
   if (staticBlog) {
+    const title = staticBlog.metaTitle || staticBlog.title;
+    const description = staticBlog.metaDescription || staticBlog.excerpt;
+
     return {
-      title: staticBlog.title,
-      description: staticBlog.excerpt,
+      title,
+      description,
       openGraph: {
-        title: staticBlog.title,
-        description: staticBlog.excerpt,
+        title,
+        description,
         images: staticBlog.featuredImage.image.url,
         url: `https://www.mcfloridalaw.com/blogs/${staticBlog.slug}`,
         type: "article",
@@ -88,6 +92,10 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: { slug: string } }) {
   if (params.slug === "what-are-outstanding-warrants") {
     return <WhatAreOutstandingWarrants />;
+  }
+
+  if (params.slug === "your-first-court-appearance-explained-by") {
+    return <YourFirstCourtAppearanceExplainedBy />;
   }
 
   const blogPostData = await GetAllPostData();

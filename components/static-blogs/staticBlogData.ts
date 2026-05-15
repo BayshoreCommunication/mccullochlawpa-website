@@ -17,4 +17,31 @@ export const outstandingWarrantsBlog = {
   },
 };
 
-export const staticBlogs = [outstandingWarrantsBlog];
+export const firstCourtAppearanceBlog = {
+  title:
+    "Your First Court Appearance Explained by a First Appearance Attorney in Brandon",
+  metaTitle: "Brandon First Appearance Guide: Attorney Process Explained",
+  metaDescription:
+    "Facing a judge in Brandon, FL? A first appearance attorney explains the 24-hour court rule, bond conditions, and how to protect your rights after an arrest.",
+  slug: "your-first-court-appearance-explained-by",
+  date: "May 15, 2026",
+  createdAt: "2026-05-15T00:00:00.000Z",
+  category: "Criminal Defense",
+  published: true,
+  excerpt:
+    "A first appearance attorney in Brandon explains Florida's 24-hour court rule, bond conditions, probable cause review, and how to protect your rights after an arrest.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/first-court-appearance-criminal-defense-attorney.webp",
+    },
+    altText:
+      "Criminal defense attorney representing a client during a first court appearance hearing",
+    title: "First Court Appearance Criminal Defense Representation",
+    description:
+      "Experienced criminal defense attorney assisting a client during a first court appearance before a judge in a courtroom setting, providing legal guidance, representation, and defense strategy for criminal proceedings.",
+    caption:
+      "Defense attorney representing a client during a courtroom hearing",
+  },
+};
+
+export const staticBlogs = [firstCourtAppearanceBlog, outstandingWarrantsBlog];
