@@ -14,7 +14,7 @@ export const outstandingWarrantsBlog = {
     "Outstanding warrants in Polk County do not expire on their own. Learn how to check warrant status, clear a warrant, and avoid an unexpected arrest.",
   featuredImage: {
     image: {
-      url: "/images/static-blogs/what-are-outstanding-warrants.jpg",
+      url: "/images/static-blogs/outstanding-warrants-defense-lawyer-polk-county.webp",
     },
     altText:
       "Police lights representing outstanding warrant defense in Florida",
