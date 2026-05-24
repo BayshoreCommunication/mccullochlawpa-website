@@ -48,4 +48,35 @@ export const firstCourtAppearanceBlog = {
   },
 };
 
-export const staticBlogs = [firstCourtAppearanceBlog, outstandingWarrantsBlog];
+export const duiAccidentInjuryClaimBlog = {
+  title:
+    "DUI Accidents and Injury Claims Explained by a DUI With Accident Lawyer in Riverview",
+  metaTitle: "Riverview DUI Accident and Injury Claims Guide",
+  metaDescription:
+    "Hurt by a drunk driver in Riverview? Learn about PIP benefits, punitive damages, and how our Riverview DUI accident lawyers help you win your claim.",
+  slug: "dui-accident-injury-claim",
+  date: "May 24, 2026",
+  createdAt: "2026-05-24T00:00:00.000Z",
+  category: "DUI Accident Claims",
+  published: true,
+  excerpt:
+    "Hurt by a drunk driver in Riverview? Learn about PIP benefits, punitive damages, deadlines, evidence, and how a DUI accident injury claim works in Florida.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/dui-accident-injury-claim-night-crash-scene.webp",
+    },
+    altText:
+      "Police officer conducting DUI investigation at nighttime car accident scene with damaged vehicles",
+    title: "DUI Accident Injury Claims and Legal Investigation",
+    description:
+      "Nighttime DUI accident scene with police officers, damaged vehicles, and emergency responders documenting evidence for injury claims and legal liability investigations.",
+    caption:
+      "Police investigating a DUI-related car accident involving injury claims and vehicle damage at night.",
+  },
+};
+
+export const staticBlogs = [
+  duiAccidentInjuryClaimBlog,
+  firstCourtAppearanceBlog,
+  outstandingWarrantsBlog,
+];

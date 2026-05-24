@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 import GetAllPostData from "@/lib/GetPostData";
+import DuiAccidentInjuryClaim from "@/components/static-blogs/blogs/dui-accident-injury-claim";
 import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are-outstanding-warrants";
 import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs/your-first-court-appearance-explained-by";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
@@ -55,6 +56,9 @@ export async function generateMetadata({
         type: "article",
         site_name: "McCulloch Law, P.A.",
       },
+      alternates: {
+        canonical: `https://www.mcfloridalaw.com/blogs/${staticBlog.slug}`,
+      },
     };
   }
 
@@ -90,6 +94,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "dui-accident-injury-claim") {
+    return <DuiAccidentInjuryClaim />;
+  }
+
   if (params.slug === "what-are-outstanding-warrants") {
     return <WhatAreOutstandingWarrants />;
   }
