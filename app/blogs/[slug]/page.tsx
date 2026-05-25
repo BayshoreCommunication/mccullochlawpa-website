@@ -6,6 +6,7 @@ import GetAllPostData from "@/lib/GetPostData";
 import DuiAccidentInjuryClaim from "@/components/static-blogs/blogs/dui-accident-injury-claim";
 import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are-outstanding-warrants";
 import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs/your-first-court-appearance-explained-by";
+import WhatRefusingABreathTest from "@/components/static-blogs/blogs/what-refusing-a-breath-test";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -104,6 +105,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   if (params.slug === "your-first-court-appearance-explained-by") {
     return <YourFirstCourtAppearanceExplainedBy />;
+  }
+
+  if (params.slug === "what-refusing-a-breath-test") {
+    return <WhatRefusingABreathTest />;
   }
 
   const blogPostData = await GetAllPostData();

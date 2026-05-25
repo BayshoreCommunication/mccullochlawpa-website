@@ -75,7 +75,35 @@ export const duiAccidentInjuryClaimBlog = {
   },
 };
 
+export const breathTestRefusalBlog = {
+  title:
+    "What Refusing a Breath Test Means From a DUI Refusal Attorney in Plant City",
+  metaTitle: "What Refusing a Breath Test Means in Florida DUI Cases",
+  metaDescription:
+    "Learn what refusing a breath test means in Florida, including license suspension, legal risks, deadlines, and how a DUI refusal attorney can help.",
+  slug: "what-refusing-a-breath-test",
+  date: "May 25, 2026",
+  createdAt: "2026-05-25T00:00:00.000Z",
+  category: "DUI Refusal Defense",
+  published: true,
+  excerpt:
+    "Learn what refusing a breath test means in Florida, including license suspension penalties, legal risks, review deadlines, and defense options.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/florida-dui-breath-test-refusal-penalties.webp",
+    },
+    altText:
+      "Florida DUI breath test refusal infographic showing license suspension penalties and legal consequences",
+    title: "What Refusing a Breath Test Means in Florida DUI Cases",
+    description:
+      "Informative graphic explaining Florida DUI breath test refusal penalties, including license suspension timelines, legal deadlines, and defense options for first and repeat refusal offenses.",
+    caption:
+      "Florida DUI breath test refusal penalties and legal defense options explained for drivers facing suspension.",
+  },
+};
+
 export const staticBlogs = [
+  breathTestRefusalBlog,
   duiAccidentInjuryClaimBlog,
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
