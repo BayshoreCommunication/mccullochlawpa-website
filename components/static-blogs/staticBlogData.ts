@@ -102,7 +102,35 @@ export const breathTestRefusalBlog = {
   },
 };
 
+export const underageDuiChargesValricoBlog = {
+  title:
+    "Underage DUI Charges Explained by a Underage DUI Lawyer in Valrico",
+  metaTitle: "Valrico Underage DUI? Save Your License and Record.",
+  metaDescription:
+    "Facing an underage DUI in Valrico? Explore charges, legal risks, and defense strategies explained by a local DUI lawyer.",
+  slug: "underage-dui-charges-valrico-florida-lawyer",
+  date: "June 7, 2026",
+  createdAt: "2026-06-07T00:00:00.000Z",
+  category: "Underage DUI Defense",
+  published: true,
+  excerpt:
+    "Facing an underage DUI in Valrico? Learn about Florida's 0.02 underage BAC rule, license suspension, the 10-day review deadline, and defense options.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/underage-dui-charges-valrico-florida-lawyer.webp",
+    },
+    altText:
+      "Police officer conducting a DUI investigation involving an underage driver during a traffic stop in Florida at night.",
+    title: "Underage DUI Charges Explained by a Valrico DUI Lawyer",
+    description:
+      "Legal educational graphic explaining underage DUI charges in Florida, including traffic stops, breathalyzer testing, license suspension, administrative penalties, criminal defense options, and the critical 10-day deadline following a DUI arrest. The image highlights the legal consequences young drivers may face and the importance of experienced legal representation.",
+    caption:
+      "Learn what happens after an underage DUI arrest in Florida, including license suspension, court proceedings, defense strategies, and important legal deadlines.",
+  },
+};
+
 export const staticBlogs = [
+  underageDuiChargesValricoBlog,
   breathTestRefusalBlog,
   duiAccidentInjuryClaimBlog,
   firstCourtAppearanceBlog,

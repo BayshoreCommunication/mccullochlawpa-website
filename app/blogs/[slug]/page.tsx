@@ -7,6 +7,7 @@ import DuiAccidentInjuryClaim from "@/components/static-blogs/blogs/dui-accident
 import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are-outstanding-warrants";
 import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs/your-first-court-appearance-explained-by";
 import WhatRefusingABreathTest from "@/components/static-blogs/blogs/what-refusing-a-breath-test";
+import UnderageDuiChargesValricoFloridaLawyer from "@/components/static-blogs/blogs/underage-dui-charges-valrico-florida-lawyer";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -109,6 +110,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   if (params.slug === "what-refusing-a-breath-test") {
     return <WhatRefusingABreathTest />;
+  }
+
+  if (params.slug === "underage-dui-charges-valrico-florida-lawyer") {
+    return <UnderageDuiChargesValricoFloridaLawyer />;
   }
 
   const blogPostData = await GetAllPostData();
