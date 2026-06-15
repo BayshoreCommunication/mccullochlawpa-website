@@ -129,10 +129,39 @@ export const underageDuiChargesValricoBlog = {
   },
 };
 
+export const assaultChargesExplainedBlog = {
+  title:
+    "Assault Charges Explained by an Assault Defense Lawyer in Tampa",
+  metaTitle: "Tampa Assault Charges Explained by Defense Lawyer",
+  metaDescription:
+    "Facing assault charges in Tampa? Learn Florida’s 2026 assault laws, penalties, defense options, and how early legal action may reduce or dismiss charges.",
+  slug: "assault-charges-defense-lawyer-tampa",
+  date: "June 15, 2026",
+  createdAt: "2026-06-15T00:00:00.000Z",
+  category: "Assault Defense",
+  published: true,
+  excerpt:
+    "Understand assault charges in Tampa, Florida, including legal definitions, potential penalties, and available defense strategies.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/assault-charges-defense-lawyer-tampa.webp",
+    },
+    altText:
+      "Person arrested in Tampa with assault charge case file, courthouse, and criminal defense legal representation",
+    title: "Assault Charges Explained by a Tampa Defense Lawyer",
+    description:
+      "Understand assault charges in Tampa, Florida, including legal definitions, potential penalties, and available defense strategies. Learn how a criminal defense lawyer can help protect your rights and navigate the legal process.",
+    caption:
+      "Assault charges can carry serious consequences. Knowing your legal options is the first step toward building a strong defense.",
+  },
+};
+
 export const staticBlogs = [
+  assaultChargesExplainedBlog,
   underageDuiChargesValricoBlog,
   breathTestRefusalBlog,
   duiAccidentInjuryClaimBlog,
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+

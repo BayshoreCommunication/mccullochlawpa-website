@@ -8,6 +8,7 @@ import WhatAreOutstandingWarrants from "@/components/static-blogs/blogs/what-are
 import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs/your-first-court-appearance-explained-by";
 import WhatRefusingABreathTest from "@/components/static-blogs/blogs/what-refusing-a-breath-test";
 import UnderageDuiChargesValricoFloridaLawyer from "@/components/static-blogs/blogs/underage-dui-charges-valrico-florida-lawyer";
+import AssaultChargesExplained from "@/components/static-blogs/blogs/Assault Charges Explained";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -64,6 +65,9 @@ export async function generateMetadata({
     };
   }
 
+
+
+
   const blogPostData = await GetAllPostData();
 
   const blog = blogPostData?.data?.find(
@@ -98,6 +102,10 @@ export async function generateMetadata({
 export default async function Page({ params }: { params: { slug: string } }) {
   if (params.slug === "dui-accident-injury-claim") {
     return <DuiAccidentInjuryClaim />;
+  }
+
+  if (params.slug === "assault-charges-defense-lawyer-tampa") {
+    return <AssaultChargesExplained />;
   }
 
   if (params.slug === "what-are-outstanding-warrants") {
