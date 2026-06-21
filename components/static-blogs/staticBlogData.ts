@@ -156,7 +156,34 @@ export const assaultChargesExplainedBlog = {
   },
 };
 
+export const whatMakesAnAssaultChargeAggravatedBlog = {
+  title: "What Makes an Assault Charge Aggravated in Florida?",
+  metaTitle: "What Makes an Assault Charge Aggravated in Brandon?",
+  metaDescription:
+    "Find out exactly what turns a simple threat into a felony in Florida. A Brandon aggravated assault attorney at McCulloch Law explains the two legal trigger.",
+  slug: "what-makes-an-assault-charge-aggravated",
+  date: "June 21, 2026",
+  createdAt: "2026-06-21T00:00:00.000Z",
+  category: "Aggravated Assault Defense",
+  published: true,
+  excerpt:
+    "Learn what factors can elevate a simple assault charge to aggravated assault under Florida law. Understand the role of deadly weapons, intent, felony classifications, potential penalties, and available legal defense options.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/what-makes-an-aggravated-assault-charge.webp",
+    },
+    altText:
+      "Person being arrested for aggravated assault with felony charge file, handcuffs, and criminal court setting",
+    title: "What Makes an Assault Charge Aggravated in Florida?",
+    description:
+      "Learn what factors can elevate a simple assault charge to aggravated assault under Florida law. Understand the role of deadly weapons, intent, felony classifications, potential penalties, and available legal defense options.",
+    caption:
+      "Aggravated assault charges often involve serious allegations that can lead to felony penalties and long-term consequences.",
+  },
+};
+
 export const staticBlogs = [
+  whatMakesAnAssaultChargeAggravatedBlog,
   assaultChargesExplainedBlog,
   underageDuiChargesValricoBlog,
   breathTestRefusalBlog,
@@ -164,4 +191,5 @@ export const staticBlogs = [
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+
 

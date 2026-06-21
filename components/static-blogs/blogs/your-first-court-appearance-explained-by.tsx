@@ -131,14 +131,15 @@ export default async function YourFirstCourtAppearanceExplainedBy() {
         <div className="flex flex-col lg:flex-row gap-12 xl:gap-20">
           <article className="w-full lg:flex-1">
             <figure className="mb-8">
-              <div className="relative w-full aspect-[725/438] overflow-hidden rounded-md">
+              <div className="w-full overflow-hidden rounded-md bg-gray-50">
                 <Image
                   src={firstCourtAppearanceBlog.featuredImage.image.url}
                   alt={firstCourtAppearanceBlog.featuredImage.altText}
                   title={firstCourtAppearanceBlog.featuredImage.title}
-                  fill
+                  width={1600}
+                  height={900}
                   priority
-                  className="object-cover"
+                  className="h-auto w-full"
                 />
               </div>
               <figcaption className="mt-3 text-sm italic text-gray-500">
@@ -548,16 +549,17 @@ export default async function YourFirstCourtAppearanceExplainedBy() {
                   href={`/blogs/${blog.slug}`}
                   className="flex items-start gap-3 ps-3 py-3 shadow bg-white my-3"
                 >
-                  <Image
-                    width={120}
-                    height={120}
-                    src={
-                      blog.featuredImage?.image?.url ||
-                      "/images/placeholder.jpg"
-                    }
-                    alt={blog.featuredImage?.altText || blog.title}
-                    className="w-[100px] h-auto rounded"
-                  />
+                  <div className="relative w-[100px] h-[66px] shrink-0 overflow-hidden rounded bg-gray-50">
+                    <Image
+                      fill
+                      src={
+                        blog.featuredImage?.image?.url ||
+                        "/images/placeholder.jpg"
+                      }
+                      alt={blog.featuredImage?.altText || blog.title}
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="font-bold text-black line-clamp-2">
                     {blog.title}
                   </div>

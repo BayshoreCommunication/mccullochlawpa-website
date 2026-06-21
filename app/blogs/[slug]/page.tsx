@@ -9,6 +9,7 @@ import YourFirstCourtAppearanceExplainedBy from "@/components/static-blogs/blogs
 import WhatRefusingABreathTest from "@/components/static-blogs/blogs/what-refusing-a-breath-test";
 import UnderageDuiChargesValricoFloridaLawyer from "@/components/static-blogs/blogs/underage-dui-charges-valrico-florida-lawyer";
 import AssaultChargesExplained from "@/components/static-blogs/blogs/Assault Charges Explained";
+import WhatMakesAnAssaultChargeAggravated from "@/components/static-blogs/blogs/what-makes-an-assault-charge-aggravated";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -104,6 +105,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
     return <DuiAccidentInjuryClaim />;
   }
 
+  if (params.slug === "what-makes-an-assault-charge-aggravated") {
+    return <WhatMakesAnAssaultChargeAggravated />;
+  }
+
   if (params.slug === "assault-charges-defense-lawyer-tampa") {
     return <AssaultChargesExplained />;
   }
@@ -183,8 +188,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               <p className="text-sm italic text-black mt-4">
                 {postDate(blog.createdAt)}
               </p>
-
-              <h1 className="text-2xl md:text-4xl font-bold text-[#1B2639] my-6">
+              <h1 className="text-2xl md:text-4xl font-bold text-[#1B2639] my-6">
                 {blog.title}
               </h1>
 
@@ -205,13 +209,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
                     href={`/blogs/${item.slug}`}
                     className="flex items-start gap-3 ps-3 py-3 shadow bg-white my-3"
                   >
-                    <Image
-                      width={120}
-                      height={120}
-                      src={item.featuredImage?.image?.url}
-                      alt={item.featuredImage?.altText}
-                      className="w-[100px] h-auto rounded"
-                    />
+                    <div className="relative w-[100px] h-[66px] shrink-0 overflow-hidden rounded bg-gray-50">
+                      <Image
+                        fill
+                        src={item.featuredImage?.image?.url}
+                        alt={item.featuredImage?.altText}
+                        className="object-cover"
+                      />
+                    </div>
                     <div className="font-bold text-black line-clamp-2">
                       {item.title}
                     </div>

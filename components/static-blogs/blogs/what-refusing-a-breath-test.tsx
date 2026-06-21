@@ -540,16 +540,17 @@ export default async function WhatRefusingABreathTest() {
                   href={`/blogs/${blog.slug}`}
                   className="flex items-start gap-3 ps-3 py-3 shadow bg-white my-3"
                 >
-                  <Image
-                    width={120}
-                    height={120}
-                    src={
-                      blog.featuredImage?.image?.url ||
-                      "/images/placeholder.jpg"
-                    }
-                    alt={blog.featuredImage?.altText || blog.title}
-                    className="w-[100px] h-auto rounded"
-                  />
+                  <div className="relative w-[100px] h-[66px] shrink-0 overflow-hidden rounded bg-gray-50">
+                    <Image
+                      fill
+                      src={
+                        blog.featuredImage?.image?.url ||
+                        "/images/placeholder.jpg"
+                      }
+                      alt={blog.featuredImage?.altText || blog.title}
+                      className="object-cover"
+                    />
+                  </div>
                   <div className="font-bold text-black line-clamp-2">
                     {blog.title}
                   </div>
