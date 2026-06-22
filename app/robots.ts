@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: "/_next/",
+      disallow: ["/api/", "/private/"],
     },
     sitemap: "https://www.mcfloridalaw.com/sitemap.xml",
   };
