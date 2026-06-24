@@ -30,9 +30,12 @@ export async function generateMetadata({ params }) {
       title: service.title,
       description: service.description,
       images: service.image,
-      url: `https://mccullochlawpa-website.vercel.app/practice/${service.slug}`,
+      url: `https://www.mcfloridalaw.com/practice/${service.slug}`,
       type: "article",
       site_name: "McCulloch Law",
+    },
+    alternates: {
+      canonical: `https://www.mcfloridalaw.com/practice/${service.slug}`,
     },
   };
 }

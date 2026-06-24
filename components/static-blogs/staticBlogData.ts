@@ -1,10 +1,8 @@
 export const outstandingWarrantsBlog = {
   title:
     "What Are Outstanding Warrants? Explained by a Warrant Defense Lawyer in Polk County",
-  metaTitle:
-    "Outstanding Warrants Guide: Lawyer Explains Warrant Defense in Polk County",
-  metaDescription:
-    "Outstanding warrants in Polk County do not expire on their own. Learn how to check warrant status, clear a warrant, and avoid an unexpected arrest.",
+  metaTitle: "Polk County Outstanding Warrant Explained by Criminal Lawyer",
+  metaDescription: "Active warrants in Polk County never expire. Verify your case status via official records. A motion to quash can bypass arrest, so act before a stop.",
   slug: "what-are-outstanding-warrants",
   date: "May 11, 2026",
   createdAt: "2026-05-11T00:00:00.000Z",

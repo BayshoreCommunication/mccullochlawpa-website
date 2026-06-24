@@ -66,9 +66,6 @@ export async function generateMetadata({
     };
   }
 
-
-
-
   const blogPostData = await GetAllPostData();
 
   const blog = blogPostData?.data?.find(
@@ -92,9 +89,12 @@ export async function generateMetadata({
       title: blog.title,
       description: shortDescription,
       images: blog?.featuredImage?.image?.url,
-      url: `https://www.medicalweightlosstampa.com/blog/${blog.slug}`,
+      url: `https://www.mcfloridalaw.com/blogs/${blog.slug}`,
       type: "article",
-      site_name: "medicalweightlosstampa.com",
+      site_name: "McCulloch Law, P.A.",
+    },
+    alternates: {
+      canonical: `https://www.mcfloridalaw.com/blogs/${blog.slug}`,
     },
   };
 }

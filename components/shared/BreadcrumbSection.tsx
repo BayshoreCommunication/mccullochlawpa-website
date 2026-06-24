@@ -50,10 +50,10 @@ const BreadcrumbSection: React.FC<BreadcrumbSectionProps> = ({
       {/* Content */}
       <Reveal y={100} opacityFrom={0} duration={3}>
         <div className="relative z-10 text-center max-w-5xl px-6 py-7">
-          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          <p className="text-3xl md:text-5xl font-bold text-white mb-4">
             {displayedText}
             <span className="inline-block w-[3px] h-6 md:h-8 bg-white ml-1 animate-pulse"></span>
-          </h1>
+          </p>
 
           <p className="text-white text-base md:text-base leading-relaxed">
             {subtitle}

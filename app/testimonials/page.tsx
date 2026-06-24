@@ -4,6 +4,15 @@ import React from "react";
 import BlogPage from "@/components/blog/BlogPage";
 import Testimonials from "@/components/testimonials/Testimonials";
 import Expect from "@/components/home/Expect";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Testimonials | McCulloch Law, P.A.",
+  description: "Read testimonials and reviews from clients who have trusted McCulloch Law, P.A. with their personal injury and criminal defense cases.",
+  alternates: {
+    canonical: "/testimonials",
+  },
+};
 
 const page = async () => {
   return (

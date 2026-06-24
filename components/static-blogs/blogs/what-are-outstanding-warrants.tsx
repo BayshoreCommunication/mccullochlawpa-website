@@ -293,7 +293,7 @@ export default async function WhatAreOutstandingWarrants() {
                   <a
                     href="https://www.polksheriff.org/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="font-semibold text-[#BA8E2D] underline"
                   >
                     Polk County Sheriff's Office
@@ -376,7 +376,7 @@ export default async function WhatAreOutstandingWarrants() {
                   <a
                     href="http://pas.fdle.state.fl.us/pas/restricted/PAS/person/WantedPersons.jsf"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="font-semibold text-[#BA8E2D] underline"
                   >
                     FDLE wanted persons search

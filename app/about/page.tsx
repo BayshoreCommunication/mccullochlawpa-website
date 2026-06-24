@@ -4,6 +4,15 @@ import ScheduleForm from "@/components/about/ScheduleForm";
 import Expect from "@/components/home/Expect";
 import BreadcrumbSection from "@/components/shared/BreadcrumbSection";
 import React from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About The Attorney | McCulloch Law, P.A.",
+  description: "Learn more about Attorney Drew McCulloch and the steady, reliable support McCulloch Law, P.A. provides in personal injury and criminal defense cases.",
+  alternates: {
+    canonical: "/about",
+  },
+};
 
 const page = () => {
   return (
