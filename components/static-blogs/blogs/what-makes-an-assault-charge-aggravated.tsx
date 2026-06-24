@@ -233,9 +233,9 @@ export default async function WhatMakesAnAssaultChargeAggravated() {
                     key={item.label}
                     className="rounded-md border border-gray-200 bg-white p-5"
                   >
-                    <div className="text-xl font-bold text-[#BA8E2D]">
+                    <h3 className="text-xl font-bold text-[#BA8E2D]">
                       {item.label}
-                    </div>
+                    </h3>
                     <p className="mt-2 text-gray-700 leading-7">{item.value}</p>
                   </div>
                 ))}
@@ -477,9 +477,9 @@ export default async function WhatMakesAnAssaultChargeAggravated() {
 
             <section className="grid gap-5 md:grid-cols-2 my-12">
               <div className="rounded-md border border-red-100 bg-red-50 p-6">
-                <h3 className="text-xl font-bold text-[#1B2639]">
+                <h2 className="text-xl font-bold text-[#1B2639]">
                   Delaying Your Defense
-                </h3>
+                </h2>
                 <ul className="mt-4 list-disc pl-5 space-y-2 text-gray-700">
                   <li>Witnesses forget details and security videos get overwritten.</li>
                   <li>Florida prosecutors build their case without your side of the story.</li>
@@ -488,9 +488,9 @@ export default async function WhatMakesAnAssaultChargeAggravated() {
                 </ul>
               </div>
               <div className="rounded-md border border-green-100 bg-green-50 p-6">
-                <h3 className="text-xl font-bold text-[#1B2639]">
+                <h2 className="text-xl font-bold text-[#1B2639]">
                   With McCulloch Law
-                </h3>
+                </h2>
                 <ul className="mt-4 list-disc pl-5 space-y-2 text-gray-700">
                   <li>Former state prosecutor Drew McCulloch reviews the state&rsquo;s case.</li>
                   <li>Litigation risks in the prosecution&rsquo;s evidence are exposed early.</li>
