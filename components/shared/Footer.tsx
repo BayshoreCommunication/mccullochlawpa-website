@@ -264,7 +264,7 @@ export default function Footer() {
 
         {/* Bottom Footer */}
         <div className="border-t border-gray-600 mt-12 pt-5 text-center text-sm">
-          © 2025 McCulloch Law P.A. All Rights Reserved.
+          © {new Date().getFullYear()} McCulloch Law P.A. All Rights Reserved.
         </div>
       </div>
     </footer>

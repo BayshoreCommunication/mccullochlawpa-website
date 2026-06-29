@@ -180,7 +180,35 @@ export const whatMakesAnAssaultChargeAggravatedBlog = {
   },
 };
 
+export const batteryChargesAndDefensesBlog = {
+  title:
+    "Battery Charges and Defenses Explained by a Battery Defense Attorney in Clearwater",
+  metaTitle: "Battery Defense Attorney Clearwater, FL | McCulloch Law",
+  metaDescription:
+    "Facing battery charges in Pinellas County? Learn the felony triggers, real penalties, and defenses that work. McCulloch Law, P.A., fights for Clearwater clients 24/7.",
+  slug: "battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater",
+  date: "June 29, 2026",
+  createdAt: "2026-06-29T00:00:00.000Z",
+  category: "Battery Defense",
+  published: true,
+  excerpt:
+    "Battery charges in Florida cover many levels of severity. Learn the felony triggers, real penalties, and defenses that work from a Clearwater battery defense attorney.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater.jpg",
+    },
+    altText:
+      "Clearwater courthouse representing battery charges and defenses legal representation",
+    title: "Battery Charges and Defenses Explained by a Clearwater Attorney",
+    description:
+      "Clearwater battery defense attorney explaining battery charges, felony triggers, potential penalties, and legal defense strategies.",
+    caption:
+      "Learn what counts as battery in Florida, felony triggers, and which defenses work in Clearwater courts.",
+  },
+};
+
 export const staticBlogs = [
+  batteryChargesAndDefensesBlog,
   whatMakesAnAssaultChargeAggravatedBlog,
   assaultChargesExplainedBlog,
   underageDuiChargesValricoBlog,

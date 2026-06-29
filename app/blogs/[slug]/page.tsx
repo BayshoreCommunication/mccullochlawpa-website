@@ -10,6 +10,7 @@ import WhatRefusingABreathTest from "@/components/static-blogs/blogs/what-refusi
 import UnderageDuiChargesValricoFloridaLawyer from "@/components/static-blogs/blogs/underage-dui-charges-valrico-florida-lawyer";
 import AssaultChargesExplained from "@/components/static-blogs/blogs/Assault Charges Explained";
 import WhatMakesAnAssaultChargeAggravated from "@/components/static-blogs/blogs/what-makes-an-assault-charge-aggravated";
+import BatteryChargesAndDefensesClearwater from "@/components/static-blogs/blogs/battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -101,6 +102,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater") {
+    return <BatteryChargesAndDefensesClearwater />;
+  }
+
   if (params.slug === "dui-accident-injury-claim") {
     return <DuiAccidentInjuryClaim />;
   }
