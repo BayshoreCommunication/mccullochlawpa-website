@@ -207,7 +207,35 @@ export const batteryChargesAndDefensesBlog = {
   },
 };
 
+export const violatingRestrainingOrderBlog = {
+  title:
+    "What Violating a Restraining Order Means According to a Restraining Order Lawyer in Pinellas County",
+  metaTitle: "Best Restraining Order Violation Lawyer Pinellas County",
+  metaDescription:
+    "One innocent text response can land you in a local jail cell today. See how an expert defense protects you from hidden Florida injunction traps",
+  slug: "violating-restraining-order-pinellas-county-lawyer",
+  date: "July 8, 2026",
+  createdAt: "2026-07-08T00:00:00.000Z",
+  category: "Injunctions",
+  published: true,
+  excerpt:
+    "Violation of a restraining order is a Class 1 misdemeanor in Pinellas County. Learn the consequences of violating a restraining order in Florida, including potential felony upgrades under Florida's new 2026 law.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/violating-restraining-order-pinellas-county-lawyer.webp",
+    },
+    altText:
+      "Police officer arresting a person for allegedly violating a restraining order in Pinellas County, Florida, with legal documents, handcuffs, and a judge’s gavel.",
+    title: "What Violating a Restraining Order Means in Pinellas County",
+    description:
+      "Legal educational graphic explaining the consequences of violating a restraining order in Pinellas County, Florida, including arrest, criminal charges, court proceedings, possible penalties, and defense options. The image highlights the seriousness of restraining order violations and the importance of seeking guidance from an experienced restraining order lawyer when facing allegations or related criminal charges.",
+    caption:
+      "Learn what happens after an alleged restraining order violation in Pinellas County, including possible arrest, criminal penalties, court proceedings, and available legal defense options.",
+  },
+};
+
 export const staticBlogs = [
+  violatingRestrainingOrderBlog,
   batteryChargesAndDefensesBlog,
   whatMakesAnAssaultChargeAggravatedBlog,
   assaultChargesExplainedBlog,

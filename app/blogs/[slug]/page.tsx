@@ -11,6 +11,7 @@ import UnderageDuiChargesValricoFloridaLawyer from "@/components/static-blogs/bl
 import AssaultChargesExplained from "@/components/static-blogs/blogs/Assault Charges Explained";
 import WhatMakesAnAssaultChargeAggravated from "@/components/static-blogs/blogs/what-makes-an-assault-charge-aggravated";
 import BatteryChargesAndDefensesClearwater from "@/components/static-blogs/blogs/battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater";
+import ViolatingRestrainingOrder from "@/components/static-blogs/blogs/What Violating a Restraining Order Means According to a Restraining Order Lawyer in Pinellas County";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -102,6 +103,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "violating-restraining-order-pinellas-county-lawyer") {
+    return <ViolatingRestrainingOrder />;
+  }
+
   if (params.slug === "battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater") {
     return <BatteryChargesAndDefensesClearwater />;
   }
