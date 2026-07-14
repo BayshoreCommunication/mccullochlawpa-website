@@ -1,3 +1,30 @@
+export const injunctionHearingsBlog = {
+  title:
+    "Injunction Hearings Explained by an Injunction Defense Attorney in Tampa",
+  metaTitle: "Injunction Defense Attorney Tampa | McCulloch Law",
+  metaDescription:
+    "Facing an injunction hearing in Tampa? McCulloch Law explains the process, your defense options, and how to protect your record.",
+  slug: "injunction-hearings-defense-attorney-tampa",
+  date: "July 14, 2026",
+  createdAt: "2026-07-14T10:49:10.000Z",
+  category: "Injunctions",
+  published: true,
+  excerpt:
+    "An injunction hearing determines if a protective order becomes permanent. Learn what happens, the timeline, and how a Tampa defense attorney can protect your rights.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/injunction-hearings-defense-attorney-tampa.webp",
+    },
+    altText:
+      "Tampa injunction defense attorney presenting arguments during an injunction hearing before a judge in a courtroom.",
+    title: "Injunction Hearings Explained by an Injunction Defense Attorney in Tampa",
+    description:
+      "Professional legal graphic illustrating an injunction hearing in a Tampa courtroom with a judge and attorneys presenting arguments. The image highlights civil procedure, courtroom representation, and how an experienced injunction defense attorney helps clients understand the hearing process and protect their legal rights.",
+    caption:
+      "Understand the injunction hearing process with guidance from an experienced injunction defense attorney in Tampa and prepare for every stage of your case.",
+  },
+};
+
 export const outstandingWarrantsBlog = {
   title:
     "What Are Outstanding Warrants? Explained by a Warrant Defense Lawyer in Polk County",
@@ -235,6 +262,7 @@ export const violatingRestrainingOrderBlog = {
 };
 
 export const staticBlogs = [
+  injunctionHearingsBlog,
   violatingRestrainingOrderBlog,
   batteryChargesAndDefensesBlog,
   whatMakesAnAssaultChargeAggravatedBlog,
