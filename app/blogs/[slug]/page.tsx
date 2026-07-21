@@ -13,6 +13,7 @@ import WhatMakesAnAssaultChargeAggravated from "@/components/static-blogs/blogs/
 import BatteryChargesAndDefensesClearwater from "@/components/static-blogs/blogs/battery-charges-and-defenses-explained-by-a-battery-defense-attorney-in-clearwater";
 import ViolatingRestrainingOrder from "@/components/static-blogs/blogs/What Violating a Restraining Order Means According to a Restraining Order Lawyer in Pinellas County";
 import InjunctionHearingsTampa from "@/components/static-blogs/blogs/Injunction Hearings Explained by an Injunction Defense Attorney in Tampa";
+import DomesticViolenceNoContactOrders from "@/components/static-blogs/blogs/How a Domestic Violence Lawyer in Hillsborough County Handles No-Contact Orders";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -104,6 +105,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "how-a-domestic-violence-lawyer-handles-no-contact-orders-hillsborough-county") {
+    return <DomesticViolenceNoContactOrders />;
+  }
+
   if (params.slug === "injunction-hearings-defense-attorney-tampa") {
     return <InjunctionHearingsTampa />;
   }
