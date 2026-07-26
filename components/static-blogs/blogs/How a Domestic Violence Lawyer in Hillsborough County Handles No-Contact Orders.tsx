@@ -351,9 +351,9 @@ export default async function DomesticViolenceNoContactOrders() {
               </p>
             </section>
 
-            <h3 className="text-xl md:text-2xl font-bold text-[#1B2639] mt-12 mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#1B2639] mt-12 mb-6">
               No-Contact Order: Without a Lawyer vs. With McCulloch Law
-            </h3>
+            </h2>
             <section className="my-10 grid gap-6 md:grid-cols-2">
               <div className="rounded-md border border-gray-200 bg-red-50/50 p-6">
                 <h3 className="text-lg font-bold text-red-800 flex items-center gap-2">
@@ -402,9 +402,9 @@ export default async function DomesticViolenceNoContactOrders() {
             </section>
 
             <section className="my-10 rounded-md bg-[#1B2639] p-6 md:p-8 text-white text-center">
-              <h3 className="text-xl font-bold text-[#BA8E2D] uppercase tracking-wider">
+              <h2 className="text-xl font-bold text-[#BA8E2D] uppercase tracking-wider">
                 Served with a No-Contact Order in Hillsborough County?
-              </h3>
+              </h2>
               <p className="mt-2 text-white/80 font-semibold">The window to respond is short. Free consultations available day or night.</p>
               <div className="mt-6 flex justify-center">
                 <Link
