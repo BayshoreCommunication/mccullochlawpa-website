@@ -288,7 +288,35 @@ export const domesticViolenceNoContactOrdersBlog = {
   },
 };
 
+export const domesticBatteryChargesAttorneyRiverviewBlog = {
+  title:
+    "Domestic Battery Charges Explained by a Domestic Battery Attorney in Riverview",
+  metaTitle: "Domestic Battery Attorney in Riverview FL",
+  metaDescription:
+    "Facing domestic battery charges in Riverview? Learn about the loopholes, Division F, strangulation charges, and how an experienced attorney can fight for you.",
+  slug: "domestic-battery-charges-attorney-riverview",
+  date: "July 28, 2026",
+  createdAt: "2026-07-28T11:26:00.000Z",
+  category: "Domestic Battery Defense",
+  published: true,
+  excerpt:
+    "Punishment for domestic violence in Riverview falls under Florida Statute 784.03 as a 1st degree misdemeanor. Learn how an experienced domestic battery attorney in Riverview handles Division F, pre-file negotiation, strangulation charges, and Child Safety Plans.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/domestic-battery-charges-attorney-riverview.webp",
+    },
+    altText:
+      "Domestic battery charges graphic showing a police arrest, judge's gavel, legal books, handcuffs, and criminal defense documents in Riverview.",
+    title: "Domestic Battery Charges Explained by a Domestic Battery Attorney in Riverview",
+    description:
+      "Professional criminal defense law graphic illustrating domestic battery charges and the legal process in Riverview. The image features a police arrest, judge's gavel, handcuffs, criminal law books, and legal documents, highlighting how an experienced domestic battery attorney helps clients understand criminal charges, develop effective defense strategies, protect their legal rights, and navigate court proceedings.",
+    caption:
+      "Learn how a domestic battery attorney in Riverview explains domestic battery charges, protects your legal rights, builds a strong defense strategy, and guides you through the criminal justice process.",
+  },
+};
+
 export const staticBlogs = [
+  domesticBatteryChargesAttorneyRiverviewBlog,
   domesticViolenceNoContactOrdersBlog,
   injunctionHearingsBlog,
   violatingRestrainingOrderBlog,

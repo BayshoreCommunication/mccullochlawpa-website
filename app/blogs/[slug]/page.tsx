@@ -14,6 +14,7 @@ import BatteryChargesAndDefensesClearwater from "@/components/static-blogs/blogs
 import ViolatingRestrainingOrder from "@/components/static-blogs/blogs/What Violating a Restraining Order Means According to a Restraining Order Lawyer in Pinellas County";
 import InjunctionHearingsTampa from "@/components/static-blogs/blogs/Injunction Hearings Explained by an Injunction Defense Attorney in Tampa";
 import DomesticViolenceNoContactOrders from "@/components/static-blogs/blogs/How a Domestic Violence Lawyer in Hillsborough County Handles No-Contact Orders";
+import DomesticBatteryChargesAttorneyRiverview from "@/components/static-blogs/blogs/domestic-battery-charges-attorney-riverview";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -105,6 +106,10 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (params.slug === "domestic-battery-charges-attorney-riverview") {
+    return <DomesticBatteryChargesAttorneyRiverview />;
+  }
+
   if (params.slug === "how-a-domestic-violence-lawyer-handles-no-contact-orders-hillsborough-county") {
     return <DomesticViolenceNoContactOrders />;
   }
