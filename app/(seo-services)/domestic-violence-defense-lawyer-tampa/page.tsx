@@ -51,8 +51,9 @@ export default function DomesticViolencePage() {
       <DVServesSection />
       <DVCourtsCitiesSection />
       <DVTestimonialsSection />
-      <DVFAQSection />
       <DVFreeCaseReviewSection />
+      <DVFAQSection />
+      
     </div>
   );
 }
