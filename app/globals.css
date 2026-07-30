@@ -49,6 +49,34 @@
 .swiper-slide > * {
   flex: 1 1 auto;
 }
+
+/* ── Swiper Pagination Dots ── */
+.swiper-pagination-custom {
+  position: relative !important;
+  bottom: auto !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #94a3b8 !important; /* slate-400 */
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+  margin: 0 4px !important;
+  transition: background 0.3s ease, width 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 24px !important;
+  background: #BA8E2D !important; /* primary gold */
+  border-radius: 9999px !important;
+}
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
