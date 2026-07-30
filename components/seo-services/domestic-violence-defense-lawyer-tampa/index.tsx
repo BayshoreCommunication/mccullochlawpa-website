@@ -19,6 +19,7 @@ import DVCourtsCitiesSection, { DVCourtsCitiesSectionProps } from "./DVCourtsCit
 import DVTestimonialsSection, { DVTestimonialsSectionProps } from "./DVTestimonialsSection";
 import DVFAQSection, { DVFAQSectionProps } from "./DVFAQSection";
 import DVFreeCaseReviewSection, { FreeCaseReviewSectionProps } from "./DVFreeCaseReviewSection";
+import DVContactFormSection, { DVContactFormSectionProps } from "./DVContactFormSection";
 
 // Short Exports
 export {
@@ -37,6 +38,7 @@ export {
   DVTestimonialsSection,
   DVFAQSection,
   DVFreeCaseReviewSection,
+  DVContactFormSection,
   // Alias long names for backward compatibility
   DVHero as DomesticViolenceHero,
   DVTypesSection as DomesticViolenceTypesSection,
@@ -67,6 +69,7 @@ export type {
   DVTestimonialsSectionProps,
   DVFAQSectionProps,
   FreeCaseReviewSectionProps,
+  DVContactFormSectionProps,
 };
 
 export interface DomesticViolencePageProps extends HeroSectionProps {

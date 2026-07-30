@@ -2,6 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 import {
   DVHero,
+  DVContactFormSection,
   DVTypesSection,
   DVArrestSection,
   DVRestrictionsSection,
@@ -19,10 +20,10 @@ import {
 } from "@/components/seo-services/domestic-violence-defense-lawyer-tampa";
 
 export const metadata: Metadata = {
-  title: "Lawyer SEO Agency Tampa | Choose the Best SEO Team",
+  title: "Tampa Domestic Violence Defense Lawyer | McCulloch Law P.A.",
   description:
-    "Searching for a Lawyer SEO Agency in Tampa? Learn about our services and find the best SEO solution for your law practice.",
-     robots: {
+    "Charged with domestic violence in Tampa? Fight against false allegations and protect your future with experienced defense lawyer McCulloch Law P.A.",
+  robots: {
     index: false,
     follow: false,
     googleBot: {
@@ -37,7 +38,7 @@ export default function DomesticViolencePage() {
   return (
     <div className="w-full font-sans">
       <DVHero />
-      <DVFreeCaseReviewSection />
+      <DVContactFormSection />
       <DVTypesSection />
       <DVArrestSection />
       <DVRestrictionsSection />
@@ -50,9 +51,8 @@ export default function DomesticViolencePage() {
       <DVServesSection />
       <DVCourtsCitiesSection />
       <DVTestimonialsSection />
-      <DVFreeCaseReviewSection />
       <DVFAQSection />
-
+      <DVFreeCaseReviewSection />
     </div>
   );
 }
