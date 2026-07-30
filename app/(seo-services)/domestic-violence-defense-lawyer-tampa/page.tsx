@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function DomesticViolencePage() {
   return (
-    <div className="w-full font-sans">
+    <div className="w-full">
       <DVHero />
       <DVContactFormSection />
       <DVTypesSection />

@@ -10,6 +10,8 @@ import {
   FaShieldAlt,
   FaMapMarkerAlt,
   FaBuilding,
+  FaPhone,
+  FaEnvelope,
 } from "react-icons/fa";
 
 export interface CourtItem {
@@ -146,116 +148,106 @@ export default function DVCourtsCitiesSection({
         </div>
 
         {/* ==================================================== */}
-        {/* BOTTOM AREA: 2 CARDS (COURTS LEFT, CITIES RIGHT)     */}
+        {/* BOTTOM AREA: GOOGLE MAP (LEFT) + ADDRESS (RIGHT)     */}
         {/* ==================================================== */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
-          {/* LEFT CARD: COURTS MCCULLOCH LAW APPEARS IN (5 cols) */}
-          <div className="lg:col-span-5 bg-white rounded-3xl p-5 sm:p-7 border border-slate-200/80 shadow-md flex flex-col h-full">
-            {/* Header Pill */}
-            <div className="w-full bg-[#0B1B2D] text-white rounded-full py-3.5 px-6 flex items-center justify-center gap-3 shadow-md mb-6 border border-slate-800">
-              <div className="w-8 h-8 rounded-full bg-white border border-primary/40 flex items-center justify-center text-primary shrink-0">
-                <FaLandmark className="w-4 h-4 text-primary" />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+
+          {/* LEFT: Google Maps Embed */}
+          <div className="rounded-3xl overflow-hidden shadow-md border border-slate-200/80 min-h-[380px]">
+            <iframe
+              src="https://maps.google.com/maps?q=238+East+Davis+Boulevard,+Ste+202,+Tampa,+FL+33606&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ minHeight: "380px", border: 0, display: "block" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="McCulloch Law Office Location"
+            />
+          </div>
+
+          {/* RIGHT: Address Info Card */}
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md flex flex-col justify-center space-y-6">
+
+            {/* Office Name Badge */}
+            <div className="w-full bg-[#0B1B2D] text-white rounded-full py-3.5 px-6 flex items-center justify-center gap-3 shadow-md border border-slate-800">
+              <div className="w-8 h-8 rounded-full bg-white border border-primary/40 flex items-center justify-center shrink-0">
+                <FaMapMarkerAlt className="w-4 h-4 text-primary" />
               </div>
               <span className="font-bold text-sm sm:text-base tracking-wide text-slate-100">
-                Courts McCulloch Law Appears In
+                McCulloch Law P.A. — Tampa Office
               </span>
             </div>
 
-            {/* Courts List */}
-            <div className="flex flex-col divide-y divide-slate-100">
-              {courtsList.map((court) => (
-                <div
-                  key={court.id}
-                  className="flex items-start gap-3.5 py-3.5 px-2 hover:bg-slate-50 rounded-xl transition-colors group"
-                >
-                  <div className="w-9 h-9 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all mt-0.5">
-                    {court.icon}
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-sm sm:text-base font-bold text-slate-900 leading-snug group-hover:text-primary transition-colors">
-                      {court.name}
-                    </span>
-                    {court.subText && (
-                      <span className="text-xs text-slate-500 font-sans mt-0.5">
-                        {court.subText}
-                      </span>
-                    )}
-                  </div>
+            {/* Address Details */}
+            <div className="flex flex-col space-y-5 px-2">
+
+              {/* Street Address */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <FaMapMarkerAlt className="w-4 h-4 text-primary" />
                 </div>
-              ))}
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-0.5">Office Address</p>
+                  <p className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                    238 East Davis Boulevard, Ste 202
+                  </p>
+                  <p className="text-sm text-slate-600 font-sans">Tampa, FL 33606</p>
+                </div>
+              </div>
+
+              <div className="h-[1px] bg-slate-100 rounded-full" />
+
+              {/* Phone */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <FaPhone className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-0.5">Phone</p>
+                  <a
+                    href="tel:8134442817"
+                    className="text-base sm:text-lg font-bold text-slate-900 hover:text-primary transition-colors"
+                  >
+                    (813) 444-2817
+                  </a>
+                  <p className="text-xs text-slate-500 font-sans">Available 24/7</p>
+                </div>
+              </div>
+
+              <div className="h-[1px] bg-slate-100 rounded-full" />
+
+              {/* Email */}
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-slate-50 border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm mt-0.5">
+                  <FaEnvelope className="w-4 h-4 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-0.5">Email</p>
+                  <a
+                    href="mailto:office@mcfloridalaw.com"
+                    className="text-base font-bold text-slate-900 hover:text-primary transition-colors"
+                  >
+                    office@mcfloridalaw.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="h-[1px] bg-slate-100 rounded-full" />
+
+              {/* Get Directions Button */}
+              <a
+                href="https://maps.google.com/?q=238+East+Davis+Boulevard,+Ste+202,+Tampa,+FL+33606"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-primary hover:bg-[#a87d25] text-slate-950 font-bold uppercase tracking-wider text-sm px-6 py-3.5 rounded-2xl shadow-md transition-all duration-300 hover:scale-105 self-start"
+              >
+                <FaMapMarkerAlt className="w-4 h-4" />
+                Get Directions
+              </a>
             </div>
+
           </div>
-
-          {/* RIGHT CARD: CITIES AND COMMUNITIES SERVED (7 cols) */}
-          <div className="lg:col-span-7 bg-[#FFFDF9] rounded-3xl p-5 sm:p-7 border border-amber-200/60 shadow-md flex flex-col h-full">
-            {/* Header Pill */}
-            <div className="w-full bg-primary text-slate-950 rounded-full py-3.5 px-6 flex items-center justify-center gap-3 shadow-md mb-6">
-              <div className="w-8 h-8 rounded-full bg-white border border-slate-950/20 flex items-center justify-center text-slate-950 shrink-0">
-                <FaUsers className="w-4 h-4 text-slate-950" />
-              </div>
-              <span className="font-bold text-sm sm:text-base tracking-wide text-slate-950">
-                Cities and Communities Served
-              </span>
-            </div>
-
-            {/* 3 Sub-Columns Grid of Cities */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-x-4 gap-y-1">
-              
-              {/* Column 1 */}
-              <div className="flex flex-col divide-y divide-slate-100">
-                {citiesCol1.map((city, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 py-2.5 px-2 hover:bg-amber-50/60 rounded-xl transition-colors group"
-                  >
-                    <div className="w-7 h-7 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                      <FaMapMarkerAlt className="w-3.5 h-3.5 text-primary" />
-                    </div>
-                    <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                      {city}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Column 2 */}
-              <div className="flex flex-col divide-y divide-slate-100">
-                {citiesCol2.map((city, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 py-2.5 px-2 hover:bg-amber-50/60 rounded-xl transition-colors group"
-                  >
-                    <div className="w-7 h-7 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                      <FaMapMarkerAlt className="w-3.5 h-3.5 text-primary" />
-                    </div>
-                    <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                      {city}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Column 3 */}
-              <div className="flex flex-col divide-y divide-slate-100">
-                {citiesCol3.map((city, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 py-2.5 px-2 hover:bg-amber-50/60 rounded-xl transition-colors group"
-                  >
-                    <div className="w-7 h-7 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                      <FaMapMarkerAlt className="w-3.5 h-3.5 text-primary" />
-                    </div>
-                    <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                      {city}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-
         </div>
 
       </div>
