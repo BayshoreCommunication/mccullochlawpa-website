@@ -19,9 +19,18 @@ import {
 } from "@/components/seo-services/domestic-violence-defense-lawyer-tampa";
 
 export const metadata: Metadata = {
-  title: "Tampa Domestic Violence Defense Lawyer | McCulloch Law P.A.",
+  title: "Lawyer SEO Agency Tampa | Choose the Best SEO Team",
   description:
-    "Charged with domestic violence in Tampa? Fight against false allegations and protect your future with experienced defense lawyer McCulloch Law P.A.",
+    "Searching for a Lawyer SEO Agency in Tampa? Learn about our services and find the best SEO solution for your law practice.",
+     robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export default function DomesticViolencePage() {
@@ -43,6 +52,7 @@ export default function DomesticViolencePage() {
       <DVTestimonialsSection />
       <DVFreeCaseReviewSection />
       <DVFAQSection />
+
     </div>
   );
 }
