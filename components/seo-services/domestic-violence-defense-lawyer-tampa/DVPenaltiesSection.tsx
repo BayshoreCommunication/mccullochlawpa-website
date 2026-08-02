@@ -30,81 +30,44 @@ const defaultPenalties: PenaltyItem[] = [
   {
     id: "jail-sentences",
     icon: <FaGavel className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
-    title: "Jail & Prison Sentences",
-    description: "A conviction can lead to significant incarceration depending on the charge.",
-    bullets: [
-      "Up to 1 year in county jail for a first-degree misdemeanor",
-      "Up to 5 years in state prison for a third-degree felony",
-      "Up to 30 years for certain first-degree felonies",
-      "Strangulation, serious injury, or cases involving children often carry enhanced penalties",
-    ],
+    title: "Jail and Prison Time Based on Charge Level",
+    description:
+      "First offense misdemeanor domestic battery carries up to one year in Hillsborough County Jail and up to one year of probation. Third degree felony domestic violence conviction carries up to five years in Florida state prison. First degree felony carries up to 30 years of imprisonment. Strangulation charges, serious bodily injury incidents and cases with children have higher minimum sentences.",
   },
   {
     id: "bip-program",
     icon: <FaCalendarCheck className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
-    title: "Mandatory 29-Week Batterer's Intervention Program",
+    title: "29 Week Batterer's Intervention Program",
     description:
-      "Florida law requires every domestic violence conviction to complete a state-certified Batterer's Intervention Program.",
-    bullets: [
-      "29 consecutive weeks",
-      "Mandatory attendance",
-      "No judicial exceptions",
-      "Failure to complete the program may violate probation and lead to additional penalties",
-    ],
+      "Florida law requires every person convicted of domestic violence to complete a state certified batterer's intervention program. This mandatory program had no judicial exceptions permitted. The program runs 29 consecutive weeks and requires consistent attendance regardless of work schedule or family obligations. Failing to complete the program constitutes probation violation and results in a hearing for maximum sentence.",
   },
   {
     id: "probation-conditions",
     icon: <FaClipboardCheck className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
-    title: "Strict Probation Conditions",
-    description: "Domestic violence probation commonly includes:",
-    bullets: [
-      "No-contact orders",
-      "Probation officer reporting",
-      "Substance abuse screening",
-      "Travel restrictions",
-    ],
-    footerNote: (
-      <p className="text-xs sm:text-sm text-slate-500 italic mt-3 pt-3 border-t border-slate-100">
-        Even a single violation can result in probation revocation and additional jail time.
-      </p>
-    ),
+    title: "Probation With Strict Compliance Conditions",
+    description:
+      "Domestic violence probation in Florida includes mandatory contact prohibition orders, regular officer check-ins, substance abuse screening, and restricted travel. Hillsborough County probation officers monitor compliance actively. Single documented violation triggers a formal violation of probation hearing. Judges can impose the maximum sentence at that hearing regardless of violations’ severity.",
   },
   {
     id: "firearm-ban",
     icon: <FaBan className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
-    title: "Permanent Firearm Ban",
+    title: "Loss of Federal Firearm Rights Permanently",
     description:
-      "A qualifying domestic violence conviction permanently removes federal firearm rights under the Lautenberg Amendment.",
-    footerNote: (
-      <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-        This prohibition affects firearm ownership, concealed carry eligibility, hunting privileges, and many law enforcement or security careers.
-      </p>
-    ),
+      "The Lautenberg Amendment permanently strips firearm ownership rights upon any misdemeanor domestic violence conviction. This applies to concealed carry permits, hunting licenses and any professional firearm use in law enforcement or licensed security roles. Florida's state prohibition lasts three years. However the federal lifetime ban applies over it and cannot be restored through any state level legal proceeding.",
   },
   {
     id: "court-costs",
     icon: <FaDollarSign className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
-    title: "Court Costs & Financial Penalties",
-    description: "Beyond fines, defendants are responsible for:",
-    bullets: [
-      "Court costs",
-      "Mandatory program fees",
-      "Probation expenses",
-      "Additional assessments ordered by the court",
-    ],
-    footerNote: (
-      <p className="text-xs sm:text-sm text-slate-600 font-medium mt-3 pt-3 border-t border-slate-100">
-        Total financial obligations can exceed{" "}
-        <span className="font-bold text-amber-600">$5,000</span> even for a first offense.
-      </p>
-    ),
+    title: "Mandatory Fines and Court Costs",
+    description:
+      "Florida courts impose mandatory fines for misdemeanor domestic battery and for aggravated felony domestic violence. These fines are separate from court filing costs and program enrollment fees. The batterer's intervention program carries its own per session attendance fees and defendant needs to take that financial responsibility. Court ordered financial obligations in a first offense misdemeanor often exceed $5,000.",
   },
 ];
 
 export default function DomesticViolencePenaltiesSection({
   title = "What Penalties Does a Domestic Violence Conviction Carry in Tampa?",
-  description1 = "A domestic violence conviction can result in jail, probation, mandatory treatment programs, financial penalties, and permanent loss of important civil rights.",
-  description2 = "These consequences often continue long after a sentence has been served.",
+  description1 = "Tampa domestic violence conviction punishes at two levels. Immediate sentence covers jail time, fines and program completion. Next permanent consequences follow long after the sentence ends.",
+  description2 = "",
   penalties = defaultPenalties,
 }: DomesticViolencePenaltiesSectionProps) {
   return (
@@ -134,9 +97,11 @@ export default function DomesticViolencePenaltiesSection({
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl">
             {description1}
           </p>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-1 max-w-3xl">
-            {description2}
-          </p>
+          {description2 && (
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-1 max-w-3xl">
+              {description2}
+            </p>
+          )}
         </div>
 
         {/* ==================================================== */}
@@ -151,8 +116,8 @@ export default function DomesticViolencePenaltiesSection({
               {/* Subtle top border hover highlight */}
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* LEFT COLUMN: Icon + Title + Short Description */}
-              <div className="w-full md:w-5/12 flex flex-col items-start shrink-0">
+              {/* Icon + Title + Description */}
+              <div className="w-full flex flex-col items-start shrink-0">
                 <div className="flex items-start gap-4 mb-3">
                   {/* Circular Badge Icon */}
                   <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-white border border-primary/40 flex items-center justify-center shrink-0 shadow-md group-hover:scale-105 transition-all duration-300">
@@ -168,32 +133,10 @@ export default function DomesticViolencePenaltiesSection({
                 {/* Expanding Gold Divider Line */}
                 <div className="w-12 group-hover:w-20 h-[2px] bg-primary/70 rounded-full mb-3 ml-1 transition-all duration-300" />
 
-                {/* Left Description */}
+                {/* Full Description */}
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-sans">
                   {item.description}
                 </p>
-              </div>
-
-              {/* RIGHT COLUMN: Bullets or Details */}
-              <div className="w-full md:w-7/12 flex flex-col justify-center md:pl-6 md:border-l md:border-slate-100">
-                {item.bullets && item.bullets.length > 0 && (
-                  <ul className="space-y-2.5">
-                    {item.bullets.map((bullet, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <span className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0 group-hover:scale-125 transition-transform" />
-                        <span className="text-xs sm:text-sm text-slate-700 leading-relaxed font-sans">
-                          {bullet}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
-                {item.footerNote && (
-                  <div className={item.bullets ? "mt-2" : ""}>
-                    {item.footerNote}
-                  </div>
-                )}
               </div>
 
             </div>

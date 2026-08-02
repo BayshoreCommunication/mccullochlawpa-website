@@ -66,7 +66,7 @@ export default function DomesticViolenceInjunctionsSection({
   title = "Domestic Violence Injunctions and Restraining Orders — How McCulloch Law Defends Your Case",
   highlightedText = "How McCulloch Law Defends Your Case",
   paragraph = "Domestic violence order restricts your access to your home, forfeits your firearm rights, reduces your parenting time and shows up on background checks. McCulloch Law's criminal defense lawyer for domestic violence in tampa prepares for injunction hearings as thoroughly as for full trials.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/gavel-scales.png",
+  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/courthouse-law.png",
   items = defaultInjunctionItems,
 }: DomesticViolenceInjunctionsSectionProps) {
   return (
@@ -81,9 +81,7 @@ export default function DomesticViolenceInjunctionsSection({
             
             {/* Main Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-slate-900 leading-tight tracking-tight">
-              {title.split(highlightedText)[0]}
-              <span className="text-primary block mt-1">{highlightedText}</span>
-              {title.split(highlightedText)[1]}
+              {title}
             </h2>
 
             {/* Gold Divider Line */}
@@ -91,10 +89,7 @@ export default function DomesticViolenceInjunctionsSection({
 
             {/* Subtitle Description */}
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-sans max-w-3xl">
-              Domestic violence order restricts your access to your home, forfeits your firearm rights, reduces your parenting time and shows up on background checks.{" "}
-              <span className="font-bold text-primary">McCulloch Law's</span>{" "}
-              <span className="font-bold text-slate-900">criminal defense lawyer for domestic violence in tampa</span>{" "}
-              prepares for injunction hearings as thoroughly as for full trials.
+              {paragraph}
             </p>
 
             {/* Get in Touch CTA Pill Button */}

@@ -38,7 +38,7 @@ const defaultTestimonialItems: TestimonialItem[] = [
     id: "erica-t",
     name: "Erica T.",
     rating: 5,
-    text: "This was the absolute best experience I have had under unfortunate circumstances. Drew is the best at what he does and he is very personable. He lead me through the process and the outcome was far greater than recticipated. I would recommend Drew to anyone in need of his expertise.",
+    text: "This was the absolute best experience I have had under unfortunate circumstances. Drew is the best at what he does and he is very personable. He lead me through the process and the outcome was far greater than I anticipated. I would recommend Drew to anyone in need of his expertise.",
   },
   {
     id: "damien-s",

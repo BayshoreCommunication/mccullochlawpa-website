@@ -35,10 +35,10 @@ export interface HeroSectionProps {
 export default function DomesticViolenceHero({
   bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
-  titleLine1 = "Tampa Domestic",
-  titleLine2 = "Violence Defense Lawyer ",
+  titleLine1 = "Tampa Domestic Violence Defense Lawyer —",
+  titleLine2 = "",
   highlightTitle = "Fight Against False Allegation and Protect Your Future",
-  paragraph1 = "Explaining what really happens after being charged with domestic violence is never enough. Local prosecutors rarely drop charges without early legal pressure applied and they do not wait for you to find representation.",
+  paragraph1 = "Explaining what really happens after being charged with domestic violence is never enough. Local prosecutors rarely drop charges without early legal pressure applied and they do not wait for you to find representation. McCulloch Law is your domestic violence defense lawyer tampa, and we apply that pressure from day one. We identify every gap in affidavit inconsistencies, missing body cam footage and witness credibility to use in your defense and protect your reputation.",
   paragraph2,
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
@@ -145,9 +145,11 @@ export default function DomesticViolenceHero({
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] leading-snug">
                 {titleLine1}
               </span>
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] leading-snug mt-1">
-                {titleLine2}
-              </span>
+              {titleLine2 && (
+                <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] leading-snug mt-1">
+                  {titleLine2}
+                </span>
+              )}
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] text-primary leading-snug mt-3 ">
                 {highlightTitle}
               </span>
@@ -159,15 +161,7 @@ export default function DomesticViolenceHero({
             {/* Paragraph Content */}
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">
               <p>{paragraph1}</p>
-              
-              {paragraph2 ? (
-                typeof paragraph2 === "string" ? <p>{paragraph2}</p> : paragraph2
-              ) : (
-                <p>
-                  <strong className="font-bold text-slate-900">McCulloch Law</strong>{" "}
-                  is your domestic violence defense lawyer tampa, and we apply that pressure from day one. We identify every gap in affidavit inconsistencies, missing body cam footage and witness credibility to use in your defense and protect your reputation.
-                </p>
-              )}
+              {paragraph2 && (typeof paragraph2 === "string" ? <p>{paragraph2}</p> : paragraph2)}
             </div>
 
             {/* CTA BUTTONS SECTION */}

@@ -1,0 +1,17 @@
+export { default as SCHero } from "./SCHero";
+export { default as SCContactFormSection } from "./SCContactFormSection";
+export { default as SCTypesSection } from "./SCTypesSection";
+export { default as SCArrestSection } from "./SCArrestSection";
+export { default as SCPenaltiesSection } from "./SCPenaltiesSection";
+export { default as SCEvidenceSection } from "./SCEvidenceSection";
+export { default as SCRestrictionsSection } from "./SCRestrictionsSection";
+export { default as SCLawChangesSection } from "./SCLawChangesSection";
+export { default as SCCommonMistakesSection } from "./SCCommonMistakesSection";
+export { default as SCFightBackSection } from "./SCFightBackSection";
+export { default as SCInjunctionsSection } from "./SCInjunctionsSection";
+export { default as SCWhyChooseSection } from "./SCWhyChooseSection";
+export { default as SCServesSection } from "./SCServesSection";
+export { default as SCCourtsCitiesSection } from "./SCCourtsCitiesSection";
+export { default as SCTestimonialsSection } from "./SCTestimonialsSection";
+export { default as SCFreeCaseReviewSection } from "./SCFreeCaseReviewSection";
+export { default as SCFAQSection } from "./SCFAQSection";

@@ -64,7 +64,7 @@ const defaultLawChangeItems: LawChangeItem[] = [
     icon: <FaUsers className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />,
     title: "Expanded Victim Advocate Access in Court",
     description:
-      "Prosecutors now hold statutory authority to include certified victim advocates at every stage of court proceedings. This includes bond hearings, arraignments and direct plea discussions with the defense. These advocates influence the victim's appearance to the judge and the state's acceptable plea terms. Domestic violence defense lawyer Tampa with Hillsborough courtroom experience understand how to strategically address this advocacy role for the defendant.",
+      "Prosecutors now hold statutory authority to include certified victim advocates at every stage of court proceedings. This includes bond hearings, arraignments and direct plea discussions with the defense. These advocates influence the victim's appearance to the judge and the state's acceptable plea terms. Domestic violence defense lawyer tamapa with Hillsborough courtroom experience understand how to strategically address this advocacy role for the defendant.",
   },
 ];
 

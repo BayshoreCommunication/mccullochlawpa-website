@@ -60,6 +60,9 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .swiper-pagination-bullet {

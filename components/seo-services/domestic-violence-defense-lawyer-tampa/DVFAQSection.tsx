@@ -72,7 +72,7 @@ const defaultFAQItems: FAQItem[] = [
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     question: "Can a domestic violence charge in Tampa be sealed or expunged from my record once the case is over?",
     answer:
-      "Record sealing or expungement for domestic violence depends on case outcomes. Consult McCulloch Law's defense lawyer for eligibility assessment.",
+      "Record sealing or expungement for domestic violence depends on case outcomes. Consult Mcculloch Law's defense lawyer for eligibility assessment.",
   },
   {
     id: "faq-6",
@@ -93,8 +93,8 @@ const defaultFAQItems: FAQItem[] = [
 ];
 
 export default function DVFAQSection({
-  title = "Tampa Domestic Violence Defense Lawyer",
-  highlightedText = "FREQUENTLY ASKED QUESTIONS",
+  title = "Tampa Domestic Violence Defense Lawyer Frequently Asked Questions",
+  highlightedText = "Frequently Asked Questions",
   subTitle = "Answers to the most common questions about domestic violence charges in Tampa, Florida.",
   headerImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/faq-gavel-scales.png",
   items = defaultFAQItems,

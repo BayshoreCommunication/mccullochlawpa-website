@@ -71,21 +71,13 @@ const defaultFightBackItems: FightBackItem[] = [
     description:
       "What a defendant says matters far less than when it is introduced and how it is framed. We decide whether a client statement helps the defense before investigators dominate the record.",
   },
-  {
-    number: "06",
-    id: "tailored-strategy",
-    icon: <FaHandshake className="w-6 h-6 text-primary group-hover:scale-110 transition-transform duration-300" />,
-    title: "Build a Comprehensive Strategy Tailored to Your Case",
-    description:
-      "Every case is unique. We integrate investigation, evidence analysis and legal strategy to attack false allegations at every level and pursue the best possible outcome.",
-  },
 ];
 
 export default function DomesticViolenceFightBackSection({
   title = "How McCulloch Law Fights Back Against False Accusation of Domestic Violence in Tampa",
   highlightedText = "Domestic Violence in Tampa",
   paragraph = "False accusations in Tampa domestic violence cases often arise during divorce and custody disputes. Our domestic violence defense lawyer tampa at McCulloch Law is well familiar with these accusations. We build defenses designed to dismantle them.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/courthouse-law.png",
+  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/attorney-office.png",
   items = defaultFightBackItems,
 }: DomesticViolenceFightBackSectionProps) {
   return (
@@ -103,18 +95,12 @@ export default function DomesticViolenceFightBackSection({
 
             {/* Main Title */}
             <h2 className="text-2xl sm:text-3xl lg:text-[36px] font-bold text-slate-900 leading-tight tracking-tight">
-              {title.split(highlightedText)[0]}
-              <span className="text-primary block mt-1">{highlightedText}</span>
-              {title.split(highlightedText)[1]}
+              {title}
             </h2>
 
             {/* Subtitle Description */}
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-sans">
-              {paragraph.split("domestic violence defense lawyer tampa")[0]}
-              <span className="font-semibold text-amber-600">
-                domestic violence defense lawyer tampa
-              </span>
-              {paragraph.split("domestic violence defense lawyer tampa")[1]}
+              {paragraph}
             </p>
 
             {/* Courthouse / Building Image */}

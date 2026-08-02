@@ -26,10 +26,10 @@ export interface FreeCaseReviewSectionProps {
 }
 
 export default function FreeCaseReviewSection({
-  title = "Charged With Domestic Violence in Tampa?",
-  highlightedText = "Domestic Violence",
-  subTitle = "Contact McCulloch Law Now",
-  paragraph = "Evidence disappears, no contact orders go uncontested and prosecutors begin building their case from the moment you are arrested. Every hour without legal counsel is time they are working against you.",
+  title = "Charged With Domestic Violence in Tampa? Contact McCulloch Law Now",
+  highlightedText = "Contact McCulloch Law Now",
+  subTitle = "",
+  paragraph = "Evidence disappears, no contact orders go uncontested and prosecutors begin building their case from the moment you are arrested. Every hour without legal counsel is time they are working against you. Call McCulloch Law today and put out domestic violence defense lawyer tampa on your side before that window closes.",
   phoneNumber = "(813) 444-2817",
   phoneHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -92,15 +92,15 @@ export default function FreeCaseReviewSection({
 
             {/* Main Title */}
             <h2 className="text-3xl sm:text-4xl lg:text-[48px] xl:text-[52px] font-bold text-white leading-tight tracking-tight">
-              {title.split(highlightedText)[0]}
-              <span className="text-primary block mt-1">{highlightedText}</span>
-              {title.split(highlightedText)[1]}
+              {title}
             </h2>
 
             {/* Subtitle */}
-            <h3 className="text-xl sm:text-2xl font-bold text-primary tracking-wide">
-              {subTitle}
-            </h3>
+            {subTitle && (
+              <h3 className="text-xl sm:text-2xl font-bold text-primary tracking-wide">
+                {subTitle}
+              </h3>
+            )}
 
             {/* Diamond Dot Divider */}
             <div className="flex items-center gap-2 my-1">
@@ -112,10 +112,6 @@ export default function FreeCaseReviewSection({
             {/* Paragraph Text */}
             <div className="space-y-3 text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl font-sans">
               <p>{paragraph}</p>
-              <p>
-                <span className="text-primary font-bold">Call McCulloch Law today</span>{" "}
-                and put our domestic violence defense lawyer tampa on your side before that window closes.
-              </p>
             </div>
 
             {/* Bottom Action Buttons */}

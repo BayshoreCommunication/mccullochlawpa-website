@@ -21,6 +21,8 @@ import DVFAQSection, { DVFAQSectionProps } from "./DVFAQSection";
 import DVFreeCaseReviewSection, { FreeCaseReviewSectionProps } from "./DVFreeCaseReviewSection";
 import DVContactFormSection, { DVContactFormSectionProps } from "./DVContactFormSection";
 
+import DVCommonMistakesSection, { DomesticViolenceCommonMistakesSectionProps } from "./DVCommonMistakesSection";
+
 // Short Exports
 export {
   DVHero,
@@ -30,6 +32,7 @@ export {
   DVPenaltiesSection,
   DVEvidenceSection,
   DVLawChangesSection,
+  DVCommonMistakesSection,
   DVFightBackSection,
   DVInjunctionsSection,
   DVWhyChooseSection,
@@ -47,6 +50,7 @@ export {
   DVPenaltiesSection as DomesticViolencePenaltiesSection,
   DVEvidenceSection as DomesticViolenceEvidenceSection,
   DVLawChangesSection as DomesticViolenceLawChangesSection,
+  DVCommonMistakesSection as DomesticViolenceCommonMistakesSection,
   DVFightBackSection as DomesticViolenceFightBackSection,
   DVInjunctionsSection as DomesticViolenceInjunctionsSection,
   DVWhyChooseSection as DomesticViolenceWhyChooseSection,
@@ -61,6 +65,7 @@ export type {
   DomesticViolencePenaltiesSectionProps,
   DomesticViolenceEvidenceSectionProps,
   DomesticViolenceLawChangesSectionProps,
+  DomesticViolenceCommonMistakesSectionProps,
   DomesticViolenceFightBackSectionProps,
   DomesticViolenceInjunctionsSectionProps,
   DomesticViolenceWhyChooseSectionProps,
@@ -90,6 +95,7 @@ export default function DomesticViolencePage({
         <DVPenaltiesSection />
         <DVEvidenceSection />
         <DVLawChangesSection />
+        <DVCommonMistakesSection />
         <DVFightBackSection />
         <DVInjunctionsSection />
         <DVWhyChooseSection />
@@ -113,6 +119,7 @@ export default function DomesticViolencePage({
         <DVPenaltiesSection />
         <DVEvidenceSection />
         <DVLawChangesSection />
+        <DVCommonMistakesSection />
         <DVFightBackSection />
         <DVInjunctionsSection />
         <DVWhyChooseSection />

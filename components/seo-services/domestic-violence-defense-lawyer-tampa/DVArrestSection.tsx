@@ -31,49 +31,49 @@ const defaultArrestItems: ArrestItem[] = [
     icon: <FaShieldAlt className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Mandatory Arrest Without Alleged Victim's Consent",
     description:
-      "Florida Statute 741.2901 removes all officer discretion when probable cause exists. Arrest happens whether alleged victim requests it, objects to it or recants their statement at the scene.",
+      "Florida Statute 741.2901 removes all officer discretion when probable cause for a domestic violence charge exists. Arrest happens whether alleged victim requests it, objects to it or recants their statement at the scene. Officers fail to make this mandatory arrest might face departmental discipline under Florida law. This makes the arrest effectively guaranteed when probable cause is established.",
   },
   {
     id: "no-bond-hold",
     icon: <FaLock className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "No Bond Hold Until Judge Reviews Case",
     description:
-      "Tampa domestic violence arrest suspends standard bond eligibility until judge reviews pretrial release conditions at first appearance, usually within 24 hours of booking.",
+      "Tampa domestic violence arrest suspends standard bond eligibility until judge reviews pretrial release conditions at first appearance. This happens usually within 24 hours of booking. The no-bond hold keeps you in custody regardless of charge level or prior criminal record. The judge then determines bond amount or denies it entirely. It is based on charge severity, history and your relationship to alleged victim.",
   },
   {
     id: "no-contact-order",
     icon: <FaUserSlash className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Immediate No Contact Order Issued",
     description:
-      "Courts issue a no communication order at first appearance. This prohibits all direct and indirect communication with the alleged victim, including through others.",
+      "Courts issue a no communication order at first appearance. This happens before an attorney can present your case. The order prohibits all direct and indirect communication with the alleged victim. This includes contact routed through mutual friends or family members. Violating this order carries an independent criminal charge.",
   },
   {
     id: "prosecution-without-consent",
     icon: <FaBalanceScale className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Prosecution Without Victim's Consent",
     description:
-      "Florida's no-drop policy allows prosecutors to pursue charges regardless of the alleged victim's cooperation level, even if they refuse to testify or request dismissal.",
+      "Florida's no-drop policy authorizes the Hillsborough County State Attorney's office. This allows them to pursue domestic violence charges regardless of alleged victim's cooperation level. Prosecutors proceed even if alleged victim refuses to testify, recants their original statement or formally submits a request for dismissal to the court.",
   },
   {
     id: "background-check-record",
     icon: <FaFileAlt className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Arrest Record Visible on Background Checks",
     description:
-      "Domestic violence charge appears on your Florida criminal history record upon booking, before any court proceeding. Only dismissal and successful expungement can clear it.",
+      "Domestic violence charge appears on your Florida criminal history record upon booking. This happens before any court proceeding or guilty finding is entered against you. Employers, landlords and professional licensing boards running background checks will see the arrest regardless of case outcome. Only dismissal and successful expungement can clear the arrest record.",
   },
   {
     id: "batterer-program",
     icon: <FaUsers className="w-6 h-6 sm:w-7 sm:h-7 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Batterer's Intervention Program Required Pretrial",
     description:
-      "Tampa judges often require enrollment in a state certified batterer's intervention program as a condition of pretrial release at the bond hearing. Missing sessions can lead to bond revocation and return to custody.",
+      "Tampa judges frequently order enrollment in a state certified batterer's intervention program. This requirement is imposed as a condition of pretrial release at the bond hearing. This 29 week program is mandatory upon conviction. However it is increasingly used as a pretrial release condition in Hillsborough County. Missing sessions or failing to enroll within the court's stated timeline results in bond revocation and return to custody.",
   },
 ];
 
 export default function DomesticViolenceArrestSection({
-  title = "What Happens When Tampa Police Make Domestic Violence Arrest?",
-  subTitle = "The first 48 hours after charges are critical in determining your defense options.",
-  description = "Florida law mandates arrest when probable cause exists.",
+  title = "What Happens When Tampa Police Make Domestic Violence Arrest",
+  subTitle = "Next 48 hours after charges are crucial in determining your defense options. Florida law mandates arrest when probable cause exists.",
+  description = "",
   items = defaultArrestItems,
 }: DomesticViolenceArrestSectionProps) {
   return (
@@ -92,17 +92,13 @@ export default function DomesticViolenceArrestSection({
 
           {/* Subtitle Lines */}
           <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed">
-            <span className="font-semibold text-amber-600">
-              {subTitle.split("48 hours")[0] ? subTitle.split("48 hours")[0] : ""}
-            </span>
-            {subTitle.includes("48 hours") && (
-              <span className="font-bold text-amber-600">48 hours </span>
-            )}
-            {subTitle.split("48 hours")[1] || subTitle}
+            {subTitle}
           </p>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-1">
-            {description}
-          </p>
+          {description && (
+            <p className="text-slate-600 text-sm sm:text-base leading-relaxed mt-1">
+              {description}
+            </p>
+          )}
 
           {/* Emblem Divider with Shield Icon */}
           <div className="flex items-center justify-center gap-3 mt-5">

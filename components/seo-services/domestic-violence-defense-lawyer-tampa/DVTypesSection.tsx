@@ -41,7 +41,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "spousal-battery",
     title: "Spousal Battery",
-    image: "/images/hero/hero-bg.png",
+    image: "/images/practice/domestic-violence.png",
     badgeIcon: <FaUsers className="w-5 h-5 text-primary" />,
     description:
       "Domestic violence allegations between legally married partners carry distinct evidence based weight in Hillsborough County courts. Prosecutors pull marital history, prior 911 call logs and incident reports to build a pattern of abuse narrative for the jury. Officers must identify the primary aggressor to arrest after examining injuries of both spouses at scene.",
@@ -50,7 +50,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "dating-violence",
     title: "Dating Violence",
-    image: "/images/hero/hero-bg.png",
+    image: "/images/practice/assault-battery-stalking.png",
     badgeIcon: <FaHeart className="w-5 h-5 text-primary" />,
     description:
       "Florida Statute 784.046 defines dating violence as violence between individuals in a current or prior romantic non marriage relationship. Shared housing is not required to meet legal definition. Absence of it does not reduce the severity of available charges. Hillsborough County prosecutors introduce even undocumented prior incidents as pattern evidence at trial.",
@@ -59,7 +59,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "aggravated-assault",
     title: "Aggravated Domestic Assault",
-    image: "/images/hero/hero-bg.png",
+    image: "/images/practice/Assault.png",
     badgeIcon: <FaBalanceScale className="w-5 h-5 text-primary" />,
     description:
       "Domestic battery becomes a second to third degree felony if a weapon is used or victim suffers serious injury under Florida law. Aggravated domestic assault carries up to five years in Florida state prison. This case significantly narrows the plea options available to a defense attorney. Florida courts have extended this elevation to household objects as weapons.",
@@ -68,28 +68,37 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "elderly-abuse",
     title: "Elderly Domestic Abuse",
-    image: "/images/hero/hero-bg.png",
+    image: "/images/practice/an-overview.png",
     badgeIcon: <FaUserShield className="w-5 h-5 text-primary" />,
     description:
-      "Florida's elder abuse statutes apply along with domestic violence charges if alleged victim is 65 years or older. This creates multifaceted sentencing consequences. Higher minimum terms apply across several charge classifications. Adult children, spouses and live in caregivers are most frequently charged defendants in these cases.",
+      "Florida's elder abuse statutes apply along with domestic violence charges if alleged victim is 65 years or older. This creates multifaceted sentencing consequences. Higher minimum terms apply across several charge classifications. Adult children, spouses and live in caregivers are most frequently charged defendants in these cases. Hillsborough County prosecutors treat elder domestic abuse as priority prosecution category with limited flexibility in plea discussions.",
     linkHref: "/contact",
   },
   {
     id: "strangulation",
-    title: "Battery by Strangulation",
-    image: "/images/hero/hero-bg.png",
+    title: "Strangulation Domestic Battery",
+    image: "/images/practice/homicide-attempted-homicide.png",
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
-      "Under Florida Statute 784.041, impeding normal breathing or blood circulation of a family member is charged as a third-degree felony. Prosecutors treat strangulation claims with extreme severity, making immediate legal defense crucial.",
+      "Strangulation between household members elevates the charge to aggravated domestic battery or third degree felony under Florida Statute 784.041. This elevation applies regardless of whether visible external injury is present at the time of the arrest. Prosecutors rely on medical documentation of petechial hemorrhaging, voice changes and first responder observations. This way prosecutors might try to establish the strangulation element when the case reaches trial.",
     linkHref: "/contact",
   },
   {
     id: "injunction-violation",
-    title: "Violation of Injunction",
-    image: "/images/hero/hero-bg.png",
+    title: "Violation of Domestic Violence Injunction",
+    image: "/images/practice/injunctions.png",
     badgeIcon: <FaGavel className="w-5 h-5 text-primary" />,
     description:
-      "Violating a restraining order or temporary injunction in Florida can lead to immediate arrest and first-degree misdemeanor charges. Our attorneys work quickly to challenge injunction validity and protect your rights.",
+      "Any contact with a protected party constitutes first degree misdemeanor violation, including calls, texts and third party communication sent on the defendant's behalf. A second violation within 12 months becomes a third degree felony under Florida law. Unknowingly or knowingly appearing where the prosecutor party is present can lead to a violation charge in Hillsborough County.",
+    linkHref: "/contact",
+  },
+  {
+    id: "child-abuse-endangerment",
+    title: "Child Abuse or Endangerment",
+    image: "/images/practice/juvenile-crimes.png",
+    badgeIcon: <FaUsers className="w-5 h-5 text-primary" />,
+    description:
+      "Domestic violence charges involving children cover direct physical abuse. This exposure to violence between adults in the home and neglect arising directly from a domestic incident. Child's presence during a domestic violence incident can support a child endangerment charge, even if the child was physically unharmed. These charges usually run concurrently with the primary domestic battery charge. Child endangerment charges trigger immediate Hillsborough County family court intervention.",
     linkHref: "/contact",
   },
 ];
@@ -169,7 +178,6 @@ export default function DomesticViolenceTypesSection({
             slidesPerView={1}
             pagination={{
               clickable: true,
-              dynamicBullets: true,
               el: paginationEl,
             }}
             onBeforeInit={(swiper) => {

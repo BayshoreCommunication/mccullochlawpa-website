@@ -71,7 +71,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
     icon: <FaEnvelopeOpenText className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:text-slate-950 transition-colors duration-300" />,
     title: "Prior Communication Showing Relationship History",
     description:
-      "Preserve emails, social media messages and any written communication of the relationship's nature and prior conflicts. Keep record of any history of the alleged victim threatening or previously filing false accusations. Context about the relationship carries evidentiary weight in domestic violence cases, especially when the accusation surfaces during an active divorce or contested custody proceeding. This communication can establish a clear motive and credibility problems to support defense strategy.",
+      "Preserve emails, social media messages and any written communication of the relationship's nature and prior conflicts. Keep record of any history of the alleged victim threatening or previously filing false accusations. Context about the relationship carries evidentiary weight in domestic violence cases. In particular when the accusation surfaces during an active divorce or contested custody proceeding. This communication can establish a clear motive and credibility problems to support defense strategy.",
   },
 ];
 
