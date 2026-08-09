@@ -15,6 +15,7 @@ import ViolatingRestrainingOrder from "@/components/static-blogs/blogs/What Viol
 import InjunctionHearingsTampa from "@/components/static-blogs/blogs/Injunction Hearings Explained by an Injunction Defense Attorney in Tampa";
 import DomesticViolenceNoContactOrders from "@/components/static-blogs/blogs/How a Domestic Violence Lawyer in Hillsborough County Handles No-Contact Orders";
 import DomesticBatteryChargesAttorneyRiverview from "@/components/static-blogs/blogs/domestic-battery-charges-attorney-riverview";
+import FalselyAccusedCrimeFlorida from "@/components/static-blogs/blogs/falsely-accused-crime-florida-criminal-defense-lawyer";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -106,6 +107,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "falsely-accused-crime-florida-criminal-defense-lawyer" ||
+    params.slug === "what-to-do-if-you-are-falsely-accused-of-a-crime-in-florida"
+  ) {
+    return <FalselyAccusedCrimeFlorida />;
+  }
+
   if (params.slug === "domestic-battery-charges-attorney-riverview") {
     return <DomesticBatteryChargesAttorneyRiverview />;
   }

@@ -315,7 +315,35 @@ export const domesticBatteryChargesAttorneyRiverviewBlog = {
   },
 };
 
+export const falselyAccusedCrimeFloridaBlog = {
+  title:
+    "What To Do If You Are Falsely Accused of a Crime in Florida",
+  metaTitle: "Falsely Accused of a Crime in Florida? Act Now",
+  metaDescription:
+    "If you face unjust accusations in Florida, secure an elite defense attorney and remain silent. This tiny mistake in the jailhouse will seal your fate.",
+  slug: "falsely-accused-crime-florida-criminal-defense-lawyer",
+  date: "August 9, 2026",
+  createdAt: "2026-08-09T00:00:00.000Z",
+  category: "Criminal Defense",
+  published: true,
+  excerpt:
+    "A false accusation doesn't mean you are going to prison. Learn what steps to take in the first 48 hours to protect your rights and fight unjust criminal charges in Florida.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/falsely-accused-crime-florida-criminal-defense-lawyer.webp",
+    },
+    altText:
+      "Criminal defense legal graphic showing a judge’s gavel, scales of justice, and Florida criminal law books for someone falsely accused of a crime in Florida.",
+    title: "What To Do If You Are Falsely Accused of a Crime in Florida",
+    description:
+      "Legal educational graphic explaining what to do when facing a false criminal accusation in Florida. The image features a judge’s gavel, scales of justice, and Florida criminal law books, representing criminal defense, legal rights, court proceedings, and the importance of understanding your options when accused of a crime.",
+    caption:
+      "Falsely accused of a crime in Florida? Understanding your rights and taking the right steps can make an important difference when facing criminal allegations.",
+  },
+};
+
 export const staticBlogs = [
+  falselyAccusedCrimeFloridaBlog,
   domesticBatteryChargesAttorneyRiverviewBlog,
   domesticViolenceNoContactOrdersBlog,
   injunctionHearingsBlog,
