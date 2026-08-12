@@ -65,6 +65,124 @@ export default async function FalselyAccusedCrimeFlorida() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.mcfloridalaw.com/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blogs",
+                    "item": "https://www.mcfloridalaw.com/blogs"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "What To Do If You Are Falsely Accused of a Crime in Florida",
+                    "item": "https://www.mcfloridalaw.com/blogs/falsely-accused-crime-florida-criminal-defense-lawyer"
+                  }
+                ]
+              },
+              {
+                "@type": "BlogPosting",
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://www.mcfloridalaw.com/blogs/falsely-accused-crime-florida-criminal-defense-lawyer"
+                },
+                "headline": "What To Do If You Are Falsely Accused of a Crime in Florida",
+                "name": "Falsely Accused of a Crime in Florida? Act Now",
+                "description": "If you face unjust accusations in Florida, secure an elite defense attorney and remain silent. This tiny mistake in the jailhouse will seal your fate.",
+                "url": "https://www.mcfloridalaw.com/blogs/falsely-accused-crime-florida-criminal-defense-lawyer",
+                "image": "https://www.mcfloridalaw.com/images/static-blogs/falsely-accused-crime-florida-criminal-defense-lawyer.webp",
+                "isPartOf": {
+                  "@type": "Blog",
+                  "@id": "https://www.mcfloridalaw.com/blogs"
+                },
+                "about": {
+                  "@type": "Thing",
+                  "name": "False Accusations and Criminal Defense",
+                  "description": "An overview of what to do after being falsely accused of a crime in Florida, including protecting legal rights, preserving evidence, challenging weak allegations, and addressing arrest records."
+                },
+                "keywords": [
+                  "falsely accused of a crime in Florida",
+                  "false accusation lawyer Florida",
+                  "criminal defense lawyer Florida",
+                  "false criminal accusations",
+                  "criminal defense attorney Florida",
+                  "accused of a crime falsely",
+                  "wrongful criminal accusations",
+                  "Florida criminal defense",
+                  "false accusation defense",
+                  "criminal defense attorney Tampa",
+                  "Florida arrest defense"
+                ],
+                "author": {
+                  "@type": "Organization",
+                  "name": "McCulloch Law, P.A."
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "McCulloch Law, P.A.",
+                  "url": "https://www.mcfloridalaw.com/",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://www.mcfloridalaw.com/images/logo.png"
+                  }
+                },
+                "datePublished": "2026-08-09",
+                "dateModified": "2026-08-09"
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "Can I be charged without physical evidence?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes. In Florida, a person's word is considered actual evidence. If someone tells a convincing story to a police officer, that is legally enough to put you in handcuffs."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I refile charges after they're dropped?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Sometimes. Having the charges dropped isn’t the same as being found not guilty by a jury, so the state can technically refile those charges within the legal time limit, which is usually three years for most felonies in Florida."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "What if the accuser takes it all back?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "That certainly helps, but it doesn’t mean your case is automatically over. Your lawyer still has to officially present that statement to the prosecutor or the judge to get things moving in your favor."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Will hiring a criminal defense lawyer make me look guilty?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No. Prosecutors fully expect you to get a lawyer and it’s actually the single best move you can make if you want your charges dropped or declined early on."
+                    }
+                  }
+                ]
+              }
+            ]})
+          }}
+        />
       <BreadcrumbSection
         title="Blogs"
         subtitle="Find informative posts written to help you stay informed and better understand the legal landscape, and more."
