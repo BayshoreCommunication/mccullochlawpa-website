@@ -16,6 +16,7 @@ import InjunctionHearingsTampa from "@/components/static-blogs/blogs/Injunction 
 import DomesticViolenceNoContactOrders from "@/components/static-blogs/blogs/How a Domestic Violence Lawyer in Hillsborough County Handles No-Contact Orders";
 import DomesticBatteryChargesAttorneyRiverview from "@/components/static-blogs/blogs/domestic-battery-charges-attorney-riverview";
 import FalselyAccusedCrimeFlorida from "@/components/static-blogs/blogs/falsely-accused-crime-florida-criminal-defense-lawyer";
+import WhoCanFileWrongfulDeathLawsuit from "@/components/static-blogs/blogs/who-can-file-wrongful-death-lawsuit-in-florida-law";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -107,6 +108,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "who-can-file-wrongful-death-lawsuit-in-florida-law" ||
+    params.slug === "who-can-file-a-wrongful-death-lawsuit-in-florida"
+  ) {
+    return <WhoCanFileWrongfulDeathLawsuit />;
+  }
+
   if (
     params.slug === "falsely-accused-crime-florida-criminal-defense-lawyer" ||
     params.slug === "what-to-do-if-you-are-falsely-accused-of-a-crime-in-florida"

@@ -342,7 +342,34 @@ export const falselyAccusedCrimeFloridaBlog = {
   },
 };
 
+export const whoCanFileWrongfulDeathLawsuitBlog = {
+  title: "Who Can File a Wrongful Death Lawsuit in Florida?",
+  metaTitle: "Can You File a Florida Wrongful Death Claim? Learn the Truth",
+  metaDescription:
+    "Only the personal representative can file a wrongful death lawsuit in Florida. Learn who qualifies as a survivor and how McCulloch Law can help your family.",
+  slug: "who-can-file-wrongful-death-lawsuit-in-florida-law",
+  date: "August 17, 2026",
+  createdAt: "2026-08-17T00:00:00.000Z",
+  category: "Wrongful Death",
+  published: true,
+  excerpt:
+    "Only the personal representative of the deceased person's estate can file a Florida wrongful death lawsuit. Learn who counts as a survivor and what damages can be recovered.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/who-can-file-wrongful-death-lawsuit-in-florida-law.webp",
+    },
+    altText:
+      "Gavel, legal documents, scales of justice, and framed family photo for Florida wrongful death lawsuit eligibility guide.",
+    title: "Who Can File a Wrongful Death Lawsuit in Florida Law",
+    description:
+      "An overview of eligibility criteria and legal rights for surviving family members filing a wrongful death lawsuit in Florida to seek justice and financial recovery.",
+    caption:
+      "Understand who is legally eligible to file a wrongful death claim in Florida and protect your family's rights.",
+  },
+};
+
 export const staticBlogs = [
+  whoCanFileWrongfulDeathLawsuitBlog,
   falselyAccusedCrimeFloridaBlog,
   domesticBatteryChargesAttorneyRiverviewBlog,
   domesticViolenceNoContactOrdersBlog,
@@ -357,6 +384,7 @@ export const staticBlogs = [
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+
 
 
 
