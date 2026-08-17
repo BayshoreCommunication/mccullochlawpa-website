@@ -149,23 +149,26 @@ export default async function WhoCanFileWrongfulDeathLawsuit() {
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Florida Wrongful Death Lawsuit Eligibility",
+                  name: "Florida Wrongful Death Claims",
                   description:
-                    "An overview of eligibility criteria and legal rights for surviving family members filing a wrongful death lawsuit in Florida to seek justice and financial recovery.",
+                    "An overview of who can file a wrongful death lawsuit in Florida, which survivors may recover damages, the role of the personal representative, filing deadlines, and comparative fault.",
                 },
                 keywords: [
-                  "Who Can File a Wrongful Death Lawsuit in Florida",
-                  "Florida wrongful death attorney",
-                  "Florida wrongful death claim eligibility",
-                  "Florida Statute 768.21 survivors",
+                  "who can file a wrongful death lawsuit in Florida",
+                  "Florida wrongful death lawsuit",
+                  "Florida wrongful death claim",
+                  "who can file wrongful death claim Florida",
+                  "Florida wrongful death survivors",
+                  "wrongful death beneficiaries Florida",
+                  "Florida wrongful death lawyer",
                   "personal representative wrongful death Florida",
-                  "Florida wrongful death statute of limitations",
-                  "medical malpractice wrongful death Florida",
-                  "McCulloch Law P.A.",
+                  "Florida wrongful death statute",
+                  "wrongful death damages Florida",
+                  "Tampa wrongful death lawyer",
                 ],
                 author: {
-                  "@type": "Organization",
-                  name: "McCulloch Law, P.A.",
+                  "@type": "Person",
+                  name: "Drew McCulloch, Esq.",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -181,14 +184,40 @@ export default async function WhoCanFileWrongfulDeathLawsuit() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Do I Have to Pay Taxes on a Wrongful Death Settlement?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Generally speaking, Uncle Sam doesn’t touch this money. Federal tax laws and Florida state tax rules don’t treat compensatory wrongful death settlements as regular income. But there are a couple of small traps to watch out for.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "How do we pay for a lawyer when we are already struggling with funeral bills?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "You don’t have to pay anything out of pocket to get started. We work on what’s called a contingency fee. That’s just a simple way of saying we don’t get paid a dime unless we win the case.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can a wrongful death case proceed alongside a criminal charge?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. The civil wrongful death claim and any criminal prosecution run as separate proceedings with different burdens of proof, and one does not depend on the other's outcome.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can I add punitive damages to a Florida wrongful death case?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Sometimes they can be added. If the conduct was incredibly reckless or intentional, like a drunk driving crash, the court might allow them.",
+                    },
+                  },
+                ],
               },
             ],
           }),
