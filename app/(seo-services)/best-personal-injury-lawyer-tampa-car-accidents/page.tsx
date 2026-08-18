@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   title: "Personal Injury Lawyer in Tampa for Car Accidents",
   description:
     "Injured in a Tampa car accident? McCulloch Law fights for the compensation you deserve. Call (813) 444-2817 for a free consultation.",
+  alternates: {
+    canonical: "/best-personal-injury-lawyer-tampa-car-accidents",
+  },
 };
 
 export default function BestPersonalInjuryLawyerTampaCarAccidentsPage() {

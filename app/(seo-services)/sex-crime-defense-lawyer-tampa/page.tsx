@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Sex Crime Defense Lawyer in Tampa, FL",
   description:
     "Accused of a sex crime in Tampa? McCulloch Law defends clients against serious charges. Call (813) 444-2817 for a confidential consultation.",
+  alternates: {
+    canonical: "/sex-crime-defense-lawyer-tampa",
+  },
   robots: {
     index: false,
     follow: false,

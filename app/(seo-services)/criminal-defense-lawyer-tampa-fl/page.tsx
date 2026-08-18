@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Criminal Defense Lawyer in Tampa, FL",
   description:
     "Facing criminal charges in Tampa? McCulloch Law provides experienced felony and misdemeanor defense. Call (813) 444-2817 today.",
+  alternates: {
+    canonical: "/criminal-defense-lawyer-tampa-fl",
+  },
 };
 
 export default function CriminalDefenseLawyerTampaFLPage() {

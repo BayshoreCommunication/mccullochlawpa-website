@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   title: "Domestic Violence Defense Lawyer in Tampa, FL",
   description:
     "Charged with domestic violence in Tampa? McCulloch Law defends against false claims, injunctions, and criminal charges. Call (813) 444-2817 today.",
+  alternates: {
+    canonical: "/domestic-violence-defense-lawyer-tampa",
+  },
   robots: {
     index: false,
     follow: false,

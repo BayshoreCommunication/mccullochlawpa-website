@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Fraud Defense Lawyer Tampa | McCulloch Law",
   description:
     "Protect your rights with a fraud defense lawyer in Tampa. Build a strong defense against fraud charges with McCulloch Law.",
+  alternates: {
+    canonical: "/fraud-defense-lawyer-tampa",
+  },
 };
 
 export default function FraudDefenseLawyerTampaPage() {
