@@ -77,7 +77,7 @@ export default function DomesticViolenceFightBackSection({
   title = "How McCulloch Law Fights Back Against False Accusation of Domestic Violence in Tampa",
   highlightedText = "Domestic Violence in Tampa",
   paragraph = "False accusations in Tampa domestic violence cases often arise during divorce and custody disputes. Our domestic violence defense lawyer tampa at McCulloch Law is well familiar with these accusations. We build defenses designed to dismantle them.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/attorney-office.png",
+  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
   items = defaultFightBackItems,
 }: DomesticViolenceFightBackSectionProps) {
   return (

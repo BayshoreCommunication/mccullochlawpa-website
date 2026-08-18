@@ -34,7 +34,7 @@ export default function FreeCaseReviewSection({
   phoneHref = "tel:8134442817",
   consultationHref = "/contact",
   backgroundImagePath,
-  attorneyImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/attorney-office.png",
+  attorneyImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
   personImagePath,
 }: FreeCaseReviewSectionProps) {
   const bgImg = backgroundImagePath || attorneyImagePath;

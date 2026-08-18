@@ -43,7 +43,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "commercial-truck-accidents",
     title: "Commercial Vehicle & Truck Accidents",
-    image: "/images/practice/truck-accidents.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/commercial-vehicle.webp",
     badgeIcon: <FaTruck className="w-5 h-5 text-primary" />,
     description:
       "Truck crashes on local highways involve federal rules that typical car accidents don't. Federal Motor Carrier Safety Administration rules mandate strict driving hours and maintenance logs. These rules also establish specific commercial driver qualifications for all trucking companies. Large trucking operations carry insurance policies worth up to one million dollars. Corporate legal teams protect these massive insurance funds very aggressively from claims.",
@@ -52,7 +52,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "rideshare-rental-accidents",
     title: "Rideshare & Rental Car Accidents",
-    image: "/images/practice/uber-ubereats-lyft-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/rideshare-and-rental-car.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Uber and Lyft provide one million dollars in liability coverage during trips. This commercial protection drops sharply if drivers keep their apps turned off. Rental car companies legally avoid accident liability under current federal statutory laws. Personal policies from the individual renter usually apply after these rental crashes.",
@@ -61,7 +61,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "motorcycle-bicycle-pedestrian",
     title: "Motorcycle, Bicycle, & Pedestrian Accidents",
-    image: "/images/practice/motorcycle-accidents.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/motorcycle-bicycle-and-pedestrian.webp",
     badgeIcon: <FaMotorcycle className="w-5 h-5 text-primary" />,
     description:
       "Florida statutes explicitly exclude motorcycles from standard personal injury protection coverage limits. This specific exclusion leaves local riders exposed financially following major highway crashes. Injured bicyclists and pedestrians face this same coverage gap after local accidents. Personal injury protection insurance only applies directly to standard motorized vehicles instead.",
@@ -70,7 +70,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "drunk-drugged-driving",
     title: "Drunk or Drugged Driving",
-    image: "/images/practice/dui.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/drunk-or-drugged-driving.webp",
     badgeIcon: <FaWineGlassAlt className="w-5 h-5 text-primary" />,
     description:
       "Official DUI citations give your injury claims strong evidence of clear fault. This proof helps immensely before you begin informal negotiations with insurance adjusters. Florida laws allow punitive damages in drunk driving cases besides standard compensation. The state's criminal case runs alongside your personal civil injury claim simultaneously. These separate legal actions rarely finish at the exact same time together.",
@@ -78,7 +78,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   },
   {
     id: "distracted-driving",
-    image: "/images/practice/auto-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/distracted-driving.webp",
     title: "Distracted Driving",
     badgeIcon: <FaMobileAlt className="w-5 h-5 text-primary" />,
     description:
@@ -88,7 +88,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "uninsured-underinsured-motorist",
     title: "Uninsured or Underinsured Motorist Claims",
-    image: "/images/practice/auto-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/uninsured-or-underinsured-motorist.webp",
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       "Roughly one in five Tampa drivers carries no automobile liability insurance whatsoever. Florida laws don't require local drivers to maintain uninsured motorist protection plans. Many standard insurance policies skip this optional coverage element entirely during purchase. If your current policy includes it, that protection becomes your primary recovery.",
@@ -97,7 +97,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "hit-and-run",
     title: "Hit and Run",
-    image: "/images/practice/auto-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/hit-and-run.webp",
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "Leaving crash scenes involving severe injuries constitutes a major felony in Florida. When local police never identify the driver, uninsured motorist coverage typically applies. Some policies require actual physical contact for these specific phantom vehicle claims. Detailed accident scene documentation matters early for your final insurance claim process. Finding that fleeing individual determines whether you recover any financial compensation at all.",
@@ -106,7 +106,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "fatal-accidents-wrongful-death",
     title: "Fatal Accidents or Wrongful Death",
-    image: "/images/practice/wrongful-death.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/fatal-accidents-or-wrong.webp",
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       "Florida statutes allow surviving family members to file wrongful death legal claims. The appointed personal representative of the estate brings claims for all survivors. Personal injury attorney guides grieving local families through this emotional process with patience.",
@@ -115,7 +115,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "intersection-side-impact",
     title: "Intersection & Side Impact Accidents",
-    image: "/images/practice/auto-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/intersection-and-side-impact-accidents.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "T-bone crashes at busy Tampa intersections often become disputes regarding red lights. Side impact collisions cause severe injuries because doors offer minimal physical protection. Traffic camera footage from nearby local businesses settles right of way arguments.",
@@ -124,7 +124,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "rear-end-collisions",
     title: "Rear End Collisions",
-    image: "/images/practice/auto-accident.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/rear-end-collisions.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Florida law preserves the rear vehicle driver was negligent during rear collisions. Insurance adjusters still argue low speed impacts cannot cause real physical injuries. Soft tissue injuries from these common accidents worsen over several passing weeks. Attorney  documents this medical progression to counter minimal impact defense arguments.",
@@ -133,7 +133,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "rollover-head-on",
     title: "Rollover & Head On Collisions",
-    image: "/images/practice/fatal-accidents.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/fatal-accidents-or-wrong.webp",
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "Rollovers and head on collisions across Tampa highways cause catastrophic physical injuries. Wrong way drivers on Interstate 275 cause a massive portion of wrecks. Sudden tire failures or broken suspension components trigger severe rollover accidents occasionally.",
@@ -142,7 +142,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "dangerous-road-conditions",
     title: "Dangerous Road Conditions",
-    image: "/images/practice/premises-liability.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/dangerous-road.webp",
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "Deep potholes and broken traffic signals cause more crashes than people realize. Claims against local government agencies follow unique statutory rules and notice regulations. Florida caps total damages against government defendants below normal private policy limits.",
@@ -151,7 +151,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "defective-auto-parts",
     title: "Defective Auto Parts",
-    image: "/images/practice/products-liability.png",
+    image: "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/defective-auto-parts.webp",
     badgeIcon: <FaTools className="w-5 h-5 text-primary" />,
     description:
       "Defective commercial airbags or broken vehicle seatbelts can quickly turn survivable accidents deadly. Florida allows strict product liability claims against part manufacturers besides driver negligence. Injured crash victims can pursue the at fault driver and manufacturer together. Team from personal injury law firm brings in specialized engineers to prove parts failed before impacts.",
@@ -242,16 +242,16 @@ export default function PITypesSection({
             {caseItems.map((item) => (
               <SwiperSlide key={item.id} className="flex !h-auto">
                 <div className="bg-white rounded-2xl border border-slate-200/80 shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col w-full h-full min-h-[450px] sm:min-h-[470px] group hover:-translate-y-1 relative">
-                  <div className="relative w-full h-44 sm:h-48">
+                  <div className="relative w-full h-48 sm:h-56 rounded-t-2xl">
                     <div className="relative w-full h-full overflow-hidden rounded-t-2xl">
                       <Image
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
                     </div>
 
                     <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#081524] border-2 border-primary flex items-center justify-center shadow-xl z-30">

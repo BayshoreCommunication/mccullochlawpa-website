@@ -73,7 +73,7 @@ const defaultFightBackItems: FightBackItem[] = [
 export default function SCFightBackSection({
   title = "How McCulloch Law Fights Back Against False Accusation of Sex Crime in Tampa",
   subTitle = "False accusations happen and institutions treat them as fact. McCulloch Law builds every false accusation defense around documented evidence with best sex crime defense lawyer tampa.",
-  imagePath = "/images/seo-services/sex-crime-defense-lawyer-tampa/attorney-office.png",
+  imagePath = "/images/seo-services/sex-crime-defense-lawyer-tampa/mcculloch.webp",
   items = defaultFightBackItems,
 }: SCFightBackSectionProps) {
   return (

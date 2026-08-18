@@ -71,7 +71,7 @@ export default function DomesticViolenceWhyChooseSection({
   title = "Why Tampa Residents Choose McCulloch Law for Domestic Violence Defense",
   highlightedText = "Domestic Violence Defense",
   subTitle = "Tampa domestic violence cases progress quickly and hiring a domestic violence defense lawyer in tampa within 48 hours impacts future options. McCulloch Law is specific, local and experienced with Hillsborough County's cases.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/attorney-office.png",
+  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
   row1Items = defaultRow1Items,
   row2Items = defaultRow2Items,
 }: DomesticViolenceWhyChooseSectionProps) {

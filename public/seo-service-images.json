@@ -1,0 +1,566 @@
+{
+  "totalCategories": 5,
+  "totalImages": 52,
+  "servicePages": [
+    {
+      "id": "best-personal-injury-lawyer-tampa-car-accidents",
+      "categoryTitle": "Best Personal Injury Lawyer Tampa Car Accidents",
+      "slug": "best-personal-injury-lawyer-tampa-car-accidents",
+      "folderPath": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents",
+      "images": [
+        {
+          "key": "commercial-vehicle",
+          "fileName": "commercial-vehicle.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/commercial-vehicle.webp",
+          "altText": "Commercial Vehicle and Semi-Truck Accident Lawyer in Tampa FL",
+          "title": "Commercial Truck & Vehicle Accident Representation",
+          "description": "Comprehensive legal defense and claim recovery for victims involved in commercial vehicle, 18-wheeler, and delivery truck crashes in Tampa Bay.",
+          "caption": "Fighting commercial trucking companies and insurance providers for maximum compensation.",
+          "section": "Accident Types / Commercial Vehicles"
+        },
+        {
+          "key": "dangerous-road",
+          "fileName": "dangerous-road.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/dangerous-road.webp",
+          "altText": "Dangerous Road Conditions and Poor Highway Design Accidents Tampa",
+          "title": "Dangerous Roadways & Hazardous Intersection Claims",
+          "description": "Legal representation for auto accidents caused by dangerous road conditions, improper signage, potholes, or defective highway construction.",
+          "caption": "Holding municipal entities and contractors accountable for hazardous road conditions.",
+          "section": "Accident Causes / Road Hazards"
+        },
+        {
+          "key": "defective-auto-parts",
+          "fileName": "defective-auto-parts.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/defective-auto-parts.webp",
+          "altText": "Defective Auto Parts Product Liability Lawyer Tampa",
+          "title": "Defective Automotive Parts & Mechanical Failure Lawsuits",
+          "description": "Pursuing product liability claims against manufacturers for defective brakes, tire blowouts, failed airbags, and vehicle component malfunctions.",
+          "caption": "Seeking justice against auto manufacturers for dangerous vehicle component defects.",
+          "section": "Product Liability / Defective Parts"
+        },
+        {
+          "key": "distracted-driving",
+          "fileName": "distracted-driving.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/distracted-driving.webp",
+          "altText": "Distracted Driving Texting While Driving Accident Lawyer Tampa",
+          "title": "Distracted Driving & Texting Automobile Collision Claims",
+          "description": "Aggressive representation for victims injured by distracted drivers, cell phone usage, texting, or multitasking behind the wheel in Tampa.",
+          "caption": "Proving driver distraction to secure full settlement compensation for crash victims.",
+          "section": "Accident Causes / Distracted Drivers"
+        },
+        {
+          "key": "drunk-or-drugged-driving",
+          "fileName": "drunk-or-drugged-driving.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/drunk-or-drugged-driving.webp",
+          "altText": "Drunk or Drugged DUI Driving Injury Attorney Tampa FL",
+          "title": "DUI & Impaired Driving Car Accident Representation",
+          "description": "Holding intoxicated, drunk, or drug-impaired drivers fully accountable for devastating collisions and injuries across Hillsborough County.",
+          "caption": "Pursuing punitive damages and maximum recovery against impaired DUI drivers.",
+          "section": "Accident Causes / DUI & Impairment"
+        },
+        {
+          "key": "fatal-accidents-or-wrong",
+          "fileName": "fatal-accidents-or-wrong.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/fatal-accidents-or-wrong.webp",
+          "altText": "Fatal Car Accidents and Wrongful Death Attorney Tampa",
+          "title": "Wrongful Death & Fatal Auto Crash Lawsuits",
+          "description": "Compassionate legal support for grieving families seeking justice and financial stability following a fatal car accident in Tampa Bay.",
+          "caption": "Helping surviving family members recover damages for tragic wrongful death losses.",
+          "section": "Wrongful Death Claims"
+        },
+        {
+          "key": "hit-and-run",
+          "fileName": "hit-and-run.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/hit-and-run.webp",
+          "altText": "Hit and Run Auto Accident Lawyer Tampa Florida",
+          "title": "Hit & Run Accident Claims & Uninsured Coverage",
+          "description": "Guiding hit-and-run crash victims through police investigations and uninsured motorist (UM) insurance claims to ensure full financial recovery.",
+          "caption": "Recovering compensation when an at-fault driver flees the scene of a crash.",
+          "section": "Accident Types / Hit & Run"
+        },
+        {
+          "key": "intersection-and-side-impact-accidents",
+          "fileName": "intersection-and-side-impact-accidents.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/intersection-and-side-impact-accidents.webp",
+          "altText": "Intersection T-Bone and Side Impact Car Accident Attorney Tampa",
+          "title": "Intersection & Side-Impact (T-Bone) Collision Claims",
+          "description": "Determining fault and recovering damages for victims of red-light violations, right-of-way failures, and T-bone side-impact crashes.",
+          "caption": "Proving right-of-way negligence in complex intersection collisions.",
+          "section": "Accident Types / Intersections & T-Bone"
+        },
+        {
+          "key": "motorcycle-bicycle-and-pedestrian",
+          "fileName": "motorcycle-bicycle-and-pedestrian.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/motorcycle-bicycle-and-pedestrian.webp",
+          "altText": "Motorcycle Bicycle and Pedestrian Accident Injury Lawyer Tampa",
+          "title": "Vulnerable Road User: Motorcycle, Bike & Pedestrian Claims",
+          "description": "Dedicated legal defense for pedestrians, cyclists, and motorcyclists injured by negligent motor vehicle drivers in the Tampa Bay area.",
+          "caption": "Protecting vulnerable road users injured by negligent automobile drivers.",
+          "section": "Accident Types / Pedestrians & Cyclists"
+        },
+        {
+          "key": "rear-end-collisions",
+          "fileName": "rear-end-collisions.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/rear-end-collisions.webp",
+          "altText": "Rear End Collision Car Accident Injury Lawyer Tampa",
+          "title": "Rear-End Car Collision & Whiplash Injury Claims",
+          "description": "Representing victims of tailgating and sudden stop rear-end collisions suffering from whiplash, spinal injuries, and soft tissue damage.",
+          "caption": "Establishing clear liability in rear-end crash cases for maximum payout.",
+          "section": "Accident Types / Rear-End Crashes"
+        },
+        {
+          "key": "rideshare-and-rental-car",
+          "fileName": "rideshare-and-rental-car.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/rideshare-and-rental-car.webp",
+          "altText": "Uber Lyft Rideshare and Rental Car Accident Lawyer Tampa",
+          "title": "Uber, Lyft & Rental Car Accident Lawsuits",
+          "description": "Navigating complex corporate insurance policies for passengers, drivers, and third parties injured in Uber, Lyft, or rental car crashes.",
+          "caption": "Maximizing corporate insurance payouts for rideshare and rental car collisions.",
+          "section": "Accident Types / Rideshare & Rental"
+        },
+        {
+          "key": "uninsured-or-underinsured-motorist",
+          "fileName": "uninsured-or-underinsured-motorist.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/uninsured-or-underinsured-motorist.webp",
+          "altText": "Uninsured or Underinsured Motorist UM Claim Lawyer Tampa",
+          "title": "Uninsured & Underinsured Motorist (UM) Coverage Claims",
+          "description": "Fighting for policyholders to receive fair compensation from their own UM coverage when the at-fault driver lacks adequate insurance.",
+          "caption": "Ensuring your insurance company honors your uninsured motorist benefits.",
+          "section": "Insurance Claims / UM & UIM"
+        },
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/mcculloch.webp",
+          "altText": "Personal Injury Lawyer Attorney Office in Tampa FL",
+          "title": "Personal Injury Attorney Office Consultation",
+          "description": "Professional office setting of McCulloch Law, P.A. where Tampa personal injury and car accident victims receive dedicated legal consultation.",
+          "caption": "McCulloch Law, P.A. Tampa Office - Personal Injury Defense Representation.",
+          "section": "Why Choose / Free Case Review"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/courthouse-law.png",
+          "altText": "Tampa Courthouse Building for Personal Injury Litigation",
+          "title": "Tampa Courthouse Law Building",
+          "description": "Architectural view of Tampa judicial courthouse representing aggressive courtroom litigation for car accident and personal injury claims.",
+          "caption": "Fighting for fair personal injury compensation in Tampa courtrooms.",
+          "section": "Law Changes / Uninsured Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/courts-cities-banner.png",
+          "altText": "Tampa Bay Area Cities and Courts Served for Car Accidents",
+          "title": "Tampa Bay Courts and Cities Coverage",
+          "description": "Banner highlighting legal coverage across Tampa, St. Petersburg, Clearwater, Brandon, and Hillsborough County courts.",
+          "caption": "Serving personal injury & car accident clients across the Greater Tampa Bay Area.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/evidence-folder.png",
+          "altText": "Personal Injury Case Evidence File Folder",
+          "title": "Car Accident Evidence and Documentation",
+          "description": "Meticulously organized evidence folder containing medical records, accident reports, and witness statements for injury claims.",
+          "caption": "Building strong evidence-backed personal injury claims in Tampa.",
+          "section": "Evidence / Statute Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/faq-gavel-scales.png",
+          "altText": "Gavel and Scales of Justice for Personal Injury FAQ",
+          "title": "Personal Injury Law FAQ Symbol",
+          "description": "Judicial gavel and scales of justice icon for frequently asked questions about car accident lawsuits and insurance claims.",
+          "caption": "Answers to common personal injury and car accident legal questions.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/gavel-scales.png",
+          "altText": "Scales of Justice and Gavel Symbol",
+          "title": "Scales of Justice & Legal Authority",
+          "description": "Symbolic scales of justice representing fair compensation and legal justice for personal injury victims in Florida.",
+          "caption": "Seeking justice and maximum settlement payouts for injured clients.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/hero-bg.png",
+          "altText": "Best Personal Injury Lawyer Tampa Car Accidents Banner",
+          "title": "Tampa Personal Injury Lawyer Hero Banner",
+          "description": "Hero background banner showcasing experienced car accident attorneys defending victims in Tampa, Florida.",
+          "caption": "Top-rated personal injury lawyer for Tampa car accident victims.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/tampa-skyline-palms.png",
+          "altText": "Tampa FL Skyline with Palm Trees View",
+          "title": "Tampa Florida City Skyline & Palm Trees",
+          "description": "Panoramic view of downtown Tampa skyline representing local legal presence and deep community commitment.",
+          "caption": "Dedicated personal injury law firm serving the entire Tampa region.",
+          "section": "Serves & Locations Section"
+        }
+      ]
+    },
+    {
+      "id": "criminal-defense-lawyer-tampa-fl",
+      "categoryTitle": "Criminal Defense Lawyer Tampa FL",
+      "slug": "criminal-defense-lawyer-tampa-fl",
+      "folderPath": "/images/seo-services/criminal-defense-lawyer-tampa-fl",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/mcculloch.webp",
+          "altText": "Criminal Defense Lawyer Office in Tampa FL",
+          "title": "Tampa Criminal Defense Attorney Consultation Office",
+          "description": "Private law office setting of Drew McCulloch, experienced Tampa criminal defense lawyer offering confidential case reviews.",
+          "caption": "Confidential criminal defense strategy sessions in Tampa, FL.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/courthouse-law.png",
+          "altText": "Hillsborough County Criminal Courthouse Tampa FL",
+          "title": "Hillsborough County Courthouse Law Building",
+          "description": "Hillsborough County criminal courthouse where our defense team fights felony and misdemeanor charges in court.",
+          "caption": "Aggressive courtroom defense at Hillsborough County Courthouse.",
+          "section": "Law Changes / Injunctions Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/courts-cities-banner.png",
+          "altText": "Tampa FL Criminal Defense Jurisdiction Banner",
+          "title": "Criminal Court Locations & Cities Served",
+          "description": "Map and banner showing criminal defense legal coverage throughout Tampa, Clearwater, and Pinellas County.",
+          "caption": "Protecting rights in criminal courts across Tampa FL and surrounding areas.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/evidence-folder.png",
+          "altText": "Criminal Defense Case File and Evidence Documentation",
+          "title": "Criminal Defense Case Evidence Investigation",
+          "description": "Comprehensive evidence file containing police bodycam footage, police reports, and witness statements for criminal defense.",
+          "caption": "Thoroughly examining case evidence to dismiss or reduce criminal charges.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/faq-gavel-scales.png",
+          "altText": "Criminal Defense Law FAQ Gavel and Scales Header",
+          "title": "Criminal Defense Legal Questions Header",
+          "description": "Header illustration featuring a wooden gavel and balance scales for criminal defense FAQ answers.",
+          "caption": "Frequently asked questions regarding criminal charges in Tampa FL.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/gavel-scales.png",
+          "altText": "Gavel and Balance Scales of Justice Criminal Law",
+          "title": "Criminal Justice Gavel & Balance Scale",
+          "description": "Symbolic courtroom gavel and balance scale representing constitutional defense rights and fair trials.",
+          "caption": "Upholding constitutional rights for individuals accused of crimes.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/hero-bg.png",
+          "altText": "Criminal Defense Lawyer Tampa FL Hero Background",
+          "title": "Tampa Criminal Defense Lawyer Hero Header",
+          "description": "Hero background image showcasing criminal defense legal defense services in Tampa FL.",
+          "caption": "Trusted criminal defense attorney defending your freedom in Tampa.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/tampa-skyline-palms.png",
+          "altText": "Downtown Tampa FL Skyline and Palm Trees",
+          "title": "Downtown Tampa Florida Skyline Overview",
+          "description": "Scenic view of downtown Tampa FL skyline representing aggressive local criminal defense representation.",
+          "caption": "Local Tampa FL criminal defense firm ready to fight for you.",
+          "section": "Serves & Locations Section"
+        }
+      ]
+    },
+    {
+      "id": "domestic-violence-defense-lawyer-tampa",
+      "categoryTitle": "Domestic Violence Defense Lawyer Tampa",
+      "slug": "domestic-violence-defense-lawyer-tampa",
+      "folderPath": "/images/seo-services/domestic-violence-defense-lawyer-tampa",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+          "altText": "Domestic Violence Defense Attorney Office in Tampa",
+          "title": "Domestic Violence Attorney Case Strategy Office",
+          "description": "Law office setting for confidential consultations regarding domestic violence, injunctions, and battery allegations.",
+          "caption": "Discreet and compassionate domestic violence defense consultation in Tampa.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/courthouse-law.png",
+          "altText": "Tampa Injunction and Domestic Violence Courthouse Building",
+          "title": "Tampa Domestic Relations & Injunction Court",
+          "description": "Courthouse building where restraining orders, domestic violence injunctions, and criminal hearings take place.",
+          "caption": "Representing clients at domestic violence injunction hearings in Tampa.",
+          "section": "Law Changes / Injunctions Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/courts-cities-banner.png",
+          "altText": "Domestic Violence Defense Jurisdiction Banner Tampa Bay",
+          "title": "Domestic Violence Legal Coverage Map",
+          "description": "Banner depicting domestic violence defense services across Hillsborough, Pinellas, and Pasco counties.",
+          "caption": "Defending against domestic violence charges throughout Tampa Bay.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/evidence-folder.png",
+          "altText": "Domestic Violence Case Evidence Folder and Documentation",
+          "title": "Domestic Violence Defense Evidence & Statements",
+          "description": "Organized case folder holding text message records, witness testimonies, and timeline logs for domestic battery defense.",
+          "caption": "Gathering crucial evidence to refute false domestic violence accusations.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/faq-gavel-scales.png",
+          "altText": "Domestic Violence Law FAQ Gavel and Scales",
+          "title": "Domestic Violence FAQ Section Header",
+          "description": "Gavel and scales emblem highlighting answers to common questions about domestic battery arrests and protective orders.",
+          "caption": "Common questions about domestic violence defense and restraining orders.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/gavel-scales.png",
+          "altText": "Legal Gavel and Justice Scales Domestic Battery Defense",
+          "title": "Legal Justice Symbol for Domestic Violence Cases",
+          "description": "Classic gavel and scale image symbolizing fair legal hearings and protection of rights in domestic violence cases.",
+          "caption": "Fighting to protect your reputation and freedom against domestic violence charges.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+          "altText": "Domestic Violence Defense Lawyer Tampa Hero Banner",
+          "title": "Tampa Domestic Violence Defense Hero Banner",
+          "description": "Hero background image showcasing experienced domestic violence defense attorneys in Tampa, Florida.",
+          "caption": "Proven defense representation for domestic violence charges in Tampa.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/tampa-skyline-palms.png",
+          "altText": "Tampa FL Cityscape Skyline and Palm Trees",
+          "title": "Tampa Florida City Skyline",
+          "description": "Panoramic Tampa city view representing responsive domestic violence defense services available 24/7.",
+          "caption": "Serving individuals facing domestic allegations across Tampa, Florida.",
+          "section": "Serves & Locations Section"
+        }
+      ]
+    },
+    {
+      "id": "fraud-defense-lawyer-tampa",
+      "categoryTitle": "Fraud Defense Lawyer Tampa",
+      "slug": "fraud-defense-lawyer-tampa",
+      "folderPath": "/images/seo-services/fraud-defense-lawyer-tampa",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/mcculloch.webp",
+          "altText": "Fraud Defense Lawyer Attorney Office in Tampa",
+          "title": "White Collar Fraud Defense Attorney Office",
+          "description": "Professional executive office setting where white collar and financial fraud defense strategies are developed.",
+          "caption": "Strategic fraud defense consultation at McCulloch Law, P.A. Tampa.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/courthouse-law.png",
+          "altText": "Federal and State Courthouse Building Tampa Fraud Cases",
+          "title": "Tampa Federal and State Courthouse",
+          "description": "Courthouse exterior representing defense against state and federal financial fraud, wire fraud, and embezzlement charges.",
+          "caption": "Experienced defense in state and federal court fraud proceedings.",
+          "section": "Law Changes / Penalties Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/courts-cities-banner.png",
+          "altText": "Courts and Cities Served for Fraud Defense Tampa",
+          "title": "Fraud Defense Jurisdiction & Court Locations",
+          "description": "Banner showcasing fraud defense services in Tampa, St. Petersburg, and federal district courts in Florida.",
+          "caption": "Defending white collar fraud charges throughout Florida courts.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/evidence-folder.png",
+          "altText": "Fraud Investigation Audit Documents and Evidence Folder",
+          "title": "Financial Audit & Fraud Case Evidence File",
+          "description": "Detailed financial records folder containing audit documents, bank statements, and accounting analysis for fraud defense.",
+          "caption": "Analyzing complex financial documents for fraud defense cases.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/faq-gavel-scales.png",
+          "altText": "Fraud Defense Law FAQ Gavel and Scales Symbol",
+          "title": "Fraud Defense FAQ Section Header",
+          "description": "Gavel and scales graphic introducing frequently asked questions about fraud penalties and federal investigations.",
+          "caption": "Answers to questions about fraud allegations and white collar crime.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/gavel-scales.png",
+          "altText": "Gavel and Scales of Justice White Collar Crime Defense",
+          "title": "White Collar Legal Justice Symbol",
+          "description": "Symbol of legal justice and balance representing rigorous legal defense against fraud allegations.",
+          "caption": "Relentless protection for clients accused of financial fraud.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/hero-bg.png",
+          "altText": "Fraud Defense Lawyer Tampa Hero Background Banner",
+          "title": "Tampa Fraud Defense Attorney Hero Banner",
+          "description": "Hero background banner for fraud defense law firm providing aggressive defense against financial crime charges.",
+          "caption": "Top-rated fraud defense lawyer defending businesses and individuals in Tampa.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/tampa-skyline-palms.png",
+          "altText": "Tampa Skyline View for White Collar Fraud Defense Firm",
+          "title": "Tampa FL Financial Center Skyline",
+          "description": "Downtown Tampa business district skyline representing defense of professionals and business owners against fraud charges.",
+          "caption": "Trusted financial fraud defense attorneys based in Tampa, FL.",
+          "section": "Serves & Locations Section"
+        }
+      ]
+    },
+    {
+      "id": "sex-crime-defense-lawyer-tampa",
+      "categoryTitle": "Sex Crime Defense Lawyer Tampa",
+      "slug": "sex-crime-defense-lawyer-tampa",
+      "folderPath": "/images/seo-services/sex-crime-defense-lawyer-tampa",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/mcculloch.webp",
+          "altText": "Sex Crime Defense Attorney Office in Tampa FL",
+          "title": "Sex Crime Defense Private Legal Office",
+          "description": "Confidential law office environment where sensitive sex offense charges are reviewed with discretion and care.",
+          "caption": "Private and confidential defense consultation for sensitive charges in Tampa.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/courthouse-law.png",
+          "altText": "Tampa Criminal Courthouse Building for Sex Crime Trials",
+          "title": "Tampa Criminal Justice Courthouse",
+          "description": "Judicial courthouse image representing rigorous legal defense in high-stakes sex offense trials.",
+          "caption": "Vigorous trial defense in Tampa criminal courtrooms.",
+          "section": "Law Changes / Injunctions Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/courts-cities-banner.png",
+          "altText": "Sex Crime Defense Jurisdiction Banner Tampa Bay Area",
+          "title": "Sex Offense Defense Coverage Banner",
+          "description": "Banner highlighting sex crime defense representation across Hillsborough, Pinellas, and surrounding Tampa Bay courts.",
+          "caption": "Defending sex crime charges across the entire Tampa Bay Region.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/evidence-folder.png",
+          "altText": "Sex Crime Case File Evidence and Forensics Folder",
+          "title": "Sex Crime Investigation Evidence Folder",
+          "description": "Evidence file folder containing digital forensics, DNA reports, and witness statements essential for sex offense defense.",
+          "caption": "Thorough forensic evidence examination for sex offense defense.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/faq-gavel-scales.png",
+          "altText": "Sex Crime Law FAQ Gavel and Scales Emblem",
+          "title": "Sex Offense Defense FAQ Header",
+          "description": "Judicial emblem for FAQ section addressing registry requirements, penalties, and defense strategies.",
+          "caption": "Answers to critical questions regarding sex crime defense in Florida.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/gavel-scales.png",
+          "altText": "Legal Gavel and Scales of Justice Symbol",
+          "title": "Legal Rights & Justice Emblem",
+          "description": "Symbolic gavel and scales highlighting presumption of innocence and strict constitutional defense.",
+          "caption": "Upholding the presumption of innocence in sex offense allegations.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/hero-bg.png",
+          "altText": "Sex Crime Defense Lawyer Tampa Hero Background Banner",
+          "title": "Tampa Sex Crime Defense Attorney Hero Banner",
+          "description": "Hero header background banner for specialized sex offense defense legal services in Tampa.",
+          "caption": "Aggressive sex crime defense attorney protecting your rights in Tampa.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/tampa-skyline-palms.png",
+          "altText": "Tampa FL Cityscape Skyline Overview",
+          "title": "Tampa Cityscape & Skyline View",
+          "description": "Tampa city skyline view representing local, experienced legal defense against serious felony charges.",
+          "caption": "Reputable Tampa FL defense law firm fighting for your future.",
+          "section": "Serves & Locations Section"
+        }
+      ]
+    }
+  ]
+}

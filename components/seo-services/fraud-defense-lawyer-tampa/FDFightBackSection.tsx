@@ -54,7 +54,7 @@ const defaultDefenseItems: DefenseStrategyItem[] = [
 export default function FDFightBackSection({
   title = "Falsely Accused of Fraud in Tampa? Here's How McCulloch Law Defends Your Case",
   subTitle = "Even if you have done nothing wrong, you can be a victim of fraud and that is worrying. Such allegations are commonly rumored or arise from conflicts regarding business. We take every false accusation seriously. Drew McCulloch spent years as a state prosecutor. That gives him a real edge here. He has seen how these cases get built from the other side.",
-  imagePath = "/images/seo-services/fraud-defense-lawyer-tampa/attorney-office.png",
+  imagePath = "/images/seo-services/fraud-defense-lawyer-tampa/mcculloch.webp",
   items = defaultDefenseItems,
 }: FDFightBackSectionProps) {
   return (

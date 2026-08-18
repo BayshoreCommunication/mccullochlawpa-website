@@ -72,7 +72,7 @@ const defaultFightItems: FightItem[] = [
 export default function PIFightsSection({
   title = "How McCulloch Law Fights Insurance Companies After a Tampa Car Accident",
   subTitle = "McCulloch Law follows a clear process on every single car accident case.",
-  imagePath = "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/attorney-office.png",
+  imagePath = "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/mcculloch.webp",
   items = defaultFightItems,
 }: PIFightsSectionProps) {
   return (

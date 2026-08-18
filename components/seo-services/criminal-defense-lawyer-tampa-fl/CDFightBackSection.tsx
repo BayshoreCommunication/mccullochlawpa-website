@@ -81,7 +81,7 @@ const defaultFightBackItems: FightBackItem[] = [
 export default function CDFightBackSection({
   title = "How McCulloch Law Fights Back Against False Accusation of Crime in Tampa",
   subTitle = "False accusations happen more often between people who know each other. McCulloch Law approaches these cases with a defense built from day one.",
-  imagePath = "/images/seo-services/criminal-defense-lawyer-tampa-fl/attorney-office.png",
+  imagePath = "/images/seo-services/criminal-defense-lawyer-tampa-fl/mcculloch.webp",
   items = defaultFightBackItems,
 }: CDFightBackSectionProps) {
   return (

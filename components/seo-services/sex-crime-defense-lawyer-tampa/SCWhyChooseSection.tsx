@@ -66,7 +66,7 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
 export default function SCWhyChooseSection({
   title = "Why Tampa Residents Choose McCulloch Law for Sex Crime Defense",
   subTitle = "Certain Tampa firms address sex crime cases as they appear alongside other matters on the docket. McCulloch Law handles them as a primary practice focus.",
-  imagePath = "/images/seo-services/sex-crime-defense-lawyer-tampa/attorney-office.png",
+  imagePath = "/images/seo-services/sex-crime-defense-lawyer-tampa/mcculloch.webp",
   items = defaultWhyChooseItems,
 }: SCWhyChooseSectionProps) {
   return (

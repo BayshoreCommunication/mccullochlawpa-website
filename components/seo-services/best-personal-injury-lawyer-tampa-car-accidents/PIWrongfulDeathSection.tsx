@@ -14,7 +14,7 @@ export interface PIWrongfulDeathSectionProps {
 export default function PIWrongfulDeathSection({
   title = "Claim Wrongful Death After Fatal Tampa Car Accidents",
   paragraph = "Florida's Wrongful Death Act allows specific surviving family members to seek financial recovery. The estate's personal representative files the lawsuit to help the surviving family. Surviving spouses and children recover money for lost companionship, guidance, and mental pain. The estate can also recover funeral costs and lost future earnings of the deceased. Florida gives families only two years from the date of death to file suit. McCulloch Law’s personal injury lawyer tampa car accidents handles these cases with the sensitivity that families deserve most. The firm also brings the aggression these insurers respect and fear most.",
-  imagePath = "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/attorney-office.png",
+  imagePath = "/images/seo-services/best-personal-injury-lawyer-tampa-car-accidents/mcculloch.webp",
 }: PIWrongfulDeathSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden">
