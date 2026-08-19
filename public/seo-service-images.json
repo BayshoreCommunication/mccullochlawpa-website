@@ -1,6 +1,6 @@
 {
   "totalCategories": 5,
-  "totalImages": 71,
+  "totalImages": 89,
   "servicePages": [
     {
       "id": "best-personal-injury-lawyer-tampa-car-accidents",
@@ -295,6 +295,186 @@
           "description": "Scenic view of downtown Tampa FL skyline representing aggressive local criminal defense representation.",
           "caption": "Local Tampa FL criminal defense firm ready to fight for you.",
           "section": "Serves & Locations Section"
+        },
+        {
+          "key": "assault-and-battery",
+          "fileName": "Assault and battery.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Assault and battery.webp",
+          "altText": "Assault and Battery Criminal Defense Attorney in Tampa FL",
+          "title": "Assault & Battery Defense Representation",
+          "description": "Aggressive legal defense for misdemeanor and felony assault and battery charges in Hillsborough County. Protecting rights against violent crime allegations.",
+          "caption": "Challenging assault and battery allegations with experienced courtroom defense in Tampa.",
+          "section": "Practice Areas / Assault & Battery"
+        },
+        {
+          "key": "criminal-appeals",
+          "fileName": "Criminal Apeals.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Criminal Apeals.webp",
+          "altText": "Criminal Appeals Lawyer Second District Court of Appeal Tampa",
+          "title": "Post-Conviction Relief & Criminal Appeals",
+          "description": "Appellate legal representation contesting lower court trial errors, unfair convictions, and improper sentencing before Florida appellate courts.",
+          "caption": "Fighting trial errors and seeking post-conviction relief for Tampa criminal cases.",
+          "section": "Practice Areas / Criminal Appeals"
+        },
+        {
+          "key": "cybercrime",
+          "fileName": "Cybercrime.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Cybercrime.webp",
+          "altText": "Cybercrime and Computer Fraud Defense Lawyer Tampa FL",
+          "title": "Cybercrime & Computer Offense Legal Defense",
+          "description": "Defending individuals accused of internet fraud, hacking, data theft, and federal computer crime violations in Tampa Bay.",
+          "caption": "Vigorous defense against state and federal computer crime investigations.",
+          "section": "Practice Areas / Cybercrimes"
+        },
+        {
+          "key": "domestic-battery",
+          "fileName": "Domestic Battery.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Domestic Battery.webp",
+          "altText": "Domestic Battery Defense Attorney Tampa Hillsborough County",
+          "title": "Domestic Battery & Relationship Allegations Defense",
+          "description": "Immediate legal intervention for domestic violence arrests, restraining order injunctions, and marital battery allegations.",
+          "caption": "Securing evidence and protecting reputations in domestic battery cases.",
+          "section": "Practice Areas / Domestic Battery"
+        },
+        {
+          "key": "driving-violation",
+          "fileName": "Driving Violation.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Driving Violation.webp",
+          "altText": "Driving with Suspended License and Traffic Crime Attorney Tampa",
+          "title": "Criminal Driving Violations & License Suspension Defense",
+          "description": "Representation for reckless driving, driving while license suspended or revoked (DWLSR), and criminal traffic violations in Tampa.",
+          "caption": "Preventing driver's license revocation and criminal record points.",
+          "section": "Practice Areas / Driving Violations"
+        },
+        {
+          "key": "drug-possession",
+          "fileName": "Drug prssesion.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Drug prssesion.webp",
+          "altText": "Drug Possession Defense Lawyer Cannabis Cocaine Tampa FL",
+          "title": "Controlled Substance & Drug Possession Defense",
+          "description": "Defense strategies against misdemeanor and felony drug possession charges under Florida Statute 893.13, challenging illegal searches.",
+          "caption": "Contesting unlawful vehicle stops and illegal search and seizure in drug cases.",
+          "section": "Practice Areas / Drug Possession"
+        },
+        {
+          "key": "duis",
+          "fileName": "Duis.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Duis.webp",
+          "altText": "DUI Defense Lawyer Impaired Driving Attorney Tampa FL",
+          "title": "DUI & Drunk Driving Criminal Defense",
+          "description": "Comprehensive defense against first-time and repeat DUI arrests, challenging breathalyzer accuracy, field sobriety tests, and license suspension.",
+          "caption": "Protecting your driver's license and freedom against Tampa DUI charges.",
+          "section": "Practice Areas / DUIs"
+        },
+        {
+          "key": "federal-drug-offense",
+          "fileName": "Fedaral Drug Offence.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Fedaral Drug Offence.webp",
+          "altText": "Federal Drug Trafficking Defense Lawyer Tampa Middle District FL",
+          "title": "Federal Drug Trafficking & Conspiracy Defense",
+          "description": "Federal defense representation for major drug distribution, conspiracy, and mandatory minimum sentence charges in federal court.",
+          "caption": "Defending complex federal drug conspiracy cases in U.S. District Court.",
+          "section": "Practice Areas / Federal Drug Offenses"
+        },
+        {
+          "key": "homicide",
+          "fileName": "Homicide.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Homicide.webp",
+          "altText": "Homicide First and Second Degree Murder Defense Lawyer Tampa",
+          "title": "Homicide & Murder Defense Representation",
+          "description": "High-stakes criminal trial defense for first-degree premeditated murder, second-degree murder, and capital felony charges.",
+          "caption": "Rigorous forensic investigation and trial defense for homicide accusations.",
+          "section": "Practice Areas / Homicide"
+        },
+        {
+          "key": "injunctions",
+          "fileName": "Injunctions.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Injunctions.webp",
+          "altText": "Domestic and Repeat Violence Injunction Defense Attorney Tampa",
+          "title": "Restraining Order & Injunction Hearings Defense",
+          "description": "Legal defense against temporary and final protective injunctions, preventing civil and criminal restraining order restrictions.",
+          "caption": "Defending rights at injunction hearings in Hillsborough County courts.",
+          "section": "Practice Areas / Injunctions"
+        },
+        {
+          "key": "involuntary-manslaughter",
+          "fileName": "Involuntary manslaughter.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Involuntary manslaughter.webp",
+          "altText": "Involuntary Manslaughter and Vehicular Homicide Attorney Tampa",
+          "title": "Involuntary Manslaughter & Reckless Conduct Defense",
+          "description": "Defense counsel for accidental death allegations, vehicular manslaughter, and gross negligence criminal charges.",
+          "caption": "Evaluating recklessness standards and accident reconstruction evidence.",
+          "section": "Practice Areas / Involuntary Manslaughter"
+        },
+        {
+          "key": "juvenile-crimes",
+          "fileName": "Juvenile crimes.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Juvenile crimes.webp",
+          "altText": "Juvenile Crime Defense Lawyer Tampa Florida Youth Charges",
+          "title": "Juvenile Delinquency & Direct File Prevention Defense",
+          "description": "Protecting youth futures against juvenile offenses, preventing direct file transfers to adult criminal court.",
+          "caption": "Fighting to rehabilitate and protect young records from permanent damage.",
+          "section": "Practice Areas / Juvenile Crimes"
+        },
+        {
+          "key": "sealing-expunging",
+          "fileName": "Sealing and.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Sealing and.webp",
+          "altText": "Sealing and Expunging Criminal Records Attorney Tampa FL",
+          "title": "Criminal Record Sealing & Expungement Services",
+          "description": "Guiding eligible individuals through FDLE certification to seal or expunge prior arrest records from public background checks.",
+          "caption": "Clearing criminal records for employment and housing opportunities.",
+          "section": "Practice Areas / Sealing & Expunging"
+        },
+        {
+          "key": "sex-crimes",
+          "fileName": "Sex Crimes.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Sex Crimes.webp",
+          "altText": "Sex Crime Sexual Battery Defense Lawyer Tampa FL",
+          "title": "Sex Offense Defense & Sex Offender Registry Avoidance",
+          "description": "Confidential defense against sexual battery, lewd conduct, and sex crime allegations carrying mandatory registry requirements.",
+          "caption": "Protecting freedom and privacy against devastating sex crime accusations.",
+          "section": "Practice Areas / Sex Crimes"
+        },
+        {
+          "key": "theft-property-crime",
+          "fileName": "Theft Property Crime.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Theft Property Crime.webp",
+          "altText": "Grand Theft Petit Theft Burglary Lawyer Tampa FL",
+          "title": "Petit Theft, Grand Theft & Burglary Defense",
+          "description": "Representation for grand theft, burglary, shoplifting, and property crimes, challenging prosecutor valuation calculations.",
+          "caption": "Reducing grand theft felonies to minor misdemeanors through strategic negotiation.",
+          "section": "Practice Areas / Theft & Property Crimes"
+        },
+        {
+          "key": "weapon-charges",
+          "fileName": "Weapon Charges.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/Weapon Charges.webp",
+          "altText": "Firearm and Concealed Weapon Offenses Attorney Tampa FL",
+          "title": "Firearm & Concealed Weapon Offense Defense",
+          "description": "Defense against illegal firearm possession, carrying concealed weapons without a permit, and 10-20-Life sentence enhancements.",
+          "caption": "Fighting mandatory minimum firearm penalties and illegal weapon searches.",
+          "section": "Practice Areas / Weapon Charges"
+        },
+        {
+          "key": "white-collar-crimes",
+          "fileName": "White Collar Crimes.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/White Collar Crimes.webp",
+          "altText": "White Collar Financial Fraud Embezzlement Attorney Tampa",
+          "title": "White Collar Financial Crime & Fraud Defense",
+          "description": "Defense against embezzlement, money laundering, identity theft, and corporate financial fraud investigations in Florida.",
+          "caption": "Partnering with forensic accountants to dismantle state fraud calculations.",
+          "section": "Practice Areas / White Collar Crimes"
+        },
+        {
+          "key": "probation-violation",
+          "fileName": "probation Violance.webp",
+          "path": "/images/seo-services/criminal-defense-lawyer-tampa-fl/probation Violance.webp",
+          "altText": "Violation of Probation VOP Defense Attorney Tampa FL",
+          "title": "Violation of Probation (VOP) Defense Representation",
+          "description": "Defense for technical and substantive probation violations, fighting to prevent probation revocation and prison sentences.",
+          "caption": "Representing probationers at VOP hearings to retain freedom.",
+          "section": "Practice Areas / Probation Violations"
         }
       ]
     },
