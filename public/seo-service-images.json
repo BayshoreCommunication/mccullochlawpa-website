@@ -1,6 +1,6 @@
 {
   "totalCategories": 5,
-  "totalImages": 52,
+  "totalImages": 60,
   "servicePages": [
     {
       "id": "best-personal-injury-lawyer-tampa-car-accidents",
@@ -383,6 +383,86 @@
           "description": "Panoramic Tampa city view representing responsive domestic violence defense services available 24/7.",
           "caption": "Serving individuals facing domestic allegations across Tampa, Florida.",
           "section": "Serves & Locations Section"
+        },
+        {
+          "key": "spousal-battery",
+          "fileName": "spousal-battery.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+          "altText": "Spousal Battery Domestic Violence Defense Lawyer Tampa FL",
+          "title": "Spousal Battery Defense & Marital Allegations",
+          "description": "Aggressive legal representation for individuals accused of spousal battery or domestic assault between married partners in Hillsborough County.",
+          "caption": "Defending against spousal battery allegations and protecting domestic rights in Tampa.",
+          "section": "Practice Areas / Spousal Battery"
+        },
+        {
+          "key": "dating-violence",
+          "fileName": "dating-violence.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+          "altText": "Dating Violence Defense Attorney Tampa FL",
+          "title": "Dating Violence Accusations & Restraining Orders",
+          "description": "Strategic defense against dating violence charges under Florida Statute 784.046 for non-married romantic relationships.",
+          "caption": "Protecting your reputation and freedom from dating violence allegations in Tampa courts.",
+          "section": "Practice Areas / Dating Violence"
+        },
+        {
+          "key": "aggravated-domestic",
+          "fileName": "aggravated-domestic.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+          "altText": "Aggravated Domestic Assault Battery Lawyer Tampa",
+          "title": "Aggravated Domestic Assault & Deadly Weapon Defense",
+          "description": "Defending felony domestic violence charges involving allegations of deadly weapons or severe physical injury in Tampa.",
+          "caption": "Fighting severe felony domestic assault charges with experienced courtroom strategy.",
+          "section": "Practice Areas / Aggravated Assault"
+        },
+        {
+          "key": "elderly-domestic-abuse",
+          "fileName": "elderly-domestic-abuse.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/elderly-domestic-abuse.webp",
+          "altText": "Elderly Domestic Abuse Defense Attorney Tampa",
+          "title": "Elderly Domestic Abuse & Caregiver Allegation Defense",
+          "description": "Dedicated legal protection for family members and caregivers facing elder abuse or senior domestic violence claims in Florida.",
+          "caption": "Protecting family members and caregivers against elder domestic abuse accusations.",
+          "section": "Practice Areas / Elderly Abuse"
+        },
+        {
+          "key": "strangulation-domestic",
+          "fileName": "strangulation-domestic.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+          "altText": "Domestic Battery by Strangulation Defense Lawyer Tampa FL",
+          "title": "Domestic Battery by Strangulation Felony Defense",
+          "description": "Vigorous defense against 3rd-degree felony domestic strangulation charges under Florida Statute 784.041.",
+          "caption": "Challenging medical evidence and prosecutor claims in domestic strangulation cases.",
+          "section": "Practice Areas / Strangulation"
+        },
+        {
+          "key": "violation-of-domestic",
+          "fileName": "violation-of-domestic.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+          "altText": "Violation of Domestic Violence Injunction Restraining Order Lawyer Tampa",
+          "title": "Violation of Domestic Violence Injunction Defense",
+          "description": "Legal counsel for individuals accused of violating protective injunctions, no-contact orders, or restraining orders in Hillsborough County.",
+          "caption": "Defending against injunction violations and order of protection breaches in Tampa.",
+          "section": "Practice Areas / Injunction Violation"
+        },
+        {
+          "key": "child-abuse",
+          "fileName": "child-abuse.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/child-abuse.webp",
+          "altText": "Child Abuse and Endangerment Domestic Defense Attorney Tampa",
+          "title": "Child Abuse & Domestic Endangerment Defense",
+          "description": "Protecting parental rights and defending against child endangerment charges linked to domestic violence disputes.",
+          "caption": "Protecting parental rights and fighting false child abuse allegations in Tampa.",
+          "section": "Practice Areas / Child Abuse"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+          "altText": "Preserve Evidence After Tampa Domestic Violence Accusation",
+          "title": "Preserving Crucial Evidence for Domestic Violence Defense",
+          "description": "Essential guide to preserving text logs, photos, witness info, and surveillance video in the first 24 hours after a domestic violence arrest.",
+          "caption": "Gathering and securing key evidence to build a rock-solid domestic violence defense.",
+          "section": "Evidence Section / Case Preservation"
         }
       ]
     },

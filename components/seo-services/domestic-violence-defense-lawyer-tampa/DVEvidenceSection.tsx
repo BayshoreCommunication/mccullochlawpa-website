@@ -78,7 +78,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function DomesticViolenceEvidenceSection({
   title = "Which Evidence You Should Preserve After Tampa Domestic Violence Accusation",
   subTitle = "Preserving evidence is mandatory in first 24 hours after domestic violence. These can help your Tampa domestic violence defense lawyer to build your case.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/evidence-folder.png",
+  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
   ctaText = "Act fast. Evidence disappears quickly. Protect your rights and your future.",
   ctaButtonText = "Get a Free Case Review Today",
   items = defaultEvidenceItems,
