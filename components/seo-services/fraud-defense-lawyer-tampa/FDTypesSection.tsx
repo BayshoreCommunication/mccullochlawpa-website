@@ -39,7 +39,7 @@ const defaultCaseItems: FraudTypeItem[] = [
   {
     id: "tax-fraud-allegations",
     title: "Tax Fraud Allegations",
-    image: "/images/practice/fraud.png",
+    image: "/images/seo-services/fraud-defense-lawyer-tampa/Tax Fraud Allegation.webp",
     badgeIcon: <FaCalculator className="w-5 h-5 text-primary" />,
     description:
       "Tax fraud allegations often stem from simple clerical oversights or honest disagreements over deductions rather than actual criminal intent. You may find yourself under investigation because the government misread your financial history or flagged a reporting mistake as a deliberate act. Prosecutors are required to prove you acted with specific intent to deceive which is a high bar for them to clear. As your fraud defense lawyer Tampa, McCulloch Law challenges these claims by demanding concrete evidence of your state of mind. We strip away the prosecution's assumptions to determine if their case holds any real weight or if they are misinterpreting your actions.",
@@ -48,7 +48,7 @@ const defaultCaseItems: FraudTypeItem[] = [
   {
     id: "corporate-fraud-allegations",
     title: "Corporate Fraud Allegations",
-    image: "/images/practice/theft-crimes.png",
+    image: "/images/seo-services/fraud-defense-lawyer-tampa/Corporate Fraud Allegations.webp",
     badgeIcon: <FaBuilding className="w-5 h-5 text-primary" />,
     description:
       "Cases involving corporate fraud require a deep dive into complex financial landscapes. These situations often involve mountains of data, intricate transaction histories, and interactions between various stakeholders. It is easy for the government to paint an incomplete picture based on a select group of records that lack proper context. We refuse to accept their narrative at face value. Our approach involves auditing the same financial documents they present to ensure we understand the full story before we begin shaping your defense.",
@@ -57,7 +57,7 @@ const defaultCaseItems: FraudTypeItem[] = [
   {
     id: "federal-fraud-allegations",
     title: "Federal Fraud Allegations",
-    image: "/images/practice/misdemeanors.png",
+    image: "/images/seo-services/fraud-defense-lawyer-tampa/Federal Fraud Allegations.webp",
     badgeIcon: <FaGavel className="w-5 h-5 text-primary" />,
     description:
       "Federal fraud charges exist in a completely different world than state level offenses. The penalties are significantly more severe and the courtroom procedures are much stricter. Federal prosecutors have immense resources and specific mandates that make these cases particularly high stakes for anyone involved. McCulloch Law handles the unique pressures of federal court by structuring defenses that account for these rigid rules and the aggressive nature of federal investigations to ensure you are protected at every stage.",
@@ -66,7 +66,7 @@ const defaultCaseItems: FraudTypeItem[] = [
   {
     id: "identity-document-fraud",
     title: "Identity and Document Fraud",
-    image: "/images/practice/fraud.png",
+    image: "/images/seo-services/fraud-defense-lawyer-tampa/identity and Doccument.webp",
     badgeIcon: <FaIdCard className="w-5 h-5 text-primary" />,
     description:
       "This category includes a wide range of accusations involving falsified records and the unauthorized use of personal credentials. Charges can arise from anything from an alleged signature forgery to complex identity theft schemes. Even seemingly minor misrepresentations on legal forms can result in charges that escalate quickly from simple misdemeanors to serious felonies. Document fraud covers falsified documents and the misuse of someone else's identity. Even the wrongful use of a city name can lead to charges. Whatever the allegation, our fraud defense lawyer Tampa builds your defense around the facts.",

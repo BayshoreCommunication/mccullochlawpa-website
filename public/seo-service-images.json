@@ -1,6 +1,6 @@
 {
   "totalCategories": 5,
-  "totalImages": 89,
+  "totalImages": 93,
   "servicePages": [
     {
       "id": "best-personal-injury-lawyer-tampa-car-accidents",
@@ -731,6 +731,46 @@
           "description": "Downtown Tampa business district skyline representing defense of professionals and business owners against fraud charges.",
           "caption": "Trusted financial fraud defense attorneys based in Tampa, FL.",
           "section": "Serves & Locations Section"
+        },
+        {
+          "key": "corporate-fraud-allegations",
+          "fileName": "Corporate Fraud Allegations.webp",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/Corporate Fraud Allegations.webp",
+          "altText": "Corporate Fraud Allegations and Business Crime Defense Lawyer Tampa FL",
+          "title": "Corporate Fraud & Corporate Crime Legal Defense",
+          "description": "Strategic defense against corporate fraud allegations, executive white collar charges, securities fraud, and corporate compliance investigations in Tampa.",
+          "caption": "Defending corporate executives and business entities against complex fraud investigations.",
+          "section": "Practice Areas / Corporate Fraud"
+        },
+        {
+          "key": "federal-fraud-allegations",
+          "fileName": "Federal Fraud Allegations.webp",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/Federal Fraud Allegations.webp",
+          "altText": "Federal Wire Fraud and Mail Fraud Defense Attorney Tampa FL",
+          "title": "Federal Wire Fraud, Mail Fraud & Bank Fraud Defense",
+          "description": "Aggressive representation in U.S. District Court for federal wire fraud, mail fraud, bank fraud, and federal agency investigations across Middle District of Florida.",
+          "caption": "Protecting clients facing high-stakes federal fraud indictments and federal grand jury subpoenas.",
+          "section": "Practice Areas / Federal Fraud"
+        },
+        {
+          "key": "tax-fraud-allegation",
+          "fileName": "Tax Fraud Allegation.webp",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/Tax Fraud Allegation.webp",
+          "altText": "Tax Fraud Evasion IRS Audit Criminal Defense Lawyer Tampa FL",
+          "title": "Tax Fraud, IRS Criminal Audits & Evasion Defense",
+          "description": "Dedicated defense against state tax evasion, IRS criminal investigations, false return filings, and payroll tax fraud charges in Tampa.",
+          "caption": "Challenging IRS audit findings and state tax evasion accusations with experienced tax crime defense.",
+          "section": "Practice Areas / Tax Fraud"
+        },
+        {
+          "key": "identity-and-document-fraud",
+          "fileName": "identity and Doccument.webp",
+          "path": "/images/seo-services/fraud-defense-lawyer-tampa/identity and Doccument.webp",
+          "altText": "Identity Theft and Document Forgery Defense Attorney Tampa FL",
+          "title": "Identity Theft & Document Forgery Legal Defense",
+          "description": "Comprehensive legal protection against identity theft, credit card fraud, document falsification, and fraudulent practice charges under Florida law.",
+          "caption": "Protecting individuals accused of identity theft, forged documents, and unauthorized electronic transactions.",
+          "section": "Practice Areas / Identity & Document Fraud"
         }
       ]
     },
