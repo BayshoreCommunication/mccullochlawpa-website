@@ -24,6 +24,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/criminal-defense-lawyer-tampa-fl",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
 };
 
 export default function CriminalDefenseLawyerTampaFLPage() {

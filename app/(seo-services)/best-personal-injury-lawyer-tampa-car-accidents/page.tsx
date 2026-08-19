@@ -28,6 +28,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/best-personal-injury-lawyer-tampa-car-accidents",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
 };
 
 export default function BestPersonalInjuryLawyerTampaCarAccidentsPage() {

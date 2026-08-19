@@ -23,6 +23,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/fraud-defense-lawyer-tampa",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+    },
+  },
 };
 
 export default function FraudDefenseLawyerTampaPage() {
