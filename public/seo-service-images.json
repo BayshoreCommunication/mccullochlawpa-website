@@ -1,6 +1,6 @@
 {
   "totalCategories": 5,
-  "totalImages": 60,
+  "totalImages": 71,
   "servicePages": [
     {
       "id": "best-personal-injury-lawyer-tampa-car-accidents",
@@ -639,6 +639,116 @@
           "description": "Tampa city skyline view representing local, experienced legal defense against serious felony charges.",
           "caption": "Reputable Tampa FL defense law firm fighting for your future.",
           "section": "Serves & Locations Section"
+        },
+        {
+          "key": "sexual-battery",
+          "fileName": "sexual-battery.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/sexual-battery.webp",
+          "altText": "Sexual Battery Rape Defense Attorney Lawyer Tampa FL",
+          "title": "Sexual Battery & Rape Criminal Defense",
+          "description": "Aggressive legal representation for individuals facing life felony sexual battery and assault charges in Hillsborough County courts.",
+          "caption": "Vigorous courtroom defense against serious sexual battery and rape allegations in Tampa.",
+          "section": "Practice Areas / Sexual Battery"
+        },
+        {
+          "key": "lewd-lascivious",
+          "fileName": "lewd-lascivious.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/lewd-lascivious.webp",
+          "altText": "Lewd and Lascivious Molestation Defense Lawyer Tampa",
+          "title": "Lewd & Lascivious Molestation Defense",
+          "description": "Strategic defense against lewd or lascivious conduct charges involving minors under Florida Statute 800.04.",
+          "caption": "Protecting client reputation and freedom against lewd and lascivious allegations.",
+          "section": "Practice Areas / Lewd & Lascivious"
+        },
+        {
+          "key": "child-pornography",
+          "fileName": "child-pornography.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/child-pornography.webp",
+          "altText": "Child Pornography Exploitation Cyber Forensics Defense Attorney Tampa",
+          "title": "Child Pornography & Cyber Exploitation Defense",
+          "description": "Comprehensive digital forensics and defense representation for state and federal child pornography charges.",
+          "caption": "Challenging digital evidence and search warrant validity in cyber exploitation cases.",
+          "section": "Practice Areas / Cyber Exploitation"
+        },
+        {
+          "key": "online-enticement",
+          "fileName": "online-enticement.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/online-enticement.webp",
+          "altText": "Online Enticement Cyber Sting Operation Defense Lawyer Tampa FL",
+          "title": "Online Enticement & Computer Sting Defense",
+          "description": "Defending against law enforcement sting operations and internet solicitation charges across Tampa Bay.",
+          "caption": "Exposing entrapment and improper sting tactics in online enticement cases.",
+          "section": "Practice Areas / Online Enticement"
+        },
+        {
+          "key": "statutory-rape",
+          "fileName": "statutory-rape.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/statutory-rape.webp",
+          "altText": "Statutory Rape Unlawful Sexual Activity Attorney Tampa",
+          "title": "Statutory Rape & Unlawful Conduct Defense",
+          "description": "Dedicated legal defense for statutory rape accusations, evaluating Romeo & Juliet statutory exceptions in Florida.",
+          "caption": "Navigating complex statutory age laws and defending clients in Hillsborough County.",
+          "section": "Practice Areas / Statutory Rape"
+        },
+        {
+          "key": "prostitution-solicitation",
+          "fileName": "prostitution-solicitation.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/prostitution-solicitation.webp",
+          "altText": "Prostitution and Solicitation Defense Lawyer Tampa FL",
+          "title": "Prostitution & Solicitation Legal Representation",
+          "description": "Defending misdemeanor and felony prostitution, solicitation, and human trafficking undercover sting operations.",
+          "caption": "Protecting client privacy and defending against solicitation arrests in Tampa.",
+          "section": "Practice Areas / Prostitution & Solicitation"
+        },
+        {
+          "key": "indecent-exposure",
+          "fileName": "indecent-exposure.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/indecent-exposure.webp",
+          "altText": "Indecent Exposure Defense Attorney Tampa FL",
+          "title": "Indecent Exposure & Public Misconduct Defense",
+          "description": "Defending against public exposure and lewdness accusations to prevent mandatory sex offender registry consequences.",
+          "caption": "Fighting public exposure charges to safeguard clients from registration requirements.",
+          "section": "Practice Areas / Indecent Exposure"
+        },
+        {
+          "key": "digital-harassment",
+          "fileName": "digital-harassment.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/digital-harassment.webp",
+          "altText": "Digital Sexual Harassment Non-consensual Image Lawyer Tampa",
+          "title": "Digital Sexual Harassment & Cyber Extortion Defense",
+          "description": "Legal counsel for accusations of non-consensual image sharing, digital harassment, and cyber extortion.",
+          "caption": "Analyzing digital transmission metadata to refute cyber harassment allegations.",
+          "section": "Practice Areas / Digital Harassment"
+        },
+        {
+          "key": "sexual-purpose-kidnapping",
+          "fileName": "sexual-purpose-kidnapping.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/sexual-purpose-kidnapping.webp",
+          "altText": "Kidnapping for Sexual Purpose Defense Lawyer Tampa FL",
+          "title": "Sexual Purpose Kidnapping & Stacked Felony Defense",
+          "description": "Vigorous trial defense against complex felony charges combining kidnapping and alleged sexual offenses.",
+          "caption": "Challenging stacked felony counts and consecutive sentencing threats in court.",
+          "section": "Practice Areas / Sexual Purpose Kidnapping"
+        },
+        {
+          "key": "sex-trafficking",
+          "fileName": "sex-trafficking.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/sex-trafficking.webp",
+          "altText": "Sex Human Trafficking Defense Attorney Tampa FL",
+          "title": "Human Sex Trafficking Federal & State Defense",
+          "description": "High-level legal defense against state human trafficking charges and federal 18 U.S.C. \u00a7 1591 indictments.",
+          "caption": "Defending clients against severe federal and state sex trafficking allegations.",
+          "section": "Practice Areas / Sex Trafficking"
+        },
+        {
+          "key": "failure-to-register",
+          "fileName": "failure-to-register.webp",
+          "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/failure-to-register.webp",
+          "altText": "Failure to Register Sex Offender Defense Lawyer Tampa",
+          "title": "Failure to Register Sex Offender Compliance Defense",
+          "description": "Defending against 3rd-degree felony failure to register charges and address update compliance sweeps in Florida.",
+          "caption": "Resolving sex offender registry compliance violations and address reporting disputes.",
+          "section": "Practice Areas / Failure to Register"
         }
       ]
     }

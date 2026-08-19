@@ -45,7 +45,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "sexual-battery",
     title: "Sexual Battery or Rape",
-    image: "/images/practice/sex-crimes.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/sexual-battery.webp",
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       "Sexual battery occurs as oral, anal or vaginal penetration without victim's consent. The charge escalates to life felony when victim is below 12 years old. A deadly weapon involved in the offense produces same elevated classification. Hillsborough County prosecutors build these cases from the moment of arrest. Therefore defense must respond just as quickly.",
@@ -54,7 +54,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "lewd-lascivious",
     title: "Lewd and Lascivious Offenses",
-    image: "/images/practice/juvenile-crimes.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/lewd-lascivious.webp",
     badgeIcon: <FaUsers className="w-5 h-5 text-primary" />,
     description:
       "Florida Law addresses sexual conduct with minors under 16. The law covers four categories such as battery, molestation, conduct and exhibition. Each charged as a separate offense. Multiple counts can stack against one defendant from a single incident. A conviction under this statute requires sex offender registration in Florida. Single misidentification at this charge level produces a lifelong legal consequence.",
@@ -63,7 +63,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "child-pornography",
     title: "Child Pornography and Exploitation",
-    image: "/images/practice/an-overview.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/child-pornography.webp",
     badgeIcon: <FaLock className="w-5 h-5 text-primary" />,
     description:
       "Florida Statute treats each individual image or video file as a separate criminal count. A single device search can generate dozens of simultaneous charges against the same defendant. Federal prosecutors in Middle District frequently co-charge these cases alongside state prosecution. That doubles the legal exposure a defendant faces from the start.",
@@ -72,7 +72,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "online-enticement",
     title: "Online Enticement and Solicitation",
-    image: "/images/practice/assault-battery-stalking.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/online-enticement.webp",
     badgeIcon: <FaGlobe className="w-5 h-5 text-primary" />,
     description:
       "Florida Act criminalizes soliciting minors through electronic communication. Tampa law enforcement runs regular sting operations using undercover officers posing as minors online. Entrapment becomes a viable defense when investigators exceed their lawful operational boundaries.",
@@ -81,7 +81,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "statutory-rape",
     title: "Statutory Rape or Unlawful Sexual Conduct",
-    image: "/images/practice/misdemeanors.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/statutory-rape.webp",
     badgeIcon: <FaBalanceScale className="w-5 h-5 text-primary" />,
     description:
       "Florida code prohibits sexual activity with anyone under 18 without exception. The state does not need to prove force or deception to secure a conviction here. The alleged victim's age alone satisfies prosecution's primary burden of proof. Florida's Romeo and Juliet exception applies in narrow age gap situations between teenagers.",
@@ -90,7 +90,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "prostitution-solicitation",
     title: "Prostitution and Solicitation",
-    image: "/images/practice/robbery.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/prostitution-solicitation.webp",
     badgeIcon: <FaUserSecret className="w-5 h-5 text-primary" />,
     description:
       "Statute of Florida criminalizes offering or receiving sexual services for anything of value. A first offense is a misdemeanor. However repeat charges escalate quickly into felony territory. Tampa law enforcement uses undercover operations in these cases on a regular basis. Entrapment defenses can be more robust than clients anticipate when supported by facts.",
@@ -99,7 +99,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "indecent-exposure",
     title: "Indecent Exposure",
-    image: "/images/practice/injunctions.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/indecent-exposure.webp",
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "State Law hold account when someone exposes their sexual organs against another person's will. Many of these charges come from disputed facts or misidentification in public spaces. Certain aggravating circumstances can still trigger sex offender registration even within this offense classification.",
@@ -108,7 +108,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "digital-harassment",
     title: "Digital Sexual Harassment",
-    image: "/images/practice/fraud.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/digital-harassment.webp",
     badgeIcon: <FaMobileAlt className="w-5 h-5 text-primary" />,
     description:
       "Sharing intimate images of another person without their consent is serious crime and illegal in Florida. The charge applies even when the defendant originally received those images with full permission at the time. Digital forensics reveals the process of image transmission, receiver and sender device.",
@@ -117,7 +117,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "sexual-purpose-kidnapping",
     title: "Sexual Purpose Kidnapping",
-    image: "/images/practice/homicide-attempted-homicide.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/sexual-purpose-kidnapping.webp",
     badgeIcon: <FaGavel className="w-5 h-5 text-primary" />,
     description:
       "Prosecutors pursue kidnapping and sex offense charges together in court. Courts often impose sentences consecutively and push total exposure into decades without early release. Removal of stacked charge approach represents greatest impact of targeted motion practice.",
@@ -126,7 +126,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "sex-trafficking",
     title: "Sex Trafficking",
-    image: "/images/practice/an-overview-criminal-injury.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/sex-trafficking.webp",
     badgeIcon: <FaUsers className="w-5 h-5 text-primary" />,
     description:
       "State law targets individuals recruiting, transporting or financially benefiting from another person's exploitation. The law applies to indirect financial involvement. Hillsborough County prosecutors interpret that scope broadly. Federal charges under 18 U.S.C. § 1591 frequently accompany state charges in Tampa trafficking cases.",
@@ -135,7 +135,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "failure-to-register",
     title: "Failure to Register",
-    image: "/images/practice/probation.png",
+    image: "/images/seo-services/sex-crime-defense-lawyer-tampa/failure-to-register.webp",
     badgeIcon: <FaSearch className="w-5 h-5 text-primary" />,
     description:
       "Sex offenders with registration must update their address within 48 hours of moving. Missing that window is a third degree felony regardless of the reason for delay. Tampa law enforcement conducts regular compliance sweeps throughout Hillsborough County each year. Multiple missed periods produce multiple stacked felony charges against the same person.",
