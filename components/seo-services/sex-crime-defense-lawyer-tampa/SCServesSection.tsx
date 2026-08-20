@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaShieldAlt, FaCar, FaGavel, FaCheckCircle } from "react-icons/fa";
 
 export interface SCServesSectionProps {
@@ -9,6 +10,24 @@ export interface SCServesSectionProps {
   personalInjuryItems?: string[];
   criminalDefenseItems?: string[];
 }
+
+const getServiceHref = (item: string): string => {
+  switch (item) {
+    case "Auto Accident":
+      return "/best-personal-injury-lawyer-tampa-car-accidents";
+    case "Domestic Abuse":
+    case "Domestic Violence":
+      return "/domestic-violence-defense-lawyer-tampa";
+    case "Fraud":
+      return "/fraud-defense-lawyer-tampa";
+    case "Sex Crimes":
+      return "/sex-crime-defense-lawyer-tampa";
+    case "Criminal Defense":
+      return "/criminal-defense-lawyer-tampa-fl";
+    default:
+      return "";
+  }
+};
 
 const defaultPersonalInjury = [
   "Auto Accident",
@@ -98,44 +117,71 @@ export default function SCServesSection({
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {personalInjuryItems.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium hover:border-primary/50 transition-colors"
-                >
-                  <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span>{item}</span>
-                </div>
-              ))}
+              {personalInjuryItems.map((item, idx) => {
+                const href = getServiceHref(item);
+                return href ? (
+                  <Link
+                    key={idx}
+                    href={href}
+                    className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium hover:border-primary/50 hover:text-white transition-colors cursor-pointer group"
+                  >
+                    <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <span className="group-hover:text-primary transition-colors">{item}</span>
+                  </Link>
+                ) : (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium transition-colors"
+                  >
+                    <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <span>{item}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 
           {/* CRIMINAL DEFENSE CARD */}
           <div className="bg-[#0e2238] rounded-3xl p-6 sm:p-8 border border-slate-700/60 shadow-2xl flex flex-col">
-            <div className="flex items-center gap-4 mb-6 border-b border-slate-700/60 pb-4">
-              <div className="w-12 h-12 rounded-2xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0">
+            <Link
+              href="/criminal-defense-lawyer-tampa-fl"
+              className="group flex items-center gap-4 mb-6 border-b border-slate-700/60 pb-4"
+            >
+              <div className="w-12 h-12 rounded-2xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary shrink-0 group-hover:scale-105 transition-transform">
                 <FaGavel className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight group-hover:text-primary transition-colors">
                   Criminal Defense
                 </h3>
                 <p className="text-xs text-slate-400">
                   Aggressive legal defense against misdemeanor and felony charges
                 </p>
               </div>
-            </div>
+            </Link>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {criminalDefenseItems.map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium hover:border-primary/50 transition-colors"
-                >
-                  <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span>{item}</span>
-                </div>
-              ))}
+              {criminalDefenseItems.map((item, idx) => {
+                const href = getServiceHref(item);
+                return href ? (
+                  <Link
+                    key={idx}
+                    href={href}
+                    className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium hover:border-primary/50 hover:text-white transition-colors cursor-pointer group"
+                  >
+                    <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <span className="group-hover:text-primary transition-colors">{item}</span>
+                  </Link>
+                ) : (
+                  <div
+                    key={idx}
+                    className="flex items-center gap-2.5 bg-[#162a42] px-3.5 py-2.5 rounded-xl border border-slate-700/40 text-slate-200 text-xs sm:text-sm font-medium transition-colors"
+                  >
+                    <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                    <span>{item}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
 

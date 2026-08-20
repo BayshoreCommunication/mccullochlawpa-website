@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaUserShield, FaCar, FaGavel, FaCheckCircle } from "react-icons/fa";
 
 export interface PIServesSectionProps {
@@ -9,6 +10,24 @@ export interface PIServesSectionProps {
   personalInjuryList?: string[];
   criminalDefenseList?: string[];
 }
+
+const getServiceHref = (item: string): string => {
+  switch (item) {
+    case "Auto Accident":
+      return "/best-personal-injury-lawyer-tampa-car-accidents";
+    case "Domestic Abuse":
+    case "Domestic Violence":
+      return "/domestic-violence-defense-lawyer-tampa";
+    case "Fraud":
+      return "/fraud-defense-lawyer-tampa";
+    case "Sex Crimes":
+      return "/sex-crime-defense-lawyer-tampa";
+    case "Criminal Defense":
+      return "/criminal-defense-lawyer-tampa-fl";
+    default:
+      return "";
+  }
+};
 
 const defaultPersonalInjury = [
   "Auto Accident",
@@ -96,47 +115,78 @@ export default function PIServesSection({
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {personalInjuryList.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 hover:border-primary/40 hover:bg-white transition-all duration-200"
-                  >
-                    <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    <span className="text-xs sm:text-sm font-semibold text-slate-700">
-                      {item}
-                    </span>
-                  </div>
-                ))}
+                {personalInjuryList.map((item, idx) => {
+                  const href = getServiceHref(item);
+                  return href ? (
+                    <Link
+                      key={idx}
+                      href={href}
+                      className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 hover:border-primary/40 hover:bg-white hover:text-primary transition-all duration-200 cursor-pointer group"
+                    >
+                      <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-primary transition-colors">
+                        {item}
+                      </span>
+                    </Link>
+                  ) : (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 transition-all duration-200"
+                    >
+                      <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-slate-700">
+                        {item}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
 
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md flex flex-col justify-between">
             <div>
-              <div className="flex items-center gap-4 mb-6 border-b border-slate-100 pb-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#081524] flex items-center justify-center text-primary shrink-0 shadow-md">
+              <Link
+                href="/criminal-defense-lawyer-tampa-fl"
+                className="group flex items-center gap-4 mb-6 border-b border-slate-100 pb-4"
+              >
+                <div className="w-12 h-12 rounded-2xl bg-[#081524] flex items-center justify-center text-primary shrink-0 shadow-md group-hover:scale-105 transition-transform">
                   <FaGavel className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
+                  <h3 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight group-hover:text-primary transition-colors">
                     Criminal Defense
                   </h3>
                   <p className="text-xs text-slate-500 font-sans">Hillsborough County &amp; Tampa</p>
                 </div>
-              </div>
+              </Link>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {criminalDefenseList.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 hover:border-primary/40 hover:bg-white transition-all duration-200"
-                  >
-                    <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    <span className="text-xs sm:text-sm font-semibold text-slate-700">
-                      {item}
-                    </span>
-                  </div>
-                ))}
+                {criminalDefenseList.map((item, idx) => {
+                  const href = getServiceHref(item);
+                  return href ? (
+                    <Link
+                      key={idx}
+                      href={href}
+                      className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 hover:border-primary/40 hover:bg-white hover:text-primary transition-all duration-200 cursor-pointer group"
+                    >
+                      <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-primary transition-colors">
+                        {item}
+                      </span>
+                    </Link>
+                  ) : (
+                    <div
+                      key={idx}
+                      className="flex items-center gap-3 bg-slate-50/80 p-3 rounded-xl border border-slate-200/60 transition-all duration-200"
+                    >
+                      <FaCheckCircle className="w-4 h-4 text-primary shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-slate-700">
+                        {item}
+                      </span>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

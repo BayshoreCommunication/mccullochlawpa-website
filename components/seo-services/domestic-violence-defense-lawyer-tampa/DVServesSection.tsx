@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaUserShield,
   FaBalanceScale,
@@ -43,6 +44,7 @@ export interface PracticeAreaItem {
   id: string;
   name: string;
   icon: React.ReactNode;
+  href?: string;
 }
 
 export interface DVServesSectionProps {
@@ -53,7 +55,7 @@ export interface DVServesSectionProps {
 }
 
 const personalInjuryItems: PracticeAreaItem[] = [
-  { id: "auto-accident", name: "Auto Accident", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
+  { id: "auto-accident", name: "Auto Accident", icon: <FaCar className="w-4 h-4 text-slate-700" />, href: "/best-personal-injury-lawyer-tampa-car-accidents" },
   { id: "bicycle-accident", name: "Bicycle Accident", icon: <FaBicycle className="w-4 h-4 text-slate-700" /> },
   { id: "slip-fall", name: "Slip, Trip and Fall", icon: <FaWalking className="w-4 h-4 text-slate-700" /> },
   { id: "truck-accidents", name: "Truck Accidents", icon: <FaTruck className="w-4 h-4 text-slate-700" /> },
@@ -72,11 +74,11 @@ const criminalDefenseCol1: PracticeAreaItem[] = [
   { id: "battery", name: "Battery", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" /> },
   { id: "stalking", name: "Stalking", icon: <FaUserSecret className="w-4 h-4 text-slate-700" /> },
   { id: "arson-mischief", name: "Arson and Criminal Mischief", icon: <FaFire className="w-4 h-4 text-slate-700" /> },
-  { id: "domestic-abuse", name: "Domestic Abuse", icon: <FaHome className="w-4 h-4 text-slate-700" /> },
+  { id: "domestic-abuse", name: "Domestic Abuse", icon: <FaHome className="w-4 h-4 text-slate-700" />, href: "/domestic-violence-defense-lawyer-tampa" },
   { id: "drug-crimes", name: "Drug Crimes", icon: <FaPills className="w-4 h-4 text-slate-700" /> },
   { id: "dui", name: "DUI", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
   { id: "felonies-probation", name: "Felonies / Probation", icon: <FaGavel className="w-4 h-4 text-slate-700" /> },
-  { id: "fraud", name: "Fraud", icon: <FaFileAlt className="w-4 h-4 text-slate-700" /> },
+  { id: "fraud", name: "Fraud", icon: <FaFileAlt className="w-4 h-4 text-slate-700" />, href: "/fraud-defense-lawyer-tampa" },
   { id: "homicide", name: "Homicide / Attempted Homicide", icon: <FaBalanceScale className="w-4 h-4 text-slate-700" /> },
 ];
 
@@ -88,7 +90,7 @@ const criminalDefenseCol2: PracticeAreaItem[] = [
   { id: "robbery", name: "Robbery", icon: <FaMoneyBillWave className="w-4 h-4 text-slate-700" /> },
   { id: "theft-crimes", name: "Theft Crimes", icon: <FaFolder className="w-4 h-4 text-slate-700" /> },
   { id: "seal-expunge", name: "Seal / Expunge", icon: <FaFolder className="w-4 h-4 text-slate-700" /> },
-  { id: "sex-crimes", name: "Sex Crimes", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" /> },
+  { id: "sex-crimes", name: "Sex Crimes", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" />, href: "/sex-crime-defense-lawyer-tampa" },
   { id: "violation-probation", name: "Violation of Probation", icon: <FaClipboardList className="w-4 h-4 text-slate-700" /> },
   { id: "weapons-firearms", name: "Weapons & Firearms Charges", icon: <FaCrosshairs className="w-4 h-4 text-slate-700" /> },
   { id: "suspended-license", name: "Driving with a Suspended or Revoked License", icon: <FaIdCard className="w-4 h-4 text-slate-700" /> },
@@ -194,68 +196,116 @@ export default function DVServesSection({
 
               {/* List of Personal Injury Items */}
               <div className="flex flex-col divide-y divide-slate-100">
-                {personalInjuryItems.map((item) => (
-                  <div
-                    key={item.id}
-                    className="flex items-center gap-3.5 py-2.5 px-2 hover:bg-slate-50 rounded-xl transition-colors group"
-                  >
-                    <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                      {item.icon}
+                {personalInjuryItems.map((item) =>
+                  item.href ? (
+                    <Link
+                      key={item.id}
+                      href={item.href}
+                      className="flex items-center gap-3.5 py-2.5 px-2 hover:bg-slate-50 rounded-xl transition-colors group cursor-pointer"
+                    >
+                      <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
+                        {item.icon}
+                      </div>
+                      <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
+                        {item.name}
+                      </span>
+                    </Link>
+                  ) : (
+                    <div
+                      key={item.id}
+                      className="flex items-center gap-3.5 py-2.5 px-2 rounded-xl"
+                    >
+                      <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm">
+                        {item.icon}
+                      </div>
+                      <span className="text-xs sm:text-sm font-semibold text-slate-800">
+                        {item.name}
+                      </span>
                     </div>
-                    <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                      {item.name}
-                    </span>
-                  </div>
-                ))}
+                  )
+                )}
               </div>
             </div>
 
             {/* COLUMN 2: CRIMINAL DEFENSE (7 cols on md) */}
             <div className="md:col-span-7 bg-[#FFFDF9] rounded-3xl p-5 sm:p-6 border border-amber-200/60 shadow-md flex flex-col h-full">
               {/* Header Pill */}
-              <div className="w-full bg-primary text-slate-950 rounded-full py-3 px-5 flex items-center justify-center gap-3 shadow-md mb-6">
+              <Link
+                href="/criminal-defense-lawyer-tampa-fl"
+                className="w-full bg-primary text-slate-950 rounded-full py-3 px-5 flex items-center justify-center gap-3 shadow-md mb-6 hover:opacity-90 transition-opacity"
+              >
                 <div className="w-7 h-7 rounded-full bg-white border border-slate-950/20 flex items-center justify-center text-slate-950 shrink-0">
                   <FaBalanceScale className="w-4 h-4 text-slate-950" />
                 </div>
                 <span className="font-bold text-sm tracking-wider uppercase text-slate-950">
                   CRIMINAL DEFENSE
                 </span>
-              </div>
+              </Link>
 
               {/* 2 Sub-Columns Grid */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
                 {/* Sub-Column 1 */}
                 <div className="flex flex-col divide-y divide-slate-100">
-                  {criminalDefenseCol1.map((item) => (
-                    <div
-                      key={item.id}
-                      className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group"
-                    >
-                      <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                        {item.icon}
+                  {criminalDefenseCol1.map((item) =>
+                    item.href ? (
+                      <Link
+                        key={item.id}
+                        href={item.href}
+                        className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group cursor-pointer"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
+                          {item.icon}
+                        </div>
+                        <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
+                          {item.name}
+                        </span>
+                      </Link>
+                    ) : (
+                      <div
+                        key={item.id}
+                        className="flex items-center gap-3 py-2.5 px-1.5 rounded-xl"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm">
+                          {item.icon}
+                        </div>
+                        <span className="text-xs sm:text-sm font-semibold text-slate-800">
+                          {item.name}
+                        </span>
                       </div>
-                      <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                        {item.name}
-                      </span>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
 
                 {/* Sub-Column 2 */}
                 <div className="flex flex-col divide-y divide-slate-100">
-                  {criminalDefenseCol2.map((item) => (
-                    <div
-                      key={item.id}
-                      className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group"
-                    >
-                      <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
-                        {item.icon}
+                  {criminalDefenseCol2.map((item) =>
+                    item.href ? (
+                      <Link
+                        key={item.id}
+                        href={item.href}
+                        className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group cursor-pointer"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
+                          {item.icon}
+                        </div>
+                        <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
+                          {item.name}
+                        </span>
+                      </Link>
+                    ) : (
+                      <div
+                        key={item.id}
+                        className="flex items-center gap-3 py-2.5 px-1.5 rounded-xl"
+                      >
+                        <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm">
+                          {item.icon}
+                        </div>
+                        <span className="text-xs sm:text-sm font-semibold text-slate-800">
+                          {item.name}
+                        </span>
                       </div>
-                      <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
-                        {item.name}
-                      </span>
-                    </div>
-                  ))}
+                    )
+                  )}
                 </div>
               </div>
 
