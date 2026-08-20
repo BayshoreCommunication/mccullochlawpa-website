@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaUserShield,
   FaBalanceScale,
@@ -44,7 +43,6 @@ export interface PracticeAreaItem {
   id: string;
   name: string;
   icon: React.ReactNode;
-  href?: string;
 }
 
 export interface DVServesSectionProps {
@@ -55,47 +53,47 @@ export interface DVServesSectionProps {
 }
 
 const personalInjuryItems: PracticeAreaItem[] = [
-  { id: "auto-accident", name: "Auto Accident", icon: <FaCar className="w-4 h-4 text-slate-700" />, href: "/practice-areas/auto-accidents" },
-  { id: "bicycle-accident", name: "Bicycle Accident", icon: <FaBicycle className="w-4 h-4 text-slate-700" />, href: "/practice-areas/bicycle-accidents" },
-  { id: "slip-fall", name: "Slip, Trip and Fall", icon: <FaWalking className="w-4 h-4 text-slate-700" />, href: "/practice-areas/slip-and-fall" },
-  { id: "truck-accidents", name: "Truck Accidents", icon: <FaTruck className="w-4 h-4 text-slate-700" />, href: "/practice-areas/truck-accidents" },
-  { id: "motorcycle-accidents", name: "Motorcycle Accidents", icon: <FaMotorcycle className="w-4 h-4 text-slate-700" />, href: "/practice-areas/motorcycle-accidents" },
-  { id: "rideshare-accident", name: "Uber, UberEats and Lyft Accident", icon: <FaCar className="w-4 h-4 text-slate-700" />, href: "/practice-areas/uber-lyft-accidents" },
-  { id: "premises-liability", name: "Premises Liability", icon: <FaBuilding className="w-4 h-4 text-slate-700" />, href: "/practice-areas/premises-liability" },
-  { id: "medical-malpractice", name: "Medical Malpractice", icon: <FaPlusSquare className="w-4 h-4 text-slate-700" />, href: "/practice-areas/medical-malpractice" },
-  { id: "products-liability", name: "Products Liability", icon: <FaBoxOpen className="w-4 h-4 text-slate-700" />, href: "/practice-areas/product-liability" },
-  { id: "wrongful-death", name: "Wrongful Death", icon: <FaBalanceScale className="w-4 h-4 text-slate-700" />, href: "/practice-areas/wrongful-death" },
-  { id: "fatal-accidents", name: "Fatal Accidents", icon: <FaExclamationTriangle className="w-4 h-4 text-slate-700" />, href: "/practice-areas/fatal-accidents" },
-  { id: "dog-bites", name: "Dog Bites", icon: <FaDog className="w-4 h-4 text-slate-700" />, href: "/practice-areas/dog-bites" },
+  { id: "auto-accident", name: "Auto Accident", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
+  { id: "bicycle-accident", name: "Bicycle Accident", icon: <FaBicycle className="w-4 h-4 text-slate-700" /> },
+  { id: "slip-fall", name: "Slip, Trip and Fall", icon: <FaWalking className="w-4 h-4 text-slate-700" /> },
+  { id: "truck-accidents", name: "Truck Accidents", icon: <FaTruck className="w-4 h-4 text-slate-700" /> },
+  { id: "motorcycle-accidents", name: "Motorcycle Accidents", icon: <FaMotorcycle className="w-4 h-4 text-slate-700" /> },
+  { id: "rideshare-accident", name: "Uber, UberEats and Lyft Accident", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
+  { id: "premises-liability", name: "Premises Liability", icon: <FaBuilding className="w-4 h-4 text-slate-700" /> },
+  { id: "medical-malpractice", name: "Medical Malpractice", icon: <FaPlusSquare className="w-4 h-4 text-slate-700" /> },
+  { id: "products-liability", name: "Products Liability", icon: <FaBoxOpen className="w-4 h-4 text-slate-700" /> },
+  { id: "wrongful-death", name: "Wrongful Death", icon: <FaBalanceScale className="w-4 h-4 text-slate-700" /> },
+  { id: "fatal-accidents", name: "Fatal Accidents", icon: <FaExclamationTriangle className="w-4 h-4 text-slate-700" /> },
+  { id: "dog-bites", name: "Dog Bites", icon: <FaDog className="w-4 h-4 text-slate-700" /> },
 ];
 
 const criminalDefenseCol1: PracticeAreaItem[] = [
-  { id: "assault", name: "Assault", icon: <FaFistRaised className="w-4 h-4 text-slate-700" />, href: "/practice-areas/assault" },
-  { id: "battery", name: "Battery", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" />, href: "/practice-areas/battery" },
-  { id: "stalking", name: "Stalking", icon: <FaUserSecret className="w-4 h-4 text-slate-700" />, href: "/practice-areas/stalking" },
-  { id: "arson-mischief", name: "Arson and Criminal Mischief", icon: <FaFire className="w-4 h-4 text-slate-700" />, href: "/practice-areas/arson" },
-  { id: "domestic-abuse", name: "Domestic Abuse", icon: <FaHome className="w-4 h-4 text-slate-700" />, href: "/domestic-violence-defense-lawyer-tampa" },
-  { id: "drug-crimes", name: "Drug Crimes", icon: <FaPills className="w-4 h-4 text-slate-700" />, href: "/practice-areas/drug-crimes" },
-  { id: "dui", name: "DUI", icon: <FaCar className="w-4 h-4 text-slate-700" />, href: "/practice-areas/dui" },
-  { id: "felonies-probation", name: "Felonies / Probation", icon: <FaGavel className="w-4 h-4 text-slate-700" />, href: "/practice-areas/felonies" },
-  { id: "fraud", name: "Fraud", icon: <FaFileAlt className="w-4 h-4 text-slate-700" />, href: "/practice-areas/fraud" },
-  { id: "homicide", name: "Homicide / Attempted Homicide", icon: <FaBalanceScale className="w-4 h-4 text-slate-700" />, href: "/practice-areas/homicide" },
+  { id: "assault", name: "Assault", icon: <FaFistRaised className="w-4 h-4 text-slate-700" /> },
+  { id: "battery", name: "Battery", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" /> },
+  { id: "stalking", name: "Stalking", icon: <FaUserSecret className="w-4 h-4 text-slate-700" /> },
+  { id: "arson-mischief", name: "Arson and Criminal Mischief", icon: <FaFire className="w-4 h-4 text-slate-700" /> },
+  { id: "domestic-abuse", name: "Domestic Abuse", icon: <FaHome className="w-4 h-4 text-slate-700" /> },
+  { id: "drug-crimes", name: "Drug Crimes", icon: <FaPills className="w-4 h-4 text-slate-700" /> },
+  { id: "dui", name: "DUI", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
+  { id: "felonies-probation", name: "Felonies / Probation", icon: <FaGavel className="w-4 h-4 text-slate-700" /> },
+  { id: "fraud", name: "Fraud", icon: <FaFileAlt className="w-4 h-4 text-slate-700" /> },
+  { id: "homicide", name: "Homicide / Attempted Homicide", icon: <FaBalanceScale className="w-4 h-4 text-slate-700" /> },
 ];
 
 const criminalDefenseCol2: PracticeAreaItem[] = [
-  { id: "injunctions", name: "Injunctions", icon: <FaFileSignature className="w-4 h-4 text-slate-700" />, href: "/practice-areas/injunctions" },
-  { id: "burglary-trespass", name: "Burglary and Trespass", icon: <FaMask className="w-4 h-4 text-slate-700" />, href: "/practice-areas/burglary" },
-  { id: "juvenile-crimes", name: "Juvenile Crimes", icon: <FaUsers className="w-4 h-4 text-slate-700" />, href: "/practice-areas/juvenile-crimes" },
-  { id: "misdemeanors", name: "Misdemeanors", icon: <FaExclamationCircle className="w-4 h-4 text-slate-700" />, href: "/practice-areas/misdemeanors" },
-  { id: "robbery", name: "Robbery", icon: <FaMoneyBillWave className="w-4 h-4 text-slate-700" />, href: "/practice-areas/robbery" },
-  { id: "theft-crimes", name: "Theft Crimes", icon: <FaFolder className="w-4 h-4 text-slate-700" />, href: "/practice-areas/theft-crimes" },
-  { id: "seal-expunge", name: "Seal / Expunge", icon: <FaFolder className="w-4 h-4 text-slate-700" />, href: "/practice-areas/expungement" },
-  { id: "sex-crimes", name: "Sex Crimes", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" />, href: "/practice-areas/sex-crimes" },
-  { id: "violation-probation", name: "Violation of Probation", icon: <FaClipboardList className="w-4 h-4 text-slate-700" />, href: "/practice-areas/probation-violation" },
-  { id: "weapons-firearms", name: "Weapons & Firearms Charges", icon: <FaCrosshairs className="w-4 h-4 text-slate-700" />, href: "/practice-areas/weapons-charges" },
-  { id: "suspended-license", name: "Driving with a Suspended or Revoked License", icon: <FaIdCard className="w-4 h-4 text-slate-700" />, href: "/practice-areas/traffic-offenses" },
-  { id: "vehicular-manslaughter", name: "Vehicular Manslaughter", icon: <FaCar className="w-4 h-4 text-slate-700" />, href: "/practice-areas/vehicular-manslaughter" },
-  { id: "speeding-violations", name: "Speeding and High Speed Violations", icon: <FaTachometerAlt className="w-4 h-4 text-slate-700" />, href: "/practice-areas/traffic-tickets" },
+  { id: "injunctions", name: "Injunctions", icon: <FaFileSignature className="w-4 h-4 text-slate-700" /> },
+  { id: "burglary-trespass", name: "Burglary and Trespass", icon: <FaMask className="w-4 h-4 text-slate-700" /> },
+  { id: "juvenile-crimes", name: "Juvenile Crimes", icon: <FaUsers className="w-4 h-4 text-slate-700" /> },
+  { id: "misdemeanors", name: "Misdemeanors", icon: <FaExclamationCircle className="w-4 h-4 text-slate-700" /> },
+  { id: "robbery", name: "Robbery", icon: <FaMoneyBillWave className="w-4 h-4 text-slate-700" /> },
+  { id: "theft-crimes", name: "Theft Crimes", icon: <FaFolder className="w-4 h-4 text-slate-700" /> },
+  { id: "seal-expunge", name: "Seal / Expunge", icon: <FaFolder className="w-4 h-4 text-slate-700" /> },
+  { id: "sex-crimes", name: "Sex Crimes", icon: <FaShieldAlt className="w-4 h-4 text-slate-700" /> },
+  { id: "violation-probation", name: "Violation of Probation", icon: <FaClipboardList className="w-4 h-4 text-slate-700" /> },
+  { id: "weapons-firearms", name: "Weapons & Firearms Charges", icon: <FaCrosshairs className="w-4 h-4 text-slate-700" /> },
+  { id: "suspended-license", name: "Driving with a Suspended or Revoked License", icon: <FaIdCard className="w-4 h-4 text-slate-700" /> },
+  { id: "vehicular-manslaughter", name: "Vehicular Manslaughter", icon: <FaCar className="w-4 h-4 text-slate-700" /> },
+  { id: "speeding-violations", name: "Speeding and High Speed Violations", icon: <FaTachometerAlt className="w-4 h-4 text-slate-700" /> },
 ];
 
 export default function DVServesSection({
@@ -197,9 +195,8 @@ export default function DVServesSection({
               {/* List of Personal Injury Items */}
               <div className="flex flex-col divide-y divide-slate-100">
                 {personalInjuryItems.map((item) => (
-                  <Link
+                  <div
                     key={item.id}
-                    href={item.href || "#"}
                     className="flex items-center gap-3.5 py-2.5 px-2 hover:bg-slate-50 rounded-xl transition-colors group"
                   >
                     <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
@@ -208,7 +205,7 @@ export default function DVServesSection({
                     <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
                       {item.name}
                     </span>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
@@ -230,9 +227,8 @@ export default function DVServesSection({
                 {/* Sub-Column 1 */}
                 <div className="flex flex-col divide-y divide-slate-100">
                   {criminalDefenseCol1.map((item) => (
-                    <Link
+                    <div
                       key={item.id}
-                      href={item.href || "#"}
                       className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group"
                     >
                       <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
@@ -241,16 +237,15 @@ export default function DVServesSection({
                       <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
                         {item.name}
                       </span>
-                    </Link>
+                    </div>
                   ))}
                 </div>
 
                 {/* Sub-Column 2 */}
                 <div className="flex flex-col divide-y divide-slate-100">
                   {criminalDefenseCol2.map((item) => (
-                    <Link
+                    <div
                       key={item.id}
-                      href={item.href || "#"}
                       className="flex items-center gap-3 py-2.5 px-1.5 hover:bg-amber-50/60 rounded-xl transition-colors group"
                     >
                       <div className="w-8 h-8 rounded-full bg-white border border-slate-200/80 flex items-center justify-center shrink-0 shadow-sm group-hover:border-primary/50 group-hover:scale-105 transition-all">
@@ -259,7 +254,7 @@ export default function DVServesSection({
                       <span className="text-xs sm:text-sm font-semibold text-slate-800 group-hover:text-primary transition-colors">
                         {item.name}
                       </span>
-                    </Link>
+                    </div>
                   ))}
                 </div>
               </div>
