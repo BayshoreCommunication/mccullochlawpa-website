@@ -17,6 +17,7 @@ import DomesticViolenceNoContactOrders from "@/components/static-blogs/blogs/How
 import DomesticBatteryChargesAttorneyRiverview from "@/components/static-blogs/blogs/domestic-battery-charges-attorney-riverview";
 import FalselyAccusedCrimeFlorida from "@/components/static-blogs/blogs/falsely-accused-crime-florida-criminal-defense-lawyer";
 import WhoCanFileWrongfulDeathLawsuit from "@/components/static-blogs/blogs/who-can-file-wrongful-death-lawsuit-in-florida-law";
+import KnowMedicalNegligenceCaseIndicators from "@/components/static-blogs/blogs/know-medical-negligence-case-indicators";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -108,6 +109,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "know-medical-negligence-case-indicators" ||
+    params.slug === "how-to-know-if-you-have-a-medical-negligence-case"
+  ) {
+    return <KnowMedicalNegligenceCaseIndicators />;
+  }
+
   if (
     params.slug === "who-can-file-wrongful-death-lawsuit-in-florida-law" ||
     params.slug === "who-can-file-a-wrongful-death-lawsuit-in-florida"

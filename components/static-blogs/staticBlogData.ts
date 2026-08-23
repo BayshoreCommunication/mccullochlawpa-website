@@ -368,7 +368,34 @@ export const whoCanFileWrongfulDeathLawsuitBlog = {
   },
 };
 
+export const knowMedicalNegligenceCaseIndicatorsBlog = {
+  title: "How to Know If You Have a Medical Negligence Case",
+  metaTitle: "Medical Negligence Case Signs | Tampa FL Lawyer",
+  metaDescription:
+    "Wondering if you have a medical negligence case in Florida? Learn the legal signs, timeline, and next steps from a Tampa Bay injury attorney.",
+  slug: "know-medical-negligence-case-indicators",
+  date: "August 23, 2026",
+  createdAt: "2026-08-23T00:00:00.000Z",
+  category: "Medical Malpractice",
+  published: true,
+  excerpt:
+    "If a Florida healthcare provider departed from the accepted standard of care and caused real harm, you may have a medical negligence case. Learn the 4 legal elements, red flags, and claims timeline.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/know-medical-negligence-case-indicators.webp",
+    },
+    altText:
+      "Medical law book, stethoscope, and judge's gavel on an attorney's desk, with case indicators and law scales.",
+    title: "Do You Have a Medical Negligence Case? Indicators",
+    description:
+      "Learn the key signs of a medical negligence case, including a medical law book, stethoscope, and judge's gavel, with professional legal advice.",
+    caption:
+      "Identifying potential medical negligence indicators with expert legal guidance and resources.",
+  },
+};
+
 export const staticBlogs = [
+  knowMedicalNegligenceCaseIndicatorsBlog,
   whoCanFileWrongfulDeathLawsuitBlog,
   falselyAccusedCrimeFloridaBlog,
   domesticBatteryChargesAttorneyRiverviewBlog,
