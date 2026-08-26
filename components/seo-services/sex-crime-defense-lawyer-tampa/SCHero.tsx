@@ -117,7 +117,7 @@ export default function SCHero({
           </div>
 
           <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col justify-center py-4 lg:py-6 pb-8 lg:pb-12">
-            <h1 className="tracking-tight text-slate-900 font-bold">
+            <h1 className="tracking-tight text-slate-900 font-bold mb-5">
               <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-[50px] xl:text-[54px] leading-snug">
                 {titleLine1}
               </span>
@@ -130,8 +130,6 @@ export default function SCHero({
                 {highlightTitle}
               </span>
             </h1>
-
-            <div className="w-28 sm:w-36 h-[4px] bg-primary my-5 rounded-full" />
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">
               <p>{paragraph1}</p>
