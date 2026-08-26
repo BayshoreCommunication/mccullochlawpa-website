@@ -138,6 +138,148 @@ export default async function KnowMedicalNegligenceCaseIndicators() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Home",
+                    item: "https://www.mcfloridalaw.com/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Blogs",
+                    item: "https://www.mcfloridalaw.com/blogs",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "How to Know If You Have a Medical Negligence Case",
+                    item: "https://www.mcfloridalaw.com/blogs/know-medical-negligence-case-indicators",
+                  },
+                ],
+              },
+              {
+                "@type": "BlogPosting",
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": "https://www.mcfloridalaw.com/blogs/know-medical-negligence-case-indicators",
+                },
+                headline: "How to Know If You Have a Medical Negligence Case",
+                name: "Medical Negligence Case Signs | Tampa FL Lawyer",
+                description:
+                  "Wondering if you have a medical negligence case in Florida? Learn the legal signs, timeline, and next steps from a Tampa Bay injury attorney.",
+                url: "https://www.mcfloridalaw.com/blogs/know-medical-negligence-case-indicators",
+                image:
+                  "https://www.mcfloridalaw.com/images/static-blogs/know-medical-negligence-case-indicators.webp",
+                isPartOf: {
+                  "@type": "Blog",
+                  "@id": "https://www.mcfloridalaw.com/blogs",
+                },
+                about: {
+                  "@type": "Thing",
+                  name: "Medical Negligence in Florida",
+                  description:
+                    "An overview of how to identify a potential medical negligence case in Florida, including duty of care, breach, causation, damages, warning signs, presuit requirements, and filing deadlines.",
+                },
+                keywords: [
+                  "how to know if you have a medical negligence case",
+                  "medical negligence case",
+                  "medical negligence Florida",
+                  "medical malpractice Florida",
+                  "medical malpractice case indicators",
+                  "medical negligence warning signs",
+                  "Florida medical malpractice lawyer",
+                  "Florida medical negligence claim",
+                  "medical malpractice statute of limitations Florida",
+                  "Florida Chapter 766",
+                  "medical negligence presuit process",
+                  "medical negligence attorney Tampa",
+                  "Tampa medical malpractice lawyer",
+                  "medical malpractice claim",
+                  "personal injury lawyer",
+                ],
+                author: {
+                  "@type": "Organization",
+                  name: "McCulloch Law P.A.",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "McCulloch Law P.A.",
+                  url: "https://www.mcfloridalaw.com/",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.mcfloridalaw.com/images/logo.png",
+                  },
+                },
+                datePublished: "2026-08-23",
+                dateModified: "2026-08-23",
+              },
+              {
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Can I sue a hospital directly instead of the individual doctor?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, if the negligent provider was a hospital employee, the hospital can usually be held vicariously liable under Florida law.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Does Florida cap damages in medical negligence cases?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Florida's prior noneconomic damage caps were struck down by the state supreme court, so recoverable pain and suffering is not capped for most claims.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Are birth injury cases treated differently in Florida?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, claims involving minors follow a modified timeline, and certain severe birth injuries fall under a separate compensation plan.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can I still file if I signed paperwork at a walk-in urgent care clinic?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, urgent care and walk-in clinics are held to the same standard of care requirements as hospitals and private practices.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Do I need the exact same specialist to review my case?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Florida law requires your corroborating expert to practice in the same specialty as the provider you are pursuing a claim against.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What if the negligence happened at a VA or county hospital?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Claims against government healthcare providers follow a separate two year filing deadline under recent Florida legislation, so timing matters even more.",
+                    },
+                  },
+                ],
+              },
+            ],
+          }),
+        }}
+      />
       <BreadcrumbSection
         title="Blogs"
         subtitle="Find informative posts written to help you stay informed and better understand the legal landscape, and more."
