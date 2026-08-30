@@ -18,6 +18,7 @@ import DomesticBatteryChargesAttorneyRiverview from "@/components/static-blogs/b
 import FalselyAccusedCrimeFlorida from "@/components/static-blogs/blogs/falsely-accused-crime-florida-criminal-defense-lawyer";
 import WhoCanFileWrongfulDeathLawsuit from "@/components/static-blogs/blogs/who-can-file-wrongful-death-lawsuit-in-florida-law";
 import KnowMedicalNegligenceCaseIndicators from "@/components/static-blogs/blogs/know-medical-negligence-case-indicators";
+import DatingViolenceDefenseStrategiesBrandonFl from "@/components/static-blogs/blogs/dating-violence-defense-strategies-brandon-fl";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -109,6 +110,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "dating-violence-defense-strategies-brandon-fl" ||
+    params.slug === "dating-violence-allegations-and-defense-strategies-in-brandon"
+  ) {
+    return <DatingViolenceDefenseStrategiesBrandonFl />;
+  }
+
   if (
     params.slug === "know-medical-negligence-case-indicators" ||
     params.slug === "how-to-know-if-you-have-a-medical-negligence-case"

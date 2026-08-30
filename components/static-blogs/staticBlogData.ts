@@ -394,7 +394,34 @@ export const knowMedicalNegligenceCaseIndicatorsBlog = {
   },
 };
 
+export const datingViolenceDefenseStrategiesBrandonFlBlog = {
+  title: "Dating Violence Allegations and Defense Strategies in Brandon",
+  metaTitle: "Dating Violence Allegations Defense in Brandon",
+  metaDescription:
+    "Dating violence allegations in Brandon can lead to a civil injunction, criminal charges, or both. See why waiting even a day could cost you the case",
+  slug: "dating-violence-defense-strategies-brandon-fl",
+  date: "August 30, 2026",
+  createdAt: "2026-08-30T00:00:00.000Z",
+  category: "Dating Violence Defense",
+  published: true,
+  excerpt:
+    "A dating violence allegation in Brandon can lead to a civil injunction, criminal charges, or both. Learn legal definitions, 15-day hearing timelines, and defense strategies.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/dating-violence-defense-strategies-brandon-fl.webp",
+    },
+    altText:
+      "Legal books, a gavel, and scales of justice on a desk illustrating dating violence defense in Brandon, Florida.",
+    title: "Dating Violence Defense Strategies in Brandon, Florida",
+    description:
+      "Explore legal defense strategies and understand your rights when facing dating violence allegations in Brandon, Florida.",
+    caption:
+      "Learn how experienced criminal defense attorneys handle dating violence allegations and protect rights in Brandon, FL.",
+  },
+};
+
 export const staticBlogs = [
+  datingViolenceDefenseStrategiesBrandonFlBlog,
   knowMedicalNegligenceCaseIndicatorsBlog,
   whoCanFileWrongfulDeathLawsuitBlog,
   falselyAccusedCrimeFloridaBlog,
@@ -411,6 +438,7 @@ export const staticBlogs = [
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+
 
 
 
