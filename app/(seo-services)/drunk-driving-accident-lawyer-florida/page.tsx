@@ -15,6 +15,7 @@ import {
   DDWhyChooseSection,
   DDApartSection,
   DDServesSection,
+  DDCourtsCitiesSection,
   DDTestimonialsSection,
   DDFreeCaseReviewSection,
   DDFAQSection,
@@ -55,6 +56,7 @@ export default function DrunkDrivingAccidentLawyerFloridaPage() {
       <DDWhyChooseSection />
       <DDApartSection />
       <DDServesSection />
+      <DDCourtsCitiesSection />
       <DDTestimonialsSection />
       <DDFreeCaseReviewSection />
       <DDFAQSection />

@@ -18,6 +18,7 @@ import DDLiabilitySection, { DDLiabilitySectionProps } from "./DDLiabilitySectio
 import DDWhyChooseSection, { DDWhyChooseSectionProps } from "./DDWhyChooseSection";
 import DDApartSection, { DDApartSectionProps } from "./DDApartSection";
 import DDServesSection, { DDServesSectionProps } from "./DDServesSection";
+import DDCourtsCitiesSection, { DDCourtsCitiesSectionProps } from "./DDCourtsCitiesSection";
 import DDTestimonialsSection, { DDTestimonialsSectionProps } from "./DDTestimonialsSection";
 import DDFreeCaseReviewSection, { DDFreeCaseReviewSectionProps } from "./DDFreeCaseReviewSection";
 import DDFAQSection, { DDFAQSectionProps } from "./DDFAQSection";
@@ -37,6 +38,7 @@ export {
   DDWhyChooseSection,
   DDApartSection,
   DDServesSection,
+  DDCourtsCitiesSection,
   DDTestimonialsSection,
   DDFreeCaseReviewSection,
   DDFAQSection,
@@ -57,6 +59,7 @@ export type {
   DDWhyChooseSectionProps,
   DDApartSectionProps,
   DDServesSectionProps,
+  DDCourtsCitiesSectionProps,
   DDTestimonialsSectionProps,
   DDFreeCaseReviewSectionProps,
   DDFAQSectionProps,
@@ -87,6 +90,7 @@ export default function DrunkDrivingAccidentPage({
         <DDWhyChooseSection />
         <DDApartSection />
         <DDServesSection />
+        <DDCourtsCitiesSection />
         <DDTestimonialsSection />
         <DDFreeCaseReviewSection />
         <DDFAQSection />
@@ -112,6 +116,7 @@ export default function DrunkDrivingAccidentPage({
         <DDWhyChooseSection />
         <DDApartSection />
         <DDServesSection />
+        <DDCourtsCitiesSection />
         <DDTestimonialsSection />
         <DDFreeCaseReviewSection />
         <DDFAQSection />
