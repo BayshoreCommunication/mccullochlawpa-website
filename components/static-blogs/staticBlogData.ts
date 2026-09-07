@@ -420,7 +420,34 @@ export const datingViolenceDefenseStrategiesBrandonFlBlog = {
   },
 };
 
+export const whatIsWrongfulDeathClaimFloridaBlog = {
+  title: "What Is a Wrongful Death Claim in Florida?",
+  metaTitle: "Florida Wrongful Death Claims: What Families Miss",
+  metaDescription:
+    "A wrongful death claim in Florida must be filed within two years by a personal representative. See who qualifies and what families can recover.",
+  slug: "what-is-a-wrongful-death-claim-in-florida-law",
+  date: "September 7, 2026",
+  createdAt: "2026-09-07T00:00:00.000Z",
+  category: "Wrongful Death",
+  published: true,
+  excerpt:
+    "A wrongful death claim is a lawsuit filed when someone dies because of another person's negligence or wrongdoing. Learn legal rules, deadlines, and who qualifies.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/what-is-a-wrongful-death-claim-in-florida-law.webp",
+    },
+    altText:
+      "Florida civil law books, scales of justice, a gavel, and a framed family photo on an attorney office desk.",
+    title: "What Is a Wrongful Death Claim in Florida? Law Guide",
+    description:
+      "Learn what constitutes a wrongful death claim under Florida law, who is eligible to file, and how families seek justice.",
+    caption:
+      "Discover how Florida wrongful death claims work and what legal rights surviving families have to seek justice.",
+  },
+};
+
 export const staticBlogs = [
+  whatIsWrongfulDeathClaimFloridaBlog,
   datingViolenceDefenseStrategiesBrandonFlBlog,
   knowMedicalNegligenceCaseIndicatorsBlog,
   whoCanFileWrongfulDeathLawsuitBlog,
@@ -438,6 +465,7 @@ export const staticBlogs = [
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+
 
 
 
