@@ -446,7 +446,34 @@ export const whatIsWrongfulDeathClaimFloridaBlog = {
   },
 };
 
+export const differenceBetweenMisdemeanorAndFelonyInFloridaBlog = {
+  title: "Difference Between Misdemeanor and Felony in Florida",
+  metaTitle: "What Makes Misdemeanor Different Felony in Florida?",
+  metaDescription:
+    "Misdemeanors cap at 364 days in county jail while felonies mean over a year in state prison. Learn Florida charge levels, penalties, and court processes.",
+  slug: "difference-between-misdemeanor-and-felony-in-florida",
+  date: "September 14, 2026",
+  createdAt: "2026-09-14T00:00:00.000Z",
+  category: "Criminal Defense",
+  published: true,
+  excerpt:
+    "Understand the key differences between a misdemeanor and a felony in Florida with McCulloch Law, P.A. Learn about criminal case classifications, penalties, and legal defenses to protect your rights.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/difference-between-misdemeanor-and-felony-in-florida.webp",
+    },
+    altText:
+      "Lawbooks labeled Misdemeanor and Felony alongside a gavel, handcuffs, and a criminal case file.",
+    title: "Difference Between Misdemeanor and Felony in Florida",
+    description:
+      "Understand the key differences between a misdemeanor and a felony in Florida with McCulloch Law, P.A. Learn about criminal case classifications, penalties, and legal defenses to protect your rights.",
+    caption:
+      "Explore the distinct legal differences between misdemeanors and felonies under Florida criminal law.",
+  },
+};
+
 export const staticBlogs = [
+  differenceBetweenMisdemeanorAndFelonyInFloridaBlog,
   whatIsWrongfulDeathClaimFloridaBlog,
   datingViolenceDefenseStrategiesBrandonFlBlog,
   knowMedicalNegligenceCaseIndicatorsBlog,

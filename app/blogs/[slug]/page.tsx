@@ -20,6 +20,7 @@ import WhoCanFileWrongfulDeathLawsuit from "@/components/static-blogs/blogs/who-
 import KnowMedicalNegligenceCaseIndicators from "@/components/static-blogs/blogs/know-medical-negligence-case-indicators";
 import DatingViolenceDefenseStrategiesBrandonFl from "@/components/static-blogs/blogs/dating-violence-defense-strategies-brandon-fl";
 import WhatIsWrongfulDeathClaimFlorida from "@/components/static-blogs/blogs/what-is-a-wrongful-death-claim-in-florida-law";
+import DifferenceBetweenMisdemeanorAndFelonyInFlorida from "@/components/static-blogs/blogs/difference-between-misdemeanor-and-felony-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -111,6 +112,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "difference-between-misdemeanor-and-felony-in-florida" ||
+    params.slug === "difference-between-misdemeanor-and-felony-in-florida"
+  ) {
+    return <DifferenceBetweenMisdemeanorAndFelonyInFlorida />;
+  }
+
   if (
     params.slug === "what-is-a-wrongful-death-claim-in-florida-law" ||
     params.slug === "what-is-a-wrongful-death-claim-in-florida"
