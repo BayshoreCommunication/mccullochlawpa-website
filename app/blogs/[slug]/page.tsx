@@ -21,6 +21,7 @@ import KnowMedicalNegligenceCaseIndicators from "@/components/static-blogs/blogs
 import DatingViolenceDefenseStrategiesBrandonFl from "@/components/static-blogs/blogs/dating-violence-defense-strategies-brandon-fl";
 import WhatIsWrongfulDeathClaimFlorida from "@/components/static-blogs/blogs/what-is-a-wrongful-death-claim-in-florida-law";
 import DifferenceBetweenMisdemeanorAndFelonyInFlorida from "@/components/static-blogs/blogs/difference-between-misdemeanor-and-felony-in-florida";
+import HowADuiAffectsYourJobAndLicenseInFlorida from "@/components/static-blogs/blogs/how-a-dui-affects-your-job-and-license-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -112,6 +113,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "how-a-dui-affects-your-job-and-license-in-florida" ||
+    params.slug === "how-a-dui-affects-your-job-and-license-in-florida.tsx"
+  ) {
+    return <HowADuiAffectsYourJobAndLicenseInFlorida />;
+  }
+
   if (
     params.slug === "difference-between-misdemeanor-and-felony-in-florida" ||
     params.slug === "difference-between-misdemeanor-and-felony-in-florida"

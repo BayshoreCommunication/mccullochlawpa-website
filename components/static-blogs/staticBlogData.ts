@@ -472,7 +472,34 @@ export const differenceBetweenMisdemeanorAndFelonyInFloridaBlog = {
   },
 };
 
+export const howADuiAffectsYourJobAndLicenseInFloridaBlog = {
+  title: "How a DUI Affects Your Job and License in Florida",
+  metaTitle: "How a Florida DUI Arrest Affects Your Job and License",
+  metaDescription:
+    "Florida DUI convictions can’t be sealed and appear on background checks forever. Learn what steps to take during the critical 10 day DHSMV window.",
+  slug: "how-a-dui-affects-your-job-and-license-in-florida",
+  date: "September 22, 2026",
+  createdAt: "2026-09-22T00:00:00.000Z",
+  category: "DUI Defense",
+  published: true,
+  excerpt:
+    "Learn how a DUI affects your job and driver's license in Florida with McCulloch Law, P.A. Understand the legal consequences, employment impacts, and defense strategies to protect your future.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/how-a-dui-affects-your-job-and-license-in-florida.webp",
+    },
+    altText:
+      "Car keys, a drink, a gavel, and a Florida driver's license on a table with a police car and person leaving a job in the background.",
+    title: "How a DUI Affects Your Job and License in Florida",
+    description:
+      "Learn how a DUI affects your job and driver's license in Florida with McCulloch Law, P.A. Understand the legal consequences, employment impacts, and defense strategies to protect your future.",
+    caption:
+      "Discover how a DUI conviction can impact your employment opportunities and result in driver's license suspension in Florida.",
+  },
+};
+
 export const staticBlogs = [
+  howADuiAffectsYourJobAndLicenseInFloridaBlog,
   differenceBetweenMisdemeanorAndFelonyInFloridaBlog,
   whatIsWrongfulDeathClaimFloridaBlog,
   datingViolenceDefenseStrategiesBrandonFlBlog,
