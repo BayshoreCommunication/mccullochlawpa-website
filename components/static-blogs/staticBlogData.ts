@@ -498,7 +498,34 @@ export const howADuiAffectsYourJobAndLicenseInFloridaBlog = {
   },
 };
 
+export const timeLimitsForFilingWrongfulDeathCasesInFloridaBlog = {
+  title: "Time Limits for Filing Wrongful Death Cases in Florida",
+  metaTitle: "Florida Wrongful Death Statute of Limitations Rules",
+  metaDescription:
+    "Florida gives you 2 years for wrongful death unless medical malpractice or homicide applies. Discover the loophole that saves late claims.",
+  slug: "time-limits-for-filing-wrongful-death-cases-in-florida",
+  date: "September 27, 2026",
+  createdAt: "2026-09-27T00:00:00.000Z",
+  category: "Wrongful Death",
+  published: true,
+  excerpt:
+    "Learn about the statute of limitations and time limits for filing wrongful death cases in Florida with McCulloch Law, P.A. Understand the legal deadlines to protect your family's rights and seek justice.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/time-limits-for-filing-wrongful-death-cases-in-florida.webp",
+    },
+    altText:
+      "An hourglass, a wrongful death document, a gavel, and a grieving family with a Florida map background.",
+    title: "Time Limits for Filing Wrongful Death Cases in Florida",
+    description:
+      "Learn about the statute of limitations and time limits for filing wrongful death cases in Florida with McCulloch Law, P.A. Understand the legal deadlines to protect your family's rights and seek justice.",
+    caption:
+      "Discover the crucial time limits and legal deadlines for filing a wrongful death claim in Florida.",
+  },
+};
+
 export const staticBlogs = [
+  timeLimitsForFilingWrongfulDeathCasesInFloridaBlog,
   howADuiAffectsYourJobAndLicenseInFloridaBlog,
   differenceBetweenMisdemeanorAndFelonyInFloridaBlog,
   whatIsWrongfulDeathClaimFloridaBlog,
@@ -519,6 +546,7 @@ export const staticBlogs = [
   firstCourtAppearanceBlog,
   outstandingWarrantsBlog,
 ];
+
 
 
 

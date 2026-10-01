@@ -22,6 +22,7 @@ import DatingViolenceDefenseStrategiesBrandonFl from "@/components/static-blogs/
 import WhatIsWrongfulDeathClaimFlorida from "@/components/static-blogs/blogs/what-is-a-wrongful-death-claim-in-florida-law";
 import DifferenceBetweenMisdemeanorAndFelonyInFlorida from "@/components/static-blogs/blogs/difference-between-misdemeanor-and-felony-in-florida";
 import HowADuiAffectsYourJobAndLicenseInFlorida from "@/components/static-blogs/blogs/how-a-dui-affects-your-job-and-license-in-florida";
+import TimeLimitsForFilingWrongfulDeathCasesInFlorida from "@/components/static-blogs/blogs/time-limits-for-filing-wrongful-death-cases-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -113,6 +114,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "time-limits-for-filing-wrongful-death-cases-in-florida" ||
+    params.slug === "time-limits-for-filing-wrongful-death-cases-in-florida.tsx"
+  ) {
+    return <TimeLimitsForFilingWrongfulDeathCasesInFlorida />;
+  }
+
   if (
     params.slug === "how-a-dui-affects-your-job-and-license-in-florida" ||
     params.slug === "how-a-dui-affects-your-job-and-license-in-florida.tsx"
