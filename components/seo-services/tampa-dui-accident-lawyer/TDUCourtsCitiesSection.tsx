@@ -15,7 +15,7 @@ export default function TDUCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   highlightedText = "Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/courts-cities-banner.png",
+  bannerImagePath = "/images/seo-services/tampa-dui-accident-lawyer/courts-cities-banner.png",
 }: TDUCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden">

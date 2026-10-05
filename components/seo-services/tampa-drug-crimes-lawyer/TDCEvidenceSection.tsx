@@ -45,7 +45,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function TDCEvidenceSection({
   title = "Which Evidence You Should Preserve After Tampa Drug Arrest",
   subTitle = "Winning evidence in a Tampa drug case rarely comes from the police report itself.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/tampa-drug-crimes-lawyer/which-evidence-you-should-preserve.webp",
   items = defaultEvidenceItems,
 }: TDCEvidenceSectionProps) {
   return (

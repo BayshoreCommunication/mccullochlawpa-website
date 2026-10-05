@@ -20,7 +20,7 @@ export interface TDCHeroSectionProps {
 }
 
 export default function TDCHero({
-  bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+  bgImagePath = "/images/seo-services/tampa-drug-crimes-lawyer/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
   titleLine1 = "Drug Crimes Defense Lawyer —",
   highlightTitle = "Proven Defense to Fight Drug Charges in Tampa",

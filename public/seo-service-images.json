@@ -1,6 +1,6 @@
 {
-  "totalCategories": 5,
-  "totalImages": 93,
+  "totalCategories": 10,
+  "totalImages": 177,
   "servicePages": [
     {
       "id": "best-personal-injury-lawyer-tampa-car-accidents",
@@ -956,7 +956,7 @@
           "path": "/images/seo-services/sex-crime-defense-lawyer-tampa/sex-trafficking.webp",
           "altText": "Sex Human Trafficking Defense Attorney Tampa FL",
           "title": "Human Sex Trafficking Federal & State Defense",
-          "description": "High-level legal defense against state human trafficking charges and federal 18 U.S.C. \u00a7 1591 indictments.",
+          "description": "High-level legal defense against state human trafficking charges and federal 18 U.S.C. § 1591 indictments.",
           "caption": "Defending clients against severe federal and state sex trafficking allegations.",
           "section": "Practice Areas / Sex Trafficking"
         },
@@ -969,6 +969,886 @@
           "description": "Defending against 3rd-degree felony failure to register charges and address update compliance sweeps in Florida.",
           "caption": "Resolving sex offender registry compliance violations and address reporting disputes.",
           "section": "Practice Areas / Failure to Register"
+        }
+      ]
+    },
+    {
+      "id": "best-tampa-personal-injury-lawyer",
+      "categoryTitle": "Best Tampa Personal Injury Lawyer",
+      "slug": "best-tampa-personal-injury-lawyer",
+      "folderPath": "/images/seo-services/best-tampa-personal-injury-lawyer",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/mcculloch.webp",
+          "altText": "Best Tampa Personal Injury Lawyer Consultation Office",
+          "title": "Tampa Personal Injury Attorney Consultation Office",
+          "description": "Private consultation office of McCulloch Law, P.A. where personal injury victims receive personalized case evaluation in Tampa.",
+          "caption": "Dedicated Tampa personal injury lawyer fighting for maximum injury settlement recovery.",
+          "section": "Why Choose / Free Case Review"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/courthouse-law.png",
+          "altText": "Hillsborough County Civil Courthouse Tampa Personal Injury Claims",
+          "title": "Tampa Civil Courthouse Litigation Building",
+          "description": "Hillsborough County civil courthouse representing aggressive courtroom litigation for Tampa personal injury claims.",
+          "caption": "Litigating personal injury cases in Hillsborough County civil courtrooms.",
+          "section": "Law Changes / Civil Litigation Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/courts-cities-banner.png",
+          "altText": "Tampa Bay Personal Injury Law Firm Service Area Banner",
+          "title": "Personal Injury Court Locations & Cities Served",
+          "description": "Map and service coverage showing personal injury legal representation across Tampa, Clearwater, and St. Petersburg.",
+          "caption": "Serving injured clients throughout Tampa Bay and Hillsborough County.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/evidence-folder.png",
+          "altText": "Personal Injury Evidence Documentation and Medical Records File",
+          "title": "Personal Injury Claim Evidence & Documentation",
+          "description": "Comprehensive case file containing medical bills, crash reports, and accident reconstruction evidence for personal injury claims.",
+          "caption": "Assembling vital evidence to substantiate personal injury damages and maximum compensation.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/faq-gavel-scales.png",
+          "altText": "Personal Injury Law FAQ Gavel and Scales Emblem",
+          "title": "Tampa Personal Injury FAQ Section Header",
+          "description": "Gavel and scales emblem highlighting answers to frequently asked questions about Florida personal injury claims and settlements.",
+          "caption": "Answers to common questions regarding Tampa personal injury claims and lawsuits.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/gavel-scales.png",
+          "altText": "Gavel and Scales of Justice for Personal Injury Law",
+          "title": "Personal Injury Justice and Compensation Emblem",
+          "description": "Classic gavel and scale emblem representing zealous advocacy and justice for injured victims across Tampa.",
+          "caption": "Fighting for justice and fair compensation for injury victims.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/hero-bg.png",
+          "altText": "Best Tampa Personal Injury Lawyer Hero Background Banner",
+          "title": "Best Tampa Personal Injury Lawyer Hero Banner",
+          "description": "Hero header banner representing dedicated personal injury legal counsel and compassionate victim advocacy in Tampa, FL.",
+          "caption": "Experienced Tampa personal injury lawyer fighting for your financial recovery.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/tampa-skyline-palms.png",
+          "altText": "Tampa FL City Skyline and Downtown View for Personal Injury Firm",
+          "title": "Tampa Florida Skyline & Waterfront View",
+          "description": "Scenic downtown Tampa skyline view showcasing responsive personal injury representation throughout the Tampa Bay metro area.",
+          "caption": "Proudly serving accident and injury victims throughout Tampa, Florida.",
+          "section": "Serves & Locations Section"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/which-evidence-you-should-preserve.webp",
+          "altText": "Essential Evidence to Preserve After a Tampa Personal Injury",
+          "title": "Preserving Evidence for Tampa Personal Injury Claims",
+          "description": "Guide to preserving scene photographs, medical charts, incident logs, and witness details following an accidental injury.",
+          "caption": "Securing timely evidence to protect your personal injury claim.",
+          "section": "Evidence Section / Case Preservation"
+        },
+        {
+          "key": "car-truck-accidents",
+          "fileName": "car-truck-accidents.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/car-truck-accidents.webp",
+          "altText": "Car and Commercial Truck Accident Injury Lawyer Tampa FL",
+          "title": "Car & Semi-Truck Collision Legal Representation",
+          "description": "Aggressive legal representation for victims injured in motor vehicle collisions, commercial truck wrecks, and highway crashes in Tampa.",
+          "caption": "Securing maximum recovery against trucking companies and auto insurers.",
+          "section": "Practice Areas / Car & Truck Accidents"
+        },
+        {
+          "key": "motorcycle-collisions",
+          "fileName": "motorcycle-collisions.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/motorcycle-collisions.webp",
+          "altText": "Tampa Motorcycle Collision and Biker Injury Attorney FL",
+          "title": "Motorcycle Crash & Severe Injury Claims",
+          "description": "Dedicated legal counsel for motorcyclists suffering severe trauma, road rash, and orthopedic injuries caused by careless motorists.",
+          "caption": "Standing up for motorcycle riders and demanding full compensation for catastrophic injuries.",
+          "section": "Practice Areas / Motorcycle Collisions"
+        },
+        {
+          "key": "pedestrian-bicycle-injury",
+          "fileName": "pedestrian-bicycle-injury.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/pedestrian-bicycle-injury.webp",
+          "altText": "Pedestrian and Bicycle Accident Injury Lawyer Tampa",
+          "title": "Pedestrian & Cyclist Roadway Accident Claims",
+          "description": "Holding negligent drivers liable for hitting pedestrians and cyclists crossing intersections or riding along Tampa roadways.",
+          "caption": "Protecting vulnerable pedestrians and cyclists injured by reckless motorists.",
+          "section": "Practice Areas / Pedestrian & Bicycle Injury"
+        },
+        {
+          "key": "rideshare-accidents",
+          "fileName": "rideshare-accidents.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/rideshare-accidents.webp",
+          "altText": "Uber and Lyft Rideshare Accident Attorney Tampa FL",
+          "title": "Uber & Lyft Rideshare Collision Insurance Claims",
+          "description": "Navigating complicated commercial rideshare insurance policy limits for passengers, pedestrians, and third-party motorists injured in rideshare crashes.",
+          "caption": "Unlocking full policy limits for injured Uber and Lyft rideshare passengers.",
+          "section": "Practice Areas / Rideshare Accidents"
+        },
+        {
+          "key": "slip-fall-premises-liability",
+          "fileName": "slip-fall-premises-liability.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/slip-fall-premises-liability.webp",
+          "altText": "Slip and Fall Premises Liability Lawyer Tampa Florida",
+          "title": "Slip, Trip & Fall Premises Liability Claims",
+          "description": "Holding negligent business and property owners liable for wet floors, broken walkways, and hazardous conditions causing serious falls.",
+          "caption": "Holding negligent commercial property owners accountable for hazardous fall conditions.",
+          "section": "Practice Areas / Slip and Fall"
+        },
+        {
+          "key": "dog-bites",
+          "fileName": "dog-bites.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/dog-bites.webp",
+          "altText": "Dog Bite and Animal Attack Injury Lawyer Tampa FL",
+          "title": "Strict Liability Dog Bite & Animal Attack Claims",
+          "description": "Pursuing claims against pet owners and homeowner insurers under Florida's strict liability dog bite laws for scarring and trauma.",
+          "caption": "Securing fair settlements for dog bite lacerations, infections, and psychological trauma.",
+          "section": "Practice Areas / Dog Bites"
+        },
+        {
+          "key": "medical-malpractice",
+          "fileName": "medical-malpractice.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/medical-malpractice.webp",
+          "altText": "Medical Malpractice and Hospital Negligence Attorney Tampa",
+          "title": "Medical Malpractice & Surgical Negligence Claims",
+          "description": "Investigating hospital errors, surgical mistakes, and misdiagnoses at Tampa Bay healthcare facilities to prove medical negligence.",
+          "caption": "Holding negligent doctors and hospital corporations accountable for patient harm.",
+          "section": "Practice Areas / Medical Malpractice"
+        },
+        {
+          "key": "nursing-home-abuse",
+          "fileName": "nursing-home-abuse.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/nursing-home-abuse.webp",
+          "altText": "Tampa Nursing Home Abuse and Elder Neglect Lawyer",
+          "title": "Nursing Home Abuse & Assisted Living Neglect Lawsuits",
+          "description": "Exposing nursing facility neglect, bedsores, malnutrition, and falls to protect vulnerable elderly residents across Tampa Bay.",
+          "caption": "Advocating for elderly residents subjected to nursing home neglect and physical abuse.",
+          "section": "Practice Areas / Nursing Home Abuse"
+        },
+        {
+          "key": "boating-accidents",
+          "fileName": "boating-accidents.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/boating-accidents.webp",
+          "altText": "Tampa Bay Boating and Maritime Accident Lawyer FL",
+          "title": "Boating, Jet Ski & Maritime Injury Claims",
+          "description": "Navigating maritime law and state vessel regulations for victims injured in Tampa Bay recreational boating and jet ski crashes.",
+          "caption": "Recovering damages for boat collisions, watercraft injuries, and maritime negligence.",
+          "section": "Practice Areas / Boating Accidents"
+        },
+        {
+          "key": "wrongful-death",
+          "fileName": "wrongful-death.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/wrongful-death.webp",
+          "altText": "Tampa Wrongful Death Attorney Florida Fatal Injury Claims",
+          "title": "Wrongful Death & Fatal Negligence Lawsuits",
+          "description": "Compassionate legal representation for grieving families filing wrongful death claims under the Florida Wrongful Death Act.",
+          "caption": "Helping surviving family members obtain financial security and legal justice after a fatal accident.",
+          "section": "Practice Areas / Wrongful Death"
+        },
+        {
+          "key": "product-liability",
+          "fileName": "product-liability.webp",
+          "path": "/images/seo-services/best-tampa-personal-injury-lawyer/product-liability.webp",
+          "altText": "Defective Product Liability Attorney Tampa FL",
+          "title": "Product Liability & Defective Equipment Claims",
+          "description": "Holding manufacturers and distributors strictly liable for defective consumer products, failed machinery, and hazardous auto parts.",
+          "caption": "Challenging corporations for placing defective and dangerous products into consumer hands.",
+          "section": "Practice Areas / Product Liability"
+        }
+      ]
+    },
+    {
+      "id": "catastrophic-injury-lawyer-tampa-florida",
+      "categoryTitle": "Catastrophic Injury Lawyer Tampa Florida",
+      "slug": "catastrophic-injury-lawyer-tampa-florida",
+      "folderPath": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/mcculloch.webp",
+          "altText": "Catastrophic Injury Lawyer Office in Tampa Florida",
+          "title": "Catastrophic Injury Attorney Consultation Office",
+          "description": "Private office setting where complex life-altering catastrophic injury cases are evaluated by Drew McCulloch.",
+          "caption": "Comprehensive legal consultation for victims facing life-altering traumatic injuries in Tampa.",
+          "section": "Why Choose / Free Case Review"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/courthouse-law.png",
+          "altText": "Tampa Courthouse for Major Catastrophic Injury Litigation",
+          "title": "Catastrophic Injury Trial Courthouse",
+          "description": "Courthouse building representing jury trial preparation and high-stakes litigation for catastrophic injury damages.",
+          "caption": "Taking catastrophic injury cases to court for full multi-million dollar verdicts.",
+          "section": "Law Changes / Civil Litigation Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/courts-cities-banner.png",
+          "altText": "Catastrophic Injury Lawyer Jurisdiction Banner Tampa FL",
+          "title": "Catastrophic Injury Legal Coverage Banner",
+          "description": "Service area banner representing catastrophic injury legal advocacy across Tampa, Hillsborough County, and Central Florida.",
+          "caption": "Representing catastrophic injury victims and families throughout Florida.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/evidence-folder.png",
+          "altText": "Catastrophic Injury Life Care Plan and Medical Evidence File",
+          "title": "Catastrophic Injury Evidence & Life Care Planning",
+          "description": "Detailed evidence dossier containing vocational assessments, lifetime care cost projections, and medical specialist evaluations.",
+          "caption": "Developing extensive medical documentation and life care plans for permanent disability claims.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/faq-gavel-scales.png",
+          "altText": "Catastrophic Injury Law FAQ Gavel and Scales",
+          "title": "Catastrophic Injury FAQ Section Header",
+          "description": "Gavel and scales emblem introducing frequently asked questions regarding lifetime injury settlements and insurance caps.",
+          "caption": "Critical answers regarding catastrophic injury claims and financial recovery.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/gavel-scales.png",
+          "altText": "Justice Scales and Gavel for Catastrophic Injury Law",
+          "title": "Catastrophic Injury Legal Justice Emblem",
+          "description": "Symbolic justice scales and gavel illustrating the relentless pursuit of fair compensation for severe disabilities.",
+          "caption": "Advocating for complete justice and lifelong financial security for injured victims.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/hero-bg.png",
+          "altText": "Catastrophic Injury Lawyer Tampa Florida Hero Banner",
+          "title": "Tampa Catastrophic Injury Attorney Hero Banner",
+          "description": "Hero background header for Tampa catastrophic injury law firm representing victims of permanent impairment.",
+          "caption": "Aggressive legal representation for victims of permanent and life-changing injuries in Tampa.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/tampa-skyline-palms.png",
+          "altText": "Tampa City Skyline View for Catastrophic Injury Representation",
+          "title": "Tampa Skyline & Metro Area View",
+          "description": "Tampa skyline overview representing accessible, compassionate catastrophic injury legal services for patients across the region.",
+          "caption": "Committed to helping injured individuals rebuild their lives in Tampa, FL.",
+          "section": "Serves & Locations Section"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/which-evidence-you-should-preserve.webp",
+          "altText": "Crucial Evidence to Preserve for Catastrophic Injury Lawsuits",
+          "title": "Preserving Evidence for Catastrophic Injury Lawsuits",
+          "description": "Guidance on securing emergency room records, diagnostic imaging, accident reconstruction data, and witness depositions.",
+          "caption": "Preserving key medical and physical evidence for maximum injury claim value.",
+          "section": "Evidence Section / Case Preservation"
+        },
+        {
+          "key": "head-injuries-trauma",
+          "fileName": "head-injuries-trauma.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/head-injuries-trauma.webp",
+          "altText": "Traumatic Brain Injury TBI Lawyer Tampa Florida",
+          "title": "Traumatic Brain Injury & Head Trauma Litigation",
+          "description": "Documenting cognitive deficits, memory loss, and delayed neurological symptoms with specialists at Tampa General Hospital and USF Health.",
+          "caption": "Proving long-term cognitive and physical consequences of traumatic brain injuries.",
+          "section": "Practice Areas / Traumatic Brain Injuries"
+        },
+        {
+          "key": "paralysis-spine-injury",
+          "fileName": "paralysis-spine-injury.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/paralysis-spine-injury.webp",
+          "altText": "Spinal Cord Injury and Paralysis Lawyer Tampa FL",
+          "title": "Spinal Cord Injury, Paraplegia & Quadriplegia Claims",
+          "description": "Securing life care plans and funding for wheelchairs, home modifications, and ongoing inpatient rehabilitation following spinal cord trauma.",
+          "caption": "Securing lifelong financial support for victims suffering paralysis and spinal damage.",
+          "section": "Practice Areas / Spinal Cord Injuries"
+        },
+        {
+          "key": "amputation-limb-loss",
+          "fileName": "amputation-limb-loss.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/amputation-limb-loss.webp",
+          "altText": "Traumatic Amputation and Limb Loss Injury Attorney Tampa",
+          "title": "Traumatic Amputation & Limb Loss Lawsuits",
+          "description": "Calculating lifetime prosthetic replacement cycles, physical therapy costs, and lost vocational capacity for amputation victims.",
+          "caption": "Securing full compensation for prosthetic technology and vocational limb loss recovery.",
+          "section": "Practice Areas / Amputation & Limb Loss"
+        },
+        {
+          "key": "severe-burn-injuries",
+          "fileName": "severe-burn-injuries.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/severe-burn-injuries.webp",
+          "altText": "Severe Burn Injury and Skin Grafting Lawyer Tampa FL",
+          "title": "Third-Degree Burns & Complex Skin Grafting Claims",
+          "description": "Collaborating with Tampa General Hospital burn center experts to document permanent scarring, nerve damage, and chronic pain complications.",
+          "caption": "Demanding maximum recovery for third-degree burn treatments and extensive surgeries.",
+          "section": "Practice Areas / Severe Burn Injuries"
+        },
+        {
+          "key": "multiple-fractures",
+          "fileName": "multiple-fractures.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/multiple-fractures.webp",
+          "altText": "Multiple Complex Bone Fractures Injury Lawyer Tampa",
+          "title": "Multiple Compound Fractures & Orthopedic Surgery Claims",
+          "description": "Proving the cumulative financial toll of multiple orthopedic surgeries, internal hardware fixations, and prolonged physical therapy.",
+          "caption": "Itemizing every surgical procedure and lost earnings period to defeat lowball settlement offers.",
+          "section": "Practice Areas / Multiple Fractures"
+        },
+        {
+          "key": "wrongful-death",
+          "fileName": "wrongful-death.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/wrongful-death.webp",
+          "altText": "Catastrophic Wrongful Death Claim Attorney Tampa Florida",
+          "title": "Catastrophic Fatal Injury & Wrongful Death Claims",
+          "description": "Filing claims under Florida's Wrongful Death Act to recover lost support, funeral expenses, and loss of companionship for surviving relatives.",
+          "caption": "Guiding families through wrongful death claims to achieve justice and financial survival.",
+          "section": "Practice Areas / Wrongful Death"
+        },
+        {
+          "key": "vision-hearing-loss",
+          "fileName": "vision-hearing-loss.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/vision-hearing-loss.webp",
+          "altText": "Sensory Injury Vision and Hearing Loss Lawyer Tampa",
+          "title": "Traumatic Vision Loss & Hearing Impairment Claims",
+          "description": "Demonstrating the irreversible lifestyle and employment impact of sudden blindness, facial trauma, and profound hearing impairment.",
+          "caption": "Protecting victims who suffered permanent sensory loss due to traumatic accidents.",
+          "section": "Practice Areas / Vision & Hearing Loss"
+        },
+        {
+          "key": "internal-organ-damage",
+          "fileName": "internal-organ-damage.webp",
+          "path": "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/internal-organ-damage.webp",
+          "altText": "Internal Organ Damage and Blunt Force Trauma Lawyer Tampa",
+          "title": "Internal Organ Damage & Blunt Force Trauma Lawsuits",
+          "description": "Tracking delayed liver, kidney, spleen, and lung complications until treating surgeons confirm an accurate lifelong prognosis.",
+          "caption": "Holding negligent parties accountable for internal bleeding and organ complications.",
+          "section": "Practice Areas / Internal Organ Damage"
+        }
+      ]
+    },
+    {
+      "id": "drunk-driving-accident-lawyer-florida",
+      "categoryTitle": "Drunk Driving Accident Lawyer Florida",
+      "slug": "drunk-driving-accident-lawyer-florida",
+      "folderPath": "/images/seo-services/drunk-driving-accident-lawyer-florida",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/mcculloch.webp",
+          "altText": "Drunk Driving Accident Lawyer Office Consultation Florida",
+          "title": "DUI Accident Victim Legal Strategy Office",
+          "description": "Drew McCulloch law office providing confidential guidance and claim analysis for victims of drunk driving crashes across Florida.",
+          "caption": "Aggressively representing victims of drunk and drugged driving collisions in Florida.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/courthouse-law.png",
+          "altText": "Florida Courthouse for DUI Accident Punitive Damage Lawsuits",
+          "title": "Florida Judicial Courthouse for DUI Lawsuits",
+          "description": "Florida judicial courthouse where our attorneys seek punitive damages and maximum compensation against impaired motorists.",
+          "caption": "Pursuing civil punitive damages in Florida courtrooms against impaired drivers.",
+          "section": "Law Changes / Penalties Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/courts-cities-banner.png",
+          "altText": "Florida Statewide Drunk Driving Accident Representation Banner",
+          "title": "Florida DUI Crash Legal Coverage Banner",
+          "description": "Statewide banner representing legal representation for drunk driving crash victims across Tampa Bay and all Florida counties.",
+          "caption": "Fighting for injured victims across Tampa, St. Petersburg, and throughout Florida.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/evidence-folder.png",
+          "altText": "DUI Crash Investigation BAC Toxicology Reports and Evidence Folder",
+          "title": "Drunk Driving Crash Evidence & Toxicology File",
+          "description": "Comprehensive case file compiling breathalyzer logs, police toxicology reports, bar surveillance videos, and crash dynamics analysis.",
+          "caption": "Gathering undeniable intoxication evidence to hold drunk drivers and dram shops accountable.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/faq-gavel-scales.png",
+          "altText": "Drunk Driving Law FAQ Scales and Gavel Emblem",
+          "title": "Florida Drunk Driving Accident FAQ Header",
+          "description": "Judicial scales and gavel highlighting answers to common questions regarding punitive damages and insurance recovery in DUI accidents.",
+          "caption": "Clear answers regarding drunk driving injury lawsuits and punitive damages in Florida.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/gavel-scales.png",
+          "altText": "Gavel and Scales of Justice for DUI Accident Victims",
+          "title": "Drunk Driving Victim Legal Justice Emblem",
+          "description": "Symbolic gavel and scales representing justice, accountability, and financial restitution for families harmed by drunk driving.",
+          "caption": "Demanding justice and full accountability against reckless intoxicated motorists.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/hero-bg.png",
+          "altText": "Drunk Driving Accident Lawyer Florida Hero Background Banner",
+          "title": "Florida Drunk Driving Crash Attorney Hero Banner",
+          "description": "Hero header banner for Florida drunk driving accident legal representation, protecting crash victims and recovering maximum payouts.",
+          "caption": "Top-rated Florida drunk driving accident lawyer fighting for injured victims.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/tampa-skyline-palms.png",
+          "altText": "Florida Highway and City Skyline for Drunk Driving Firm",
+          "title": "Florida Highway & Cityscape Overview",
+          "description": "Florida metropolitan cityscape representing aggressive, prompt legal response to intoxicated driving crashes across the Sunshine State.",
+          "caption": "Serving injured DUI crash victims across Tampa Bay and throughout Florida.",
+          "section": "Serves & Locations Section"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/which-evidence-you-should-preserve.webp",
+          "altText": "Preserving Crucial Evidence After Florida Drunk Driving Accident",
+          "title": "Evidence Preservation for Florida Drunk Driving Claims",
+          "description": "Crucial steps for securing police dispatch audio, roadside bodycam footage, BAC receipts, and witness contact logs after a DUI crash.",
+          "caption": "Quickly preserving toxicological and scene evidence before it disappears.",
+          "section": "Evidence Section / Case Preservation"
+        },
+        {
+          "key": "bodily-injury-auto",
+          "fileName": "bodily-injury-auto.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/bodily-injury-auto.webp",
+          "altText": "Bodily Injury DUI Car Accident Attorney Florida",
+          "title": "Bodily Injury Drunk Driving Automobile Crashes",
+          "description": "Establishing direct causation between impaired driver collision forces and debilitating brain, spinal, or orthopedic physical injuries.",
+          "caption": "Holding intoxicated motorists and insurers liable for catastrophic bodily injuries.",
+          "section": "Practice Areas / Bodily Injury Auto"
+        },
+        {
+          "key": "fatality-wrongful-death",
+          "fileName": "fatality-wrongful-death.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/fatality-wrongful-death.webp",
+          "altText": "Fatal Drunk Driving Crash Wrongful Death Lawyer Florida",
+          "title": "Fatality & Wrongful Death DUI Lawsuits",
+          "description": "Representing surviving families in economic recovery and wrongful death lawsuits when intoxicated driving results in preventable loss of life.",
+          "caption": "Recovering financial support, funeral costs, and punitive damages for grieving families.",
+          "section": "Practice Areas / Wrongful Death"
+        },
+        {
+          "key": "multiple-vehicle-collisions",
+          "fileName": "multiple-vehicle-collisions.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/multiple-vehicle-collisions.webp",
+          "altText": "Multi-Vehicle Chain Reaction DUI Crash Attorney Florida",
+          "title": "Multi-Vehicle Highway Pileups Caused by Impaired Drivers",
+          "description": "Coordinating accident reconstruction experts to trace chain-reaction highway collisions directly back to impaired vehicle operators.",
+          "caption": "Determining primary fault and tapping multiple insurance policies in multi-car DUI crashes.",
+          "section": "Practice Areas / Multiple Vehicle Collisions"
+        },
+        {
+          "key": "pedestrian-bicycle-accidents",
+          "fileName": "pedestrian-bicycle-accidents.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/pedestrian-bicycle-accidents.webp",
+          "altText": "Pedestrian and Cyclist Drunk Driving Accident Lawyer FL",
+          "title": "Impaired Driver Hits Pedestrian or Cyclist Claims",
+          "description": "Advocating for cyclists and pedestrians struck in crosswalks and bike lanes by drivers with delayed reaction times and impaired vision.",
+          "caption": "Demanding maximum compensation for vulnerable pedestrians struck by intoxicated motorists.",
+          "section": "Practice Areas / Pedestrian & Bicycle Accidents"
+        },
+        {
+          "key": "commercial-vehicle-accidents",
+          "fileName": "commercial-vehicle-accidents.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/commercial-vehicle-accidents.webp",
+          "altText": "Commercial Truck Intoxicated Driver Accident Attorney Florida",
+          "title": "Commercial Truck & Corporate DUI Collisions",
+          "description": "Enforcing federal motor carrier regulations and employer vicarious liability when impaired commercial truck drivers cause severe crashes.",
+          "caption": "Accessing large commercial trucking insurance policies when truckers drive impaired.",
+          "section": "Practice Areas / Commercial Vehicle Accidents"
+        },
+        {
+          "key": "rideshare-taxi-accidents",
+          "fileName": "rideshare-taxi-accidents.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/rideshare-taxi-accidents.webp",
+          "altText": "Intoxicated Rideshare Uber Lyft Driver Crash Lawyer Florida",
+          "title": "Intoxicated Rideshare & Taxi Driver Accident Claims",
+          "description": "Analyzing driver app telematics and corporate coverage tiers when an impaired rideshare or taxi operator injures passengers or other drivers.",
+          "caption": "Holding rideshare platforms accountable when intoxicated drivers transport passengers.",
+          "section": "Practice Areas / Rideshare & Taxi Accidents"
+        },
+        {
+          "key": "hit-and-run-cases",
+          "fileName": "hit-and-run-cases.webp",
+          "path": "/images/seo-services/drunk-driving-accident-lawyer-florida/hit-and-run-cases.webp",
+          "altText": "DUI Hit and Run Impaired Driver Leaving Scene Attorney Florida",
+          "title": "Hit & Run Intoxicated Driver Civil Lawsuits",
+          "description": "Utilizing law enforcement evidence and uninsured motorist policies to secure recovery when an impaired driver flees the collision scene.",
+          "caption": "Pursuing full recovery and statutory punitive damages against fleeing drunk drivers.",
+          "section": "Practice Areas / Hit & Run Cases"
+        }
+      ]
+    },
+    {
+      "id": "tampa-drug-crimes-lawyer",
+      "categoryTitle": "Tampa Drug Crimes Lawyer",
+      "slug": "tampa-drug-crimes-lawyer",
+      "folderPath": "/images/seo-services/tampa-drug-crimes-lawyer",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/mcculloch.webp",
+          "altText": "Tampa Drug Crimes Defense Lawyer Office Consultation",
+          "title": "Drug Crimes Legal Strategy Defense Office",
+          "description": "Private consultation office of Drew McCulloch where felony and misdemeanor drug charges are analyzed for illegal search violations.",
+          "caption": "Confidential case evaluation and Fourth Amendment search defense strategies in Tampa.",
+          "section": "Why Choose / Fight Back Section"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/courthouse-law.png",
+          "altText": "Edgecomb Courthouse Annex Hillsborough County Tampa Drug Cases",
+          "title": "Tampa Criminal Court Edgecomb Annex Building",
+          "description": "Hillsborough County criminal courthouse exterior where our defense team defends felony drug possession and trafficking charges.",
+          "caption": "Defending clients against state drug prosecutions in Hillsborough County criminal courts.",
+          "section": "Law Changes / Penalties Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/courts-cities-banner.png",
+          "altText": "Tampa Drug Crime Defense Jurisdiction Banner",
+          "title": "Drug Crime Defense Courts & Jurisdictions Banner",
+          "description": "Banner depicting comprehensive drug defense representation across Tampa, Plant City, Brandon, and Hillsborough County courts.",
+          "caption": "Protecting constitutional rights in drug courts throughout the Tampa Bay area.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/evidence-folder.png",
+          "altText": "Drug Charge Evidence Dossier Search Warrants and Lab Results",
+          "title": "Drug Case Evidence & Search Warrant Investigation",
+          "description": "Case evidence file containing search warrant affidavits, police body camera footage, and FDLE chemical laboratory testing reports.",
+          "caption": "Scrutinizing search warrants and lab chain of custody to suppress state drug evidence.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/faq-gavel-scales.png",
+          "altText": "Tampa Drug Law FAQ Scales and Gavel Emblem",
+          "title": "Tampa Drug Defense FAQ Section Header",
+          "description": "Judicial emblem introducing answers to frequent questions on Florida drug statutes, diversion programs, and mandatory minimums.",
+          "caption": "Answers to crucial questions regarding Tampa drug arrests and defense strategies.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/gavel-scales.png",
+          "altText": "Legal Scales and Gavel Drug Defense Justice",
+          "title": "Constitutional Defense & Justice Emblem",
+          "description": "Symbol of constitutional justice representing the defense against unlawful police stops, illegal seizures, and drug accusations.",
+          "caption": "Upholding constitutional protections against unlawful drug searches and seizures.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/hero-bg.png",
+          "altText": "Tampa Drug Crimes Lawyer Hero Background Banner",
+          "title": "Tampa Drug Crimes Defense Attorney Hero Banner",
+          "description": "Hero header banner representing seasoned criminal defense against state and federal controlled substance allegations in Tampa, FL.",
+          "caption": "Aggressive drug crimes defense attorney protecting your freedom and clean record.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/tampa-skyline-palms.png",
+          "altText": "Tampa FL Skyline for Criminal and Drug Defense Law Firm",
+          "title": "Downtown Tampa Skyline & Hillsborough River",
+          "description": "Tampa skyline panorama representing accessible 24/7 emergency criminal defense representation across Hillsborough County.",
+          "caption": "Trusted legal defense for individuals accused of drug offenses throughout Tampa.",
+          "section": "Serves & Locations Section"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/which-evidence-you-should-preserve.webp",
+          "altText": "Preserving Evidence for Tampa Drug Charges Defense",
+          "title": "Evidence Preservation for Tampa Drug Defense Cases",
+          "description": "Guidance on documenting traffic stop timelines, recording officer interactions, and preserving prescription receipts.",
+          "caption": "Preserving vital search context to challenge illegal vehicle searches and seizures.",
+          "section": "Evidence Section / Case Preservation"
+        },
+        {
+          "key": "drug-possession",
+          "fileName": "drug-possession.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/drug-possession.webp",
+          "altText": "Drug Possession Defense Lawyer Tampa Florida Statute 893.13",
+          "title": "Actual & Constructive Drug Possession Defense",
+          "description": "Challenging actual possession charges under Florida Statute 893.13 by attacking unlawful stop grounds and lack of knowing possession.",
+          "caption": "Defending against misdemeanor and felony controlled substance possession in Tampa.",
+          "section": "Practice Areas / Drug Possession"
+        },
+        {
+          "key": "constructive-possession",
+          "fileName": "constructive-possession.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/constructive-possession.webp",
+          "altText": "Constructive Possession Defense Attorney Tampa Hillsborough County",
+          "title": "Constructive Drug Possession in Vehicles and Homes",
+          "description": "Refuting constructive possession charges arising from shared vehicles and common premises where the state cannot prove exclusive dominion.",
+          "caption": "Proving lack of knowledge and lack of control in constructive possession accusations.",
+          "section": "Practice Areas / Constructive Possession"
+        },
+        {
+          "key": "manufacturing-sale-distribution",
+          "fileName": "manufacturing-sale-distribution.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/manufacturing-sale-distribution.webp",
+          "altText": "Drug Sale Manufacturing and Intent to Distribute Lawyer Tampa",
+          "title": "Manufacturing & Intent to Distribute Defense",
+          "description": "Dismantling circumstantial evidence such as baggies, scales, or cash used by Tampa detectives to exaggerate simple possession into intent to sell.",
+          "caption": "Challenging circumstantial claims of intent to sell or distribute controlled substances.",
+          "section": "Practice Areas / Manufacturing & Distribution"
+        },
+        {
+          "key": "drug-trafficking",
+          "fileName": "drug-trafficking.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/drug-trafficking.webp",
+          "altText": "Drug Trafficking Mandatory Minimum Defense Lawyer Tampa Florida",
+          "title": "Drug Trafficking & Mandatory Minimum Prison Defense",
+          "description": "Aggressive trial defense against Florida Statute 893.135 weight thresholds for cocaine, fentanyl, oxycodone, and cannabis trafficking.",
+          "caption": "Fighting mandatory minimum prison sentences in high-stakes drug trafficking indictments.",
+          "section": "Practice Areas / Drug Trafficking"
+        },
+        {
+          "key": "prescription-paraphernalia",
+          "fileName": "prescription-paraphernalia.webp",
+          "path": "/images/seo-services/tampa-drug-crimes-lawyer/prescription-paraphernalia.webp",
+          "altText": "Prescription Drug Fraud and Paraphernalia Defense Attorney Tampa",
+          "title": "Prescription Drug Charges & Paraphernalia Defense",
+          "description": "Defending against Section 893.147 paraphernalia allegations and unlawful prescription possession involving oxycodone, Xanax, or Adderall.",
+          "caption": "Protecting clients facing prescription medication allegations and paraphernalia charges.",
+          "section": "Practice Areas / Prescription & Paraphernalia"
+        }
+      ]
+    },
+    {
+      "id": "tampa-dui-accident-lawyer",
+      "categoryTitle": "Tampa DUI Accident Lawyer",
+      "slug": "tampa-dui-accident-lawyer",
+      "folderPath": "/images/seo-services/tampa-dui-accident-lawyer",
+      "images": [
+        {
+          "key": "attorney-office",
+          "fileName": "mcculloch.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/mcculloch.webp",
+          "altText": "Tampa DUI Accident Defense Lawyer Consultation Office",
+          "title": "Tampa DUI Accident Defense Strategy Office",
+          "description": "Private consultation office of Drew McCulloch where DUI accident charges, breath test logs, and crash reports are thoroughly evaluated.",
+          "caption": "Confidential case evaluation for individuals facing DUI accident charges in Tampa.",
+          "section": "Why Choose / Free Case Review"
+        },
+        {
+          "key": "courthouse-law",
+          "fileName": "courthouse-law.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/courthouse-law.png",
+          "altText": "Hillsborough County Criminal Courthouse Tampa DUI Accident Hearings",
+          "title": "Tampa Criminal Court DUI Litigation Building",
+          "description": "Exterior of the Hillsborough County criminal courthouse where our DUI defense team fights crash-related DUI allegations before judges.",
+          "caption": "Vigorous courtroom litigation for felony and misdemeanor DUI accident charges.",
+          "section": "Law Changes / Penalties Section"
+        },
+        {
+          "key": "courts-cities-banner",
+          "fileName": "courts-cities-banner.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/courts-cities-banner.png",
+          "altText": "Tampa DUI Accident Defense Jurisdiction Banner",
+          "title": "Tampa DUI Court Locations & Service Coverage Banner",
+          "description": "Banner showcasing DUI crash defense coverage across Tampa, Ybor City, Brandon, and Hillsborough County criminal courts.",
+          "caption": "Representing motorists facing DUI accident accusations throughout Tampa Bay.",
+          "section": "Courts & Cities Section"
+        },
+        {
+          "key": "evidence-folder",
+          "fileName": "evidence-folder.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/evidence-folder.png",
+          "altText": "DUI Accident Evidence File Blood Tests and Crash Reports",
+          "title": "DUI Collision Evidence & Crash Dynamics Dossier",
+          "description": "Comprehensive case folder containing breath test calibration logs, hospital blood draws, dashcam footage, and collision dynamics reports.",
+          "caption": "Analyzing forensic blood and breath evidence to suppress inaccurate toxicology results.",
+          "section": "Evidence Section"
+        },
+        {
+          "key": "faq-gavel-scales",
+          "fileName": "faq-gavel-scales.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/faq-gavel-scales.png",
+          "altText": "Tampa DUI Accident Law FAQ Scales and Gavel Emblem",
+          "title": "Tampa DUI Accident FAQ Section Header",
+          "description": "Gavel and justice scales emblem introducing frequent questions on license suspension, accident restitution, and trial strategies.",
+          "caption": "Answers to crucial questions about Tampa DUI accident arrests and DMV hearings.",
+          "section": "FAQ Section Header"
+        },
+        {
+          "key": "gavel-scales",
+          "fileName": "gavel-scales.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/gavel-scales.png",
+          "altText": "Justice Scales and Gavel for DUI Accident Defense",
+          "title": "Constitutional Defense & Fairness Symbol",
+          "description": "Symbolic justice scales and gavel highlighting constitutional protection, roadside test scrutiny, and the presumption of innocence.",
+          "caption": "Protecting driver licenses and constitutional rights after a Tampa DUI accident.",
+          "section": "Legal Symbol"
+        },
+        {
+          "key": "hero-bg",
+          "fileName": "hero-bg.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/hero-bg.png",
+          "altText": "Tampa DUI Accident Lawyer Hero Background Banner",
+          "title": "Tampa DUI Accident Defense Attorney Hero Banner",
+          "description": "Hero header banner representing dedicated DUI collision defense legal services protecting drivers in Tampa, FL.",
+          "caption": "Experienced Tampa DUI accident lawyer protecting your driver license and freedom.",
+          "section": "Hero Banner / Free Case Review"
+        },
+        {
+          "key": "tampa-skyline-palms",
+          "fileName": "tampa-skyline-palms.png",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/tampa-skyline-palms.png",
+          "altText": "Tampa FL City Skyline for DUI Collision Defense Law Firm",
+          "title": "Downtown Tampa Skyline & Bridges View",
+          "description": "Tampa skyline and roadway bridges view representing immediate legal response for drivers facing DUI accident arrests.",
+          "caption": "Serving drivers throughout Hillsborough County and Tampa Bay.",
+          "section": "Serves & Locations Section"
+        },
+        {
+          "key": "which-evidence-you-should-preserve",
+          "fileName": "which-evidence-you-should-preserve.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/which-evidence-you-should-preserve.webp",
+          "altText": "Preserving Evidence After a Tampa DUI Accident Arrest",
+          "title": "Evidence Preservation After a Tampa DUI Crash",
+          "description": "Critical checklist for requesting 911 call audio, preserving vehicle mechanical damage records, and requesting immediate DMV hearings.",
+          "caption": "Preserving critical collision evidence within the strict 10-day Florida window.",
+          "section": "Evidence Section / Case Preservation"
+        },
+        {
+          "key": "single-vehicle-dui",
+          "fileName": "single-vehicle-dui.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/single-vehicle-dui.webp",
+          "altText": "Single Vehicle DUI Crash Defense Lawyer Tampa FL",
+          "title": "Single Vehicle DUI Collisions & Mechanical Defect Defense",
+          "description": "Demonstrating that sudden tire blowouts, dark roadways, or steering failures caused single-car run-off-road collisions rather than impairment.",
+          "caption": "Proving non-alcohol roadway factors in single vehicle crash investigations.",
+          "section": "Practice Areas / Single Vehicle DUI"
+        },
+        {
+          "key": "multi-car-accidents-injuries",
+          "fileName": "multi-car-accidents-injuries.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/multi-car-accidents-injuries.webp",
+          "altText": "Multi-Car Accident With Injuries DUI Attorney Tampa Florida Statute 316.193",
+          "title": "Multi-Car Collisions With Injuries (FL Statute § 316.193)",
+          "description": "Defending against first-degree misdemeanor or third-degree felony charges by proving other motorists initiated the multi-vehicle collision.",
+          "caption": "Investigating crash dynamics to contest causation in multi-car DUI injury crashes.",
+          "section": "Practice Areas / Multi-Car Injuries"
+        },
+        {
+          "key": "pedestrian-cyclist-accidents",
+          "fileName": "pedestrian-cyclist-accidents.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/pedestrian-cyclist-accidents.webp",
+          "altText": "Pedestrian and Cyclist DUI Collision Defense Lawyer Tampa",
+          "title": "DUI Collisions Involving Pedestrians & Cyclists",
+          "description": "Scrutinizing street illumination, crosswalk right-of-way laws, and hospital blood testing protocols in high-publicity pedestrian crashes.",
+          "caption": "Challenging state causation arguments and blood evidence in pedestrian accident claims.",
+          "section": "Practice Areas / Pedestrian & Cyclist Accidents"
+        },
+        {
+          "key": "hit-and-run-impaired",
+          "fileName": "hit-and-run-impaired.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/hit-and-run-impaired.webp",
+          "altText": "Hit and Run Leaving Scene Impaired Defense Attorney Tampa",
+          "title": "Hit & Run Accidents While Allegedly Impaired",
+          "description": "Defending against stacked felony leaving-the-scene charges by challenging driver identification, panic responses, and scene testimony.",
+          "caption": "Challenging identification proof and separate leaving-the-scene felony counts.",
+          "section": "Practice Areas / Hit & Run Impaired"
+        },
+        {
+          "key": "boating-accidents-tampa-bay",
+          "fileName": "boating-accidents-tampa-bay.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/boating-accidents-tampa-bay.webp",
+          "altText": "Boating BUI Accident Lawyer Tampa Bay Maritime Defense",
+          "title": "Boating Under the Influence (BUI) Watercraft Crashes",
+          "description": "Demonstrating how sea fatigue, sun glare, wave oscillation, and engine fumes produce misleading field sobriety test results on water.",
+          "caption": "Defending watercraft operators against BUI collision charges across Tampa Bay.",
+          "section": "Practice Areas / Boating Accidents"
+        },
+        {
+          "key": "commercial-vehicle-dui",
+          "fileName": "commercial-vehicle-dui.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/commercial-vehicle-dui.webp",
+          "altText": "Commercial Driver CDL DUI Accident Defense Attorney Tampa",
+          "title": "Commercial Vehicle & CDL 0.04 BAC Accident Defense",
+          "description": "Protecting professional commercial driver licenses under strict 0.04 BAC standards against federal DOT and state disqualifications.",
+          "caption": "Protecting commercial drivers and livelihoods from career-ending CDL DUI charges.",
+          "section": "Practice Areas / Commercial Vehicle DUI"
+        },
+        {
+          "key": "dui-manslaughter-charges",
+          "fileName": "dui-manslaughter-charges.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/dui-manslaughter-charges.webp",
+          "altText": "DUI Manslaughter Defense Lawyer Tampa Trenton's Law FL",
+          "title": "DUI Manslaughter & Vehicular Homicide Defense",
+          "description": "Retaining toxicologists and crash reconstruction specialists to challenge alcohol impairment timelines and collision proximate cause under Trenton's Law.",
+          "caption": "Mounting aggressive trial defense against high-exposure DUI manslaughter indictments.",
+          "section": "Practice Areas / DUI Manslaughter"
+        },
+        {
+          "key": "underage-drunk-driving-accidents",
+          "fileName": "underage-drunk-driving-accidents.webp",
+          "path": "/images/seo-services/tampa-dui-accident-lawyer/underage-drunk-driving-accidents.webp",
+          "altText": "Underage Under 21 DUI Accident Defense Lawyer Tampa FL",
+          "title": "Underage Zero-Tolerance 0.02 BAC Accident Defense",
+          "description": "Protecting university students and young drivers under 21 from harsh zero-tolerance license suspensions and criminal probation terms.",
+          "caption": "Safeguarding academic standings and futures for drivers accused of underage DUI crashes.",
+          "section": "Practice Areas / Underage DUI Accidents"
         }
       ]
     }

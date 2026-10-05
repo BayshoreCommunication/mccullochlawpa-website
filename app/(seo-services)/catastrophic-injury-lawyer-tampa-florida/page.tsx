@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     canonical: "/catastrophic-injury-lawyer-tampa-florida",
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 };

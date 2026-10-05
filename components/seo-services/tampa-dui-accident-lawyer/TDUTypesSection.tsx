@@ -44,7 +44,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "single-vehicle-dui",
     title: "Single Vehicle DUI Crashes",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/single-vehicle-dui.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "When your vehicle swerves off the road, police officers usually suspect alcohol impairment. However, sudden tire blowouts, dark roads  or mechanical failures often cause these single car accidents. Our team gathers roadside evidence to show prosecutors that nonalcohol factors caused your crash.",
@@ -53,7 +53,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "multi-car-accidents-injuries",
     title: "Multi Car Accidents With Injuries",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/multi-car-accidents-injuries.webp",
     badgeIcon: <FaLayerGroup className="w-5 h-5 text-primary" />,
     description:
       "Multi car collisions involving injuries escalate simple driving charges to severe first degree misdemeanors in Florida. Under FL Statute § 316.193, you face harsh penalties if a crash causes bodily injuries. We investigate crash dynamics to prove you were not responsible for causing the multi vehicle collision.",
@@ -62,7 +62,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "pedestrian-cyclist-accidents",
     title: "Pedestrian and Cyclist Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/pedestrian-cyclist-accidents.webp",
     badgeIcon: <FaBicycle className="w-5 h-5 text-primary" />,
     description:
       "When a pedestrian or cyclist is involved in DUI auto collision, police and media take notice immediately due to their vulnerability. Public pressure and urgency are reasons for prosecutors to pursue these cases. If pedestrian is hurt, the charge may become a felony. Police officers frequently request blood tests when serious bodily harm occurs at crash scenes. We review right of way rules, street lighting and blood testing procedures to challenge state claims.",
@@ -71,7 +71,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "hit-and-run-impaired",
     title: "Hit and Run Accidents While Impaired",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/elderly-domestic-abuse.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/hit-and-run-impaired.webp",
     badgeIcon: <FaRunning className="w-5 h-5 text-primary" />,
     description:
       "Leaving a collision site while impaired creates separate felony charges alongside your baseline arrest. State prosecutors enforce stiff penalties when drivers leave crash scenes without providing required information. We examine witness statements, camera footage and driver identity proof to challenge the state's allegations.",
@@ -80,7 +80,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "boating-accidents-tampa-bay",
     title: "Boating Accidents on Tampa Bay",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/child-abuse.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/boating-accidents-tampa-bay.webp",
     badgeIcon: <FaShip className="w-5 h-5 text-primary" />,
     description:
       "Boating under the influence incidents across Tampa Bay fall under specialized marine law enforcement supervision. Marine officers apply the same legal alcohol limits to watercraft as highway motor vehicles. We demonstrate how sun exposure, wave impacts and vessel movement alter roadside test results.",
@@ -89,7 +89,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "commercial-vehicle-dui",
     title: "Commercial Vehicle DUI Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/commercial-vehicle-dui.webp",
     badgeIcon: <FaTruck className="w-5 h-5 text-primary" />,
     description:
       "Commercial drivers face a lower legal blood alcohol limit of 0.04. A DUI accident behind the wheel of a work vehicle threatens your CDL directly. Federal and state trucking regulations both apply to a commercial DUI case. Employers often terminate drivers before any conviction ever occurs. We fight to protect your license and your ability to keep working.",
@@ -98,7 +98,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "dui-manslaughter-charges",
     title: "DUI Manslaughter Charges",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/dui-manslaughter-charges.webp",
     badgeIcon: <FaSkull className="w-5 h-5 text-primary" />,
     description:
       "Under current Florida law, the most severe penalties are reserved for fatal DUIs. Trenton's Law reclassifies DUI manslaughter as first degree felony. It’s only for repeat offenders with prior conviction for DUI manslaughter or vehicular homicide. This conviction now carries a sentence of up to thirty years. The law also sets a mandatory minimum term of four years. We work with crash reconstruction experts to challenge toxicology timelines and causation arguments.",
@@ -107,7 +107,7 @@ const defaultCaseItems: DUICaseTypeItem[] = [
   {
     id: "underage-drunk-driving-accidents",
     title: "Underage Drunk Driving Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/stalking.webp",
+    image: "/images/seo-services/tampa-dui-accident-lawyer/underage-drunk-driving-accidents.webp",
     badgeIcon: <FaUserGraduate className="w-5 h-5 text-primary" />,
     description:
       "Florida has a zero tolerance policy of .02 percent blood alcohol for drivers under twenty one. Drivers under age who cause accidents are subject to lengthy license suspensions and are required to take alcohol education courses and serve probation. Our defense work protects your academic standing, job opportunities and clear personal record.",

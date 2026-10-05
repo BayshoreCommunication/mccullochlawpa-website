@@ -20,7 +20,7 @@ export interface BPIHeroSectionProps {
 }
 
 export default function BPIHero({
-  bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+  bgImagePath = "/images/seo-services/best-tampa-personal-injury-lawyer/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
   titleLine1 = "Hire Best Personal Injury Lawyer in Tampa —",
   highlightTitle = "Get Full Value for Your Claim",

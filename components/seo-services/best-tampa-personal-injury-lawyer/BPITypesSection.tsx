@@ -47,7 +47,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "car-truck-accidents",
     title: "Car and Truck Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/car-truck-accidents.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Interstate 4's heavy traffic causes severe collisions and can disrupt lives completely. Collisions involving commercial trucks often cause complex liability claims for corporate transportation providers. We gather vehicle black box data quickly before trucking firms erase vital proof. Our legal team fights large insurance corporations to secure maximum injury payouts.",
@@ -56,7 +56,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "motorcycle-collisions",
     title: "Motorcycle Collisions",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/motorcycle-collisions.webp",
     badgeIcon: <FaMotorcycle className="w-5 h-5 text-primary" />,
     description:
       "Almost every day bike riders or cyclists face serious dangers on busy roads like Dale Mabry Highway. Auto drivers often neglect to give way to cyclists especially near intersections. We prove liability through collecting traffic camera footage and interviewing nearby eyewitnesses. You can trust our team to demand full coverage for your medical bills.",
@@ -65,7 +65,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "pedestrian-bicycle-injury",
     title: "Pedestrian and Bicycle Injury",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/pedestrian-bicycle-injury.webp",
     badgeIcon: <FaBicycle className="w-5 h-5 text-primary" />,
     description:
       "Safety while walking or biking near waterfront roads should be danger free. Yet distracted drivers often hit pedestrians crossing busy streets in downtown especially Tampa areas. These tragic incidents often cause walkers catastrophic harm and requiring long hospital stays and rehab. We hold negligent motorists responsible once their careless driving hurts vulnerable pedestrians.",
@@ -74,7 +74,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "rideshare-accidents",
     title: "Rideshare Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/child-abuse.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/rideshare-accidents.webp",
     badgeIcon: <FaTaxi className="w-5 h-5 text-primary" />,
     description:
       "Shared ride collisions involve multiple insurance policies with strict coverage rules and limits. Uber and Lyft provide higher policy limits only during active passenger trips. Determining whether the driver app was active requires fast legal action and subpoenaed records. Our firm identifies all available insurance policies to recover your lost wages.",
@@ -83,7 +83,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "slip-fall-premises-liability",
     title: "Slip and Fall and Premises Liability",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/slip-fall-premises-liability.webp",
     badgeIcon: <FaWalking className="w-5 h-5 text-primary" />,
     description:
       "Property owners must maintain safe grounds for customers in stores and commercial buildings. Liquid spills or broken stairs frequently lead to painful falls and spinal damage. We prove the property manager knew about hazards but failed to fix them. You can claim full money damages for injuries caused by property owner neglect.",
@@ -92,7 +92,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "dog-bites",
     title: "Dog Bites",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/elderly-domestic-abuse.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/dog-bites.webp",
     badgeIcon: <FaDog className="w-5 h-5 text-primary" />,
     description:
       "Florida law strictly holds liable dog owners for their pets causing harm or biting other people. Serious pet attacks leave permanent scars and cause long term emotional trauma. We file claims directly against homeowner insurance policies to recover your medical costs. Our team fights to ensure you receive compensation for your physical suffering.",
@@ -101,7 +101,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "medical-malpractice",
     title: "Medical Malpractice",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/medical-malpractice.webp",
     badgeIcon: <FaHospitalUser className="w-5 h-5 text-primary" />,
     description:
       "Surgical errors or delayed diagnoses at local medical facilities such as Tampa General Hospital or St. Joseph's Hospital result in life altering physical injuries. Healthcare providers must follow professional standards of care in all procedures. We consult top medical specialists to review treatment records and prove clinical error. Our attorneys demand full accountability when medical personnel cause avoidable patient harm.",
@@ -110,7 +110,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "nursing-home-abuse",
     title: "Nursing Home Abuse and Neglect",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/stalking.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/nursing-home-abuse.webp",
     badgeIcon: <FaUserNurse className="w-5 h-5 text-primary" />,
     description:
       "Every care home is obliged to provide adequate medical care and respectful treatment to all elderly people. However neglect of care and treatment often causes sudden weight loss, severe bedsores and unexplained falls among vulnerable seniors. We investigate facility staffing logs to expose systemic corporate neglect across local homes. Our team fights to protect senior citizens from harmful elder abuse conditions.",
@@ -119,7 +119,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "boating-accidents",
     title: "Boating Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/injunctions.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/boating-accidents.webp",
     badgeIcon: <FaShip className="w-5 h-5 text-primary" />,
     description:
       "Busy waterways around Tampa Bay experience dangerous boating crashes due to reckless operators. Intoxicated boaters and inexperienced captains frequently cause high speed vessel impacts on water. Maritime cases involve unique rules that differ from standard road crash laws. We investigate vessel mechanics and operator actions to establish liability for your harm.",
@@ -128,7 +128,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "wrongful-death",
     title: "Wrongful Death",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/homicide.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/wrongful-death.webp",
     badgeIcon: <FaSkull className="w-5 h-5 text-primary" />,
     description:
       "The loss of a loved one due to avoidable carelessness is extremely upsetting. Children and surviving spouses must deal with unforeseen funeral costs in addition to lost family income. We file wrongful death claims to help families secure essential long term financial support. Our compassionate attorneys fight respectfully to deliver legal justice for your lost relative.",
@@ -137,7 +137,7 @@ const defaultCaseItems: PICaseTypeItem[] = [
   {
     id: "product-liability",
     title: "Product Liability",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/felonies.webp",
+    image: "/images/seo-services/best-tampa-personal-injury-lawyer/product-liability.webp",
     badgeIcon: <FaBoxOpen className="w-5 h-5 text-primary" />,
     description:
       "Defective auto parts and unsafe consumer products cause sudden injuries to unsuspecting users. Manufacturers must test consumer products thoroughly before releasing items to retail markets. We preserve faulty products and consult engineering experts to prove design defects clearly. Our law firm holds big corporations accountable for distributing hazardous consumer goods.",

@@ -74,7 +74,7 @@ const defaultItems: WhyChooseItem[] = [
 export default function TDUWhyChooseSection({
   title = "Why Tampa DUI Accused Choose McCulloch Law for Defense",
   subTitle = "Case results, direct attorney access and courtroom preparation carry real weight in Hillsborough County court.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/tampa-dui-accident-lawyer/mcculloch.webp",
   items = defaultItems,
 }: TDUWhyChooseSectionProps) {
   return (

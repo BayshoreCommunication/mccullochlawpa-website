@@ -20,7 +20,7 @@ export interface TDUHeroSectionProps {
 }
 
 export default function TDUHero({
-  bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+  bgImagePath = "/images/seo-services/tampa-dui-accident-lawyer/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
   titleLine1 = "Tampa DUI Accident Lawyer —",
   highlightTitle = "Minimize Your Consequences, Protect Your License",

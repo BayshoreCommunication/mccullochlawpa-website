@@ -20,7 +20,7 @@ export interface CILHeroSectionProps {
 }
 
 export default function CILHero({
-  bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+  bgImagePath = "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
   titleLine1 = "Catastrophic Injury Lawyer in Tampa —",
   highlightTitle = "Get Maximum Recovery for Permanent Disabilities",

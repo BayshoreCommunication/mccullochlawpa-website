@@ -58,7 +58,7 @@ const defaultItems: WhyChooseItem[] = [
 export default function CILWhyChooseSection({
   title = "Why Tampa Accident Victims Choose McCulloch Law",
   subTitle = "People choose us as their catastrophic injury lawyer tampa florida because we handle with investigation, expert coordination and trial preparation.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/mcculloch.webp",
   items = defaultItems,
 }: CILWhyChooseSectionProps) {
   return (

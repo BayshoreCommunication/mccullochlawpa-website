@@ -98,7 +98,7 @@ const defaultItems: WhyChooseItem[] = [
 export default function BPIWhyChooseSection({
   title = "Why Tampa Injury Victims Choose McCulloch Law",
   subTitle = "Injury victims want best tampa personal injury lawyer fighting insurance companies aggressively for real payouts. McCulloch Law delivers real results through preparation, trial experience and constant client communication.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/best-tampa-personal-injury-lawyer/mcculloch.webp",
   items = defaultItems,
 }: BPIWhyChooseSectionProps) {
   return (

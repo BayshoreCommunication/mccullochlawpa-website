@@ -41,7 +41,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "drug-possession",
     title: "Drug Possession",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+    image: "/images/seo-services/tampa-drug-crimes-lawyer/drug-possession.webp",
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       "A possession charge under Florida Statute 893.13 can follow you for years without the right defense. This statute covers both actual and constructive possession in Tampa cases. Actual possession means drugs sit in your pocket or hand directly.",
@@ -50,7 +50,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "constructive-possession",
     title: "Constructive Possession Charges",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+    image: "/images/seo-services/tampa-drug-crimes-lawyer/constructive-possession.webp",
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "Constructive possession means drugs turn up in a car or home you control. Hillsborough County deputies file constructive possession charges often after traffic stops on shared vehicles. Prosecutors still have to prove you were aware of the drugs' presence.",
@@ -59,7 +59,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "manufacturing-sale-distribution",
     title: "Manufacturing, Sale & Distribution Intent",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+    image: "/images/seo-services/tampa-drug-crimes-lawyer/manufacturing-sale-distribution.webp",
     badgeIcon: <FaLock className="w-5 h-5 text-primary" />,
     description:
       "Intent to distribute charge under Florida Statute 893.13 carries far heavier penalties than simple possession. Tampa Police drug crime detectives build their cases solely on circumstantial evidence. Baggies, digital scales and small cash bills often anchor the charge. None of these items proves intent to sell by itself. A Tampa defense lawyer can challenge each piece of evidence individually.",
@@ -68,7 +68,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "drug-trafficking",
     title: "Drug Trafficking",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+    image: "/images/seo-services/tampa-drug-crimes-lawyer/drug-trafficking.webp",
     badgeIcon: <FaGavel className="w-5 h-5 text-primary" />,
     description:
       "A trafficking charge under Florida Statute 893.135 can result in prison time without having made a single sale. Twenty eight grams of cocaine or four grams of fentanyl trigger trafficking exposure. Trafficking in oxycodone begins at seven grams, while trafficking in cannabis begins at twenty five pounds. Hillsborough County judges rarely reduce these charges down to simple possession. A personal stash in Hillsborough County can carry a dealer's full trafficking exposure.",
@@ -77,7 +77,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "prescription-paraphernalia",
     title: "Prescription Drug and Paraphernalia Charges",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+    image: "/images/seo-services/tampa-drug-crimes-lawyer/prescription-paraphernalia.webp",
     badgeIcon: <FaCapsules className="w-5 h-5 text-primary" />,
     description:
       "An old prescription rarely defends you against a felony charge under Florida Statute 893.13. Possession of oxycodone or Xanax without a valid prescription still carries the risk of felony charges. Pipes, syringes and digital scales are all included in the paraphernalia charges under Section 893.147. Florida expanded its paraphernalia exemption for 2026 to include fentanyl and xylazine test strips. Tampa police now treat these test strips as harm reduction tools instead of contraband.",

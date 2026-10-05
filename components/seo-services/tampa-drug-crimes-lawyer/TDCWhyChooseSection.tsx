@@ -52,7 +52,7 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
 export default function TDCWhyChooseSection({
   title = "Why Tampa Residents Choose McCulloch Law for Drug Crime Defense",
   subTitle = "When choosing tampa drug crimes lawyer, Drew McCulloch built his reputation trying cases to verdict rather than routing clients through a system.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/tampa-drug-crimes-lawyer/mcculloch.webp",
   items = defaultWhyChooseItems,
 }: TDCWhyChooseSectionProps) {
   return (

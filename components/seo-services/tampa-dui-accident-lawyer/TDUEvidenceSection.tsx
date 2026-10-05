@@ -74,7 +74,7 @@ const defaultItems: EvidenceItem[] = [
 export default function TDUEvidenceSection({
   title = "Which Critical Evidence to Obtain After a DUI Accident",
   subTitle = "Evidence disappears fast after a DUI accident and timing shapes every defense option. Acting early protects details that support your case later.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/tampa-dui-accident-lawyer/which-evidence-you-should-preserve.webp",
   items = defaultItems,
 }: TDUEvidenceSectionProps) {
   return (

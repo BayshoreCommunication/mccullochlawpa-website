@@ -59,7 +59,7 @@ const defaultItems: WhyChooseItem[] = [
 export default function DDWhyChooseSection({
   title = "Why Florida Accident Victims Choose McCulloch Law",
   subTitle = "Choosing the right attorney after a drunk driving crash affects every dollar you eventually recover. Here's what sets McCulloch Law apart for Florida accident victims.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/drunk-driving-accident-lawyer-florida/mcculloch.webp",
   items = defaultItems,
 }: DDWhyChooseSectionProps) {
   return (

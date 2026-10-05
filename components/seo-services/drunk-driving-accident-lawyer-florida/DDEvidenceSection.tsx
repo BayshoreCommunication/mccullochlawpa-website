@@ -90,7 +90,7 @@ const defaultItems: EvidenceItem[] = [
 export default function DDEvidenceSection({
   title = "Which Evidence You Need to Preserve After a Drunk Driving Accident",
   subTitle = "Evidence disappears fast after a crash and some of it exists for a matter of days only. Acting quickly protects the facts that will decide your settlement.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/drunk-driving-accident-lawyer-florida/which-evidence-you-should-preserve.webp",
   items = defaultItems,
 }: DDEvidenceSectionProps) {
   return (

@@ -82,7 +82,7 @@ const defaultItems: EvidenceItem[] = [
 export default function CILEvidenceSection({
   title = "What Evidence Strengthens Your Catastrophic Injury Case",
   subTitle = "Florida law allows several categories of damages in a catastrophic injury claim. Each one requires its own proof.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/which-evidence-you-should-preserve.webp",
   items = defaultItems,
 }: CILEvidenceSectionProps) {
   return (

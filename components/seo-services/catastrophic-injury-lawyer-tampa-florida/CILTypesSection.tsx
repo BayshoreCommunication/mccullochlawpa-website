@@ -44,7 +44,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "head-injuries-trauma",
     title: "Head Injuries and Trauma",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/head-injuries-trauma.webp",
     badgeIcon: <FaBrain className="w-5 h-5 text-primary" />,
     description:
       "A brain injury can appear relatively minor after a crash happens. It can turn out bad a few days later. Memory loss, mood changes and seizures often surface after an adjuster has already closed a file. We work with neurologists at Tampa General Hospital and USF Health to document delayed symptoms that develop over weeks or months.",
@@ -53,7 +53,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "paralysis-spine-injury",
     title: "Paralysis and Injury to Spine",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/paralysis-spine-injury.webp",
     badgeIcon: <FaWheelchair className="w-5 h-5 text-primary" />,
     description:
       "Damage to spinal cord often leads to partial or complete paralysis of victim below injury area. The recovery process involves surgery followed by months of inpatient treatment and rehabilitation. Along with the purchase of wheelchairs, lifts and other equipment. Moreover certified life care planners project costs associated with future replacement of such items. This is because standard settlement formulas underestimate equipment replacement cycles.",
@@ -62,7 +62,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "amputation-limb-loss",
     title: "Amputation and Limb Loss",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/amputation-limb-loss.webp",
     badgeIcon: <FaUserInjured className="w-5 h-5 text-primary" />,
     description:
       "Traumatic limb severing in major collisions causes irreversible physical damage and profound physical shock. Prosthetic devices need replacement every three to five years. A fair settlement accounts for every future replacement across a client's expected lifespan.",
@@ -71,7 +71,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "severe-burn-injuries",
     title: "Severe Burn Injuries",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/child-abuse.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/severe-burn-injuries.webp",
     badgeIcon: <FaFire className="w-5 h-5 text-primary" />,
     description:
       "Third and forth degree burns commonly require multiple surgeries including skin grafting. This procedure often leave behind serious complications such as inability to move certain parts of the body or chronic pain. Tampa General operates the region's only dedicated burn center. Its treatment records carry weight in negotiations with an insurer.",
@@ -80,7 +80,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "multiple-fractures",
     title: "Multiple Fractures",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/multiple-fractures.webp",
     badgeIcon: <FaBone className="w-5 h-5 text-primary" />,
     description:
       "Various fractures often occur as a result of car accidents or on the job injuries. A single fracture can require multiple surgeries using plates, rods or screws over a period of years. We document each procedure and each missed paycheck separately. This is because insurers try to combine these into one lowball figure.",
@@ -89,7 +89,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "wrongful-death",
     title: "Wrongful Death",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/homicide.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/wrongful-death.webp",
     badgeIcon: <FaSkull className="w-5 h-5 text-primary" />,
     description:
       "When a catastrophic injury takes a life, Florida's Wrongful Death Act allows certain family members to file a claim. Spouses, children and dependent parents may recover for lost financial support, funeral costs and loss of companionship. A personal representative, usually a family member or the estate's attorney, files the claim on the family's behalf.",
@@ -98,7 +98,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "vision-hearing-loss",
     title: "Vision or Hearing Loss",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/elderly-domestic-abuse.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/vision-hearing-loss.webp",
     badgeIcon: <FaEye className="w-5 h-5 text-primary" />,
     description:
       "Traumatic vision or hearing loss often follows head trauma, chemical exposure or a workplace accident. These injuries can end careers in driving, construction or any field requiring full sensory function. Vocational experts calculate the earnings gap between a client's prior occupation and the jobs still available afterward.",
@@ -107,7 +107,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "internal-organ-damage",
     title: "Internal Organ Damage",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+    image: "/images/seo-services/catastrophic-injury-lawyer-tampa-florida/internal-organ-damage.webp",
     badgeIcon: <FaLungs className="w-5 h-5 text-primary" />,
     description:
       "Forced impact on body could occur during an accident or a fall. Outcome of such occurrences can be liver, kidney, spleen or lung damage. In some cases, the damage requires immediate surgery. Others cause complications that surface months later including organ failure. We keep a client's file open until treating physicians confirm a final prognosis.",

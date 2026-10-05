@@ -90,7 +90,7 @@ const defaultItems: EvidenceItem[] = [
 export default function BPIEvidenceSection({
   title = "Evidence McCulloch Law Uses to Build Your Tampa Injury Claim",
   subTitle = "The strongest claims usually have a clear connection between fault, injury, causation  and financial loss.",
-  imagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/best-tampa-personal-injury-lawyer/which-evidence-you-should-preserve.webp",
   items = defaultItems,
 }: BPIEvidenceSectionProps) {
   return (

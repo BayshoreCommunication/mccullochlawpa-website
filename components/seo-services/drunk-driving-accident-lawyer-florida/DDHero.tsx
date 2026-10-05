@@ -20,7 +20,7 @@ export interface DDHeroSectionProps {
 }
 
 export default function DDHero({
-  bgImagePath = "/images/seo-services/domestic-violence-defense-lawyer-tampa/hero-bg.png",
+  bgImagePath = "/images/seo-services/drunk-driving-accident-lawyer-florida/hero-bg.png",
   personImagePath = "/images/hero/Attorney.png",
   titleLine1 = "Drunk Driving Accident Lawyer In Florida —",
   highlightTitle = "Recover Full Compensation for Your Injuries",

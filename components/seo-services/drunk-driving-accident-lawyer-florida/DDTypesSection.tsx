@@ -43,7 +43,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "bodily-injury-auto",
     title: "Bodily Injury Auto Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/spousal-battery.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/bodily-injury-auto.webp",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Impaired drivers usually see car accidents resulting in serious bodily injury to the people of Florida. The people affected by these crashes are often left with debilitating injuries such as brain damage, spinal cord damage, internal organ damage and other injuries. Detailed medical documentation establishes direct causal links between collision impact forces and physical impairments. Insurance carriers face substantial monetary exposure when impaired driving causes severe personal injuries.",
@@ -52,7 +52,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "fatality-wrongful-death",
     title: "Fatality and Wrongful Death Claims",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/aggravated-domestic.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/fatality-wrongful-death.webp",
     badgeIcon: <FaSkull className="w-5 h-5 text-primary" />,
     description:
       "Intoxicated operators cause preventable fatal crashes that devastate surviving family members completely. Florida wrongful death statutes authorize surviving relatives to pursue comprehensive economic recovery claims. Recoverable damages encompass lost financial support, funeral expenses and lost family companionship benefits.",
@@ -61,7 +61,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "multiple-vehicle-collisions",
     title: "Multiple Vehicle Collisions",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/strangulation-domestic.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/multiple-vehicle-collisions.webp",
     badgeIcon: <FaLayerGroup className="w-5 h-5 text-primary" />,
     description:
       "Drunk drivers often lead to multiple vehicle collisions on Florida’s high speed highways and busy city streets. In order to determine fault in a multiple car accident, it is important for accident reconstructionists to perform extensive research and investigation. Identifying every applicable insurance policy remains necessary to cover all injured accident victims. Physical evidence analysis establishes primary collision causation against impaired vehicle operators directly.",
@@ -70,7 +70,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "pedestrian-bicycle-accidents",
     title: "Pedestrian and Bicycle Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/dating-violence.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/pedestrian-bicycle-accidents.webp",
     badgeIcon: <FaBicycle className="w-5 h-5 text-primary" />,
     description:
       "Pedestrian and bicycle safety are compromised by the lack of physical protection while being hit by large motorized vehicles. Drivers under the influence do not perceive marked crosswalks and bicycle paths. Impacts by large vehicles cause compound fractures, head trauma and loss of physical mobility. Financial recovery encompasses emergency clinical expenditures and projected future earnings capacity loss.",
@@ -79,7 +79,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "commercial-vehicle-accidents",
     title: "Commercial Vehicle Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/violation-of-domestic.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/commercial-vehicle-accidents.webp",
     badgeIcon: <FaTruck className="w-5 h-5 text-primary" />,
     description:
       "Impaired commercial truck operators create massive roadway hazards due to extreme vehicle weight. Commercial motor carriers must enforce strict drug screening protocols and federal safety compliance. Liability extends to trucking corporations under federal regulations and vicarious employer responsibility doctrines. Substantial commercial insurance policy limits provide critical financial resources for severely injured victims.",
@@ -88,7 +88,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "rideshare-taxi-accidents",
     title: "Rideshare and Taxi Accidents",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/child-abuse.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/rideshare-taxi-accidents.webp",
     badgeIcon: <FaTaxi className="w-5 h-5 text-primary" />,
     description:
       "Intoxicated rideshare drivers endanger passenger safety through negligent motor vehicle operation decisions. Navigating commercial rideshare insurance coverage requires analyzing cellular application activity logs precisely. Available insurance policy coverage limits vary depending on specific driver application status phases.",
@@ -97,7 +97,7 @@ const defaultCaseItems: CaseTypeItem[] = [
   {
     id: "hit-and-run-cases",
     title: "Hit and Run Cases",
-    image: "/images/seo-services/domestic-violence-defense-lawyer-tampa/elderly-domestic-abuse.webp",
+    image: "/images/seo-services/drunk-driving-accident-lawyer-florida/hit-and-run-cases.webp",
     badgeIcon: <FaRunning className="w-5 h-5 text-primary" />,
     description:
       "Impaired motorists frequently flee crash scenes to evade immediate criminal arrest and toxicological testing. Law enforcement agencies gather physical evidence and surveillance video to identify fleeing vehicles. Uninsured motorist insurance coverage provides essential financial recovery channels when fleeing drivers disappear. Civil litigation proceeds against identified fleeing drivers, unlocking potential statutory punitive damage remedies.",
