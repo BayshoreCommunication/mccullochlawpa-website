@@ -111,7 +111,7 @@ export async function generateMetadata({
     title: blog.title,
     description: shortDescription,
     openGraph: {
-      title,
+      title: blog.title,
       description: shortDescription,
       images: blog?.featuredImage?.image?.url,
       url: `https://www.mcfloridalaw.com/blogs/${blog.slug}`,
