@@ -23,6 +23,7 @@ import WhatIsWrongfulDeathClaimFlorida from "@/components/static-blogs/blogs/wha
 import DifferenceBetweenMisdemeanorAndFelonyInFlorida from "@/components/static-blogs/blogs/difference-between-misdemeanor-and-felony-in-florida";
 import HowADuiAffectsYourJobAndLicenseInFlorida from "@/components/static-blogs/blogs/how-a-dui-affects-your-job-and-license-in-florida";
 import TimeLimitsForFilingWrongfulDeathCasesInFlorida from "@/components/static-blogs/blogs/time-limits-for-filing-wrongful-death-cases-in-florida";
+import WhatHappensAfterADuiArrestInFlorida from "@/components/static-blogs/blogs/what-happens-after-a-dui-arrest-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -56,7 +57,18 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }) {
-  const staticBlog = staticBlogs.find((item) => item.slug === params.slug);
+  const normalizedSlug = decodeURIComponent(params.slug)
+    .trim()
+    .toLowerCase()
+    .replace(/\.tsx$/, "")
+    .replace(/\s+/g, "-");
+
+  const staticBlog = staticBlogs.find(
+    (item) =>
+      item.slug === params.slug ||
+      item.slug === params.slug.replace(/\.tsx$/, "") ||
+      item.slug === normalizedSlug
+  );
 
   if (staticBlog) {
     const title = staticBlog.metaTitle || staticBlog.title;
@@ -99,7 +111,7 @@ export async function generateMetadata({
     title: blog.title,
     description: shortDescription,
     openGraph: {
-      title: blog.title,
+      title,
       description: shortDescription,
       images: blog?.featuredImage?.image?.url,
       url: `https://www.mcfloridalaw.com/blogs/${blog.slug}`,
@@ -114,6 +126,16 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "what-happens-after-a-dui-arrest-in-florida" ||
+    params.slug === "what-happens-after-a-dui-arrest-in-florida.tsx" ||
+    params.slug === "What Happens After a DUI Arrest in Florida" ||
+    params.slug === "What%20Happens%20After%20a%20DUI%20Arrest%20in%20Florida" ||
+    decodeURIComponent(params.slug).trim().toLowerCase().replace(/\.tsx$/, "").replace(/\s+/g, "-") === "what-happens-after-a-dui-arrest-in-florida"
+  ) {
+    return <WhatHappensAfterADuiArrestInFlorida />;
+  }
+
   if (
     params.slug === "time-limits-for-filing-wrongful-death-cases-in-florida" ||
     params.slug === "time-limits-for-filing-wrongful-death-cases-in-florida.tsx"

@@ -524,7 +524,34 @@ export const timeLimitsForFilingWrongfulDeathCasesInFloridaBlog = {
   },
 };
 
+export const whatHappensAfterADuiArrestInFloridaBlog = {
+  title: "What Happens After a DUI Arrest in Florida?",
+  metaTitle: "DUI Arrest in Florida? What Happens Next",
+  metaDescription:
+    "Arrested for DUI in Florida? Learn the 10 day license deadline, real penalties, and what a former prosecutor checks first. Tampa DUI defense.",
+  slug: "what-happens-after-a-dui-arrest-in-florida",
+  date: "October 7, 2026",
+  createdAt: "2026-10-07T00:00:00.000Z",
+  category: "DUI Defense",
+  published: true,
+  excerpt:
+    "After a Florida DUI arrest, two clocks start running at once: criminal court and FLHSMV administrative suspension. Learn the critical 10-day deadline, real penalties, and defense strategies.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/what-happens-after-a-dui-arrest-in-florida.webp",
+    },
+    altText:
+      "Police officer arresting a driver with a DUI arrest report, handcuffs, a drink, and a gavel on a desk.",
+    title: "What Happens After a DUI Arrest in Florida",
+    description:
+      "Learn what happens after a DUI arrest in Florida with McCulloch Law, P.A. Understand the legal steps, penalties, driver's license suspension, and how a criminal defense attorney can help protect your future.",
+    caption:
+      "Discover the immediate consequences and legal steps that follow a DUI arrest in Florida.",
+  },
+};
+
 export const staticBlogs = [
+  whatHappensAfterADuiArrestInFloridaBlog,
   timeLimitsForFilingWrongfulDeathCasesInFloridaBlog,
   howADuiAffectsYourJobAndLicenseInFloridaBlog,
   differenceBetweenMisdemeanorAndFelonyInFloridaBlog,
