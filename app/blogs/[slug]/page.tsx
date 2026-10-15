@@ -24,6 +24,7 @@ import DifferenceBetweenMisdemeanorAndFelonyInFlorida from "@/components/static-
 import HowADuiAffectsYourJobAndLicenseInFlorida from "@/components/static-blogs/blogs/how-a-dui-affects-your-job-and-license-in-florida";
 import TimeLimitsForFilingWrongfulDeathCasesInFlorida from "@/components/static-blogs/blogs/time-limits-for-filing-wrongful-death-cases-in-florida";
 import WhatHappensAfterADuiArrestInFlorida from "@/components/static-blogs/blogs/what-happens-after-a-dui-arrest-in-florida";
+import CanAFirstTimeDuiBeDismissedInFlorida from "@/components/static-blogs/blogs/can-a-first-time-dui-be-dismissed-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -126,6 +127,16 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "can-a-first-time-dui-be-dismissed-in-florida" ||
+    params.slug === "can-a-first-time-dui-be-dismissed-in-florida.tsx" ||
+    params.slug === "Can a First-Time DUI Be Dismissed in Florida" ||
+    params.slug === "Can%20a%20First-Time%20DUI%20Be%20Dismissed%20in%20Florida" ||
+    decodeURIComponent(params.slug).trim().toLowerCase().replace(/\.tsx$/, "").replace(/\s+/g, "-") === "can-a-first-time-dui-be-dismissed-in-florida"
+  ) {
+    return <CanAFirstTimeDuiBeDismissedInFlorida />;
+  }
+
   if (
     params.slug === "what-happens-after-a-dui-arrest-in-florida" ||
     params.slug === "what-happens-after-a-dui-arrest-in-florida.tsx" ||

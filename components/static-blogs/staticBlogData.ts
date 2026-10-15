@@ -524,6 +524,32 @@ export const timeLimitsForFilingWrongfulDeathCasesInFloridaBlog = {
   },
 };
 
+export const canAFirstTimeDuiBeDismissedInFloridaBlog = {
+  title: "Can a First-Time DUI Be Dismissed in Florida?",
+  metaTitle: "Can a First-Time DUI Be Dismissed in Florida?",
+  metaDescription:
+    "A first DUI in Florida can be dismissed when the stop, arrest, or breath test breaks legal rules. See how DUI cases in Tampa Bay actually get dropped.",
+  slug: "can-a-first-time-dui-be-dismissed-in-florida",
+  date: "October 14, 2026",
+  createdAt: "2026-10-14T00:00:00.000Z",
+  category: "DUI Defense",
+  published: true,
+  excerpt:
+    "Learn if a first-time DUI can be dismissed in Florida with McCulloch Law, P.A. Understand criminal defense strategies, legal options, and how an experienced defense attorney can help protect your driver's license and future.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/can-a-first-time-dui-be-dismissed-in-florida.webp",
+    },
+    altText:
+      "Police officer interacting with a driver during a traffic stop, alongside car keys, a drink, a gavel, and Florida DUI defense documents.",
+    title: "Can a First-Time DUI Be Dismissed in Florida",
+    description:
+      "Learn if a first-time DUI can be dismissed in Florida with McCulloch Law, P.A. Understand criminal defense strategies, legal options, and how an experienced defense attorney can help protect your driver's license and future.",
+    caption:
+      "Discover whether a first-time DUI charge can be dismissed and what legal defenses are available in Florida.",
+  },
+};
+
 export const whatHappensAfterADuiArrestInFloridaBlog = {
   title: "What Happens After a DUI Arrest in Florida?",
   metaTitle: "DUI Arrest in Florida? What Happens Next",
@@ -551,6 +577,7 @@ export const whatHappensAfterADuiArrestInFloridaBlog = {
 };
 
 export const staticBlogs = [
+  canAFirstTimeDuiBeDismissedInFloridaBlog,
   whatHappensAfterADuiArrestInFloridaBlog,
   timeLimitsForFilingWrongfulDeathCasesInFloridaBlog,
   howADuiAffectsYourJobAndLicenseInFloridaBlog,
