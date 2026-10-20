@@ -181,6 +181,8 @@ export default async function TimeLimitsForFilingWrongfulDeathCasesInFlorida() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -197,47 +199,58 @@ export default async function TimeLimitsForFilingWrongfulDeathCasesInFlorida() {
                   {
                     "@type": "ListItem",
                     position: 3,
-                    name: timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.title,
-                    item: `https://www.mcfloridalaw.com/blogs/${timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.slug}`,
+                    name: "Time Limits for Filing Wrongful Death Cases in Florida",
+                    item: "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida",
                   },
                 ],
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": `https://www.mcfloridalaw.com/blogs/${timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.slug}`,
+                  "@id":
+                    "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida",
                 },
                 headline:
-                  timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.metaTitle,
-                name: timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.title,
+                  "Time Limits for Filing Wrongful Death Cases in Florida",
+                name: "Florida Wrongful Death Statute of Limitations Rules",
                 description:
-                  timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.metaDescription,
-                url: `https://www.mcfloridalaw.com/blogs/${timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.slug}`,
-                image: `https://www.mcfloridalaw.com${timeLimitsForFilingWrongfulDeathCasesInFloridaBlog.featuredImage.image.url}`,
+                  "Florida gives you 2 years for wrongful death unless medical malpractice or homicide applies. Discover the loophole that saves late claims.",
+                url: "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://www.mcfloridalaw.com/images/static-blogs/time-limits-for-filing-wrongful-death-cases-in-florida.webp",
+                  caption:
+                    "Time Limits for Filing Wrongful Death Cases in Florida",
+                },
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.mcfloridalaw.com/blogs",
+                  "@id": "https://www.mcfloridalaw.com/blogs#blog",
+                  name: "McCulloch Law Blog",
+                  url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Wrongful Death Statute of Limitations in Florida",
-                  description:
-                    "Legal deadlines and statutes of limitations for filing wrongful death claims in Florida, including exceptions for medical malpractice, government entities, and intentional acts.",
+                  name: "Florida Wrongful Death Law",
                 },
                 keywords: [
-                  "Time Limits for Filing Wrongful Death Cases in Florida",
+                  "wrongful death cases in Florida",
                   "Florida wrongful death statute of limitations",
-                  "Florida Statute 95.11(4)(d)",
-                  "wrongful death filing deadline Florida",
-                  "Florida Wrongful Death Act",
-                  "Drew McCulloch wrongful death attorney",
-                  "Tampa wrongful death lawyer",
-                  "McCulloch Law P.A.",
+                  "wrongful death claim Florida",
+                  "wrongful death lawyer Florida",
+                  "Florida wrongful death deadline",
+                  "wrongful death statute of limitations",
+                  "Florida wrongful death law",
+                  "wrongful death lawsuit Florida",
+                  "time limit for wrongful death claim",
+                  "Florida wrongful death attorney",
                 ],
                 author: {
-                  "@type": "Organization",
-                  name: "McCulloch Law P.A.",
+                  "@type": "Person",
+                  name: "Drew McCulloch",
+                  url: "https://www.mcfloridalaw.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -253,14 +266,42 @@ export default async function TimeLimitsForFilingWrongfulDeathCasesInFlorida() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/time-limits-for-filing-wrongful-death-cases-in-florida#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Can creditors take the wrongful death settlement's money?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Your family money goes right to you. Creditors can’t touch that cash. Only estate funds pay off old medical bills or debts.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "What if the deceased was partially at fault for the accident?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "If your loved one was halfway or less at fault, you still get paid. As long as it doesn’t cross the 50% limit.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can an open criminal investigation or trial pause the 2 year civil filing deadline?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "The civil clock keeps ticking no matter what police do. You can’t wait on criminal trials or you will miss the window.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Are wrongful death settlements subject to state or federal income tax?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Uncle Sam leaves your emotional recovery money alone. It is tax free. You only pay taxes if the court awards punitive damages.",
+                    },
+                  },
+                ],
               },
             ],
           }),
@@ -476,9 +517,9 @@ export default async function TimeLimitsForFilingWrongfulDeathCasesInFlorida() {
 
               {/* Callout CTA 1 */}
               <div className="rounded-md bg-[#1B2639] p-6 md:p-8 text-center text-white my-8 shadow-sm">
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">
+                <h2 className="text-xl md:text-2xl font-bold mb-3 text-white">
                   Don&apos;t Let Probate Paperwork Eat Your Filing Window
-                </h3>
+                </h2>
                 <p className="text-white/80 max-w-2xl mx-auto mb-6 text-sm md:text-base">
                   Our legal team steps in immediately to ensure probate and civil court filings occur concurrently without lost time.
                 </p>
@@ -676,9 +717,9 @@ export default async function TimeLimitsForFilingWrongfulDeathCasesInFlorida() {
 
               {/* Callout Banner 2 */}
               <div className="rounded-md bg-[#1B2639] p-6 md:p-8 text-center text-white my-8 shadow-sm">
-                <h3 className="text-xl md:text-2xl font-bold mb-3 text-white">
+                <h2 className="text-xl md:text-2xl font-bold mb-3 text-white">
                   Every Week You Wait Is Evidence You Cannot Get Back
-                </h3>
+                </h2>
                 <p className="text-white/80 max-w-2xl mx-auto mb-6 text-sm md:text-base">
                   Speak directly with Attorney Drew McCulloch about your family&apos;s timeline, free of charge.
                 </p>

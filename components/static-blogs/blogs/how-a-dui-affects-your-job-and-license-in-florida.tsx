@@ -149,6 +149,8 @@ export default async function HowADuiAffectsYourJobAndLicenseInFlorida() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -172,43 +174,52 @@ export default async function HowADuiAffectsYourJobAndLicenseInFlorida() {
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida",
+                  "@id":
+                    "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida",
                 },
-                headline: "How a Florida DUI Arrest Affects Your Job and License",
-                name: "How a DUI Affects Your Job and License in Florida",
+                headline:
+                  "How a DUI Affects Your Job and License in Florida",
+                name: "How a Florida DUI Arrest Affects Your Job and License",
                 description:
                   "Florida DUI convictions can’t be sealed and appear on background checks forever. Learn what steps to take during the critical 10 day DHSMV window.",
                 url: "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida",
-                image:
-                  "https://www.mcfloridalaw.com/images/static-blogs/how-a-dui-affects-your-job-and-license-in-florida.webp",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://www.mcfloridalaw.com/images/static-blogs/how-a-dui-affects-your-job-and-license-in-florida.webp",
+                  caption:
+                    "How a DUI Affects Your Job and License in Florida",
+                },
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.mcfloridalaw.com/blogs",
+                  "@id": "https://www.mcfloridalaw.com/blogs#blog",
+                  name: "McCulloch Law Blog",
+                  url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "How a DUI Affects Your Job and License in Florida",
-                  description:
-                    "An overview of how a DUI arrest and conviction impacts driver's license status, employment, professional licensing, CDL status, background checks, and legal defense in Florida.",
+                  name: "DUI Law in Florida",
                 },
                 keywords: [
-                  "How a DUI Affects Your Job and License in Florida",
+                  "DUI in Florida",
+                  "Florida DUI",
+                  "DUI and employment",
+                  "DUI driver's license suspension",
                   "Florida DUI license suspension",
-                  "DHSMV 10 day hearing",
-                  "Florida DUI background check",
-                  "DUI adjudication withheld Florida",
-                  "Florida Statute 316.193",
-                  "Florida Statute 316.656",
-                  "CDL DUI disqualification Florida",
-                  "FR-44 insurance Florida",
-                  "Tampa DUI defense lawyer",
-                  "McCulloch Law P.A.",
+                  "DUI conviction",
+                  "DUI background check",
+                  "CDL DUI",
+                  "Florida DUI defense",
+                  "DUI lawyer Tampa",
+                  "Florida criminal defense",
                 ],
                 author: {
-                  "@type": "Organization",
-                  name: "McCulloch Law P.A.",
+                  "@type": "Person",
+                  name: "Drew McCulloch",
+                  url: "https://www.mcfloridalaw.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -224,14 +235,42 @@ export default async function HowADuiAffectsYourJobAndLicenseInFlorida() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/how-a-dui-affects-your-job-and-license-in-florida#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Can I get a DUI if I was just sleeping while parked?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "You bet you can. Florida looks at actual physical control. If the keys are anywhere near you while you snooze in the backseat, the state figures you could turn that ignition whenever you feel like it.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "Does the state actually tow and lock up your car after a conviction?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "They sure do. For your first offense, your car will be impounded for a mandatory 10 day period. Your vehicle will be placed on its own impound schedule meaning your responsibility for payment to recover your vehicle.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is a DUI conviction in another state like a Florida DUI?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "All the states have reciprocity agreements with Florida. So that any DUI conviction in another state will be treated as a DUI in Florida for the purpose of your Florida license and your CDL license.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "How long do you have to carry that high cost FR-44 insurance policy?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "You are stuck with it for three straight years starting the moment you get your license back. It demands much higher coverage limits than normal car insurance.",
+                    },
+                  },
+                ],
               },
             ],
           }),

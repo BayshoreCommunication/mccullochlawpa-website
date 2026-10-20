@@ -127,6 +127,8 @@ export default async function CanAFirstTimeDuiBeDismissedInFlorida() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -143,48 +145,56 @@ export default async function CanAFirstTimeDuiBeDismissedInFlorida() {
                   {
                     "@type": "ListItem",
                     position: 3,
-                    name: canAFirstTimeDuiBeDismissedInFloridaBlog.title,
-                    item: canonicalUrl,
+                    name: "Can a First-Time DUI Be Dismissed in Florida?",
+                    item: "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida",
                   },
                 ],
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": canonicalUrl,
+                  "@id":
+                    "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida",
                 },
-                headline: canAFirstTimeDuiBeDismissedInFloridaBlog.metaTitle,
-                name: canAFirstTimeDuiBeDismissedInFloridaBlog.title,
+                headline:
+                  "Can a First-Time DUI Be Dismissed in Florida?",
+                name: "Can a First-Time DUI Be Dismissed in Florida?",
                 description:
-                  canAFirstTimeDuiBeDismissedInFloridaBlog.metaDescription,
-                url: canonicalUrl,
-                image: `https://www.mcfloridalaw.com${canAFirstTimeDuiBeDismissedInFloridaBlog.featuredImage.image.url}`,
+                  "A first DUI in Florida can be dismissed when the stop, arrest, or breath test breaks legal rules. See how DUI cases in Tampa Bay actually get dropped.",
+                url: "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://www.mcfloridalaw.com/images/static-blogs/can-a-first-time-dui-be-dismissed-in-florida.webp",
+                },
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.mcfloridalaw.com/blogs",
+                  "@id": "https://www.mcfloridalaw.com/blogs#blog",
+                  name: "McCulloch Law, P.A. Blog",
+                  url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Can a First-Time DUI Be Dismissed in Florida",
-                  description:
-                    canAFirstTimeDuiBeDismissedInFloridaBlog.featuredImage.description,
+                  name: "First-Time DUI Defense in Florida",
                 },
                 keywords: [
-                  "Can a First-Time DUI Be Dismissed in Florida",
-                  "Florida first DUI dismissal",
-                  "how to get a DUI dismissed in Florida",
-                  "Florida Statute 316.193",
-                  "Intoxilyzer 8000 challenge Florida",
-                  "Florida DUI 10 day rule",
-                  "Tampa DUI defense attorney",
-                  "Hillsborough County DUI lawyer",
-                  "McCulloch Law P.A.",
-                  "Drew McCulloch",
+                  "can a first-time DUI be dismissed in Florida",
+                  "first-time DUI Florida",
+                  "Florida DUI defense",
+                  "DUI dismissal Florida",
+                  "first DUI offense",
+                  "DUI defense attorney Tampa",
+                  "Florida breath test defense",
+                  "DUI license suspension Florida",
+                  "criminal defense Tampa",
+                  "McCulloch Law, P.A.",
                 ],
                 author: {
                   "@type": "Organization",
                   name: "McCulloch Law, P.A.",
+                  url: "https://www.mcfloridalaw.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -197,17 +207,39 @@ export default async function CanAFirstTimeDuiBeDismissedInFlorida() {
                 },
                 datePublished: "2026-10-14",
                 dateModified: "2026-10-14",
+                inLanguage: "en-US",
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida#faq",
+                url: "https://www.mcfloridalaw.com/blogs/can-a-first-time-dui-be-dismissed-in-florida",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Will a first DUI show up on a background check in Florida?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, unless it's dismissed or sealed. A conviction stays public permanently, and DUIs can't be expunged.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "Can you refuse a breath test on a first DUI in Florida?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "You can, but refusal triggers an automatic one-year license suspension under implied consent law, separate from the DUI itself.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Does a first DUI always require an ignition interlock device?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No. It's optional on a standard first offense, mandatory for six months if BAC hit .15 or a minor was in the car.",
+                    },
+                  },
+                ],
               },
             ],
           }),
@@ -482,9 +514,9 @@ export default async function CanAFirstTimeDuiBeDismissedInFlorida() {
 
             {/* Urgent Callout Box 1 */}
             <section className="my-10 rounded-md border-l-4 border-[#1B2639] bg-[#E9EEF6] p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-bold text-[#1B2639]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#1B2639]">
                 The 10-day clock does not pause for weekends or holidays.
-              </h3>
+              </h2>
               <p className="mt-2 text-base md:text-lg italic text-[#1B2639]/80">
                 If you were arrested recently, your window to contest the license suspension is already ticking down.
               </p>

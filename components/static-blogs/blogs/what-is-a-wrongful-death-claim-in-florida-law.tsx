@@ -150,6 +150,8 @@ export default async function WhatIsWrongfulDeathClaimFlorida() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -173,12 +175,15 @@ export default async function WhatIsWrongfulDeathClaimFlorida() {
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law",
+                  "@id":
+                    "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law",
                 },
                 headline: "What Is a Wrongful Death Claim in Florida?",
-                name: "Florida Wrongful Death Claims Guide",
+                name: "Florida Wrongful Death Claims: What Families Miss",
                 description:
                   "A wrongful death claim in Florida must be filed within two years by a personal representative. See who qualifies and what families can recover.",
                 url: "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law",
@@ -186,28 +191,31 @@ export default async function WhatIsWrongfulDeathClaimFlorida() {
                   "https://www.mcfloridalaw.com/images/static-blogs/what-is-a-wrongful-death-claim-in-florida-law.webp",
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.mcfloridalaw.com/blogs",
+                  name: "McCulloch Law Blog",
+                  url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Wrongful Death Law in Florida",
-                  description:
-                    "An overview of Florida wrongful death claims under Statute 768.19 and Statute 95.11, including eligibility rules, filing deadlines, recoverable estate and survivor damages, settlement ranges, and legal procedures.",
+                  name: "Florida Wrongful Death Claims",
                 },
                 keywords: [
-                  "wrongful death claim Florida",
-                  "Florida wrongful death statute",
-                  "who can file wrongful death in Florida",
+                  "wrongful death claim in Florida",
+                  "Florida wrongful death",
+                  "wrongful death lawsuit Florida",
+                  "Florida wrongful death attorney",
+                  "wrongful death lawyer Tampa",
                   "Florida Statute 768.19",
-                  "Florida Statute 95.11 wrongful death",
-                  "Florida Statute 768.18 survivors",
-                  "Florida Statute 768.21 damages",
-                  "Tampa wrongful death lawyer",
-                  "McCulloch Law P.A.",
+                  "Florida Statute 768.18",
+                  "Florida Statute 768.20",
+                  "Florida Statute 95.11",
+                  "wrongful death compensation",
+                  "wrongful death statute of limitations",
+                  "wrongful death damages",
                 ],
                 author: {
                   "@type": "Organization",
                   name: "McCulloch Law P.A.",
+                  url: "https://www.mcfloridalaw.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -223,14 +231,42 @@ export default async function WhatIsWrongfulDeathClaimFlorida() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/what-is-a-wrongful-death-claim-in-florida-law#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Can I file before probate is opened?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No. A personal representative has to be appointed first, though evidence preservation can and should start immediately.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "What if the at-fault party has no insurance?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Uninsured and underinsured motorist coverage on the decedent's own policy often ends up being the real source of recovery.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Do settlement funds all go to the estate?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No. Funds paid directly to survivors generally bypass claims from the estate's creditors.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Is a wrongful death case public record?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, civil filings are public in Florida. Settlement terms, though, can often be kept confidential by agreement.",
+                    },
+                  },
+                ],
               },
             ],
           }),

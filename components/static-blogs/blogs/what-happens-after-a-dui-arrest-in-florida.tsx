@@ -311,9 +311,9 @@ export default async function WhatHappensAfterADuiArrestInFlorida() {
 
             {/* Subsection: The 10 Day Countdown */}
             <section className="space-y-5 text-gray-700 leading-8 mt-10">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#1B2639]">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#1B2639]">
                 The 10 Day Countdown Nobody Warns You About
-              </h3>
+              </h2>
               <p className="text-justify">
                 You get 10 calendar days, weekends included, holidays included, no grace period, to request what&apos;s called a Formal Review Hearing with{" "}
                 <a
@@ -343,9 +343,9 @@ export default async function WhatHappensAfterADuiArrestInFlorida() {
 
             {/* Urgent Callout Box 1 */}
             <section className="my-10 rounded-md border-l-4 border-[#1B2639] bg-[#E9EEF6] p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-bold text-[#1B2639]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#1B2639]">
                 The 10 day clock does not pause for the weekend.
-              </h3>
+              </h2>
               <p className="mt-2 text-base md:text-lg italic text-[#1B2639]/80">
                 If you were arrested recently, the review hearing window may already be closing.
               </p>
@@ -509,9 +509,9 @@ export default async function WhatHappensAfterADuiArrestInFlorida() {
 
             {/* Urgent Callout Box 2 */}
             <section className="my-10 rounded-md border-l-4 border-[#1B2639] bg-[#E9EEF6] p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-bold text-[#1B2639]">
+              <h2 className="text-xl md:text-2xl font-bold text-[#1B2639]">
                 If you&apos;re holding that citation right now, the next 10 days decide more than you think.
-              </h3>
+              </h2>
               <p className="mt-2 text-base md:text-lg italic text-[#1B2639]/80">
                 Drew McCulloch spent years prosecuting these cases. Now he uses that same eye for detail for you.
               </p>

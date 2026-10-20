@@ -152,7 +152,7 @@ const faqs = [
   {
     question: "Is the withholding of adjudication considered a conviction?",
     answer:
-      "Not usually, in most cases involving jobs applications, but it might show up in your background checks unless you have sealed or expunged your record.",
+      "Not usually, in most cases involving job applications, but it might show up in your background checks unless you have sealed or expunged your record.",
   },
   {
     question: "Can you reduce the felony charge to a misdemeanor?",
@@ -191,6 +191,8 @@ export default async function DifferenceBetweenMisdemeanorAndFelonyInFlorida() {
             "@graph": [
               {
                 "@type": "BreadcrumbList",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/difference-between-misdemeanor-and-felony-in-florida#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -214,11 +216,15 @@ export default async function DifferenceBetweenMisdemeanorAndFelonyInFlorida() {
               },
               {
                 "@type": "BlogPosting",
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/difference-between-misdemeanor-and-felony-in-florida#blogposting",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": "https://www.mcfloridalaw.com/blogs/difference-between-misdemeanor-and-felony-in-florida",
+                  "@id":
+                    "https://www.mcfloridalaw.com/blogs/difference-between-misdemeanor-and-felony-in-florida",
                 },
-                headline: "Difference Between Misdemeanor and Felony in Florida",
+                headline:
+                  "Difference Between Misdemeanor and Felony in Florida",
                 name: "What Makes Misdemeanor Different Felony in Florida?",
                 description:
                   "Misdemeanors cap at 364 days in county jail while felonies mean over a year in state prison. Learn Florida charge levels, penalties, and court processes.",
@@ -227,33 +233,34 @@ export default async function DifferenceBetweenMisdemeanorAndFelonyInFlorida() {
                   "https://www.mcfloridalaw.com/images/static-blogs/difference-between-misdemeanor-and-felony-in-florida.webp",
                 isPartOf: {
                   "@type": "Blog",
-                  "@id": "https://www.mcfloridalaw.com/blogs",
+                  name: "McCulloch Law P.A. Blog",
+                  url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Difference Between Misdemeanor and Felony in Florida",
-                  description:
-                    "An overview of criminal charge classifications in Florida, comparing misdemeanors and felonies, incarceration limits, court jurisdiction, sentencing penalties, habitual offender status, and legal defenses.",
+                  name: "Misdemeanor and Felony Law in Florida",
                 },
                 keywords: [
-                  "difference between misdemeanor and felony in Florida",
                   "misdemeanor vs felony Florida",
-                  "Florida criminal charge levels",
-                  "misdemeanor jail time Florida",
-                  "felony prison time Florida",
-                  "Florida Statute 775.081",
-                  "Florida Statute 775.0837",
-                  "county court vs circuit court Florida",
-                  "felony scoresheet Hillsborough County",
-                  "withhold of adjudication Florida",
-                  "misdemeanor upgrade to felony Florida",
-                  "statute of limitations Florida criminal",
-                  "Tampa criminal defense attorney",
-                  "McCulloch Law P.A.",
+                  "difference between misdemeanor and felony in Florida",
+                  "Florida misdemeanor",
+                  "Florida felony",
+                  "misdemeanor penalties Florida",
+                  "felony penalties Florida",
+                  "Florida criminal defense",
+                  "criminal charges in Florida",
+                  "Florida criminal law",
+                  "felony sentencing",
+                  "misdemeanor sentencing",
+                  "Florida criminal record",
+                  "withhold of adjudication",
+                  "Hillsborough County criminal defense",
+                  "Tampa criminal defense lawyer",
                 ],
                 author: {
-                  "@type": "Organization",
-                  name: "McCulloch Law P.A.",
+                  "@type": "Person",
+                  name: "Drew McCulloch",
+                  url: "https://www.mcfloridalaw.com/",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -269,14 +276,34 @@ export default async function DifferenceBetweenMisdemeanorAndFelonyInFlorida() {
               },
               {
                 "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                "@id":
+                  "https://www.mcfloridalaw.com/blogs/difference-between-misdemeanor-and-felony-in-florida#faq",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Is the withholding of adjudication considered a conviction?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Not usually, in most cases involving job applications, but it might show up in your background checks unless you have sealed or expunged your record.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "Can you reduce the felony charge to a misdemeanor?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, it can be done through plea bargaining, diversion programs and mitigation of circumstances at the sentencing.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can a misdemeanor become a felony in Florida?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes. DUI, battery, petit theft, and driving while license suspended can turn into a felony if you have prior charges of these crimes.",
+                    },
+                  },
+                ],
               },
             ],
           }),
