@@ -120,11 +120,7 @@ export default function CaseSection() {
   }, []);
 
   return (
-    <div
-      className="w-full"
-      onMouseEnter={() => swiperRef.current?.autoplay.stop()}
-      onMouseLeave={() => swiperRef.current?.autoplay.start()}
-    >
+    <div className="w-full">
       <Swiper
         modules={[Autoplay]}
         slidesPerView={direction === "vertical" ? 1 : 3} // ✅ FIX
@@ -134,6 +130,7 @@ export default function CaseSection() {
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
+          pauseOnMouseEnter: false,
         }}
         speed={7000}
         onSwiper={(swiper) => (swiperRef.current = swiper)}

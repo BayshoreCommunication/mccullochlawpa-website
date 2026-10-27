@@ -76,11 +76,11 @@ export default function FbReviewSection() {
           modules={[Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 0,
-          //   reverseDirection: false,
-          //   pauseOnMouseEnter: true,
-          // }}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
 
           speed={5000}
           loop
@@ -157,11 +157,12 @@ export default function FbReviewSection() {
           modules={[Autoplay]}
           spaceBetween={24}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 0,
-          //   reverseDirection: false,
-          //   pauseOnMouseEnter: true,
-          // }}
+          autoplay={{
+            delay: 0,
+            reverseDirection: true,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: false,
+          }}
 
           speed={5000}
           loop

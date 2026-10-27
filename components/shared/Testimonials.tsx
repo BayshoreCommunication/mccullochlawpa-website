@@ -197,7 +197,11 @@ export default function Testimonials() {
           {/* Swiper */}
           <Swiper
             modules={[Autoplay]}
-            autoplay={{ delay: 0, disableOnInteraction: false }}
+            autoplay={{
+              delay: 0,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
             speed={6000}
             loop
             spaceBetween={24}

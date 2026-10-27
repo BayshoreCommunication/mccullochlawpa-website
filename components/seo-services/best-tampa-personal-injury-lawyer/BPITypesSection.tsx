@@ -203,7 +203,7 @@ export default function BPITypesSection({
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             loop={true}
             spaceBetween={24}

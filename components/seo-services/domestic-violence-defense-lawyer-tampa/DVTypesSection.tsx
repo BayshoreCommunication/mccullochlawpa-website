@@ -171,7 +171,7 @@ export default function DomesticViolenceTypesSection({
             autoplay={{
               delay: 4000,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             loop={true}
             spaceBetween={24}

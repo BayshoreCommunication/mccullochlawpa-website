@@ -147,7 +147,11 @@ export default function SidebarTestimonials() {
         slidesPerView={1}
         spaceBetween={20}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
+        }}
         loop={true}
       >
         {testimonials.map((item, index) => (

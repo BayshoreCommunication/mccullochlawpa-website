@@ -97,7 +97,11 @@ export default function CDTestimonialsSection({
 
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: false,
+            }}
             loop={true}
             spaceBetween={24}
             slidesPerView={1}
