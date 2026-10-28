@@ -25,6 +25,8 @@ import HowADuiAffectsYourJobAndLicenseInFlorida from "@/components/static-blogs/
 import TimeLimitsForFilingWrongfulDeathCasesInFlorida from "@/components/static-blogs/blogs/time-limits-for-filing-wrongful-death-cases-in-florida";
 import WhatHappensAfterADuiArrestInFlorida from "@/components/static-blogs/blogs/what-happens-after-a-dui-arrest-in-florida";
 import CanAFirstTimeDuiBeDismissedInFlorida from "@/components/static-blogs/blogs/can-a-first-time-dui-be-dismissed-in-florida";
+import ShouldYouTalkToInsuranceAfterACrashWithoutALawyer from "@/components/static-blogs/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer";
+import CanYouSueUberOrLyftAfterAnAccidentInFlorida from "@/components/static-blogs/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -127,6 +129,30 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  if (
+    params.slug === "should-you-talk-to-insurance-after-a-crash-without-a-lawyer" ||
+    params.slug === "should-you-talk-to-insurance-after-a-crash-without-a-lawyer.tsx" ||
+    params.slug === "Should You Talk to Insurance After a Crash Without a Lawyer" ||
+    params.slug === "Should%20You%20Talk%20to%20Insurance%20After%20a%20Crash%20Without%20a%20Lawyer" ||
+    params.slug === "talk-to-insurance-after-a-crash-without-lawyer" ||
+    params.slug === "talk-to-insurance-after-a-crash-without-lawyer.tsx" ||
+    decodeURIComponent(params.slug).trim().toLowerCase().replace(/\.tsx$/, "").replace(/\s+/g, "-") === "should-you-talk-to-insurance-after-a-crash-without-a-lawyer"
+  ) {
+    return <ShouldYouTalkToInsuranceAfterACrashWithoutALawyer />;
+  }
+
+  if (
+    params.slug === "can-you-sue-uber-or-lyft-after-an-accident-in-florida" ||
+    params.slug === "can-you-sue-uber-or-lyft-after-an-accident-in-florida.tsx" ||
+    params.slug === "Can You Sue Uber or Lyft After an Accident in Florida" ||
+    params.slug === "Can%20You%20Sue%20Uber%20or%20Lyft%20After%20an%20Accident%20in%20Florida" ||
+    params.slug === "can-you-sue-uber-or-lyft-after-accident-in-fl" ||
+    params.slug === "can-you-sue-uber-or-lyft-after-accident-in-fl.tsx" ||
+    decodeURIComponent(params.slug).trim().toLowerCase().replace(/\.tsx$/, "").replace(/\s+/g, "-") === "can-you-sue-uber-or-lyft-after-an-accident-in-florida"
+  ) {
+    return <CanYouSueUberOrLyftAfterAnAccidentInFlorida />;
+  }
+
   if (
     params.slug === "can-a-first-time-dui-be-dismissed-in-florida" ||
     params.slug === "can-a-first-time-dui-be-dismissed-in-florida.tsx" ||

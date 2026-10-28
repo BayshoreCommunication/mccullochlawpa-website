@@ -576,7 +576,61 @@ export const whatHappensAfterADuiArrestInFloridaBlog = {
   },
 };
 
+export const shouldYouTalkToInsuranceAfterACrashWithoutALawyerBlog = {
+  title: "Should You Talk to Insurance After a Crash Without a Lawyer?",
+  metaTitle: "Talk to Insurance After a Crash? Think Twice",
+  metaDescription:
+    "You shouldn’t talk to insurance after a Florida crash without legal representation. Unrepresented victims often settle faster for significantly lower payouts.",
+  slug: "should-you-talk-to-insurance-after-a-crash-without-a-lawyer",
+  date: "October 28, 2026",
+  createdAt: "2026-10-28T00:00:00.000Z",
+  category: "Car Accident",
+  published: true,
+  excerpt:
+    "Find out whether you should speak to insurance companies after a car accident without an attorney, and understand the risks to your settlement claim.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/talk-to-insurance-after-a-crash-without-lawyer.webp",
+    },
+    altText:
+      "Driver speaking to an insurance adjuster at a car crash scene with claim forms and keys in foreground.",
+    title: "Should You Talk to Insurance After a Crash Alone?",
+    description:
+      "Find out whether you should speak to insurance companies after a car accident without an attorney, and understand the risks to your settlement claim.",
+    caption:
+      "Learn the risks of speaking directly to insurance adjusters after a car accident.",
+  },
+};
+
+export const canYouSueUberOrLyftAfterAnAccidentInFloridaBlog = {
+  title: "Can You Sue Uber or Lyft After an Accident in Florida?",
+  metaTitle: "Can You Sue Uber/Lyft in Florida? (How $1M Policy Works)",
+  metaDescription:
+    "Uber or Lyft shields itself from lawsuits. Fail to seek care in 14 days and lose your PIP coverage. Call McCulloch Law 24/7 for a free case check.",
+  slug: "can-you-sue-uber-or-lyft-after-an-accident-in-florida",
+  date: "October 21, 2026",
+  createdAt: "2026-10-21T00:00:00.000Z",
+  category: "Rideshare Accidents",
+  published: true,
+  excerpt:
+    "Learn your legal options for suing Uber or Lyft after a rideshare accident in Florida, including insurance liability and personal injury compensation.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/can-you-sue-uber-or-lyft-after-accident-in-fl.webp",
+    },
+    altText:
+      "Hand holding a smartphone with Uber and Lyft apps next to rideshare accident claim forms and a gavel.",
+    title: "Can You Sue Uber or Lyft After an Accident in Florida?",
+    description:
+      "Learn your legal options for suing Uber or Lyft after a rideshare accident in Florida, including insurance liability and personal injury compensation.",
+    caption:
+      "Discover how to pursue compensation after an Uber or Lyft accident in Florida.",
+  },
+};
+
 export const staticBlogs = [
+  shouldYouTalkToInsuranceAfterACrashWithoutALawyerBlog,
+  canYouSueUberOrLyftAfterAnAccidentInFloridaBlog,
   canAFirstTimeDuiBeDismissedInFloridaBlog,
   whatHappensAfterADuiArrestInFloridaBlog,
   timeLimitsForFilingWrongfulDeathCasesInFloridaBlog,
