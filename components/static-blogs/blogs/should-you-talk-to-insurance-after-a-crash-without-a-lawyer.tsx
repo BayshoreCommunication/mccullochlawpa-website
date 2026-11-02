@@ -136,8 +136,9 @@ export default async function ShouldYouTalkToInsuranceAfterACrashWithoutALawyer(
                   "@id":
                     "https://www.mcfloridalaw.com/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer",
                 },
-                headline: "Talk to Insurance After a Crash? Think Twice",
-                name: "Should You Talk to Insurance After a Crash Without a Lawyer?",
+                headline:
+                  "Should You Talk to Insurance After a Crash Without a Lawyer?",
+                name: "Talk to Insurance After a Crash? Think Twice",
                 description:
                   "You shouldn’t talk to insurance after a Florida crash without legal representation. Unrepresented victims often settle faster for significantly lower payouts.",
                 url: "https://www.mcfloridalaw.com/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer",
@@ -148,27 +149,29 @@ export default async function ShouldYouTalkToInsuranceAfterACrashWithoutALawyer(
                 isPartOf: {
                   "@type": "Blog",
                   "@id": "https://www.mcfloridalaw.com/blogs#blog",
-                  name: "McCulloch Law, P.A. Blog",
+                  name: "McCulloch Law Blog",
                   url: "https://www.mcfloridalaw.com/blogs",
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Car Accident Insurance Claims in Florida",
+                  name: "Florida Car Accident Insurance Claims and Legal Representation",
                 },
                 keywords: [
-                  "talk to insurance after a crash without a lawyer",
-                  "should you talk to insurance adjuster after accident",
-                  "Florida car accident insurance recorded statement",
-                  "PIP benefits Florida 14 day rule",
-                  "Florida bad faith insurance claim 624.155",
-                  "unrepresented vs represented claimant settlement",
-                  "Tampa car accident attorney",
-                  "McCulloch Law, P.A.",
+                  "talk to insurance after a car accident",
+                  "Florida car accident claims",
+                  "insurance adjuster after accident",
+                  "recorded statement after car accident",
+                  "car accident lawyer Florida",
+                  "Florida PIP benefits",
+                  "insurance settlement after accident",
+                  "uninsured motorist coverage",
+                  "Florida personal injury attorney",
+                  "Tampa car accident lawyer",
+                  "McCulloch Law",
                 ],
                 author: {
-                  "@type": "Organization",
-                  name: "McCulloch Law, P.A.",
-                  url: "https://www.mcfloridalaw.com/",
+                  "@type": "Person",
+                  name: "Drew McCulloch",
                 },
                 publisher: {
                   "@type": "Organization",
@@ -188,14 +191,40 @@ export default async function ShouldYouTalkToInsuranceAfterACrashWithoutALawyer(
                 "@id":
                   "https://www.mcfloridalaw.com/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer#faq",
                 url: "https://www.mcfloridalaw.com/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "May I change attorneys if my case is already pending?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yeah. When you feel like they are being rude by ignoring your calls or simply that they are sitting on their hands and your bills are piling up, you can simply get rid of them.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "When do I have to file a personal injury case in Florida?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "The statute of limitations for most negligence cases is 2 years from the date of the accident, so if you wait too long, you may kill your case before it even begins.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What if the at-fault person doesn’t have enough coverage?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "In those instances, your own Uninsured/Underinsured Motorist coverage, also known as UM, will have to take the heat. It's similar to the other man's insurance policy that he should have had in the first place.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What if my fault was a part of the accident?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Florida has embraced the comparative negligence doctrine, to a point where if you're not over 50% at fault, you can still recover damages.",
+                    },
+                  },
+                ],
               },
             ],
           }),

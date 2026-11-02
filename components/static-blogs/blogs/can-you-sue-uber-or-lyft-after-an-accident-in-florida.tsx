@@ -153,8 +153,9 @@ export default async function CanYouSueUberOrLyftAfterAnAccidentInFlorida() {
                   "@id":
                     "https://www.mcfloridalaw.com/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida",
                 },
-                headline: "Can You Sue Uber/Lyft in Florida? (How $1M Policy Works)",
-                name: "Can You Sue Uber or Lyft After an Accident in Florida?",
+                headline:
+                  "Can You Sue Uber or Lyft After an Accident in Florida?",
+                name: "Can You Sue Uber/Lyft in Florida? (How $1M Policy Works)",
                 description:
                   "Uber or Lyft shields itself from lawsuits. Fail to seek care in 14 days and lose your PIP coverage. Call McCulloch Law 24/7 for a free case check.",
                 url: "https://www.mcfloridalaw.com/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida",
@@ -170,16 +171,20 @@ export default async function CanYouSueUberOrLyftAfterAnAccidentInFlorida() {
                 },
                 about: {
                   "@type": "Thing",
-                  name: "Uber & Lyft Rideshare Accidents in Florida",
+                  name: "Uber and Lyft Rideshare Accident Claims in Florida",
                 },
                 keywords: [
                   "can you sue Uber or Lyft after an accident in Florida",
-                  "suing Uber in Florida",
-                  "suing Lyft in Florida",
-                  "Florida Statute 627.748 rideshare insurance",
-                  "Uber 1 million dollar insurance policy",
-                  "rideshare accident lawyer Tampa",
-                  "Florida PIP 14 day medical rule",
+                  "Uber accident lawyer Florida",
+                  "Lyft accident lawyer Florida",
+                  "Florida rideshare accident attorney",
+                  "rideshare accident claims",
+                  "Uber accident insurance coverage",
+                  "Lyft accident insurance coverage",
+                  "Florida rideshare insurance law",
+                  "Florida Statute 627.748",
+                  "Tampa rideshare accident lawyer",
+                  "rideshare injury compensation",
                   "McCulloch Law, P.A.",
                 ],
                 author: {
@@ -205,14 +210,40 @@ export default async function CanYouSueUberOrLyftAfterAnAccidentInFlorida() {
                 "@id":
                   "https://www.mcfloridalaw.com/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida#faq",
                 url: "https://www.mcfloridalaw.com/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Is it a difference if I was a passenger vs pedestrian hit by a rideshare car?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes, significantly. Passengers typically fall under the $1 million policy the moment the trip starts. Pedestrians struck by an active rideshare vehicle are also covered under that same policy but proving fault often requires more independent evidence since there's no rider testimony.",
+                    },
                   },
-                })),
+                  {
+                    "@type": "Question",
+                    name: "Am I able to sue if the rideshare driver was using a personally registered car?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Generally yes. Florida's statute attaches the insurance requirement to the TNC activity itself, not the vehicle's registration class, so an ordinary personal vehicle logged into Uber or Lyft still falls under the statutory coverage tiers.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What if my rideshare driver fled the scene?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Hit and run involving a rideshare vehicle still triggers uninsured motorist coverage, and Uber and Lyft both maintain internal trip logs that can identify the driver.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "What if the ride-share driver is using another app, such as DoorDash?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "This will cause a coverage conflict between insurers as to primary coverage. Both companies' insurance carriers will attempt to pass financial liability to the other driver if he or she was actively delivering or logged into more than one.",
+                    },
+                  },
+                ],
               },
             ],
           }),
