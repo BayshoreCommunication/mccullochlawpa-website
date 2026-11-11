@@ -457,8 +457,8 @@ function buildJsonLd(canonicalUrl: string) {
         image: {
           "@type": "ImageObject",
           url: `https://www.mcfloridalaw.com${featuredImage.image.url}`,
-          width: 1754,
-          height: 895,
+          width: 1755,
+          height: 896,
           caption: featuredImage.caption,
         },
         isPartOf: {
@@ -546,8 +546,8 @@ export default async function DuiVsDwiWhatsTheDifferenceInFloridaLaw() {
                 src={duiVsDwiWhatsTheDifferenceInFloridaLawBlog.featuredImage.image.url}
                 alt={duiVsDwiWhatsTheDifferenceInFloridaLawBlog.featuredImage.altText}
                 title={duiVsDwiWhatsTheDifferenceInFloridaLawBlog.featuredImage.title}
-                width={1754}
-                height={895}
+                width={1755}
+                height={896}
                 sizes="(max-width: 1024px) 100vw, 1120px"
                 priority
                 className="h-auto w-full object-cover"
