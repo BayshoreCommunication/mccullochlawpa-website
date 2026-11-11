@@ -628,7 +628,35 @@ export const canYouSueUberOrLyftAfterAnAccidentInFloridaBlog = {
   },
 };
 
+export const duiVsDwiWhatsTheDifferenceInFloridaLawBlog = {
+  title: "DUI vs DWI: What's the Difference in Florida Law?",
+  metaTitle: "DUI vs DWI Differences in Florida | McCulloch Law",
+  metaDescription:
+    "Florida has no separate DWI charge. See how DUI is defined under Section 316.193, the 2026 penalties and the 10 day license deadline. Call us.",
+  slug: "dui-vs-dwi-whats-the-difference-in-florida-law",
+  date: "November 11, 2026",
+  createdAt: "2026-11-11T00:00:00.000Z",
+  updatedAt: "2026-11-11T00:00:00.000Z",
+  category: "DUI Defense",
+  published: true,
+  excerpt:
+    "There really is very little difference. Florida only recognizes DUI charges under section 316.193 of the Florida Statutes. Learn the penalties, 10-day DHSMV deadline, and defense strategies.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/dui-vs-dwi-florida-law-difference-explained.webp",
+    },
+    altText:
+      "Judge gavel and scales of justice in front of a police traffic stop for impaired driving in Florida.",
+    title: "DUI vs DWI: What's the Difference in Florida Law?",
+    description:
+      "An essential legal overview clarifying how Florida criminal statutes treat DUI versus DWI charges, penalties, and defense strategies.",
+    caption:
+      "Understand the critical legal differences between DUI and DWI charges under Florida law.",
+  },
+};
+
 export const staticBlogs = [
+  duiVsDwiWhatsTheDifferenceInFloridaLawBlog,
   shouldYouTalkToInsuranceAfterACrashWithoutALawyerBlog,
   canYouSueUberOrLyftAfterAnAccidentInFloridaBlog,
   canAFirstTimeDuiBeDismissedInFloridaBlog,

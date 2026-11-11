@@ -37,12 +37,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // 3. Static Blog Pages
-  const staticBlogRoutes = staticBlogs.map((blog) => ({
-    url: `${BASE_URL}/blogs/${blog.slug}`,
-    lastModified: blog.createdAt ? new Date(blog.createdAt) : new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
+  const staticBlogRoutes = staticBlogs.map((blog) => {
+    const blogDates = blog as { createdAt?: string; updatedAt?: string };
+    const lastModSource = blogDates.updatedAt || blogDates.createdAt;
+    return {
+      url: `${BASE_URL}/blogs/${blog.slug}`,
+      lastModified: lastModSource ? new Date(lastModSource) : new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    };
+  });
 
   // 4. Dynamic Blog Pages
   let dynamicBlogRoutes: MetadataRoute.Sitemap = [];

@@ -27,6 +27,7 @@ import WhatHappensAfterADuiArrestInFlorida from "@/components/static-blogs/blogs
 import CanAFirstTimeDuiBeDismissedInFlorida from "@/components/static-blogs/blogs/can-a-first-time-dui-be-dismissed-in-florida";
 import ShouldYouTalkToInsuranceAfterACrashWithoutALawyer from "@/components/static-blogs/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer";
 import CanYouSueUberOrLyftAfterAnAccidentInFlorida from "@/components/static-blogs/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida";
+import DuiVsDwiWhatsTheDifferenceInFloridaLaw from "@/components/static-blogs/blogs/dui-vs-dwi-whats-the-difference-in-florida-law";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -64,13 +65,19 @@ export async function generateMetadata({
     .trim()
     .toLowerCase()
     .replace(/\.tsx$/, "")
+    .replace(/['’:?]/g, "")
     .replace(/\s+/g, "-");
+
+  const resolvedSlug =
+    normalizedSlug === "dui-vs-dwi-florida-law-difference-explained"
+      ? "dui-vs-dwi-whats-the-difference-in-florida-law"
+      : normalizedSlug;
 
   const staticBlog = staticBlogs.find(
     (item) =>
       item.slug === params.slug ||
       item.slug === params.slug.replace(/\.tsx$/, "") ||
-      item.slug === normalizedSlug
+      item.slug === resolvedSlug
   );
 
   if (staticBlog) {
@@ -129,6 +136,23 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
+  const cleanParamSlug = decodeURIComponent(params.slug)
+    .trim()
+    .toLowerCase()
+    .replace(/\.tsx$/, "")
+    .replace(/['’:?]/g, "")
+    .replace(/\s+/g, "-");
+
+  if (
+    params.slug === "dui-vs-dwi-whats-the-difference-in-florida-law" ||
+    params.slug === "dui-vs-dwi-whats-the-difference-in-florida-law.tsx" ||
+    params.slug === "dui-vs-dwi-florida-law-difference-explained" ||
+    params.slug === "dui-vs-dwi-florida-law-difference-explained.tsx" ||
+    cleanParamSlug === "dui-vs-dwi-whats-the-difference-in-florida-law"
+  ) {
+    return <DuiVsDwiWhatsTheDifferenceInFloridaLaw />;
+  }
+
   if (
     params.slug === "should-you-talk-to-insurance-after-a-crash-without-a-lawyer" ||
     params.slug === "should-you-talk-to-insurance-after-a-crash-without-a-lawyer.tsx" ||
