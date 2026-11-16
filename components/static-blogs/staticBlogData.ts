@@ -655,7 +655,35 @@ export const duiVsDwiWhatsTheDifferenceInFloridaLawBlog = {
   },
 };
 
+export const canDomesticViolenceChargesBeDroppedInFloridaBlog = {
+  title: "Can Domestic Violence Charges Be Dropped in Florida?",
+  metaTitle: "Can You Drop Domestic Violence Charges in Florida?",
+  metaDescription:
+    "Only the state attorney can drop a Florida domestic violence charge. See how dismissals happen and how a Tampa defense lawyer can help you.",
+  slug: "can-domestic-violence-charges-be-dropped-in-florida",
+  date: "November 16, 2026",
+  createdAt: "2026-11-16T00:00:00.000Z",
+  updatedAt: "2026-11-16T00:00:00.000Z",
+  category: "Domestic Violence Defense",
+  published: true,
+  excerpt:
+    "Yes, but only the state attorney can drop a Florida domestic violence charge. Learn how dismissals, no-file decisions, and defense strategies work before charges are filed.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/can-domestic-violence-charges-be-dropped-in-fl.webp",
+    },
+    altText:
+      "Domestic violence charges checklist with gavel and Florida criminal law book in front of a police car",
+    title: "Can Domestic Violence Charges Be Dropped in Florida?",
+    description:
+      "Learn whether domestic violence charges can be dropped in Florida, how prosecutors handle dismissal requests, and what legal defense options are available",
+    caption:
+      "Understand the legal process and options for getting domestic violence charges dismissed in Florida",
+  },
+};
+
 export const staticBlogs = [
+  canDomesticViolenceChargesBeDroppedInFloridaBlog,
   duiVsDwiWhatsTheDifferenceInFloridaLawBlog,
   shouldYouTalkToInsuranceAfterACrashWithoutALawyerBlog,
   canYouSueUberOrLyftAfterAnAccidentInFloridaBlog,

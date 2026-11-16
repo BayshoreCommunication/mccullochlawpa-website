@@ -28,6 +28,7 @@ import CanAFirstTimeDuiBeDismissedInFlorida from "@/components/static-blogs/blog
 import ShouldYouTalkToInsuranceAfterACrashWithoutALawyer from "@/components/static-blogs/blogs/should-you-talk-to-insurance-after-a-crash-without-a-lawyer";
 import CanYouSueUberOrLyftAfterAnAccidentInFlorida from "@/components/static-blogs/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida";
 import DuiVsDwiWhatsTheDifferenceInFloridaLaw from "@/components/static-blogs/blogs/dui-vs-dwi-whats-the-difference-in-florida-law";
+import CanDomesticViolenceChargesBeDroppedInFlorida from "@/components/static-blogs/blogs/can-domestic-violence-charges-be-dropped-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -55,23 +56,28 @@ function truncateText(text: string, wordLimit: number): string {
     : text;
 }
 
+const SLUG_ALIASES: Record<string, string> = {
+  "dui-vs-dwi-florida-law-difference-explained": "dui-vs-dwi-whats-the-difference-in-florida-law",
+  "can-domestic-violence-charges-be-dropped-in-fl": "can-domestic-violence-charges-be-dropped-in-florida",
+};
+
+function resolveStaticSlug(rawSlug: string): string {
+  const normalized = decodeURIComponent(rawSlug)
+    .trim()
+    .toLowerCase()
+    .replace(/\.tsx$/, "")
+    .replace(/['’:?]/g, "")
+    .replace(/\s+/g, "-");
+  return SLUG_ALIASES[normalized] ?? normalized;
+}
+
 // ---------- SEO / OpenGraph ----------
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }) {
-  const normalizedSlug = decodeURIComponent(params.slug)
-    .trim()
-    .toLowerCase()
-    .replace(/\.tsx$/, "")
-    .replace(/['’:?]/g, "")
-    .replace(/\s+/g, "-");
-
-  const resolvedSlug =
-    normalizedSlug === "dui-vs-dwi-florida-law-difference-explained"
-      ? "dui-vs-dwi-whats-the-difference-in-florida-law"
-      : normalizedSlug;
+  const resolvedSlug = resolveStaticSlug(params.slug);
 
   const staticBlog = staticBlogs.find(
     (item) =>
@@ -136,20 +142,13 @@ export async function generateMetadata({
 
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
-  const cleanParamSlug = decodeURIComponent(params.slug)
-    .trim()
-    .toLowerCase()
-    .replace(/\.tsx$/, "")
-    .replace(/['’:?]/g, "")
-    .replace(/\s+/g, "-");
+  const resolvedParamSlug = resolveStaticSlug(params.slug);
 
-  if (
-    params.slug === "dui-vs-dwi-whats-the-difference-in-florida-law" ||
-    params.slug === "dui-vs-dwi-whats-the-difference-in-florida-law.tsx" ||
-    params.slug === "dui-vs-dwi-florida-law-difference-explained" ||
-    params.slug === "dui-vs-dwi-florida-law-difference-explained.tsx" ||
-    cleanParamSlug === "dui-vs-dwi-whats-the-difference-in-florida-law"
-  ) {
+  if (resolvedParamSlug === "can-domestic-violence-charges-be-dropped-in-florida") {
+    return <CanDomesticViolenceChargesBeDroppedInFlorida />;
+  }
+
+  if (resolvedParamSlug === "dui-vs-dwi-whats-the-difference-in-florida-law") {
     return <DuiVsDwiWhatsTheDifferenceInFloridaLaw />;
   }
 
