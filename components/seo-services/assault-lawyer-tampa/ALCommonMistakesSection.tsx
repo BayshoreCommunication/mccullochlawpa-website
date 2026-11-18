@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaCommentSlash,
   FaUserSlash,
@@ -16,7 +17,7 @@ import {
 export interface MistakeItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -37,8 +38,22 @@ const defaultMistakes: MistakeItem[] = [
   {
     id: "contacting-victim",
     title: "Contacting the Alleged Victim",
-    description:
-      "Assault cases sometimes involve domestic violence. So follow all release conditions, injunctions and no contact restrictions from court. Even a message intended to resolve the dispute may violate a court order or create a separate legal problem. Ask your attorney about permitted communication before contacting the alleged victim.",
+    description: (
+      <>
+        Assault cases sometimes involve{" "}
+        <Link
+          href="/domestic-violence-defense-lawyer-tampa"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          domestic violence
+        </Link>
+        . So follow all release conditions, injunctions and no contact
+        restrictions from court. Even a message intended to resolve the dispute
+        may violate a court order or create a separate legal problem. Ask your
+        attorney about permitted communication before contacting the alleged
+        victim.
+      </>
+    ),
     icon: <FaUserSlash className="w-5 h-5 text-red-500" />,
   },
   {

@@ -12,7 +12,7 @@ export interface JDHeroSectionProps {
   personImagePath?: string;
   badgeTitle?: string;
   h1Title?: string;
-  paragraph?: string;
+  paragraph?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -24,7 +24,24 @@ export default function JDHero({
   personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Juvenile Defense Lawyer",
   h1Title = "Juvenile Defense Lawyer Tampa, Protect Your Child’s Rights and Future",
-  paragraph = "Parents are usually shocked when criminal charges are brought on behalf of their children. Long term concerns are serious issues arising from court and school consequences. A qualified juvenile defense attorney Tampa offers clarity at the moment. Drew McCulloch is a dedicated member of the McCulloch Law group. Families learn to understand the allegations and protect constitutional rights. A careful evidence review helps explore appropriate legal options. Contact us for a free confidential consultation.",
+  paragraph = (
+    <>
+      Parents are usually shocked when criminal charges are brought on behalf
+      of their children. Long term concerns are serious issues arising from
+      court and school consequences. A qualified juvenile defense attorney Tampa
+      offers clarity at the moment. Drew McCulloch is a dedicated member of the
+      McCulloch Law group. Families learn to understand the allegations and
+      protect constitutional rights. A careful evidence review helps explore
+      appropriate legal options.{" "}
+      <Link
+        href="/contact"
+        className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+      >
+        Contact us
+      </Link>{" "}
+      for a free confidential consultation.
+    </>
+  ),
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -42,8 +59,8 @@ export default function JDHero({
           className="object-cover object-center opacity-40 lg:opacity-100"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40 lg:to-transparent z-10" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-transparent to-slate-950/80 z-10 lg:hidden" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/95 lg:to-transparent z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-white/95 to-white z-10 lg:hidden" />
       </div>
 
       {/* MAIN CONTAINER */}

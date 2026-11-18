@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaComments,
   FaFileAlt,
@@ -14,9 +15,12 @@ export interface HandleStep {
   id: string;
   stepNumber: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
+
+const INLINE_LINK_CLASS =
+  "font-semibold text-primary underline hover:text-[#d4a843] transition-colors";
 
 export interface ALHowWeHandleSectionProps {
   title?: string;
@@ -29,16 +33,38 @@ const defaultSteps: HandleStep[] = [
     id: "consultation-case-review",
     stepNumber: "01",
     title: "Initial Consultation and Case Review",
-    description:
-      "We discuss the incident, your concerns, the current status of the case and upcoming court dates. Bring your available documents and a timeline of events. Our criminal defense lawyer can explain the main legal issues and identify information requiring further review.",
+    description: (
+      <>
+        We discuss the incident, your concerns, the current status of the case
+        and upcoming court dates. Bring your available documents and a timeline
+        of events. Our{" "}
+        <Link href="/criminal-defense-lawyer-tampa-fl" className={INLINE_LINK_CLASS}>
+          criminal defense lawyer
+        </Link>{" "}
+        can explain the main legal issues and identify information requiring
+        further review.
+      </>
+    ),
     icon: <FaComments className="w-5 h-5 text-primary" />,
   },
   {
     id: "review-charge-evidence",
     stepNumber: "02",
     title: "Review of the Charge and Evidence",
-    description:
-      "We examine the charging documents, police reports, witness accounts, messages, photographs and recordings available to the defense. Our review considers the required elements of simple or aggravated assault and the strength of the evidence supporting each allegation. But when an assault allegation involves a sex crime, we also review forensic medical records, relationship context and prior statements to identify contradictions, bias or false accusations.",
+    description: (
+      <>
+        We examine the charging documents, police reports, witness accounts,
+        messages, photographs and recordings available to the defense. Our review
+        considers the required elements of simple or aggravated assault and the
+        strength of the evidence supporting each allegation. But when an assault
+        allegation involves a{" "}
+        <Link href="/sex-crime-defense-lawyer-tampa" className={INLINE_LINK_CLASS}>
+          sex crime
+        </Link>
+        , we also review forensic medical records, relationship context and
+        prior statements to identify contradictions, bias or false accusations.
+      </>
+    ),
     icon: <FaFileAlt className="w-5 h-5 text-primary" />,
   },
   {
@@ -53,8 +79,20 @@ const defaultSteps: HandleStep[] = [
     id: "defense-preparation",
     stepNumber: "04",
     title: "Defense Preparation",
-    description:
-      "We assess possible defenses, legal motions and issues involving the collection or reliability of evidence. We explain the strengths and limits of each available argument before discussing the next steps. When a minor faces an assault allegation, juvenile court procedures and potential consequences may differ from adult criminal proceedings. Our juvenile defense addresses the legal requirements and options available in qualifying cases.",
+    description: (
+      <>
+        We assess possible defenses, legal motions and issues involving the
+        collection or reliability of evidence. We explain the strengths and
+        limits of each available argument before discussing the next steps. When
+        a minor faces an assault allegation, juvenile court procedures and
+        potential consequences may differ from adult criminal proceedings. Our{" "}
+        <Link href="/juvenile-defense-lawyer-tampa" className={INLINE_LINK_CLASS}>
+          juvenile defense
+        </Link>{" "}
+        addresses the legal requirements and options available in qualifying
+        cases.
+      </>
+    ),
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
   },
   {

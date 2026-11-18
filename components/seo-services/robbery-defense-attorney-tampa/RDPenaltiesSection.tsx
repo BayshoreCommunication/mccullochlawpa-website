@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaGavel,
   FaShieldAlt,
@@ -19,9 +20,12 @@ import {
 export interface RobberyPenaltyItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
+
+const INLINE_LINK_CLASS =
+  "font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors";
 
 export interface RDPenaltiesSectionProps {
   title?: string;
@@ -68,15 +72,45 @@ const defaultPenalties: RobberyPenaltyItem[] = [
   {
     id: "risk-of-stacking-sentences",
     title: "Risk of Stacking Sentences",
-    description:
-      "Multiple convictions can expose you to separate prison terms. Florida Statutes § 921.16 generally provides for concurrent sentences when the court charges multiple offenses in the same charging document. Unless the judge directs consecutive sentences. The court may therefore order consecutive terms in appropriate circumstances. For example, fraud and robbery generally involve different statutory elements. Fraud related offenses require proof of deception or a fraudulent scheme, along with the applicable intent.",
+    description: (
+      <>
+        Multiple convictions can expose you to separate prison terms. Florida
+        Statutes § 921.16 generally provides for concurrent sentences when the
+        court charges multiple offenses in the same charging document. Unless
+        the judge directs consecutive sentences. The court may therefore order
+        consecutive terms in appropriate circumstances. For example, fraud and
+        robbery generally involve different statutory elements.{" "}
+        <Link href="/fraud-defense-lawyer-tampa" className={INLINE_LINK_CLASS}>
+          Fraud related offenses
+        </Link>{" "}
+        require proof of deception or a fraudulent scheme, along with the
+        applicable intent.
+      </>
+    ),
     icon: <FaLayerGroup className="w-5 h-5 text-primary" />,
   },
   {
     id: "loss-of-constitutional-rights",
     title: "Loss of Constitutional Rights",
-    description:
-      "A felony conviction in Florida could lead to the loss of many of your civil rights. Generally, someone convicted of a felony in Florida loses the right to vote until the completion of his or her sentence, pursuant to Florida restoration laws. The right to vote can be restored after someone completes his or her sentence, including incarceration, probation, and any other factors that are court-ordered. If you are convicted of a murder or a felony sexual offense, then your rights to vote can be restored through clemency. A felon may be disqualified from sitting on a jury or holding elected office.",
+    description: (
+      <>
+        A felony conviction in Florida could lead to the loss of many of your
+        civil rights. Generally, someone convicted of a felony in Florida loses
+        the right to vote until the completion of his or her sentence, pursuant
+        to Florida restoration laws. The right to vote can be restored after
+        someone completes his or her sentence, including incarceration,
+        probation, and any other factors that are court-ordered. If you are
+        convicted of a murder or a{" "}
+        <Link
+          href="/sex-crime-defense-lawyer-tampa"
+          className={INLINE_LINK_CLASS}
+        >
+          felony sexual offense
+        </Link>
+        , then your rights to vote can be restored through clemency. A felon may
+        be disqualified from sitting on a jury or holding elected office.
+      </>
+    ),
     icon: <FaVoteYea className="w-5 h-5 text-primary" />,
   },
   {

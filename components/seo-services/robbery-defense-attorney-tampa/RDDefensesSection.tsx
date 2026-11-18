@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaUserSecret,
   FaShieldAlt,
@@ -14,7 +15,7 @@ import {
 export interface RobberyDefenseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -35,8 +36,23 @@ const defaultDefenses: RobberyDefenseItem[] = [
   {
     id: "lack-of-force-or-fear",
     title: "Lack of Force or Fear",
-    description:
-      "Florida robbery law requires the prosecution to connect the property taking with force, violence, assault or fear. A disagreement about ownership or an unauthorized taking does not automatically establish robbery. For example, a person may take property without force, followed by a separate argument after the owner discovers the loss. The timing and connection between the events may affect the robbery allegation.",
+    description: (
+      <>
+        Florida robbery law requires the prosecution to connect the property
+        taking with force, violence,{" "}
+        <Link
+          href="/assault-lawyer-tampa"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          assault
+        </Link>{" "}
+        or fear. A disagreement about ownership or an unauthorized taking does
+        not automatically establish robbery. For example, a person may take
+        property without force, followed by a separate argument after the owner
+        discovers the loss. The timing and connection between the events may
+        affect the robbery allegation.
+      </>
+    ),
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
   },
   {

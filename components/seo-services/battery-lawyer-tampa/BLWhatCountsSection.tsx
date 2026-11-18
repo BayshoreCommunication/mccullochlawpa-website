@@ -1,20 +1,34 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaBalanceScale, FaGavel, FaExclamationTriangle, FaShieldAlt } from "react-icons/fa";
 
 export interface BLWhatCountsSectionProps {
   title?: string;
   paragraph1?: string;
   paragraph2?: string;
-  paragraph3?: string;
+  paragraph3?: React.ReactNode;
 }
 
 export default function BLWhatCountsSection({
   title = "What Counts as Battery Charges Under Florida Law?",
   paragraph1 = "Under Florida Statutes § 784.03, a battery is an assault. The legal definition of battery in Florida state law is any intentional touching or striking of another person against that person's will or the intentional infliction of bodily harm. A push, slap, punch or other unwanted physical contact can be grounds for battery depending on the facts of the situation, like it was when you accidentally bumped into someone at a crowded party versus when you punch someone in the face during a fight.",
   paragraph2 = "Most cases of battery in Florida will be charged as a first degree misdemeanor battery under the provisions of § 784.03. If you are convicted of a second or subsequent battery, the charge can be enhanced to a third degree felony if you have a qualifying prior conviction of battery, felony battery, aggravated battery or resisting arrest with violence under § 843.01.",
-  paragraph3 = "Most assault attorneys handle cases involving accusations of an intentional, unlawful threat of immediate violence accompanied by an apparent ability to commit the threat and a reasonable fear of imminent violence.",
+  paragraph3 = (
+    <>
+      Most{" "}
+      <Link
+        href="/assault-lawyer-tampa"
+        className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+      >
+        assault attorneys
+      </Link>{" "}
+      handle cases involving accusations of an intentional, unlawful threat of
+      immediate violence accompanied by an apparent ability to commit the threat
+      and a reasonable fear of imminent violence.
+    </>
+  ),
 }: BLWhatCountsSectionProps) {
   return (
     <section className="w-full bg-slate-900 py-12 md:py-20 text-white font-sans relative overflow-hidden">

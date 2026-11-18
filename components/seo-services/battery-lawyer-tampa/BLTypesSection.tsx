@@ -28,9 +28,12 @@ export interface CaseTypeItem {
   image: string;
   imageAlt: string;
   badgeIcon: React.ReactNode;
-  description: string;
+  description: React.ReactNode;
   linkHref?: string;
 }
+
+const INLINE_LINK_CLASS =
+  "font-semibold text-primary underline hover:text-[#d4a843] transition-colors";
 
 export interface BLTypesSectionProps {
   title?: string;
@@ -75,8 +78,24 @@ const defaultCaseItems: CaseTypeItem[] = [
     image: "/images/seo-services/battery-lawyer-tampa/domestic-battery.webp",
     imageAlt: "Domestic Battery Defense in Tampa Florida",
     badgeIcon: <FaHeartBroken className="w-5 h-5 text-primary" />,
-    description:
-      'Florida law defines "domestic violence" as any assault, battery, kidnapping or other criminal offense resulting in bodily harm or death inflicted upon a person against whom the defendant has or had a specified domestic relationship. The relationship needs to be one of family or household members including spouses, former spouses, family members related by blood or marriage, people who live or lived together as a family and co parents of a shared child.',
+    description: (
+      <>
+        Florida law defines &ldquo;
+        <Link
+          href="/domestic-violence-defense-lawyer-tampa"
+          className={INLINE_LINK_CLASS}
+        >
+          domestic violence
+        </Link>
+        &rdquo; as any assault, battery, kidnapping or other criminal offense
+        resulting in bodily harm or death inflicted upon a person against whom
+        the defendant has or had a specified domestic relationship. The
+        relationship needs to be one of family or household members including
+        spouses, former spouses, family members related by blood or marriage,
+        people who live or lived together as a family and co parents of a shared
+        child.
+      </>
+    ),
     linkHref: "/contact",
   },
   {
@@ -85,8 +104,25 @@ const defaultCaseItems: CaseTypeItem[] = [
     image: "/images/seo-services/battery-lawyer-tampa/sexual-battery.webp",
     imageAlt: "Sexual Battery Criminal Defense in Tampa Florida",
     badgeIcon: <FaLock className="w-5 h-5 text-primary" />,
-    description:
-      "Sexual battery in Florida refers to nonconsensual sexual activity and carries penalties that far exceed other battery charges. These cases involve separate evidence rules, unique procedures and potential consequences including lifetime sex offender registration. An allegation of sexual battery requires defense representation experienced in addressing both the evidentiary issues and the serious collateral consequences.",
+    description: (
+      <>
+        Florida prosecutes the crime of sexual battery under the heading of
+        Chapter 794, which addresses specific types of sexual penetration or
+        union and defines consent and other legally relevant scenarios. Sexual
+        battery is a serious{" "}
+        <Link
+          href="/sex-crime-defense-lawyer-tampa"
+          className={INLINE_LINK_CLASS}
+        >
+          sex crime
+        </Link>
+        . Upon investigating a sexual battery case, the police may need to
+        review written communication, forensics, medical reports, DNA evidence,
+        statements of eyewitnesses and computer data. Sexual battery is a
+        specific statutory crime and is not considered a variation of simple
+        battery under §794.03.
+      </>
+    ),
     linkHref: "/contact",
   },
   {

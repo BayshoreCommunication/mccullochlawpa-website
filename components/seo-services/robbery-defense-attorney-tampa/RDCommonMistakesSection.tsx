@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaCommentSlash,
   FaPhoneSlash,
@@ -20,7 +21,7 @@ export interface RobberyMistakeItem {
 
 export interface RDCommonMistakesSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   items?: RobberyMistakeItem[];
 }
 
@@ -71,7 +72,18 @@ const defaultMistakes: RobberyMistakeItem[] = [
 
 export default function RDCommonMistakesSection({
   title = "Common Mistakes That Risk Your Case to Lose",
-  subTitle = "Applicants without Tampa criminal defense lawyer often made minor mistakes that damaged their case.",
+  subTitle = (
+    <>
+      Applicants without{" "}
+      <Link
+        href="/criminal-defense-lawyer-tampa-fl"
+        className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+      >
+        Tampa criminal defense lawyer
+      </Link>{" "}
+      often made minor mistakes that damaged their case.
+    </>
+  ),
   items = defaultMistakes,
 }: RDCommonMistakesSectionProps) {
   return (

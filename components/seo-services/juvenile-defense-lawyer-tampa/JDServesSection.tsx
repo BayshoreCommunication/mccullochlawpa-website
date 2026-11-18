@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaShieldAlt, FaBriefcaseMedical, FaGavel, FaCheckCircle } from "react-icons/fa";
 
 export interface JDServesSectionProps {
@@ -50,6 +51,14 @@ const criminalDefenseItems = [
   "Vehicular Manslaughter",
   "Speeding and High Speed Violations",
 ];
+
+const criminalDefenseLinks: Record<string, string> = {
+  Assault: "/assault-lawyer-tampa",
+  "Domestic Abuse": "/domestic-violence-defense-lawyer-tampa",
+  DUI: "/tampa-dui-accident-lawyer",
+  Fraud: "/fraud-defense-lawyer-tampa",
+  "Sex Crimes": "/sex-crime-defense-lawyer-tampa",
+};
 
 export default function JDServesSection({
   title = "Cases McCulloch Law Handles Across Tampa Florida",
@@ -142,17 +151,29 @@ export default function JDServesSection({
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {criminalDefenseItems.map((item) => (
-                <div
-                  key={item}
-                  className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-900/40 hover:bg-slate-900/80 transition-colors"
-                >
-                  <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="text-xs sm:text-sm text-slate-200">
-                    {item}
-                  </span>
-                </div>
-              ))}
+              {criminalDefenseItems.map((item) => {
+                const href = criminalDefenseLinks[item];
+                return (
+                  <div
+                    key={item}
+                    className="flex items-center gap-2.5 p-2 rounded-xl bg-slate-900/40 hover:bg-slate-900/80 transition-colors"
+                  >
+                    <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                    {href ? (
+                      <Link
+                        href={href}
+                        className="text-xs sm:text-sm font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    ) : (
+                      <span className="text-xs sm:text-sm text-slate-200">
+                        {item}
+                      </span>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 

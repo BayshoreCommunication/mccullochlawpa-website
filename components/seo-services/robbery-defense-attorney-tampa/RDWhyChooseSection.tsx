@@ -15,7 +15,7 @@ import {
 export interface RobberyWhyChooseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -30,8 +30,22 @@ const defaultWhyChooseItems: RobberyWhyChooseItem[] = [
   {
     id: "inside-knowledge-prosecution",
     title: "Inside Knowledge of the Prosecution",
-    description:
-      "Attorney Drew McCulloch previously served as an Assistant State Attorney with the Hillsborough County State Attorney's Office in Tampa from 2010 to 2014. During his prosecution career, he selected more than 75 juries and tried over 100 cases to verdict. His experience gives him direct knowledge of prosecution preparation, witness examination, evidence presentation and jury trial procedures.",
+    description: (
+      <>
+        <Link
+          href="/about"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          Attorney Drew McCulloch
+        </Link>{" "}
+        previously served as an Assistant State Attorney with the Hillsborough
+        County State Attorney&apos;s Office in Tampa from 2010 to 2014. During
+        his prosecution career, he selected more than 75 juries and tried over
+        100 cases to verdict. His experience gives him direct knowledge of
+        prosecution preparation, witness examination, evidence presentation and
+        jury trial procedures.
+      </>
+    ),
     icon: <FaUserShield className="w-5 h-5 text-primary" />,
   },
   {

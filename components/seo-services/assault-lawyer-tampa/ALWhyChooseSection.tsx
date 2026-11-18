@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaUserCheck,
   FaAward,
@@ -14,7 +15,7 @@ import {
 export interface WhyChooseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -29,8 +30,20 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
   {
     id: "prosecutor-experience",
     title: "Experience on Both Sides of a Criminal Case",
-    description:
-      "Attorney Drew McCulloch previously served as a state prosecutor. His prosecutorial background gives him firsthand insight into criminal charging decisions, evidence review and prosecution strategies. He now represents people facing criminal allegations across the Tampa Bay area.",
+    description: (
+      <>
+        <Link
+          href="/about"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          Attorney Drew McCulloch
+        </Link>{" "}
+        previously served as a state prosecutor. His prosecutorial background
+        gives him firsthand insight into criminal charging decisions, evidence
+        review and prosecution strategies. He now represents people facing
+        criminal allegations across the Tampa Bay area.
+      </>
+    ),
     icon: <FaUserCheck className="w-5 h-5 text-primary" />,
   },
   {
@@ -79,7 +92,7 @@ export default function ALWhyChooseSection({
   return (
     <section className="w-full bg-slate-50 py-12 md:py-20 font-sans border-b border-slate-200">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
-        
+
         {/* HEADER */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-slate-900 leading-tight tracking-tight mb-3">
@@ -101,7 +114,7 @@ export default function ALWhyChooseSection({
 
         {/* CONTENT GRID: IMAGE COLUMN + ITEMS */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
-          
+
           {/* LEFT: ATTORNEY IMAGE */}
           <div className="lg:col-span-5 relative w-full h-[420px] sm:h-[500px] lg:h-[580px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
             <Image

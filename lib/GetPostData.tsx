@@ -1,4 +1,8 @@
-export default async function GetAllPostData() {
+export interface GetAllPostDataOptions {
+  noStore?: boolean;
+}
+
+export default async function GetAllPostData(options?: GetAllPostDataOptions) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 5000);
 
@@ -6,7 +10,9 @@ export default async function GetAllPostData() {
     const bloData = await fetch(
       "https://backend-mccullochlawpa.vercel.app/site/blog",
       {
-        next: { revalidate: 200 },
+        ...(options?.noStore
+          ? { cache: "no-store" as const }
+          : { next: { revalidate: 200 } }),
         signal: controller.signal,
       }
     );

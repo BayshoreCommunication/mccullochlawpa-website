@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaUserCheck,
   FaAward,
@@ -14,7 +15,7 @@ import {
 export interface WhyChooseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -29,8 +30,20 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
   {
     id: "prosecutor-background",
     title: "Experience on Both Sides of a Criminal Case",
-    description:
-      "Attorney Drew McCulloch previously served as a state prosecutor. His background gives him firsthand insight into criminal charging decisions, evidence review and prosecution strategies. He now represents people facing criminal allegations across the Tampa Bay area.",
+    description: (
+      <>
+        <Link
+          href="/about"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          Attorney Drew McCulloch
+        </Link>{" "}
+        previously served as a state prosecutor. His background gives him
+        firsthand insight into criminal charging decisions, evidence review and
+        prosecution strategies. He now represents people facing criminal
+        allegations across the Tampa Bay area.
+      </>
+    ),
     icon: <FaUserCheck className="w-5 h-5 text-primary" />,
   },
   {

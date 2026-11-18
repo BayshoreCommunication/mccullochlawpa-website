@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaFileAlt,
   FaSearch,
@@ -21,7 +22,7 @@ export interface HowWeHandleStep {
 
 export interface JDHowWeHandleSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   steps?: HowWeHandleStep[];
 }
 
@@ -78,7 +79,20 @@ const defaultSteps: HowWeHandleStep[] = [
 
 export default function JDHowWeHandleSection({
   title = "How Our Tampa Juvenile Defense Lawyer Handles Your Case",
-  subTitle = "A methodical approach builds the strongest possible defense. We analyze every detail of the incident thoroughly. McCulloch Law also represents adults facing criminal charges, with legal defense options available for a range of offenses.",
+  subTitle = (
+    <>
+      A methodical approach builds the strongest possible defense. We analyze
+      every detail of the incident thoroughly. McCulloch Law also represents
+      adults facing criminal charges, with{" "}
+      <Link
+        href="/criminal-defense-lawyer-tampa-fl"
+        className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+      >
+        legal defense options
+      </Link>{" "}
+      available for a range of offenses.
+    </>
+  ),
   steps = defaultSteps,
 }: JDHowWeHandleSectionProps) {
   return (

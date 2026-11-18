@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaShieldAlt,
   FaUserShield,
@@ -16,9 +17,12 @@ import {
 export interface DefenseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
+
+const INLINE_LINK_CLASS =
+  "font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors";
 
 export interface BLDefensesSectionProps {
   title?: string;
@@ -36,8 +40,21 @@ const defaultDefenses: DefenseItem[] = [
   {
     id: "defense-of-others",
     title: "Defense of Others",
-    description:
-      "Florida law also allows defensive force to protect another person from the imminent use of unlawful force under qualifying conditions. The defense depends on the actions of each person, the threat presented and the evidence supporting the intervention.",
+    description: (
+      <>
+        A person may use lawful defensive force to protect another person from
+        imminent unlawful force, subject to the requirements governing the type
+        of force involved. If a minor faces a separate charge after acting to
+        protect another person,{" "}
+        <Link
+          href="/juvenile-defense-lawyer-tampa"
+          className={INLINE_LINK_CLASS}
+        >
+          juvenile defense
+        </Link>{" "}
+        rules may affect the court process and available legal options.
+      </>
+    ),
     icon: <FaUserShield className="w-5 h-5 text-primary" />,
   },
   {
@@ -64,8 +81,20 @@ const defaultDefenses: DefenseItem[] = [
   {
     id: "false-accusations-credibility",
     title: "False Accusations and Credibility Issues",
-    description:
-      "Conflicting accounts may arise during personal disputes, financial disagreements, relationship conflicts or custody disputes. If the same dispute includes separate financial deception allegations, a fraud lawyer may need to address those charges separately.",
+    description: (
+      <>
+        Conflicting accounts may arise during personal disputes, financial
+        disagreements, relationship conflicts or custody disputes. If the same
+        dispute includes separate financial deception allegations, a{" "}
+        <Link
+          href="/fraud-defense-lawyer-tampa"
+          className={INLINE_LINK_CLASS}
+        >
+          fraud lawyer
+        </Link>{" "}
+        may need to address those charges separately.
+      </>
+    ),
     icon: <FaExclamationCircle className="w-5 h-5 text-primary" />,
   },
   {

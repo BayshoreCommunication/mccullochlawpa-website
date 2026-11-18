@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import {
   FaFileAlt,
   FaHandshake,
@@ -17,7 +18,7 @@ export interface HowWeHandleStep {
   id: string;
   stepNumber: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -48,8 +49,23 @@ const defaultSteps: HowWeHandleStep[] = [
     id: "step-3-negotiate-lesser-offenses",
     stepNumber: "03",
     title: "Step 3. Negotiate Lesser Offenses",
-    description:
-      "Robbery allegations may not align with police reports. We assess if the prosecution can establish force, fear, intent, participation and property taking. Based on evidence, we may seek a reduction to theft or a lesser robbery charge. For example simple assault or battery, but not all counts merge into a robbery conviction. If a lesser offense merges under double jeopardy rules, separate punishment cannot be imposed. We analyze these factors",
+    description: (
+      <>
+        Robbery allegations may not align with police reports. We assess if the
+        prosecution can establish force, fear, intent, participation and
+        property taking. Based on evidence, we may seek a reduction to theft or
+        a lesser robbery charge. For example simple assault or{" "}
+        <Link
+          href="/battery-lawyer-tampa"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        >
+          battery
+        </Link>
+        , but not all counts merge into a robbery conviction. If a lesser
+        offense merges under double jeopardy rules, separate punishment cannot be
+        imposed. We analyze these factors
+      </>
+    ),
     icon: <FaHandshake className="w-5 h-5 text-primary" />,
   },
   {

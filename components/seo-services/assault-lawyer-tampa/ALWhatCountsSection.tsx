@@ -19,7 +19,7 @@ export interface AssaultElement {
 
 export interface NotAssaultItem {
   title: string;
-  description: string;
+  description: React.ReactNode;
   link?: {
     text: string;
     href: string;
@@ -85,10 +85,38 @@ const defaultNotAssaultItems: NotAssaultItem[] = [
       "Intentional contact, such as touching or striking, can support a further charge of battery. If the charge relates to physical contact only and not to threats, then you need battery lawyer Tampa.",
     link: {
       text: "battery lawyer Tampa",
-      href: "/contact",
+      href: "/battery-lawyer-tampa",
     },
   },
 ];
+
+/** Renders inline navigation links inside plain description text while keeping same-tab navigation. */
+function renderDescriptionWithLink(
+  description: React.ReactNode,
+  link?: { text: string; href: string }
+): React.ReactNode {
+  if (!link || typeof description !== "string") {
+    return description;
+  }
+  const idx = description.indexOf(link.text);
+  if (idx === -1) {
+    return description;
+  }
+  const before = description.slice(0, idx);
+  const after = description.slice(idx + link.text.length);
+  return (
+    <>
+      {before}
+      <Link
+        href={link.href}
+        className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+      >
+        {link.text}
+      </Link>
+      {after}
+    </>
+  );
+}
 
 export default function ALWhatCountsSection({
   title = "What Counts as Assault Under Florida Law?",
@@ -161,9 +189,9 @@ export default function ALWhatCountsSection({
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {notAssaultItems.map((item, idx) => (
+            {notAssaultItems.map((item) => (
               <div
-                key={idx}
+                key={item.title}
                 className="p-4 sm:p-5 rounded-2xl bg-[#0c1c2e] border border-slate-800/80 flex items-start gap-3.5"
               >
                 <div className="w-2.5 h-2.5 rounded-full bg-red-400 mt-2 shrink-0" />
@@ -172,7 +200,7 @@ export default function ALWhatCountsSection({
                     {item.title}
                   </h4>
                   <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    {item.description}
+                    {renderDescriptionWithLink(item.description, item.link)}
                   </p>
                 </div>
               </div>

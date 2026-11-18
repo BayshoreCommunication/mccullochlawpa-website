@@ -28,9 +28,12 @@ export interface JuvenileChargeTypeItem {
   image: string;
   imageAlt: string;
   badgeIcon: React.ReactNode;
-  description: string;
+  description: React.ReactNode;
   linkHref?: string;
 }
+
+const INLINE_LINK_CLASS =
+  "font-semibold text-primary underline hover:text-[#d4a843] transition-colors";
 
 export interface JDTypesSectionProps {
   title?: string;
@@ -45,8 +48,21 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
     image: "/images/seo-services/juvenile-defense-lawyer-tampa/assault-battery-school-fight.webp",
     imageAlt: "Assault Battery and School Fight Allegations Defense Tampa",
     badgeIcon: <FaHandRock className="w-5 h-5 text-primary" />,
-    description:
-      "Physical altercations and threats bring swift community scrutiny. School disputes can quickly escalate into formal criminal charges. Simple fights sometimes lead to felony battery accusations. A clear defense strategy examines who started the conflict.School disputes and physical altercations can lead to formal criminal charges, particularly when allegations involve threats or violence. Families facing related allegations can also learn more about our Tampa domestic violence defense Lawyer services.",
+    description: (
+      <>
+        Physical altercations and threats bring swift community scrutiny. School
+        disputes can quickly escalate into formal criminal charges. Simple fights
+        sometimes lead to felony{" "}
+        <Link href="/battery-lawyer-tampa" className={INLINE_LINK_CLASS}>
+          battery accusations
+        </Link>
+        . A clear defense strategy examines who started the conflict.School
+        disputes and physical altercations can lead to formal criminal charges,
+        particularly when allegations involve threats or violence. Families
+        facing related allegations can also learn more about our Tampa domestic
+        violence defense Lawyer services.
+      </>
+    ),
     linkHref: "/contact",
   },
   {
@@ -65,8 +81,21 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
     image: "/images/seo-services/juvenile-defense-lawyer-tampa/drug-possession-minors.webp",
     imageAlt: "Minor Drug Possession and Related Allegations Defense Tampa",
     badgeIcon: <FaCapsules className="w-5 h-5 text-primary" />,
-    description:
-      "Allegations of controlled substances have a devastating impact on minors. Defense strategies need to be customized to the child and the offense. Marijuana or prescription drug possession are treated with severity. Diversion programs may be a way to avoid records for first time offenders.Drug possession allegations can have serious consequences for adults as well. Those facing similar allegations can find information about defending drug-related charges.",
+    description: (
+      <>
+        Allegations of controlled substances have a devastating impact on
+        minors.{" "}
+        <Link href="/tampa-drug-crimes-lawyer" className={INLINE_LINK_CLASS}>
+          Defense strategies regarding drugs
+        </Link>{" "}
+        need to be customized to the child and the offense. Marijuana or
+        prescription drug possession are treated with severity. Diversion
+        programs may be a way to avoid records for first time offenders.Drug
+        possession allegations can have serious consequences for adults as well.
+        Those facing similar allegations can find information about defending
+        drug-related charges.
+      </>
+    ),
     linkHref: "/contact",
   },
   {

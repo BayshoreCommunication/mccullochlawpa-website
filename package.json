@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap-routes.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap:sync": "node scripts/generate-sitemap-routes.mjs"
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
