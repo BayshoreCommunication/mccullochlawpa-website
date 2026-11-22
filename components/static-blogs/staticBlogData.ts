@@ -682,7 +682,35 @@ export const canDomesticViolenceChargesBeDroppedInFloridaBlog = {
   },
 };
 
+export const commonMistakesThatReduceYourAccidentSettlementInFloridaBlog = {
+  title: "Common Mistakes That Reduce Your Accident Settlement in Florida",
+  metaTitle: "10 Mistakes That Cut Florida Accident Settlements",
+  metaDescription:
+    "10 mistakes quietly shrink Florida accident settlements, from the PIP rule to AI chatbots. A Tampa injury law firm shows what to fix and when.",
+  slug: "common-mistakes-that-reduce-your-accident-settlement-in-florida",
+  date: "November 22, 2026",
+  createdAt: "2026-11-22T00:00:00.000Z",
+  updatedAt: "2026-11-22T00:00:00.000Z",
+  category: "Personal Injury",
+  published: true,
+  excerpt:
+    "Late medical treatment, recorded admissions, 2-year filing deadlines, social media deletions, and uninsured motorist errors can reduce your Florida accident settlement.",
+  featuredImage: {
+    image: {
+      url: "/images/static-blogs/common-mistakes-that-reduce-accident-settlement-fl.webp",
+    },
+    altText:
+      "Stressed man on phone by a car crash beside a gavel, Florida accident law book, and settlement mistakes checklist.",
+    title: "Common Mistakes That Reduce Your Accident Settlement FL",
+    description:
+      "Learn the common mistakes that reduce your Florida accident settlement, including skipping medical care, giving recorded statements, and accepting quick offers.",
+    caption:
+      "Avoid these critical mistakes after a Florida car accident to protect your legal rights and maximize compensation.",
+  },
+};
+
 export const staticBlogs = [
+  commonMistakesThatReduceYourAccidentSettlementInFloridaBlog,
   canDomesticViolenceChargesBeDroppedInFloridaBlog,
   duiVsDwiWhatsTheDifferenceInFloridaLawBlog,
   shouldYouTalkToInsuranceAfterACrashWithoutALawyerBlog,

@@ -29,6 +29,7 @@ import ShouldYouTalkToInsuranceAfterACrashWithoutALawyer from "@/components/stat
 import CanYouSueUberOrLyftAfterAnAccidentInFlorida from "@/components/static-blogs/blogs/can-you-sue-uber-or-lyft-after-an-accident-in-florida";
 import DuiVsDwiWhatsTheDifferenceInFloridaLaw from "@/components/static-blogs/blogs/dui-vs-dwi-whats-the-difference-in-florida-law";
 import CanDomesticViolenceChargesBeDroppedInFlorida from "@/components/static-blogs/blogs/can-domestic-violence-charges-be-dropped-in-florida";
+import CommonMistakesThatReduceYourAccidentSettlementInFlorida from "@/components/static-blogs/blogs/common-mistakes-that-reduce-your-accident-settlement-in-florida";
 import { staticBlogs } from "@/components/static-blogs/staticBlogData";
 
 // ---------- Styling ----------
@@ -59,6 +60,8 @@ function truncateText(text: string, wordLimit: number): string {
 const SLUG_ALIASES: Record<string, string> = {
   "dui-vs-dwi-florida-law-difference-explained": "dui-vs-dwi-whats-the-difference-in-florida-law",
   "can-domestic-violence-charges-be-dropped-in-fl": "can-domestic-violence-charges-be-dropped-in-florida",
+  "common-mistakes-that-reduce-accident-settlement-fl":
+    "common-mistakes-that-reduce-your-accident-settlement-in-florida",
 };
 
 function resolveStaticSlug(rawSlug: string): string {
@@ -143,6 +146,13 @@ export async function generateMetadata({
 // ---------- MAIN PAGE ----------
 export default async function Page({ params }: { params: { slug: string } }) {
   const resolvedParamSlug = resolveStaticSlug(params.slug);
+
+  if (
+    resolvedParamSlug ===
+    "common-mistakes-that-reduce-your-accident-settlement-in-florida"
+  ) {
+    return <CommonMistakesThatReduceYourAccidentSettlementInFlorida />;
+  }
 
   if (resolvedParamSlug === "can-domestic-violence-charges-be-dropped-in-florida") {
     return <CanDomesticViolenceChargesBeDroppedInFlorida />;
