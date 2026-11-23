@@ -120,7 +120,7 @@ export default function ALHowWeHandleSection({
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
-        
+
         {/* HEADER */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white leading-tight tracking-tight mb-3">
