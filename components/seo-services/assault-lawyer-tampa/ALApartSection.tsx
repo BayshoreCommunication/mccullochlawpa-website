@@ -34,7 +34,8 @@ const defaultRows: ApartRow[] = [
   {
     whatToConsider: "Initial consultation",
     mccullochLaw: "Free consultation",
-    otherFirms: "Some firms charge for the first meeting or push a retainer early",
+    otherFirms:
+      "Some firms charge for the first meeting or push a retainer early",
   },
   {
     whatToConsider: "Availability",
@@ -44,7 +45,8 @@ const defaultRows: ApartRow[] = [
   {
     whatToConsider: "Practice areas",
     mccullochLaw: "Criminal defense and personal injury under one roof",
-    otherFirms: "Frequently siloed, requiring separate firms for related claims",
+    otherFirms:
+      "Frequently siloed, requiring separate firms for related claims",
   },
   {
     whatToConsider: "Case communication",
@@ -100,18 +102,24 @@ export default function ALApartSection({
                     idx % 2 === 0 ? "bg-white" : "bg-slate-50/40"
                   }`}
                 >
-                  <td className="py-4 px-6 text-sm sm:text-base font-bold text-slate-900 align-top">
+                  <td className="py-4 px-6 font-bold text-slate-900 text-sm sm:text-base align-top border-r border-slate-200/60">
                     {row.whatToConsider}
                   </td>
-                  <td className="py-4 px-6 text-sm sm:text-base text-slate-800 font-medium bg-amber-500/5 align-top">
+                  <td className="py-4 px-6 text-slate-800 text-sm sm:text-base align-top border-r border-slate-200/60">
                     <div className="flex items-start gap-2.5">
-                      <FaCheck className="w-4 h-4 text-green-600 mt-1 shrink-0" />
-                      <span>{row.mccullochLaw}</span>
+                      <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                        <FaCheck className="w-2.5 h-2.5" />
+                      </div>
+                      <span className="font-semibold text-slate-900">
+                        {row.mccullochLaw}
+                      </span>
                     </div>
                   </td>
-                  <td className="py-4 px-6 text-sm sm:text-base text-slate-600 align-top">
+                  <td className="py-4 px-6 text-slate-600 text-sm sm:text-base align-top">
                     <div className="flex items-start gap-2.5">
-                      <FaTimes className="w-4 h-4 text-slate-400 mt-1 shrink-0" />
+                      <div className="w-5 h-5 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center shrink-0 mt-0.5">
+                        <FaTimes className="w-2.5 h-2.5" />
+                      </div>
                       <span>{row.otherFirms}</span>
                     </div>
                   </td>
@@ -125,4 +133,3 @@ export default function ALApartSection({
     </section>
   );
 }
-

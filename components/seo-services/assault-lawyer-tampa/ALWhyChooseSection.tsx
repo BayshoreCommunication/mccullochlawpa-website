@@ -86,7 +86,7 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
 export default function ALWhyChooseSection({
   title = "Why Choose Our Assault Defense Firm in Tampa?",
   subTitle = "An assault accusation can affect your freedom, criminal record, family life and future employment. You need an attorney prepared to examine the evidence, challenge unsupported allegations and explain your legal options. At McCulloch Law, we review the facts and develop a defense strategy based on the circumstances of your case.",
-  imagePath = "/images/seo-services/assault-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/assault-lawyer-tampa/experienced-tampa-assault-defense-lawyer-mcculloch.webp",
   items = defaultWhyChooseItems,
 }: ALWhyChooseSectionProps) {
   return (
@@ -106,31 +106,33 @@ export default function ALWhyChooseSection({
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
             <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
-              <FaShieldAlt className="w-4 h-4 text-primary" />
+              <FaBalanceScale className="w-4 h-4 text-primary" />
             </div>
             <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
           </div>
         </div>
 
-        {/* CONTENT GRID: IMAGE COLUMN + ITEMS */}
+        {/* 2 COLUMNS: IMAGE & ITEMS */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
-
-          {/* LEFT: ATTORNEY IMAGE */}
+          
+          {/* LEFT: IMAGE */}
           <div className="lg:col-span-5 relative w-full h-[420px] sm:h-[500px] lg:h-[580px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
             <Image
               src={imagePath}
-              alt="Attorney Drew McCulloch - Tampa Assault Defense Lawyer"
+              alt="Attorney Drew McCulloch representing clients in Hillsborough County criminal courts for assault cases"
+              title="Experienced Tampa Assault Defense Lawyer Drew McCulloch"
+              data-description="Drew McCulloch brings over 15 years of courtroom experience and former state prosecutor insights to defend clients accused of assault across the Tampa Bay area."
               fill
               className="object-cover object-top hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 1024px) 100vw, 42vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl">
-              <h4 className="text-base font-bold text-slate-900">
+              <h4 className="text-slate-900 font-extrabold text-base sm:text-lg">
                 Attorney Drew McCulloch
               </h4>
-              <p className="text-xs text-primary font-semibold">
-                Former State Prosecutor • 15+ Years Legal Experience
+              <p className="text-slate-600 text-xs sm:text-sm font-medium">
+                Former Prosecutor • Criminal Defense Attorney
               </p>
             </div>
           </div>
@@ -140,19 +142,20 @@ export default function ALWhyChooseSection({
             {items.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex items-start gap-4 group"
+                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/80 shadow-sm hover:shadow-md transition-all duration-300 hover:border-primary/40 group"
               >
-                <div className="w-11 h-11 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0 mt-0.5">
-                  {item.icon}
-                </div>
-
-                <div className="space-y-1">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                    {item.description}
-                  </p>
+                <div className="flex items-start gap-4">
+                  <div className="w-11 h-11 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0 mt-0.5">
+                    {item.icon}
+                  </div>
+                  <div className="space-y-1.5 flex-1">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                      {item.title}
+                    </h3>
+                    <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                      {item.description}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -164,4 +167,3 @@ export default function ALWhyChooseSection({
     </section>
   );
 }
-

@@ -105,75 +105,134 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function ALEvidenceSection({
   title = "Which Evidence Should Be Preserved For Defense?",
   subTitle = "Evidence can help to reveal the order of events, support your version of events or disprove an element of the allegation. It is important that original records and files are not altered or deleted immediately.",
-  imagePath = "/images/seo-services/assault-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/assault-lawyer-tampa/criminal-court-evidence-preservation-assault-case.webp",
   items = defaultEvidenceItems,
 }: ALEvidenceSectionProps) {
+  const [activeTab, setActiveTab] = useState<string>(items[0].id);
+
+  const selectedItem = items.find((i) => i.id === activeTab) || items[0];
+
   return (
-    <section className="w-full bg-slate-900 py-12 md:py-20 text-white font-sans relative overflow-hidden">
+    <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
         
-        {/* TOP HERO BANNER */}
-        <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-800 shadow-xl mb-12 max-w-6xl mx-auto overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-7 flex flex-col space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <FaFolderOpen className="w-3.5 h-3.5" />
-                CRITICAL DEFENSE EVIDENCE
-              </div>
+        {/* HEADER */}
+        <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white leading-tight tracking-tight mb-3">
+            {title}
+          </h2>
 
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight tracking-tight">
-                {title}
-              </h2>
+          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+            {subTitle}
+          </p>
 
-              <div className="w-20 h-[3px] bg-primary rounded-full" />
-
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                {subTitle}
-              </p>
+          <div className="flex items-center justify-center gap-3 mt-5">
+            <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
+            <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
+              <FaFolderOpen className="w-4 h-4 text-primary" />
             </div>
+            <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
+          </div>
+        </div>
 
-            <div className="lg:col-span-5 relative w-full h-[220px] sm:h-[260px] rounded-2xl overflow-hidden shadow-lg border border-slate-700/80">
+        {/* INTERACTIVE EVIDENCE VIEWER */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 max-w-6xl mx-auto items-stretch">
+          
+          {/* LEFT: LIST OF ITEMS */}
+          <div className="lg:col-span-6 space-y-2.5 max-h-[580px] overflow-y-auto pr-2 custom-scrollbar">
+            {items.map((item, index) => {
+              const isActive = item.id === activeTab;
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => setActiveTab(item.id)}
+                  className={`w-full text-left p-4 rounded-2xl border transition-all duration-300 flex items-center justify-between group ${
+                    isActive
+                      ? "bg-[#0B1B2D] border-primary shadow-xl"
+                      : "bg-[#0B1B2D]/40 border-slate-800 hover:border-slate-700 hover:bg-[#0B1B2D]/80"
+                  }`}
+                >
+                  <div className="flex items-center gap-3.5">
+                    <span className="text-xs font-mono font-bold text-slate-500 w-5">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <div
+                      className={`w-9 h-9 rounded-xl flex items-center justify-center transition-colors ${
+                        isActive
+                          ? "bg-primary text-slate-950 font-bold"
+                          : "bg-slate-800 text-slate-300 group-hover:text-primary"
+                      }`}
+                    >
+                      {item.icon}
+                    </div>
+                    <span
+                      className={`text-sm sm:text-base font-semibold transition-colors ${
+                        isActive ? "text-primary" : "text-slate-200 group-hover:text-white"
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+
+                  <span
+                    className={`text-xs uppercase font-bold tracking-wider px-2.5 py-1 rounded-full ${
+                      isActive
+                        ? "bg-primary/20 text-primary border border-primary/40"
+                        : "text-slate-500 group-hover:text-slate-400"
+                    }`}
+                  >
+                    {isActive ? "Viewing" : "Select"}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* RIGHT: SELECTED ITEM DETAIL CARD WITH IMAGE */}
+          <div className="lg:col-span-6 bg-[#0B1B2D] rounded-3xl p-6 sm:p-8 border border-slate-800 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+            
+            {/* IMAGE */}
+            <div className="relative w-full h-[220px] rounded-2xl overflow-hidden mb-6 border border-slate-700/80">
               <Image
                 src={imagePath}
-                alt="Critical evidence preservation for assault defense in Tampa"
+                alt="Preserving critical video footage, communications, and scene evidence for assault defense in Tampa courts"
+                title="Critical Evidence Preservation For Assault Defense Law"
+                data-description="Guidelines on securing surveillance video, body cam footage, witness statements, and electronic records to protect your criminal assault defense case in Tampa."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B1B2D] via-transparent to-transparent" />
+            </div>
+
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary">
+                  {selectedItem.icon}
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                  {selectedItem.title}
+                </h3>
+              </div>
+
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                {selectedItem.description}
+              </p>
+            </div>
+
+            <div className="mt-8 pt-5 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+              <div className="flex items-center gap-2">
+                <FaShieldAlt className="w-4 h-4 text-primary" />
+                <span>Defense Preservation Strategy</span>
+              </div>
+              <span className="font-mono text-primary font-semibold">McCulloch Law P.A.</span>
             </div>
 
           </div>
-        </div>
 
-        {/* 10 EVIDENCE ITEMS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-[#0c1a29] rounded-2xl p-6 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-lg flex flex-col justify-between group hover:shadow-2xl"
-            >
-              <div>
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-primary transition-colors leading-snug">
-                    {item.title}
-                  </h3>
-                </div>
-
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
         </div>
 
       </div>
     </section>
   );
 }
-

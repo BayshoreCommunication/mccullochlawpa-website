@@ -43,7 +43,7 @@ const defaultMistakes: MistakeItem[] = [
         Assault cases sometimes involve{" "}
         <Link
           href="/domestic-violence-defense-lawyer-tampa"
-          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
         >
           domestic violence
         </Link>
@@ -64,7 +64,7 @@ const defaultMistakes: MistakeItem[] = [
     icon: <FaShareAlt className="w-5 h-5 text-red-500" />,
   },
   {
-    id: "deleting-recordings",
+    id: "deleting-messages",
     title: "Deleting Messages or Recordings",
     description:
       "Preserve relevant texts, emails, photographs, videos, call logs and other communications in their original form. Do not delete or alter material because it appears unfavorable. Your attorney can assess its relevance and advise you on the proper handling of potential evidence.",
@@ -85,7 +85,7 @@ const defaultMistakes: MistakeItem[] = [
     icon: <FaUserFriends className="w-5 h-5 text-red-500" />,
   },
   {
-    id: "assuming-victim-controls",
+    id: "victim-controls-prosecution",
     title: "Assuming the Alleged Victim Controls the Prosecution",
     description:
       "The state attorney generally decides whether to pursue or dismiss criminal charges. The alleged victim may express a preference about prosecution, but the prosecutor can continue the case based on available evidence. Do not assume a withdrawn complaint will automatically end the proceedings.",
@@ -120,33 +120,38 @@ export default function ALCommonMistakesSection({
           </p>
 
           <div className="flex items-center justify-center gap-3 mt-4">
-            <div className="w-12 sm:w-16 h-[2px] bg-red-400/50 rounded-full" />
+            <div className="w-12 sm:w-16 h-[2px] bg-red-500/50 rounded-full" />
             <div className="w-8 h-8 rounded-full border border-red-500/60 bg-red-500/10 flex items-center justify-center text-red-500 shadow-sm">
-              <FaExclamationTriangle className="w-4 h-4" />
+              <FaExclamationTriangle className="w-4 h-4 text-red-500" />
             </div>
-            <div className="w-12 sm:w-16 h-[2px] bg-red-400/40 rounded-full" />
+            <div className="w-12 sm:w-16 h-[2px] bg-red-500/40 rounded-full" />
           </div>
         </div>
 
-        {/* 8 MISTAKES GRID */}
+        {/* MISTAKES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {items.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-3xl p-6 border border-slate-200 shadow-md hover:shadow-xl hover:border-red-400/50 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 hover:border-red-400/60 flex flex-col justify-between group"
             >
               <div>
-                <div className="w-11 h-11 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center shrink-0 mb-4 group-hover:scale-105 transition-transform">
+                <div className="w-11 h-11 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-red-500 mb-5 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
 
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-red-600 transition-colors mb-2.5 leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2.5 leading-snug group-hover:text-red-600 transition-colors">
                   {item.title}
                 </h3>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
-                </p>
+                </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-red-600 uppercase tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
+                <span>Risk Factor</span>
               </div>
             </div>
           ))}
@@ -156,4 +161,3 @@ export default function ALCommonMistakesSection({
     </section>
   );
 }
-

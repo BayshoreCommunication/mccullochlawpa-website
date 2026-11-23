@@ -20,10 +20,6 @@ export interface AssaultElement {
 export interface NotAssaultItem {
   title: string;
   description: React.ReactNode;
-  link?: {
-    text: string;
-    href: string;
-  };
 }
 
 export interface ALWhatCountsSectionProps {
@@ -81,42 +77,22 @@ const defaultNotAssaultItems: NotAssaultItem[] = [
   },
   {
     title: "Physical contact alone",
-    description:
-      "Intentional contact, such as touching or striking, can support a further charge of battery. If the charge relates to physical contact only and not to threats, then you need battery lawyer Tampa.",
-    link: {
-      text: "battery lawyer Tampa",
-      href: "/battery-lawyer-tampa",
-    },
+    description: (
+      <>
+        Intentional contact, such as touching or striking, can support a further
+        charge of battery. If the charge relates to physical contact only and
+        not to threats, then you need{" "}
+        <Link
+          href="/battery-lawyer-tampa"
+          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+        >
+          battery lawyer Tampa
+        </Link>
+        .
+      </>
+    ),
   },
 ];
-
-/** Renders inline navigation links inside plain description text while keeping same-tab navigation. */
-function renderDescriptionWithLink(
-  description: React.ReactNode,
-  link?: { text: string; href: string }
-): React.ReactNode {
-  if (!link || typeof description !== "string") {
-    return description;
-  }
-  const idx = description.indexOf(link.text);
-  if (idx === -1) {
-    return description;
-  }
-  const before = description.slice(0, idx);
-  const after = description.slice(idx + link.text.length);
-  return (
-    <>
-      {before}
-      <Link
-        href={link.href}
-        className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
-      >
-        {link.text}
-      </Link>
-      {after}
-    </>
-  );
-}
 
 export default function ALWhatCountsSection({
   title = "What Counts as Assault Under Florida Law?",
@@ -149,23 +125,25 @@ export default function ALWhatCountsSection({
         </div>
 
         {/* 3 ELEMENTS CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto mb-14 md:mb-20">
           {elements.map((el) => (
             <div
               key={el.id}
-              className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-xl flex flex-col justify-between group hover:shadow-2xl"
+              className="bg-[#0B1B2D] border border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group relative overflow-hidden"
             >
+              <div className="absolute top-0 right-0 w-28 h-28 bg-primary/5 rounded-bl-full pointer-events-none transition-all group-hover:scale-110" />
+
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <span className="text-3xl font-extrabold text-primary/40 group-hover:text-primary transition-colors">
+                  <span className="text-3xl font-extrabold text-primary/40 group-hover:text-primary transition-colors font-mono">
                     {el.number}
                   </span>
-                  <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary">
-                    <FaCheckCircle className="w-5 h-5" />
+                  <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                    <FaShieldAlt className="w-4 h-4" />
                   </div>
                 </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 leading-snug group-hover:text-primary transition-colors">
                   {el.title}
                 </h3>
 
@@ -173,35 +151,46 @@ export default function ALWhatCountsSection({
                   {el.description}
                 </p>
               </div>
+
+              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-2 text-xs font-semibold text-primary uppercase tracking-wider">
+                <FaCheckCircle className="w-3.5 h-3.5" />
+                <span>Statutory Requirement</span>
+              </div>
             </div>
           ))}
         </div>
 
         {/* WHAT DOES NOT COUNT AS ASSAULT */}
-        <div className="max-w-6xl mx-auto bg-[#081524] rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
-          <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-800">
-            <div className="w-10 h-10 rounded-xl bg-red-500/15 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0">
+        <div className="bg-[#081524] rounded-3xl p-6 sm:p-10 lg:p-12 border border-slate-800 max-w-6xl mx-auto shadow-2xl relative">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3.5 mb-8 pb-5 border-b border-slate-800">
+            <div className="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0">
               <FaTimesCircle className="w-5 h-5" />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-              {notAssaultHeading}
-            </h3>
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
+                {notAssaultHeading}
+              </h3>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {notAssaultItems.map((item) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            {notAssaultItems.map((item, idx) => (
               <div
-                key={item.title}
-                className="p-4 sm:p-5 rounded-2xl bg-[#0c1c2e] border border-slate-800/80 flex items-start gap-3.5"
+                key={idx}
+                className="bg-[#0B1B2D]/70 rounded-2xl p-5 border border-slate-800/90 hover:border-slate-700 transition-all duration-300"
               >
-                <div className="w-2.5 h-2.5 rounded-full bg-red-400 mt-2 shrink-0" />
-                <div className="space-y-1">
-                  <h4 className="text-sm sm:text-base font-bold text-slate-100">
-                    {item.title}
-                  </h4>
-                  <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    {renderDescriptionWithLink(item.description, item.link)}
-                  </p>
+                <div className="flex items-start gap-3">
+                  <div className="w-6 h-6 rounded-full bg-red-500/15 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0 mt-0.5">
+                    <span className="text-xs font-bold leading-none">✕</span>
+                  </div>
+                  <div className="space-y-1.5 flex-1">
+                    <h4 className="text-sm sm:text-base font-bold text-slate-100">
+                      {item.title}
+                    </h4>
+                    <div className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      {item.description}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -212,4 +201,3 @@ export default function ALWhatCountsSection({
     </section>
   );
 }
-

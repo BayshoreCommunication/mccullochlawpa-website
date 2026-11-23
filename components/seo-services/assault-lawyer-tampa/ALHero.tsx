@@ -20,8 +20,8 @@ export interface ALHeroSectionProps {
 }
 
 export default function ALHero({
-  bgImagePath = "/images/seo-services/assault-lawyer-tampa/hero-bg.png",
-  personImagePath = "/images/hero/Attorney.png",
+  bgImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-assault-defense-lawyer-criminal-charges-hero.webp",
+  personImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-assault-attorney-drew-mcculloch-defense-law.webp",
   badgeTitle = "Tampa Assault Lawyer",
   h1Title = "Defense Against Criminal Charges",
   paragraph1 = "Accused of assault in Tampa? You need an immediate and strategic defense to protect your rights. Without an assault lawyer Tampa, your simple misdemeanor could turn into a first degree felony. Prosecutors will build tight cases but they will also leave gaps. These gaps can only be seen by a former prosecutor and defense lawyer. Our Attorney Drew McCulloch is a former state prosecutor and is now defending criminal cases like yours. We act quickly to challenge weak witness statements, protect your record and build strong defense from day one.",
@@ -36,7 +36,9 @@ export default function ALHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImagePath}
-          alt="Tampa Assault Lawyer Defense Against Criminal Charges Background"
+          alt="Strategic defense against criminal assault charges by experienced Tampa assault lawyer Drew McCulloch"
+          title="Tampa Assault Defense Lawyer Criminal Charges Overview"
+          data-description="McCulloch Law PA provides aggressive criminal defense representation for individuals facing misdemeanor and felony assault charges in Tampa Florida."
           fill
           priority
           className="object-cover object-center opacity-40 lg:opacity-100"
@@ -54,7 +56,9 @@ export default function ALHero({
             <div className="relative w-full h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] flex items-end justify-center lg:justify-start lg:pl-2 xl:pl-6">
               <Image
                 src={personImagePath}
-                alt="Drew McCulloch - Tampa Assault Defense Lawyer"
+                alt="Drew McCulloch former prosecutor and criminal defense lawyer fighting assault allegations in Tampa FL"
+                title="Drew McCulloch Former Prosecutor Tampa Assault Lawyer"
+                data-description="Attorney Drew McCulloch uses extensive former prosecutorial insight to defend clients against false and exaggerated assault accusations across Tampa Bay."
                 fill
                 priority
                 className="object-contain object-bottom drop-shadow-2xl hover:scale-[1.01] transition-transform duration-300 lg:max-w-[82%] xl:max-w-[80%]"
@@ -193,4 +197,3 @@ export default function ALHero({
     </section>
   );
 }
-

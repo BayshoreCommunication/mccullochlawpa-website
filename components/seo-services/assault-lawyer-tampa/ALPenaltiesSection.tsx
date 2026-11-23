@@ -6,7 +6,8 @@ import {
   FaBriefcase,
   FaHome,
   FaPassport,
-  FaFileInvoiceDollar,
+  FaFileInvoice,
+  FaBalanceScale,
   FaExclamationTriangle,
 } from "react-icons/fa";
 
@@ -20,10 +21,10 @@ export interface PenaltyItem {
 export interface ALPenaltiesSectionProps {
   title?: string;
   subTitle?: string;
-  items?: PenaltyItem[];
+  penalties?: PenaltyItem[];
 }
 
-const defaultPenaltyItems: PenaltyItem[] = [
+const defaultPenalties: PenaltyItem[] = [
   {
     id: "imprisonment-fines",
     title: "Imprisonment and Fines",
@@ -56,15 +57,15 @@ const defaultPenaltyItems: PenaltyItem[] = [
     id: "future-criminal-cases",
     title: "Future Criminal Cases",
     description:
-      "A prior assault conviction follows a defendant into any later case. Florida’s sentencing guidelines score prior offenses and a judge weighing bond, probation or a plea offer in a future matter will see this record on file.",
-    icon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
+      "A prior assault conviction follows a defendant into any later case. Florida's sentencing guidelines score prior offenses and a judge weighing bond, probation or a plea offer in a future matter will see this record on file.",
+    icon: <FaFileInvoice className="w-5 h-5 text-primary" />,
   },
 ];
 
 export default function ALPenaltiesSection({
   title = "What Penalties Does an Assault Conviction Carry in Tampa?",
   subTitle = "Sentence for assault will vary depending on if it is a misdemeanor or felony offense. The case itself can make a difference in the sentence and so can the statutes regarding sentencing for assault.",
-  items = defaultPenaltyItems,
+  penalties = defaultPenalties,
 }: ALPenaltiesSectionProps) {
   return (
     <section className="w-full bg-slate-50 py-12 md:py-20 font-sans border-b border-slate-200">
@@ -83,34 +84,39 @@ export default function ALPenaltiesSection({
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
             <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
-              <FaGavel className="w-4 h-4 text-primary" />
+              <FaBalanceScale className="w-4 h-4 text-primary" />
             </div>
             <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
           </div>
         </div>
 
-        {/* PENALTY CARDS GRID */}
+        {/* PENALTIES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {items.map((item, idx) => (
+          {penalties.map((item, idx) => (
             <div
               key={item.id}
-              className={`bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group ${
-                idx === 0 ? "md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white via-white to-amber-500/5" : ""
+              className={`bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 hover:border-primary/50 flex flex-col justify-between ${
+                idx === 0 ? "md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white via-white to-primary/5" : ""
               }`}
             >
               <div>
                 <div className="flex items-center gap-3.5 mb-5">
-                  <div className="w-11 h-11 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform shrink-0">
+                  <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0">
                     {item.icon}
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
                     {item.title}
                   </h3>
                 </div>
 
-                <div className="space-y-3 text-slate-600 text-sm sm:text-base leading-relaxed whitespace-pre-line">
-                  <p>{item.description}</p>
+                <div className="text-slate-600 text-sm sm:text-base leading-relaxed whitespace-pre-line">
+                  {item.description}
                 </div>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <FaExclamationTriangle className="w-3.5 h-3.5 text-amber-500" />
+                <span>Statutory Impact</span>
               </div>
             </div>
           ))}
@@ -120,4 +126,3 @@ export default function ALPenaltiesSection({
     </section>
   );
 }
-

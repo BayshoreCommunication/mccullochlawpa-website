@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
-import { FaCalendarAlt, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaCalendarAlt, FaShieldAlt } from "react-icons/fa";
 
 export interface ALFreeCaseReviewSectionProps {
   title?: string;
@@ -20,28 +20,27 @@ export default function ALFreeCaseReviewSection({
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
-  consultationText = "Request Free Consultation",
+  consultationText = "Schedule a Free Consultation",
 }: ALFreeCaseReviewSectionProps) {
   return (
-    <section className="w-full bg-[#081524] py-14 md:py-20 text-white font-sans relative overflow-hidden">
-      <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10 relative z-10">
-        <div className="bg-gradient-to-r from-[#0d1f30] via-[#091827] to-[#0d1f30] rounded-3xl p-8 sm:p-12 border border-primary/30 shadow-2xl max-w-5xl mx-auto text-center flex flex-col items-center">
+    <section className="w-full bg-[#0B1B2D] py-14 md:py-20 text-white font-sans relative overflow-hidden border-t border-b border-primary/20">
+      <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
           
-          <div className="w-14 h-14 rounded-2xl bg-primary/15 border border-primary/40 flex items-center justify-center text-primary mb-6 shadow-inner">
-            <FaShieldAlt className="w-7 h-7" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/15 border border-primary/30 text-primary text-xs font-semibold uppercase tracking-wider">
+            <FaShieldAlt className="w-3.5 h-3.5" />
+            <span>24/7 Immediate Legal Support</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[40px] font-bold text-white leading-tight tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
             {title}
           </h2>
 
-          <div className="w-16 h-[3px] bg-primary rounded-full mb-6" />
-
-          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-8">
+          <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
             {paragraph}
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-6">
             <a
               href={phoneCallHref}
               className="group inline-flex items-center gap-3.5 bg-primary hover:bg-[#a87d25] text-slate-950 px-7 py-4 rounded-2xl shadow-xl transition-all duration-300 font-bold hover:scale-[1.02]"
@@ -72,14 +71,8 @@ export default function ALFreeCaseReviewSection({
             </Link>
           </div>
 
-          <div className="mt-8 flex items-center justify-center gap-2 text-xs text-slate-400">
-            <FaMapMarkerAlt className="w-3.5 h-3.5 text-primary" />
-            <span>238 East Davis Boulevard, Ste 202, Tampa, FL 33606</span>
-          </div>
-
         </div>
       </div>
     </section>
   );
 }
-

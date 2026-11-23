@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaShieldAlt, FaBriefcaseMedical, FaGavel, FaCheckCircle } from "react-icons/fa";
+import { FaShieldAlt, FaBriefcaseMedical, FaCheckCircle } from "react-icons/fa";
 
 export interface ALServesSectionProps {
   title?: string;
@@ -54,7 +54,7 @@ const personalInjuryItems = [
 export default function ALServesSection({
   title = "Cases McCulloch Law Handles Across Tampa, FLorida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense.",
-  imagePath = "/images/seo-services/assault-lawyer-tampa/tampa-skyline-palms.png",
+  imagePath = "/images/seo-services/assault-lawyer-tampa/tampa-bay-skyline-legal-defense-services-coverage.webp",
 }: ALServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
@@ -62,7 +62,9 @@ export default function ALServesSection({
       <div className="absolute inset-0 z-0 opacity-15">
         <Image
           src={imagePath}
-          alt="Tampa Florida Skyline Palms Background"
+          alt="Tampa Bay Florida skyline representing criminal defense legal services provided across Hillsborough County"
+          title="Tampa Bay Legal Defense Services Coverage McCulloch Law"
+          data-description="McCulloch Law PA provides aggressive criminal defense representation throughout Tampa, Brandon, Plant City, and all communities across Hillsborough County Florida."
           fill
           className="object-cover object-center"
           sizes="100vw"
@@ -98,26 +100,26 @@ export default function ALServesSection({
           <div className="bg-[#0c1a29]/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl flex flex-col">
             <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-800">
               <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
-                <FaGavel className="w-5 h-5" />
+                <FaShieldAlt className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                   Criminal Defense
                 </h3>
-                <p className="text-xs text-slate-400">
-                  Comprehensive Defense Against Florida Criminal Charges
-                </p>
+                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
+                  Charges We Defend
+                </span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 flex-grow">
               {criminalDefenseItems.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-3 rounded-xl bg-[#081524] border border-slate-800/80 hover:border-primary/40 transition-colors flex items-center gap-2.5"
+                  className="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/5 transition-colors"
                 >
                   <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="text-xs sm:text-sm text-slate-200 font-medium">
+                  <span className="text-sm text-slate-200 font-medium">
                     {item}
                   </span>
                 </div>
@@ -132,23 +134,23 @@ export default function ALServesSection({
                 <FaBriefcaseMedical className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                   Personal Injury
                 </h3>
-                <p className="text-xs text-slate-400">
-                  Advocating for Maximum Recovery and Justice in Tampa
-                </p>
+                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
+                  Injury Claims We Handle
+                </span>
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 flex-grow">
               {personalInjuryItems.map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-3 rounded-xl bg-[#081524] border border-slate-800/80 hover:border-primary/40 transition-colors flex items-center gap-2.5"
+                  className="flex items-center gap-2.5 p-2 rounded-xl hover:bg-white/5 transition-colors"
                 >
                   <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="text-xs sm:text-sm text-slate-200 font-medium">
+                  <span className="text-sm text-slate-200 font-medium">
                     {item}
                   </span>
                 </div>
@@ -162,4 +164,3 @@ export default function ALServesSection({
     </section>
   );
 }
-

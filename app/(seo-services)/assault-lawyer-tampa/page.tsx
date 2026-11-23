@@ -39,17 +39,17 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/seo-services/assault-lawyer-tampa/simple-assault.webp",
+        url: "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
         width: 1200,
         height: 630,
-        alt: "Tampa Assault Lawyer Defense Against Criminal Charges",
+        alt: "Defense against Florida simple assault second degree misdemeanor charges under statute 784 011 in Tampa",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/assault-lawyer-tampa/aggravated-assault.webp",
+        url: "/images/seo-services/assault-lawyer-tampa/aggravated-assault-deadly-weapon-defense-in-tampa.webp",
         width: 1200,
         height: 630,
-        alt: "Aggravated Assault Defense Florida Statutes 784.021 Tampa",
+        alt: "Aggravated assault defense representation for third degree felony allegations under Florida law in Tampa",
         type: "image/webp",
       },
     ],
@@ -59,7 +59,9 @@ export const metadata: Metadata = {
     title: "Assault Lawyer Tampa | Get Free Case Review",
     description:
       "An assault charge in Tampa can affect your criminal record and future. Discuss your defense options with our tampa assault lawyer.",
-    images: ["/images/seo-services/assault-lawyer-tampa/simple-assault.webp"],
+    images: [
+      "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
+    ],
   },
   robots: {
     index: true,
@@ -76,16 +78,21 @@ const jsonLdData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LegalService",
+      "@type": ["LegalService", "Attorney"],
       "@id": "https://mcfloridalaw.com/#legalService",
       name: "McCulloch Law, P.A. - Tampa Assault Lawyer",
+      description:
+        "An assault charge in Tampa can affect your criminal record and future. Discuss your defense options with our tampa assault lawyer.",
       url: "https://mcfloridalaw.com/assault-lawyer-tampa",
       telephone: "(813) 444-2817",
+      email: "office@mcfloridalaw.com",
       priceRange: "$$",
       image: {
         "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/assault-lawyer-tampa/simple-assault.webp",
-        caption: "Tampa Assault Lawyer Defense Against Criminal Charges",
+        url: "https://mcfloridalaw.com/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
+        caption: "Florida Simple Assault Defense Lawyer Tampa Case Review",
+        description:
+          "Comprehensive defense for misdemeanor simple assault allegations in Tampa, examining unlawful threats and apparent ability under Florida Statute 784.011.",
         width: 1200,
         height: 630,
       },
@@ -116,6 +123,37 @@ const jsonLdData = {
         opens: "00:00",
         closes: "23:59",
       },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Tampa",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Hillsborough County",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Tampa Bay",
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://mcfloridalaw.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Tampa Assault Lawyer",
+          item: "https://mcfloridalaw.com/assault-lawyer-tampa",
+        },
+      ],
     },
     {
       "@type": "FAQPage",
@@ -165,7 +203,7 @@ const jsonLdData = {
           name: "Is it still assault if no one got hurt?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Florida’s assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
+            text: "Yes. Florida's assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
           },
         },
         {
@@ -212,4 +250,3 @@ export default function AssaultLawyerTampaPage() {
     </>
   );
 }
-

@@ -3,12 +3,13 @@
 import React from "react";
 import Link from "next/link";
 import {
-  FaComments,
+  FaUserCheck,
   FaFileAlt,
-  FaSearch,
+  FaSearchPlus,
   FaShieldAlt,
   FaGavel,
   FaBalanceScale,
+  FaArrowRight,
 } from "react-icons/fa";
 
 export interface HandleStep {
@@ -19,9 +20,6 @@ export interface HandleStep {
   icon: React.ReactNode;
 }
 
-const INLINE_LINK_CLASS =
-  "font-semibold text-primary underline hover:text-[#d4a843] transition-colors";
-
 export interface ALHowWeHandleSectionProps {
   title?: string;
   subTitle?: string;
@@ -30,7 +28,7 @@ export interface ALHowWeHandleSectionProps {
 
 const defaultSteps: HandleStep[] = [
   {
-    id: "consultation-case-review",
+    id: "step-1",
     stepNumber: "01",
     title: "Initial Consultation and Case Review",
     description: (
@@ -38,27 +36,33 @@ const defaultSteps: HandleStep[] = [
         We discuss the incident, your concerns, the current status of the case
         and upcoming court dates. Bring your available documents and a timeline
         of events. Our{" "}
-        <Link href="/criminal-defense-lawyer-tampa-fl" className={INLINE_LINK_CLASS}>
+        <Link
+          href="/criminal-defense-lawyer-tampa-fl"
+          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+        >
           criminal defense lawyer
         </Link>{" "}
         can explain the main legal issues and identify information requiring
         further review.
       </>
     ),
-    icon: <FaComments className="w-5 h-5 text-primary" />,
+    icon: <FaUserCheck className="w-5 h-5 text-primary" />,
   },
   {
-    id: "review-charge-evidence",
+    id: "step-2",
     stepNumber: "02",
     title: "Review of the Charge and Evidence",
     description: (
       <>
         We examine the charging documents, police reports, witness accounts,
-        messages, photographs and recordings available to the defense. Our review
-        considers the required elements of simple or aggravated assault and the
-        strength of the evidence supporting each allegation. But when an assault
-        allegation involves a{" "}
-        <Link href="/sex-crime-defense-lawyer-tampa" className={INLINE_LINK_CLASS}>
+        messages, photographs and recordings available to the defense. Our
+        review considers the required elements of simple or aggravated assault
+        and the strength of the evidence supporting each allegation. But when an
+        assault allegation involves a{" "}
+        <Link
+          href="/sex-crime-defense-lawyer-tampa"
+          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+        >
           sex crime
         </Link>
         , we also review forensic medical records, relationship context and
@@ -68,15 +72,15 @@ const defaultSteps: HandleStep[] = [
     icon: <FaFileAlt className="w-5 h-5 text-primary" />,
   },
   {
-    id: "independent-investigation",
+    id: "step-3",
     stepNumber: "03",
     title: "Independent Investigation",
     description:
       "Where appropriate, we identify additional witnesses, seek relevant recordings through lawful channels and examine inconsistencies in the available evidence. We also consider physical surroundings, timing and other facts potentially relevant to the alleged threat.",
-    icon: <FaSearch className="w-5 h-5 text-primary" />,
+    icon: <FaSearchPlus className="w-5 h-5 text-primary" />,
   },
   {
-    id: "defense-preparation",
+    id: "step-4",
     stepNumber: "04",
     title: "Defense Preparation",
     description: (
@@ -86,7 +90,10 @@ const defaultSteps: HandleStep[] = [
         limits of each available argument before discussing the next steps. When
         a minor faces an assault allegation, juvenile court procedures and
         potential consequences may differ from adult criminal proceedings. Our{" "}
-        <Link href="/juvenile-defense-lawyer-tampa" className={INLINE_LINK_CLASS}>
+        <Link
+          href="/juvenile-defense-lawyer-tampa"
+          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+        >
           juvenile defense
         </Link>{" "}
         addresses the legal requirements and options available in qualifying
@@ -96,7 +103,7 @@ const defaultSteps: HandleStep[] = [
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
   },
   {
-    id: "court-representation",
+    id: "step-5",
     stepNumber: "05",
     title: "Court Representation and Case Resolution",
     description:
@@ -133,32 +140,33 @@ export default function ALHowWeHandleSection({
           </div>
         </div>
 
-        {/* 5 STEPS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {steps.map((step, idx) => (
+        {/* 5 STEPS VERTICAL / TIMELINE FLOW */}
+        <div className="max-w-5xl mx-auto space-y-6">
+          {steps.map((item, idx) => (
             <div
-              key={step.id}
-              className={`bg-[#0c1a29] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-xl flex flex-col justify-between group hover:shadow-2xl ${
-                idx === 4 ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
+              key={item.id}
+              className="bg-[#0B1B2D] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl flex flex-col md:flex-row gap-6 md:items-center justify-between group"
             >
-              <div>
-                <div className="flex items-center justify-between mb-5">
-                  <span className="text-3xl font-extrabold text-primary/40 group-hover:text-primary transition-colors">
-                    {step.stepNumber}
-                  </span>
-                  <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                    {step.icon}
-                  </div>
+              <div className="flex items-start sm:items-center gap-5">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-primary group-hover:text-slate-950 transition-all shrink-0">
+                  {item.icon}
                 </div>
+                <div>
+                  <div className="flex items-center gap-3 mb-1">
+                    <span className="text-xs font-mono font-bold text-primary tracking-wider uppercase">
+                      Step {item.stepNumber}
+                    </span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-slate-600" />
+                    <span className="text-xs text-slate-400 font-medium">Defense Phase</span>
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors leading-snug">
+                    {item.title}
+                  </h3>
+                </div>
+              </div>
 
-                <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
-                  {step.title}
-                </h3>
-
-                <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                  {step.description}
-                </p>
+              <div className="md:max-w-xl text-slate-300 text-sm sm:text-base leading-relaxed md:pl-6 md:border-l border-slate-800">
+                {item.description}
               </div>
             </div>
           ))}
@@ -168,4 +176,3 @@ export default function ALHowWeHandleSection({
     </section>
   );
 }
-

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaBalanceScale, FaCheck, FaTimes, FaShieldAlt } from "react-icons/fa";
+import { FaBalanceScale } from "react-icons/fa";
 
 export interface ComparisonRow {
   legalIssue: string;
@@ -47,7 +47,7 @@ const defaultRows: ComparisonRow[] = [
 ];
 
 export default function ALAssaultVsBatterySection({
-  title = "Assault vs. Battery: What’s the Difference?",
+  title = "Assault vs. Battery: What's the Difference?",
   subTitle = "Florida treats assault and battery charges as separate criminal offenses under Chapter 784 of the Florida Statutes.",
   rows = defaultRows,
 }: ALAssaultVsBatterySectionProps) {
@@ -80,7 +80,7 @@ export default function ALAssaultVsBatterySection({
             <thead>
               <tr className="bg-[#081524] text-white">
                 <th className="py-4 px-6 text-sm sm:text-base font-bold uppercase tracking-wider w-1/4">
-                  Legal Issue
+                  Legal issue
                 </th>
                 <th className="py-4 px-6 text-sm sm:text-base font-bold uppercase tracking-wider text-primary w-3/8">
                   Assault
@@ -98,13 +98,15 @@ export default function ALAssaultVsBatterySection({
                     idx % 2 === 0 ? "bg-white" : "bg-slate-50/40"
                   }`}
                 >
-                  <td className="py-4 px-6 text-sm sm:text-base font-bold text-slate-900 align-top">
+                  <td className="py-5 px-6 font-bold text-slate-900 text-sm sm:text-base align-top border-r border-slate-200/60">
                     {row.legalIssue}
                   </td>
-                  <td className="py-4 px-6 text-sm sm:text-base text-slate-800 font-medium bg-amber-500/5 align-top">
-                    {row.assault}
+                  <td className="py-5 px-6 text-slate-700 text-sm sm:text-base leading-relaxed align-top border-r border-slate-200/60">
+                    <span className="font-semibold text-slate-900">
+                      {row.assault}
+                    </span>
                   </td>
-                  <td className="py-4 px-6 text-sm sm:text-base text-slate-700 align-top">
+                  <td className="py-5 px-6 text-slate-700 text-sm sm:text-base leading-relaxed align-top">
                     {row.battery}
                   </td>
                 </tr>
@@ -117,4 +119,3 @@ export default function ALAssaultVsBatterySection({
     </section>
   );
 }
-

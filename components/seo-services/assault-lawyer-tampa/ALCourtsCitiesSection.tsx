@@ -13,7 +13,7 @@ export interface ALCourtsCitiesSectionProps {
 export default function ALCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/assault-lawyer-tampa/courts-cities-banner.png",
+  bannerImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-hillsborough-county-criminal-court-services.webp",
 }: ALCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -38,7 +38,9 @@ export default function ALCourtsCitiesSection({
             <div className="lg:col-span-7 relative w-full h-[200px] sm:h-[260px] lg:h-[280px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/80">
               <Image
                 src={bannerImagePath}
-                alt="Courts and Cities McCulloch Law Serves Across Tampa"
+                alt="Hillsborough County Courthouse in Tampa where assault and criminal defense cases are heard and resolved"
+                title="Tampa Hillsborough County Criminal Court Legal Services"
+                data-description="Experienced legal representation in Hillsborough County criminal courtrooms, fighting assault charges before local judges and prosecutors in downtown Tampa."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -74,9 +76,9 @@ export default function ALCourtsCitiesSection({
               <div className="w-8 h-8 rounded-full bg-white border border-primary/40 flex items-center justify-center shrink-0">
                 <FaMapMarkerAlt className="w-4 h-4 text-primary" />
               </div>
-              <span className="font-bold text-sm sm:text-base tracking-wide text-slate-100">
+              <h2 className="font-bold text-sm sm:text-base tracking-wide text-slate-100">
                 McCulloch Law P.A. Tampa Office
-              </span>
+              </h2>
             </div>
 
             <div className="space-y-4 text-slate-700">
@@ -98,40 +100,54 @@ export default function ALCourtsCitiesSection({
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
-                  <FaPhone className="w-5 h-5" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                    <FaPhone className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                      Phone
+                    </h4>
+                    <a
+                      href="tel:8134442817"
+                      className="text-sm sm:text-base font-bold text-slate-900 hover:text-primary transition-colors block leading-snug"
+                    >
+                      (813) 444 2817
+                    </a>
+                    <span className="text-xs text-slate-500">Available 24/7</span>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Phone
-                  </h4>
-                  <a
-                    href="tel:8134442817"
-                    className="text-sm sm:text-base font-bold text-slate-900 hover:text-primary transition-colors block leading-snug"
-                  >
-                    (813) 444 2817
-                  </a>
-                  <p className="text-xs text-primary font-semibold mt-0.5">
-                    Available 24/7
-                  </p>
+
+                <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                    <FaEnvelope className="w-4 h-4" />
+                  </div>
+                  <div className="overflow-hidden">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                      Email
+                    </h4>
+                    <a
+                      href="mailto:office@mcfloridalaw.com"
+                      className="text-sm sm:text-base font-semibold text-slate-900 hover:text-primary transition-colors block leading-snug truncate"
+                    >
+                      office@mcfloridalaw.com
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
-                  <FaEnvelope className="w-5 h-5" />
+              <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-primary/5 border border-primary/20">
+                <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
+                  <FaClock className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Email
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                    Hours
                   </h4>
-                  <a
-                    href="mailto:office@mcfloridalaw.com"
-                    className="text-sm sm:text-base font-semibold text-slate-900 hover:text-primary transition-colors block leading-snug"
-                  >
-                    office@mcfloridalaw.com
-                  </a>
+                  <p className="text-sm font-bold text-slate-900">
+                    Available 24/7
+                  </p>
                 </div>
               </div>
 
@@ -145,4 +161,3 @@ export default function ALCourtsCitiesSection({
     </section>
   );
 }
-

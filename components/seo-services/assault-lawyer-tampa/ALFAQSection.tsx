@@ -12,7 +12,6 @@ export interface FAQItem {
 
 export interface ALFAQSectionProps {
   title?: string;
-  subTitle?: string;
   headerImagePath?: string;
   faqs?: FAQItem[];
 }
@@ -52,7 +51,7 @@ const defaultFAQs: FAQItem[] = [
     id: "faq-6",
     question: "Is it still assault if no one got hurt?",
     answer:
-      "Yes. Florida’s assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
+      "Yes. Florida's assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
   },
   {
     id: "faq-7",
@@ -64,8 +63,7 @@ const defaultFAQs: FAQItem[] = [
 
 export default function ALFAQSection({
   title = "Frequently Asked Questions About Assault Charge",
-  subTitle = "Find clear answers to common questions about assault charges, evidence, and defense options in Tampa.",
-  headerImagePath = "/images/seo-services/assault-lawyer-tampa/faq-gavel-scales.png",
+  headerImagePath = "/images/seo-services/assault-lawyer-tampa/frequently-asked-questions-tampa-assault-defense.webp",
   faqs = defaultFAQs,
 }: ALFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -83,7 +81,9 @@ export default function ALFAQSection({
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-4">
             <Image
               src={headerImagePath}
-              alt="Assault Defense FAQs Gavel and Scales"
+              alt="Legal scales of justice and gavel representing frequently asked questions about Florida assault defense"
+              title="Frequently Asked Questions Tampa Assault Defense Lawyer"
+              data-description="Find answers to common questions about Florida assault charges, statutory elements, penalties, record expungement, and criminal defense strategies in Tampa."
               fill
               className="object-contain"
             />
@@ -92,10 +92,6 @@ export default function ALFAQSection({
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-slate-900 leading-tight tracking-tight mb-3">
             {title}
           </h2>
-
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
-            {subTitle}
-          </p>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -106,36 +102,29 @@ export default function ALFAQSection({
           </div>
         </div>
 
-        {/* ACCORDION CONTAINER */}
+        {/* ACCORDION LIST */}
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div
                 key={faq.id}
-                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                  isOpen
-                    ? "bg-white border-primary/50 shadow-lg"
-                    : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm"
+                className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden shadow-sm ${
+                  isOpen ? "border-primary shadow-md" : "border-slate-200 hover:border-slate-300"
                 }`}
               >
                 <button
-                  type="button"
                   onClick={() => toggleFAQ(index)}
-                  className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 transition-colors"
+                  className="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span
-                    className={`text-base sm:text-lg font-bold transition-colors ${
-                      isOpen ? "text-primary" : "text-slate-900"
-                    }`}
-                  >
+                  <span className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                     {faq.question}
                   </span>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
                       isOpen
-                        ? "bg-primary text-slate-950 rotate-180"
+                        ? "bg-primary text-slate-950 rotate-180 font-bold"
                         : "bg-slate-100 text-slate-500"
                     }`}
                   >
@@ -144,8 +133,8 @@ export default function ALFAQSection({
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 sm:px-8 pb-6 pt-1 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100">
-                    <p>{faq.answer}</p>
+                  <div className="px-5 pb-6 sm:px-6 sm:pb-7 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4">
+                    {faq.answer}
                   </div>
                 )}
               </div>
@@ -157,4 +146,3 @@ export default function ALFAQSection({
     </section>
   );
 }
-
