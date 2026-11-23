@@ -12,7 +12,6 @@ export interface FAQItem {
 
 export interface RDFAQSectionProps {
   title?: string;
-  subTitle?: string;
   headerImagePath?: string;
   faqs?: FAQItem[];
 }
@@ -58,8 +57,7 @@ const defaultFAQs: FAQItem[] = [
 
 export default function RDFAQSection({
   title = "Frequently Asked Questions About Robbery Charge",
-  subTitle = "Find clear answers to common questions about robbery charges, weapon enhancements, and legal defense options in Tampa.",
-  headerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/faq-gavel-scales.png",
+  headerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/frequently-asked-questions-tampa-robbery-defense.webp",
   faqs = defaultFAQs,
 }: RDFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -77,7 +75,9 @@ export default function RDFAQSection({
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-4">
             <Image
               src={headerImagePath}
-              alt="Robbery Defense FAQs Gavel and Scales"
+              alt="Frequently asked questions regarding robbery defense laws, reduced theft charges, and trials in Tampa"
+              title="Frequently Asked Questions Tampa Robbery Defense Law"
+              data-description="Find clear answers to frequently asked questions about Florida robbery charges, armed penalties, mistaken identity, and defense representation in Tampa."
               fill
               className="object-contain"
             />
@@ -86,10 +86,6 @@ export default function RDFAQSection({
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-slate-900 leading-tight tracking-tight mb-3">
             {title}
           </h2>
-
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
-            {subTitle}
-          </p>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -104,26 +100,33 @@ export default function RDFAQSection({
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
-
             return (
               <div
                 key={faq.id}
-                className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-300 hover:border-primary/50"
+                className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                  isOpen
+                    ? "bg-white border-primary/50 shadow-lg"
+                    : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm"
+                }`}
               >
                 <button
                   type="button"
                   onClick={() => toggleFAQ(index)}
-                  className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 focus:outline-none"
+                  className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 transition-colors"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                  <span
+                    className={`text-base sm:text-lg font-bold transition-colors ${
+                      isOpen ? "text-primary" : "text-slate-900"
+                    }`}
+                  >
                     {faq.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
                       isOpen
                         ? "bg-primary text-slate-950 rotate-180"
-                        : "bg-slate-100 text-slate-600"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                     }`}
                   >
                     <FaChevronDown className="w-3.5 h-3.5" />
@@ -144,4 +147,3 @@ export default function RDFAQSection({
     </section>
   );
 }
-

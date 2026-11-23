@@ -9,7 +9,6 @@ import {
   FaCalendarAlt,
   FaPhoneAlt,
   FaShieldAlt,
-  FaAward,
 } from "react-icons/fa";
 
 export interface RobberyWhyChooseItem {
@@ -74,7 +73,7 @@ const defaultWhyChooseItems: RobberyWhyChooseItem[] = [
 export default function RDWhyChooseSection({
   title = "Why Choose Our Robbery Defense Firm in Tampa?",
   subTitle = "Our robbery defense attorney tampa approaches criminal defense through case specific evidence review and a clear explanation of your legal options at McCulloch Law.",
-  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/experienced-tampa-robbery-defense-lawyer-mcculloch.webp",
   items = defaultWhyChooseItems,
 }: RDWhyChooseSectionProps) {
   return (
@@ -107,7 +106,9 @@ export default function RDWhyChooseSection({
             <div className="lg:col-span-4 relative w-full h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-primary/40 bg-slate-900">
               <Image
                 src={imagePath}
-                alt="Drew McCulloch - Former Prosecutor & Tampa Robbery Defense Lawyer"
+                alt="Experienced Tampa robbery defense lawyer Drew McCulloch offering strategic criminal defense in Florida"
+                title="Experienced Tampa Robbery Defense Lawyer McCulloch Law"
+                data-description="Former prosecutor Drew McCulloch brings over 15 years of courtroom experience and 100+ jury trials to defend robbery charges across Tampa Bay."
                 fill
                 className="object-cover object-top hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 35vw"
@@ -119,33 +120,26 @@ export default function RDWhyChooseSection({
               </div>
             </div>
 
-            <div className="lg:col-span-8 flex flex-col space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <FaAward className="w-3.5 h-3.5" />
-                OVER 100+ CASES TRIED TO VERDICT
-              </div>
-
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
-                Aggressive, Proactive Defense Led by a Former Assistant State Attorney
+            <div className="lg:col-span-8 flex flex-col justify-center space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Proven Courtroom Defense with Former State Prosecutor
               </h3>
-
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                At McCulloch Law, P.A., your robbery defense is personally directed by Drew McCulloch. With inside insight into how prosecutors build charges, evaluate evidence, and negotiate plea reductions, our firm works diligently to identify constitutional flaws, preserve critical video evidence, and safeguard your future.
+                Attorney Drew McCulloch brings unmatched insight into Hillsborough County criminal prosecutions. With over 100 cases tried to verdict, we build defense strategies that aggressively scrutinize physical evidence, witness credibility, and police procedure.
               </p>
-
               <div className="pt-2 flex flex-wrap gap-4">
                 <a
                   href="tel:8134442817"
-                  className="inline-flex items-center gap-2.5 bg-primary hover:bg-[#a87d25] text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg transition-all text-sm"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-[#a87d25] text-slate-950 px-5 py-2.5 rounded-xl font-bold text-sm transition-all"
                 >
-                  <FaPhoneAlt className="w-4 h-4" />
+                  <FaPhoneAlt className="w-3.5 h-3.5" />
                   <span>Call (813) 444 2817</span>
                 </a>
                 <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl border border-white/20 transition-all text-sm"
+                  href="/about"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all"
                 >
-                  <span>Free Case Review</span>
+                  <span>Learn More About Drew</span>
                 </Link>
               </div>
             </div>
@@ -153,26 +147,25 @@ export default function RDWhyChooseSection({
           </div>
         </div>
 
-        {/* 4 REASONS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        {/* 4 VALUE PROPOSITIONS GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
           {items.map((item) => (
             <div
               key={item.id}
-              className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
-                    {item.title}
-                  </h3>
+                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                  {item.icon}
                 </div>
 
-                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors mb-2.5 leading-snug">
+                  {item.title}
+                </h3>
+
+                <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
-                </p>
+                </div>
               </div>
             </div>
           ))}
@@ -182,4 +175,3 @@ export default function RDWhyChooseSection({
     </section>
   );
 }
-

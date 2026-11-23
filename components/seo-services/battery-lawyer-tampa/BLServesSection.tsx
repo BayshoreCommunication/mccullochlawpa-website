@@ -54,7 +54,7 @@ const criminalDefenseItems = [
 export default function BLServesSection({
   title = "Cases McCulloch Law Handles Across Tampa, FLorida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense.",
-  imagePath = "/images/seo-services/battery-lawyer-tampa/tampa-skyline-palms.png",
+  imagePath = "/images/seo-services/battery-lawyer-tampa/tampa-bay-skyline-battery-defense-services-banner.webp",
 }: BLServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
@@ -62,7 +62,9 @@ export default function BLServesSection({
       <div className="absolute inset-0 z-0 opacity-15">
         <Image
           src={imagePath}
-          alt="Tampa Florida Skyline Palms Background"
+          alt="Tampa Bay Florida skyline banner showcasing criminal defense and personal injury representation services"
+          title="Tampa Bay Skyline Battery Defense Services Banner Law"
+          data-description="McCulloch Law provides comprehensive criminal defense and personal injury representation services across Tampa and surrounding Hillsborough County."
           fill
           className="object-cover object-center"
           sizes="100vw"
@@ -100,29 +102,22 @@ export default function BLServesSection({
               <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
                 <FaBriefcaseMedical className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Personal Injury
-                </h3>
-                <p className="text-xs text-slate-400">
-                  Advocating for Maximum Recovery and Justice in Tampa
-                </p>
-              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Personal Injury
+              </h3>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {personalInjuryItems.map((item, idx) => (
-                <div
+                <li
                   key={idx}
-                  className="p-3 rounded-xl bg-[#081524] border border-slate-800/80 hover:border-primary/40 transition-colors flex items-center gap-2.5"
+                  className="flex items-center gap-2.5 text-slate-300 text-sm"
                 >
                   <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="text-xs sm:text-sm text-slate-200 font-medium">
-                    {item}
-                  </span>
-                </div>
+                  <span>{item}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
           {/* CRIMINAL DEFENSE BOX */}
@@ -131,29 +126,22 @@ export default function BLServesSection({
               <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
                 <FaGavel className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Criminal Defense
-                </h3>
-                <p className="text-xs text-slate-400">
-                  Comprehensive Defense Against Florida Criminal Charges
-                </p>
-              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Criminal Defense
+              </h3>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {criminalDefenseItems.map((item, idx) => (
-                <div
+                <li
                   key={idx}
-                  className="p-3 rounded-xl bg-[#081524] border border-slate-800/80 hover:border-primary/40 transition-colors flex items-center gap-2.5"
+                  className="flex items-center gap-2.5 text-slate-300 text-sm"
                 >
                   <FaCheckCircle className="w-3.5 h-3.5 text-primary shrink-0" />
-                  <span className="text-xs sm:text-sm text-slate-200 font-medium">
-                    {item}
-                  </span>
-                </div>
+                  <span>{item}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
         </div>
@@ -162,4 +150,3 @@ export default function BLServesSection({
     </section>
   );
 }
-

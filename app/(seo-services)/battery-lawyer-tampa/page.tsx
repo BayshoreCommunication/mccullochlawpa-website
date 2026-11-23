@@ -39,17 +39,17 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/seo-services/battery-lawyer-tampa/simple-battery.webp",
-        width: 1152,
-        height: 923,
-        alt: "Tampa Battery Lawyer Defense Against Criminal Charges",
+        url: "/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
+        width: 1200,
+        height: 630,
+        alt: "Florida Simple Battery Defense Lawyer Tampa Case Review",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/battery-lawyer-tampa/felony-battery.webp",
-        width: 1000,
-        height: 510,
-        alt: "Felony Battery Defense Florida Statutes 784.041 Tampa",
+        url: "/images/seo-services/battery-lawyer-tampa/florida-felony-battery-defense-attorney-tampa-law.webp",
+        width: 1200,
+        height: 630,
+        alt: "Florida Felony Battery Defense Attorney Tampa Law Firm",
         type: "image/webp",
       },
     ],
@@ -59,7 +59,9 @@ export const metadata: Metadata = {
     title: "Battery Lawyer Tampa | McCulloch Law",
     description:
       "Accused of unwanted physical contact in Tampa? Challenge the allegations and examine the evidence. See how a tampa battery lawyer can help.",
-    images: ["/images/seo-services/battery-lawyer-tampa/simple-battery.webp"],
+    images: [
+      "/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
+    ],
   },
   robots: {
     index: true,
@@ -76,18 +78,23 @@ const jsonLdData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LegalService",
+      "@type": ["LegalService", "Attorney"],
       "@id": "https://mcfloridalaw.com/#legalService",
       name: "McCulloch Law, P.A. - Tampa Battery Lawyer",
+      description:
+        "Accused of unwanted physical contact in Tampa? Challenge the allegations and examine the evidence. See how a tampa battery lawyer can help.",
       url: "https://mcfloridalaw.com/battery-lawyer-tampa",
       telephone: "(813) 444-2817",
+      email: "office@mcfloridalaw.com",
       priceRange: "$$",
       image: {
         "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/battery-lawyer-tampa/simple-battery.webp",
-        caption: "Tampa Battery Lawyer Defense Against Criminal Charges",
-        width: 1152,
-        height: 923,
+        url: "https://mcfloridalaw.com/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
+        caption: "Florida Simple Battery Defense Lawyer Tampa Evidence",
+        description:
+          "Florida simple battery defense lawyer examining unwanted bodily contact allegations, witness statements, and evidence in Tampa misdemeanor proceedings.",
+        width: 1200,
+        height: 630,
       },
       address: {
         "@type": "PostalAddress",
@@ -116,6 +123,37 @@ const jsonLdData = {
         opens: "00:00",
         closes: "23:59",
       },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Tampa",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Hillsborough County",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Tampa Bay",
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://mcfloridalaw.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Tampa Battery Lawyer",
+          item: "https://mcfloridalaw.com/battery-lawyer-tampa",
+        },
+      ],
     },
     {
       "@type": "FAQPage",
@@ -196,4 +234,3 @@ export default function BatteryLawyerTampaPage() {
     </>
   );
 }
-

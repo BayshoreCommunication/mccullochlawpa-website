@@ -12,7 +12,6 @@ export interface FAQItem {
 
 export interface BLFAQSectionProps {
   title?: string;
-  subTitle?: string;
   headerImagePath?: string;
   faqs?: FAQItem[];
 }
@@ -52,8 +51,7 @@ const defaultFAQs: FAQItem[] = [
 
 export default function BLFAQSection({
   title = "Frequently Asked Questions About Battery Charge",
-  subTitle = "Find clear answers to common questions about battery charges, evidence, and defense options in Tampa.",
-  headerImagePath = "/images/seo-services/battery-lawyer-tampa/faq-gavel-scales.png",
+  headerImagePath = "/images/seo-services/battery-lawyer-tampa/frequently-asked-questions-tampa-battery-defense.webp",
   faqs = defaultFAQs,
 }: BLFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -71,7 +69,9 @@ export default function BLFAQSection({
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-4">
             <Image
               src={headerImagePath}
-              alt="Battery Defense FAQs Gavel and Scales"
+              alt="Frequently asked questions regarding battery criminal defense laws, penalties, and hearings in Tampa"
+              title="Frequently Asked Questions Tampa Battery Defense Law"
+              data-description="Find clear answers to frequently asked questions about Florida battery charges, penalties, no-contact orders, and legal representation in Tampa."
               fill
               className="object-contain"
             />
@@ -80,10 +80,6 @@ export default function BLFAQSection({
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-slate-900 leading-tight tracking-tight mb-3">
             {title}
           </h2>
-
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
-            {subTitle}
-          </p>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -121,10 +117,10 @@ export default function BLFAQSection({
                     {faq.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
                       isOpen
                         ? "bg-primary text-slate-950 rotate-180"
-                        : "bg-slate-100 text-slate-500"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                     }`}
                   >
                     <FaChevronDown className="w-3.5 h-3.5" />
@@ -145,4 +141,3 @@ export default function BLFAQSection({
     </section>
   );
 }
-

@@ -21,8 +21,8 @@ export interface RDHeroSectionProps {
 }
 
 export default function RDHero({
-  bgImagePath = "/images/seo-services/robbery-defense-attorney-tampa/hero-bg.png",
-  personImagePath = "/images/hero/Attorney.png",
+  bgImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-robbery-defense-attorney-criminal-charges-hero.webp",
+  personImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-robbery-attorney-drew-mcculloch-defense-lawyer.webp",
   badgeTitle = "Tampa Robbery Defense Attorney",
   h1Title = "Proven Defense Against Criminal Charges With Former Prosecutor",
   paragraph1 = "A robbery case usually turns on two questions police reports can never settle: who took the property? and was force or fear truly involved?",
@@ -38,7 +38,9 @@ export default function RDHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImagePath}
-          alt="Tampa Robbery Defense Attorney Defense Against Criminal Charges Background"
+          alt="Experienced Tampa robbery defense attorney challenging felony theft and force allegations in criminal court"
+          title="Tampa Robbery Defense Attorney Criminal Charges Hero"
+          data-description="McCulloch Law provides aggressive criminal defense representation against armed robbery, carjacking, and felony theft charges across Tampa and Hillsborough County."
           fill
           priority
           className="object-cover object-center opacity-40 lg:opacity-100"
@@ -56,7 +58,9 @@ export default function RDHero({
             <div className="relative w-full h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] flex items-end justify-center lg:justify-start lg:pl-2 xl:pl-6">
               <Image
                 src={personImagePath}
-                alt="Drew McCulloch - Tampa Robbery Defense Attorney"
+                alt="Drew McCulloch former prosecutor and criminal defense lawyer fighting high stakes robbery charges in Tampa"
+                title="Tampa Robbery Attorney Drew McCulloch Defense Lawyer"
+                data-description="Attorney Drew McCulloch uses extensive former prosecutorial trial experience to defend clients against armed and strong-arm robbery charges in Tampa Florida."
                 fill
                 priority
                 className="object-contain object-bottom drop-shadow-2xl hover:scale-[1.01] transition-transform duration-300 lg:max-w-[82%] xl:max-w-[80%]"
@@ -196,4 +200,3 @@ export default function RDHero({
     </section>
   );
 }
-

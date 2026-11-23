@@ -26,6 +26,7 @@ const INLINE_LINK_CLASS =
 
 export interface BLDefensesSectionProps {
   title?: string;
+  subTitle?: string;
   items?: DefenseItem[];
 }
 
@@ -34,7 +35,7 @@ const defaultDefenses: DefenseItem[] = [
     id: "stand-your-ground",
     title: "Self Defense or Stand Your Ground",
     description:
-      "Florida law permits someone to use or threaten to use nondeadly force when the person reasonably believes that such force is necessary to defend against another person's imminent use of unlawful force. The use of deadly force involves stricter statutory requirements. Stand Your Ground protections depend on the evidence, the circumstances and compliance with Florida law. An attorney can review the sequence of events and assess whether the evidence supports a self defense argument.",
+      "Florida law permits certain uses of defensive force. Section 776.012 addresses a person's use or threat of force when the person reasonably believes such force is necessary to defend against another person's imminent unlawful force. Florida's Stand Your Ground law may provide immunity from criminal prosecution in qualifying circumstances. The law does not give a person unlimited permission to use force during an argument.",
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
   },
   {
@@ -61,14 +62,14 @@ const defaultDefenses: DefenseItem[] = [
     id: "defense-of-property",
     title: "Defense of Property",
     description:
-      "Florida statutes permit certain uses of nondeadly force to protect property from unlawful interference, subject to strict legal limits. Force that exceeds statutory authorization may create criminal exposure. We examine the conduct, property interest and danger before evaluating this defense.",
+      "Florida law permits certain uses of nondeadly force to prevent or stop unlawful interference with property, subject to statutory limits. A property dispute does not automatically justify physical force.",
     icon: <FaHome className="w-5 h-5 text-primary" />,
   },
   {
     id: "lack-of-intent-accident",
     title: "Lack of Intent or Accident",
     description:
-      "Battery requires intentional physical contact or the intentional infliction of bodily harm. An accidental collision, reflex movement or unintended contact may raise questions about the required intent.",
+      "Florida battery law requires intentional touching or striking against another person's will or intentional bodily harm. An accidental collision or unintended contact may raise questions about the required intent.",
     icon: <FaBrain className="w-5 h-5 text-primary" />,
   },
   {
@@ -115,49 +116,51 @@ const defaultDefenses: DefenseItem[] = [
 
 export default function BLDefensesSection({
   title = "Possible Defenses Against Battery Charges Under 13th Judicial Circuit Court",
+  subTitle = "A battery defense depends on the alleged conduct, available evidence and applicable law. Our defense review focuses on the state's evidence and the legal requirements for the charged offense.",
   items = defaultDefenses,
 }: BLDefensesSectionProps) {
   return (
-    <section className="w-full bg-slate-50 py-12 md:py-20 font-sans border-b border-slate-200">
+    <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
         
         {/* HEADER */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-slate-900 leading-tight tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white leading-tight tracking-tight mb-3">
             {title}
           </h2>
+
+          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+            {subTitle}
+          </p>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
             <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
-              <FaShieldAlt className="w-4 h-4 text-primary" />
+              <FaBalanceScale className="w-4 h-4 text-primary" />
             </div>
             <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
           </div>
         </div>
 
-        {/* DEFENSES GRID */}
+        {/* 8 DEFENSES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-          {items.map((item, idx) => (
+          {items.map((def) => (
             <div
-              key={item.id}
-              className={`bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group ${
-                idx === 0 ? "md:col-span-2 lg:col-span-2 bg-gradient-to-br from-white via-white to-amber-500/5" : ""
-              }`}
+              key={def.id}
+              className="bg-[#0c1a29] rounded-2xl p-6 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-lg flex flex-col justify-between group hover:shadow-2xl"
             >
               <div>
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform shrink-0">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
-                    {item.title}
-                  </h3>
+                <div className="w-12 h-12 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                  {def.icon}
                 </div>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  {item.description}
-                </p>
+                <h3 className="text-base sm:text-lg font-bold text-white group-hover:text-primary transition-colors mb-2.5 leading-snug">
+                  {def.title}
+                </h3>
+
+                <div className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                  {def.description}
+                </div>
               </div>
             </div>
           ))}
@@ -167,4 +170,3 @@ export default function BLDefensesSection({
     </section>
   );
 }
-

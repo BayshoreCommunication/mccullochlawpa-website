@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaBalanceScale, FaGavel, FaExclamationTriangle, FaShieldAlt } from "react-icons/fa";
+import { FaBalanceScale, FaShieldAlt } from "react-icons/fa";
 
 export interface BLWhatCountsSectionProps {
   title?: string;
@@ -53,13 +53,10 @@ export default function BLWhatCountsSection({
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
           
           <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-xl flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform">
-                <FaShieldAlt className="w-6 h-6" />
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                <FaShieldAlt className="w-5 h-5" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                Statutory Definition &amp; Unwanted Contact
-              </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 {paragraph1}
               </p>
@@ -67,13 +64,10 @@ export default function BLWhatCountsSection({
           </div>
 
           <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-xl flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform">
-                <FaGavel className="w-6 h-6" />
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                <FaBalanceScale className="w-5 h-5" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                Misdemeanor to Felony Enhancements
-              </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 {paragraph2}
               </p>
@@ -81,13 +75,10 @@ export default function BLWhatCountsSection({
           </div>
 
           <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-xl flex flex-col justify-between group">
-            <div>
-              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary mb-5 group-hover:scale-105 transition-transform">
-                <FaExclamationTriangle className="w-6 h-6" />
+            <div className="space-y-4">
+              <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+                <FaShieldAlt className="w-5 h-5" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">
-                Unlawful Threat vs. Physical Contact
-              </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 {paragraph3}
               </p>
@@ -100,4 +91,3 @@ export default function BLWhatCountsSection({
     </section>
   );
 }
-

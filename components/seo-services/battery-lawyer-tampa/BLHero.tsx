@@ -20,8 +20,8 @@ export interface BLHeroSectionProps {
 }
 
 export default function BLHero({
-  bgImagePath = "/images/seo-services/battery-lawyer-tampa/hero-bg.png",
-  personImagePath = "/images/hero/Attorney.png",
+  bgImagePath = "/images/seo-services/battery-lawyer-tampa/tampa-battery-defense-lawyer-criminal-charges-hero.webp",
+  personImagePath = "/images/seo-services/battery-lawyer-tampa/tampa-battery-attorney-drew-mcculloch-defense-law.webp",
   badgeTitle = "Tampa Battery Lawyer",
   h1Title = "Defense Against Criminal Charges",
   paragraph1 = "One simple battery charge can affect your criminal record, employment, family relationships and freedom. If you stand alone against a battery charge in Tampa, the prosecutor's version of events becomes the absolute truth. Without a battery lawyer Tampa to challenge the state's narrative, minor arguments or misunderstandings quickly turn into permanent convictions. We examine the allegations, review the evidence and identify possible defenses under Florida law. We also explain the legal options available for your case.",
@@ -36,7 +36,9 @@ export default function BLHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImagePath}
-          alt="Tampa Battery Lawyer Defense Against Criminal Charges Background"
+          alt="Strategic defense against criminal battery charges by experienced Tampa battery lawyer Drew McCulloch"
+          title="Tampa Battery Defense Lawyer Criminal Charges Overview"
+          data-description="McCulloch Law PA provides strategic criminal defense representation for individuals facing misdemeanor and felony battery charges in Tampa Florida."
           fill
           priority
           className="object-cover object-center opacity-40 lg:opacity-100"
@@ -54,7 +56,9 @@ export default function BLHero({
             <div className="relative w-full h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] flex items-end justify-center lg:justify-start lg:pl-2 xl:pl-6">
               <Image
                 src={personImagePath}
-                alt="Drew McCulloch - Tampa Battery Defense Lawyer"
+                alt="Drew McCulloch former prosecutor and criminal defense lawyer fighting battery allegations in Tampa FL"
+                title="Drew McCulloch Former Prosecutor Tampa Battery Lawyer"
+                data-description="Attorney Drew McCulloch uses extensive former prosecutorial insight to defend clients against unwanted physical contact and battery accusations across Tampa."
                 fill
                 priority
                 className="object-contain object-bottom drop-shadow-2xl hover:scale-[1.01] transition-transform duration-300 lg:max-w-[82%] xl:max-w-[80%]"
@@ -88,7 +92,7 @@ export default function BLHero({
                       Early Intervention.
                     </h4>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
-                      Protecting Your Future.
+                      Protecting Your Record.
                     </p>
                   </div>
                 </div>
@@ -166,7 +170,7 @@ export default function BLHero({
                 <FaShieldAlt className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-slate-100 leading-snug">
-                Strategic &amp; Aggressive <br className="hidden sm:inline" /> Legal Representation
+                Strategic &amp; Early <br className="hidden sm:inline" /> Legal Defense
               </span>
             </div>
 
@@ -175,7 +179,7 @@ export default function BLHero({
                 <FaFileCircleCheck className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-slate-100 leading-snug">
-                Former Assistant <br className="hidden sm:inline" /> State Attorney
+                Former State <br className="hidden sm:inline" /> Prosecutor Insight
               </span>
             </div>
 
@@ -184,7 +188,7 @@ export default function BLHero({
                 <FaBalanceScale className="w-5 h-5 sm:w-6 sm:h-6" />
               </div>
               <span className="text-sm sm:text-base font-semibold text-slate-100 leading-snug">
-                Protecting Your Record <br className="hidden sm:inline" /> &amp; Freedom from Day One
+                Protecting Your Record <br className="hidden sm:inline" /> &amp; Future from Day One
               </span>
             </div>
           </div>
@@ -193,4 +197,3 @@ export default function BLHero({
     </section>
   );
 }
-

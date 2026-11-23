@@ -13,7 +13,7 @@ export interface RDCourtsCitiesSectionProps {
 export default function RDCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/courts-cities-banner.png",
+  bannerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-hillsborough-county-criminal-court-hearings.webp",
 }: RDCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -38,7 +38,9 @@ export default function RDCourtsCitiesSection({
             <div className="lg:col-span-7 relative w-full h-[200px] sm:h-[260px] lg:h-[280px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/80">
               <Image
                 src={bannerImagePath}
-                alt="Courts and Cities McCulloch Law Serves Across Tampa"
+                alt="Tampa Hillsborough County criminal court hearings and legal representation for robbery defense cases"
+                title="Tampa Hillsborough County Criminal Court Hearings Law"
+                data-description="McCulloch Law provides experienced courtroom defense for robbery charges across Tampa, Hillsborough County, and surrounding communities."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -126,7 +128,10 @@ export default function RDCourtsCitiesSection({
                     Email
                   </h4>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
-                    <a href="mailto:office@mcfloridalaw.com" className="hover:text-primary transition-colors">
+                    <a
+                      href="mailto:office@mcfloridalaw.com"
+                      className="hover:text-primary transition-colors"
+                    >
                       office@mcfloridalaw.com
                     </a>
                   </p>
@@ -143,4 +148,3 @@ export default function RDCourtsCitiesSection({
     </section>
   );
 }
-

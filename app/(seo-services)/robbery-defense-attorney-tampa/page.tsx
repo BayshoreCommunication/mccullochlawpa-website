@@ -39,17 +39,17 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/seo-services/robbery-defense-attorney-tampa/strong-arm-robbery.webp",
+        url: "/images/seo-services/robbery-defense-attorney-tampa/florida-strong-arm-robbery-defense-lawyer-tampa-fl.webp",
         width: 1200,
-        height: 675,
-        alt: "Tampa Robbery Defense Attorney - Strong Arm Robbery Defense",
+        height: 630,
+        alt: "Florida Strong Arm Robbery Defense Lawyer Tampa Florida",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/robbery-defense-attorney-tampa/armed-robbery.webp",
+        url: "/images/seo-services/robbery-defense-attorney-tampa/florida-armed-robbery-defense-attorney-tampa-court.webp",
         width: 1200,
-        height: 675,
-        alt: "Armed Robbery Defense Lawyer Florida Statutes 812.13 Tampa",
+        height: 630,
+        alt: "Florida Armed Robbery Defense Attorney Tampa Court Law",
         type: "image/webp",
       },
     ],
@@ -59,7 +59,9 @@ export const metadata: Metadata = {
     title: "Tampa Robbery Defense Attorney | McCulloch Law",
     description:
       "Robbery charges in Tampa can carry serious prison penalties. Understand the accusations and your defense options. Request for free review.",
-    images: ["/images/seo-services/robbery-defense-attorney-tampa/strong-arm-robbery.webp"],
+    images: [
+      "/images/seo-services/robbery-defense-attorney-tampa/florida-strong-arm-robbery-defense-lawyer-tampa-fl.webp",
+    ],
   },
   robots: {
     index: true,
@@ -76,18 +78,23 @@ const jsonLdData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LegalService",
+      "@type": ["LegalService", "Attorney"],
       "@id": "https://mcfloridalaw.com/#legalService",
       name: "McCulloch Law, P.A. - Tampa Robbery Defense Attorney",
+      description:
+        "Robbery charges in Tampa can carry serious prison penalties. Understand the accusations and your defense options. Request for free review.",
       url: "https://mcfloridalaw.com/robbery-defense-attorney-tampa",
       telephone: "(813) 444-2817",
+      email: "office@mcfloridalaw.com",
       priceRange: "$$",
       image: {
         "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/robbery-defense-attorney-tampa/strong-arm-robbery.webp",
-        caption: "Tampa Robbery Defense Attorney - Proven Defense Against Criminal Charges",
+        url: "https://mcfloridalaw.com/images/seo-services/robbery-defense-attorney-tampa/florida-strong-arm-robbery-defense-lawyer-tampa-fl.webp",
+        caption: "Florida Strong Arm Robbery Defense Lawyer Tampa Florida",
+        description:
+          "Experienced Tampa robbery defense lawyer examining claims of pushing, striking, and physical force in second-degree felony robbery allegations across Florida.",
         width: 1200,
-        height: 675,
+        height: 630,
       },
       address: {
         "@type": "PostalAddress",
@@ -116,6 +123,37 @@ const jsonLdData = {
         opens: "00:00",
         closes: "23:59",
       },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Tampa",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Hillsborough County",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Tampa Bay",
+        },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://mcfloridalaw.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Tampa Robbery Defense Attorney",
+          item: "https://mcfloridalaw.com/robbery-defense-attorney-tampa",
+        },
+      ],
     },
     {
       "@type": "FAQPage",
@@ -204,4 +242,3 @@ export default function RobberyDefenseAttorneyTampaPage() {
     </>
   );
 }
-

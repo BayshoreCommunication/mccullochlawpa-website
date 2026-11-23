@@ -106,7 +106,7 @@ const defaultEvidenceItems: RobberyEvidenceItem[] = [
 export default function RDEvidenceSection({
   title = "Which Evidence You Should Preserve?",
   subTitle = "Evidence can provide proof of where you were, resolve a property argument, disprove an ID or assist in disproving the authorities timeline.",
-  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/criminal-court-evidence-preservation-robbery-case.webp",
   items = defaultEvidenceItems,
 }: RDEvidenceSectionProps) {
   return (
@@ -137,7 +137,9 @@ export default function RDEvidenceSection({
             <div className="lg:col-span-5 relative w-full h-[220px] sm:h-[260px] rounded-2xl overflow-hidden shadow-lg border border-slate-700/80">
               <Image
                 src={imagePath}
-                alt="Preserving critical evidence in Tampa robbery defense cases"
+                alt="Criminal court evidence preservation documentation and surveillance footage for robbery defense in Tampa"
+                title="Criminal Court Evidence Preservation Robbery Case Law"
+                data-description="Preserving store video recordings, digital receipts, biometric records, and witness accounts for criminal court robbery defense in Tampa Florida."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -150,12 +152,10 @@ export default function RDEvidenceSection({
 
         {/* 10 EVIDENCE ITEMS GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {items.map((item, idx) => (
+          {items.map((item) => (
             <div
               key={item.id}
-              className={`bg-[#0c1a29] rounded-2xl p-6 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-lg flex flex-col justify-between group hover:shadow-2xl ${
-                idx === 9 ? "md:col-span-2 lg:col-span-1" : ""
-              }`}
+              className="bg-[#0c1a29] rounded-2xl p-6 border border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-lg flex flex-col justify-between group hover:shadow-2xl"
             >
               <div>
                 <div className="flex items-center gap-3.5 mb-4">
@@ -179,4 +179,3 @@ export default function RDEvidenceSection({
     </section>
   );
 }
-

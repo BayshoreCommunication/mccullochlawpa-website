@@ -13,7 +13,7 @@ export interface BLCourtsCitiesSectionProps {
 export default function BLCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/battery-lawyer-tampa/courts-cities-banner.png",
+  bannerImagePath = "/images/seo-services/battery-lawyer-tampa/tampa-hillsborough-county-criminal-court-hearings.webp",
 }: BLCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -38,7 +38,9 @@ export default function BLCourtsCitiesSection({
             <div className="lg:col-span-7 relative w-full h-[200px] sm:h-[260px] lg:h-[280px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/80">
               <Image
                 src={bannerImagePath}
-                alt="Courts and Cities McCulloch Law Serves Across Tampa"
+                alt="Tampa Hillsborough County criminal court hearings and legal representation for battery defense cases"
+                title="Tampa Hillsborough County Criminal Court Hearings Law"
+                data-description="McCulloch Law provides experienced courtroom defense for battery charges across Tampa, Hillsborough County, and surrounding communities."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -145,4 +147,3 @@ export default function BLCourtsCitiesSection({
     </section>
   );
 }
-

@@ -113,7 +113,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function BLEvidenceSection({
   title = "Which Evidence You Should Preserve?",
   subTitle = "Evidence can establish the timeline, clarify the circumstances of physical contact or reveal contradictions in witness accounts. Preserve original files and records. Avoid editing, deleting or destroying potential evidence.",
-  imagePath = "/images/seo-services/battery-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/battery-lawyer-tampa/criminal-court-evidence-preservation-battery-case.webp",
   items = defaultEvidenceItems,
 }: BLEvidenceSectionProps) {
   return (
@@ -144,7 +144,9 @@ export default function BLEvidenceSection({
             <div className="lg:col-span-5 relative w-full h-[220px] sm:h-[260px] rounded-2xl overflow-hidden shadow-lg border border-slate-700/80">
               <Image
                 src={imagePath}
-                alt="Preserving critical evidence in Tampa battery defense cases"
+                alt="Criminal court evidence preservation documentation and case materials for battery defense in Tampa Florida"
+                title="Criminal Court Evidence Preservation Battery Case Law"
+                data-description="Preserving critical digital, medical, and eyewitness evidence for criminal court battery defense cases in Tampa and Hillsborough County Florida."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -186,4 +188,3 @@ export default function BLEvidenceSection({
     </section>
   );
 }
-

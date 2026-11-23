@@ -26,105 +26,107 @@ export interface PenaltyItem {
 
 export interface BLPenaltiesSectionProps {
   title?: string;
+  subTitle?: string;
   items?: PenaltyItem[];
 }
 
 const defaultPenalties: PenaltyItem[] = [
   {
-    id: "simple-battery-penalty",
+    id: "simple-battery",
     title: "Simple Battery (Misdemeanor Battery)",
     description:
-      "Under Florida Statutes § 784.03, misdemeanor battery carries up to one year in county jail, 12 months of probation and up to a $1,000 fine.",
+      "Florida generally treats this offense as a first degree misdemeanor under § 784.03, which might include jail time in a county jail for up to one year, a maximum fine of $1,000 or both. The court can order probation, community service, restitution or anything else permissible under the law. A misdemeanor conviction could remain on a person's criminal record and perhaps hinder employment or background screening. Florida typically restricts sealing or expunging records after a guilty plea or verdict, unless otherwise instructed by law.",
     icon: <FaShieldAlt className="w-5 h-5 text-primary" />,
   },
   {
-    id: "felony-battery-penalty",
+    id: "felony-battery",
     title: "Felony Battery",
     description:
-      "A third degree felony under Florida Statutes § 784.041 carries up to five years in state prison, five years of probation and up to a $5,000 fine.",
+      "Felony battery under § 784.041 is usually a third degree felony. The longest term of imprisonment is five years and the longest term of fine is $5,000. Probation, restitution and other conditions may be considered by the court depending on the circumstances of the case. The injury is a key part of this charge. The information can be examined by the defense: medical history, location and timing of symptoms, expert opinions where necessary and any evidence tying the injury to the incident.",
     icon: <FaGavel className="w-5 h-5 text-primary" />,
   },
   {
-    id: "aggravated-battery-penalty",
+    id: "aggravated-battery",
     title: "Aggravated Battery",
     description:
-      "Aggravated battery under Florida Statutes § 784.045 is a second degree felony punishable by up to 15 years in state prison, 15 years of probation and up to a $10,000 fine. If a firearm was discharged, Florida's 10-20-Life statute (§ 775.087) may impose mandatory minimum prison terms of 10, 20 or 25 years to life.",
+      "Aggravated battery is a second degree felony under the Florida laws described in § 784.045. A conviction for this offense can result in up to 15 years in prison and a fine of up to $10,000. The court can order restitution and other penalty considerations under the law. The law also applies other consequences to aggravated battery cases that deal with certain circumstances, such as § 784.08 dealing with an aggravated battery with a person 65 or older.",
     icon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
   },
   {
-    id: "domestic-battery-penalty",
+    id: "domestic-battery",
     title: "Domestic Battery",
     description:
-      "Requires a mandatory minimum of 26 weeks in a Batterers' Intervention Program (BIP), a minimum of five days in county jail if bodily injury occurred (§ 741.283) and permanent loss of firearm rights under federal law (18 U.S.C. § 922(g)(9)).",
+      "A battery offense involving a qualifying family or household relationship may trigger additional sentencing requirements. If the court finds the defendant committed a predicate offense and committed bodily injury, section 741.283 requires, for a first offense, a minimum 10 days in jail for a first offense, 15 days for a second and 20 days for a third or subsequent if the act was willful, with statutory exceptions. (All cases must have at least one year of probation and batterers' intervention program under section 741.281.) The court retains authority under the statute to decide whether the program requirement is inappropriate in a particular case and must state its reasons on the record.",
     icon: <FaHeartBroken className="w-5 h-5 text-primary" />,
   },
   {
-    id: "sexual-battery-penalty",
+    id: "sexual-battery",
     title: "Sexual Battery",
     description:
-      "Depending on the degree and circumstances (§ 794.011), penalties range from a second degree felony (up to 15 years) to a capital or life felony (life without parole), alongside mandatory lifetime sex offender registration.",
+      "The penalty for sexual battery varies depending on which subsection of § 794.011 the prosecution alleges you committed, the act you are accused of committing, the age of the parties involved and other legal factors. For some offenses, the penalties include up to life in prison and you may be required to register as a sex offender or sex predator, which includes reporting restrictions and other limitations. This means not every claim of sexual battery has the same penalties and registration requirements.",
     icon: <FaLock className="w-5 h-5 text-primary" />,
   },
   {
-    id: "protected-person-penalty",
+    id: "battery-protected-person",
     title: "Battery of a Protected Person",
     description:
-      "Battery on law enforcement, emergency medical personnel or other protected officers under § 784.07 is reclassified to the next higher offense category (e.g., misdemeanor battery becomes a third degree felony, aggravated battery becomes a first degree felony with mandatory minimum prison).",
+      "A battery charge involving a protected person may carry enhanced penalties under §§ 784.07 or 784.08. For example, certain battery allegations involving a law enforcement officer or specified personnel performing official duties can become third degree felonies. Battery against a person age 65 or older can also receive felony reclassification under the statutory conditions. The applicable penalty depends on the alleged victim's status, the accused's conduct and the specific statute. Some aggravated battery cases involving older victims carry mandatory prison terms and additional financial obligations.",
     icon: <FaUserShield className="w-5 h-5 text-primary" />,
   },
   {
-    id: "firearm-ban",
+    id: "federal-firearm-ban",
     title: "Federal Firearm Ban",
     description:
-      "A conviction for misdemeanor domestic violence or any felony triggers a federal firearm prohibition under 18 U.S.C. § 922(g).",
+      "A qualifying domestic violence related misdemeanor conviction can trigger federal firearm prohibitions. In addition, statutory law in Florida prohibits a person subject to certain, final domestic violence related injunctions from possessing a firearm under section § 790.233. It is important to understand that not every domestic battery arrest requires the imposition of firearm prohibitions but rather depends on the conviction, relationship, the statutory elements and any court ordered injunction.",
     icon: <FaBan className="w-5 h-5 text-primary" />,
   },
   {
-    id: "civil-rights",
+    id: "loss-of-civil-rights",
     title: "Loss of Civil Rights",
     description:
-      "A felony conviction in Florida results in the loss of your right to vote, hold public office and serve on a jury until civil rights are restored.",
+      "Certain felony convictions can affect civil rights and firearm eligibility. Florida's rights restoration rules depend on the offense, sentence and completion of applicable obligations. A battery arrest alone does not automatically remove all civil rights. The final disposition and any separate legal restrictions matter.",
     icon: <FaVoteYea className="w-5 h-5 text-primary" />,
   },
   {
-    id: "child-custody",
+    id: "limiting-child-custody",
     title: "Limiting Child Custody",
     description:
-      "Family court judges consider battery and domestic violence convictions when making child custody and timesharing determinations under Florida Statutes § 61.13.",
+      "Child custody decisions and parenting plans are governed by the best interests of the child standard, which family courts decide using all relevant evidence of domestic violence. A charge alone does not determine custody. The court will look at the evidence and relevant Florida law in the custody case.",
     icon: <FaChild className="w-5 h-5 text-primary" />,
   },
   {
     id: "employment-restrictions",
     title: "Employment Restrictions",
     description:
-      "A battery conviction appears on background checks and can bar you from employment in healthcare, education, law enforcement, security and professional licensing boards.",
+      "An employer can review an applicant's criminal record as part of the hiring process. Being convicted of battery can also impact licensing in a job that requires some type of criminal background check. The effect can vary depending upon the profession, the convicted individual's specific history, the licensing requirements and the employer's policies. Not every applicant who is convicted can be disqualified.",
     icon: <FaBriefcase className="w-5 h-5 text-primary" />,
   },
   {
-    id: "seal-expunge-ban",
+    id: "seal-or-expunge-ban",
     title: "Seal or Expunge Ban",
     description:
-      "Under Florida Statutes § 943.0584, certain battery convictions—particularly domestic battery—are statutorily ineligible for court-ordered sealing or expungement, even if adjudication was withheld.",
+      "In Florida, the general rule is that a record cannot be sealed or expunged once a person has been found guilty. Specific statutorily defined crimes are the exception to this rule and there are specific statutory limitations for record relief after a withheld adjudication depending on the crime and other statutory qualifications. An attorney can look at the disposition of the case and the applicable statutory requirements to advise on record relief.",
     icon: <FaFileArchive className="w-5 h-5 text-primary" />,
   },
   {
     id: "residency-restrictions",
     title: "Residency Restrictions",
     description:
-      "Injunctions and sexual battery convictions can impose strict geographic residency limits prohibiting you from living near schools, parks or shared family homes.",
+      "Residency restrictions may apply to people subject to qualifying sex offender or sexual predator laws. These restrictions do not follow every battery conviction. The specific offense, registration status and applicable state or local rules determine any restrictions.",
     icon: <FaHome className="w-5 h-5 text-primary" />,
   },
   {
     id: "lifetime-supervision",
     title: "Lifetime Supervision",
     description:
-      "Certain aggravated and sexual battery offenses qualify for sex offender probation, electronic monitoring or lifetime supervision requirements.",
+      "Some qualifying sexual offenses require an additional period of probation, post release supervision or registration. Others have a permanent requirement when specific conditions are met. Not all convictions for simple battery are automatically subject to lifetime supervision.",
     icon: <FaClock className="w-5 h-5 text-primary" />,
   },
 ];
 
 export default function BLPenaltiesSection({
   title = "What Penalties and Consequences Does Battery Conviction Have?",
+  subTitle = "Florida sets different penalties for misdemeanor battery, felony battery, aggravated battery and related offenses. The sentence depends on the charge, the facts, prior convictions and applicable sentencing laws.",
   items = defaultPenalties,
 }: BLPenaltiesSectionProps) {
   return (
@@ -137,6 +139,10 @@ export default function BLPenaltiesSection({
             {title}
           </h2>
 
+          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+            {subTitle}
+          </p>
+
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
             <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
@@ -146,27 +152,27 @@ export default function BLPenaltiesSection({
           </div>
         </div>
 
-        {/* PENALTIES GRID */}
+        {/* 13 PENALTIES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {items.map((item, idx) => (
+          {items.map((penalty, idx) => (
             <div
-              key={item.id}
-              className={`bg-white rounded-3xl p-6 sm:p-7 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group ${
-                idx === 2 ? "md:col-span-2 lg:col-span-1 bg-gradient-to-br from-white via-white to-amber-500/5" : ""
+              key={penalty.id}
+              className={`bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group ${
+                idx === 12 ? "md:col-span-2 lg:col-span-1" : ""
               }`}
             >
               <div>
                 <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform shrink-0">
-                    {item.icon}
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
+                    {penalty.icon}
                   </div>
                   <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
-                    {item.title}
+                    {penalty.title}
                   </h3>
                 </div>
 
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  {item.description}
+                  {penalty.description}
                 </p>
               </div>
             </div>
@@ -177,4 +183,3 @@ export default function BLPenaltiesSection({
     </section>
   );
 }
-

@@ -86,7 +86,7 @@ const defaultWhyChooseItems: WhyChooseItem[] = [
 export default function BLWhyChooseSection({
   title = "Why Choose Our Battery Defense Firm in Tampa?",
   subTitle = "A battery accusation can affect your criminal record, employment, family relationships and freedom. You need clear legal advice and a defense strategy based on the facts of your case.",
-  imagePath = "/images/seo-services/battery-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/battery-lawyer-tampa/experienced-tampa-battery-defense-lawyer-mcculloch.webp",
   items = defaultWhyChooseItems,
 }: BLWhyChooseSectionProps) {
   return (
@@ -119,40 +119,43 @@ export default function BLWhyChooseSection({
           <div className="lg:col-span-5 relative w-full h-[420px] sm:h-[500px] lg:h-[580px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
             <Image
               src={imagePath}
-              alt="Attorney Drew McCulloch - Tampa Battery Defense Lawyer"
+              alt="Experienced Tampa battery defense lawyer Drew McCulloch defending clients in Florida criminal court cases"
+              title="Experienced Tampa Battery Defense Lawyer McCulloch Law"
+              data-description="Former prosecutor and experienced Tampa battery defense attorney Drew McCulloch provides strong criminal representation across Hillsborough County."
               fill
-              className="object-cover object-top hover:scale-105 transition-transform duration-700"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 42vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl">
-              <h4 className="text-base font-bold text-slate-900">
-                Attorney Drew McCulloch
-              </h4>
+            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-lg text-slate-900">
+              <p className="text-sm font-bold text-slate-950">
+                Drew McCulloch, Esq.
+              </p>
               <p className="text-xs text-primary font-semibold">
-                Former State Prosecutor • 15+ Years Legal Experience
+                Former Prosecutor &amp; Lead Defense Attorney
               </p>
             </div>
           </div>
 
-          {/* RIGHT: WHY CHOOSE ITEMS */}
-          <div className="lg:col-span-7 space-y-4 sm:space-y-5">
+          {/* RIGHT: 6 VALUE PROPOSITIONS */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {items.map((item) => (
               <div
                 key={item.id}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200/90 shadow-sm hover:shadow-md hover:border-primary/50 transition-all duration-300 flex items-start gap-4 group"
+                className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
               >
-                <div className="w-11 h-11 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0 mt-0.5">
-                  {item.icon}
-                </div>
+                <div>
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-3 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
 
-                <div className="space-y-1">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-primary transition-colors mb-2 leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+
+                  <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                     {item.description}
-                  </p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -164,4 +167,3 @@ export default function BLWhyChooseSection({
     </section>
   );
 }
-
