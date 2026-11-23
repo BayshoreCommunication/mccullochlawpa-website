@@ -40,8 +40,8 @@ const defaultFAQs: FAQItem[] = [
 
 export default function JDFAQSection({
   title = "Frequently Asked Questions About Juvenile Defense Charges",
-  subTitle = "Find clear answers to common questions about juvenile delinquency charges, direct file transfers, and defense options in Tampa.",
-  headerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/faq-gavel-scales.png",
+  subTitle,
+  headerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/frequently-asked-questions-tampa-juvenile-defense.webp",
   faqs = defaultFAQs,
 }: JDFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -59,7 +59,9 @@ export default function JDFAQSection({
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-4">
             <Image
               src={headerImagePath}
-              alt="Juvenile Defense FAQs Gavel and Scales"
+              alt="Frequently asked questions regarding Florida juvenile delinquency defense laws and hearings in Tampa"
+              title="Frequently Asked Questions Tampa Juvenile Defense Law"
+              data-description="Find clear answers to frequently asked questions about juvenile delinquency charges, adult court transfers, record expungement, and defense in Tampa."
               fill
               className="object-contain"
             />
@@ -69,9 +71,11 @@ export default function JDFAQSection({
             {title}
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
-            {subTitle}
-          </p>
+          {subTitle && (
+            <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+              {subTitle}
+            </p>
+          )}
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -102,10 +106,10 @@ export default function JDFAQSection({
                     {faq.question}
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                    className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-transform duration-300 ${
                       isOpen
-                        ? "bg-primary text-slate-950 rotate-180"
-                        : "bg-slate-100 text-slate-600"
+                        ? "bg-primary border-primary text-slate-950 rotate-180"
+                        : "border-slate-300 text-slate-500"
                     }`}
                   >
                     <FaChevronDown className="w-3.5 h-3.5" />
@@ -126,4 +130,3 @@ export default function JDFAQSection({
     </section>
   );
 }
-

@@ -41,17 +41,17 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/seo-services/juvenile-defense-lawyer-tampa/assault-battery-school-fight.webp",
-        width: 1152,
-        height: 923,
-        alt: "Juvenile Defense Lawyer Tampa - Protect Your Child Rights and Future",
+        url: "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
+        width: 1200,
+        height: 630,
+        alt: "Experienced Tampa juvenile defense lawyer protecting your child rights against criminal charges in court",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/juvenile-defense-lawyer-tampa/theft-shoplifting-property.webp",
-        width: 1402,
-        height: 1122,
-        alt: "Juvenile Delinquency and Theft Defense Tampa",
+        url: "/images/seo-services/juvenile-defense-lawyer-tampa/florida-juvenile-assault-battery-defense-lawyer-fl.webp",
+        width: 800,
+        height: 600,
+        alt: "Florida juvenile assault and battery defense lawyer evaluating school fight allegations in Tampa court",
         type: "image/webp",
       },
     ],
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Juvenile Defense Lawyer Tampa | Free Case Review",
     description:
       "Parents face juvenile criminal charges in Tampa frequently. McCulloch Law helps families understand defense options and protect your child's future.",
-    images: ["/images/seo-services/juvenile-defense-lawyer-tampa/assault-battery-school-fight.webp"],
+    images: ["/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp"],
   },
   robots: {
     index: true,
@@ -78,19 +78,14 @@ const jsonLdData = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LegalService",
-      "@id": "https://mcfloridalaw.com/#legalService",
+      "@type": ["LegalService", "Attorney"],
+      "@id": "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa/#legalService",
       name: "McCulloch Law, P.A. - Tampa Juvenile Defense Lawyer",
       url: "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa",
       telephone: "(813) 444-2817",
+      email: "office@mcfloridalaw.com",
       priceRange: "$$",
-      image: {
-        "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/juvenile-defense-lawyer-tampa/assault-battery-school-fight.webp",
-        caption: "Juvenile Defense Lawyer Tampa - Protect Your Child Rights and Future",
-        width: 1152,
-        height: 923,
-      },
+      image: "https://mcfloridalaw.com/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
       address: {
         "@type": "PostalAddress",
         streetAddress: "238 East Davis Boulevard, Ste 202",
@@ -118,6 +113,23 @@ const jsonLdData = {
         opens: "00:00",
         closes: "23:59",
       },
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://mcfloridalaw.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Juvenile Defense Lawyer Tampa",
+          item: "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa",
+        },
+      ],
     },
     {
       "@type": "FAQPage",
@@ -184,4 +196,3 @@ export default function JuvenileDefenseLawyerTampaPage() {
     </>
   );
 }
-

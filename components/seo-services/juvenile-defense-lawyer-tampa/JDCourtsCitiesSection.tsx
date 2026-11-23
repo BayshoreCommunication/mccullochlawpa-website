@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaCalendarCheck } from "react-icons/fa";
 
 export interface JDCourtsCitiesSectionProps {
   title?: string;
@@ -13,7 +13,7 @@ export interface JDCourtsCitiesSectionProps {
 export default function JDCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "We proudly serve the Greater Tampa Bay Area and Hillsborough County. Local knowledge benefits our defense strategies significantly.",
-  bannerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/courts-cities-banner.png",
+  bannerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-hillsborough-county-criminal-court-hearings.webp",
 }: JDCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -38,7 +38,9 @@ export default function JDCourtsCitiesSection({
             <div className="lg:col-span-7 relative w-full h-[200px] sm:h-[260px] lg:h-[280px] rounded-2xl overflow-hidden shadow-lg border border-slate-200/80">
               <Image
                 src={bannerImagePath}
-                alt="Courts and Cities McCulloch Law Serves Across Tampa"
+                alt="Tampa Hillsborough County criminal court hearings and legal representation for juvenile defense cases"
+                title="Tampa Hillsborough County Criminal Court Hearings Law"
+                data-description="McCulloch Law provides experienced courtroom defense for juvenile delinquency charges across Tampa, Hillsborough County, and surrounding communities."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-700"
                 sizes="(max-width: 1024px) 100vw, 55vw"
@@ -68,7 +70,7 @@ export default function JDCourtsCitiesSection({
           </div>
 
           {/* RIGHT: Address Info Card */}
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md flex flex-col justify-center space-y-6">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md flex flex-col justify-center space-y-4">
 
             <div className="w-full bg-[#0B1B2D] text-white rounded-2xl py-3.5 px-6 flex items-center justify-center gap-3 shadow-md border border-slate-800">
               <div className="w-8 h-8 rounded-full bg-white border border-primary/40 flex items-center justify-center shrink-0">
@@ -79,56 +81,78 @@ export default function JDCourtsCitiesSection({
               </span>
             </div>
 
-            <div className="space-y-4 text-slate-700">
+            <div className="space-y-3.5 text-slate-700">
               
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
                   <FaMapMarkerAlt className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Office Address
+                    Address:
                   </h4>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
-                    238 East Davis Boulevard, Ste 202
-                  </p>
-                  <p className="text-sm sm:text-base text-slate-700">
-                    Tampa, FL 33606
+                    238 East Davis Boulevard, Ste 202, Tampa, FL 33606
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
                   <FaPhone className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Phone
+                    Phone:
                   </h4>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     <a href="tel:8134442817" className="hover:text-primary transition-colors">
                       (813) 444-2817
                     </a>
                   </p>
-                  <p className="text-xs text-primary font-medium mt-0.5">
-                    Open twenty four hours daily
-                  </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
+              <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
                 <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
                   <FaEnvelope className="w-5 h-5" />
                 </div>
                 <div>
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Email Address
+                    Email Address:
                   </h4>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     <a href="mailto:office@mcfloridalaw.com" className="hover:text-primary transition-colors">
                       office@mcfloridalaw.com
                     </a>
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                  <FaClock className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                    Availability:
+                  </h4>
+                  <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
+                    Open twenty four hours daily
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                  <FaCalendarCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                    Consultation:
+                  </h4>
+                  <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
+                    Free initial consultation
                   </p>
                 </div>
               </div>
@@ -143,4 +167,3 @@ export default function JDCourtsCitiesSection({
     </section>
   );
 }
-

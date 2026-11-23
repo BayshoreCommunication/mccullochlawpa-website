@@ -9,7 +9,6 @@ import {
   FaPhoneAlt,
   FaBalanceScale,
   FaShieldAlt,
-  FaAward,
 } from "react-icons/fa";
 
 export interface JuvenileWhyChooseItem {
@@ -60,7 +59,7 @@ const defaultWhyChooseItems: JuvenileWhyChooseItem[] = [
 export default function JDWhyChooseSection({
   title = "Why Choose Our Juvenile Defense Firm in Tampa?",
   subTitle = "Your choice of legal representation matters deeply. We bring extensive courtroom knowledge to your child defense.",
-  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/mcculloch.webp",
+  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/experienced-tampa-juvenile-defense-lawyer-mcculloch.webp",
   items = defaultWhyChooseItems,
 }: JDWhyChooseSectionProps) {
   return (
@@ -86,86 +85,55 @@ export default function JDWhyChooseSection({
           </div>
         </div>
 
-        {/* TOP PROFILE & CREDENTIALS CARD */}
-        <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-800 shadow-xl mb-12 max-w-6xl mx-auto overflow-hidden text-white">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-4 relative w-full h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-primary/40 bg-slate-900">
-              <Image
-                src={imagePath}
-                alt="Drew McCulloch - Former Prosecutor & Tampa Juvenile Defense Lawyer"
-                fill
-                className="object-cover object-top hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 1024px) 100vw, 35vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a29] via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#081524]/90 backdrop-blur-md border border-primary/30 text-center">
-                <span className="text-sm font-bold text-white block">Drew McCulloch</span>
-                <span className="text-xs text-primary font-medium">Managing Attorney | Former State Prosecutor</span>
-              </div>
+        {/* MAIN CONTENT: 2-COLUMN LAYOUT (IMAGE & 4 ITEMS) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-6xl mx-auto">
+          
+          {/* IMAGE COLUMN */}
+          <div className="lg:col-span-5 relative min-h-[380px] sm:min-h-[460px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 flex flex-col justify-end">
+            <Image
+              src={imagePath}
+              alt="Experienced Tampa juvenile defense lawyer Drew McCulloch offering dedicated criminal defense for minors"
+              title="Experienced Tampa Juvenile Defense Lawyer McCulloch Law"
+              data-description="Former state prosecutor Drew McCulloch provides comprehensive juvenile defense representation across Tampa, Hillsborough County, and Florida juvenile courts."
+              fill
+              className="object-cover object-top hover:scale-105 transition-transform duration-500"
+              sizes="(max-width: 1024px) 100vw, 40vw"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+            <div className="relative z-10 p-6 bg-[#081524]/90 backdrop-blur-md border-t border-primary/30 m-4 rounded-2xl text-center">
+              <span className="text-base font-bold text-white block">Drew McCulloch</span>
+              <span className="text-xs text-primary font-medium">McCulloch Law, P.A. | Tampa, FL</span>
             </div>
-
-            <div className="lg:col-span-8 flex flex-col space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <FaAward className="w-3.5 h-3.5" />
-                DEDICATED JUVENILE DEFENSE IN TAMPA
-              </div>
-
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
-                Protecting Your Child’s Rights and Future with Former Prosecutorial Insight
-              </h3>
-
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                At McCulloch Law, P.A., our team brings firsthand knowledge of the Florida court system and prosecutor strategies to every juvenile case. We work urgently to explore diversion opportunities, challenge improper police conduct, prevent direct file transfers to adult court, and keep your child&apos;s record clean.
-              </p>
-
-              <div className="pt-2 flex flex-wrap gap-4">
-                <a
-                  href="tel:8134442817"
-                  className="inline-flex items-center gap-2.5 bg-primary hover:bg-[#a87d25] text-slate-950 font-bold px-6 py-3 rounded-xl shadow-lg transition-all text-sm"
-                >
-                  <FaPhoneAlt className="w-4 h-4" />
-                  <span>Call (813) 444-2817</span>
-                </a>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 rounded-xl border border-white/20 transition-all text-sm"
-                >
-                  <span>Free Case Review</span>
-                </Link>
-              </div>
-            </div>
-
           </div>
-        </div>
 
-        {/* 4 REASONS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
-            >
-              <div>
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="w-11 h-11 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
-                    {item.icon}
+          {/* 4 ITEMS COLUMN */}
+          <div className="lg:col-span-7 flex flex-col justify-between gap-5">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-2xl p-5 sm:p-6 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="flex items-center gap-3.5 mb-2.5">
+                    <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
+                      {item.icon}
+                    </div>
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                      {item.title}
+                    </h3>
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
-                    {item.title}
-                  </h3>
-                </div>
 
-                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                  {item.description}
-                </p>
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
         </div>
 
       </div>
     </section>
   );
 }
-

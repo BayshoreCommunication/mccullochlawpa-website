@@ -27,6 +27,8 @@ export interface JuvenileChargeTypeItem {
   title: string;
   image: string;
   imageAlt: string;
+  imageTitle: string;
+  imageDesc: string;
   badgeIcon: React.ReactNode;
   description: React.ReactNode;
   linkHref?: string;
@@ -44,23 +46,19 @@ export interface JDTypesSectionProps {
 const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "assault-battery-school-fight",
-    title: "Assault Battery and School Fight Allegations",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/assault-battery-school-fight.webp",
-    imageAlt: "Assault Battery and School Fight Allegations Defense Tampa",
+    title: "Assault, Battery and School Fight Allegations",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/florida-juvenile-assault-battery-defense-lawyer-fl.webp",
+    imageAlt: "Florida juvenile assault and battery defense lawyer evaluating school fight allegations in Tampa court",
+    imageTitle: "Florida Juvenile Assault Battery Defense Lawyer Tampa",
+    imageDesc: "Defending minors against school altercation, simple assault, and felony battery charges in Tampa juvenile court and Department of Juvenile Justice proceedings.",
     badgeIcon: <FaHandRock className="w-5 h-5 text-primary" />,
     description: (
       <>
-        Physical altercations and threats bring swift community scrutiny. School
-        disputes can quickly escalate into formal criminal charges. Simple fights
-        sometimes lead to felony{" "}
+        Physical altercations and threats bring swift community scrutiny. School disputes can quickly escalate into formal criminal charges. Simple fights sometimes lead to felony{" "}
         <Link href="/battery-lawyer-tampa" className={INLINE_LINK_CLASS}>
           battery accusations
         </Link>
-        . A clear defense strategy examines who started the conflict.School
-        disputes and physical altercations can lead to formal criminal charges,
-        particularly when allegations involve threats or violence. Families
-        facing related allegations can also learn more about our Tampa domestic
-        violence defense Lawyer services.
+        . A clear defense strategy examines who started the conflict. School disputes and physical altercations can lead to formal criminal charges, particularly when allegations involve threats or violence.
       </>
     ),
     linkHref: "/contact",
@@ -68,8 +66,10 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "theft-shoplifting-property",
     title: "Theft Shoplifting and Property Offenses",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/theft-shoplifting-property.webp",
-    imageAlt: "Juvenile Theft Shoplifting and Property Offenses Defense Tampa",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-theft-shoplifting-defense-attorney-in-fl.webp",
+    imageAlt: "Juvenile theft and shoplifting defense attorney examining retail property evidence in Tampa Florida",
+    imageTitle: "Juvenile Theft Shoplifting Defense Attorney Tampa FL",
+    imageDesc: "Experienced Tampa juvenile defense lawyer challenging retail theft, shoplifting, and property damage allegations to avoid formal delinquency records.",
     badgeIcon: <FaStore className="w-5 h-5 text-primary" />,
     description:
       "Shoplifting and trespass are commonly charged as acts of delinquency. Cases involving damage to property will need to be carefully considered looking at all the evidence. Retailers will push hard to prosecute anyone suspected of being a minor. These cases often result in compensation being paid.",
@@ -78,22 +78,18 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "drug-possession-minors",
     title: "Drug Possession and Related Allegations",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/drug-possession-minors.webp",
-    imageAlt: "Minor Drug Possession and Related Allegations Defense Tampa",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-drug-possession-defense-lawyer-in-tampa.webp",
+    imageAlt: "Juvenile drug possession defense lawyer evaluating controlled substance allegations in Tampa Florida",
+    imageTitle: "Juvenile Drug Possession Defense Lawyer in Tampa FL",
+    imageDesc: "Challenging underage marijuana and prescription drug possession allegations, exploring diversion programs to keep your child criminal record clear in Tampa.",
     badgeIcon: <FaCapsules className="w-5 h-5 text-primary" />,
     description: (
       <>
-        Allegations of controlled substances have a devastating impact on
-        minors.{" "}
+        Allegations of controlled substances have a devastating impact on minors.{" "}
         <Link href="/tampa-drug-crimes-lawyer" className={INLINE_LINK_CLASS}>
           Defense strategies regarding drugs
         </Link>{" "}
-        need to be customized to the child and the offense. Marijuana or
-        prescription drug possession are treated with severity. Diversion
-        programs may be a way to avoid records for first time offenders.Drug
-        possession allegations can have serious consequences for adults as well.
-        Those facing similar allegations can find information about defending
-        drug-related charges.
+        need to be customized to the child and the offense. Marijuana or prescription drug possession are treated with severity. Diversion programs may be a way to avoid records for first time offenders.Drug possession allegations can have serious consequences for adults as well.
       </>
     ),
     linkHref: "/contact",
@@ -101,8 +97,10 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "weapons-possession-violent",
     title: "Weapons Possession and Serious Violent Offenses",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/weapons-possession-violent.webp",
-    imageAlt: "Juvenile Weapons Possession and Violent Offenses Defense Tampa",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-weapons-possession-defense-attorney-tampa.webp",
+    imageAlt: "Juvenile weapons possession defense attorney fighting direct file adult court transfers in Tampa FL",
+    imageTitle: "Juvenile Weapons Possession Defense Attorney Tampa Law",
+    imageDesc: "Strategic defense for minors accused of carrying weapons or firearms on school grounds, preventing direct-file transfers to adult criminal court in Florida.",
     badgeIcon: <GiPistolGun className="w-5 h-5 text-primary" />,
     description:
       "Any allegation of weapons is treated seriously and will not be tolerated. The exact legal definition is determined by statutory definitions. Students are expelled from school right away when they are carrying a knife or a gun. Direct file to adult court is a common occurrence with these charges.",
@@ -111,8 +109,10 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "cyberbullying-online-misconduct",
     title: "Cyberbullying Threats and Online Misconduct",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/cyberbullying-online-misconduct.webp",
-    imageAlt: "Cyberbullying Threats and Online Misconduct Defense Tampa",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-cyberbullying-threats-defense-lawyer-fl.webp",
+    imageAlt: "Juvenile cyberbullying and online threats defense lawyer evaluating digital communication evidence",
+    imageTitle: "Juvenile Cyberbullying Threats Defense Lawyer Florida",
+    imageDesc: "Defending students against online threat allegations, social media cyberbullying claims, and digital misconduct accusations across Hillsborough County schools.",
     badgeIcon: <FaGlobe className="w-5 h-5 text-primary" />,
     description:
       "Digital misconduct requires preserving the full communication context. This context explains online statements accurately to a judge. False accounts sometimes mask the true sender identity. An attorney traces the digital footprint to protect innocence.",
@@ -121,8 +121,10 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
   {
     id: "underage-dui-alcohol",
     title: "DUI and Other Alcohol Related Allegations Involving Minors",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/underage-dui-alcohol.webp",
-    imageAlt: "Underage DUI and Minor Alcohol Related Offenses Defense Tampa",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/underage-dui-alcohol-defense-attorney-tampa-fl.webp",
+    imageAlt: "Underage DUI and minor alcohol defense attorney examining zero tolerance license suspensions in Tampa",
+    imageTitle: "Underage DUI Alcohol Defense Attorney Tampa Florida",
+    imageDesc: "Defense attorney protecting minors and college students from underage drinking and zero-tolerance DUI allegations in Tampa and Hillsborough County courts.",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Alcohol related incidents involving minors must be carefully considered. Not all alcohol related incidents involving minors are criminal. Florida has strict zero tolerance laws regarding underage drivers.",
@@ -209,6 +211,8 @@ export default function JDTypesSection({
                     <Image
                       src={item.image}
                       alt={item.imageAlt}
+                      title={item.imageTitle}
+                      data-description={item.imageDesc}
                       fill
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 30vw"
@@ -250,4 +254,3 @@ export default function JDTypesSection({
     </section>
   );
 }
-

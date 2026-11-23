@@ -20,22 +20,16 @@ export interface JDHeroSectionProps {
 }
 
 export default function JDHero({
-  bgImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/hero-bg.png",
-  personImagePath = "/images/hero/Attorney.png",
+  bgImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
+  personImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-attorney-drew-mcculloch-law.webp",
   badgeTitle = "Tampa Juvenile Defense Lawyer",
   h1Title = "Juvenile Defense Lawyer Tampa, Protect Your Child’s Rights and Future",
   paragraph = (
     <>
-      Parents are usually shocked when criminal charges are brought on behalf
-      of their children. Long term concerns are serious issues arising from
-      court and school consequences. A qualified juvenile defense attorney Tampa
-      offers clarity at the moment. Drew McCulloch is a dedicated member of the
-      McCulloch Law group. Families learn to understand the allegations and
-      protect constitutional rights. A careful evidence review helps explore
-      appropriate legal options.{" "}
+      Parents are usually shocked when criminal charges are brought on behalf of their children. Long term concerns are serious issues arising from court and school consequences. A qualified juvenile defense attorney Tampa offers clarity at the moment. Drew McCulloch is a dedicated member of the McCulloch Law group. Families learn to understand the allegations and protect constitutional rights. A careful evidence review helps explore appropriate legal options.{" "}
       <Link
         href="/contact"
-        className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
+        className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
       >
         Contact us
       </Link>{" "}
@@ -53,7 +47,9 @@ export default function JDHero({
       <div className="absolute inset-0 z-0">
         <Image
           src={bgImagePath}
-          alt="Juvenile Defense Lawyer Tampa Protect Your Child Rights and Future Background"
+          alt="Experienced Tampa juvenile defense lawyer protecting your child rights against criminal charges in court"
+          title="Tampa Juvenile Defense Lawyer Criminal Charges Hero"
+          data-description="McCulloch Law provides dedicated juvenile defense representation in Tampa, protecting minors facing delinquency allegations, school discipline, and criminal charges."
           fill
           priority
           className="object-cover object-center opacity-40 lg:opacity-100"
@@ -71,7 +67,9 @@ export default function JDHero({
             <div className="relative w-full h-[380px] sm:h-[460px] md:h-[520px] lg:h-[580px] flex items-end justify-center lg:justify-start lg:pl-2 xl:pl-6">
               <Image
                 src={personImagePath}
-                alt="Drew McCulloch - Tampa Juvenile Defense Lawyer"
+                alt="Drew McCulloch former prosecutor and juvenile defense attorney fighting for minors in Tampa Florida"
+                title="Tampa Juvenile Defense Attorney Drew McCulloch Law Firm"
+                data-description="Attorney Drew McCulloch utilizes former prosecutorial courtroom experience to protect your child future, criminal record, and educational opportunities in Tampa."
                 fill
                 priority
                 className="object-contain object-bottom drop-shadow-2xl hover:scale-[1.01] transition-transform duration-300 lg:max-w-[82%] xl:max-w-[80%]"
@@ -86,10 +84,10 @@ export default function JDHero({
                   </div>
                   <div>
                     <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
-                      Strategic Defense.
+                      Strategic Defense
                     </h4>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
-                      Former Prosecutor.
+                      Former Prosecutor
                     </p>
                   </div>
                 </div>
@@ -102,10 +100,10 @@ export default function JDHero({
                   </div>
                   <div>
                     <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
-                      Early Intervention.
+                      Early Intervention
                     </h4>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
-                      Protecting Your Future.
+                      Protecting Your Future
                     </p>
                   </div>
                 </div>
@@ -119,11 +117,8 @@ export default function JDHero({
               {badgeTitle}
             </div>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-extrabold text-slate-900 tracking-tight leading-[1.15] mb-5 sm:mb-6">
-              <span className="block text-slate-900">{h1Title}</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#b38e3a] to-primary mt-2">
-                In Tampa, Florida
-              </span>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-extrabold text-slate-900 tracking-tight leading-[1.18] mb-5 sm:mb-6">
+              {h1Title}
             </h1>
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">
@@ -210,4 +205,3 @@ export default function JDHero({
     </section>
   );
 }
-

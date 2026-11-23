@@ -63,7 +63,7 @@ const criminalDefenseLinks: Record<string, string> = {
 export default function JDServesSection({
   title = "Cases McCulloch Law Handles Across Tampa Florida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense. A highly proficient juvenile defense lawyer Tampa evaluates each matter carefully.",
-  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-skyline-palms.png",
+  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-bay-skyline-juvenile-defense-services-banner.webp",
 }: JDServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
@@ -71,7 +71,9 @@ export default function JDServesSection({
       <div className="absolute inset-0 z-0 opacity-15">
         <Image
           src={imagePath}
-          alt="Tampa Florida Skyline Palms Background"
+          alt="Tampa Bay Florida skyline banner showcasing juvenile defense and personal injury representation services"
+          title="Tampa Bay Skyline Juvenile Defense Services Banner Law"
+          data-description="McCulloch Law provides comprehensive criminal defense and personal injury representation services across Tampa and surrounding Hillsborough County."
           fill
           className="object-cover object-center"
           sizes="100vw"
@@ -109,14 +111,9 @@ export default function JDServesSection({
               <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
                 <FaBriefcaseMedical className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Personal Injury
-                </h3>
-                <span className="text-xs text-slate-400">
-                  Comprehensive representation for injury victims
-                </span>
-              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Personal Injury
+              </h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -140,14 +137,9 @@ export default function JDServesSection({
               <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
                 <FaGavel className="w-5 h-5" />
               </div>
-              <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
-                  Criminal Defense
-                </h3>
-                <span className="text-xs text-slate-400">
-                  Aggressive defense against misdemeanor and felony charges
-                </span>
-              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white">
+                Criminal Defense
+              </h3>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -183,4 +175,3 @@ export default function JDServesSection({
     </section>
   );
 }
-

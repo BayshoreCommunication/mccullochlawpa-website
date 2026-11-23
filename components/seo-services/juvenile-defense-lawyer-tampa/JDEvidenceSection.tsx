@@ -66,7 +66,7 @@ const defaultEvidenceItems: JuvenileEvidenceItem[] = [
 export default function JDEvidenceSection({
   title = "Which Evidence Should Be Preserved for Defense?",
   subTitle = "Fast action saves critical proof from permanent destruction. Parents must secure related documents and digital files immediately.",
-  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/which-evidence-you-should-preserve.webp",
+  imagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/criminal-court-evidence-preservation-juvenile-case.webp",
   items = defaultEvidenceItems,
 }: JDEvidenceSectionProps) {
   return (
@@ -97,7 +97,9 @@ export default function JDEvidenceSection({
             <div className="lg:col-span-5 relative w-full h-[220px] sm:h-[260px] rounded-2xl overflow-hidden shadow-lg border border-slate-700/80">
               <Image
                 src={imagePath}
-                alt="Preserving critical juvenile defense evidence in Tampa Florida"
+                alt="Criminal court evidence preservation documentation and school incident records for juvenile defense"
+                title="Criminal Court Evidence Preservation Juvenile Case Law"
+                data-description="Preserving school security video, cell phone group chats, witness statements, and police reports for juvenile delinquency defense in Tampa Florida."
                 fill
                 className="object-cover object-center hover:scale-105 transition-transform duration-500"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -141,4 +143,3 @@ export default function JDEvidenceSection({
     </section>
   );
 }
-
