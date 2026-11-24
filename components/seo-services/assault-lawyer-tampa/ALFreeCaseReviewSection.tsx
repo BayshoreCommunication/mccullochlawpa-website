@@ -7,7 +7,7 @@ import { FaCalendarAlt, FaShieldAlt } from "react-icons/fa";
 
 export interface ALFreeCaseReviewSectionProps {
   title?: string;
-  paragraph?: string;
+  paragraph?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -16,7 +16,18 @@ export interface ALFreeCaseReviewSectionProps {
 
 export default function ALFreeCaseReviewSection({
   title = "Charged With Assault? Contact McCulloch Law Now",
-  paragraph = "An assault allegation can move quickly from an argument to a criminal case. Early decisions may affect the evidence available to your defense and the options you can consider. At McCulloch Law, we review the charge, discuss the relevant facts and explain possible next steps. Our assault lawyer Tampa, Drew McCulloch brings former prosecutorial experience to criminal defense matters across Tampa Bay. Call (813) 444-2817 to request a free consultation. Our office is available 24/7.",
+  paragraph = (
+    <>
+      An assault allegation can move quickly from an argument to a criminal
+      case. Early decisions may affect the evidence available to your defense
+      and the options you can consider. At McCulloch Law, we review the charge,
+      discuss the relevant facts and explain possible next steps. Our{" "}
+      <strong className="font-bold text-white">assault lawyer Tampa</strong>,
+      Drew McCulloch brings former prosecutorial experience to criminal defense
+      matters across Tampa Bay. Call (813) 444-2817 to request a free
+      consultation. Our office is available 24/7.
+    </>
+  ),
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",

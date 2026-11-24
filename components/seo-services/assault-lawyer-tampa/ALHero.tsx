@@ -12,7 +12,7 @@ export interface ALHeroSectionProps {
   personImagePath?: string;
   badgeTitle?: string;
   h1Title?: string;
-  paragraph1?: string;
+  paragraph1?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -24,7 +24,21 @@ export default function ALHero({
   personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Assault Lawyer",
   h1Title = "Defense Against Criminal Charges",
-  paragraph1 = "Accused of assault in Tampa? You need an immediate and strategic defense to protect your rights. Without an assault lawyer Tampa, your simple misdemeanor could turn into a first degree felony. Prosecutors will build tight cases but they will also leave gaps. These gaps can only be seen by a former prosecutor and defense lawyer. Our Attorney Drew McCulloch is a former state prosecutor and is now defending criminal cases like yours. We act quickly to challenge weak witness statements, protect your record and build strong defense from day one.",
+  paragraph1 = (
+    <>
+      Accused of assault in Tampa? You need an immediate and strategic defense
+      to protect your rights. Without an{" "}
+      <strong className="font-bold text-slate-900">
+        assault lawyer Tampa
+      </strong>
+      , your simple misdemeanor could turn into a first degree felony.
+      Prosecutors will build tight cases but they will also leave gaps. These
+      gaps can only be seen by a former prosecutor and defense lawyer. Our
+      Attorney Drew McCulloch is a former state prosecutor and is now defending
+      criminal cases like yours. We act quickly to challenge weak witness
+      statements, protect your record and build strong defense from day one.
+    </>
+  ),
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -107,10 +121,7 @@ export default function ALHero({
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-slate-900 tracking-tight leading-[1.12] mb-5 sm:mb-6">
-              <span className="block text-slate-900">{h1Title}</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#b38e3a] to-primary mt-2">
-                In Tampa, Florida
-              </span>
+              {h1Title}
             </h1>
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">

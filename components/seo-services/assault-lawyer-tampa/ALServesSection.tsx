@@ -54,7 +54,7 @@ const personalInjuryItems = [
 export default function ALServesSection({
   title = "Cases McCulloch Law Handles Across Tampa, FLorida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense.",
-  imagePath = "/images/seo-services/assault-lawyer-tampa/tampa-bay-skyline-legal-defense-services-coverage.webp",
+  imagePath = "/images/seo-services/assault-lawyer-tampa/tampa-bay-skyline-criminal-defense-services-tampa-fl.webp",
 }: ALServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
@@ -106,9 +106,6 @@ export default function ALServesSection({
                 <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                   Criminal Defense
                 </h3>
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                  Charges We Defend
-                </span>
               </div>
             </div>
 
@@ -137,9 +134,6 @@ export default function ALServesSection({
                 <h3 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
                   Personal Injury
                 </h3>
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                  Injury Claims We Handle
-                </span>
               </div>
             </div>
 

@@ -21,21 +21,21 @@ const defaultTestimonials: TestimonialItem[] = [
     name: "Michael M.",
     stars: 5,
     review:
-      "Drew is very professional and acts intentionally. He provides realistic expectations and follows through on his responsibilities. Recently we hired Drew for a case dealing with both a state criminal defense case, as well as some issues with the Department of Health. Through Drew, I was able to achieve best case scenario and a significantly reduced sentence compared to similar offenders. I fully recommend and endorse Drew, he's a class act.",
+      "Drew is very professional and acts intentionally. He provides realistic expectations and follows through on his responsibilities. Recently we hired Drew for a case dealing with both a state criminal defense case, as well as some issues with the Department of Health. Through Drew, I was able to achieve best case scenario and a significantly reduced sentence compared to similar offenders. I fully recommend and endorse Drew, he’s a class act.",
   },
   {
     id: "testimonial-2",
     name: "Brandon",
     stars: 5,
     review:
-      "Micheal McCullough was the best lawyer I've had hands down and I've had a few. Even from the beginning of my case, it was easy to tell he was going to be better then other lawyers I have dealt with. He always made plenty of time for me, making sure I understood everything fully and that I had any and all information I needed or wanted. It was also very clear he was interested in the best possible outcome for me and not just the quick plea deal. In the end, he got me a felony dropped to a misdemeanor with one day time served. Which all things considered was amazing and I didn't think would have been even possible. I will use this lawyer every time, let's hope that's not necessary. At any rate, if you need a competent lawyer who's willing to go the extra mile and spend the time you deserve on your case. he is your man.",
+      "Micheal McCullough was the best lawyer I’ve had hands down and I’ve had a few. Even from the beginning of my case, it was easy to tell he was going to be better then other lawyers I have dealt with. He always made plenty of time for me, making sure I understood everything fully and that I had any and all information I needed or wanted. It was also very clear he was interested in the best possible outcome for me and not just the quick plea deal. In the end, he got me a felony dropped to a misdemeanor with one day time served. Which all things considered was amazing and I didn’t think would have been even possible. I will use this lawyer every time, let’s hope that’s not necessary. At any rate, if you need a competent lawyer who’s willing to go the extra mile and spend the time you deserve on your case. he is your man.",
   },
   {
     id: "testimonial-3",
     name: "Haley",
     stars: 5,
     review:
-      "Drew is extremely personable, persistent, resilient and reliable. I have never had to speak with no one but him directly at all hours, day or night on his personal cellphone. He has been handling a very unique high conflict family case for me. It's a highly unique case involving severe mental illness on my behalf. He has never judged or given up on me. He has truly spent the time to listen to my special mental disability and has pushed a very compassionate yet aggressive approach to fight on my behalf. Absolutely highly recommended.",
+      "Drew is extremely personable, persistent, resilient and reliable. I have never had to speak with no one but him directly at all hours, day or night on his personal cellphone. He has been handling a very unique high conflict family case for me. It’s a highly unique case involving severe mental illness on my behalf. He has never judged or given up on me. He has truly spent the time to listen to my special mental disability and has pushed a very compassionate yet aggressive approach to fight on my behalf. Absolutely highly recommended.",
   },
   {
     id: "testimonial-4",
@@ -92,12 +92,9 @@ export default function ALTestimonialsSection({
                 </p>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between relative z-10">
+              <div className="mt-6 pt-4 border-t border-slate-800 relative z-10">
                 <span className="font-bold text-white text-base">
                   {item.name}
-                </span>
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                  Verified Client
                 </span>
               </div>
             </div>

@@ -126,15 +126,6 @@ export default function ALWhyChooseSection({
               className="object-cover object-top hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 1024px) 100vw, 42vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200 shadow-xl">
-              <h4 className="text-slate-900 font-extrabold text-base sm:text-lg">
-                Attorney Drew McCulloch
-              </h4>
-              <p className="text-slate-600 text-xs sm:text-sm font-medium">
-                Former Prosecutor • Criminal Defense Attorney
-              </p>
-            </div>
           </div>
 
           {/* RIGHT: WHY CHOOSE ITEMS */}

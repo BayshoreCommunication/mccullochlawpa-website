@@ -8,7 +8,6 @@ import {
   FaPassport,
   FaFileInvoice,
   FaBalanceScale,
-  FaExclamationTriangle,
 } from "react-icons/fa";
 
 export interface PenaltyItem {
@@ -57,7 +56,7 @@ const defaultPenalties: PenaltyItem[] = [
     id: "future-criminal-cases",
     title: "Future Criminal Cases",
     description:
-      "A prior assault conviction follows a defendant into any later case. Florida's sentencing guidelines score prior offenses and a judge weighing bond, probation or a plea offer in a future matter will see this record on file.",
+      "A prior assault conviction follows a defendant into any later case. Florida’s sentencing guidelines score prior offenses and a judge weighing bond, probation or a plea offer in a future matter will see this record on file.",
     icon: <FaFileInvoice className="w-5 h-5 text-primary" />,
   },
 ];
@@ -112,11 +111,6 @@ export default function ALPenaltiesSection({
                 <div className="text-slate-600 text-sm sm:text-base leading-relaxed whitespace-pre-line">
                   {item.description}
                 </div>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-xs font-semibold text-slate-500 uppercase tracking-wider">
-                <FaExclamationTriangle className="w-3.5 h-3.5 text-amber-500" />
-                <span>Statutory Impact</span>
               </div>
             </div>
           ))}

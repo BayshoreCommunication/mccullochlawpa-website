@@ -51,7 +51,7 @@ const defaultFAQs: FAQItem[] = [
     id: "faq-6",
     question: "Is it still assault if no one got hurt?",
     answer:
-      "Yes. Florida's assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
+      "Yes. Florida’s assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
   },
   {
     id: "faq-7",
@@ -63,7 +63,7 @@ const defaultFAQs: FAQItem[] = [
 
 export default function ALFAQSection({
   title = "Frequently Asked Questions About Assault Charge",
-  headerImagePath = "/images/seo-services/assault-lawyer-tampa/frequently-asked-questions-tampa-assault-defense.webp",
+  headerImagePath = "/images/seo-services/assault-lawyer-tampa/frequently-asked-questions-tampa-assault-charges-fl.webp",
   faqs = defaultFAQs,
 }: ALFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

@@ -168,13 +168,10 @@ export default function ALDefensesSection({
                     >
                       {item.icon}
                     </div>
-                    <div>
+                    <div className="self-center">
                       <h3 className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
                         {item.title}
                       </h3>
-                      <span className="text-xs text-primary font-semibold uppercase tracking-wider block mt-1">
-                        Defense Strategy
-                      </span>
                     </div>
                   </div>
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export interface ALCourtsCitiesSectionProps {
   title?: string;
@@ -13,7 +13,7 @@ export interface ALCourtsCitiesSectionProps {
 export default function ALCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-hillsborough-county-criminal-court-services.webp",
+  bannerImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-hillsborough-county-criminal-court-services-fl.webp",
 }: ALCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -134,20 +134,6 @@ export default function ALCourtsCitiesSection({
                       office@mcfloridalaw.com
                     </a>
                   </div>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-3.5 p-4 rounded-2xl bg-primary/5 border border-primary/20">
-                <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary shrink-0">
-                  <FaClock className="w-4 h-4" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                    Hours
-                  </h4>
-                  <p className="text-sm font-bold text-slate-900">
-                    Available 24/7
-                  </p>
                 </div>
               </div>
 

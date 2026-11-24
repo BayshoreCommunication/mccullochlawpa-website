@@ -43,7 +43,7 @@ const defaultMistakes: MistakeItem[] = [
         Assault cases sometimes involve{" "}
         <Link
           href="/domestic-violence-defense-lawyer-tampa"
-          className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+          className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
         >
           domestic violence
         </Link>
@@ -131,11 +131,9 @@ export default function ALCommonMistakesSection({
         {/* MISTAKES GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 hover:border-red-400/60 flex flex-col justify-between group"
-            >
-              <div>
+              <div className="bg-white rounded-3xl p-6 border border-slate-200/80 shadow-md hover:shadow-xl transition-all duration-300 hover:border-red-400/60 flex flex-col justify-start group"
+                key={item.id}
+              >
                 <div className="w-11 h-11 rounded-2xl bg-red-50 border border-red-200 flex items-center justify-center text-red-500 mb-5 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
@@ -148,12 +146,6 @@ export default function ALCommonMistakesSection({
                   {item.description}
                 </div>
               </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center gap-2 text-[11px] font-bold text-red-600 uppercase tracking-wider">
-                <span className="w-1.5 h-1.5 rounded-full bg-red-500" />
-                <span>Risk Factor</span>
-              </div>
-            </div>
           ))}
         </div>
 

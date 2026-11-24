@@ -41,7 +41,7 @@ const defaultCaseItems: CaseTypeItem[] = [
     image:
       "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
     imageAlt:
-      "Defense against Florida simple assault second degree misdemeanor charges under statute 784 011 in Tampa",
+      "Defense against Florida simple assault second degree misdemeanor charges under statute 784 011 in Tampa FL",
     imageTitle: "Florida Simple Assault Defense Lawyer Tampa Case Review",
     imageDescription:
       "Comprehensive defense for misdemeanor simple assault allegations in Tampa, examining unlawful threats and apparent ability under Florida Statute 784.011.",
@@ -53,9 +53,9 @@ const defaultCaseItems: CaseTypeItem[] = [
     id: "aggravated-assault",
     title: "Aggravated Assault",
     image:
-      "/images/seo-services/assault-lawyer-tampa/aggravated-assault-deadly-weapon-defense-in-tampa.webp",
+      "/images/seo-services/assault-lawyer-tampa/aggravated-assault-deadly-weapon-defense-in-tampa-fl.webp",
     imageAlt:
-      "Aggravated assault defense representation for third degree felony allegations under Florida law in Tampa",
+      "Aggravated assault defense representation for third degree felony allegations under Florida law in Tampa FL",
     imageTitle: "Aggravated Assault Deadly Weapon Defense Lawyer Tampa",
     imageDescription:
       "Defending against third-degree felony aggravated assault charges involving deadly weapons or intent to commit a felony in Tampa and Hillsborough County.",
@@ -67,7 +67,7 @@ const defaultCaseItems: CaseTypeItem[] = [
     id: "assault-special-circumstances",
     title: "Assault Under Special Circumstances",
     image:
-      "/images/seo-services/assault-lawyer-tampa/assault-on-law-enforcement-officer-defense-tampa.webp",
+      "/images/seo-services/assault-lawyer-tampa/assault-on-law-enforcement-officer-defense-tampa-fl.webp",
     imageAlt:
       "Legal defense for assault charges under special circumstances including public officials in Tampa Florida",
     imageTitle: "Assault Under Special Circumstances Defense Tampa Law",

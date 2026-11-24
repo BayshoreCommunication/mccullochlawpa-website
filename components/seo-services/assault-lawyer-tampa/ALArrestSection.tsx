@@ -127,11 +127,6 @@ export default function ALArrestSection({
                   {step.description}
                 </p>
               </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-800 flex items-center gap-2 text-xs font-semibold text-primary uppercase tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-primary" />
-                <span>Court Procedural Step</span>
-              </div>
             </div>
           ))}
         </div>

@@ -4,9 +4,7 @@ import React from "react";
 import Link from "next/link";
 import {
   FaBalanceScale,
-  FaExclamationCircle,
   FaTimesCircle,
-  FaCheckCircle,
   FaShieldAlt,
 } from "react-icons/fa";
 
@@ -151,11 +149,6 @@ export default function ALWhatCountsSection({
                   {el.description}
                 </p>
               </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-2 text-xs font-semibold text-primary uppercase tracking-wider">
-                <FaCheckCircle className="w-3.5 h-3.5" />
-                <span>Statutory Requirement</span>
-              </div>
             </div>
           ))}
         </div>
@@ -185,7 +178,7 @@ export default function ALWhatCountsSection({
                   </div>
                   <div className="space-y-1.5 flex-1">
                     <h4 className="text-sm sm:text-base font-bold text-slate-100">
-                      {item.title}
+                      {item.title}:
                     </h4>
                     <div className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                       {item.description}

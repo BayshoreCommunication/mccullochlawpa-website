@@ -47,7 +47,7 @@ const defaultRows: ComparisonRow[] = [
 ];
 
 export default function ALAssaultVsBatterySection({
-  title = "Assault vs. Battery: What's the Difference?",
+  title = "Assault vs. Battery: What’s the Difference?",
   subTitle = "Florida treats assault and battery charges as separate criminal offenses under Chapter 784 of the Florida Statutes.",
   rows = defaultRows,
 }: ALAssaultVsBatterySectionProps) {

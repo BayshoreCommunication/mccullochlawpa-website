@@ -11,7 +11,7 @@ import {
   FaShareAlt,
   FaUsers,
   FaClock,
-  FaShieldAlt,
+  FaChevronRight,
   FaFolderOpen,
 } from "react-icons/fa";
 
@@ -105,7 +105,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function ALEvidenceSection({
   title = "Which Evidence Should Be Preserved For Defense?",
   subTitle = "Evidence can help to reveal the order of events, support your version of events or disprove an element of the allegation. It is important that original records and files are not altered or deleted immediately.",
-  imagePath = "/images/seo-services/assault-lawyer-tampa/criminal-court-evidence-preservation-assault-case.webp",
+  imagePath = "/images/seo-services/assault-lawyer-tampa/criminal-court-evidence-preservation-assault-tampa.webp",
   items = defaultEvidenceItems,
 }: ALEvidenceSectionProps) {
   const [activeTab, setActiveTab] = useState<string>(items[0].id);
@@ -174,22 +174,18 @@ export default function ALEvidenceSection({
                     </span>
                   </div>
 
-                  <span
-                    className={`text-xs uppercase font-bold tracking-wider px-2.5 py-1 rounded-full ${
-                      isActive
-                        ? "bg-primary/20 text-primary border border-primary/40"
-                        : "text-slate-500 group-hover:text-slate-400"
+                  <FaChevronRight
+                    className={`w-3.5 h-3.5 transition-colors ${
+                      isActive ? "text-primary" : "text-slate-500 group-hover:text-slate-400"
                     }`}
-                  >
-                    {isActive ? "Viewing" : "Select"}
-                  </span>
+                  />
                 </button>
               );
             })}
           </div>
 
           {/* RIGHT: SELECTED ITEM DETAIL CARD WITH IMAGE */}
-          <div className="lg:col-span-6 bg-[#0B1B2D] rounded-3xl p-6 sm:p-8 border border-slate-800 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+          <div className="lg:col-span-6 bg-[#0B1B2D] rounded-3xl p-6 sm:p-8 border border-slate-800 flex flex-col justify-start shadow-2xl relative overflow-hidden">
             
             {/* IMAGE */}
             <div className="relative w-full h-[220px] rounded-2xl overflow-hidden mb-6 border border-slate-700/80">
@@ -218,14 +214,6 @@ export default function ALEvidenceSection({
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 {selectedItem.description}
               </p>
-            </div>
-
-            <div className="mt-8 pt-5 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
-              <div className="flex items-center gap-2">
-                <FaShieldAlt className="w-4 h-4 text-primary" />
-                <span>Defense Preservation Strategy</span>
-              </div>
-              <span className="font-mono text-primary font-semibold">McCulloch Law P.A.</span>
             </div>
 
           </div>

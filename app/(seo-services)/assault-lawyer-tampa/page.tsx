@@ -34,23 +34,30 @@ export const metadata: Metadata = {
     title: "Assault Lawyer Tampa | Get Free Case Review",
     description:
       "An assault charge in Tampa can affect your criminal record and future. Discuss your defense options with our tampa assault lawyer.",
-    url: "https://mcfloridalaw.com/assault-lawyer-tampa",
+    url: "https://www.mcfloridalaw.com/assault-lawyer-tampa",
     siteName: "McCulloch Law P.A.",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
-        width: 1200,
-        height: 630,
-        alt: "Defense against Florida simple assault second degree misdemeanor charges under statute 784 011 in Tampa",
+        url: "/images/seo-services/assault-lawyer-tampa/tampa-assault-defense-lawyer-criminal-charges-hero.webp",
+        width: 1920,
+        height: 1133,
+        alt: "Strategic defense against criminal assault charges by experienced Tampa assault lawyer Drew McCulloch",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/assault-lawyer-tampa/aggravated-assault-deadly-weapon-defense-in-tampa.webp",
-        width: 1200,
-        height: 630,
-        alt: "Aggravated assault defense representation for third degree felony allegations under Florida law in Tampa",
+        url: "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
+        width: 800,
+        height: 447,
+        alt: "Defense against Florida simple assault second degree misdemeanor charges under statute 784 011 in Tampa FL",
+        type: "image/webp",
+      },
+      {
+        url: "/images/seo-services/assault-lawyer-tampa/aggravated-assault-deadly-weapon-defense-in-tampa-fl.webp",
+        width: 800,
+        height: 447,
+        alt: "Aggravated assault defense representation for third degree felony allegations under Florida law in Tampa FL",
         type: "image/webp",
       },
     ],
@@ -61,7 +68,7 @@ export const metadata: Metadata = {
     description:
       "An assault charge in Tampa can affect your criminal record and future. Discuss your defense options with our tampa assault lawyer.",
     images: [
-      "/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
+      "/images/seo-services/assault-lawyer-tampa/tampa-assault-defense-lawyer-criminal-charges-hero.webp",
     ],
   },
   robots: {
@@ -80,22 +87,22 @@ const jsonLdData = {
   "@graph": [
     {
       "@type": ["LegalService", "Attorney"],
-      "@id": "https://mcfloridalaw.com/#legalService",
+      "@id": "https://www.mcfloridalaw.com/assault-lawyer-tampa/#legalService",
       name: "McCulloch Law, P.A. - Tampa Assault Lawyer",
       description:
         "An assault charge in Tampa can affect your criminal record and future. Discuss your defense options with our tampa assault lawyer.",
-      url: "https://mcfloridalaw.com/assault-lawyer-tampa",
+      url: "https://www.mcfloridalaw.com/assault-lawyer-tampa",
       telephone: "(813) 444-2817",
       email: "office@mcfloridalaw.com",
       priceRange: "$$",
       image: {
         "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/assault-lawyer-tampa/florida-simple-assault-defense-lawyer-tampa-review.webp",
-        caption: "Florida Simple Assault Defense Lawyer Tampa Case Review",
+        url: "https://www.mcfloridalaw.com/images/seo-services/assault-lawyer-tampa/tampa-assault-defense-lawyer-criminal-charges-hero.webp",
+        caption: "Tampa Assault Defense Lawyer Criminal Charges Overview",
         description:
-          "Comprehensive defense for misdemeanor simple assault allegations in Tampa, examining unlawful threats and apparent ability under Florida Statute 784.011.",
-        width: 1200,
-        height: 630,
+          "McCulloch Law PA provides aggressive criminal defense representation for individuals facing misdemeanor and felony assault charges in Tampa Florida.",
+        width: 1920,
+        height: 1133,
       },
       address: {
         "@type": "PostalAddress",
@@ -146,13 +153,13 @@ const jsonLdData = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://mcfloridalaw.com",
+          item: "https://www.mcfloridalaw.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Tampa Assault Lawyer",
-          item: "https://mcfloridalaw.com/assault-lawyer-tampa",
+          item: "https://www.mcfloridalaw.com/assault-lawyer-tampa",
         },
       ],
     },
@@ -204,7 +211,7 @@ const jsonLdData = {
           name: "Is it still assault if no one got hurt?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes. Florida's assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
+            text: "Yes. Florida’s assault statute does not require injury or contact. A credible threat, paired with the apparent ability to act on it, satisfies the charge on its own.",
           },
         },
         {

@@ -9,7 +9,6 @@ import {
   FaShieldAlt,
   FaGavel,
   FaBalanceScale,
-  FaArrowRight,
 } from "react-icons/fa";
 
 export interface HandleStep {
@@ -22,7 +21,7 @@ export interface HandleStep {
 
 export interface ALHowWeHandleSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   steps?: HandleStep[];
 }
 
@@ -114,7 +113,14 @@ const defaultSteps: HandleStep[] = [
 
 export default function ALHowWeHandleSection({
   title = "How Our Tampa Assault Lawyer Handles Your Case",
-  subTitle = "Our assault lawyer Tampa reviews the facts and legal issues before recommending a defense strategy. Each case requires an individual assessment. An approach suitable for one allegation may not fit another.",
+  subTitle = (
+    <>
+      Our <strong className="font-bold text-white">assault lawyer Tampa</strong>{" "}
+      reviews the facts and legal issues before recommending a defense strategy.
+      Each case requires an individual assessment. An approach suitable for one
+      allegation may not fit another.
+    </>
+  ),
   steps = defaultSteps,
 }: ALHowWeHandleSectionProps) {
   return (
@@ -142,7 +148,7 @@ export default function ALHowWeHandleSection({
 
         {/* 5 STEPS VERTICAL / TIMELINE FLOW */}
         <div className="max-w-5xl mx-auto space-y-6">
-          {steps.map((item, idx) => (
+          {steps.map((item) => (
             <div
               key={item.id}
               className="bg-[#0B1B2D] rounded-3xl p-6 sm:p-8 border border-slate-800 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl flex flex-col md:flex-row gap-6 md:items-center justify-between group"
@@ -152,13 +158,6 @@ export default function ALHowWeHandleSection({
                   {item.icon}
                 </div>
                 <div>
-                  <div className="flex items-center gap-3 mb-1">
-                    <span className="text-xs font-mono font-bold text-primary tracking-wider uppercase">
-                      Step {item.stepNumber}
-                    </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-slate-600" />
-                    <span className="text-xs text-slate-400 font-medium">Defense Phase</span>
-                  </div>
                   <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors leading-snug">
                     {item.title}
                   </h3>
