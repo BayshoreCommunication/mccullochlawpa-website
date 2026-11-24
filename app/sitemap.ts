@@ -10,6 +10,17 @@ import generatedAppRoutes from "@/lib/sitemap-routes.generated.json";
 
 const BASE_URL = "https://www.mcfloridalaw.com";
 
+/**
+ * Build-time timestamp for static pages.
+ *
+ * We intentionally do NOT trust filesystem mtimes for static routes:
+ * some deploy pipelines preserve/reset mtimes to the original copy date
+ * (e.g. 2018), which produces misleading `lastmod` values in the sitemap.
+ * Content only changes when a new build ships, so build time is the
+ * accurate, environment-independent proxy for "last modified".
+ */
+const BUILD_TIME = new Date();
+
 export const dynamic = "force-dynamic";
 
 interface DiscoveredRoute {
@@ -75,9 +86,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   };
 
   // 1. Auto-discovered App Router Static & SEO Landing Pages (app/**/page.*)
+  //    lastmod = build time (file mtimes are unreliable across deploy pipelines)
   for (const route of getAppRouterPages()) {
     addEntry(route.path, {
-      lastModified: toValidDate(route.lastModified),
+      lastModified: BUILD_TIME,
       changeFrequency: route.changeFrequency ?? "weekly",
       priority: route.priority ?? (route.path === "" ? 1.0 : 0.8),
     });
@@ -88,7 +100,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     if (!service.slug) continue;
     const cleanSlug = service.slug.trim().replace(/^\/+/, "");
     addEntry(`/practice/${cleanSlug}`, {
-      lastModified: new Date(),
+      lastModified: BUILD_TIME,
       changeFrequency: "weekly",
       priority: 0.7,
     });
