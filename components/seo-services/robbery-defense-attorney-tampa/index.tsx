@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ServiceCtaBanner from "../shared/ServiceCtaBanner";
 
 import RDHero, { RDHeroSectionProps } from "./RDHero";
 import RDContactFormSection, { RDContactFormSectionProps } from "./RDContactFormSection";
@@ -73,54 +74,41 @@ export default function RobberyDefenseAttorneyTampaPage({
   showNavbarFooter = true,
   ...heroProps
 }: RobberyDefenseAttorneyTampaPageProps) {
+  const sections = (
+    <>
+      <RDHero {...heroProps} />
+      <RDContactFormSection />
+      <RDWhatIsRobberySection />
+      <RDRobberyVsTheftSection />
+      <RDTypesSection />
+      <ServiceCtaBanner />
+      <RDPenaltiesSection />
+      <RDEvidenceSection />
+      <RDDefensesSection />
+      <ServiceCtaBanner />
+      <RDCommonMistakesSection />
+      <RDWhatToDoAfterArrestSection />
+      <RDHowWeHandleSection />
+      <ServiceCtaBanner />
+      <RDWhyChooseSection />
+      <RDApartSection />
+      <RDServesSection />
+      <ServiceCtaBanner />
+      <RDCourtsCitiesSection />
+      <RDTestimonialsSection />
+      <RDFreeCaseReviewSection />
+      <RDFAQSection />
+    </>
+  );
+
   if (!showNavbarFooter) {
-    return (
-      <>
-        <RDHero {...heroProps} />
-        <RDContactFormSection />
-        <RDWhatIsRobberySection />
-        <RDRobberyVsTheftSection />
-        <RDTypesSection />
-        <RDPenaltiesSection />
-        <RDEvidenceSection />
-        <RDDefensesSection />
-        <RDCommonMistakesSection />
-        <RDWhatToDoAfterArrestSection />
-        <RDHowWeHandleSection />
-        <RDWhyChooseSection />
-        <RDApartSection />
-        <RDServesSection />
-        <RDCourtsCitiesSection />
-        <RDTestimonialsSection />
-        <RDFreeCaseReviewSection />
-        <RDFAQSection />
-      </>
-    );
+    return sections;
   }
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-900 text-white selection:bg-primary selection:text-slate-900">
       <Navbar />
-      <main className="flex-grow">
-        <RDHero {...heroProps} />
-        <RDContactFormSection />
-        <RDWhatIsRobberySection />
-        <RDRobberyVsTheftSection />
-        <RDTypesSection />
-        <RDPenaltiesSection />
-        <RDEvidenceSection />
-        <RDDefensesSection />
-        <RDCommonMistakesSection />
-        <RDWhatToDoAfterArrestSection />
-        <RDHowWeHandleSection />
-        <RDWhyChooseSection />
-        <RDApartSection />
-        <RDServesSection />
-        <RDCourtsCitiesSection />
-        <RDTestimonialsSection />
-        <RDFreeCaseReviewSection />
-        <RDFAQSection />
-      </main>
+      <main className="flex-grow">{sections}</main>
       <Footer />
     </div>
   );

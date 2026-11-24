@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import Script from "next/script";
+import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   BLHero,
   BLContactFormSection,
@@ -217,15 +218,19 @@ export default function BatteryLawyerTampaPage() {
         <BLWhatCountsSection />
         <BLAssaultVsBatterySection />
         <BLTypesSection />
+        <ServiceCtaBanner />
         <BLPenaltiesSection />
         <BLEvidenceSection />
         <BLDefensesSection />
+        <ServiceCtaBanner />
         <BLArrestSection />
         <BLCommonMistakesSection />
         <BLReviewCaseSection />
+        <ServiceCtaBanner />
         <BLWhyChooseSection />
         <BLApartSection />
         <BLServesSection />
+        <ServiceCtaBanner />
         <BLCourtsCitiesSection />
         <BLTestimonialsSection />
         <BLFreeCaseReviewSection />

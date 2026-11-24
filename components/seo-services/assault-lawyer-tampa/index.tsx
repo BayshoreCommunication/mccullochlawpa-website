@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ServiceCtaBanner from "../shared/ServiceCtaBanner";
 
 import ALHero, { ALHeroSectionProps } from "./ALHero";
 import ALContactFormSection, { ALContactFormSectionProps } from "./ALContactFormSection";
@@ -73,54 +74,41 @@ export default function AssaultLawyerTampaPage({
   showNavbarFooter = true,
   ...heroProps
 }: AssaultLawyerTampaPageProps) {
+  const sections = (
+    <>
+      <ALHero {...heroProps} />
+      <ALContactFormSection />
+      <ALWhatCountsSection />
+      <ALAssaultVsBatterySection />
+      <ALTypesSection />
+      <ServiceCtaBanner />
+      <ALPenaltiesSection />
+      <ALEvidenceSection />
+      <ALDefensesSection />
+      <ServiceCtaBanner />
+      <ALArrestSection />
+      <ALCommonMistakesSection />
+      <ALHowWeHandleSection />
+      <ServiceCtaBanner />
+      <ALWhyChooseSection />
+      <ALApartSection />
+      <ALServesSection />
+      <ServiceCtaBanner />
+      <ALCourtsCitiesSection />
+      <ALTestimonialsSection />
+      <ALFreeCaseReviewSection />
+      <ALFAQSection />
+    </>
+  );
+
   if (!showNavbarFooter) {
-    return (
-      <>
-        <ALHero {...heroProps} />
-        <ALContactFormSection />
-        <ALWhatCountsSection />
-        <ALAssaultVsBatterySection />
-        <ALTypesSection />
-        <ALPenaltiesSection />
-        <ALEvidenceSection />
-        <ALDefensesSection />
-        <ALArrestSection />
-        <ALCommonMistakesSection />
-        <ALHowWeHandleSection />
-        <ALWhyChooseSection />
-        <ALApartSection />
-        <ALServesSection />
-        <ALCourtsCitiesSection />
-        <ALTestimonialsSection />
-        <ALFreeCaseReviewSection />
-        <ALFAQSection />
-      </>
-    );
+    return sections;
   }
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-white font-sans">
       <Navbar />
-      <main className="flex-grow font-sans">
-        <ALHero {...heroProps} />
-        <ALContactFormSection />
-        <ALWhatCountsSection />
-        <ALAssaultVsBatterySection />
-        <ALTypesSection />
-        <ALPenaltiesSection />
-        <ALEvidenceSection />
-        <ALDefensesSection />
-        <ALArrestSection />
-        <ALCommonMistakesSection />
-        <ALHowWeHandleSection />
-        <ALWhyChooseSection />
-        <ALApartSection />
-        <ALServesSection />
-        <ALCourtsCitiesSection />
-        <ALTestimonialsSection />
-        <ALFreeCaseReviewSection />
-        <ALFAQSection />
-      </main>
+      <main className="flex-grow font-sans">{sections}</main>
       <Footer />
     </div>
   );

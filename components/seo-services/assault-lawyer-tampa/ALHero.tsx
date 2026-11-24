@@ -21,7 +21,7 @@ export interface ALHeroSectionProps {
 
 export default function ALHero({
   bgImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-assault-defense-lawyer-criminal-charges-hero.webp",
-  personImagePath = "/images/seo-services/assault-lawyer-tampa/tampa-assault-attorney-drew-mcculloch-defense-law.webp",
+  personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Assault Lawyer",
   h1Title = "Defense Against Criminal Charges",
   paragraph1 = "Accused of assault in Tampa? You need an immediate and strategic defense to protect your rights. Without an assault lawyer Tampa, your simple misdemeanor could turn into a first degree felony. Prosecutors will build tight cases but they will also leave gaps. These gaps can only be seen by a former prosecutor and defense lawyer. Our Attorney Drew McCulloch is a former state prosecutor and is now defending criminal cases like yours. We act quickly to challenge weak witness statements, protect your record and build strong defense from day one.",

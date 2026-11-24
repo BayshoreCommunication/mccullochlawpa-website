@@ -21,7 +21,7 @@ export interface BLHeroSectionProps {
 
 export default function BLHero({
   bgImagePath = "/images/seo-services/battery-lawyer-tampa/tampa-battery-defense-lawyer-criminal-charges-hero.webp",
-  personImagePath = "/images/seo-services/battery-lawyer-tampa/tampa-battery-attorney-drew-mcculloch-defense-law.webp",
+  personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Battery Lawyer",
   h1Title = "Defense Against Criminal Charges",
   paragraph1 = "One simple battery charge can affect your criminal record, employment, family relationships and freedom. If you stand alone against a battery charge in Tampa, the prosecutor's version of events becomes the absolute truth. Without a battery lawyer Tampa to challenge the state's narrative, minor arguments or misunderstandings quickly turn into permanent convictions. We examine the allegations, review the evidence and identify possible defenses under Florida law. We also explain the legal options available for your case.",

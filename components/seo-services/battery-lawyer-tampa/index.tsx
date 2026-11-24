@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ServiceCtaBanner from "../shared/ServiceCtaBanner";
 
 import BLHero, { BLHeroSectionProps } from "./BLHero";
 import BLContactFormSection, { BLContactFormSectionProps } from "./BLContactFormSection";
@@ -73,54 +74,41 @@ export default function BatteryLawyerTampaPage({
   showNavbarFooter = true,
   ...heroProps
 }: BatteryLawyerTampaPageProps) {
+  const sections = (
+    <>
+      <BLHero {...heroProps} />
+      <BLContactFormSection />
+      <BLWhatCountsSection />
+      <BLAssaultVsBatterySection />
+      <BLTypesSection />
+      <ServiceCtaBanner />
+      <BLPenaltiesSection />
+      <BLEvidenceSection />
+      <BLDefensesSection />
+      <ServiceCtaBanner />
+      <BLArrestSection />
+      <BLCommonMistakesSection />
+      <BLReviewCaseSection />
+      <ServiceCtaBanner />
+      <BLWhyChooseSection />
+      <BLApartSection />
+      <BLServesSection />
+      <ServiceCtaBanner />
+      <BLCourtsCitiesSection />
+      <BLTestimonialsSection />
+      <BLFreeCaseReviewSection />
+      <BLFAQSection />
+    </>
+  );
+
   if (!showNavbarFooter) {
-    return (
-      <>
-        <BLHero {...heroProps} />
-        <BLContactFormSection />
-        <BLWhatCountsSection />
-        <BLAssaultVsBatterySection />
-        <BLTypesSection />
-        <BLPenaltiesSection />
-        <BLEvidenceSection />
-        <BLDefensesSection />
-        <BLArrestSection />
-        <BLCommonMistakesSection />
-        <BLReviewCaseSection />
-        <BLWhyChooseSection />
-        <BLApartSection />
-        <BLServesSection />
-        <BLCourtsCitiesSection />
-        <BLTestimonialsSection />
-        <BLFreeCaseReviewSection />
-        <BLFAQSection />
-      </>
-    );
+    return sections;
   }
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-white font-sans">
       <Navbar />
-      <main className="flex-grow font-sans">
-        <BLHero {...heroProps} />
-        <BLContactFormSection />
-        <BLWhatCountsSection />
-        <BLAssaultVsBatterySection />
-        <BLTypesSection />
-        <BLPenaltiesSection />
-        <BLEvidenceSection />
-        <BLDefensesSection />
-        <BLArrestSection />
-        <BLCommonMistakesSection />
-        <BLReviewCaseSection />
-        <BLWhyChooseSection />
-        <BLApartSection />
-        <BLServesSection />
-        <BLCourtsCitiesSection />
-        <BLTestimonialsSection />
-        <BLFreeCaseReviewSection />
-        <BLFAQSection />
-      </main>
+      <main className="flex-grow font-sans">{sections}</main>
       <Footer />
     </div>
   );

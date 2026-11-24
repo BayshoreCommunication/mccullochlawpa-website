@@ -21,7 +21,7 @@ export interface JDHeroSectionProps {
 
 export default function JDHero({
   bgImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
-  personImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-attorney-drew-mcculloch-law.webp",
+  personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Juvenile Defense Lawyer",
   h1Title = "Juvenile Defense Lawyer Tampa, Protect Your Child’s Rights and Future",
   paragraph = (

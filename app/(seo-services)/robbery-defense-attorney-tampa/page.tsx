@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import Script from "next/script";
+import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   RDHero,
   RDContactFormSection,
@@ -225,15 +226,19 @@ export default function RobberyDefenseAttorneyTampaPage() {
         <RDWhatIsRobberySection />
         <RDRobberyVsTheftSection />
         <RDTypesSection />
+        <ServiceCtaBanner />
         <RDPenaltiesSection />
         <RDEvidenceSection />
         <RDDefensesSection />
+        <ServiceCtaBanner />
         <RDCommonMistakesSection />
         <RDWhatToDoAfterArrestSection />
         <RDHowWeHandleSection />
+        <ServiceCtaBanner />
         <RDWhyChooseSection />
         <RDApartSection />
         <RDServesSection />
+        <ServiceCtaBanner />
         <RDCourtsCitiesSection />
         <RDTestimonialsSection />
         <RDFreeCaseReviewSection />

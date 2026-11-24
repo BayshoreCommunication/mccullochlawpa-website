@@ -22,7 +22,7 @@ export interface RDHeroSectionProps {
 
 export default function RDHero({
   bgImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-robbery-defense-attorney-criminal-charges-hero.webp",
-  personImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-robbery-attorney-drew-mcculloch-defense-lawyer.webp",
+  personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Robbery Defense Attorney",
   h1Title = "Proven Defense Against Criminal Charges With Former Prosecutor",
   paragraph1 = "A robbery case usually turns on two questions police reports can never settle: who took the property? and was force or fear truly involved?",

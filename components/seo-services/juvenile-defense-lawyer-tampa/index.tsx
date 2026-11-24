@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import ServiceCtaBanner from "../shared/ServiceCtaBanner";
 
 import JDHero, { JDHeroSectionProps } from "./JDHero";
 import JDContactFormSection, { JDContactFormSectionProps } from "./JDContactFormSection";
@@ -79,58 +80,44 @@ export default function JuvenileDefenseLawyerTampaPage({
   showNavbarFooter = true,
   ...heroProps
 }: JuvenileDefenseLawyerTampaPageProps) {
+  const sections = (
+    <>
+      <JDHero {...heroProps} />
+      <JDContactFormSection />
+      <JDWhatCountsSection />
+      <JDJuvenileVsAdultSection />
+      <JDTypesSection />
+      <ServiceCtaBanner />
+      <JDPenaltiesSection />
+      <JDEvidenceSection />
+      <JDDefensesSection />
+      <ServiceCtaBanner />
+      <JDWhatHappensAfterArrestSection />
+      <JDChildRightsSection />
+      <JDCommonMistakesSection />
+      <ServiceCtaBanner />
+      <JDHowWeHandleSection />
+      <JDResolvedWithoutTrialSection />
+      <JDWhyChooseSection />
+      <ServiceCtaBanner />
+      <JDApartSection />
+      <JDServesSection />
+      <JDCourtsCitiesSection />
+      <ServiceCtaBanner />
+      <JDTestimonialsSection />
+      <JDFreeCaseReviewSection />
+      <JDFAQSection />
+    </>
+  );
+
   if (!showNavbarFooter) {
-    return (
-      <>
-        <JDHero {...heroProps} />
-        <JDContactFormSection />
-        <JDWhatCountsSection />
-        <JDJuvenileVsAdultSection />
-        <JDTypesSection />
-        <JDPenaltiesSection />
-        <JDEvidenceSection />
-        <JDDefensesSection />
-        <JDWhatHappensAfterArrestSection />
-        <JDChildRightsSection />
-        <JDCommonMistakesSection />
-        <JDHowWeHandleSection />
-        <JDResolvedWithoutTrialSection />
-        <JDWhyChooseSection />
-        <JDApartSection />
-        <JDServesSection />
-        <JDCourtsCitiesSection />
-        <JDTestimonialsSection />
-        <JDFreeCaseReviewSection />
-        <JDFAQSection />
-      </>
-    );
+    return sections;
   }
 
   return (
     <div className="flex flex-col min-h-screen bg-slate-900 text-white selection:bg-primary selection:text-slate-900">
       <Navbar />
-      <main className="flex-grow">
-        <JDHero {...heroProps} />
-        <JDContactFormSection />
-        <JDWhatCountsSection />
-        <JDJuvenileVsAdultSection />
-        <JDTypesSection />
-        <JDPenaltiesSection />
-        <JDEvidenceSection />
-        <JDDefensesSection />
-        <JDWhatHappensAfterArrestSection />
-        <JDChildRightsSection />
-        <JDCommonMistakesSection />
-        <JDHowWeHandleSection />
-        <JDResolvedWithoutTrialSection />
-        <JDWhyChooseSection />
-        <JDApartSection />
-        <JDServesSection />
-        <JDCourtsCitiesSection />
-        <JDTestimonialsSection />
-        <JDFreeCaseReviewSection />
-        <JDFAQSection />
-      </main>
+      <main className="flex-grow">{sections}</main>
       <Footer />
     </div>
   );

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import Script from "next/script";
+import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   JDHero,
   JDContactFormSection,
@@ -177,18 +178,23 @@ export default function JuvenileDefenseLawyerTampaPage() {
         <JDWhatCountsSection />
         <JDJuvenileVsAdultSection />
         <JDTypesSection />
+        <ServiceCtaBanner />
         <JDPenaltiesSection />
         <JDEvidenceSection />
         <JDDefensesSection />
+        <ServiceCtaBanner />
         <JDWhatHappensAfterArrestSection />
         <JDChildRightsSection />
         <JDCommonMistakesSection />
+        <ServiceCtaBanner />
         <JDHowWeHandleSection />
         <JDResolvedWithoutTrialSection />
         <JDWhyChooseSection />
+        <ServiceCtaBanner />
         <JDApartSection />
         <JDServesSection />
         <JDCourtsCitiesSection />
+        <ServiceCtaBanner />
         <JDTestimonialsSection />
         <JDFreeCaseReviewSection />
         <JDFAQSection />

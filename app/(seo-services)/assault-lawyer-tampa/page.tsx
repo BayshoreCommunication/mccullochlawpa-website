@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import React from "react";
 import Script from "next/script";
+import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   ALHero,
   ALContactFormSection,
@@ -233,15 +234,19 @@ export default function AssaultLawyerTampaPage() {
         <ALWhatCountsSection />
         <ALAssaultVsBatterySection />
         <ALTypesSection />
+        <ServiceCtaBanner />
         <ALPenaltiesSection />
         <ALEvidenceSection />
         <ALDefensesSection />
+        <ServiceCtaBanner />
         <ALArrestSection />
         <ALCommonMistakesSection />
         <ALHowWeHandleSection />
+        <ServiceCtaBanner />
         <ALWhyChooseSection />
         <ALApartSection />
         <ALServesSection />
+        <ServiceCtaBanner />
         <ALCourtsCitiesSection />
         <ALTestimonialsSection />
         <ALFreeCaseReviewSection />
