@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import React from "react";
-import Script from "next/script";
 import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   JDHero,
@@ -36,22 +35,22 @@ export const metadata: Metadata = {
     title: "Juvenile Defense Lawyer Tampa | Free Case Review",
     description:
       "Parents face juvenile criminal charges in Tampa frequently. McCulloch Law helps families understand defense options and protect your child's future.",
-    url: "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa",
+    url: "https://www.mcfloridalaw.com/juvenile-defense-lawyer-tampa",
     siteName: "McCulloch Law P.A.",
     locale: "en_US",
     type: "website",
     images: [
       {
         url: "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
-        width: 1200,
-        height: 630,
+        width: 1920,
+        height: 1133,
         alt: "Experienced Tampa juvenile defense lawyer protecting your child rights against criminal charges in court",
         type: "image/webp",
       },
       {
         url: "/images/seo-services/juvenile-defense-lawyer-tampa/florida-juvenile-assault-battery-defense-lawyer-fl.webp",
-        width: 800,
-        height: 600,
+        width: 900,
+        height: 502,
         alt: "Florida juvenile assault and battery defense lawyer evaluating school fight allegations in Tampa court",
         type: "image/webp",
       },
@@ -80,13 +79,23 @@ const jsonLdData = {
   "@graph": [
     {
       "@type": ["LegalService", "Attorney"],
-      "@id": "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa/#legalService",
+      "@id": "https://www.mcfloridalaw.com/juvenile-defense-lawyer-tampa/#legalService",
       name: "McCulloch Law, P.A. - Tampa Juvenile Defense Lawyer",
-      url: "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa",
+      description:
+        "Parents face juvenile criminal charges in Tampa frequently. McCulloch Law helps families understand defense options and protect your child's future.",
+      url: "https://www.mcfloridalaw.com/juvenile-defense-lawyer-tampa",
       telephone: "(813) 444-2817",
       email: "office@mcfloridalaw.com",
       priceRange: "$$",
-      image: "https://mcfloridalaw.com/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
+      image: {
+        "@type": "ImageObject",
+        url: "https://www.mcfloridalaw.com/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
+        caption: "Tampa Juvenile Defense Lawyer Criminal Charges Hero",
+        description:
+          "McCulloch Law provides dedicated juvenile criminal defense representation protecting minors and families across Tampa, Hillsborough County, and Florida juvenile courts.",
+        width: 1920,
+        height: 1133,
+      },
       address: {
         "@type": "PostalAddress",
         streetAddress: "238 East Davis Boulevard, Ste 202",
@@ -114,6 +123,20 @@ const jsonLdData = {
         opens: "00:00",
         closes: "23:59",
       },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Tampa",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Hillsborough County",
+        },
+        {
+          "@type": "AdministrativeArea",
+          name: "Tampa Bay",
+        },
+      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -122,13 +145,13 @@ const jsonLdData = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://mcfloridalaw.com",
+          item: "https://www.mcfloridalaw.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Juvenile Defense Lawyer Tampa",
-          item: "https://mcfloridalaw.com/juvenile-defense-lawyer-tampa",
+          item: "https://www.mcfloridalaw.com/juvenile-defense-lawyer-tampa",
         },
       ],
     },
@@ -167,10 +190,12 @@ const jsonLdData = {
 export default function JuvenileDefenseLawyerTampaPage() {
   return (
     <>
-      <Script
+      <script
         id="juvenile-defense-lawyer-tampa-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdData).replace(/</g, "\\u003c"),
+        }}
       />
       <div className="w-full">
         <JDHero />

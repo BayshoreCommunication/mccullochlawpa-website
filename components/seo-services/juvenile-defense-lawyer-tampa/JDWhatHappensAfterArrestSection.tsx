@@ -26,7 +26,7 @@ export interface JDWhatHappensAfterArrestSectionProps {
 const defaultSteps: JuvenileArrestStep[] = [
   {
     id: "initial-contact-arrest-intake",
-    stepNumber: "Step 01",
+    stepNumber: "01",
     icon: <FaUserShield className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Initial Contact Arrest and Juvenile Intake",
     description:
@@ -34,7 +34,7 @@ const defaultSteps: JuvenileArrestStep[] = [
   },
   {
     id: "detention-decisions-initial-hearings",
-    stepNumber: "Step 02",
+    stepNumber: "02",
     icon: <FaGavel className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Detention Decisions and Initial Court Hearings",
     description:
@@ -42,7 +42,7 @@ const defaultSteps: JuvenileArrestStep[] = [
   },
   {
     id: "filing-decisions-formal-allegations",
-    stepNumber: "Step 03",
+    stepNumber: "03",
     icon: <FaFileAlt className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Filing Decisions and Formal Allegations",
     description:
@@ -50,7 +50,7 @@ const defaultSteps: JuvenileArrestStep[] = [
   },
   {
     id: "evidence-review-diversion-pretrial",
-    stepNumber: "Step 04",
+    stepNumber: "04",
     icon: <FaSearch className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Evidence Review Diversion and Pretrial Options",
     description:
@@ -58,7 +58,7 @@ const defaultSteps: JuvenileArrestStep[] = [
   },
   {
     id: "adjudicatory-hearings-disposition",
-    stepNumber: "Step 05",
+    stepNumber: "05",
     icon: <FaBalanceScale className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Adjudicatory Hearings and Disposition Decisions",
     description:

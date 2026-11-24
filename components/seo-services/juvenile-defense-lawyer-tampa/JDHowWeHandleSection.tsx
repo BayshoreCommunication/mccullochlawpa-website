@@ -105,9 +105,9 @@ export default function JDHowWeHandleSection({
             {title}
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+          <div className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -127,15 +127,15 @@ export default function JDHowWeHandleSection({
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-bold text-primary tracking-widest uppercase py-1 px-2.5 rounded-md bg-primary/10 border border-primary/30">
-                    Step {step.stepNumber}
+                  <span className="text-xs font-bold text-[#8A6516] tracking-widest uppercase py-1 px-2.5 rounded-md bg-primary/10 border border-primary/30">
+                    {step.stepNumber}
                   </span>
-                  <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-[#8A6516] group-hover:scale-110 transition-transform">
                     {step.icon}
                   </div>
                 </div>
 
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug mb-3">
+                <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug mb-3">
                   {step.title}
                 </h3>
 

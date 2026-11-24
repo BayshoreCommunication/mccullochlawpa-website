@@ -73,8 +73,8 @@ export default function JDContactFormSection({
             
             {/* LEFT COLUMN: TEXT & VALUE PROPS */}
             <div className="lg:col-span-5 flex flex-col justify-center space-y-6">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <span className="w-2 h-2 rounded-full bg-primary" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-[#8A6516] text-xs font-semibold w-fit">
+                <span className="w-2 h-2 rounded-full bg-[#8A6516]" />
                 {highlightedText}
               </div>
 
@@ -97,9 +97,9 @@ export default function JDContactFormSection({
                       {b.icon}
                     </div>
                     <div>
-                      <h4 className="text-xs sm:text-sm font-bold text-slate-900">
+                      <h3 className="text-xs sm:text-sm font-bold text-slate-900">
                         {b.title}
-                      </h4>
+                      </h3>
                       <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5">
                         {b.desc}
                       </p>

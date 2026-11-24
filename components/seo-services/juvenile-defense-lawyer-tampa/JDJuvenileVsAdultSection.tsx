@@ -54,8 +54,8 @@ export default function JDJuvenileVsAdultSection({
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
-            <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
-              <FaBalanceScale className="w-4 h-4 text-primary" />
+            <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-[#8A6516] shadow-sm">
+              <FaBalanceScale className="w-4 h-4" />
             </div>
             <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
           </div>

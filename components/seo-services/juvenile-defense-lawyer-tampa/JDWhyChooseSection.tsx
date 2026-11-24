@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaUserShield,
   FaGraduationCap,
@@ -78,8 +77,8 @@ export default function JDWhyChooseSection({
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
-            <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-primary shadow-sm">
-              <FaShieldAlt className="w-4 h-4 text-primary" />
+            <div className="w-8 h-8 rounded-full border border-primary/60 bg-primary/10 flex items-center justify-center text-[#8A6516] shadow-sm">
+              <FaShieldAlt className="w-4 h-4" />
             </div>
             <div className="w-12 sm:w-16 h-[2px] bg-primary/40 rounded-full" />
           </div>
@@ -99,11 +98,7 @@ export default function JDWhyChooseSection({
               className="object-cover object-top hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="relative z-10 p-6 bg-[#081524]/90 backdrop-blur-md border-t border-primary/30 m-4 rounded-2xl text-center">
-              <span className="text-base font-bold text-white block">Drew McCulloch</span>
-              <span className="text-xs text-primary font-medium">McCulloch Law, P.A. | Tampa, FL</span>
-            </div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent" />
           </div>
 
           {/* 4 ITEMS COLUMN */}
@@ -118,7 +113,7 @@ export default function JDWhyChooseSection({
                     <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
                       {item.icon}
                     </div>
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug">
                       {item.title}
                     </h3>
                   </div>

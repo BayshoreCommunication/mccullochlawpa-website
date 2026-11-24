@@ -13,7 +13,7 @@ export interface JDCourtsCitiesSectionProps {
 export default function JDCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "We proudly serve the Greater Tampa Bay Area and Hillsborough County. Local knowledge benefits our defense strategies significantly.",
-  bannerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-hillsborough-county-criminal-court-hearings.webp",
+  bannerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-hillsborough-county-criminal-court-hearings-fl.webp",
 }: JDCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -84,13 +84,13 @@ export default function JDCourtsCitiesSection({
             <div className="space-y-3.5 text-slate-700">
               
               <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaMapMarkerAlt className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Address:
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     238 East Davis Boulevard, Ste 202, Tampa, FL 33606
                   </p>
@@ -98,15 +98,15 @@ export default function JDCourtsCitiesSection({
               </div>
 
               <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaPhone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Phone:
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
-                    <a href="tel:8134442817" className="hover:text-primary transition-colors">
+                    <a href="tel:8134442817" className="hover:text-[#8A6516] transition-colors">
                       (813) 444-2817
                     </a>
                   </p>
@@ -114,15 +114,15 @@ export default function JDCourtsCitiesSection({
               </div>
 
               <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaEnvelope className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Email Address:
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
-                    <a href="mailto:office@mcfloridalaw.com" className="hover:text-primary transition-colors">
+                    <a href="mailto:office@mcfloridalaw.com" className="hover:text-[#8A6516] transition-colors">
                       office@mcfloridalaw.com
                     </a>
                   </p>
@@ -130,13 +130,13 @@ export default function JDCourtsCitiesSection({
               </div>
 
               <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaClock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
-                    Availability:
-                  </h4>
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                    Availability;
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     Open twenty four hours daily
                   </p>
@@ -144,13 +144,13 @@ export default function JDCourtsCitiesSection({
               </div>
 
               <div className="flex items-start gap-4 p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaCalendarCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Consultation:
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     Free initial consultation
                   </p>

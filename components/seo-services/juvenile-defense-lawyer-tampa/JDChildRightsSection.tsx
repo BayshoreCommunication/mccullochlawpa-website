@@ -18,7 +18,7 @@ export interface ChildRightItem {
 
 export interface JDChildRightsSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   items?: ChildRightItem[];
 }
 
@@ -55,7 +55,16 @@ const defaultRights: ChildRightItem[] = [
 
 export default function JDChildRightsSection({
   title = "What Rights Does a Child Have During a Juvenile Investigation?",
-  subTitle = "Minors possess fundamental constitutional protections during criminal investigations. An expert juvenile defense lawyer Tampa protects these vulnerable rights immediately.",
+  subTitle = (
+    <>
+      Minors possess fundamental constitutional protections during criminal
+      investigations. An expert{" "}
+      <strong className="font-bold text-slate-900">
+        juvenile defense lawyer Tampa
+      </strong>{" "}
+      protects these vulnerable rights immediately.
+    </>
+  ),
   items = defaultRights,
 }: JDChildRightsSectionProps) {
   return (
@@ -68,9 +77,9 @@ export default function JDChildRightsSection({
             {title}
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+          <div className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -93,7 +102,7 @@ export default function JDChildRightsSection({
                   <div className="w-11 h-11 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
                     {item.icon}
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug">
                     {item.title}
                   </h3>
                 </div>

@@ -41,7 +41,7 @@ const defaultFAQs: FAQItem[] = [
 export default function JDFAQSection({
   title = "Frequently Asked Questions About Juvenile Defense Charges",
   subTitle,
-  headerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/frequently-asked-questions-tampa-juvenile-defense.webp",
+  headerImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/frequently-asked-questions-tampa-juvenile-defense-fl.webp",
   faqs = defaultFAQs,
 }: JDFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -53,7 +53,7 @@ export default function JDFAQSection({
   return (
     <section className="w-full bg-slate-50 py-12 md:py-20 font-sans">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
-        
+
         {/* HEADER */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-16">
           <div className="relative w-16 h-16 sm:w-20 sm:h-20 mb-4">
@@ -96,25 +96,27 @@ export default function JDFAQSection({
                 key={faq.id}
                 className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all duration-300 hover:border-primary/50"
               >
-                <button
-                  type="button"
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 focus:outline-none"
-                  aria-expanded={isOpen}
-                >
-                  <span className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
-                    {faq.question}
-                  </span>
-                  <div
-                    className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                      isOpen
+                <h3 className="m-0">
+                  <button
+                    type="button"
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8A6516] focus-visible:ring-inset"
+                    aria-expanded={isOpen}
+                  >
+                    <span className="text-base sm:text-lg font-bold text-slate-900 leading-snug">
+                      {faq.question}
+                    </span>
+                    <span
+                      aria-hidden="true"
+                      className={`w-8 h-8 rounded-full border flex items-center justify-center shrink-0 transition-transform duration-300 ${isOpen
                         ? "bg-primary border-primary text-slate-950 rotate-180"
                         : "border-slate-300 text-slate-500"
-                    }`}
-                  >
-                    <FaChevronDown className="w-3.5 h-3.5" />
-                  </div>
-                </button>
+                        }`}
+                    >
+                      <FaChevronDown className="w-3.5 h-3.5" />
+                    </span>
+                  </button>
+                </h3>
 
                 {isOpen && (
                   <div className="px-6 sm:px-8 pb-6 pt-1 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100">

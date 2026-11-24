@@ -1,52 +1,20 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { FaBalanceScale, FaSchool, FaGlobe, FaShieldAlt, FaFileAlt } from "react-icons/fa";
+import { FaBalanceScale, FaSchool, FaGlobe, FaShieldAlt } from "react-icons/fa";
 
 export interface JDWhatCountsSectionProps {
-  topH2Title?: string;
-  topParagraph?: string;
   title?: string;
   subTitle?: string;
 }
 
 export default function JDWhatCountsSection({
-  topH2Title = "Facing Juvenile Criminal Charges in Tampa Florida? Get a Free Confidential Case Review",
-  topParagraph = "School investigations and juvenile court cases operate through separate processes. Families should bring arrest documents and school notices to their consultation.",
   title = "What Counts as a Juvenile Offense Under Florida Law?",
   subTitle = "Florida law deems some acts of minors as delinquent acts. The nature of the charges is dependent on the circumstances.",
 }: JDWhatCountsSectionProps) {
   return (
     <section className="w-full bg-slate-900 py-12 md:py-20 text-white font-sans relative overflow-hidden">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
-        
-        {/* TOP H2 BANNER: Facing Juvenile Criminal Charges in Tampa Florida? */}
-        <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-800 shadow-xl mb-12 md:mb-16 max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit mb-3">
-                <FaFileAlt className="w-3.5 h-3.5" />
-                CASE REVIEW &amp; CONSULTATION
-              </div>
-              <h2 className="text-2xl sm:text-3xl lg:text-3xl font-bold text-white leading-snug mb-3">
-                {topH2Title}
-              </h2>
-              <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed">
-                {topParagraph}
-              </p>
-            </div>
-            <div className="shrink-0">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-primary hover:bg-[#a87d25] text-slate-950 px-6 py-3.5 rounded-2xl font-bold text-sm sm:text-base shadow-lg transition-all duration-300 hover:scale-[1.02]"
-              >
-                Request Free Review
-              </Link>
-            </div>
-          </div>
-        </div>
-
         {/* SECTION HEADER: What Counts as a Juvenile Offense Under Florida Law? */}
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto mb-10 md:mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white leading-tight tracking-tight mb-3">

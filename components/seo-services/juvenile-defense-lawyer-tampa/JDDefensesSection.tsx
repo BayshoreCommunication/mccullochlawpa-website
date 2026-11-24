@@ -13,7 +13,7 @@ import {
 export interface JuvenileDefenseItem {
   id: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
   icon: React.ReactNode;
 }
 
@@ -55,8 +55,19 @@ const defaultDefenses: JuvenileDefenseItem[] = [
   {
     id: "digital-evidence-context",
     title: "Digital Evidence Taken Out of Context",
-    description:
-      "Incomplete screenshots completely misrepresent the reality of online conversations. Sarcastic jokes routinely look like dangerous physical threats on paper. We demand the entire chat log to reveal true context. Fake social media profiles routinely frame completely innocent local teenagers. Our experienced juvenile defense lawyer Tampa examines account data to prove innocence.",
+    description: (
+      <>
+        Incomplete screenshots completely misrepresent the reality of online
+        conversations. Sarcastic jokes routinely look like dangerous physical
+        threats on paper. We demand the entire chat log to reveal true context.
+        Fake social media profiles routinely frame completely innocent local
+        teenagers. Our experienced{" "}
+        <strong className="font-bold text-slate-900">
+          juvenile defense lawyer Tampa
+        </strong>{" "}
+        examines account data to prove innocence.
+      </>
+    ),
     icon: <FaComments className="w-5 h-5 text-primary" />,
   },
 ];
@@ -105,14 +116,14 @@ export default function JDDefensesSection({
                   <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
                     {item.icon}
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug">
                     {item.title}
                   </h3>
                 </div>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
-                </p>
+                </div>
               </div>
             </div>
           ))}

@@ -22,14 +22,14 @@ export interface JDHeroSectionProps {
 export default function JDHero({
   bgImagePath = "/images/seo-services/juvenile-defense-lawyer-tampa/tampa-juvenile-defense-lawyer-criminal-charges-hero.webp",
   personImagePath = "/images/hero/Attorney.png",
-  badgeTitle = "Tampa Juvenile Defense Lawyer",
+  badgeTitle = "",
   h1Title = "Juvenile Defense Lawyer Tampa, Protect Your Child’s Rights and Future",
   paragraph = (
     <>
       Parents are usually shocked when criminal charges are brought on behalf of their children. Long term concerns are serious issues arising from court and school consequences. A qualified juvenile defense attorney Tampa offers clarity at the moment. Drew McCulloch is a dedicated member of the McCulloch Law group. Families learn to understand the allegations and protect constitutional rights. A careful evidence review helps explore appropriate legal options.{" "}
       <Link
         href="/contact"
-        className="font-semibold text-primary underline hover:text-[#d4a843] transition-colors"
+        className="font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors"
       >
         Contact us
       </Link>{" "}
@@ -83,9 +83,9 @@ export default function JDHero({
                     <FaShieldAlt className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
+                    <p className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
                       Strategic Defense
-                    </h4>
+                    </p>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
                       Former Prosecutor
                     </p>
@@ -99,9 +99,9 @@ export default function JDHero({
                     <FaSearch className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
+                    <p className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
                       Early Intervention
-                    </h4>
+                    </p>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
                       Protecting Your Future
                     </p>
@@ -112,17 +112,19 @@ export default function JDHero({
           </div>
 
           <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col justify-center py-6 sm:py-8 lg:py-12 z-20">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-semibold w-fit mb-4 sm:mb-6 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              {badgeTitle}
-            </div>
+            {badgeTitle && (
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-[#8A6516] text-xs sm:text-sm font-semibold w-fit mb-4 sm:mb-6 shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-[#8A6516] animate-pulse" />
+                {badgeTitle}
+              </div>
+            )}
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-extrabold text-slate-900 tracking-tight leading-[1.18] mb-5 sm:mb-6">
               {h1Title}
             </h1>
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">
-              <p>{paragraph}</p>
+              <div>{paragraph}</div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-8 sm:mt-10">

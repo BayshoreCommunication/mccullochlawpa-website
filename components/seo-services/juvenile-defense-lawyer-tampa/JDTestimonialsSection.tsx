@@ -86,9 +86,6 @@ export default function JDTestimonialsSection({
                 <span className="font-bold text-slate-900 text-base">
                   —{t.name}
                 </span>
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                  Verified Client Review
-                </span>
               </div>
             </div>
           ))}

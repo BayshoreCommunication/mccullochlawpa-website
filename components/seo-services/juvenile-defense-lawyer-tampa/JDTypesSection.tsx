@@ -6,10 +6,8 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import {
-  FaShieldAlt,
   FaChevronLeft,
   FaChevronRight,
-  FaArrowRight,
   FaHandRock,
   FaStore,
   FaCapsules,
@@ -31,7 +29,6 @@ export interface JuvenileChargeTypeItem {
   imageDesc: string;
   badgeIcon: React.ReactNode;
   description: React.ReactNode;
-  linkHref?: string;
 }
 
 const INLINE_LINK_CLASS =
@@ -61,24 +58,22 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
         . A clear defense strategy examines who started the conflict. School disputes and physical altercations can lead to formal criminal charges, particularly when allegations involve threats or violence.
       </>
     ),
-    linkHref: "/contact",
   },
   {
     id: "theft-shoplifting-property",
     title: "Theft Shoplifting and Property Offenses",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-theft-shoplifting-defense-attorney-in-fl.webp",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-theft-shoplifting-defense-attorney-tampa-fl.webp",
     imageAlt: "Juvenile theft and shoplifting defense attorney examining retail property evidence in Tampa Florida",
     imageTitle: "Juvenile Theft Shoplifting Defense Attorney Tampa FL",
     imageDesc: "Experienced Tampa juvenile defense lawyer challenging retail theft, shoplifting, and property damage allegations to avoid formal delinquency records.",
     badgeIcon: <FaStore className="w-5 h-5 text-primary" />,
     description:
       "Shoplifting and trespass are commonly charged as acts of delinquency. Cases involving damage to property will need to be carefully considered looking at all the evidence. Retailers will push hard to prosecute anyone suspected of being a minor. These cases often result in compensation being paid.",
-    linkHref: "/contact",
   },
   {
     id: "drug-possession-minors",
     title: "Drug Possession and Related Allegations",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-drug-possession-defense-lawyer-in-tampa.webp",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-drug-possession-defense-lawyer-in-tampa-fl.webp",
     imageAlt: "Juvenile drug possession defense lawyer evaluating controlled substance allegations in Tampa Florida",
     imageTitle: "Juvenile Drug Possession Defense Lawyer in Tampa FL",
     imageDesc: "Challenging underage marijuana and prescription drug possession allegations, exploring diversion programs to keep your child criminal record clear in Tampa.",
@@ -92,7 +87,6 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
         need to be customized to the child and the offense. Marijuana or prescription drug possession are treated with severity. Diversion programs may be a way to avoid records for first time offenders.Drug possession allegations can have serious consequences for adults as well.
       </>
     ),
-    linkHref: "/contact",
   },
   {
     id: "weapons-possession-violent",
@@ -104,31 +98,28 @@ const defaultCaseItems: JuvenileChargeTypeItem[] = [
     badgeIcon: <GiPistolGun className="w-5 h-5 text-primary" />,
     description:
       "Any allegation of weapons is treated seriously and will not be tolerated. The exact legal definition is determined by statutory definitions. Students are expelled from school right away when they are carrying a knife or a gun. Direct file to adult court is a common occurrence with these charges.",
-    linkHref: "/contact",
   },
   {
     id: "cyberbullying-online-misconduct",
     title: "Cyberbullying Threats and Online Misconduct",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-cyberbullying-threats-defense-lawyer-fl.webp",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/juvenile-cyberbullying-threats-defense-lawyer-tampa.webp",
     imageAlt: "Juvenile cyberbullying and online threats defense lawyer evaluating digital communication evidence",
     imageTitle: "Juvenile Cyberbullying Threats Defense Lawyer Florida",
     imageDesc: "Defending students against online threat allegations, social media cyberbullying claims, and digital misconduct accusations across Hillsborough County schools.",
     badgeIcon: <FaGlobe className="w-5 h-5 text-primary" />,
     description:
       "Digital misconduct requires preserving the full communication context. This context explains online statements accurately to a judge. False accounts sometimes mask the true sender identity. An attorney traces the digital footprint to protect innocence.",
-    linkHref: "/contact",
   },
   {
     id: "underage-dui-alcohol",
     title: "DUI and Other Alcohol Related Allegations Involving Minors",
-    image: "/images/seo-services/juvenile-defense-lawyer-tampa/underage-dui-alcohol-defense-attorney-tampa-fl.webp",
+    image: "/images/seo-services/juvenile-defense-lawyer-tampa/florida-underage-dui-alcohol-defense-attorney-tampa.webp",
     imageAlt: "Underage DUI and minor alcohol defense attorney examining zero tolerance license suspensions in Tampa",
     imageTitle: "Underage DUI Alcohol Defense Attorney Tampa Florida",
     imageDesc: "Defense attorney protecting minors and college students from underage drinking and zero-tolerance DUI allegations in Tampa and Hillsborough County courts.",
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Alcohol related incidents involving minors must be carefully considered. Not all alcohol related incidents involving minors are criminal. Florida has strict zero tolerance laws regarding underage drivers.",
-    linkHref: "/contact",
   },
 ];
 
@@ -143,7 +134,7 @@ export default function JDTypesSection({
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">
       <div className="max-w-[1640px] mx-auto px-4 sm:px-6 md:px-10">
-        
+
         {/* HEADER */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 md:mb-14">
           <div className="max-w-3xl">
@@ -224,24 +215,12 @@ export default function JDTypesSection({
                   </div>
 
                   {/* CARD BODY */}
-                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-grow">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
-                        {item.title}
-                      </h3>
-                      <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-
-                    <div className="pt-6 mt-6 border-t border-slate-800">
-                      <Link
-                        href={item.linkHref || "/contact"}
-                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-primary group-hover:text-[#dbb462] transition-colors"
-                      >
-                        <span>Discuss Case Defense</span>
-                        <FaArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                      </Link>
+                  <div className="p-6 sm:p-7 flex flex-col flex-grow">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
+                      {item.title}
+                    </h3>
+                    <div className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.description}
                     </div>
                   </div>
                 </div>
