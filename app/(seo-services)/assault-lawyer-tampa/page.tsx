@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import React from "react";
-import Script from "next/script";
 import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   ALHero,
@@ -230,10 +229,12 @@ const jsonLdData = {
 export default function AssaultLawyerTampaPage() {
   return (
     <>
-      <Script
+      <script
         id="assault-lawyer-tampa-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdData).replace(/</g, "\\u003c"),
+        }}
       />
       <div className="w-full">
         <ALHero />

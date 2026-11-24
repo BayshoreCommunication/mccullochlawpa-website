@@ -140,7 +140,7 @@ export default function ALWhyChooseSection({
                     {item.icon}
                   </div>
                   <div className="space-y-1.5 flex-1">
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug">
                       {item.title}
                     </h3>
                     <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">

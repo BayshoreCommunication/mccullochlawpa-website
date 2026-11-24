@@ -47,9 +47,9 @@ export default function ALFreeCaseReviewSection({
             {title}
           </h2>
 
-          <p className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
+          <div className="text-slate-300 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
             {paragraph}
-          </p>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 pt-6">
             <a

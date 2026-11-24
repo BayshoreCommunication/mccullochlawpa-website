@@ -76,21 +76,21 @@ export default function ALCourtsCitiesSection({
               <div className="w-8 h-8 rounded-full bg-white border border-primary/40 flex items-center justify-center shrink-0">
                 <FaMapMarkerAlt className="w-4 h-4 text-primary" />
               </div>
-              <h2 className="font-bold text-sm sm:text-base tracking-wide text-slate-100">
+              <p className="font-bold text-sm sm:text-base tracking-wide text-slate-100">
                 McCulloch Law P.A. Tampa Office
-              </h2>
+              </p>
             </div>
 
             <div className="space-y-4 text-slate-700">
               
               <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaMapMarkerAlt className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Office Address
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     238 East Davis Boulevard, Ste 202
                   </p>
@@ -102,16 +102,16 @@ export default function ALCourtsCitiesSection({
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                     <FaPhone className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                       Phone
-                    </h4>
+                    </h3>
                     <a
                       href="tel:8134442817"
-                      className="text-sm sm:text-base font-bold text-slate-900 hover:text-primary transition-colors block leading-snug"
+                      className="text-sm sm:text-base font-bold text-slate-900 hover:text-[#8A6516] transition-colors block leading-snug"
                     >
                       (813) 444 2817
                     </a>
@@ -120,16 +120,16 @@ export default function ALCourtsCitiesSection({
                 </div>
 
                 <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                     <FaEnvelope className="w-4 h-4" />
                   </div>
                   <div className="overflow-hidden">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                       Email
-                    </h4>
+                    </h3>
                     <a
                       href="mailto:office@mcfloridalaw.com"
-                      className="text-sm sm:text-base font-semibold text-slate-900 hover:text-primary transition-colors block leading-snug truncate"
+                      className="text-sm sm:text-base font-semibold text-slate-900 hover:text-[#8A6516] transition-colors block leading-snug truncate"
                     >
                       office@mcfloridalaw.com
                     </a>

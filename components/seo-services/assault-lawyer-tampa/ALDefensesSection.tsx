@@ -13,7 +13,6 @@ import {
   FaBalanceScale,
   FaExclamationCircle,
   FaGavel,
-  FaCheckCircle,
 } from "react-icons/fa";
 
 export interface DefenseItem {
@@ -150,14 +149,18 @@ export default function ALDefensesSection({
             return (
               <div
                 key={item.id}
-                onClick={() => toggleDefense(item.id)}
-                className={`bg-white rounded-3xl p-6 sm:p-7 border transition-all duration-300 cursor-pointer shadow-sm hover:shadow-md ${
+                className={`bg-white rounded-3xl p-6 sm:p-7 border transition-all duration-300 shadow-sm hover:shadow-md ${
                   isOpen
                     ? "border-primary ring-1 ring-primary/20 bg-gradient-to-br from-white to-primary/[0.02]"
                     : "border-slate-200/80 hover:border-slate-300"
                 }`}
               >
-                <div className="flex items-start justify-between gap-4">
+                <button
+                  type="button"
+                  onClick={() => toggleDefense(item.id)}
+                  aria-expanded={isOpen}
+                  className="w-full text-left flex items-start justify-between gap-4 cursor-pointer"
+                >
                   <div className="flex items-start gap-3.5">
                     <div
                       className={`w-11 h-11 rounded-2xl flex items-center justify-center shrink-0 transition-colors ${
@@ -179,10 +182,11 @@ export default function ALDefensesSection({
                     className={`text-slate-400 text-lg transition-transform duration-300 ${
                       isOpen ? "rotate-180 text-primary" : ""
                     }`}
+                    aria-hidden="true"
                   >
                     ▾
                   </span>
-                </div>
+                </button>
 
                 <div
                   className={`mt-4 pt-4 border-t border-slate-100 text-slate-600 text-sm sm:text-base leading-relaxed whitespace-pre-line transition-all duration-300 ${

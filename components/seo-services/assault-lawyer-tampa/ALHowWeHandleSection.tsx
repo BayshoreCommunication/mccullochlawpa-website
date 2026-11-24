@@ -133,9 +133,9 @@ export default function ALHowWeHandleSection({
             {title}
           </h2>
 
-          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+          <div className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-5">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
