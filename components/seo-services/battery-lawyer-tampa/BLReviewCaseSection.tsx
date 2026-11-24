@@ -23,7 +23,7 @@ export interface ReviewStep {
 
 export interface BLReviewCaseSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   steps?: ReviewStep[];
 }
 
@@ -104,7 +104,13 @@ const defaultSteps: ReviewStep[] = [
 
 export default function BLReviewCaseSection({
   title = "How We Review a Battery Case Within Tampa Jurisdiction?",
-  subTitle = "Our battery lawyer Tampa reviews the charge, available evidence and procedural history before recommending a course of action.",
+  subTitle = (
+    <>
+      Our <strong className="font-bold text-white">battery lawyer Tampa</strong>{" "}
+      reviews the charge, available evidence and procedural history before
+      recommending a course of action.
+    </>
+  ),
   steps = defaultSteps,
 }: BLReviewCaseSectionProps) {
   return (
@@ -117,9 +123,9 @@ export default function BLReviewCaseSection({
             {title}
           </h2>
 
-          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+          <div className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-5">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />

@@ -28,7 +28,7 @@ export interface BLArrestSectionProps {
 const defaultSteps: ArrestStep[] = [
   {
     id: "booking-jail-processing",
-    stepNumber: "Step 01",
+    stepNumber: "01",
     icon: <FaLock className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Booking and Jail Processing",
     description:
@@ -36,7 +36,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "no-contact-orders",
-    stepNumber: "Step 02",
+    stepNumber: "02",
     icon: <FaUserSlash className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "No Contact Orders",
     description:
@@ -44,7 +44,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "first-appearance-hearing",
-    stepNumber: "Step 03",
+    stepNumber: "03",
     icon: <FaBalanceScale className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "First Appearance Hearing (Within 24 Hours)",
     description:
@@ -52,7 +52,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "probable-cause-bond-release",
-    stepNumber: "Step 04",
+    stepNumber: "04",
     icon: <FaKey className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Probable Cause Review, Bond and Release",
     description:
@@ -60,7 +60,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "arraignment-entry-plea",
-    stepNumber: "Step 05",
+    stepNumber: "05",
     icon: <FaFileAlt className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Arraignment and Entry of a Plea",
     description:
@@ -68,7 +68,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "discovery-pretrial-proceedings",
-    stepNumber: "Step 06",
+    stepNumber: "06",
     icon: <FaSearch className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Discovery and Pretrial Proceedings",
     description:
@@ -76,7 +76,7 @@ const defaultSteps: ArrestStep[] = [
   },
   {
     id: "trial-final-resolution",
-    stepNumber: "Step 07",
+    stepNumber: "07",
     icon: <FaGavel className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Trial or Final Resolution",
     description:

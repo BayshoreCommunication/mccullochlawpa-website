@@ -7,7 +7,7 @@ import { FaCalendarAlt, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export interface BLFreeCaseReviewSectionProps {
   title?: string;
-  paragraph?: string;
+  paragraph?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -16,7 +16,20 @@ export interface BLFreeCaseReviewSectionProps {
 
 export default function BLFreeCaseReviewSection({
   title = "Charged With Battery? Contact McCulloch Law Now",
-  paragraph = "A battery arrest can create immediate concerns about release conditions, upcoming hearings and your criminal record. The available defense options depend on the charge, the evidence and the circumstances of the incident. McCulloch Law reviews battery allegations and explains the legal process in clear terms. Attorney Drew McCulloch brings former prosecutorial experience to criminal defense representation in Tampa. Contact a battery lawyer Tampa at (813) 444 2817 for a free, confidential consultation. Our office accepts inquiries 24/7.",
+  paragraph = (
+    <>
+      A battery arrest can create immediate concerns about release conditions,
+      upcoming hearings and your criminal record. The available defense options
+      depend on the charge, the evidence and the circumstances of the
+      incident. McCulloch Law reviews battery allegations and explains the legal
+      process in clear terms. Attorney Drew McCulloch brings former
+      prosecutorial experience to criminal defense representation in Tampa.
+      Contact a{" "}
+      <strong className="font-bold text-white">battery lawyer Tampa</strong> at
+      (813) 444 2817 for a free, confidential consultation. Our office accepts
+      inquiries 24/7.
+    </>
+  ),
   phoneNumber = "(813) 444 2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -37,9 +50,9 @@ export default function BLFreeCaseReviewSection({
 
           <div className="w-16 h-[3px] bg-primary rounded-full mb-6" />
 
-          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-8">
+          <div className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-8">
             {paragraph}
-          </p>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <a

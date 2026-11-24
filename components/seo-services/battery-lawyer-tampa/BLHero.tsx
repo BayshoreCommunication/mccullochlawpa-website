@@ -12,7 +12,7 @@ export interface BLHeroSectionProps {
   personImagePath?: string;
   badgeTitle?: string;
   h1Title?: string;
-  paragraph1?: string;
+  paragraph1?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -24,7 +24,19 @@ export default function BLHero({
   personImagePath = "/images/hero/Attorney.png",
   badgeTitle = "Tampa Battery Lawyer",
   h1Title = "Defense Against Criminal Charges",
-  paragraph1 = "One simple battery charge can affect your criminal record, employment, family relationships and freedom. If you stand alone against a battery charge in Tampa, the prosecutor's version of events becomes the absolute truth. Without a battery lawyer Tampa to challenge the state's narrative, minor arguments or misunderstandings quickly turn into permanent convictions. We examine the allegations, review the evidence and identify possible defenses under Florida law. We also explain the legal options available for your case.",
+  paragraph1 = (
+    <>
+      One simple battery charge can affect your criminal record, employment,
+      family relationships and freedom. If you stand alone against a battery
+      charge in Tampa, the prosecutor&apos;s version of events becomes the
+      absolute truth. Without a{" "}
+      <strong className="font-bold text-slate-900">battery lawyer Tampa</strong>{" "}
+      to challenge the state&apos;s narrative, minor arguments or
+      misunderstandings quickly turn into permanent convictions. We examine the
+      allegations, review the evidence and identify possible defenses under
+      Florida law. We also explain the legal options available for your case.
+    </>
+  ),
   phoneNumber = "(813) 444-2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -72,9 +84,9 @@ export default function BLHero({
                     <FaShieldAlt className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
+                    <p className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
                       Strategic Defense.
-                    </h4>
+                    </p>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
                       Former Prosecutor.
                     </p>
@@ -88,9 +100,9 @@ export default function BLHero({
                     <FaSearch className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
+                    <p className="text-xs sm:text-sm font-semibold text-slate-100 leading-snug">
                       Early Intervention.
-                    </h4>
+                    </p>
                     <p className="text-[11px] sm:text-xs text-slate-300 font-normal">
                       Protecting Your Record.
                     </p>
@@ -101,20 +113,17 @@ export default function BLHero({
           </div>
 
           <div className="w-full lg:w-1/2 order-2 lg:order-1 flex flex-col justify-center py-6 sm:py-8 lg:py-12 z-20">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs sm:text-sm font-semibold w-fit mb-4 sm:mb-6 shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-[#8A6516] text-xs sm:text-sm font-semibold w-fit mb-4 sm:mb-6 shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-[#8A6516] animate-pulse" />
               {badgeTitle}
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-slate-900 tracking-tight leading-[1.12] mb-5 sm:mb-6">
-              <span className="block text-slate-900">{h1Title}</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#b38e3a] to-primary mt-2">
-                In Tampa, Florida
-              </span>
+              {h1Title}
             </h1>
 
             <div className="space-y-4 text-slate-700 text-base sm:text-lg leading-relaxed max-w-2xl">
-              <p>{paragraph1}</p>
+              <div>{paragraph1}</div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 sm:gap-6 mt-8 sm:mt-10">

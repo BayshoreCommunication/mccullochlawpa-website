@@ -126,15 +126,6 @@ export default function BLWhyChooseSection({
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 42vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/80 shadow-lg text-slate-900">
-              <p className="text-sm font-bold text-slate-950">
-                Drew McCulloch, Esq.
-              </p>
-              <p className="text-xs text-primary font-semibold">
-                Former Prosecutor &amp; Lead Defense Attorney
-              </p>
-            </div>
           </div>
 
           {/* RIGHT: 6 VALUE PROPOSITIONS */}
@@ -149,7 +140,7 @@ export default function BLWhyChooseSection({
                     {item.icon}
                   </div>
 
-                  <h3 className="text-base font-bold text-slate-900 group-hover:text-primary transition-colors mb-2 leading-snug">
+                  <h3 className="text-base font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors mb-2 leading-snug">
                     {item.title}
                   </h3>
 

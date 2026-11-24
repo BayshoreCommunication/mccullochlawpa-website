@@ -51,7 +51,7 @@ const defaultFAQs: FAQItem[] = [
 
 export default function BLFAQSection({
   title = "Frequently Asked Questions About Battery Charge",
-  headerImagePath = "/images/seo-services/battery-lawyer-tampa/frequently-asked-questions-tampa-battery-defense.webp",
+  headerImagePath = "/images/seo-services/battery-lawyer-tampa/frequently-asked-questions-tampa-battery-charges-fl.webp",
   faqs = defaultFAQs,
 }: BLFAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -103,29 +103,31 @@ export default function BLFAQSection({
                     : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm"
                 }`}
               >
-                <button
-                  type="button"
-                  onClick={() => toggleFAQ(index)}
-                  className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 transition-colors"
-                  aria-expanded={isOpen}
-                >
-                  <span
-                    className={`text-base sm:text-lg font-bold transition-colors ${
-                      isOpen ? "text-primary" : "text-slate-900"
-                    }`}
+                <h3 className="m-0">
+                  <button
+                    type="button"
+                    onClick={() => toggleFAQ(index)}
+                    className="w-full py-5 px-6 sm:px-8 text-left flex items-center justify-between gap-4 transition-colors"
+                    aria-expanded={isOpen}
                   >
-                    {faq.question}
-                  </span>
-                  <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
-                      isOpen
-                        ? "bg-primary text-slate-950 rotate-180"
-                        : "bg-slate-100 text-slate-600 hover:bg-slate-200"
-                    }`}
-                  >
-                    <FaChevronDown className="w-3.5 h-3.5" />
-                  </div>
-                </button>
+                    <span
+                      className={`text-base sm:text-lg font-bold transition-colors ${
+                        isOpen ? "text-[#8A6516]" : "text-slate-900"
+                      }`}
+                    >
+                      {faq.question}
+                    </span>
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
+                        isOpen
+                          ? "bg-primary text-slate-950 rotate-180"
+                          : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                      }`}
+                    >
+                      <FaChevronDown className="w-3.5 h-3.5" />
+                    </div>
+                  </button>
+                </h3>
 
                 {isOpen && (
                   <div className="px-6 sm:px-8 pb-6 pt-1 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100">

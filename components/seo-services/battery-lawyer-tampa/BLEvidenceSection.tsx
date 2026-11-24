@@ -13,7 +13,6 @@ import {
   FaFileMedical,
   FaUsers,
   FaFileAlt,
-  FaFolderOpen,
 } from "react-icons/fa";
 
 export interface EvidenceItem {
@@ -113,7 +112,7 @@ const defaultEvidenceItems: EvidenceItem[] = [
 export default function BLEvidenceSection({
   title = "Which Evidence You Should Preserve?",
   subTitle = "Evidence can establish the timeline, clarify the circumstances of physical contact or reveal contradictions in witness accounts. Preserve original files and records. Avoid editing, deleting or destroying potential evidence.",
-  imagePath = "/images/seo-services/battery-lawyer-tampa/criminal-court-evidence-preservation-battery-case.webp",
+  imagePath = "/images/seo-services/battery-lawyer-tampa/criminal-court-evidence-preservation-battery-tampa.webp",
   items = defaultEvidenceItems,
 }: BLEvidenceSectionProps) {
   return (
@@ -125,11 +124,6 @@ export default function BLEvidenceSection({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-7 flex flex-col space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <FaFolderOpen className="w-3.5 h-3.5" />
-                CRITICAL DEFENSE EVIDENCE
-              </div>
-
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight tracking-tight">
                 {title}
               </h2>

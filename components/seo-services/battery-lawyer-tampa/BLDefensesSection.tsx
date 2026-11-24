@@ -22,7 +22,7 @@ export interface DefenseItem {
 }
 
 const INLINE_LINK_CLASS =
-  "font-semibold text-[#8A6516] underline hover:text-[#6D4E0D] transition-colors";
+  "font-semibold text-primary underline hover:text-[#d4a843] transition-colors";
 
 export interface BLDefensesSectionProps {
   title?: string;

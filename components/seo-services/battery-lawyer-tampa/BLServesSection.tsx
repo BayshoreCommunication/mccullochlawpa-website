@@ -54,7 +54,7 @@ const criminalDefenseItems = [
 export default function BLServesSection({
   title = "Cases McCulloch Law Handles Across Tampa, FLorida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense.",
-  imagePath = "/images/seo-services/battery-lawyer-tampa/tampa-bay-skyline-battery-defense-services-banner.webp",
+  imagePath = "/images/seo-services/battery-lawyer-tampa/tampa-bay-skyline-battery-defense-services-tampa-fl.webp",
 }: BLServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">

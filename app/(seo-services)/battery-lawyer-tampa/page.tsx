@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import React from "react";
-import Script from "next/script";
 import ServiceCtaBanner from "@/components/seo-services/shared/ServiceCtaBanner";
 import {
   BLHero,
@@ -34,23 +33,30 @@ export const metadata: Metadata = {
     title: "Battery Lawyer Tampa | McCulloch Law",
     description:
       "Accused of unwanted physical contact in Tampa? Challenge the allegations and examine the evidence. See how a tampa battery lawyer can help.",
-    url: "https://mcfloridalaw.com/battery-lawyer-tampa",
+    url: "https://www.mcfloridalaw.com/battery-lawyer-tampa",
     siteName: "McCulloch Law P.A.",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
-        width: 1200,
-        height: 630,
-        alt: "Florida Simple Battery Defense Lawyer Tampa Case Review",
+        url: "/images/seo-services/battery-lawyer-tampa/tampa-battery-defense-lawyer-criminal-charges-hero.webp",
+        width: 1920,
+        height: 1133,
+        alt: "Strategic defense against criminal battery charges by experienced Tampa battery lawyer Drew McCulloch",
         type: "image/webp",
       },
       {
-        url: "/images/seo-services/battery-lawyer-tampa/florida-felony-battery-defense-attorney-tampa-law.webp",
-        width: 1200,
-        height: 630,
-        alt: "Florida Felony Battery Defense Attorney Tampa Law Firm",
+        url: "/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
+        width: 800,
+        height: 641,
+        alt: "Simple battery defense lawyer reviewing misdemeanor bodily contact evidence and police report details in Tampa",
+        type: "image/webp",
+      },
+      {
+        url: "/images/seo-services/battery-lawyer-tampa/florida-felony-battery-defense-attorney-in-tampa-fl.webp",
+        width: 800,
+        height: 408,
+        alt: "Felony battery defense attorney analyzing Florida statutory bodily harm claims and medical evidence in Tampa court",
         type: "image/webp",
       },
     ],
@@ -61,7 +67,7 @@ export const metadata: Metadata = {
     description:
       "Accused of unwanted physical contact in Tampa? Challenge the allegations and examine the evidence. See how a tampa battery lawyer can help.",
     images: [
-      "/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
+      "/images/seo-services/battery-lawyer-tampa/tampa-battery-defense-lawyer-criminal-charges-hero.webp",
     ],
   },
   robots: {
@@ -80,22 +86,22 @@ const jsonLdData = {
   "@graph": [
     {
       "@type": ["LegalService", "Attorney"],
-      "@id": "https://mcfloridalaw.com/#legalService",
+      "@id": "https://www.mcfloridalaw.com/battery-lawyer-tampa/#legalService",
       name: "McCulloch Law, P.A. - Tampa Battery Lawyer",
       description:
         "Accused of unwanted physical contact in Tampa? Challenge the allegations and examine the evidence. See how a tampa battery lawyer can help.",
-      url: "https://mcfloridalaw.com/battery-lawyer-tampa",
+      url: "https://www.mcfloridalaw.com/battery-lawyer-tampa",
       telephone: "(813) 444-2817",
       email: "office@mcfloridalaw.com",
       priceRange: "$$",
       image: {
         "@type": "ImageObject",
-        url: "https://mcfloridalaw.com/images/seo-services/battery-lawyer-tampa/florida-simple-battery-defense-lawyer-tampa-review.webp",
-        caption: "Florida Simple Battery Defense Lawyer Tampa Evidence",
+        url: "https://www.mcfloridalaw.com/images/seo-services/battery-lawyer-tampa/tampa-battery-defense-lawyer-criminal-charges-hero.webp",
+        caption: "Tampa Battery Defense Lawyer Criminal Charges Overview",
         description:
-          "Florida simple battery defense lawyer examining unwanted bodily contact allegations, witness statements, and evidence in Tampa misdemeanor proceedings.",
-        width: 1200,
-        height: 630,
+          "McCulloch Law PA provides strategic criminal defense representation for individuals facing misdemeanor and felony battery charges in Tampa Florida.",
+        width: 1920,
+        height: 1133,
       },
       address: {
         "@type": "PostalAddress",
@@ -146,13 +152,13 @@ const jsonLdData = {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://mcfloridalaw.com",
+          item: "https://www.mcfloridalaw.com/",
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Tampa Battery Lawyer",
-          item: "https://mcfloridalaw.com/battery-lawyer-tampa",
+          item: "https://www.mcfloridalaw.com/battery-lawyer-tampa",
         },
       ],
     },
@@ -207,10 +213,12 @@ const jsonLdData = {
 export default function BatteryLawyerTampaPage() {
   return (
     <>
-      <Script
+      <script
         id="battery-lawyer-tampa-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdData).replace(/</g, "\\u003c"),
+        }}
       />
       <div className="w-full">
         <BLHero />

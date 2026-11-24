@@ -11,7 +11,6 @@ import {
   FaGavel,
   FaChevronLeft,
   FaChevronRight,
-  FaArrowRight,
   FaUserShield,
   FaHeartBroken,
   FaExclamationTriangle,
@@ -31,7 +30,6 @@ export interface CaseTypeItem {
   imageDescription: string;
   badgeIcon: React.ReactNode;
   description: React.ReactNode;
-  linkHref?: string;
 }
 
 const INLINE_LINK_CLASS =
@@ -57,13 +55,12 @@ const defaultCaseItems: CaseTypeItem[] = [
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       "Simple battery involves harming, touching or hitting another individual on purpose or without consent. For example, punching, pushing, kicking or any unwanted body contact in an argument. Simple battery, can, but not always, include injuries. The circumstances surrounding the contact and the available evidence remain central to the defense.",
-    linkHref: "/contact",
   },
   {
     id: "felony-battery",
     title: "2. Felony Battery",
     image:
-      "/images/seo-services/battery-lawyer-tampa/florida-felony-battery-defense-attorney-tampa-law.webp",
+      "/images/seo-services/battery-lawyer-tampa/florida-felony-battery-defense-attorney-in-tampa-fl.webp",
     imageAlt:
       "Felony battery defense attorney analyzing Florida statutory bodily harm claims and medical evidence in Tampa court",
     imageTitle: "Florida Felony Battery Defense Attorney Tampa Law Firm",
@@ -72,13 +69,12 @@ const defaultCaseItems: CaseTypeItem[] = [
     badgeIcon: <FaGavel className="w-5 h-5 text-primary" />,
     description:
       "Florida Statutes § 784.041 defines felony battery separately from aggravated battery. The state must establish an intentional touch or strike against another person's will, along with great bodily harm, permanent disability or permanent disfigurement. This charge requires careful examination of the alleged contact and the claimed injury. Medical records, photographs, witness statements and other evidence may affect the prosecution's case.",
-    linkHref: "/contact",
   },
   {
     id: "aggravated-battery",
     title: "3. Aggravated Battery",
     image:
-      "/images/seo-services/battery-lawyer-tampa/aggravated-battery-deadly-weapon-defense-in-tampa.webp",
+      "/images/seo-services/battery-lawyer-tampa/aggravated-battery-deadly-weapon-defense-in-tampa-fl.webp",
     imageAlt:
       "Aggravated battery defense lawyer evaluating deadly weapon claims and severe bodily injury evidence in Tampa Florida",
     imageTitle: "Aggravated Battery Deadly Weapon Defense Tampa Florida",
@@ -87,13 +83,12 @@ const defaultCaseItems: CaseTypeItem[] = [
     badgeIcon: <FaExclamationTriangle className="w-5 h-5 text-primary" />,
     description:
       "Florida Statutes § 784.045, Aggravated battery. An offense may be committed by inflicting great bodily harm, permanent disability or permanent disfigurement; using a deadly weapon; or committing battery against a pregnant individual per the statutory definitions. Before just looking at the charging document, the defendant must analyze allegations of the conduct, object, injury and elements involved in this charge and examine the evidence behind them.",
-    linkHref: "/contact",
   },
   {
     id: "domestic-battery",
     title: "4. Domestic Battery",
     image:
-      "/images/seo-services/battery-lawyer-tampa/domestic-battery-violence-defense-attorney-tampa.webp",
+      "/images/seo-services/battery-lawyer-tampa/domestic-battery-violence-defense-attorney-tampa-fl.webp",
     imageAlt:
       "Domestic battery defense attorney reviewing household relationship allegations and evidence in Tampa Florida courtroom",
     imageTitle: "Domestic Battery Violence Defense Attorney Tampa Court",
@@ -119,7 +114,6 @@ const defaultCaseItems: CaseTypeItem[] = [
         battery by strangulation under § 784.041.
       </>
     ),
-    linkHref: "/contact",
   },
   {
     id: "sexual-battery",
@@ -151,13 +145,12 @@ const defaultCaseItems: CaseTypeItem[] = [
         battery under §794.03.
       </>
     ),
-    linkHref: "/contact",
   },
   {
     id: "battery-protected-person",
     title: "6. Battery of a Protected Person",
     image:
-      "/images/seo-services/battery-lawyer-tampa/battery-on-law-enforcement-officer-defense-tampa.webp",
+      "/images/seo-services/battery-lawyer-tampa/battery-on-law-enforcement-officer-defense-tampa-fl.webp",
     imageAlt:
       "Battery on law enforcement officer defense attorney evaluating protected public servant statutory claims in Tampa",
     imageTitle: "Battery on Law Enforcement Officer Defense Tampa Firm",
@@ -166,7 +159,6 @@ const defaultCaseItems: CaseTypeItem[] = [
     badgeIcon: <FaUserShield className="w-5 h-5 text-primary" />,
     description:
       "Florida law provides enhanced classifications for certain battery allegations involving protected individuals. Under § 784.07, battery against specified personnel performing official duties may qualify for reclassification. Covered personnel include law enforcement officers, firefighters, emergency medical care providers, certain hospital personnel and other listed workers. Section 784.08 also addresses battery against people aged 65 or older. The alleged victim's status, the circumstances of the incident and the applicable statute can affect the charge.",
-    linkHref: "/contact",
   },
 ];
 
@@ -262,24 +254,12 @@ export default function BLTypesSection({
                   </div>
 
                   {/* CARD BODY */}
-                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-grow">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
-                        {item.title}
-                      </h3>
-                      <div className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        {item.description}
-                      </div>
-                    </div>
-
-                    <div className="pt-6 mt-6 border-t border-slate-800">
-                      <Link
-                        href={item.linkHref || "/contact"}
-                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-primary group-hover:text-[#dbb462] transition-colors"
-                      >
-                        <span>Discuss Case Defense</span>
-                        <FaArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                      </Link>
+                  <div className="p-6 sm:p-7 flex flex-col flex-grow">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
+                      {item.title}
+                    </h3>
+                    <div className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                      {item.description}
                     </div>
                   </div>
                 </div>
