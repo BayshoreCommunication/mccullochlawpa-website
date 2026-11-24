@@ -87,7 +87,7 @@ export default function RDRobberyVsTheftSection({
             <thead>
               <tr className="bg-[#081524] text-white">
                 <th className="py-4 px-6 text-sm sm:text-base font-bold uppercase tracking-wider w-1/4">
-                  Characteristic
+                  <span className="sr-only">Comparison Criteria</span>
                 </th>
                 <th className="py-4 px-6 text-sm sm:text-base font-bold uppercase tracking-wider text-primary w-3/8">
                   Robbery (Fla. Stat. § 812.13)

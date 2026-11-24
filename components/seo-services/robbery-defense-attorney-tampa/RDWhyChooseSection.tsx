@@ -20,7 +20,7 @@ export interface RobberyWhyChooseItem {
 
 export interface RDWhyChooseSectionProps {
   title?: string;
-  subTitle?: string;
+  subTitle?: React.ReactNode;
   imagePath?: string;
   items?: RobberyWhyChooseItem[];
 }
@@ -72,7 +72,16 @@ const defaultWhyChooseItems: RobberyWhyChooseItem[] = [
 
 export default function RDWhyChooseSection({
   title = "Why Choose Our Robbery Defense Firm in Tampa?",
-  subTitle = "Our robbery defense attorney tampa approaches criminal defense through case specific evidence review and a clear explanation of your legal options at McCulloch Law.",
+  subTitle = (
+    <>
+      Our{" "}
+      <strong className="font-bold text-slate-900">
+        robbery defense attorney tampa
+      </strong>{" "}
+      approaches criminal defense through case specific evidence review and a
+      clear explanation of your legal options at McCulloch Law.
+    </>
+  ),
   imagePath = "/images/seo-services/robbery-defense-attorney-tampa/experienced-tampa-robbery-defense-lawyer-mcculloch.webp",
   items = defaultWhyChooseItems,
 }: RDWhyChooseSectionProps) {
@@ -86,9 +95,9 @@ export default function RDWhyChooseSection({
             {title}
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
+          <div className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-primary/50 rounded-full" />
@@ -99,76 +108,42 @@ export default function RDWhyChooseSection({
           </div>
         </div>
 
-        {/* TOP PROFILE & CREDENTIALS CARD */}
-        <div className="bg-[#0c1a29] rounded-3xl p-6 sm:p-8 lg:p-10 border border-slate-800 shadow-xl mb-12 max-w-6xl mx-auto overflow-hidden text-white">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-4 relative w-full h-[280px] sm:h-[320px] rounded-2xl overflow-hidden shadow-2xl border border-primary/40 bg-slate-900">
-              <Image
-                src={imagePath}
-                alt="Experienced Tampa robbery defense lawyer Drew McCulloch offering strategic criminal defense in Florida"
-                title="Experienced Tampa Robbery Defense Lawyer McCulloch Law"
-                data-description="Former prosecutor Drew McCulloch brings over 15 years of courtroom experience and 100+ jury trials to defend robbery charges across Tampa Bay."
-                fill
-                className="object-cover object-top hover:scale-105 transition-transform duration-500"
-                sizes="(max-width: 1024px) 100vw, 35vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a29] via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-[#081524]/90 backdrop-blur-md border border-primary/30 text-center">
-                <span className="text-sm font-bold text-white block">Drew McCulloch</span>
-                <span className="text-xs text-primary font-medium">Managing Attorney | Former State Prosecutor</span>
-              </div>
-            </div>
-
-            <div className="lg:col-span-8 flex flex-col justify-center space-y-4">
-              <h3 className="text-xl sm:text-2xl font-bold text-white">
-                Proven Courtroom Defense with Former State Prosecutor
-              </h3>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                Attorney Drew McCulloch brings unmatched insight into Hillsborough County criminal prosecutions. With over 100 cases tried to verdict, we build defense strategies that aggressively scrutinize physical evidence, witness credibility, and police procedure.
-              </p>
-              <div className="pt-2 flex flex-wrap gap-4">
-                <a
-                  href="tel:8134442817"
-                  className="inline-flex items-center gap-2 bg-primary hover:bg-[#a87d25] text-slate-950 px-5 py-2.5 rounded-xl font-bold text-sm transition-all"
-                >
-                  <FaPhoneAlt className="w-3.5 h-3.5" />
-                  <span>Call (813) 444 2817</span>
-                </a>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-xl font-semibold text-sm transition-all"
-                >
-                  <span>Learn More About Drew</span>
-                </Link>
-              </div>
-            </div>
-
+        {/* 2 COLUMNS: IMAGE & 4 VALUE PROPOSITIONS */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
+          <div className="lg:col-span-5 relative w-full h-[380px] sm:h-[460px] lg:h-[540px] rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+            <Image
+              src={imagePath}
+              alt="Experienced Tampa robbery defense lawyer Drew McCulloch offering strategic criminal defense in Florida"
+              title="Experienced Tampa Robbery Defense Lawyer McCulloch Law"
+              data-description="Former prosecutor Drew McCulloch brings over 15 years of courtroom experience and 100+ jury trials to defend robbery charges across Tampa Bay."
+              fill
+              className="object-cover object-top hover:scale-105 transition-transform duration-700"
+              sizes="(max-width: 1024px) 100vw, 42vw"
+            />
           </div>
-        </div>
 
-        {/* 4 VALUE PROPOSITIONS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
-          {items.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
-            >
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
-                  {item.icon}
-                </div>
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {items.map((item) => (
+              <div
+                key={item.id}
+                className="bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-md hover:shadow-xl hover:border-primary/50 transition-all duration-300 flex flex-col justify-between group"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary mb-4 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
 
-                <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors mb-2.5 leading-snug">
-                  {item.title}
-                </h3>
+                  <h3 className="text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors mb-2.5 leading-snug">
+                    {item.title}
+                  </h3>
 
-                <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  {item.description}
+                  <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                    {item.description}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
       </div>

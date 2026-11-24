@@ -7,7 +7,7 @@ import { FaCalendarAlt, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export interface RDFreeCaseReviewSectionProps {
   title?: string;
-  paragraph?: string;
+  paragraph?: React.ReactNode;
   phoneNumber?: string;
   phoneCallHref?: string;
   consultationHref?: string;
@@ -16,7 +16,22 @@ export interface RDFreeCaseReviewSectionProps {
 
 export default function RDFreeCaseReviewSection({
   title = "Charged With Robbery? Contact McCulloch Law Now",
-  paragraph = "A robbery arrest can affect your freedom, finances, employment and future opportunities. Do not discuss the allegations with detectives or attempt to resolve the matter directly with an alleged victim. If you’re looking for robbery defense attorney tampa, contact McCulloch Law for a free, confidential initial consultation. We can review your arrest, explain the applicable Florida robbery statute and discuss possible defense strategies. Attorney Drew McCulloch is available to discuss criminal defense matters throughout Tampa and Hillsborough County.",
+  paragraph = (
+    <>
+      A robbery arrest can affect your freedom, finances, employment and
+      future opportunities. Do not discuss the allegations with detectives or
+      attempt to resolve the matter directly with an alleged victim. If
+      you&rsquo;re looking for{" "}
+      <strong className="font-bold text-white">
+        robbery defense attorney tampa
+      </strong>
+      , contact McCulloch Law for a free, confidential initial consultation. We
+      can review your arrest, explain the applicable Florida robbery statute and
+      discuss possible defense strategies. Attorney Drew McCulloch is
+      available to discuss criminal defense matters throughout Tampa and
+      Hillsborough County.
+    </>
+  ),
   phoneNumber = "(813) 444 2817",
   phoneCallHref = "tel:8134442817",
   consultationHref = "/contact",
@@ -37,9 +52,9 @@ export default function RDFreeCaseReviewSection({
 
           <div className="w-16 h-[3px] bg-primary rounded-full mb-6" />
 
-          <p className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-8">
+          <div className="text-slate-300 text-sm sm:text-base md:text-lg leading-relaxed max-w-3xl mb-8">
             {paragraph}
-          </p>
+          </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
             <a

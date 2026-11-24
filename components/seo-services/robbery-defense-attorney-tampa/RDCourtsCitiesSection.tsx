@@ -13,7 +13,7 @@ export interface RDCourtsCitiesSectionProps {
 export default function RDCourtsCitiesSection({
   title = "Courts and Cities McCulloch Law Serves Across Tampa",
   subTitle = "McCulloch Law proudly represents clients in courts throughout Hillsborough County and the surrounding Tampa Bay communities.",
-  bannerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-hillsborough-county-criminal-court-hearings.webp",
+  bannerImagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-hillsborough-county-criminal-court-hearings-fl.webp",
 }: RDCourtsCitiesSectionProps) {
   return (
     <section className="w-full bg-slate-50/70 py-10 md:py-16 text-slate-800 font-sans relative overflow-hidden border-b border-slate-200">
@@ -84,13 +84,13 @@ export default function RDCourtsCitiesSection({
             <div className="space-y-4 text-slate-700">
               
               <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaMapMarkerAlt className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Office Address
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     238 East Davis Boulevard, Ste 202
                   </p>
@@ -101,36 +101,36 @@ export default function RDCourtsCitiesSection({
               </div>
 
               <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaPhone className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Phone
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
-                    <a href="tel:8134442817" className="hover:text-primary transition-colors">
+                    <a href="tel:8134442817" className="hover:text-[#8A6516] transition-colors">
                       (813) 444 2817
                     </a>
                   </p>
-                  <p className="text-xs text-primary font-medium mt-0.5">
+                  <p className="text-xs text-[#8A6516] font-medium mt-0.5">
                     Available 24/7
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 mt-0.5">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-[#8A6516] shrink-0 mt-0.5">
                   <FaEnvelope className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-0.5">
                     Email
-                  </h4>
+                  </h3>
                   <p className="text-sm sm:text-base font-semibold text-slate-900 leading-snug">
                     <a
                       href="mailto:office@mcfloridalaw.com"
-                      className="hover:text-primary transition-colors"
+                      className="hover:text-[#8A6516] transition-colors"
                     >
                       office@mcfloridalaw.com
                     </a>

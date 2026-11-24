@@ -117,15 +117,16 @@ export default function BLFAQSection({
                     >
                       {faq.question}
                     </span>
-                    <div
+                    <span
                       className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
                         isOpen
                           ? "bg-primary text-slate-950 rotate-180"
                           : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                       }`}
+                      aria-hidden="true"
                     >
                       <FaChevronDown className="w-3.5 h-3.5" />
-                    </div>
+                    </span>
                   </button>
                 </h3>
 

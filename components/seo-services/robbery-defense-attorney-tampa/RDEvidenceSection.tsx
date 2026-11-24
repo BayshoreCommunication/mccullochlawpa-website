@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import {
-  FaFolderOpen,
   FaTshirt,
   FaMapMarkerAlt,
   FaFingerprint,
@@ -106,7 +105,7 @@ const defaultEvidenceItems: RobberyEvidenceItem[] = [
 export default function RDEvidenceSection({
   title = "Which Evidence You Should Preserve?",
   subTitle = "Evidence can provide proof of where you were, resolve a property argument, disprove an ID or assist in disproving the authorities timeline.",
-  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/criminal-court-evidence-preservation-robbery-case.webp",
+  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/criminal-court-evidence-preservation-robbery-tampa.webp",
   items = defaultEvidenceItems,
 }: RDEvidenceSectionProps) {
   return (
@@ -118,11 +117,6 @@ export default function RDEvidenceSection({
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-7 flex flex-col space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-semibold w-fit">
-                <FaFolderOpen className="w-3.5 h-3.5" />
-                CRITICAL DEFENSE EVIDENCE
-              </div>
-
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight tracking-tight">
                 {title}
               </h2>

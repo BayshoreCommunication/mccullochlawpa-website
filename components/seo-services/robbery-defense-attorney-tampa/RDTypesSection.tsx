@@ -2,14 +2,12 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import {
   FaShieldAlt,
   FaChevronLeft,
   FaChevronRight,
-  FaArrowRight,
   FaHandRock,
   FaHome,
   FaCar,
@@ -31,7 +29,6 @@ export interface RobberyTypeItem {
   imageDescription: string;
   badgeIcon: React.ReactNode;
   description: string;
-  linkHref?: string;
 }
 
 export interface RDTypesSectionProps {
@@ -54,7 +51,6 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <FaHandRock className="w-5 h-5 text-primary" />,
     description:
       "Strong arm robbery generally describes a robbery involving physical force, intimidation or threats without an allegation of a firearm or other weapon. Charge reliance on claims of pushing, grabbing, striking, restraining or threatening a person during a property taking. A visible injury does not determine whether the State can establish robbery. Witness testimony, surveillance footage, medical records and the sequence of events may all affect the case.",
-    linkHref: "/contact",
   },
   {
     id: "armed-robbery",
@@ -69,7 +65,6 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <GiPistolGun className="w-5 h-5 text-primary" />,
     description:
       "Armed robbery involves an allegation of a weapon, firearm or deadly weapon during the property taking. Florida Statutes § 812.13 distinguish between a firearm or deadly weapon and another weapon. The type of object and its alleged use can affect the charge classification. Police do not always recover the alleged weapon. However, the State must establish the relevant weapon allegation through admissible evidence.",
-    linkHref: "/contact",
   },
   {
     id: "robbery-sudden-snatching",
@@ -84,7 +79,6 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <FaShieldAlt className="w-5 h-5 text-primary" />,
     description:
       'Florida Statutes as when "a person takes money or property of any other person from the person or in the presence of such other person when in the course of such taking such other person is actually or apparently in fear of being the victim of a robbery and the defendant has no intent to permanently deprive such person of such property." This type of theft can involve the taking of property if the person thought or was told by the victim that a person snatched the property or money.',
-    linkHref: "/contact",
   },
   {
     id: "home-invasion-robbery",
@@ -99,7 +93,6 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <FaHome className="w-5 h-5 text-primary" />,
     description:
       "Florida Statutes § 812.135 define home invasion robbery as entering a dwelling with the intent to commit robbery and then committing robbery against an occupant. The allegation involves both entry into a dwelling and a property taking through the legally required force, violence, assault or fear.",
-    linkHref: "/contact",
   },
   {
     id: "carjacking",
@@ -114,7 +107,6 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <FaCar className="w-5 h-5 text-primary" />,
     description:
       "Florida Statutes § 812.133 define carjacking as taking a motor vehicle from another person's possession or custody through force, violence, assault or fear, with the intent to deprive the owner temporarily or permanently. Carjacking involves a motor vehicle.",
-    linkHref: "/contact",
   },
   {
     id: "federal-level-robbery",
@@ -129,13 +121,12 @@ const defaultCaseItems: RobberyTypeItem[] = [
     badgeIcon: <FaBalanceScale className="w-5 h-5 text-primary" />,
     description:
       "Some acts of robbery are prosecuted under federal criminal law. In some cases, the conduct alleged may be the basis for federal prosecution because the crime charged is made illegal by a federal statute. Under the Hobbs Act, 18 U.S.C. § 1951, robbery or attempted robbery affecting interstate commerce are subject to federal prosecution. Federal bank robbery is prosecuted under the federal bank robbery statutes set out at 18 U.S.C. § 2113. Federal investigations are conducted by the Federal Bureau of Investigation, federal prosecutors or others. The case would be heard in the United States District Court, Middle District of Florida.",
-    linkHref: "/contact",
   },
   {
     id: "resisting-a-merchant",
     title: "7. Resisting a Merchant",
     image:
-      "/images/seo-services/robbery-defense-attorney-tampa/resisting-a-merchant-theft-defense-attorney-tampa.webp",
+      "/images/seo-services/robbery-defense-attorney-tampa/resisting-a-merchant-theft-defense-attorney-tampa-fl.webp",
     imageAlt:
       "Defense attorney evaluating resisting a merchant and elevated retail theft robbery allegations in Tampa",
     imageTitle: "Resisting a Merchant Theft Defense Attorney Tampa Law",
@@ -143,8 +134,7 @@ const defaultCaseItems: RobberyTypeItem[] = [
       "Challenging retail theft escalation to robbery charges based on merchant detention, alleged physical resistance, and store security claims in Tampa Florida.",
     badgeIcon: <FaStore className="w-5 h-5 text-primary" />,
     description:
-      "Florida Statutes § 812.015(6) address resisting a merchant during efforts to recover property after an alleged theft. The statute covers resistance to reasonable efforts by a merchant, merchant's employee, law enforcement officer or another authorized person. For example, a store employee may attempt to recover merchandise after an alleged retail theft. An argument, physical resistance or refusal to cooperate during the recovery attempt may lead to an additional allegation under the statute.",
-    linkHref: "/contact",
+      "Florida Statutes § 812.015(6) address resisting a merchant during efforts to recover property after an alleged theft. The statute covers resistance to reasonable efforts by a merchant, merchant's employee, law enforcement officer or another authorized person.\n\nFor example, a store employee may attempt to recover merchandise after an alleged retail theft. An argument, physical resistance or refusal to cooperate during the recovery attempt may lead to an additional allegation under the statute.",
   },
 ];
 
@@ -240,25 +230,13 @@ export default function RDTypesSection({
                   </div>
 
                   {/* CARD BODY */}
-                  <div className="p-6 sm:p-7 flex flex-col justify-between flex-grow">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
-                        {item.title}
-                      </h3>
-                      <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-
-                    <div className="pt-6 mt-6 border-t border-slate-800">
-                      <Link
-                        href={item.linkHref || "/contact"}
-                        className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-primary group-hover:text-[#dbb462] transition-colors"
-                      >
-                        <span>Discuss Case Defense</span>
-                        <FaArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-                      </Link>
-                    </div>
+                  <div className="p-6 sm:p-7 flex flex-col flex-grow">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-primary transition-colors mb-3 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-300 text-xs sm:text-sm leading-relaxed whitespace-pre-line">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               </SwiperSlide>

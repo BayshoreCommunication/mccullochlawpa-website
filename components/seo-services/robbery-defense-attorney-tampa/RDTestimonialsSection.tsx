@@ -100,12 +100,9 @@ export default function RDTestimonialsSection({
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
+              <div className="pt-4 border-t border-slate-100">
                 <span className="font-bold text-slate-900 text-base">
                   {t.name}
-                </span>
-                <span className="text-xs text-primary font-semibold uppercase tracking-wider">
-                  Verified Client Review
                 </span>
               </div>
             </div>

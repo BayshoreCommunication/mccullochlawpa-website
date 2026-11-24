@@ -54,7 +54,7 @@ const criminalDefenseItems = [
 export default function RDServesSection({
   title = "Cases McCulloch Law Handles Across Tampa, FLorida",
   subTitle = "McCulloch Law represents clients across Tampa in both personal injury and criminal defense.",
-  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-bay-skyline-robbery-defense-services-banner.webp",
+  imagePath = "/images/seo-services/robbery-defense-attorney-tampa/tampa-bay-skyline-robbery-defense-services-tampa-fl.webp",
 }: RDServesSectionProps) {
   return (
     <section className="w-full bg-[#081524] py-12 md:py-20 text-white font-sans relative overflow-hidden">

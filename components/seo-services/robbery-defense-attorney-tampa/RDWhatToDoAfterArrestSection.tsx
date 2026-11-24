@@ -29,7 +29,7 @@ export interface RDWhatToDoAfterArrestSectionProps {
 const defaultSteps: RobberyArrestStep[] = [
   {
     id: "invoke-rights-immediately",
-    stepNumber: "Step 01",
+    stepNumber: "01",
     icon: <FaUserShield className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Invoke Your Rights Immediately",
     description:
@@ -37,7 +37,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "not-speak-first-appearance",
-    stepNumber: "Step 02",
+    stepNumber: "02",
     icon: <FaCommentSlash className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Not Speak About Your Case’s Facts During Appearance Hearing",
     description:
@@ -45,7 +45,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "bond-pretrial-release-conditions",
-    stepNumber: "Step 03",
+    stepNumber: "03",
     icon: <FaKey className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Bond and Pretrial Release Conditions",
     description:
@@ -53,7 +53,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "strictly-follow-no-contact-orders",
-    stepNumber: "Step 04",
+    stepNumber: "04",
     icon: <FaUserSlash className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Strictly Follow ‘No Contact’ Orders",
     description:
@@ -61,7 +61,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "urgent-evidence-preservation",
-    stepNumber: "Step 05",
+    stepNumber: "05",
     icon: <FaClock className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Urgent Evidence Preservation",
     description:
@@ -69,7 +69,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "tracking-court-dates-arraignment",
-    stepNumber: "Step 06",
+    stepNumber: "06",
     icon: <FaCalendarCheck className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Tracking Court Dates & Arraignment",
     description:
@@ -77,7 +77,7 @@ const defaultSteps: RobberyArrestStep[] = [
   },
   {
     id: "early-legal-representation",
-    stepNumber: "Step 07",
+    stepNumber: "07",
     icon: <FaGavel className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />,
     title: "Early Legal Representation",
     description:

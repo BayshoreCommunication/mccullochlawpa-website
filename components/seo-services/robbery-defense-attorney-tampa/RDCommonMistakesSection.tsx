@@ -96,9 +96,9 @@ export default function RDCommonMistakesSection({
             {title}
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
+          <div className="text-slate-600 text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl">
             {subTitle}
-          </p>
+          </div>
 
           <div className="flex items-center justify-center gap-3 mt-4">
             <div className="w-12 sm:w-16 h-[2px] bg-red-400/50 rounded-full" />

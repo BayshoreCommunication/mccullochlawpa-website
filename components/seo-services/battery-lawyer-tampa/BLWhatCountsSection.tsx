@@ -79,9 +79,9 @@ export default function BLWhatCountsSection({
               <div className="w-12 h-12 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
                 <FaShieldAlt className="w-5 h-5" />
               </div>
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              <div className="text-slate-300 text-sm sm:text-base leading-relaxed">
                 {paragraph3}
-              </p>
+              </div>
             </div>
           </div>
 

@@ -145,7 +145,7 @@ export default function BLReviewCaseSection({
             >
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <span className="text-3xl font-extrabold text-primary/40 group-hover:text-primary transition-colors">
+                  <span className="text-3xl font-extrabold text-primary transition-colors">
                     {step.stepNumber}
                   </span>
                   <div className="w-11 h-11 rounded-2xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">

@@ -125,14 +125,14 @@ export default function RDDefensesSection({
                   <div className="w-10 h-10 rounded-xl bg-primary/15 border border-primary/30 flex items-center justify-center text-primary group-hover:scale-110 transition-transform shrink-0">
                     {item.icon}
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors leading-snug">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-[#8A6516] transition-colors leading-snug">
                     {item.title}
                   </h3>
                 </div>
 
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                <div className="text-slate-600 text-xs sm:text-sm leading-relaxed">
                   {item.description}
-                </p>
+                </div>
               </div>
             </div>
           ))}
